@@ -1,0 +1,8 @@
+@extends('layouts.app')
+@section('content')
+<section class="page-hero compact"><div class="container"><span class="eyebrow pale">CONFIDENTIAL CLIENT PROPOSAL</span><h1>Campaign <em>proposal.</em></h1><p>Prepared for {{ $quote->lead->company ?: $quote->lead->name }} · {{ $quote->reference }}</p></div></section>
+<section class="section"><div class="container narrow"><div class="advisor-card"><div class="form-header"><span class="eyebrow">DUNIA MEDIA BY RA MEDIA</span><h2>Proposal {{ $quote->reference }}</h2><p>Issued for {{ $quote->lead->name }} · Status {{ ucfirst($quote->status) }} @if($quote->expires_at) · Valid until {{ $quote->expires_at->format('d M Y') }} @endif</p></div>
+<div class="selection-list">@foreach($quote->items as $item)<div class="selection-item"><div><strong>{{ $item->name }}</strong><span>{{ strtoupper($item->kind) }} · Quantity: {{ $item->quantity }}</span></div><div><strong>{{ $showPrices ? 'RM '.number_format($item->unit_price * $item->quantity,2) : 'As agreed / upon enquiry' }}</strong></div></div>@endforeach</div>
+@if($showPrices)<div class="detail-price">Total before any applicable taxes: RM {{number_format($quote->items->sum(fn($item)=>$item->unit_price*$item->quantity),2)}}</div>@else<div class="quote-notice">Detailed commercial pricing is available directly from RA Media. The absence of displayed rates does not imply a zero price.</div>@endif
+<p class="muted">{{ $quote->notes }}</p><p class="muted">All placements depend on media owner acceptance, inventory confirmation and final signed terms. This page is not an online purchase.</p><button class="btn btn-outline" onclick="window.print()">Print / Save as PDF</button></div></div></section>
+@endsection

@@ -1,0 +1,5 @@
+@extends('layouts.app')
+@section('content')
+<section class="page-hero compact"><div class="container"><span class="eyebrow pale">WORK, IDEAS & POSSIBILITIES</span><h1>Think bigger.<br><em>Build better.</em></h1><p>Illustrative concepts below demonstrate the types of connected campaigns Dunia Media can support. Verified client case studies can be added by RA Media.</p></div></section>
+<section class="section"><div class="container"><div class="cards-3">@foreach($projects as $project)<article class="project-card"><img src="{{\App\Support\MediaImage::url($project->image)}}" loading="lazy" alt="{{$project->title}}"><div class="project-content"><span class="eyebrow">{{strtoupper($project->category)}} @if($project->is_concept) / CONCEPT DEMO @endif</span><h2>{{$project->title}}</h2><p>{{$project->summary}}</p></div></article>@endforeach</div><div class="demo-note">These are labelled concept demonstrations, not claimed past RA Media projects. Upload approved real portfolio materials and client permissions through the admin panel.</div></div></section>
+@endsection

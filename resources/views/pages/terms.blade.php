@@ -1,0 +1,4 @@
+@extends('layouts.app')
+@section('content')
+<section class="page-hero compact"><div class="container"><span class="eyebrow pale">LEGAL</span><h1>Terms of <em>Use.</em></h1></div></section><section class="section"><div class="container narrow prose"><p><strong>Draft terms for legal review before production deployment.</strong></p><p>Listings and illustrations are informational only. Submitting a proposal request does not constitute a confirmed booking, contract, quotation acceptance or payment instruction.</p><p>All media opportunities are subject to rights verification, availability confirmation, supplier terms, regulatory approvals and a signed commercial agreement where required.</p><p>Demo creators, rates and conceptual portfolio examples are not representations of real partnerships or past client work.</p></div></section>
+@endsection
