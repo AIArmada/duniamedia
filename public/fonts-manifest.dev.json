@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "style": {
+    "inline": "@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/41b2af86be7f2b52.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/306a6acdfc5b60af.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/be793005ebb52a7b.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/922547d1a03b772b.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/13bd52e95e38a67f.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/07a03242683b07a9.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/d501e973268a0525.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/a29ff406ad18c799.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans fallback\";\n  src: local(\"Arial\");\n  ascent-override: 93.96%;\n  descent-override: 29.36%;\n  line-gap-override: 0.00%;\n  size-adjust: 105.57%;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/becb4a62949cec66.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/20af5a930b15fa8c.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/77726c187160e8b8.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/9da04f71f9ccc3bc.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/1dfdbf0c3e2cdfc3.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/afa1436492288ceb.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/e184bfaaab3e50c7.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/042760c9f9d86828.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 800;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/7419e585f872e1d4.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 800;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/163d79e39c80aefd.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope fallback\";\n  src: local(\"Arial\");\n  ascent-override: 102.29%;\n  descent-override: 28.79%;\n  line-gap-override: 0.00%;\n  size-adjust: 104.21%;\n}\n\n:root {\n  --font-dm-sans: \"DM Sans\", \"DM Sans fallback\";\n  --font-manrope: \"Manrope\", \"Manrope fallback\";\n}\n\n.font-dm-sans {\n  font-family: var(--font-dm-sans);\n}\n\n.font-manrope {\n  font-family: var(--font-manrope);\n}\n",
+    "familyStyles": {
+      "dm-sans": "@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/41b2af86be7f2b52.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/306a6acdfc5b60af.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/be793005ebb52a7b.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/922547d1a03b772b.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/13bd52e95e38a67f.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/07a03242683b07a9.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/d501e973268a0525.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/a29ff406ad18c799.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"DM Sans fallback\";\n  src: local(\"Arial\");\n  ascent-override: 93.96%;\n  descent-override: 29.36%;\n  line-gap-override: 0.00%;\n  size-adjust: 105.57%;\n}\n\n.font-dm-sans {\n  font-family: var(--font-dm-sans);\n}",
+      "manrope": "@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/becb4a62949cec66.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/20af5a930b15fa8c.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/77726c187160e8b8.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/9da04f71f9ccc3bc.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/1dfdbf0c3e2cdfc3.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/afa1436492288ceb.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/e184bfaaab3e50c7.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/042760c9f9d86828.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 800;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/7419e585f872e1d4.woff2\") format(\"woff2\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope\";\n  font-style: normal;\n  font-weight: 800;\n  font-display: swap;\n  src: url(\"http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/163d79e39c80aefd.woff\") format(\"woff\");\n  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;\n}\n\n@font-face {\n  font-family: \"Manrope fallback\";\n  src: local(\"Arial\");\n  ascent-override: 102.29%;\n  descent-override: 28.79%;\n  line-gap-override: 0.00%;\n  size-adjust: 104.21%;\n}\n\n.font-manrope {\n  font-family: var(--font-manrope);\n}"
+    },
+    "variables": {
+      "dm-sans": "--font-dm-sans: \"DM Sans\", \"DM Sans fallback\";",
+      "manrope": "--font-manrope: \"Manrope\", \"Manrope fallback\";"
+    }
+  },
+  "preloads": [
+    {
+      "alias": "dm-sans",
+      "family": "DM Sans",
+      "weight": 400,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/41b2af86be7f2b52.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "dm-sans",
+      "family": "DM Sans",
+      "weight": 500,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/be793005ebb52a7b.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "dm-sans",
+      "family": "DM Sans",
+      "weight": 600,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/13bd52e95e38a67f.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "dm-sans",
+      "family": "DM Sans",
+      "weight": 700,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/d501e973268a0525.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "manrope",
+      "family": "Manrope",
+      "weight": 400,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/becb4a62949cec66.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "manrope",
+      "family": "Manrope",
+      "weight": 500,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/77726c187160e8b8.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "manrope",
+      "family": "Manrope",
+      "weight": 600,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/1dfdbf0c3e2cdfc3.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "manrope",
+      "family": "Manrope",
+      "weight": 700,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/e184bfaaab3e50c7.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    },
+    {
+      "alias": "manrope",
+      "family": "Manrope",
+      "weight": 800,
+      "style": "normal",
+      "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/7419e585f872e1d4.woff2",
+      "as": "font",
+      "type": "font/woff2",
+      "crossorigin": "anonymous"
+    }
+  ],
+  "families": {
+    "dm-sans": {
+      "family": "DM Sans",
+      "variable": "--font-dm-sans",
+      "fallbackFamily": "DM Sans fallback",
+      "variants": {
+        "400:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/41b2af86be7f2b52.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/306a6acdfc5b60af.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "500:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/be793005ebb52a7b.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/922547d1a03b772b.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "600:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/13bd52e95e38a67f.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/07a03242683b07a9.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "700:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/d501e973268a0525.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/a29ff406ad18c799.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        }
+      }
+    },
+    "manrope": {
+      "family": "Manrope",
+      "variable": "--font-manrope",
+      "fallbackFamily": "Manrope fallback",
+      "variants": {
+        "400:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/becb4a62949cec66.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/20af5a930b15fa8c.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "500:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/77726c187160e8b8.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/9da04f71f9ccc3bc.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "600:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/1dfdbf0c3e2cdfc3.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/afa1436492288ceb.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "700:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/e184bfaaab3e50c7.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/042760c9f9d86828.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        },
+        "800:normal": {
+          "files": [
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/7419e585f872e1d4.woff2",
+              "format": "woff2",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "url": "http://127.0.0.1:5173/__laravel_vite_plugin__/fonts/163d79e39c80aefd.woff",
+              "format": "woff",
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

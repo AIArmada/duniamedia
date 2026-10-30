@@ -7,12 +7,12 @@ class DatabaseSeeder extends Seeder {
  public function run():void{
   // All seeded media, creators and portfolio items are explicitly illustrative. Not verified inventory or RA Media client history.
   $media=[
-   ['Kuala Lumpur LED Billboard','Outdoor','outdoor','Klang Valley','Urban commuters','High-impact digital roadside creative format.','on_request'],
-   ['National TV Brand Feature','TV & Broadcast','tv','Nationwide','Mass-market households','Brand storytelling and broadcast feature opportunities.','on_request'],
-   ['Drive-Time Radio Placement','Radio','radio','Nationwide','Daily commuters','Radio campaigns and audience-focused slots.','on_request'],
-   ['Retail Mall Screen Network','Indoor','indoor','Klang Valley','Retail shoppers','Digital screen media across shopping environments.','on_request'],
-   ['Niche Creator Campaign','Creators','creators','Nationwide','Targeted interest communities','Creator-led storytelling matched to audience interests.','on_request'],
-   ['Digital Video Advertising','Digital','digital','Nationwide','Digital-first consumers','Cross-platform video and digital campaign placements.','on_request'],
+   ['Kuala Lumpur LED Billboard','Outdoor','listing-outdoor','Klang Valley','Urban commuters','High-impact digital roadside creative format.','on_request'],
+   ['National TV Brand Feature','TV & Broadcast','listing-tv','Nationwide','Mass-market households','Brand storytelling and broadcast feature opportunities.','on_request'],
+   ['Drive-Time Radio Placement','Radio','listing-radio','Nationwide','Daily commuters','Radio campaigns and audience-focused slots.','on_request'],
+   ['Retail Mall Screen Network','Indoor','listing-indoor','Klang Valley','Retail shoppers','Digital screen media across shopping environments.','on_request'],
+   ['Niche Creator Campaign','Creators','listing-creators','Nationwide','Targeted interest communities','Creator-led storytelling matched to audience interests.','on_request'],
+   ['Digital Video Advertising','Digital','listing-digital','Nationwide','Digital-first consumers','Cross-platform video and digital campaign placements.','on_request'],
    ['Print Feature & Advertorial','Print','print','Nationwide','Editorial readers','Editorial-style and standard print advertising options.','on_request'],
    ['Podcast Brand Integration','Podcast','radio','Nationwide','Focused interest groups','Host-led conversations and sponsorship opportunities.','on_request'],
    ['Building Wall Activation','Outdoor','custom-media','Klang Valley','Local high-footfall audience','Custom-format wall media subject to site rights and approvals.','on_request'],
@@ -37,9 +37,9 @@ class DatabaseSeeder extends Seeder {
    ['Smart Media Conversion Concept','Digital','An example of connecting broadcast attention to a measurable enquiry funnel.','digital'],
   ] as $i=>$p){Project::updateOrCreate(['slug'=>Str::slug($p[0])],['title'=>$p[0],'category'=>$p[1],'summary'=>$p[2],'image'=>'assets/img/'.$p[3].'.webp','is_concept'=>true,'is_published'=>true,'sort_order'=>$i]);}
   foreach([
-   ['How to Plan a Better Media Mix','Strategy','Start with the audience, outcome and measurement plan before choosing channels.','tv'],
-   ['Why Niche Creators Matter','Creator Economy','The right creator is not always the one with the most followers.','creators'],
-   ['From Awareness to Enquiries','Measurement','Link offline and online channels to appropriate conversion points.','digital'],
+   ['How to Plan a Better Media Mix','Strategy','Start with the audience, outcome and measurement plan before choosing channels.','editorial-media-mix'],
+   ['Why Niche Creators Matter','Creator Economy','The right creator is not always the one with the most followers.','editorial-creators'],
+   ['From Awareness to Enquiries','Measurement','Link offline and online channels to appropriate conversion points.','editorial-measurement'],
   ] as $a){Article::updateOrCreate(['slug'=>Str::slug($a[0])],['title'=>$a[0],'category'=>$a[1],'excerpt'=>$a[2],'body'=>$a[2]."\n\nWork backwards from commercial outcomes. Define the audience and communications objective, design useful creative, select suitable distribution channels, and use a practical measurement plan. A campaign is a learning process, not a guarantee of sales.",'image'=>'assets/img/'.$a[3].'.webp','published_at'=>now(),'is_published'=>true]);}
   foreach([
    ['AI for Business & Marketing','AI','Practical AI workflows for content, research and business operations.'],

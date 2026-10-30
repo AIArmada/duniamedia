@@ -14,7 +14,7 @@ class MediaExplorer extends Component {
  public function updated($property): void { if (in_array($property,['search','type','location','budget','sort'])) $this->resetPage(); }
  public function render(){
   $query=MediaListing::query()->where('is_published',true)
-   ->when($this->search!=='',fn($q)=>$q->where(fn($p)=>$p->where('title','like','%'.$this->search.'%')->orWhere('summary','like','%'.$this->search.'%')->orWhere('channel','like','%'.$this->search.'%')))
+   ->when($this->search!=='',fn($q)=>$q->where(fn($p)=>$p->where('title','like','%'.$this->search.'%')->orWhere('summary','like','%'.$this->search.'%')->orWhere('channel','like','%'.$this->search.'%')->orWhere('audience','like','%'.$this->search.'%')))
    ->when($this->type!=='all',fn($q)=>$q->where('type',$this->type))
    ->when($this->location!=='all',fn($q)=>$q->where('location',$this->location));
   if($this->budget!=='any'){$ceiling=(int)$this->budget;$query->where(function($q)use($ceiling){$q->whereNull('price_from')->orWhere('price_from','<=',$ceiling);});}
