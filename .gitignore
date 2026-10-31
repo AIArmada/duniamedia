@@ -13,3 +13,8 @@
 /.idea
 /.DS_Store
 /database/database.sqlite
+
+# Raw client spreadsheets and broadcast media contain contact details and
+# large files. Keep them out of the public repository; host them separately
+# or use a private repository with Git LFS.
+/data/

@@ -225,6 +225,11 @@
                     </section>
                 @endforeach
             </div>
+
+            <div class="about-experience__archive">
+                <p>Campaign records, dates and platforms are drawn from RA Media's client archive. Contact details are withheld.</p>
+                <a href="{{ route('work.index') }}">Explore the campaign archive <span aria-hidden="true">→</span></a>
+            </div>
         </div>
     </section>
 

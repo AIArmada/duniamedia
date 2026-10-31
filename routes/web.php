@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\WorkMediaController;
 use App\Livewire\MediaExplorer;
 use App\Livewire\CreatorExplorer;
 use App\Livewire\QuoteBuilder;
@@ -18,6 +19,8 @@ Route::get('/creators/join',CreatorJoin::class)->name('creators.join');
 Route::get('/services',[PublicController::class,'services'])->name('services');
 Route::get('/solutions',[PublicController::class,'solutions'])->name('solutions');
 Route::get('/portfolio',[PublicController::class,'portfolio'])->name('portfolio');
+Route::get('/work',[PublicController::class,'work'])->name('work.index');
+Route::get('/work/media/{key}',[WorkMediaController::class,'show'])->name('work.media');
 Route::get('/academy',[PublicController::class,'academy'])->name('academy');
 Route::get('/insights',[PublicController::class,'insights'])->name('insights');
 Route::get('/insights/{slug}',[PublicController::class,'article'])->name('insights.show');

@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Models\{MediaListing,Creator,Service,Project,Article,Training};
+use App\Support\ClientWork;
 use Illuminate\Routing\Controller;
 class PublicController extends Controller {
  public function home(){return view('pages.home',[
@@ -11,6 +12,20 @@ class PublicController extends Controller {
  public function services(){return view('pages.services',['services'=>Service::where('is_published',true)->orderBy('sort_order')->get()]);}
  public function solutions(){return view('pages.solutions');}
  public function portfolio(){return view('pages.portfolio',['projects'=>Project::where('is_published',true)->orderBy('sort_order')->get()]);}
+ public function work(){
+  $clients=ClientWork::clients();
+  return view('pages.work',[
+   'pageTitle'=>'Our Work — Clients & Campaigns | Dunia Media',
+   'metaDescription'=>'Explore RA Media\'s campaign archive: broadcast, outdoor, digital, print, event and production work for government institutions and Malaysian brands.',
+   'clients'=>$clients,
+   'clientsBySector'=>collect($clients)->groupBy('sector'),
+   'campaignCounts'=>ClientWork::campaignCounts(),
+   'media'=>ClientWork::media(),
+   'stats'=>ClientWork::stats(),
+   'archiveUpdated'=>ClientWork::data()['updated'],
+   'sourceNote'=>ClientWork::data()['source_note'],
+  ]);
+ }
  public function academy(){return view('pages.academy',['trainings'=>Training::where('is_published',true)->get()]);}
  public function insights(){return view('pages.insights',['articles'=>Article::where('is_published',true)->latest('published_at')->paginate(9)]);}
  public function article(string $slug){return view('pages.article',['article'=>Article::where('slug',$slug)->where('is_published',true)->firstOrFail()]);}

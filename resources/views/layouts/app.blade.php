@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0657d9"><meta name="description" content="Dunia Media is a digital brand initiative by RA Media Relations Sdn Bhd (948761-W). Plan, discover and connect media, creators, branding, AI and technology solutions.">
+<meta name="theme-color" content="#0657d9"><meta name="description" content="{{ $metaDescription ?? 'Dunia Media is a digital brand initiative by RA Media Relations Sdn Bhd (948761-W). Plan, discover and connect media, creators, branding, AI and technology solutions.' }}">
 <title>{{ $pageTitle ?? 'Dunia Media — All Media. Bigger Possibilities.' }}</title>
 <link rel="icon" href="{{ asset('assets/icons/favicon.ico') }}" sizes="any"><link rel="icon" href="{{ asset('assets/icons/favicon.svg') }}" type="image/svg+xml">
 @if (request()->routeIs('home'))
@@ -30,7 +30,7 @@
    <a href="{{ route('solutions') }}" class="{{ request()->routeIs('solutions') ? 'active' : '' }}">Solutions</a>
    <a href="{{ route('creators.index') }}" class="{{ request()->routeIs('creators.*') ? 'active' : '' }}">Creators</a>
    <a href="{{ route('academy') }}" class="{{ request()->routeIs('academy') ? 'active' : '' }}">Training &amp; Events</a>
-   <a href="{{ route('portfolio') }}">Portfolio</a>
+   <a href="{{ route('work.index') }}" class="{{ request()->routeIs('work.*') ? 'active' : '' }}">Our Work</a>
    <a href="{{ route('insights') }}" class="{{ request()->routeIs('insights*') ? 'active' : '' }}">Insights</a>
    <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">About</a>
   </nav>
@@ -58,7 +58,7 @@
    </div>
    <p>Media. Creativity. Technology. AI.<br>All connected through one platform.</p><p class="byline">A digital brand initiative by RA Media Relations Sdn Bhd (948761-W).</p>
   </div>
-  <div><strong>Explore</strong><a href="{{ route('media.index') }}">Media Marketplace</a><a href="{{ route('creators.index') }}">Creator Network</a><a href="{{ route('services') }}">Our Services</a><a href="{{ route('portfolio') }}">Portfolio</a></div>
+  <div><strong>Explore</strong><a href="{{ route('media.index') }}">Media Marketplace</a><a href="{{ route('creators.index') }}">Creator Network</a><a href="{{ route('services') }}">Our Services</a><a href="{{ route('work.index') }}">Our Work</a></div>
   <div><strong>Solutions</strong><a href="{{ route('solutions') }}">Brand & Creative</a><a href="{{ route('advisor') }}">Media Advisor</a><a href="{{ route('assets.join') }}">Monetise Your Space</a><a href="{{ route('academy') }}">Training & AI</a></div>
   <div><strong>Company</strong><a href="{{ route('about') }}">About RA Media</a><a href="{{ route('insights') }}">Insights</a><a href="{{ route('privacy') }}">Privacy</a><a href="{{ route('terms') }}">Terms</a></div>
   <div><strong>Connect</strong><a href="{{ route('contact') }}">Contact Us</a><a href="{{ route('about') }}#company-information">Kuala Lumpur office</a><a href="{{ route('creators.join') }}">Join as Creator</a><a href="{{ route('assets.join') }}">List Your Space</a></div>

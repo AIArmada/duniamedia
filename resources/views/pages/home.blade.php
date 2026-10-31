@@ -158,6 +158,26 @@
     </div>
 </section>
 
+@php($homeWorkClients = collect(\App\Support\ClientWork::featuredClients(16))->filter(fn ($client) => ! empty($client['logo']) && ($client['mark_style'] ?? '') !== 'is-mark--light')->take(10))
+@if($homeWorkClients->isNotEmpty())
+<section class="home-client-band" aria-label="Selected clients">
+    <div class="container home-client-band__inner">
+        <div class="home-client-band__intro">
+            <span class="eyebrow">SELECTED CLIENTS</span>
+            <h2>Institutions and brands we've worked with.</h2>
+        </div>
+        <div class="home-client-band__logos">
+            @foreach($homeWorkClients as $client)
+                <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View work for {{ $client['name'] }}">
+                    <img src="{{ asset($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
+                </a>
+            @endforeach
+        </div>
+        <a class="home-client-band__link" href="{{ route('work.index') }}">See our work <span aria-hidden="true">→</span></a>
+    </div>
+</section>
+@endif
+
 <section class="home-channels" aria-labelledby="channels-title">
     <div class="container home-channels__layout">
         <div class="home-channels__intro">

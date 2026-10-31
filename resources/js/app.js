@@ -17,3 +17,25 @@ if (menuToggle && primaryNav) {
         });
     });
 }
+
+document.querySelectorAll('[data-video-cover]').forEach((frame) => {
+    const video = frame.querySelector('video');
+    const playButton = frame.querySelector('[data-video-play]');
+
+    if (!video || !playButton) {
+        return;
+    }
+
+    playButton.addEventListener('click', () => {
+        frame.classList.add('is-playing');
+        video.controls = true;
+
+        const playback = video.play();
+
+        if (playback && typeof playback.catch === 'function') {
+            playback.catch(() => {
+                video.controls = true;
+            });
+        }
+    });
+});
