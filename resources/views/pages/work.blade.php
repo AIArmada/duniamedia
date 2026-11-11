@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <section class="work-media" aria-labelledby="work-media-title">
+    <section class="work-media" id="work-media" aria-labelledby="work-media-title">
         <div class="container">
             <div class="work-section-heading work-section-heading--light">
                 <div>
@@ -51,7 +51,7 @@
 
             <div class="work-media__grid">
                 @foreach ($media as $item)
-                    <article class="work-media-card @if ($item['type'] === 'audio') work-media-card--audio @endif">
+                    <article id="work-media-{{ $item['key'] }}" class="work-media-card @if ($item['type'] === 'audio') work-media-card--audio @endif">
                         @if ($item['type'] === 'video')
                             <div class="work-media-card__frame" data-video-cover>
                                 <video preload="metadata" playsinline poster="{{ asset($item['poster']) }}">
@@ -88,7 +88,7 @@
                 @endforeach
             </div>
 
-            <p class="work-media__note">Video covers are frames from the supplied broadcasts; the audio cover is an illustrative still. Media files are streamed from the project's data archive, so large files may take a moment to load.</p>
+            <p class="work-media__note">Video covers are frames from the supplied broadcasts; the audio cover is an illustrative still. Media files are hosted privately by the project and streamed on demand, so large files may take a moment to load.</p>
         </div>
     </section>
 

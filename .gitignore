@@ -18,3 +18,8 @@
 # large files. Keep them out of the public repository; host them separately
 # or use a private repository with Git LFS.
 /data/
+
+/bootstrap/cache/*.php
+/database/staging.sqlite
+/.phpunit.result.cache
+/.env.bak-dev

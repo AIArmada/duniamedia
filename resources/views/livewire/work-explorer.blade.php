@@ -116,11 +116,12 @@
                             </div>
                         </dl>
 
-                        @if (!empty($campaign['link']))
-                            <a class="work-card__link" href="{{ $campaign['link'] }}" target="_blank" rel="noopener noreferrer">
-                                View source <span aria-hidden="true">↗</span>
+                        @if (!empty($campaign['media']))
+                            <a class="work-card__link" href="#work-media-{{ $campaign['media'][0] }}">
+                                Watch the film <span aria-hidden="true">↗</span>
                             </a>
                         @endif
+
                     </div>
                 </article>
             @empty

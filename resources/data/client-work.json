@@ -354,7 +354,6 @@
       "date": "17 Feb 2025",
       "year": 2025,
       "description": "Warm-up Ramadan greeting campaign on Assalamualaikum Subuh.",
-      "link": null,
       "featured": true
     },
     {
@@ -366,7 +365,6 @@
       "date": "8 May 2024",
       "year": 2024,
       "description": "Client feature on TV9's morning talkshow.",
-      "link": null,
       "featured": false
     },
     {
@@ -378,7 +376,6 @@
       "date": "11 Feb 2025",
       "year": 2025,
       "description": "Client appearance on the Assalamualaikum programme.",
-      "link": null,
       "featured": false
     },
     {
@@ -390,7 +387,6 @@
       "date": "22 Mar – 21 May 2023",
       "year": 2023,
       "description": "Ramadan and Raya dakwah campaign across TV3 and TV9 programmes, including Tanyalah Ustaz, MHI, WHI and Selamat Pagi Malaysia.",
-      "link": null,
       "featured": true
     },
     {
@@ -402,7 +398,6 @@
       "date": "Dec 2022 – Apr 2024",
       "year": 2024,
       "description": "Seven appearances across MHI, from a single slot in 2022 to a six-slot run in 2024.",
-      "link": null,
       "featured": false
     },
     {
@@ -414,7 +409,6 @@
       "date": "10–13 Apr 2023",
       "year": 2023,
       "description": "Three 3-minute slots on Wanita Hari Ini.",
-      "link": null,
       "featured": false
     },
     {
@@ -426,7 +420,6 @@
       "date": "Feb – Mar 2024",
       "year": 2024,
       "description": "Three live slots on faith, knowledge and Ramadan preparation.",
-      "link": null,
       "featured": false
     },
     {
@@ -438,7 +431,6 @@
       "date": "12 Sep 2022",
       "year": 2022,
       "description": "Morning show appearance on TV1.",
-      "link": null,
       "featured": false
     },
     {
@@ -450,7 +442,6 @@
       "date": "5–24 Mar 2024",
       "year": 2024,
       "description": "Three Selamat Pagi Malaysia slots for the foundation's education hub.",
-      "link": null,
       "featured": false
     },
     {
@@ -462,7 +453,6 @@
       "date": "27–29 Oct 2023",
       "year": 2023,
       "description": "Sponsor's booth with Instagram and Facebook coverage before, during and after the event.",
-      "link": null,
       "featured": false
     },
     {
@@ -474,7 +464,6 @@
       "date": "Feb – Mar 2024",
       "year": 2024,
       "description": "Pre-recorded Ramadan programme with two slots each on TV3 and TV9.",
-      "link": null,
       "featured": false
     },
     {
@@ -486,7 +475,6 @@
       "date": "19 Feb – 19 Mar 2026",
       "year": 2026,
       "description": "30-second Ramadan greeting before Maghrib azan, broadcast across the full Ramadan month.",
-      "link": null,
       "featured": false
     },
     {
@@ -498,7 +486,6 @@
       "date": "Nov 2023 – Nov 2024",
       "year": 2023,
       "description": "12-month outdoor campaign across eight locations, including Sabak Bernam, Kuala Selangor, Klang, Gombak and Sepang.",
-      "link": null,
       "featured": true
     },
     {
@@ -510,7 +497,6 @@
       "date": "Feb 2025 – Feb 2026",
       "year": 2025,
       "description": "Northern outdoor extension across Nibong Tebal, Seberang Perai, Kuala Kangsar, Gerik and Bidor.",
-      "link": null,
       "featured": false
     },
     {
@@ -522,7 +508,6 @@
       "date": "29 Sep – 5 Oct 2023",
       "year": 2023,
       "description": "Run-of-station radio package with a minimum of 35 spots for the International Greentech & Eco Products Exhibition.",
-      "link": null,
       "featured": false
     },
     {
@@ -534,7 +519,6 @@
       "date": "23 & 30 Nov 2023",
       "year": 2023,
       "description": "Live WOWSHOP segments on electricity tariffs and consumer use.",
-      "link": "https://youtu.be/y1X_z5pIe50",
       "featured": true
     },
     {
@@ -546,7 +530,6 @@
       "date": "29 Nov 2023",
       "year": 2023,
       "description": "Six-minute segment on the Energy Efficiency and Conservation Act 2023.",
-      "link": null,
       "featured": false
     },
     {
@@ -558,7 +541,6 @@
       "date": "20 Feb 2024",
       "year": 2024,
       "description": "Six-minute segment on choosing safe, energy-efficient electrical equipment.",
-      "link": null,
       "featured": false
     },
     {
@@ -570,8 +552,10 @@
       "date": "10 Jan & 6 Feb 2025",
       "year": 2025,
       "description": "Two 12-minute consumer rights segments, two slots each.",
-      "link": "https://drive.google.com/file/d/11hXgmNOeCzLoFMPfr6uOES15b4M68xe_/view?usp=sharing",
-      "featured": false
+      "featured": false,
+      "media": [
+        "st-nlko-2025"
+      ]
     },
     {
       "client": "suruhanjaya-tenaga",
@@ -582,7 +566,6 @@
       "date": "25 Jun & 24 Sep 2025",
       "year": 2025,
       "description": "Two eight-minute appearances on electricity tariffs and consumer use.",
-      "link": "https://www.instagram.com/p/DLSJ8eQzOmv/",
       "featured": false
     },
     {
@@ -594,7 +577,6 @@
       "date": "23 Nov – 23 Dec 2023",
       "year": 2023,
       "description": "25 panels and 20 lamp posts in a one-direction street campaign.",
-      "link": null,
       "featured": false
     },
     {
@@ -606,7 +588,6 @@
       "date": "10 Nov 2023",
       "year": 2023,
       "description": "Campaign feature on Malaysia Hari Ini.",
-      "link": null,
       "featured": false
     },
     {
@@ -618,7 +599,6 @@
       "date": "14 Aug 2024",
       "year": 2024,
       "description": "Campaign feature on Nasi Lemak Kopi 'O'.",
-      "link": null,
       "featured": false
     },
     {
@@ -630,7 +610,6 @@
       "date": "6–13 Feb 2025",
       "year": 2025,
       "description": "Radio campaign across KOOL 101.",
-      "link": null,
       "featured": false
     },
     {
@@ -642,7 +621,6 @@
       "date": "Aug 2024",
       "year": 2024,
       "description": "15-second visual across eight panels in a one-direction display.",
-      "link": null,
       "featured": false
     },
     {
@@ -654,7 +632,6 @@
       "date": "Sep 2024 – Apr 2025",
       "year": 2024,
       "description": "KOL content series with eight creators, blog features and newsportal coverage for the homemakers' social security campaign.",
-      "link": "https://www.instagram.com/reel/DAC9Waevi-y/",
       "featured": true
     },
     {
@@ -666,7 +643,6 @@
       "date": "23 Jan 2026",
       "year": 2026,
       "description": "60-second launch video with post-production.",
-      "link": null,
       "featured": false
     },
     {
@@ -678,7 +654,6 @@
       "date": "Sep 2025",
       "year": 2025,
       "description": "Opening video for the State GLC Pahang 2025 programme.",
-      "link": null,
       "featured": false
     },
     {
@@ -690,7 +665,6 @@
       "date": "6 Feb 2026",
       "year": 2026,
       "description": "Live WOWSHOP segment with reruns on 21 Feb and 3 Mar 2026.",
-      "link": null,
       "featured": false
     },
     {
@@ -702,7 +676,6 @@
       "date": "2022",
       "year": 2022,
       "description": "Corporate video production for the Malaysian Timber Council.",
-      "link": null,
       "featured": false
     },
     {
@@ -714,7 +687,6 @@
       "date": "Dec 2022",
       "year": 2022,
       "description": "Five- to six-minute video on sports facilities owned by KBS and its agencies.",
-      "link": null,
       "featured": false
     },
     {
@@ -726,7 +698,6 @@
       "date": "13 Jun 2023",
       "year": 2023,
       "description": "Two public service announcements: No Straw No Problem and Bawa Bekas Sendiri.",
-      "link": null,
       "featured": false
     },
     {
@@ -738,8 +709,12 @@
       "date": "Aug 2023",
       "year": 2023,
       "description": "Three 30-second capsules for WP Kuala Lumpur, WP Putrajaya and WP Labuan.",
-      "link": "https://drive.google.com/drive/folders/1Y2R1lMGGIo8Ih5gFzzoowfhepVnukUmu?usp=drive_link",
-      "featured": false
+      "featured": false,
+      "media": [
+        "jwp-psa-kl",
+        "jwp-psa-putrajaya",
+        "jwp-psa-labuan"
+      ]
     },
     {
       "client": "jabatan-wilayah-persekutuan",
@@ -750,7 +725,6 @@
       "date": "Aug 2023",
       "year": 2023,
       "description": "30-second TV commercial; the voiceover audio is available in the media library.",
-      "link": "https://drive.google.com/drive/folders/1mcPx_8GIdXh3vxG_f_Hs9TMdYr7CWoyb?usp=drive_link",
       "featured": true
     },
     {
@@ -762,7 +736,6 @@
       "date": "Jul 2024",
       "year": 2024,
       "description": "Video production for the Lestari Niaga programme.",
-      "link": null,
       "featured": false
     },
     {
@@ -774,8 +747,10 @@
       "date": "17 Jun 2023",
       "year": 2023,
       "description": "Brand video for My Grocer's WAKEEL campaign.",
-      "link": "https://drive.google.com/file/d/1VAZNie86bM_Idv9it5Q97xMOZ7EUCwSz/view?usp=drive_link",
-      "featured": false
+      "featured": false,
+      "media": [
+        "jwp-wakeel-my-grocer"
+      ]
     },
     {
       "client": "lppkn",
@@ -786,7 +761,6 @@
       "date": "May 2022",
       "year": 2022,
       "description": "Cooking segment for the Resipi Pengikat Kasih Hari Ibu programme, filmed at Kolej Komuniti Selayang.",
-      "link": null,
       "featured": false
     },
     {
@@ -798,7 +772,6 @@
       "date": "Dec 2024",
       "year": 2024,
       "description": "Two 60–90 second videos on family time.",
-      "link": null,
       "featured": false
     },
     {
@@ -810,7 +783,6 @@
       "date": "Apr – Jul 2016",
       "year": 2016,
       "description": "Event sponsorship for Temasya Dangdut Prima.",
-      "link": null,
       "featured": false
     },
     {
@@ -822,7 +794,6 @@
       "date": "19 Mar 2025",
       "year": 2025,
       "description": "Event coverage for the MOU between UBB Amanah and Universiti Perdana, and a buka puasa with orphans and asnaf.",
-      "link": null,
       "featured": false
     },
     {
@@ -834,8 +805,12 @@
       "date": "2 Oct – 18 Dec 2025",
       "year": 2025,
       "description": "Three live six-minute slots on Nasi Lemak Kopi 'O'. Two full broadcasts are available in the media library.",
-      "link": "https://drive.google.com/file/d/1xIECYrFqdYjhIBIsWPeGeFoYv9RNJIJZ/view?usp=sharing",
-      "featured": true
+      "featured": true,
+      "media": [
+        "kpj-2025-10-02",
+        "kpj-2025-11-26",
+        "kpj-2025-12-18"
+      ]
     },
     {
       "client": "aura-essential",
@@ -846,7 +821,6 @@
       "date": "Dec 2023 – Dec 2024",
       "year": 2023,
       "description": "Four appearances across the year for the halal softgel product.",
-      "link": null,
       "featured": false
     },
     {
@@ -858,7 +832,6 @@
       "date": "Ramadan 2024",
       "year": 2024,
       "description": "15-second Ramadan greeting with 30 spots, aired before breaking fast.",
-      "link": null,
       "featured": false
     },
     {
@@ -870,7 +843,6 @@
       "date": "16 Dec 2025 – 30 Jun 2026",
       "year": 2025,
       "description": "Two static billboards: Jalan Tanjung Lumpur and Jalan Dato Lim Hoe Lek.",
-      "link": null,
       "featured": true
     },
     {
@@ -882,7 +854,6 @@
       "date": "Feb 2026",
       "year": 2026,
       "description": "Lamp-post screen ads across 10 panels and five lamp posts.",
-      "link": null,
       "featured": false
     },
     {
@@ -894,7 +865,6 @@
       "date": "2026",
       "year": 2026,
       "description": "Six-month social media management for TikTok or Telegram.",
-      "link": null,
       "featured": false
     },
     {
@@ -906,7 +876,6 @@
       "date": "Jan – Mar 2026",
       "year": 2026,
       "description": "Two newsportal articles, six blog posts and UCYP website coverage.",
-      "link": "https://ucyp.edu.my/bahasa-rusia-sebagai-pelaburan-strategik-malaysia-rusia-perkukuh-kerjasama-pendidikan-dan-modal-insan-masa-hadapan/",
       "featured": false
     },
     {
@@ -918,7 +887,6 @@
       "date": "Mar – Jun 2024",
       "year": 2024,
       "description": "Live and rerun slots across 8TV, TV9 and TV3, with social posts, banner and EDM support.",
-      "link": null,
       "featured": true
     },
     {
@@ -930,7 +898,6 @@
       "date": "10 Feb 2023",
       "year": 2023,
       "description": "Product feature on WOWSHOP.",
-      "link": null,
       "featured": false
     },
     {
@@ -942,7 +909,6 @@
       "date": "9 Mar 2023",
       "year": 2023,
       "description": "Product feature on WOWSHOP.",
-      "link": null,
       "featured": false
     },
     {
@@ -954,7 +920,6 @@
       "date": "5 Jan 2023",
       "year": 2023,
       "description": "Brand appearance on Assalamualaikum TV Al Hijrah.",
-      "link": null,
       "featured": false
     },
     {
@@ -966,7 +931,6 @@
       "date": "2025",
       "year": 2025,
       "description": "Client feature on WOWSHOP.",
-      "link": null,
       "featured": false
     },
     {
@@ -978,30 +942,97 @@
       "date": "1 Mar 2026",
       "year": 2026,
       "description": "Client feature on WOWSHOP.",
-      "link": null,
       "featured": false
     }
   ],
   "media": [
     {
-      "key": "kpj-2025-12-18",
+      "key": "jwp-psa-kl",
+      "title": "JWP — Kuala Lumpur PSA",
+      "client": "jabatan-wilayah-persekutuan",
+      "type": "video",
+      "duration": "0:30",
+      "date": "2023",
+      "description": "30-second public service film on waste separation and clean city habits for Kuala Lumpur.",
+      "poster": "assets/work/covers/jwp-psa-kl.webp",
+      "file": "jwp-psa-kl.mp4"
+    },
+    {
+      "key": "jwp-psa-putrajaya",
+      "title": "JWP — Putrajaya PSA",
+      "client": "jabatan-wilayah-persekutuan",
+      "type": "video",
+      "duration": "0:30",
+      "date": "2023",
+      "description": "30-second public service film on sustainability and green living in Putrajaya.",
+      "poster": "assets/work/covers/jwp-psa-putrajaya.webp",
+      "file": "jwp-psa-putrajaya.mp4"
+    },
+    {
+      "key": "jwp-psa-labuan",
+      "title": "JWP — Labuan PSA",
+      "client": "jabatan-wilayah-persekutuan",
+      "type": "video",
+      "duration": "0:30",
+      "date": "2023",
+      "description": "30-second public service film highlighting the identity and beauty of Labuan.",
+      "poster": "assets/work/covers/jwp-psa-labuan.webp",
+      "file": "jwp-psa-labuan.mp4"
+    },
+    {
+      "key": "jwp-wakeel-my-grocer",
+      "title": "My Grocer — WAKEEL PSA",
+      "client": "jabatan-wilayah-persekutuan",
+      "type": "video",
+      "duration": "2:45",
+      "date": "2023",
+      "description": "Public service film for the WAKEEL grocery initiative under Jabatan Wilayah Persekutuan.",
+      "poster": "assets/work/covers/jwp-wakeel-my-grocer.webp",
+      "file": "jwp-wakeel-my-grocer.mp4"
+    },
+    {
+      "key": "kpj-2025-10-02",
       "title": "KPJ Kajang Specialist Hospital — TV9 interview",
       "client": "kpj-kajang",
       "type": "video",
-      "duration": "8:35",
-      "date": "18 Dec 2025",
-      "description": "Full broadcast of the third NLKO slot, recorded 18 December 2025.",
-      "poster": "assets/work/covers/kpj-kajang-2025-12-18.webp"
+      "duration": "1:30 highlight",
+      "date": "2 Oct 2025",
+      "description": "90-second highlight from the first NLKO TV9 interview slot with KPJ Kajang.",
+      "poster": "assets/work/covers/kpj-2025-10-02-highlight.webp",
+      "file": "kpj-2025-10-02-highlight.mp4"
     },
     {
       "key": "kpj-2025-11-26",
       "title": "KPJ Healthcare Kajang — TV9 interview",
       "client": "kpj-kajang",
       "type": "video",
-      "duration": "8:58",
+      "duration": "1:30 highlight",
       "date": "26 Nov 2025",
-      "description": "Full broadcast of the second NLKO slot, recorded 26 November 2025.",
-      "poster": "assets/work/covers/kpj-healthcare-2025-11-26.webp"
+      "description": "90-second highlight from the second NLKO TV9 interview slot with KPJ Healthcare Kajang.",
+      "poster": "assets/work/covers/kpj-2025-11-26-highlight.webp",
+      "file": "kpj-2025-11-26-highlight.mp4"
+    },
+    {
+      "key": "kpj-2025-12-18",
+      "title": "KPJ Kajang Specialist Hospital — TV9 interview",
+      "client": "kpj-kajang",
+      "type": "video",
+      "duration": "1:30 highlight",
+      "date": "18 Dec 2025",
+      "description": "90-second highlight from the third NLKO TV9 interview slot with KPJ Kajang.",
+      "poster": "assets/work/covers/kpj-2025-12-18-highlight.webp",
+      "file": "kpj-2025-12-18-highlight.mp4"
+    },
+    {
+      "key": "st-nlko-2025",
+      "title": "Suruhanjaya Tenaga — NLKO interview",
+      "client": "suruhanjaya-tenaga",
+      "type": "video",
+      "duration": "2:00 highlight",
+      "date": "6 Feb 2025",
+      "description": "Two-minute highlight from the NLKO interview on consumer energy rights.",
+      "poster": "assets/work/covers/st-nlko-2025-highlight.webp",
+      "file": "st-nlko-2025-highlight.mp4"
     },
     {
       "key": "yayasan-maghfirah-30s",
@@ -1011,7 +1042,8 @@
       "duration": "0:35",
       "date": "2024",
       "description": "30-second Ramadan commercial with an ID board.",
-      "poster": "assets/work/covers/yayasan-maghfirah-ramadan.webp"
+      "poster": "assets/work/covers/yayasan-maghfirah-ramadan.webp",
+      "file": "yayasan-maghfirah-30s.mp4"
     },
     {
       "key": "jwp-passport50wp-vo",
@@ -1021,7 +1053,8 @@
       "duration": "0:28",
       "date": "Aug 2023",
       "description": "Voiceover track for the 30-second PASPORT50WP TV commercial.",
-      "poster": "assets/work/covers/jwp-pasport50wp.webp"
+      "poster": "assets/work/covers/jwp-pasport50wp.webp",
+      "file": "jwp-passport50wp-vo.wav"
     }
   ]
 }

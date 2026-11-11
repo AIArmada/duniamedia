@@ -68,7 +68,7 @@
     </div>
 </section>
 
-@php($mediaOwners = require resource_path('data/media-owners.php'))
+@php($mediaOwners = \App\Support\MediaDirectory::owners())
 @php($rosterOwnerCount = count($mediaOwners))
 @php($rosterOutletCount = collect($mediaOwners)->sum(fn ($owner) => collect($owner['categories'])->sum(fn ($category) => count($category['brands']))))
 
@@ -98,6 +98,7 @@
                 >
                     <header class="home-owner__header">
                         <div class="home-owner__identity">
+                            <a class="home-owner__rate-link" href="{{ route('media.owner',$owner['slug']) }}" aria-label="View {{ $owner['name'] }} outlets">
                             <div class="home-owner__logo">
                                 @if(($owner['visual'] ?? '') === 'karangkraf')
                                     <span class="home-owner__art home-owner__art--karangkraf" style="--owner-art-image: url('{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}')" aria-hidden="true"></span>
@@ -107,9 +108,11 @@
                                     <span class="home-owner__wordmark" aria-hidden="true">{{ $owner['mark'] ?? $owner['name'] }}</span>
                                 @endif
                             </div>
+                            </a>
                             <div>
                                 <span class="home-owner__eyebrow">Media owner</span>
-                                <h3 id="home-owner-title-{{ $ownerIndex }}">{{ $owner['name'] }}</h3>
+                                <h3 id="home-owner-title-{{ $ownerIndex }}"><a href="{{ route('media.owner',$owner['slug']) }}">{{ $owner['name'] }} <span aria-hidden="true">↗</span></a></h3>
+                                <a class="home-owner__rate-badge" href="{{ route('media.owner',$owner['slug']) }}">Explore outlets</a>
                             </div>
                         </div>
                         <div class="home-owner__outlet-count" aria-label="{{ $outletCount }} listed outlets">
@@ -124,7 +127,8 @@
                                 <h4>{{ $category['label'] }}</h4>
                                 <ul class="home-brand-grid">
                                     @foreach($category['brands'] as $outlet)
-                                        <li class="home-brand">
+                                        <li class="home-brand home-brand--linked">
+                                            <a class="home-brand__link" href="{{ route('media.outlet',[$owner['slug'],$outlet['slug']]) }}" aria-label="View {{ $outlet['name'] }}">
                                             <div class="home-brand__mark @if(empty($outlet['logo'])) home-brand__mark--wordmark @endif">
                                                 @if(!empty($outlet['logo']))
                                                     <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$outlet['logo']) }}" alt="" loading="lazy" decoding="async">
@@ -135,6 +139,7 @@
                                             @if(!empty($outlet['logo']))
                                                 <span class="home-brand__name">{{ $outlet['name'] }}</span>
                                             @endif
+                                            </a>
                                         </li>
                                     @endforeach
                                 </ul>

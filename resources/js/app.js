@@ -39,3 +39,28 @@ document.querySelectorAll('[data-video-cover]').forEach((frame) => {
         }
     });
 });
+
+document.querySelectorAll('[data-rc]').forEach((scope) => {
+    const tabs = scope.querySelectorAll('[data-rc-tab]');
+    const panels = scope.querySelectorAll('[data-rc-panel]');
+
+    if (!tabs.length || !panels.length) {
+        return;
+    }
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const key = tab.dataset.rcTab;
+
+            tabs.forEach((item) => {
+                const active = item === tab;
+                item.classList.toggle('is-active', active);
+                item.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+
+            panels.forEach((panel) => {
+                panel.classList.toggle('is-active', panel.dataset.rcPanel === key);
+            });
+        });
+    });
+});

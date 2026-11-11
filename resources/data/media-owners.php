@@ -1,7 +1,7 @@
 <?php
 
-$brand = static fn (string $name, ?string $logo = null): array => array_filter(
-    ['name' => $name, 'logo' => $logo],
+$brand = static fn (string $name, ?string $logo = null, ?string $rateCard = null): array => array_filter(
+    ['name' => $name, 'logo' => $logo, 'rate_card' => $rateCard],
     static fn ($value) => $value !== null,
 );
 
@@ -9,20 +9,20 @@ $category = static fn (string $label, array $brands): array => ['label' => $labe
 
 return [
     [
-        'name' => 'Media Prima Berhad', 'logo' => 'media-prima-trim.webp', 'mark' => 'MEDIA PRIMA', 'accent' => '#e52735',
+        'name' => 'Media Prima Berhad', 'logo' => 'media-prima-trim.webp', 'mark' => 'MEDIA PRIMA', 'accent' => '#e52735', 'rate_card' => 'omnia-content-terhangat-2026',
         'categories' => [
-            $category('Television networks', [$brand('TV3', 'mp-tv3.png'), $brand('TV9', 'mp-tv9.png'), $brand('8TV', 'mp-8tv.png'), $brand('ntv7', 'mp-ntv7.png')]),
-            $category('Radio', [$brand('Hot FM', 'mp-hotfm-v2.png'), $brand('Kool FM', 'mp-koolfm.png'), $brand('Molek FM', 'mp-molekfm.png'), $brand('Fly FM', 'mp-flyfm.png'), $brand('Eight FM', 'mp-ei8htfm.png')]),
+            $category('Television networks', [$brand('TV3', 'mp-tv3.png', 'omnia-content-terhangat-2026'), $brand('TV9', 'mp-tv9.png'), $brand('8TV', 'mp-8tv.png', 'omnia-content-terhangat-2026'), $brand('ntv7', 'mp-ntv7.png')]),
+            $category('Radio', [$brand('Hot FM', 'mp-hotfm-v2.png', 'hot-fm-zoomerz-on-ground'), $brand('Kool FM', 'mp-koolfm.png'), $brand('Molek FM', 'mp-molekfm.png'), $brand('Fly FM', 'mp-flyfm.png'), $brand('Eight FM', 'mp-ei8htfm.png')]),
             $category('Digital publishing', [$brand('REV Media', 'mp-rev.png'), $brand('OHBULAN!', 'mp-ob.png'), $brand('SirapLimau', 'mp-siraplimau.png'), $brand('SAYS', 'mp-says.png'), $brand('Mashable South East Asia', 'mp-mashable-sea-v2.png'), $brand('Rojak', 'mp-rj.png'), $brand('Says Seismik', 'mp-seismik.png'), $brand('Juice', 'mp-juice.png'), $brand('XTRA', 'mp-xtra.png'), $brand('MyResipi', 'mp-myresipi.png')]),
-            $category('Out-of-home', [$brand('Big Tree', 'mp-bigtree.png'), $brand('UPD', 'mp-upd.png'), $brand('Kurnia Outdoor', 'mp-kurnia.png'), $brand('BTSJ', 'mp-btsj.png'), $brand('TRC', 'mp-trc.png'), $brand('GOTCHA', 'mp-gotcha.png')]),
-            $category('TV home shopping', [$brand('WowShop', 'mp-wowshop.png')]),
+            $category('Out-of-home', [$brand('Big Tree', 'mp-bigtree.png', 'klcc-snorkels-2024-big-tree'), $brand('UPD', 'mp-upd.png'), $brand('Kurnia Outdoor', 'mp-kurnia.png'), $brand('BTSJ', 'mp-btsj.png'), $brand('TRC', 'mp-trc.png'), $brand('GOTCHA', 'mp-gotcha.png')]),
+            $category('TV home shopping', [$brand('WowShop', 'mp-wowshop.png', 'wowshop-airtime-2025')]),
             $category('Streaming', [$brand('Tonton', 'mp-tonton-v2.png')]),
             $category('News and press', [$brand('Berita Harian', 'mp-bh.png'), $brand('Harian Metro', 'mp-hmetro.png'), $brand('NSTP', 'mp-nstp.png')]),
             $category('Apps', [$brand('Waktu Solat', 'waktu-solat-app.jpg')]),
         ],
     ],
     [
-        'name' => 'Astro Media Solutions', 'logo' => 'astro-media-solutions.webp', 'mark' => 'astro media solutions', 'tone' => 'astro', 'accent' => '#be2ca9',
+        'name' => 'Astro Media Solutions', 'logo' => 'astro-media-solutions.webp', 'mark' => 'astro media solutions', 'tone' => 'astro', 'accent' => '#be2ca9', 'rate_card' => 'astro-video360-digital-2026',
         'categories' => [
             $category('Television', [$brand('Astro Awani', 'astro-awani.webp'), $brand('Astro Ria', 'astro-tv-ria.webp'), $brand('Astro Prima', 'astro-tv-prima.webp'), $brand('Astro Oasis', 'astro-tv-oasis.webp'), $brand('Astro Vanavil', 'astro-tv-vaanavil.webp'), $brand('Astro Tutor TV', 'astro-tv-tutor-tv.webp')]),
             $category('Radio', [$brand('ERA', 'astro-radio-era.webp'), $brand('Sinar', 'astro-radio-sinar.webp'), $brand('THR Gegar', 'astro-radio-gegar.webp'), $brand('Zayan', 'astro-radio-zayan.webp'), $brand('Lite FM', 'astro-radio-lite.webp'), $brand('Mix FM', 'astro-radio-mix.webp'), $brand('Hitz FM', 'astro-radio-hitz.webp'), $brand('MY FM', 'astro-radio-my.webp'), $brand('Melody FM', 'astro-radio-melody.webp'), $brand('GoXuan', 'astro-radio-goxuan.webp'), $brand('Raaga', 'astro-radio-raaga.webp')]),
@@ -32,7 +32,7 @@ return [
         ],
     ],
     [
-        'name' => 'Radio Televisyen Malaysia (RTM)', 'logo' => 'rtm-trim.webp', 'mark' => 'RTM', 'accent' => '#178264',
+        'name' => 'Radio Televisyen Malaysia (RTM)', 'logo' => 'rtm-trim.webp', 'mark' => 'RTM', 'accent' => '#178264', 'rate_card' => 'rtm-tv-radio-2025',
         'categories' => [
             $category('Television', [$brand('TV1', 'rtm-tv1.png'), $brand('TV2', 'rtm-tv2.png'), $brand('OKEY', 'rtm-okey.png')]),
             $category('National radio', [$brand('Nasional FM', 'rtm-nasional-fm.png'), $brand('Klasik FM', 'rtm-radio-klasik.png'), $brand('TraXX FM', 'rtm-traxx-fm.png'), $brand('Ai FM', 'rtm-ai-fm.png'), $brand('Minnal FM', 'rtm-minnal-fm.png'), $brand('Asyik FM', 'rtm-asyik-fm.png')]),
@@ -41,11 +41,11 @@ return [
         ],
     ],
     [
-        'name' => 'Al Hijrah Media Corporation', 'logo' => 'alhijrah-trim.webp', 'mark' => 'ALHIJRAH', 'accent' => '#713d9b',
+        'name' => 'Al Hijrah Media Corporation', 'logo' => 'alhijrah-trim.webp', 'mark' => 'ALHIJRAH', 'accent' => '#713d9b', 'rate_card' => 'tvalhijrah-bincang-niaga-2024',
         'categories' => [$category('Television and digital', [$brand('TV Al Hijrah', 'alhijrah.webp'), $brand('AlHijrah Plus', 'alhijrah-plus-app.jpg')])],
     ],
     [
-        'name' => 'Bernama', 'logo' => 'bernama-trim.webp', 'mark' => 'BERNAMA', 'accent' => '#234b99',
+        'name' => 'Bernama', 'logo' => 'bernama-trim.webp', 'mark' => 'BERNAMA', 'accent' => '#234b99', 'rate_card' => 'bernama-media-kit-2026',
         'categories' => [$category('News platforms', [$brand('Bernama TV', 'bernama-tv.png'), $brand('Bernama Radio', 'bernama-radio.png'), $brand('Bernama Digital')])],
     ],
     [
@@ -56,7 +56,7 @@ return [
         'name' => 'Star Media Group', 'logo' => 'star-media-group-logo.jpg', 'mark' => 'STAR MEDIA GROUP', 'accent' => '#c6213b',
         'categories' => [
             $category('News and publishing', [$brand('The Star', 'star-the-star.png'), $brand('mStar', 'star-mstar.png')]),
-            $category('Radio', [$brand('Suria FM', 'star-suria.png'), $brand('98.8 FM', 'star-988.png')]),
+            $category('Radio', [$brand('Suria FM', 'star-suria.png', 'suria-fm-2026-radio-digital'), $brand('98.8 FM', 'star-988.png', '988-fm-2026-radio-digital')]),
         ],
     ],
     [
@@ -77,11 +77,11 @@ return [
         'categories' => [$category('Cinema networks', [$brand('GSC', 'gsc.png'), $brand('TGV', 'tgv.png')])],
     ],
     [
-        'name' => 'KLIA', 'logo' => 'malaysia-airports.png', 'mark' => 'KLIA', 'accent' => '#b98b2e',
-        'categories' => [$category('Airport terminals', [$brand('Terminal 1'), $brand('Terminal 2')])],
+        'name' => 'KLIA', 'logo' => 'malaysia-airports.png', 'mark' => 'KLIA', 'accent' => '#b98b2e', 'rate_card' => 'klia-t1-airport-2024-premium',
+        'categories' => [$category('Airport terminals', [$brand('Terminal 1', null, 'klia-t1-airport-2024-premium'), $brand('Terminal 2', null, 'klia-t2-airport-2024')])],
     ],
     [
-        'name' => 'KTM Advertising Space', 'logo' => 'ktmb.png', 'mark' => 'KTM ADVERTISING', 'accent' => '#cf342f',
-        'categories' => [$category('Rail media', [$brand('KTM Train'), $brand('KL Sentral Station')])],
+        'name' => 'KTM Advertising Space', 'logo' => 'ktmb.png', 'mark' => 'KTM ADVERTISING', 'accent' => '#cf342f', 'rate_card' => 'ktm-train-kl-sentral-ads-2026',
+        'categories' => [$category('Rail media', [$brand('KTM Train', null, 'ktm-train-kl-sentral-ads-2026'), $brand('KL Sentral Station', null, 'kl-sentral-station-sponsorship-2024')])],
     ],
 ];
