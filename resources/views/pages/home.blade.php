@@ -33,11 +33,6 @@
                     <a class="button button--primary" href="{{ route('advisor') }}">Plan your campaign <span aria-hidden="true">↗</span></a>
                     <a class="button button--secondary" href="{{ route('media.index') }}">Explore media</a>
                 </div>
-                <div class="home-hero__utility">
-                    <a href="{{ route('media.index') }}"><span aria-hidden="true">01</span> Find media</a>
-                    <a href="{{ route('work.index') }}"><span aria-hidden="true">02</span> See real campaigns</a>
-                    <a href="{{ route('contact') }}"><span aria-hidden="true">03</span> Talk to the team</a>
-                </div>
             </div>
 
             <div class="home-hero__art" data-hero-art aria-label="A connected media world">
@@ -45,7 +40,10 @@
                     <path d="M14 244C90 176 126 78 236 62c86-13 156 32 210 104" stroke="#D3A071" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 7"/>
                 </svg>
                 <figure class="hero-shot hero-shot--main" data-hero-shot="main">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
+                    <picture>
+                        <source media="(max-width: 760px)" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city-mobile-bg.webp', [480, 640, 960]) }}" sizes="100vw">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
+                    </picture>
                     <figcaption>Outdoor · LED</figcaption>
                 </figure>
                 <figure class="hero-shot hero-shot--top" data-hero-shot="top">
@@ -56,6 +54,12 @@
                     <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Creators</figcaption>
                 </figure>
+            </div>
+
+            <div class="home-hero__utility">
+                <a href="{{ route('media.index') }}"><span aria-hidden="true">01</span> Find media</a>
+                <a href="{{ route('work.index') }}"><span aria-hidden="true">02</span> See real campaigns</a>
+                <a href="{{ route('contact') }}"><span aria-hidden="true">03</span> Talk to the team</a>
             </div>
         </div>
     </section>
