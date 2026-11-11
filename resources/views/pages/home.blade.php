@@ -40,19 +40,19 @@
                 </div>
             </div>
 
-            <div class="home-hero__art" aria-label="A connected media world">
-                <svg class="hero-ribbon" viewBox="0 0 520 300" fill="none" aria-hidden="true">
+            <div class="home-hero__art" data-hero-art aria-label="A connected media world">
+                <svg class="hero-ribbon" data-hero-ribbon viewBox="0 0 520 300" fill="none" aria-hidden="true">
                     <path d="M14 244C90 176 126 78 236 62c86-13 156 32 210 104" stroke="#D3A071" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 7"/>
                 </svg>
-                <figure class="hero-shot hero-shot--main">
+                <figure class="hero-shot hero-shot--main" data-hero-shot="main">
                     <img src="{{ \App\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
                     <figcaption>Outdoor · LED</figcaption>
                 </figure>
-                <figure class="hero-shot hero-shot--top">
+                <figure class="hero-shot hero-shot--top" data-hero-shot="top">
                     <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-tv.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Broadcast</figcaption>
                 </figure>
-                <figure class="hero-shot hero-shot--bottom">
+                <figure class="hero-shot hero-shot--bottom" data-hero-shot="bottom">
                     <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Creators</figcaption>
                 </figure>
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section class="section process process--image" aria-labelledby="process-title">
+    <section class="section process process--image" data-process aria-labelledby="process-title">
         <div class="process__bg" aria-hidden="true"><img src="{{ \App\Support\MediaImage::url('assets/img/v2/process-bg.webp') }}" alt="" loading="lazy" decoding="async"></div>
         <div class="container process__inner">
             <div class="process__intro">
@@ -118,6 +118,9 @@
                 <a class="button button--on-dark" href="{{ route('solutions') }}">See how it fits together <span aria-hidden="true">↗</span></a>
             </div>
             <div class="process__steps">
+                <svg class="process__thread" viewBox="0 0 1200 2" preserveAspectRatio="none" aria-hidden="true">
+                    <path data-process-line d="M0 1H1200" pathLength="1"/>
+                </svg>
                 @foreach ([
                     ['Understand', 'Audience, objective, constraints and what success actually means.', 'Brief excerpt'],
                     ['Create', 'A creative idea built for the channel, not adapted after the fact.', 'Creative frame'],

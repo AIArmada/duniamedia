@@ -1409,15 +1409,21 @@ ol[role='list'] {
     gap: 1.5rem;
 }
 
-.process__steps::before {
+.process__thread {
     position: absolute;
     top: 3.03rem;
-    left: 1rem;
-    right: 1rem;
-    height: 1px;
-    background: linear-gradient(90deg, var(--color-champagne-500), rgba(211, 160, 113, 0.12));
-    content: '';
+    left: 0;
+    width: 100%;
+    height: 3px;
+    overflow: visible;
     pointer-events: none;
+}
+
+.process__thread path {
+    fill: none;
+    stroke: var(--color-champagne-500);
+    stroke-width: 1.5;
+    stroke-linecap: round;
 }
 
 .process-step {
@@ -4714,10 +4720,22 @@ a.topic:hover {
 }
 
 .timeline {
+    position: relative;
     display: grid;
     gap: 1.4rem;
     padding-left: 1.1rem;
     border-left: 1px solid var(--color-border-strong);
+}
+
+.timeline__line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--color-champagne-500), rgba(211, 160, 113, 0.18));
+    transform-origin: top center;
+    will-change: transform;
 }
 
 .timeline article {
@@ -4733,6 +4751,12 @@ a.topic:hover {
     border-radius: 50%;
     background: var(--color-champagne-500);
     content: '';
+    transition: background-color var(--dur-normal), box-shadow var(--dur-normal);
+}
+
+.timeline article.is-visible::before {
+    background: var(--color-magenta-600);
+    box-shadow: 0 0 0 4px rgba(195, 8, 102, 0.12);
 }
 
 .timeline time {
@@ -5609,7 +5633,7 @@ a.topic:hover {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .process__steps::before {
+    .process__thread {
         display: none;
     }
 

@@ -41,7 +41,8 @@
                 <p>Today, the company works with SMEs, corporate teams and government agencies, helping shape marketing and branding activity for local and international audiences.</p>
                 <p>The Dunia Media platform is the front-facing expression of that work: a clearer way to discover media, understand the options and start a proper conversation.</p>
             </div>
-            <div class="timeline" aria-label="How the company grew">
+            <div class="timeline" data-timeline aria-label="How the company grew">
+                <span class="timeline__line" data-timeline-line aria-hidden="true"></span>
                 <article>
                     <time datetime="2008">2008</time>
                     <h3>Make the story</h3>

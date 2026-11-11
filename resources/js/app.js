@@ -228,3 +228,25 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
 } else {
     document.querySelectorAll('[data-reveal]').forEach((target) => target.classList.add('is-visible'));
 }
+
+const loadScrollMotion = () => {
+    const targets = document.querySelector('[data-hero-art], [data-process], [data-timeline]');
+
+    if (!targets || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
+    import('./scroll-motion')
+        .then(({ initScrollMotion }) => initScrollMotion())
+        .catch(() => {
+            // Motion is an enhancement; the content and static thread remain usable.
+        });
+};
+
+if (document.readyState === 'complete') {
+    loadScrollMotion();
+} else {
+    window.addEventListener('load', loadScrollMotion, { once: true });
+}
+
+document.addEventListener('livewire:navigated', loadScrollMotion);
