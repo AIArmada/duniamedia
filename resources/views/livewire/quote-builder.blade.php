@@ -32,7 +32,7 @@
                                 <div class="selection-list">
                                     @forelse ($media as $item)
                                         <div class="selection-item" wire:key="selected-{{ $item->id }}">
-                                            <img src="{{ \App\Support\MediaImage::url($item->image) }}" alt="">
+                                            <img src="{{ \App\Support\MediaImage::url($item->displayImage()) }}" alt="">
                                             <div>
                                                 <strong>{{ $item->title }}</strong>
                                                 <span>{{ $item->type }} · {{ $item->location ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
@@ -112,9 +112,15 @@
                                 </label>
                                 @error('consent')<span class="form-error">{{ $message }}</span>@enderror
 
-                                <div class="notice" style="margin-bottom:1rem">
+                                <div class="notice" style="margin-bottom:0.9rem">
                                     No payment is collected and no media is reserved. This request is subject to availability, supplier approval and a final quotation.
                                 </div>
+
+                                <ul class="trust-list">
+                                    <li><x-dm-icon name="check" :size="15"/> No payment or booking online</li>
+                                    <li><x-dm-icon name="check" :size="15"/> Availability checked with the media owner</li>
+                                    <li><x-dm-icon name="check" :size="15"/> One team from brief to delivery</li>
+                                </ul>
 
                                 <button class="button button--primary" type="submit" wire:loading.attr="disabled">
                                     Request my proposal <span aria-hidden="true">↗</span>
@@ -126,6 +132,9 @@
 
                 @unless ($reference)
                     <aside class="quote-summary" aria-label="Proposal summary">
+                        <figure class="quote-summary__media">
+                            <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960]) }}" sizes="320px" alt="A warm creative studio table with notebooks and printed contact sheets" loading="lazy" decoding="async">
+                        </figure>
                         <h2>Your shortlist</h2>
                         <div class="quote-summary__row"><span>Media selected</span><strong>{{ count($selected) }}</strong></div>
                         <div class="quote-summary__row"><span>Services selected</span><strong>{{ count($addons) }}</strong></div>

@@ -22,9 +22,9 @@
                     <h1>{{ $owner['name'] }}</h1>
                     <p class="directory-hero__lede">{{ $owner['description'] }}</p>
                     <div class="directory-hero__stats">
-                        <span><strong>{{ count($owner['outlets']) }}</strong> outlets</span>
-                        <span><strong>{{ count($owner['categories']) }}</strong> categories</span>
-                        <span><strong>{{ $rateCards->count() }}</strong> rate cards</span>
+                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['outlets']) }}</strong> outlets</span>
+                        <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> categories</span>
+                        <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> rate cards</span>
                     </div>
                 </div>
                 <div class="directory-hero__actions">

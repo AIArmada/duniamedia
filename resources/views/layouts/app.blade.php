@@ -41,7 +41,7 @@
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
 @if (request()->routeIs('home'))
-<link rel="preload" as="image" href="{{ asset('assets/img/hero-media-city.webp') }}" fetchpriority="high">
+<link rel="preload" as="image" href="{{ asset('assets/img/v2/hero-city-960.webp') }}" imagesrcset="{{ asset('assets/img/v2/hero-city-640.webp') }} 640w, {{ asset('assets/img/v2/hero-city-960.webp') }} 960w, {{ asset('assets/img/v2/hero-city-1536.webp') }} 1536w" imagesizes="(max-width: 1024px) 100vw, 46vw" fetchpriority="high">
 @endif
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
@@ -62,14 +62,14 @@
                     <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
                 </summary>
                 <div class="nav-panel">
-                    <a href="{{ route('media.index') }}">Browse all media <span>TV, radio, out-of-home, digital, print and more</span></a>
-                    <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}">TV &amp; Broadcast <span>Free-to-air, pay-TV, news and studio formats</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Radio']) }}">Radio &amp; Audio <span>National, regional and drive-time audiences</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Outdoor']) }}">Outdoor &amp; DOOH <span>Billboards, LED screens, transit and airports</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Digital']) }}">Digital &amp; Publishing <span>Display, video, editorial and social</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Print']) }}">Print &amp; Publishing <span>Newspapers, magazines and advertorials</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Creators']) }}">Creators &amp; Talent <span>Niche voices, communities and collaborations</span></a>
-                    <a href="{{ route('advisor') }}">Media advisor <span>Start with your objective, not the inventory</span></a>
+                    <a href="{{ route('media.index') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>Browse all media</span> <span>TV, radio, out-of-home, digital, print and more</span></a>
+                    <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}"><span class="nav-panel__label"><x-dm-icon name="tv" :size="17"/>TV &amp; Broadcast</span> <span>Free-to-air, pay-TV, news and studio formats</span></a>
+                    <a href="{{ route('media.index', ['type' => 'Radio']) }}"><span class="nav-panel__label"><x-dm-icon name="radio" :size="17"/>Radio &amp; Audio</span> <span>National, regional and drive-time audiences</span></a>
+                    <a href="{{ route('media.index', ['type' => 'Outdoor']) }}"><span class="nav-panel__label"><x-dm-icon name="billboard" :size="17"/>Outdoor &amp; DOOH</span> <span>Billboards, LED screens, transit and airports</span></a>
+                    <a href="{{ route('media.index', ['type' => 'Digital']) }}"><span class="nav-panel__label"><x-dm-icon name="digital" :size="17"/>Digital &amp; Publishing</span> <span>Display, video, editorial and social</span></a>
+                    <a href="{{ route('media.index', ['type' => 'Print']) }}"><span class="nav-panel__label"><x-dm-icon name="print" :size="17"/>Print &amp; Publishing</span> <span>Newspapers, magazines and advertorials</span></a>
+                    <a href="{{ route('media.index', ['type' => 'Creators']) }}"><span class="nav-panel__label"><x-dm-icon name="creators" :size="17"/>Creators &amp; Talent</span> <span>Niche voices, communities and collaborations</span></a>
+                    <a href="{{ route('advisor') }}"><span class="nav-panel__label"><x-dm-icon name="compass" :size="17"/>Media advisor</span> <span>Start with your objective, not the inventory</span></a>
                 </div>
             </details>
 
@@ -79,12 +79,12 @@
                     <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
                 </summary>
                 <div class="nav-panel">
-                    <a href="{{ route('solutions') }}">Connected campaign system <span>Understand, create, place, engage, convert, learn</span></a>
-                    <a href="{{ route('services') }}#planning">Planning &amp; placement <span>Strategy, buying, negotiation and scheduling</span></a>
-                    <a href="{{ route('services') }}#creative">Content &amp; production <span>Film, audio, design and editorial</span></a>
-                    <a href="{{ route('services') }}#technology">Digital systems &amp; AI <span>Websites, CRM, automation and practical AI</span></a>
-                    <a href="{{ route('services') }}#measurement">Campaign measurement <span>Tracking, dashboards and useful reporting</span></a>
-                    <a href="{{ route('services') }}">All services <span>The full capability overview</span></a>
+                    <a href="{{ route('solutions') }}"><span class="nav-panel__label"><x-dm-icon name="spark" :size="17"/>Connected campaign system</span> <span>Understand, create, place, engage, convert, learn</span></a>
+                    <a href="{{ route('services') }}#planning"><span class="nav-panel__label"><x-dm-icon name="compass" :size="17"/>Planning &amp; placement</span> <span>Strategy, buying, negotiation and scheduling</span></a>
+                    <a href="{{ route('services') }}#creative"><span class="nav-panel__label"><x-dm-icon name="camera" :size="17"/>Content &amp; production</span> <span>Film, audio, design and editorial</span></a>
+                    <a href="{{ route('services') }}#technology"><span class="nav-panel__label"><x-dm-icon name="code" :size="17"/>Digital systems &amp; AI</span> <span>Websites, CRM, automation and practical AI</span></a>
+                    <a href="{{ route('services') }}#measurement"><span class="nav-panel__label"><x-dm-icon name="chart" :size="17"/>Campaign measurement</span> <span>Tracking, dashboards and useful reporting</span></a>
+                    <a href="{{ route('services') }}"><span class="nav-panel__label"><x-dm-icon name="briefcase" :size="17"/>All services</span> <span>The full capability overview</span></a>
                 </div>
             </details>
 
@@ -94,8 +94,8 @@
                     <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
                 </summary>
                 <div class="nav-panel">
-                    <a href="{{ route('creators.index') }}">Find creators <span>Explore the network by niche and platform</span></a>
-                    <a href="{{ route('creators.join') }}">Join the network <span>For independent creators and talent</span></a>
+                    <a href="{{ route('creators.index') }}"><span class="nav-panel__label"><x-dm-icon name="users" :size="17"/>Find creators</span> <span>Explore the network by niche and platform</span></a>
+                    <a href="{{ route('creators.join') }}"><span class="nav-panel__label"><x-dm-icon name="creators" :size="17"/>Join the network</span> <span>For independent creators and talent</span></a>
                 </div>
             </details>
 
@@ -216,7 +216,7 @@
 
         <div class="footer-legal">
             <p>© {{ date('Y') }} Dunia Media · RA Media Relations Sdn Bhd (948761-W). All rights reserved.</p>
-            <p>Inventory, rates, client relationships and availability shown on this platform are subject to verification with media owners and partners.</p>
+            <p>Inventory, rates, client relationships and availability shown on this platform are subject to verification with media owners and partners. Editorial imagery is illustrative; campaign footage and client marks are drawn from the RA Media archive where shown.</p>
         </div>
     </div>
 </footer>

@@ -106,6 +106,7 @@
                 </article>
             @empty
                 <div class="work-empty">
+                    <div class="empty-state__icon"><x-dm-icon name="search" :size="24"/></div>
                     <span class="eyebrow">No matches</span>
                     <h3>No campaigns match that search.</h3>
                     <p>Try a different client, platform or year — or reset the filters to see the full archive.</p>

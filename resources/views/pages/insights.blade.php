@@ -10,14 +10,19 @@
     <section class="section">
         <div class="container">
             @if ($articles->isEmpty())
-                <div class="empty-state" style="text-align:left">
-                    <span class="eyebrow">Editorial in preparation</span>
-                    <h3>Insights are being prepared.</h3>
-                    <p style="margin-left:0">We are writing the first set of practical pieces around the questions clients actually ask. In the meantime, these are the areas we will cover.</p>
-                    <div class="empty-state__actions" style="justify-content:flex-start">
-                        <a class="button button--primary" href="{{ route('media.index') }}">Explore media opportunities <span aria-hidden="true">↗</span></a>
-                        <a class="button button--secondary" href="{{ route('contact') }}">Speak with our team</a>
+                <div class="empty-state empty-state--split">
+                    <div>
+                        <span class="eyebrow">Editorial in preparation</span>
+                        <h3>Insights are being prepared.</h3>
+                        <p>We are writing the first set of practical pieces around the questions clients actually ask. In the meantime, these are the areas we will cover.</p>
+                        <div class="empty-state__actions">
+                            <a class="button button--primary" href="{{ route('media.index') }}">Explore media opportunities <span aria-hidden="true">↗</span></a>
+                            <a class="button button--secondary" href="{{ route('contact') }}">Speak with our team</a>
+                        </div>
                     </div>
+                    <figure class="empty-state__media">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/insight-media-mix.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="A media planning notebook, printed channel cards and coffee on a cream desk" loading="lazy" decoding="async">
+                    </figure>
                 </div>
 
                 <div class="topic-grid" style="margin-top:var(--grid-gap)">

@@ -23,8 +23,8 @@
                     <h1>{{ $outlet['name'] }}</h1>
                     <p class="directory-hero__lede">{{ $description }}</p>
                     <div class="directory-hero__stats">
-                        <span><a href="{{ route('media.owner', $owner['slug']) }}">Part of {{ $owner['name'] }} ↗</a></span>
-                        <span><strong>{{ $rateCards->count() }}</strong> rate {{ $rateCards->count() === 1 ? 'card' : 'cards' }}</span>
+                        <span><x-dm-icon name="building" :size="16"/><a href="{{ route('media.owner', $owner['slug']) }}">Part of {{ $owner['name'] }} ↗</a></span>
+                        <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> rate {{ $rateCards->count() === 1 ? 'card' : 'cards' }}</span>
                     </div>
                 </div>
                 <div class="directory-hero__actions">

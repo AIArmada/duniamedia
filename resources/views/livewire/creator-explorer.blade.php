@@ -9,7 +9,7 @@
         <div class="container">
             <div class="creator-paths">
                 <a class="creator-path" href="{{ route('contact') }}">
-                    <img src="{{ asset('assets/img/creators.webp') }}" alt="Creator filming a product story" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator filming a product story" loading="lazy" decoding="async">
                     <span class="creator-path__body">
                         <span class="eyebrow eyebrow--pale">For brands</span>
                         <h2>Find voices that fit the brief.</h2>
@@ -18,7 +18,7 @@
                     </span>
                 </a>
                 <a class="creator-path" href="{{ route('creators.join') }}">
-                    <img src="{{ asset('assets/img/creator-feature.webp') }}" alt="Creator working with a camera and content setup" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/persona-creator.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/persona-creator.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator working with a camera and content setup" loading="lazy" decoding="async">
                     <span class="creator-path__body">
                         <span class="eyebrow eyebrow--pale">For creators</span>
                         <h2>Your craft deserves the right opportunities.</h2>
@@ -41,7 +41,7 @@
             </div>
 
             @if ($creators->isEmpty())
-                <div class="empty-state" style="text-align:left">
+                <div class="empty-state" style="text-align:left"><div class="empty-state__icon"><x-dm-icon name="creators" :size="24"/></div>
                     <span class="eyebrow">Profiles are being verified</span>
                     <h3>The creator directory is in preparation.</h3>
                     <p style="margin-left:0">We are onboarding creators carefully rather than filling the page with invented faces and numbers. In the meantime, tell us the audience, niche and format you need — we will suggest a route.</p>

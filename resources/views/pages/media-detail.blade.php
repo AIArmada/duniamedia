@@ -35,7 +35,7 @@
         <div class="container detail__layout">
             <article class="detail__main">
                 <figure class="detail__visual">
-                    <img src="{{ \App\Support\MediaImage::url($media->image) }}" alt="{{ $media->title }}" width="1200" height="675" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url($media->displayImage()) }}" srcset="{{ \App\Support\MediaImage::srcset($media->displayImage(), [640, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 64vw" alt="{{ $media->title }}" width="1536" height="1024" decoding="async">
                 </figure>
 
                 <h2>What this opportunity is</h2>
@@ -43,12 +43,12 @@
 
                 <h3>Key facts</h3>
                 <div class="fact-grid">
-                    <div class="fact"><span>Channel</span><strong>{{ $media->type }}</strong></div>
-                    <div class="fact"><span>Owner / supplier</span><strong>{{ $media->channel ?? $media->supplier_name ?? 'Confirmed on enquiry' }}</strong></div>
-                    <div class="fact"><span>Location</span><strong>{{ $media->location ?? 'To be discussed' }}</strong></div>
-                    <div class="fact"><span>Audience</span><strong>{{ $media->audience ?? 'Defined during briefing' }}</strong></div>
-                    <div class="fact"><span>Availability</span><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></div>
-                    <div class="fact"><span>Pricing basis</span><strong>{{ $hasFixedPrice ? 'Indicative rate card' : 'On request' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Channel</span></div><strong>{{ $media->type }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Owner / supplier</span></div><strong>{{ $media->channel ?? $media->supplier_name ?? 'Confirmed on enquiry' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location ?? 'To be discussed' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audience ?? 'Defined during briefing' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="calendar" :size="16"/><span>Availability</span></div><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="chart" :size="16"/><span>Pricing basis</span></div><strong>{{ $hasFixedPrice ? 'Indicative rate card' : 'On request' }}</strong></div>
                 </div>
 
                 @if (! empty($specs['formats']) || ! empty($specs['price_tiers']))
@@ -141,6 +141,10 @@
                 </div>
                 <a class="button button--primary button--block" href="{{ route('quote.builder', ['media' => $media->id]) }}">Add to proposal <span aria-hidden="true">↗</span></a>
                 <a class="button button--secondary button--block" href="{{ route('contact') }}">Ask a media specialist</a>
+                <ul class="trust-list">
+                    <li><x-dm-icon name="check" :size="15"/> Rates verified before quoting</li>
+                    <li><x-dm-icon name="check" :size="15"/> No reservation online</li>
+                </ul>
                 <ul class="detail-meta-list">
                     <li><span>Availability</span><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></li>
                     <li><span>Location</span><strong>{{ $media->location ?? 'Nationwide' }}</strong></li>

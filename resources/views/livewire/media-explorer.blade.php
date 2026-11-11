@@ -1,4 +1,17 @@
 <div>
+    @php
+        $categoryIcons = [
+            'TV & Broadcast' => 'tv',
+            'Radio' => 'radio',
+            'Outdoor' => 'billboard',
+            'Digital' => 'digital',
+            'Print' => 'print',
+            'Indoor' => 'spaces',
+            'Creators' => 'creators',
+            'Podcast' => 'radio',
+        ];
+    @endphp
+
     <x-page-hero
         eyebrow="Media opportunities"
         title="Explore the <span class='editorial'>media</span> world."
@@ -12,9 +25,9 @@
     <section class="catalog" aria-label="Media catalogue">
         <div class="container">
             <div class="category-chips" role="group" aria-label="Filter by media category">
-                <button type="button" class="chip @if ($type === 'all') is-active @endif" wire:click="$set('type', 'all')" aria-pressed="{{ $type === 'all' ? 'true' : 'false' }}">All media</button>
+                <button type="button" class="chip @if ($type === 'all') is-active @endif" wire:click="$set('type', 'all')" aria-pressed="{{ $type === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
                 @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $category)
-                    <button type="button" class="chip @if ($type === $category) is-active @endif" wire:click="$set('type', '{{ $category }}')" aria-pressed="{{ $type === $category ? 'true' : 'false' }}">{{ $category }}</button>
+                    <button type="button" class="chip @if ($type === $category) is-active @endif" wire:click="$set('type', '{{ $category }}')" aria-pressed="{{ $type === $category ? 'true' : 'false' }}"><x-dm-icon :name="$categoryIcons[$category] ?? 'spark'" :size="16"/>{{ $category }}</button>
                 @endforeach
             </div>
 

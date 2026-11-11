@@ -130,6 +130,9 @@
                 </div>
 
                 <aside class="advisor-summary" aria-label="Your brief summary">
+                    <figure class="quote-summary__media">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/service-planning.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/service-planning.webp', [480, 960]) }}" sizes="320px" alt="A media planning session with printed schedules and a city map" loading="lazy" decoding="async">
+                    </figure>
                     @php
                         $budgetLabels = [
                             'under-15000' => 'Under RM15,000',

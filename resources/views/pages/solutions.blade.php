@@ -5,6 +5,7 @@
         eyebrow="Creative × technology × intelligence"
         title="Better reach is <span class='editorial'>only the beginning</span>."
         lede="A placement can create attention. A connected campaign turns that attention into something the business can see: an enquiry, a visit, a sale, a stronger relationship."
+        :media="asset('assets/img/v2/solutions-production.webp')"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('advisor') }}">Plan a connected campaign <span aria-hidden="true">↗</span></a>
@@ -24,15 +25,18 @@
 
             <div class="solution-grid">
                 @foreach ([
-                    ['Discover', 'Understand the audience, the objective, the constraints and what the business actually needs to happen.'],
-                    ['Strategise', 'Choose the channel roles, the regional relevance, the content plan and the measurement approach.'],
-                    ['Produce', 'Create the visual, video, audio and copy assets — using AI-assisted workflows only where they genuinely help.'],
-                    ['Distribute', 'Place the work across broadcast, out-of-home, editorial, digital, creators and custom media.'],
-                    ['Convert', 'Carry the response into landing pages, lead capture, CRM and a follow-up process that someone owns.'],
-                    ['Improve', 'Read the evidence, test the next creative move and feed the learning back into the plan.'],
+                    ['Discover', 'Understand the audience, the objective, the constraints and what the business actually needs to happen.', 'compass'],
+                    ['Strategise', 'Choose the channel roles, the regional relevance, the content plan and the measurement approach.', 'target'],
+                    ['Produce', 'Create the visual, video, audio and copy assets — using AI-assisted workflows only where they genuinely help.', 'camera'],
+                    ['Distribute', 'Place the work across broadcast, out-of-home, editorial, digital, creators and custom media.', 'megaphone'],
+                    ['Convert', 'Carry the response into landing pages, lead capture, CRM and a follow-up process that someone owns.', 'code'],
+                    ['Improve', 'Read the evidence, test the next creative move and feed the learning back into the plan.', 'chart'],
                 ] as $i => $step)
                     <article class="solution-card">
-                        <span class="solution-card__number">0{{ $i + 1 }}</span>
+                        <div class="solution-card__head">
+                            <span class="solution-card__number">0{{ $i + 1 }}</span>
+                            <span class="solution-card__icon"><x-dm-icon :name="$step[2]" :size="18"/></span>
+                        </div>
                         <h3>{{ $step[0] }}</h3>
                         <p>{{ $step[1] }}</p>
                     </article>
@@ -58,26 +62,26 @@
                     <a class="button button--primary" href="{{ route('contact') }}">Talk through your next campaign <span aria-hidden="true">↗</span></a>
                 </div>
                 <figure class="feature-split__media">
-                    <img src="{{ asset('assets/img/training.webp') }}" alt="A team working through a campaign plan together" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/persona-training.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/persona-training.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A team working through a campaign plan together" loading="lazy" decoding="async">
                     <figcaption>Strategy, production and delivery in one room.</figcaption>
                 </figure>
             </div>
 
             <div class="solution-visual">
                 <figure>
-                    <img src="{{ asset('assets/img/outdoor.webp') }}" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-outdoor.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
                     <figcaption>Place: a real outdoor moment in the city.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('assets/img/creators.webp') }}" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
                     <figcaption>Engage: creator content built for the audience.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('assets/img/digital.webp') }}" alt="A digital interface on a laptop screen" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/service-web.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A digital interface on a laptop screen" loading="lazy" decoding="async">
                     <figcaption>Convert: the digital journey after the impression.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('assets/img/editorial-measurement.webp') }}" alt="Campaign measurement notes and charts" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-measurement.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/insight-measurement.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="Campaign measurement notes and charts" loading="lazy" decoding="async">
                     <figcaption>Learn: reporting that answers a decision.</figcaption>
                 </figure>
             </div>

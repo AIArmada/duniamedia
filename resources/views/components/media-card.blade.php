@@ -1,11 +1,22 @@
 @props(['item'])
 @php
-    $imageSrcset = \App\Support\MediaImage::srcset($item->image, [360, 480, 720, 960]);
+    $displayImage = $item->displayImage();
+    $imageSrcset = \App\Support\MediaImage::srcset($displayImage, [360, 480, 720, 960]);
     $hasFixedPrice = $item->price_from && $item->pricing_mode !== 'on_request';
+    $typeIcons = [
+        'TV & Broadcast' => 'tv',
+        'Radio' => 'radio',
+        'Outdoor' => 'billboard',
+        'Digital' => 'digital',
+        'Print' => 'print',
+        'Indoor' => 'spaces',
+        'Creators' => 'creators',
+        'Podcast' => 'radio',
+    ];
 @endphp
 <article class="media-card">
     <a class="media-card__media" href="{{ route('media.show', $item->slug) }}" tabindex="-1" aria-hidden="true">
-        <img src="{{ \App\Support\MediaImage::url($item->image) }}"
+        <img src="{{ \App\Support\MediaImage::url($displayImage) }}"
              @if ($imageSrcset) srcset="{{ $imageSrcset }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 30vw" @endif
              alt="" loading="lazy" decoding="async">
         @if ($item->is_featured)
@@ -14,7 +25,7 @@
     </a>
     <div class="media-card__body">
         <div class="media-card__meta">
-            <span class="tag">{{ $item->type }}</span>
+            <span class="tag"><x-dm-icon :name="$typeIcons[$item->type] ?? 'spark'" :size="13"/>{{ $item->type }}</span>
             <span class="media-card__owner">{{ $item->channel ?? $item->supplier_name ?? 'Media owner on request' }} · {{ $item->location ?? 'Nationwide' }}</span>
         </div>
         <h3><a href="{{ route('media.show', $item->slug) }}">{{ $item->title }}</a></h3>

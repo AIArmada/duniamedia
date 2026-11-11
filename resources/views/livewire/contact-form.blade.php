@@ -61,15 +61,18 @@
                 </div>
 
                 <aside>
+                    <figure class="aside-media">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 34vw" alt="A quiet studio table with notebooks, coffee and printed contact sheets" loading="lazy" decoding="async">
+                    </figure>
                     <div class="aside-panel">
                         <span class="eyebrow eyebrow--plain">More specific?</span>
                         <h2>Use the route that fits.</h2>
                         <p>These shorter journeys help us route your request to the right team.</p>
                         <div class="contact-links">
-                            <a class="contact-link" href="{{ route('advisor') }}">Plan a campaign <span aria-hidden="true">↗</span></a>
-                            <a class="contact-link" href="{{ route('quote.builder') }}">Build a media proposal <span aria-hidden="true">↗</span></a>
-                            <a class="contact-link" href="{{ route('creators.join') }}">Join as a creator <span aria-hidden="true">↗</span></a>
-                            <a class="contact-link" href="{{ route('assets.join') }}">List a media space <span aria-hidden="true">↗</span></a>
+                            <a class="contact-link" href="{{ route('advisor') }}"><span class="contact-link__label"><x-dm-icon name="compass" :size="17"/>Plan a campaign</span><span aria-hidden="true">↗</span></a>
+                            <a class="contact-link" href="{{ route('quote.builder') }}"><span class="contact-link__label"><x-dm-icon name="document" :size="17"/>Build a media proposal</span><span aria-hidden="true">↗</span></a>
+                            <a class="contact-link" href="{{ route('creators.join') }}"><span class="contact-link__label"><x-dm-icon name="creators" :size="17"/>Join as a creator</span><span aria-hidden="true">↗</span></a>
+                            <a class="contact-link" href="{{ route('assets.join') }}"><span class="contact-link__label"><x-dm-icon name="building" :size="17"/>List a media space</span><span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
 

@@ -2,6 +2,27 @@
 
 @section('content')
     @php
+        $serviceImages = [
+            'media-planning-buying' => 'assets/img/v2/service-planning.webp',
+            'branding-creative-studio' => 'assets/img/v2/service-creative.webp',
+            'ai-video-image-production' => 'assets/img/v2/service-ai.webp',
+            'websites-conversion-systems' => 'assets/img/v2/service-web.webp',
+            'creator-influencer-campaigns' => 'assets/img/v2/service-creators.webp',
+            'media-asset-monetisation' => 'assets/img/v2/service-spaces.webp',
+            'ai-seminars-corporate-training' => 'assets/img/v2/academy-hero.webp',
+            'campaign-analytics-automation' => 'assets/img/v2/service-analytics.webp',
+        ];
+        $serviceIcons = [
+            'media-planning-buying' => 'compass',
+            'branding-creative-studio' => 'spark',
+            'ai-video-image-production' => 'play',
+            'websites-conversion-systems' => 'code',
+            'creator-influencer-campaigns' => 'users',
+            'media-asset-monetisation' => 'building',
+            'ai-seminars-corporate-training' => 'briefcase',
+            'campaign-analytics-automation' => 'chart',
+        ];
+
         $details = [
             'media-planning-buying' => [
                 'anchor' => 'planning',
@@ -104,10 +125,10 @@
                     @php($detail = $details[$service->slug] ?? null)
                     <article class="service-row" id="{{ $detail['anchor'] ?? $service->slug }}">
                         <figure class="service-row__media">
-                            <img src="{{ \App\Support\MediaImage::url($service->image) }}" alt="" loading="lazy" decoding="async">
+                            <img src="{{ \App\Support\MediaImage::url($serviceImages[$service->slug] ?? $service->image) }}" srcset="{{ \App\Support\MediaImage::srcset($serviceImages[$service->slug] ?? $service->image, [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 45vw" alt="" loading="lazy" decoding="async">
                         </figure>
                         <div>
-                            <span class="service-row__index">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }} / {{ strtoupper($service->category) }}</span>
+                            <div class="service-row__kicker"><span class="service-row__icon"><x-dm-icon :name="$serviceIcons[$service->slug] ?? 'spark'" :size="18"/></span><span class="service-row__index">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }} / {{ strtoupper($service->category) }}</span></div>
                             <h2>{{ $service->title }}</h2>
                             <p>{{ $service->summary }}</p>
                             @if ($detail)

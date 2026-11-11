@@ -5,7 +5,7 @@
         eyebrow="Dunia Media Academy"
         title="AI fluency.<br><span class='editorial'>Real business advantage.</span>"
         lede="Seminars, hands-on programmes and corporate learning across AI, creativity, branding and business technology — built for the way teams actually work."
-        :media="asset('assets/img/training.webp')"
+        :media="asset('assets/img/v2/academy-hero.webp')"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('contact') }}">Design a programme for my team <span aria-hidden="true">↗</span></a>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="track-grid">
-                @php($trackImages = ['assets/img/training.webp', 'assets/img/creator-feature.webp', 'assets/img/digital.webp'])
+                @php($trackImages = ['assets/img/v2/academy-hero.webp', 'assets/img/v2/service-creative.webp', 'assets/img/v2/service-web.webp'])
                 @foreach ($trainings as $training)
                     <article class="track">
                         <div class="track__media">
@@ -58,7 +58,7 @@
                 @endforeach
                 <article class="track">
                     <div class="track__media">
-                        <img src="{{ asset('assets/img/editorial-media-mix.webp') }}" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" alt="" loading="lazy" decoding="async">
                     </div>
                     <span class="eyebrow eyebrow--plain">Strategy</span>
                     <h3>AI adoption for leadership</h3>
@@ -67,7 +67,7 @@
                 </article>
                 <article class="track">
                     <div class="track__media">
-                        <img src="{{ asset('assets/img/digital.webp') }}" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" alt="" loading="lazy" decoding="async">
                     </div>
                     <span class="eyebrow eyebrow--plain">Operations</span>
                     <h3>Automation &amp; workflow design</h3>
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="feature-split feature-split--reverse">
                 <figure class="feature-split__media">
-                    <img src="{{ asset('assets/img/training.webp') }}" alt="A facilitator leading a hands-on AI workshop with a team" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on AI workshop with a team" loading="lazy" decoding="async">
                     <figcaption>Brief → demonstration → practice → useful output → follow-up.</figcaption>
                 </figure>
                 <div class="feature-split__body">
