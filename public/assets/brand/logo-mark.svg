@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 600 740"><title id="title">Dunia Media symbol</title><desc id="desc">Lowercase d ribbon in magenta, plum, and soft gold with a white play triangle</desc><defs>
+  <linearGradient id="plumCore" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#50003A"/><stop offset=".52" stop-color="#79034F"/><stop offset="1" stop-color="#9B075E"/></linearGradient>
+  <linearGradient id="magentaArc" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F73A99"/><stop offset=".46" stop-color="#DF0978"/><stop offset="1" stop-color="#9A075B"/></linearGradient>
+  <linearGradient id="magentaStem" x1=".1" y1=".2" x2="1" y2=".88"><stop stop-color="#F82E88"/><stop offset=".50" stop-color="#CC085F"/><stop offset="1" stop-color="#81024A"/></linearGradient>
+  <linearGradient id="goldFold" x1="0" y1="0" x2=".92" y2="1"><stop stop-color="#C77951"/><stop offset=".42" stop-color="#EAB184"/><stop offset=".72" stop-color="#F4C695"/><stop offset="1" stop-color="#D98762"/></linearGradient>
+  <linearGradient id="goldBase" x1="0" y1=".8" x2="1" y2=".2"><stop stop-color="#B75F51"/><stop offset=".27" stop-color="#D78669"/><stop offset=".74" stop-color="#F4BE89"/><stop offset="1" stop-color="#E3A172"/></linearGradient>
+  <linearGradient id="wordPlum" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="350" y2="0"><stop stop-color="#50003A"/><stop offset="1" stop-color="#6E044D"/></linearGradient>
+  <linearGradient id="wordMedia" gradientUnits="userSpaceOnUse" x1="300" y1="0" x2="655" y2="0"><stop stop-color="#C60569"/><stop offset=".65" stop-color="#DF106A"/><stop offset="1" stop-color="#E6A270"/></linearGradient>
+</defs><g id="duniamedia-mark">
+  <!-- Rounded lowercase d silhouette and dimensional bowl -->
+  <path fill="url(#plumCore)" d="M365 202C295 168 209 185 141 230C61 283 28 365 36 460C43 558 111 642 213 680C309 715 413 675 479 602C519 557 540 501 540 436L540 90C540 57 520 39 495 41C461 45 408 80 389 95C367 112 359 138 359 170Z"/>
+  <!-- Upper pink ribbon, crossing behind the upright d stem -->
+  <path fill="url(#magentaArc)" d="M36 450C34 346 92 248 181 206C250 172 324 176 369 203L368 354C333 310 287 290 238 298C149 311 74 365 36 450Z"/>
+  <!-- Dark inner bowl - restrained shadow gives depth but remains logo-friendly -->
+  <path fill="url(#plumCore)" d="M36 450C62 368 133 307 204 297C268 288 325 324 365 369L383 465C327 510 263 530 193 584C158 612 143 636 151 660C63 616 27 532 36 450Z"/>
+  <!-- Main vertical ribbon and lower crossover -->
+  <path fill="url(#magentaStem)" d="M360 221C361 160 375 133 418 103C455 77 491 64 518 87C530 98 540 118 540 148V388C540 457 521 501 467 534C418 562 345 585 279 610C214 635 170 649 151 660C155 623 189 587 253 556C318 526 389 501 446 464C487 439 497 409 498 362V176C453 207 398 240 366 299Z"/>
+  <!-- Folded edge along upper mast: matte champagne gold, no hard chrome highlights -->
+  <path fill="url(#goldFold)" d="M359 299V176C359 137 368 114 400 90C434 64 481 35 506 40C525 43 540 61 540 87C540 127 498 155 449 186C397 218 370 240 359 299Z"/>
+  <!-- Front lower golden ribbon -->
+  <path fill="url(#goldBase)" d="M151 660C172 630 214 602 286 570C363 538 434 514 479 485C514 462 532 426 540 388V435C540 528 496 607 417 655C350 698 268 707 211 682C182 670 162 668 151 660Z"/>
+  <!-- Micro seam for layered finish; no glow, flare, or external reflection -->
+  <path d="M154 658C211 596 341 553 443 502C507 471 532 435 539 391" fill="none" stroke="#F5CEA6" stroke-width="1.65" stroke-linecap="round" opacity=".65"/>
+  <path d="M360 293C369 242 401 209 451 179C493 154 533 125 539 91" fill="none" stroke="#F7D7B3" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <!-- Clear central play symbol -->
+  <path fill="#FFFFFF" d="M253 365C244 359 235 358 227 362C218 367 216 375 216 385V489C216 507 231 518 247 510L340 456C353 448 354 430 340 422Z"/>
+</g></svg>

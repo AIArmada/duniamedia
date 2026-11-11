@@ -23,3 +23,6 @@
 /database/staging.sqlite
 /.phpunit.result.cache
 /.env.bak-dev
+
+# Source design kit extracted from the supplied handoff archive.
+/.design-kit/

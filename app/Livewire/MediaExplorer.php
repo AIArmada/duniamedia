@@ -36,6 +36,16 @@ class MediaExplorer extends Component
         }
     }
 
+    public function clearFilters(): void
+    {
+        $this->reset(['search', 'type', 'vendor', 'location', 'budget']);
+        $this->type = 'all';
+        $this->vendor = 'all';
+        $this->location = 'all';
+        $this->budget = 'any';
+        $this->resetPage();
+    }
+
     public function render()
     {
         $query = MediaListing::query()->where('is_published', true)
@@ -58,6 +68,6 @@ class MediaExplorer extends Component
         }
         $vendors = MediaListing::query()->where('is_published', true)->whereNotNull('channel')->distinct()->orderBy('channel')->pluck('channel');
 
-        return view('livewire.media-explorer', ['listings' => $query->paginate(9), 'vendors' => $vendors])->layout('layouts.app', ['pageTitle' => 'Explore Media | Dunia Media']);
+        return view('livewire.media-explorer', ['listings' => $query->paginate(9), 'vendors' => $vendors])->layout('layouts.app', ['pageTitle' => 'Explore Media Opportunities | Dunia Media', 'metaDescription' => 'Browse television, radio, outdoor, digital, print and creator media opportunities. Rates are indicative and verified with the media owner before booking.']);
     }
 }

@@ -1,0 +1,95 @@
+/* Dunia Media design tokens — plum / magenta / satin champagne */
+:root {
+  color-scheme: light;
+
+  --font-ui: 'Manrope', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-editorial: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+
+  --color-plum-950: #300020;
+  --color-plum-900: #500038;
+  --color-plum-800: #71034f;
+  --color-magenta-600: #c30866;
+  --color-magenta-500: #e11278;
+  --color-blush-100: #fce8ef;
+  --color-champagne-500: #d3a071;
+  --color-champagne-300: #f2c69d;
+  --color-cream: #fbf7f2;
+  --color-paper: #ffffff;
+  --color-mist: #f3f1ef;
+  --color-charcoal: #211d21;
+  --color-slate: #66616a;
+  --color-teal: #087d82;
+  --color-broadcast-blue: #3154ba;
+  --color-success: #347b58;
+  --color-danger: #b73843;
+
+  --color-text: var(--color-charcoal);
+  --color-text-muted: var(--color-slate);
+  --color-heading: var(--color-plum-900);
+  --color-surface: var(--color-paper);
+  --color-on-dark: #fff8f7;
+  --color-focus: #0e7186;
+  --color-border: rgba(48, 0, 32, 0.1);
+  --color-border-strong: rgba(48, 0, 32, 0.23);
+
+  --gradient-logo-plum: linear-gradient(125deg, #51003b, #8c075a);
+  --gradient-logo-magenta: linear-gradient(115deg, #f53695, #c9056a 72%, #80024b);
+  --gradient-logo-gold: linear-gradient(135deg, #c17c58, #e8ae81 58%, #f3c49a);
+  --gradient-editorial: linear-gradient(125deg, #51003b 0%, #b10762 100%);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --page-max: 1320px;
+  --reading-max: 760px;
+  --page-gutter: clamp(20px, 4.2vw, 72px);
+  --section-space: clamp(60px, 8vw, 136px);
+  --grid-gap: clamp(14px, 2vw, 24px);
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 12px 34px rgba(29, 11, 22, 0.055);
+  --shadow-card-hover: 0 18px 48px rgba(29, 11, 22, 0.095);
+  --shadow-nav: 0 6px 22px rgba(29, 11, 22, 0.045);
+
+  --dur-fast: 160ms;
+  --dur-normal: 230ms;
+  --dur-reveal: 450ms;
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --fs-display: clamp(3.3rem, 6.2vw, 6.6rem);
+  --fs-h1: clamp(3.1rem, 5vw, 5.4rem);
+  --fs-h2: clamp(2.3rem, 3.8vw, 4.25rem);
+  --fs-h3: clamp(1.35rem, 2vw, 1.75rem);
+  --fs-body: clamp(1.07rem, 1.14vw, 1.22rem);
+  --fs-small: 0.88rem;
+
+  --header-height: 80px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --fs-display: clamp(2.45rem, 10vw, 3.65rem);
+    --fs-h1: clamp(2.25rem, 8.7vw, 3.45rem);
+    --fs-h2: clamp(1.9rem, 7.5vw, 2.9rem);
+    --fs-h3: clamp(1.15rem, 4.8vw, 1.4rem);
+    --fs-body: clamp(1rem, 3vw, 1.08rem);
+    --section-space: clamp(60px, 12vw, 88px);
+    --header-height: 68px;
+  }
+}
