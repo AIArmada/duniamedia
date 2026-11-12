@@ -22,8 +22,9 @@ The original import published 29 files as 28 listings. The 12 Nov 2026 refresh a
 | 2024 Malaysiakini Media Kit (as of 20 Feb 2024).pdf | `malaysiakini-media-kit-2024` | Digital | Malaysiakini display, branded content, video, EDM and survey packages |
 | Event Coverage (Video, Article) by Mkini & KiniTV (Oct 2026_2027).pdf | `malaysiakini-kinitv-event-coverage-2026-2027` | Digital | Current event article/video coverage rates for Malaysiakini and KiniTV |
 | SINAR KARANGRAF - RATECARD 2025_2026.pdf | `sinar-karangkraf-ratecard-2025-2026` | Print | Full Sinar Harian, SinarPlus, Sinar Bestari and Sinar Daily media kit |
+| TVS Profile OCTOBER 2026 (3).pdf | `tvs-sponsorship-spot-buy-2026` (supplement) | TV & Broadcast | Reach, OTT, news-belt and live-coverage proof; also notes the Miri billboard due 30 Nov 2026 |
 
-The refreshed Drive folder also holds the TVS Profile deck (not a rate card) and a duplicate Target Media upload. The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged.
+The refreshed Drive folder also holds a duplicate Target Media upload. The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged. The TVS Profile deck is attached to the TVS listing as a second document and supplies the reach, OTT, news-belt and Miri billboard details; it is not a rate card.
 
 The eleven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
 

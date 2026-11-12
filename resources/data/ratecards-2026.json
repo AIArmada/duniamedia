@@ -1278,9 +1278,9 @@
       "type": "TV & Broadcast",
       "channel": "TV Sarawak (TVS)",
       "location": "Sarawak",
-      "audience": "Sarawak and Borneo viewers across Malay, Iban, Mandarin and English programming",
+      "audience": "Sarawak and Borneo viewers; 11.7M unique reach and 172.8M TV views in Jan–Sep 2026",
       "summary": "30-second TVC RM1,800 fringe / RM3,600 prime; sponsor formats from RM600, naming rights RM18k, special reports RM9k.",
-      "description": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax.",
+      "description": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax. TVS Profile (updated 15 October 2026): 11.7M unique reach and 172.8M total views on Nielsen (Peninsular, Jan–Sep 2026); 7.3M reach and 103.6M views via Fifty5Blue; 3.73M social followers with 1.46B social views; 3.05M website visitors; TVS Inspire OTT app at 72.8K lifetime downloads. News belt: TVS Pagi 7am, TVS Tengahari 12pm, Utama 740 7:40pm, TVS Nightline 10:30pm, plus Berita Iban, Rebao, Berita Wilayah and Detik Dunia. 2025 live coverage totalled 126 events and 366.9M linear-plus-digital viewers.",
       "price_from": 600,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
@@ -1298,23 +1298,36 @@
           "Naming rights",
           "Special report",
           "Product placement",
-          "Crawler"
+          "Crawler",
+          "Social media posts",
+          "Website/OTT display",
+          "Live telecast"
         ],
         "price_tiers": [
           "30s fringe RM1,800",
           "30s prime RM3,600",
           "Naming rights RM18k prime",
-          "Special report RM9k prime"
+          "Special report RM9k prime",
+          "Social posts RM1,000–3,000",
+          "Website/OTT CPM RM30–90",
+          "Live telecast from RM120,000"
         ],
         "validity": "2026 rate card",
         "language": "Malay / Iban / Mandarin / English",
-        "source_file": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy).pdf (23 pages)",
+        "source_file": "TVS Full Rate Card 2026 (23 pages) + TVS Profile October 2026 (21 pages)",
         "documents": [
           {
             "name": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy)",
             "size": 9304143,
             "ext": "pdf",
             "file": "tvs-sponsorship-spot-buy-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "TVS Profile October 2026",
+            "size": 9676159,
+            "ext": "pdf",
+            "file": "tvs-profile-2026.pdf",
             "kind": "document"
           }
         ]
@@ -1325,10 +1338,10 @@
       "slug": "billboard-sarawak-smg-2026",
       "type": "Outdoor",
       "channel": "Sarawak Media Group (SMG)",
-      "location": "Kuching & Bintulu, Sarawak",
+      "location": "Kuching, Bintulu & Miri, Sarawak",
       "audience": "Sarawak road traffic: 110k–139k daily vehicles per site",
       "summary": "Three LED double-screen sites from RM500/day or RM15k/month single screen; 2-site 10% and 3-site 15% bundles.",
-      "description": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026.",
+      "description": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026. A fourth Miri site at Jalan Padang (opposite Miri Clocktower) is scheduled for completion on 30 November 2026; rates to be confirmed.",
       "price_from": 500,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
@@ -1342,7 +1355,8 @@
           "Single screen",
           "Double screen",
           "Two-site bundle",
-          "Three-site bundle"
+          "Three-site bundle",
+          "Miri site (from Nov 2026)"
         ],
         "price_tiers": [
           "RM500/day single",
@@ -1350,7 +1364,7 @@
           "RM30k/month double",
           "RM1,275/day three-site single"
         ],
-        "validity": "2026; cross-city promotion 1 Jun–31 Jul 2026",
+        "validity": "2026; Miri site expected 30 Nov 2026; cross-city promotion 1 Jun–31 Jul 2026",
         "language": "Malay / English / Chinese",
         "source_file": "Billboard Rate Card - Sarawak-compressed (1).pdf (19 pages)",
         "documents": [
