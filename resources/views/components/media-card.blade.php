@@ -26,7 +26,13 @@
     <div class="media-card__body">
         <div class="media-card__meta">
             <span class="tag"><x-dm-icon :name="$typeIcons[$item->offering_type] ?? 'spark'" :size="13"/>{{ $item->offering_type }}</span>
-            <span class="media-card__owner">{{ $item->channel_label ?? $item->seller?->display_name ?? 'Media owner on request' }} · {{ $item->location_label ?? 'Nationwide' }}</span>
+            <span class="media-card__owner">
+                {{ $item->seller?->display_name ?? 'Media owner on request' }}
+                @if ($item->channel_label && $item->channel_label !== $item->seller?->display_name)
+                    · {{ $item->channel_label }}
+                @endif
+                · {{ $item->location_label ?? 'Nationwide' }}
+            </span>
         </div>
         <h3><a href="{{ route('media.show', $item->slug) }}">{{ $item->name }}</a></h3>
         <p class="media-card__summary">{{ $item->summary }}</p>

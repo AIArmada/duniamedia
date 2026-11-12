@@ -44,7 +44,7 @@
                             </span>
                             <span class="outlet-tile__name">{{ $owner['name'] }}</span>
                             <span class="tiny muted" style="display:block;margin-top:.3rem">{{ \Illuminate\Support\Str::limit($owner['description'], 120) }}</span>
-                            <span class="tiny muted" style="display:block;margin-top:.5rem">{{ count($owner['outlets']) }} outlets · {{ count($owner['categories']) }} categories</span>
+                            <span class="tiny muted" style="display:block;margin-top:.5rem">{{ count($owner['outlets']) }} channels · {{ count($owner['categories']) }} categories</span>
                             <span class="outlet-tile__arrow" aria-hidden="true">↗</span>
                         </a>
                     @endforeach

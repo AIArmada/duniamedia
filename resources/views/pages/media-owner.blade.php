@@ -23,7 +23,7 @@
                     <h1>{{ $owner['name'] }}</h1>
                     <p class="directory-hero__lede">{{ $owner['description'] }}</p>
                     <div class="directory-hero__stats">
-                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['outlets']) }}</strong> outlets</span>
+                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['outlets']) }}</strong> channels</span>
                         <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> categories</span>
                         <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> rate cards</span>
                     </div>
@@ -63,8 +63,8 @@
             <div class="section-heading">
                 <div>
                     <span class="eyebrow">The roster</span>
-                    <h2 id="roster-title" class="section-title">Outlets under {{ $owner['name'] }}.</h2>
-                    <p>Each outlet has its own page with audience context and related rate cards.</p>
+                    <h2 id="roster-title" class="section-title">Channels under {{ $owner['name'] }}.</h2>
+                    <p>Each channel has its own page with audience context and related rate cards.</p>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
                 <section class="directory-category" aria-label="{{ $category['label'] }}">
                     <div class="directory-category__head">
                         <h3>{{ $category['label'] }}</h3>
-                        <span>{{ count($category['brands']) }} {{ count($category['brands']) === 1 ? 'outlet' : 'outlets' }}</span>
+                        <span>{{ count($category['brands']) }} {{ count($category['brands']) === 1 ? 'channel' : 'channels' }}</span>
                     </div>
                     <div class="outlet-grid">
                         @foreach (collect($owner['outlets'])->where('category', $category['label']) as $outlet)

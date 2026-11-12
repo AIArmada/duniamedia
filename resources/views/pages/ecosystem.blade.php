@@ -16,6 +16,24 @@
         <div class="container">
             <div class="section-heading">
                 <div>
+                    <span class="eyebrow">Four words people mix up</span>
+                    <h2 class="section-title">Platform, medium, channel, format.</h2>
+                    <p>These are not interchangeable. A plan becomes comparable when each one is named correctly.</p>
+                </div>
+            </div>
+            <div class="topic-grid">
+                <article class="topic"><span class="tag tag--blush">Platform</span><h3>Traditional or digital</h3><p>The broad delivery world. Traditional covers broadcast, print, outdoor and cinema. Digital covers websites, apps, social, OTT and digital screens.</p></article>
+                <article class="topic"><span class="tag tag--blush">Medium</span><h3>The type of media</h3><p>Television, radio, print, out-of-home, DOOH, website, social media, creator, cinema or place-based. A medium describes what kind of media it is, not who sells it.</p></article>
+                <article class="topic"><span class="tag tag--blush">Channel</span><h3>The specific outlet or brand</h3><p>TV3, TV9, Hot FM, 988, BFM, The Star, a YouTube channel or a named billboard network. A channel is the distribution outlet a buyer actually appears on.</p></article>
+                <article class="topic"><span class="tag tag--blush">Format</span><h3>The creative shape</h3><p>A 30-second TV spot, a 15-second radio spot, a billboard face, a lift screen loop, an Instagram Story or a sponsored article. The format tells the creative team what to produce.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--cream">
+        <div class="container">
+            <div class="section-heading">
+                <div>
                     <span class="eyebrow">The chain</span>
                     <h2 class="section-title">How an opportunity is assembled.</h2>
                     <p>A location becomes sellable inventory only after rights, structure, asset, surface, placement and commercial terms are clear.</p>
