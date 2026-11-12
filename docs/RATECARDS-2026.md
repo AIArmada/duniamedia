@@ -1,10 +1,26 @@
-# Rate Cards 2026 — Allowed-only Inventory (29 files → 28 listings)
+# Rate Cards 2026 — Allowed-only Inventory (35 listings)
 
 Sources:
 - Folder A `RATECARD-2026DuniaMedia-RAMedia` (imported into this app)
-- Folder B `RAMediaRateCard2026` (imported into this app)
+- Folder B `RAMediaRateCard2026` (imported into this app; refreshed 12 Nov 2026)
 
-29 files are imported and hosted privately by the app (PDF/XLSX/JPG), streamed through a local route. 14 owner-restricted files are excluded entirely — no listing, no external link, no price.
+The original import published 29 files as 28 listings. The 12 Nov 2026 refresh added 7 listings, bringing the catalog to 35. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no listing, no external link, no price.
+
+## 12 Nov 2026 update — Sarawak, IKIM, Media Prima Audio, RA Media Relations
+
+| Source file | Listing slug | Type | Why it belongs there |
+|---|---|---|---|
+| RA_Media_Relations_News_Slot_Rate_Card_2026_2027.pdf | `ra-media-relations-news-slot-2026-2027` | TV & Broadcast | RA Media's own news-slot placements on TV3, Astro AWANI, TV1, TV AlHijrah and TVS |
+| RA_Media_Relations_Live_TV_Talkshow_Rate_Card_2026_2027.pdf | `ra-media-relations-live-tv-talkshow-2026-2027` | TV & Broadcast | Live interview/VT integrations on TV3, TV9 and TV AlHijrah talkshows |
+| TVS Full Rate Card 2026 (Sponsorship & Spot Buy).pdf | `tvs-sponsorship-spot-buy-2026` | TV & Broadcast | TV Sarawak's own TVC and sponsorship card |
+| Billboard Rate Card - Sarawak-compressed (1).pdf | `billboard-sarawak-smg-2026` | Outdoor | Sarawak Media Group LED billboards in Kuching and Bintulu |
+| Pakej Media Istimewa Ramadan IKIM_2027.pdf | `ikim-fm-ramadan-2027` | Radio | IKIMfm Ramadan sponsorship and jingle packages |
+| MPA Form 1.2.pdf | `media-prima-audio-trade-show-2025` | Radio | Media Prima Audio trade-show packages across its radio stations |
+| Upfront27 Sales Kit.pdf | `astro-upfront-2027` | TV & Broadcast | Astro's 2027 upfront packages (TV-led, with audio, talent and on-ground add-ons) |
+
+The refreshed Drive folder also contains TVS Profile, Target Media Y2026, Sinar Karangraf, Malaysiakini 2024, SH anniversary and Mkini event-coverage files. They are not part of this update; Target Media still points to the published Q2 2025 workbook.
+
+The seven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
 
 ## How to read
 - `price_from` = lowest indicative rate-card figure seen (before 8% SST, discounts, DBP/operator approval). `indicative` ≠ confirmed booking rate. Everything stays `availability_status=on_request`, `verified_at=null` until RA Media verifies slots.

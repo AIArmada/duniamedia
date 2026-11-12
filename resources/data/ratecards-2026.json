@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-07 allowed-only",
+  "updated": "2026-11-12 sarawak/audio/RA update",
   "sources": [
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
-    "RAMediaRateCard2026 (folder archive, imported)"
+    "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
   ],
-  "note": "28 rate-card listings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
+  "note": "35 rate-card listings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
   "listings": [
     {
       "title": "988 FM 2026 — Radio + Digital (Star RFM)",
@@ -1166,6 +1166,323 @@
             "ext": "xlsx",
             "file": "putera-pre-post-2024-reference.xlsx",
             "kind": "workbook"
+          }
+        ]
+      }
+    },
+    {
+      "title": "RA Media News Slot 2026/27 — Prime TV News Placements",
+      "slug": "ra-media-relations-news-slot-2026-2027",
+      "type": "TV & Broadcast",
+      "channel": "RA Media Relations",
+      "location": "Nationwide",
+      "audience": "Free-to-air and Astro news viewers across Malay, English, Chinese and Tamil audiences",
+      "summary": "Two-minute news-slot placements: TV3 Buletin Utama RM75k, TV3 1.30PM RM40k, AWANI 7.45PM RM50k, TV1 RM20k, TVS RM9k.",
+      "description": "RA Media Relations news-slot rate card for 2026/27, maximum two-minute placement per news programme. TV3 Buletin Utama RM75,000 (RM81,000 with 8% SST); TV3 Buletin 1.30PM RM40,000 (RM43,200); Astro AWANI AWANI 7.45PM RM50,000 (RM54,000); Astro AWANI Buletin AWANI RM30,000 (RM32,400); TV1 Berita Perdana RM20,000 (RM21,600); TV AlHijrah Berita AlHijrah RM8,000 (RM8,640); TVS TVS Utama 7.40 RM9,000 (RM9,720). Placement, scheduling and content are subject to broadcaster approval and confirmation.",
+      "price_from": 8000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "RA Media Relations",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "RA Media Relations",
+        "formats": [
+          "News slot placement (max 2 min)",
+          "TV3",
+          "Astro AWANI",
+          "TV1",
+          "TV AlHijrah",
+          "TVS"
+        ],
+        "price_tiers": [
+          "TV3 Buletin Utama RM75k",
+          "AWANI 7.45PM RM50k",
+          "TV3 1.30PM RM40k",
+          "TV1 RM20k",
+          "TVS RM9k"
+        ],
+        "validity": "2026/2027 rate card",
+        "language": "Malay / English / Chinese / Tamil",
+        "source_file": "RA_Media_Relations_News_Slot_Rate_Card_2026_2027.pdf (1 page)",
+        "documents": [
+          {
+            "name": "RA Media Relations News Slot Rate Card 2026/2027",
+            "size": 86434,
+            "ext": "pdf",
+            "file": "ra-media-relations-news-slot-2026-2027.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "RA Media Live TV Talkshow 2026/27 — TV3, TV9 & TV AlHijrah",
+      "slug": "ra-media-relations-live-tv-talkshow-2026-2027",
+      "type": "TV & Broadcast",
+      "channel": "RA Media Relations",
+      "location": "Nationwide",
+      "audience": "Daytime talk-show viewers: Malay women, families and lifestyle audiences",
+      "summary": "Live interview and VT integrations: MHI from RM18k, WHI from RM25k, NLKO RM8k, TV AlHijrah RM9k–10k.",
+      "description": "RA Media Relations live TV talkshow rate card for 2026/27. TV3 Media Prima: Malaysia Hari Ini (MHI, Mon–Fri 10am) live interview 6 min RM25,000 (RM27,000 with 8% SST), 3 min RM18,000 (RM19,440), VT 3 min RM18,000 (RM19,440). Wanita Hari Ini (WHI, Mon–Sat 12pm) live 6 min RM38,000 (RM41,040), 3 min RM25,000 (RM27,000), VT 3 min RM25,000 (RM27,000), host mention 30 sec RM5,000 (RM5,400). TV9 Nasi Lemak Kopi O (NLKO, Wed–Fri 10:30am) live 6 min RM8,000 (RM8,640). TV AlHijrah Assalamualaikum weekend (Fri–Sun) RM9,000 (RM9,720), weekdays (Mon–Thu) RM10,000 (RM10,800). VT placements require LPF submission; rates may be revised during Ramadan and Raya.",
+      "price_from": 5000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "RA Media Relations",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "RA Media Relations",
+        "formats": [
+          "Live interview",
+          "Video tape (VT)",
+          "Host mention",
+          "Programme integration"
+        ],
+        "price_tiers": [
+          "MHI 3-min RM18k / 6-min RM25k",
+          "WHI 3-min RM25k / 6-min RM38k",
+          "NLKO 6-min RM8k",
+          "TV AlHijrah RM9k–10k"
+        ],
+        "validity": "2026/2027; Ramadan and Raya rates may differ",
+        "language": "Malay",
+        "source_file": "RA_Media_Relations_Live_TV_Talkshow_Rate_Card_2026_2027.pdf (1 page)",
+        "documents": [
+          {
+            "name": "RA Media Relations Live TV Talkshow Rate Card 2026/2027",
+            "size": 111983,
+            "ext": "pdf",
+            "file": "ra-media-relations-live-tv-talkshow-2026-2027.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "TV Sarawak (TVS) 2026 — Sponsorship & Spot Buy",
+      "slug": "tvs-sponsorship-spot-buy-2026",
+      "type": "TV & Broadcast",
+      "channel": "TV Sarawak (TVS)",
+      "location": "Sarawak",
+      "audience": "Sarawak and Borneo viewers across Malay, Iban, Mandarin and English programming",
+      "summary": "30-second TVC RM1,800 fringe / RM3,600 prime; sponsor formats from RM600, naming rights RM18k, special reports RM9k.",
+      "description": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax.",
+      "price_from": 600,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "TV Sarawak (TVS)",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "TV Sarawak (TVS)",
+        "formats": [
+          "30s TVC spot buy",
+          "Breaker in/out",
+          "L-shape",
+          "Lower third",
+          "Info-capsule",
+          "Naming rights",
+          "Special report",
+          "Product placement",
+          "Crawler"
+        ],
+        "price_tiers": [
+          "30s fringe RM1,800",
+          "30s prime RM3,600",
+          "Naming rights RM18k prime",
+          "Special report RM9k prime"
+        ],
+        "validity": "2026 rate card",
+        "language": "Malay / Iban / Mandarin / English",
+        "source_file": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy).pdf (23 pages)",
+        "documents": [
+          {
+            "name": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy)",
+            "size": 9304143,
+            "ext": "pdf",
+            "file": "tvs-sponsorship-spot-buy-2026.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Sarawak Digital Billboard Network 2026 — Kuching & Bintulu",
+      "slug": "billboard-sarawak-smg-2026",
+      "type": "Outdoor",
+      "channel": "Sarawak Media Group (SMG)",
+      "location": "Kuching & Bintulu, Sarawak",
+      "audience": "Sarawak road traffic: 110k–139k daily vehicles per site",
+      "summary": "Three LED double-screen sites from RM500/day or RM15k/month single screen; 2-site 10% and 3-site 15% bundles.",
+      "description": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026.",
+      "price_from": 500,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Sarawak Media Group (SMG)",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "Sarawak Media Group Sdn Bhd (SMG)",
+        "formats": [
+          "Digital LED billboard",
+          "Single screen",
+          "Double screen",
+          "Two-site bundle",
+          "Three-site bundle"
+        ],
+        "price_tiers": [
+          "RM500/day single",
+          "RM15k/month single",
+          "RM30k/month double",
+          "RM1,275/day three-site single"
+        ],
+        "validity": "2026; cross-city promotion 1 Jun–31 Jul 2026",
+        "language": "Malay / English / Chinese",
+        "source_file": "Billboard Rate Card - Sarawak-compressed (1).pdf (19 pages)",
+        "documents": [
+          {
+            "name": "Billboard Rate Card - Sarawak",
+            "size": 3467279,
+            "ext": "pdf",
+            "file": "billboard-sarawak-smg-2026.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "IKIMfm Ramadan 2027 — Sponsorship & Jingle Packages",
+      "slug": "ikim-fm-ramadan-2027",
+      "type": "Radio",
+      "channel": "IKIMfm",
+      "location": "Nationwide (Peninsular Malaysia, Sabah & Sarawak)",
+      "audience": "Malay Muslim listeners around prayer times and Ramadan programming",
+      "summary": "Ramadan 2027: azan and waktu-solat sponsorships from RM2,199, jingle packs RM25k–RM33k, capsules from RM2,634, drama RM27.5k.",
+      "description": "IKIMfm Pakej Istimewa Ramadan 2027 (11 pages). Azan sponsorship: Subuh RM11,768.81, Zohor RM8,404.57, Asar RM11,768.81, Isyak RM5,100.62 (Maghrib booked). Waktu-solat announcements: Subuh RM2,199.42, Zohor and Asar RM5,910.94, Isyak RM7,304.78. Berbuka Puasa RM17,653.21 and Imsak RM8,404.57. Pre-Maghrib jingle RM18,439.19 for the first 10 advertisers. Jingle packs: Basic RM25,078 (90 ROS spots plus 60 bonus, 2 social posts, 1 jingle) and Advance RM33,437 (150 ROS spots plus 90 bonus, 3 social posts, 2 jingles). Capsules: Tafsir al-Quran RM2,633.85, Elak Pembaziran RM7,714.38, 40 Hadis RM4,847.02, Fadhilat Ramadan RM6,419.35. Programme sponsorships: Lembayung al-Quran RM22,974.84, Tazkirah Ramadan RM19,759.95, Tazkirah Maghrib RM13,013.20, Nur Ramadan RM8,954.07, Fadhilat Ramadan English RM25,135.87 and Malay RM36,037.74, Diari Ramadan RM10,054.35. Drama Ramadan RM27,540; Takbir Raya RM5,670; Takbir production and broadcast RM25,000–35,000.",
+      "price_from": 2199.42,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "IKIMfm",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "IKIMfm",
+        "formats": [
+          "Azan sponsorship",
+          "Waktu solat announcement",
+          "Jingle package",
+          "Ramadan capsule",
+          "Programme sponsorship",
+          "Drama",
+          "Takbir Raya"
+        ],
+        "price_tiers": [
+          "Waktu solat from RM2,199.42",
+          "Jingle Basic RM25,078",
+          "Jingle Advance RM33,437",
+          "Drama RM27,540"
+        ],
+        "validity": "Ramadan 2027",
+        "language": "Malay",
+        "source_file": "Pakej Media Istimewa Ramadan IKIM_2027.pdf (11 pages)",
+        "documents": [
+          {
+            "name": "Pakej Media Istimewa Ramadan IKIM 2027",
+            "size": 5607060,
+            "ext": "pdf",
+            "file": "ikim-fm-ramadan-2027.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Media Prima Audio Trade Show 2025 — Radio Packages",
+      "slug": "media-prima-audio-trade-show-2025",
+      "type": "Radio",
+      "channel": "Media Prima Audio (Hot FM / Fly FM / Molek FM / eight FM / Kool 101)",
+      "location": "Peninsular Malaysia, Sabah & Sarawak",
+      "audience": "Malay, Chinese, English and East Malaysian radio listeners",
+      "summary": "30-second radio packages from 1 to 26 weeks: Hot FM RM27k–RM468k, Fly/eight FM RM14k–RM182k, Molek RM6.5k–RM91k, Kool 101 RM9k–RM104k; Sabah/Sarawak RM11.5k–RM195k.",
+      "description": "Media Prima Audio trade-show 2025 booking form covering Hot FM, Kool 101, Molek FM, Fly FM, eight FM and Kool 101 Sabah/Sarawak. All packages use 30-second commercials with 70/280/910/1,820 spots over 1/4/13/26 weeks. Hot FM RM27,000–468,000; Kool 101 RM9,000–104,000; Molek FM RM6,500–91,000; Fly FM and eight FM RM14,000–182,000; Kool 101 Sabah RM12,500–195,000; Kool 101 Sarawak RM11,500–176,800. Four-week packages include commercial production and VO talent; 13- and 26-week packages add social videos, video production and AI jingle production (Sabah/Sarawak exclude AI jingle). Bookings valid until 31 Dec 2025 with utilisation by 30 Jun 2026. Production buyout RM1,550; jingle buyout RM10,000 per version. Malay-station blackout 16 Feb–29 Mar 2026; Sabah/Sarawak blackout 1 May–30 Jun 2026. Rates exclude 8% SST.",
+      "price_from": 6500,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Media Prima Audio",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "Media Prima Omnia / Media Prima Audio",
+        "formats": [
+          "30s radio commercial packages",
+          "Commercial production",
+          "VO talent",
+          "Social video",
+          "Video production",
+          "AI jingle"
+        ],
+        "price_tiers": [
+          "Molek 1-week RM6,500",
+          "Kool 101 1-week RM9,000",
+          "Fly/eight FM 1-week RM14,000",
+          "Hot FM 1-week RM27,000"
+        ],
+        "validity": "Book by 31 Dec 2025; utilise by 30 Jun 2026",
+        "language": "Malay / Chinese / English",
+        "source_file": "MPA Form 1.2.pdf (1 page)",
+        "documents": [
+          {
+            "name": "Media Prima Audio Trade Show 2025 Booking Form",
+            "size": 1001044,
+            "ext": "pdf",
+            "file": "media-prima-audio-trade-show-2025.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Astro Upfront 2027 — TV, Audio, Talent & On-Ground Packages",
+      "slug": "astro-upfront-2027",
+      "type": "TV & Broadcast",
+      "channel": "Astro",
+      "location": "Nationwide",
+      "audience": "Astro TV, OTT, radio and digital audiences; 8.1 billion H1FY27 views",
+      "summary": "Upfront27: Best of TV RM25k–55k, news packages RM15k–38k, audio RM5k–47.5k, talent/creator RM5k–75k, festive RM88k–250k.",
+      "description": "Astro Upfront27 sales kit (66 pages) with early-bird bonuses: 100% for sign-up by 30 Oct 2026, 50% by 16 Nov 2026, 20% by 30 Nov 2026. TV: Awani Pagi and Niaga Awani spotlight interviews RM20,000; Buletin Awani special report RM15,000; AEC Prime Talk Market Spotlite RM25,000 plus RM3,000 production; Prime Edition News RM38,000; SME Biz@Sethigal RM5,300–8,300; Best of Malay/Chinese/Indian TV RM25,000–55,000; Best of CNY 2027 RM88,000; CNY Greetings RM120,000; Best of Raya 2027 RM98,000; Raya celebrity greetings RM250,000. Audio: Audio Impact 360 RM5,000–20,000 per brand; nationwide ERA/MYFM/HITZ RM40,000–47,500; regional RM2,800–43,000; CNY/Raya audio sponsorships RM160,000–188,000. Talent: RFE talent posts RM5,000–20,000, music talent RM10,000–30,000, music and MV production RM35,000–75,000; KULT creators RM10,000–50,000. On-ground booth RM10,000–15,000 and AIdvert production RM6,000. Prices exclude 8% SST; production and talent are charged separately.",
+      "price_from": 5000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Astro",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "Astro Media Solutions",
+        "formats": [
+          "TV packages",
+          "News and talk-show integration",
+          "Audio",
+          "Talent and creators",
+          "On-ground activation",
+          "AIdvert production"
+        ],
+        "price_tiers": [
+          "Audio Impact 360 from RM5k",
+          "Buletin Awani special report RM15k",
+          "Best of TV RM25k–55k",
+          "Best of Raya RM98k"
+        ],
+        "validity": "Upfront27; early-bird deadlines Oct–Nov 2026, utilise by 31 Dec 2027",
+        "language": "Malay / Chinese / Indian / English",
+        "source_file": "Upfront27 Sales Kit.pdf (66 pages)",
+        "documents": [
+          {
+            "name": "Upfront27 Sales Kit",
+            "size": 3558499,
+            "ext": "pdf",
+            "file": "astro-upfront-2027.pdf",
+            "kind": "document"
           }
         ]
       }
