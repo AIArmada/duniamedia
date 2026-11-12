@@ -80,7 +80,7 @@ For local development without S3, set `WORK_MEDIA_DISK=local` and keep `data/` i
 If the media ever needs to live in Git, make the repository **private** and use Git LFS. LFS is suitable for versioning source assets, not for serving 130 MB videos to site visitors.
 
 ## Non-production demonstration data
-`php artisan migrate --seed` creates **illustrative data only**: sample listings, fictional `Demo Creator` records, concept portfolio and sample insights. These do **not** imply real RA Media clients, suppliers, availability, verified audience figures, talent agreements or prices. Replace every demo entity before public launch.
+`php artisan migrate --seed` creates **illustrative data only**: sample media offerings, fictional `Demo Creator` records, concept portfolio and sample insights. These do **not** imply real RA Media clients, media owners, availability, verified audience figures, talent agreements or prices. Replace every demo entity before public launch.
 
 ## Commercial controls & implementation boundaries
 - Supplier slot availability must be verified before publishing `available` status; demo data uses `on_request`.
@@ -93,7 +93,7 @@ If the media ever needs to live in Git, make the repository **private** and use 
 See `docs/ARCHITECTURE.md` for entities, workflow and phased implementation scope.
 
 ## Testing
-`php -l` syntax checks were run on generated PHP files, but the PHP application and migrations could not be executed here because Composer/vendor dependencies were unavailable. After `composer install` run:
+The application, migrations and tests are runnable locally. Run:
 ```bash
 php artisan route:list
 php artisan migrate:fresh --seed

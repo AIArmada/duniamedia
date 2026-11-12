@@ -2,7 +2,7 @@
 
 ## Business domains
 
-1. **Identity and parties** — `parties` is the canonical commercial actor for organizations and people. `parties.person_id` links a human party to the shared `persons` identity. Roles and relationships hang off the party, while `contact_methods`, `social_profiles` and `addresses` attach polymorphically through the `contacting` and `addressing` packages. A party can be a media owner, client, creator, supplier and seller at the same time.
+1. **Identity and parties** — `parties` is the canonical commercial actor for organizations and people. `parties.person_id` links a human party to the shared `persons` identity. Roles and relationships hang off the party, while `contact_methods`, `social_profiles` and `addresses` attach polymorphically through the `contacting` and `addressing` packages. A party can be a media owner, media sales house, client, creator and seller at the same time.
 2. **Media supply** — `media_properties`, `media_assets`, `asset_surfaces` and `placements` describe channels, physical assets and bookable opportunities. `media_offerings` is the sellable catalogue unit; `rate_cards` and `rate_card_lines` hold commercial pricing.
 3. **Physical locations** — `locations`, `location_zones` and `host_structures` separate sites and venues from the structures that carry media.
 4. **Rights and sales mandates** — `rights_agreements`, `rights_scopes`, `rights_permissions` and `sales_mandates` record contractual control separately from ownership.
@@ -20,6 +20,17 @@
 - Creator applicant → form → pending `creator_profiles` record → manual verification → active profile.
 - Asset owner → form → prospect `media_properties` / `media_assets` record → ownership and rights review.
 - AI training lead → Academy → contact → enquiry.
+
+## Vocabulary mapping
+
+- `media_groups` is the internal **Media Group** layer.
+- `media_types` is the **Media Category / Medium** layer, linked to a media group.
+- `media_offerings.medium` is the **Medium**.
+- `media_offerings.channel_label` is the **Channel**.
+- `asset_surfaces` is the **Ad Surface**.
+- `placements` is the **Ad Placement**.
+- `media_offerings` is the **Media Offering**.
+- `carts` instances are **Campaign Plans**; `checked_out_at` marks conversion to a quote request.
 
 ## Data rules
 
@@ -46,4 +57,4 @@ The `../commerce/packages` suite is installed through a path repository. Owner s
 
 ## Deployment readiness
 
-NOT PRODUCTION READY: complete framework smoke tests, supplier verification, legal policy sign-off, privacy review, backup testing, rate limiting, captcha and admin permission hardening before public release.
+NOT PRODUCTION READY: complete framework smoke tests, media owner verification, legal policy sign-off, privacy review, backup testing, rate limiting, captcha and admin permission hardening before public release.

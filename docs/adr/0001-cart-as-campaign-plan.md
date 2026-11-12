@@ -1,0 +1,3 @@
+# Cart is the campaign-plan store
+
+A campaign plan is a saved working mix of media offerings, quantities, package savings and brief metadata, not a checkout. We use `aiarmada/cart` as the persistence and calculation layer: each cart instance is one plan, items are media offerings, conditions are package savings, metadata carries the brief, and `checked_out_at` marks conversion into a quote request. This avoids a parallel plan table and reuses the cart's totals and condition engine. The cost is that cart vocabulary and some checkout-oriented behaviour exist in the codebase even though there is no checkout flow.

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('sku')->unique();
-            $table->string('offering_type')->index();
+            $table->string('medium')->index();
             $table->string('unit_code');
             $table->text('summary');
             $table->text('description')->nullable();

@@ -11,7 +11,7 @@
             <h2>Why we collect it</h2>
             <p>We use submitted information to respond to enquiries, prepare proposals, assess creator applications or media-space submissions, and operate the platform. We do not sell personal information.</p>
             <h2>Who can access it</h2>
-            <p>Access is restricted to authorised personnel who need the information to respond to your request. Where a media owner, supplier or production partner needs details to assess a request, we share only what is necessary.</p>
+            <p>Access is restricted to authorised personnel who need the information to respond to your request. Where a media owner, media sales house or production partner needs details to assess a request, we share only what is necessary.</p>
             <h2>Retention and your rights</h2>
             <p>Retention periods, external processors, international transfers, individual rights and final contact channels must be approved and completed before live deployment, in accordance with applicable Malaysian personal data protection requirements.</p>
             <h2>What to avoid</h2>

@@ -24,7 +24,7 @@ class PublicExperienceTest extends TestCase
         $media = MediaOffering::factory()->create([
             'name' => 'Test Billboard',
             'slug' => 'test-billboard',
-            'offering_type' => 'Outdoor',
+            'medium' => 'Outdoor',
             'location_label' => 'Klang Valley',
             'summary' => 'A test outdoor opportunity.',
         ]);
@@ -82,16 +82,16 @@ class PublicExperienceTest extends TestCase
 
     public function test_media_explorer_filters_and_clears_from_url_state(): void
     {
-        MediaOffering::factory()->create(['name' => 'Radio One', 'slug' => 'radio-one', 'offering_type' => 'Radio']);
-        MediaOffering::factory()->create(['name' => 'Outdoor One', 'slug' => 'outdoor-one', 'offering_type' => 'Outdoor']);
+        MediaOffering::factory()->create(['name' => 'Radio One', 'slug' => 'radio-one', 'medium' => 'Radio']);
+        MediaOffering::factory()->create(['name' => 'Outdoor One', 'slug' => 'outdoor-one', 'medium' => 'Outdoor']);
 
         Livewire::test(MediaExplorer::class)
-            ->set('type', 'Radio')
+            ->set('medium', 'Radio')
             ->assertSee('Radio One')
             ->assertDontSee('Outdoor One')
             ->call('clearFilters')
-            ->assertSet('type', 'all')
-            ->assertSet('vendor', 'all')
+            ->assertSet('medium', 'all')
+            ->assertSet('channel', 'all')
             ->assertSet('budget', 'any');
     }
 
@@ -105,7 +105,7 @@ class PublicExperienceTest extends TestCase
         MediaOffering::factory()->create([
             'name' => 'Owner Billboard',
             'slug' => 'owner-billboard',
-            'offering_type' => 'Outdoor',
+            'medium' => 'Outdoor',
             'seller_party_id' => $owner->id,
         ]);
 
@@ -123,7 +123,7 @@ class PublicExperienceTest extends TestCase
         $media = MediaOffering::factory()->create([
             'name' => 'Test Radio Spot',
             'slug' => 'test-radio-spot',
-            'offering_type' => 'Radio',
+            'medium' => 'Radio',
             'pricing_mode' => 'on_request',
         ]);
 

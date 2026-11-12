@@ -1,3 +1,5 @@
+> Historical note: this was the initial package evaluation. Current adoption is recorded in `docs/ARCHITECTURE.md`.
+
 # AIArmada/commerce package fit — source reviewed 23 October 2026
 
 Repository: https://github.com/AIArmada/commerce (`main`, public source). The current monorepo has `packages/links`, `filament-links`, `docs`, `filament-docs`, `contacting`, `affiliate-network`, `filament-affiliate-network`, `cart`, `pricing` and other modules.
@@ -6,7 +8,7 @@ Repository: https://github.com/AIArmada/commerce (`main`, public source). The cu
 
 1. **`aiarmada/links` + `aiarmada/filament-links`** — for unique tracked URLs, clicks, expiry and campaign-to-conversion attribution. Strongest first integration to support QR campaigns and creator referrals.
 2. **`aiarmada/docs` + `aiarmada/filament-docs`** — potentially for managed quotation/proposal PDF issuance once commercial pricing workflow is agreed.
-3. **`aiarmada/contacting`** — potentially for reusable contact/social profiles for media owners, influencers and suppliers.
+3. **`aiarmada/contacting`** — potentially for reusable contact/social profiles for media owners, creators and media sales houses.
 4. **`aiarmada/affiliate-network`** — consider after defining creator referral programmes and conversion ledger. It is more complex than needed for phase one.
 
 ### Version caveat

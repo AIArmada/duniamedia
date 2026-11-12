@@ -25,7 +25,7 @@
     </a>
     <div class="media-card__body">
         <div class="media-card__meta">
-            <span class="tag"><x-dm-icon :name="$typeIcons[$item->offering_type] ?? 'spark'" :size="13"/>{{ $item->offering_type }}</span>
+            <span class="tag"><x-dm-icon :name="$typeIcons[$item->medium] ?? 'spark'" :size="13"/>{{ $item->medium }}</span>
             <span class="media-card__owner">
                 {{ $item->seller?->display_name ?? 'Media owner on request' }}
                 @if ($item->channel_label && $item->channel_label !== $item->seller?->display_name)

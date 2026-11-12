@@ -24,7 +24,7 @@
                                     <img src="{{ \App\Support\MediaImage::url($item->attributes->get('image')) }}" alt="">
                                     <div>
                                         <strong>{{ $item->name }}</strong>
-                                        <span>{{ $item->attributes->get('type') }} · {{ $item->attributes->get('location') }} · RM {{ number_format($item->price / 100, 2) }} each</span>
+                                        <span>{{ $item->attributes->get('medium') }} · {{ $item->attributes->get('location') }} · RM {{ number_format($item->price / 100, 2) }} each</span>
                                     </div>
                                     <div style="display:flex;gap:.4rem;align-items:center">
                                         <input type="number" min="1" value="{{ $item->quantity }}" wire:change="updateQuantity('{{ $item->id }}', $event.target.value)" style="width:5rem">
@@ -117,7 +117,7 @@
                     <div class="quote-summary__row"><span>Media subtotal</span><strong>RM {{ number_format($summary['subtotal'] / 100, 2) }}</strong></div>
                     <div class="quote-summary__row"><span>Package saving</span><strong>RM {{ number_format($summary['discount'] / 100, 2) }}</strong></div>
                     <div class="quote-summary__row"><span>Total</span><strong>RM {{ number_format($summary['total'] / 100, 2) }}</strong></div>
-                    <p class="quote-summary__note">Indicative only. Availability, formats, taxes and final supplier terms are confirmed before booking.</p>
+                    <p class="quote-summary__note">Indicative only. Availability, formats, taxes and final media owner terms are confirmed before booking.</p>
                     <a class="button button--primary button--block" href="{{ route('quote.builder', ['plan' => $instance]) }}">Request proposal <span aria-hidden="true">↗</span></a>
                 </aside>
             </div>

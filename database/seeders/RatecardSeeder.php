@@ -174,7 +174,7 @@ class RatecardSeeder extends Seeder
                 'seller_party_id' => $seller->id,
                 'name' => $item['title'],
                 'sku' => $slug,
-                'offering_type' => $item['type'],
+                'medium' => $item['type'],
                 'unit_code' => 'campaign',
                 'summary' => $item['summary'],
                 'description' => $item['description'] ?? null,

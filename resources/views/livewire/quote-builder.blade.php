@@ -35,7 +35,7 @@
                                             <img src="{{ \App\Support\MediaImage::url($item->displayImage()) }}" alt="">
                                             <div>
                                                 <strong>{{ $item->name }}</strong>
-                                                <span>{{ $item->offering_type }} · {{ $item->location_label ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
+                                                <span>{{ $item->medium }} · {{ $item->location_label ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
                                             </div>
                                             <button type="button" wire:click="remove('{{ $item->id }}')" aria-label="Remove {{ $item->name }}" class="remove-item">×</button>
                                         </div>
@@ -122,7 +122,7 @@
                                 @error('consent')<span class="form-error">{{ $message }}</span>@enderror
 
                                 <div class="notice" style="margin-bottom:0.9rem">
-                                    No payment is collected and no media is reserved. This request is subject to availability, supplier approval and a final quotation.
+                                    No payment is collected and no media is reserved. This request is subject to availability, media owner approval and a final quotation.
                                 </div>
 
                                 <ul class="trust-list">
@@ -148,7 +148,7 @@
                         <div class="quote-summary__row"><span>Media selected</span><strong>{{ count($selected) }}</strong></div>
                         <div class="quote-summary__row"><span>Services selected</span><strong>{{ count($addons) }}</strong></div>
                         <div class="quote-summary__row"><span>Estimated media subtotal</span><strong>{{ $subtotal ? 'From RM'.number_format($subtotal) : 'On request' }}</strong></div>
-                        <p class="quote-summary__note">Any subtotal is indicative. Final pricing depends on confirmed formats, dates, quantities, taxes and supplier terms.</p>
+                        <p class="quote-summary__note">Any subtotal is indicative. Final pricing depends on confirmed formats, dates, quantities, taxes and media owner terms.</p>
                         <div class="notice" style="margin-top:1rem">A proposal request is not a booking. We confirm with the media owner first.</div>
                     </aside>
                 @endunless

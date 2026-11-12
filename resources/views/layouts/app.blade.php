@@ -71,12 +71,12 @@
                     <a href="{{ route('media.owners') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>Media owners</span> <span>Broadcasters, publishers, out-of-home and specialist channels</span></a>
                     <a href="{{ route('ecosystem') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>How the ecosystem fits</span> <span>Owner, property, asset, surface, placement and inventory</span></a>
                     <a href="{{ route('assets.join') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>List your space</span> <span>For media owners, operators and property managers</span></a>
-                    <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}"><span class="nav-panel__label"><x-dm-icon name="tv" :size="17"/>TV &amp; Broadcast</span> <span>Free-to-air, pay-TV, news and studio formats</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Radio']) }}"><span class="nav-panel__label"><x-dm-icon name="radio" :size="17"/>Radio &amp; Audio</span> <span>National, regional and drive-time audiences</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Outdoor']) }}"><span class="nav-panel__label"><x-dm-icon name="billboard" :size="17"/>Outdoor &amp; DOOH</span> <span>Billboards, LED screens, transit and airports</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Digital']) }}"><span class="nav-panel__label"><x-dm-icon name="digital" :size="17"/>Digital &amp; Publishing</span> <span>Display, video, editorial and social</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Print']) }}"><span class="nav-panel__label"><x-dm-icon name="print" :size="17"/>Print &amp; Publishing</span> <span>Newspapers, magazines and advertorials</span></a>
-                    <a href="{{ route('media.index', ['type' => 'Creators']) }}"><span class="nav-panel__label"><x-dm-icon name="creators" :size="17"/>Creators &amp; Talent</span> <span>Niche voices, communities and collaborations</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'TV & Broadcast']) }}"><span class="nav-panel__label"><x-dm-icon name="tv" :size="17"/>TV &amp; Broadcast</span> <span>Free-to-air, pay-TV, news and studio formats</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'Radio']) }}"><span class="nav-panel__label"><x-dm-icon name="radio" :size="17"/>Radio &amp; Audio</span> <span>National, regional and drive-time audiences</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'Outdoor']) }}"><span class="nav-panel__label"><x-dm-icon name="billboard" :size="17"/>Outdoor &amp; DOOH</span> <span>Billboards, LED screens, transit and airports</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'Digital']) }}"><span class="nav-panel__label"><x-dm-icon name="digital" :size="17"/>Digital &amp; Publishing</span> <span>Display, video, editorial and social</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'Print']) }}"><span class="nav-panel__label"><x-dm-icon name="print" :size="17"/>Print &amp; Publishing</span> <span>Newspapers, magazines and advertorials</span></a>
+                    <a href="{{ route('media.index', ['medium' => 'Creators']) }}"><span class="nav-panel__label"><x-dm-icon name="creators" :size="17"/>Creators &amp; Talent</span> <span>Niche voices, communities and collaborations</span></a>
                     <a href="{{ route('advisor') }}"><span class="nav-panel__label"><x-dm-icon name="compass" :size="17"/>Media advisor</span> <span>Start with your objective, not the inventory</span></a>
                 </div>
             </details>
@@ -142,12 +142,12 @@
                 <a href="{{ route('media.owners') }}">Media owners</a>
                 <a href="{{ route('ecosystem') }}">How the ecosystem fits</a>
                 <a href="{{ route('assets.join') }}">List your space</a>
-                <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}">TV &amp; Broadcast</a>
-                <a href="{{ route('media.index', ['type' => 'Radio']) }}">Radio &amp; Audio</a>
-                <a href="{{ route('media.index', ['type' => 'Outdoor']) }}">Outdoor &amp; DOOH</a>
-                <a href="{{ route('media.index', ['type' => 'Digital']) }}">Digital &amp; Publishing</a>
-                <a href="{{ route('media.index', ['type' => 'Print']) }}">Print</a>
-                <a href="{{ route('media.index', ['type' => 'Creators']) }}">Creators &amp; Talent</a>
+                <a href="{{ route('media.index', ['medium' => 'TV & Broadcast']) }}">TV &amp; Broadcast</a>
+                <a href="{{ route('media.index', ['medium' => 'Radio']) }}">Radio &amp; Audio</a>
+                <a href="{{ route('media.index', ['medium' => 'Outdoor']) }}">Outdoor &amp; DOOH</a>
+                <a href="{{ route('media.index', ['medium' => 'Digital']) }}">Digital &amp; Publishing</a>
+                <a href="{{ route('media.index', ['medium' => 'Print']) }}">Print</a>
+                <a href="{{ route('media.index', ['medium' => 'Creators']) }}">Creators &amp; Talent</a>
                 <a href="{{ route('advisor') }}">Media advisor</a>
             </div>
         </details>

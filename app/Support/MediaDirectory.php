@@ -208,7 +208,7 @@ class MediaDirectory
             return collect();
         }
 
-        $listings = MediaOffering::query()
+        $offerings = MediaOffering::query()
             ->published()
             ->with('seller')
             ->whereIn('slug', $slugs)
@@ -216,7 +216,7 @@ class MediaDirectory
             ->keyBy('slug');
 
         return collect($slugs)
-            ->map(fn (string $slug) => $listings->get($slug))
+            ->map(fn (string $slug) => $offerings->get($slug))
             ->filter()
             ->values();
     }

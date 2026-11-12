@@ -1,10 +1,10 @@
-# Rate Cards 2026 — Allowed-only Inventory (39 listings)
+# Rate Cards 2026 — Allowed-only Inventory (39 media offerings)
 
 Sources:
 - Folder A `RATECARD-2026DuniaMedia-RAMedia` (imported into this app)
 - Folder B `RAMediaRateCard2026` (imported into this app; refreshed 12 Nov 2026)
 
-The original import published 29 files as 28 listings. The 12 Nov 2026 refresh added 11 listings, bringing the catalog to 39. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no listing, no external link, no price.
+The original import published 29 files as 28 media offerings. The 12 Nov 2026 refresh added 11 media offerings, bringing the catalogue to 39 media offerings. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no media offering, no external link, no price.
 
 ## 12 Nov 2026 update — Sarawak, IKIM, Media Prima Audio, RA Media Relations
 
@@ -24,7 +24,7 @@ The original import published 29 files as 28 listings. The 12 Nov 2026 refresh a
 | SINAR KARANGRAF - RATECARD 2025_2026.pdf | `sinar-karangkraf-ratecard-2025-2026` | Print | Full Sinar Harian, SinarPlus, Sinar Bestari and Sinar Daily media kit |
 | TVS Profile OCTOBER 2026 (3).pdf | `tvs-sponsorship-spot-buy-2026` (supplement) | TV & Broadcast | Reach, OTT, news-belt and live-coverage proof; also notes the Miri billboard due 30 Nov 2026 |
 
-The refreshed Drive folder also holds a duplicate Target Media upload. The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged. The TVS Profile deck is attached to the TVS listing as a second document and supplies the reach, OTT, news-belt and Miri billboard details; it is not a rate card.
+The refreshed Drive folder also holds a duplicate Target Media upload. The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged. The TVS Profile deck is attached to the TVS media offering as a second document and supplies the reach, OTT, news-belt and Miri billboard details; it is not a rate card.
 
 The eleven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
 
@@ -97,13 +97,13 @@ Scanned every imported PDF, XLSX and JPG for annotations, plain-text URLs, embed
 There are no `.doc`/`.docx` files in either folder. The two live walkthroughs are the only followable links that added genuinely new media content.
 
 ## Display design (implemented)
-- Keep existing 8 `type` values (no migration). `channel` = vendor, `specifications` JSON holds formats/tiers/validity and hosted document/video references.
-- `MediaExplorer`: search covers title/summary/channel/audience/**supplier_name**; **vendor** dropdown; budget uses `price_from`; sort recommended/new/A–Z.
-- Cards show `type` pill + location + supplier + indicative `From RM…` or `Request quotation`.
-- Detail page shows supplier, rate-card button (Drive), formats/tiers table, validity, and on-request disclaimer.
+- Keep the 8 medium values. `channel_label` is the channel or brand, `medium` is the medium, and `specifications` JSON holds formats, tiers, validity and hosted document/video references.
+- `MediaExplorer`: search covers name, summary, channel, audience and media owner; media owner and channel dropdowns; budget uses `price_from`; sort recommended/new/A–Z.
+- Cards show the medium pill, media owner, channel, location and indicative `From RM…` or `Request quotation`.
+- Detail page shows medium, channel, media owner, rate-card documents, formats/tiers, validity and the on-request disclaimer.
 - Featured: 988, BFM, Omnia Terhangat, Astro Video360, Wowshop, FMT, iMedia Blitz, KLIA T1/T2, KLCC Snorkels, Target Media.
-- Homepage media-owner wall: linked logos (Media Prima/TV3/8TV, Hot FM, WowShop, Big Tree, Astro, RTM, TV AlHijrah, Bernama, Suria, 988, KLIA T1/T2, KTM, KL Sentral) open their matching rate-card listing. Linked tiles show a ↗ badge.
-- Quote Builder unchanged — all listings flow into proposals as `media` items with `on_request` default.
+- Homepage media-owner wall: linked logos (Media Prima/TV3/8TV, Hot FM, WowShop, Big Tree, Astro, RTM, TV AlHijrah, Bernama, Suria, 988, KLIA T1/T2, KTM, KL Sentral) open their matching media offering. Linked tiles show a ↗ badge.
+- Quote Builder unchanged — all media offerings flow into proposals as `media` lines with `on_request` default.
 
 ## Commercial guardrails
 - All `is_published=true`, `availability_status=on_request`, `verified_at=null`.

@@ -23,7 +23,7 @@ class MediaOfferingFactory extends Factory
             'name' => $name,
             'slug' => Str::slug($name).'-'.Str::lower(Str::random(6)),
             'sku' => Str::slug($name).'-'.Str::lower(Str::random(6)),
-            'offering_type' => 'Outdoor',
+            'medium' => 'Outdoor',
             'unit_code' => 'campaign',
             'summary' => fake()->sentence(),
             'description' => fake()->paragraph(),

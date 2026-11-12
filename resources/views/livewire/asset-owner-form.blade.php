@@ -12,7 +12,7 @@
                     @if ($submitted)
                         <div class="success-panel">
                             <h2>Space submitted for assessment.</h2>
-                            <p>We will review feasibility, ownership rights and commercial requirements before considering any listing. Submitting a space does not grant advertising rights or guarantee acceptance.</p>
+                            <p>We will review feasibility, ownership rights and commercial requirements before considering any opportunity. Submitting a space does not grant advertising rights or guarantee acceptance.</p>
                             <a class="button button--primary" href="{{ route('home') }}">Back to Dunia Media</a>
                         </div>
                     @else

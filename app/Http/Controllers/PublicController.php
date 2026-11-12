@@ -60,7 +60,7 @@ class PublicController extends Controller
             ->published()
             ->with('seller')
             ->whereKeyNot($media->id)
-            ->where('offering_type', $media->offering_type)
+            ->where('medium', $media->medium)
             ->latest('published_at')
             ->take(3)
             ->get();

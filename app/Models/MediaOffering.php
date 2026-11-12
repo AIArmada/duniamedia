@@ -93,7 +93,7 @@ class MediaOffering extends BaseModel implements BuyableInterface
         return [
             'offering_id' => $this->id,
             'slug' => $this->slug,
-            'type' => $this->offering_type,
+            'medium' => $this->medium,
             'channel' => $this->channel_label,
             'location' => $this->location_label,
             'pricing_mode' => $this->pricing_mode,
@@ -110,7 +110,7 @@ class MediaOffering extends BaseModel implements BuyableInterface
             return $url;
         }
 
-        return match ($this->offering_type) {
+        return match ($this->medium) {
             'TV & Broadcast' => 'assets/img/v2/channel-tv.webp',
             'Radio', 'Podcast' => 'assets/img/v2/channel-radio.webp',
             'Outdoor' => 'assets/img/v2/channel-outdoor.webp',

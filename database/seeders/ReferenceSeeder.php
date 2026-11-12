@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\AdFormat;
-use App\Models\MediaCategory;
+use App\Models\MediaGroup;
 use App\Models\MediaProperty;
 use App\Models\MediaType;
 use App\Models\Organization;
@@ -33,7 +33,7 @@ class ReferenceSeeder extends Seeder
         ];
 
         foreach ($categories as [$name, $slug, $sort]) {
-            MediaCategory::updateOrCreate(['slug' => $slug], ['name' => $name, 'sort_order' => $sort]);
+            MediaGroup::updateOrCreate(['slug' => $slug], ['name' => $name, 'sort_order' => $sort]);
         }
 
         $types = [
@@ -52,7 +52,7 @@ class ReferenceSeeder extends Seeder
                 ['slug' => $slug],
                 [
                     'name' => $name,
-                    'category_id' => MediaCategory::where('slug', $category)->value('id'),
+                    'media_group_id' => MediaGroup::where('slug', $category)->value('id'),
                     'medium_code' => $medium,
                     'sort_order' => $sort,
                 ],

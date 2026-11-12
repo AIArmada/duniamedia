@@ -29,9 +29,9 @@
     <section class="catalog" aria-label="Media catalogue">
         <div class="container">
             <div class="category-chips" role="group" aria-label="Filter by medium">
-                <button type="button" class="chip @if ($type === 'all') is-active @endif" wire:click="$set('type', 'all')" aria-pressed="{{ $type === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
+                <button type="button" class="chip @if ($medium === 'all') is-active @endif" wire:click="$set('medium', 'all')" aria-pressed="{{ $medium === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
                 @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $category)
-                    <button type="button" class="chip @if ($type === $category) is-active @endif" wire:click="$set('type', '{{ $category }}')" aria-pressed="{{ $type === $category ? 'true' : 'false' }}"><x-dm-icon :name="$categoryIcons[$category] ?? 'spark'" :size="16"/>{{ $category }}</button>
+                    <button type="button" class="chip @if ($medium === $category) is-active @endif" wire:click="$set('medium', '{{ $category }}')" aria-pressed="{{ $medium === $category ? 'true' : 'false' }}"><x-dm-icon :name="$categoryIcons[$category] ?? 'spark'" :size="16"/>{{ $category }}</button>
                 @endforeach
             </div>
 
@@ -66,7 +66,7 @@
                         <select wire:model.live="type">
                             <option value="all">All mediums</option>
                             @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $category)
-                                <option value="{{ $category }}" @selected($type === $category)>{{ $category }}</option>
+                                <option value="{{ $category }}" @selected($medium === $category)>{{ $category }}</option>
                             @endforeach
                         </select>
                     </label>
@@ -95,8 +95,8 @@
                         <span>Channel / brand</span>
                         <select wire:model.live="vendor">
                             <option value="all">All channels</option>
-                            @foreach ($vendors as $channel)
-                                <option value="{{ $channel }}" @selected($vendor === $channel)>{{ $channel }}</option>
+                            @foreach ($channels as $channelOption)
+                                <option value="{{ $channelOption }}" @selected($channel === $channelOption)>{{ $channelOption }}</option>
                             @endforeach
                         </select>
                     </label>
@@ -142,7 +142,7 @@
 
                     <div class="filter-sheet__apply">
                         <button type="button" class="button button--primary button--block" data-filter-close>
-                            Show {{ $listings->total() }} {{ $listings->total() === 1 ? 'opportunity' : 'opportunities' }}
+                            Show {{ $offerings->total() }} {{ $offerings->total() === 1 ? 'opportunity' : 'opportunities' }}
                         </button>
                     </div>
                 </aside>
@@ -150,13 +150,13 @@
                 <div>
                     <div class="results-bar">
                         <p class="results-bar__count" aria-live="polite">
-                            {{ $listings->total() }} {{ $listings->total() === 1 ? 'opportunity' : 'opportunities' }}
+                            {{ $offerings->total() }} {{ $offerings->total() === 1 ? 'opportunity' : 'opportunities' }}
                             <span>· subject to owner and availability verification</span>
                         </p>
                         <div class="results-bar__controls">
                             <button type="button" class="button button--secondary button--sm filter-open" data-filter-open aria-expanded="false" aria-controls="media-filters">
                                 Filters
-                                @if ($platform !== 'all' || $type !== 'all' || $format !== 'all' || $owner !== 'all' || $vendor !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any' || $search !== '') (active) @endif
+                                @if ($platform !== 'all' || $medium !== 'all' || $format !== 'all' || $owner !== 'all' || $channel !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any' || $search !== '') (active) @endif
                             </button>
                             <label class="sr-only" for="media-sort">Sort media</label>
                             <select id="media-sort" class="sort-select" wire:model.live="sort">
@@ -167,7 +167,7 @@
                         </div>
                     </div>
 
-                    @if ($search !== '' || $platform !== 'all' || $type !== 'all' || $format !== 'all' || $owner !== 'all' || $vendor !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any')
+                    @if ($search !== '' || $platform !== 'all' || $medium !== 'all' || $format !== 'all' || $owner !== 'all' || $channel !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any')
                         <div class="applied-filters">
                             <span>Applied:</span>
                             @if ($search !== '')
@@ -176,8 +176,8 @@
                             @if ($platform !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('platform', 'all')">{{ $platform === 'traditional' ? 'Traditional media' : 'Digital and creators' }} ×</button>
                             @endif
-                            @if ($type !== 'all')
-                                <button class="chip chip--dismiss" type="button" wire:click="$set('type', 'all')">{{ $type }} ×</button>
+                            @if ($medium !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('medium', 'all')">{{ $medium }} ×</button>
                             @endif
                             @if ($format !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('format', 'all')">{{ $formats->firstWhere('format_code', $format)?->name ?? $format }} ×</button>
@@ -185,8 +185,8 @@
                             @if ($owner !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('owner', 'all')">{{ $owners->firstWhere('slug', $owner)?->display_name ?? $owner }} ×</button>
                             @endif
-                            @if ($vendor !== 'all')
-                                <button class="chip chip--dismiss" type="button" wire:click="$set('vendor', 'all')">{{ $vendor }} ×</button>
+                            @if ($channel !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('channel', 'all')">{{ $channel }} ×</button>
                             @endif
                             @if ($location !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('location', 'all')">{{ $location }} ×</button>
@@ -202,7 +202,7 @@
                     @endif
 
                     <div class="media-grid" wire:loading.class="is-loading" wire:target="search,platform,type,format,owner,vendor,location,availability,budget,sort">
-                        @forelse ($listings as $item)
+                        @forelse ($offerings as $item)
                             <x-media-card :item="$item" wire:key="media-{{ $item->id }}"/>
                         @empty
                             <div class="empty-state">
@@ -216,8 +216,8 @@
                         @endforelse
                     </div>
 
-                    <div class="pagination-wrap">{{ $listings->links('pagination.brand', ['livewire' => true]) }}</div>
-                    <p class="tiny muted" style="margin-top:1rem">Rates shown are indicative guides from available rate cards, before applicable taxes and discounts. No payment, reservation or supplier confirmation happens online.</p>
+                    <div class="pagination-wrap">{{ $offerings->links('pagination.brand', ['livewire' => true]) }}</div>
+                    <p class="tiny muted" style="margin-top:1rem">Rates shown are indicative guides from available rate cards, before applicable taxes and discounts. No payment, reservation or media owner confirmation happens online.</p>
                 </div>
             </div>
         </div>

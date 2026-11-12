@@ -38,7 +38,7 @@ class MediaOfferingResource extends Resource
             TextInput::make('name')->required()->maxLength(255),
             TextInput::make('slug')->required()->maxLength(255),
             TextInput::make('sku')->required()->maxLength(255),
-            Select::make('offering_type')->options(self::types())->required(),
+            Select::make('medium')->options(self::mediumOptions())->required(),
             TextInput::make('unit_code')->default('campaign')->required(),
             Textarea::make('summary')->required()->rows(3)->columnSpanFull(),
             Textarea::make('description')->rows(4)->columnSpanFull(),
@@ -66,7 +66,7 @@ class MediaOfferingResource extends Resource
     {
         return $table->columns([
             TextColumn::make('name')->sortable()->searchable(),
-            TextColumn::make('offering_type')->sortable()->searchable(),
+            TextColumn::make('medium')->sortable()->searchable(),
             TextColumn::make('seller.display_name')->label('Seller')->sortable()->searchable(),
             TextColumn::make('channel_label')->sortable()->searchable(),
             TextColumn::make('pricing_mode')->sortable(),
@@ -85,7 +85,7 @@ class MediaOfferingResource extends Resource
         ];
     }
 
-    public static function types(): array
+    public static function mediumOptions(): array
     {
         return [
             'TV & Broadcast' => 'TV & Broadcast',

@@ -28,7 +28,7 @@
                 'anchor' => 'planning',
                 'copy' => [
                     'Media planning starts with the audience and the outcome, not the inventory list. We map the channels that can do a specific job — mass reach, local relevance, consideration or conversion — then negotiate the formats, timing and conditions around that plan.',
-                    'Because the team also produces content and builds the follow-up systems, the plan stays connected to what happens after the first impression. Recommendations are checked against real availability, rate cards and supplier terms before anything is presented as confirmed.',
+                    'Because the team also produces content and builds the follow-up systems, the plan stays connected to what happens after the first impression. Recommendations are checked against real availability, rate cards and media owner terms before anything is presented as confirmed.',
                 ],
                 'offers' => ['Channel strategy and media mix', 'Rate-card review and negotiation', 'Scheduling and placement coordination', 'Cross-channel campaign planning'],
                 'deliverables' => ['Media plan with rationale', 'Indicative budget scenarios', 'Booking schedule and artwork specs', 'Post-campaign placement summary'],
@@ -78,10 +78,10 @@
                 'anchor' => 'placements',
                 'copy' => [
                     'Many organisations own attention without realising it: a wall in a busy lobby, a screen in a waiting area, a table in a restaurant, a vehicle route, an event space. We assess whether a space can become a responsible media asset before suggesting it to advertisers.',
-                    'The work covers format feasibility, audience context, ownership and permission, photography and a sellable proposition. Rights are never assumed, and a listing is only published once the practical and commercial conditions are clear.',
+                    'The work covers format feasibility, audience context, ownership and permission, photography and a sellable proposition. Rights are never assumed, and an opportunity is only published once the practical and commercial conditions are clear.',
                 ],
                 'offers' => ['Space feasibility and format review', 'Audience and context assessment', 'Photography and proposition design', 'Advertiser matching and sales support'],
-                'deliverables' => ['Feasibility assessment', 'Asset definition and rate basis', 'Photography and listing assets', 'Go-to-market recommendation'],
+                'deliverables' => ['Feasibility assessment', 'Asset definition and rate basis', 'Photography and opportunity assets', 'Go-to-market recommendation'],
                 'proof' => ['label' => 'List your space', 'url' => route('assets.join')],
             ],
             'ai-seminars-corporate-training' => [

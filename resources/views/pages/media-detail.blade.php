@@ -9,7 +9,7 @@
     @endphp
 
     <x-page-hero
-        eyebrow="Media opportunity · {{ $media->offering_type }}"
+        eyebrow="Media opportunity · {{ $media->medium }}"
         title="{{ e($media->name) }}"
         :lede="$media->summary"
         :breadcrumb="[
@@ -20,7 +20,7 @@
     >
         <x-slot:aside>
             <div class="tag-row">
-                <span class="tag tag--blush">{{ $media->offering_type }}</span>
+                <span class="tag tag--blush">{{ $media->medium }}</span>
                 @if ($media->verified_at)
                     <span class="tag tag--verified">Verified {{ $media->verified_at->format('M Y') }}</span>
                 @else
@@ -43,7 +43,7 @@
 
                 <h3>Key facts</h3>
                 <div class="fact-grid">
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Medium</span></div><strong>{{ $media->offering_type }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Medium</span></div><strong>{{ $media->medium }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="layers" :size="16"/><span>Channel</span></div><strong>{{ $media->channel_label ?? 'Confirmed on enquiry' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Media owner / seller</span></div><strong>{{ $media->seller?->display_name ?? 'Confirmed on enquiry' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location_label ?? 'To be discussed' }}</strong></div>
@@ -131,7 +131,7 @@
             <aside class="detail-aside">
                 <span class="eyebrow">Plan this opportunity</span>
                 <h2>Build a campaign around it.</h2>
-                <p>We verify the supplier, format, rate, slots and commercial conditions before any booking.</p>
+                <p>We verify the media owner, format, rate, slots and commercial conditions before any booking.</p>
                 <div class="detail-price">
                     @if ($hasFixedPrice)
                         Indicative from RM{{ number_format($media->price_from, 2) }}
@@ -166,10 +166,10 @@
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow">Similar opportunities</span>
-                        <h2 id="similar-title" class="section-title">More in {{ $media->offering_type }}.</h2>
+                        <h2 id="similar-title" class="section-title">More in {{ $media->medium }}.</h2>
                     </div>
                     <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('media.index', ['type' => $media->offering_type]) }}">View the medium <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="{{ route('media.index', ['medium' => $media->medium]) }}">View the medium <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
                 <div class="media-grid">

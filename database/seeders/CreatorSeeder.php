@@ -123,7 +123,7 @@ class CreatorSeeder extends Seeder
                     'creator_profile_id' => $profile->id,
                     'name' => 'Demo Creator '.$number,
                     'sku' => $slug,
-                    'offering_type' => 'Creators',
+                    'medium' => 'Creators',
                     'unit_code' => 'post',
                     'summary' => $bio,
                     'description' => 'Illustrative creator profile only. Not a real creator or verified partnership.',

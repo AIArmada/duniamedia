@@ -13,9 +13,9 @@ class MediaExplorer extends Component
 {
     use WithPagination;
 
-    private const TRADITIONAL_TYPES = ['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Print', 'Podcast'];
+    private const TRADITIONAL_MEDIA = ['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Print', 'Podcast'];
 
-    private const DIGITAL_TYPES = ['Digital', 'Creators'];
+    private const DIGITAL_MEDIA = ['Digital', 'Creators'];
 
     #[Url(as: 'q')]
     public string $search = '';
@@ -24,7 +24,7 @@ class MediaExplorer extends Component
     public string $platform = 'all';
 
     #[Url]
-    public string $type = 'all';
+    public string $medium = 'all';
 
     #[Url]
     public string $format = 'all';
@@ -33,7 +33,7 @@ class MediaExplorer extends Component
     public string $owner = 'all';
 
     #[Url]
-    public string $vendor = 'all';
+    public string $channel = 'all';
 
     #[Url]
     public string $location = 'all';
@@ -49,19 +49,19 @@ class MediaExplorer extends Component
 
     public function updated($property): void
     {
-        if (in_array($property, ['search', 'platform', 'type', 'format', 'owner', 'vendor', 'location', 'availability', 'budget', 'sort'], true)) {
+        if (in_array($property, ['search', 'platform', 'medium', 'format', 'owner', 'channel', 'location', 'availability', 'budget', 'sort'], true)) {
             $this->resetPage();
         }
     }
 
     public function clearFilters(): void
     {
-        $this->reset(['search', 'platform', 'type', 'format', 'owner', 'vendor', 'location', 'availability', 'budget']);
+        $this->reset(['search', 'platform', 'medium', 'format', 'owner', 'channel', 'location', 'availability', 'budget']);
         $this->platform = 'all';
-        $this->type = 'all';
+        $this->medium = 'all';
         $this->format = 'all';
         $this->owner = 'all';
-        $this->vendor = 'all';
+        $this->channel = 'all';
         $this->location = 'all';
         $this->availability = 'all';
         $this->budget = 'any';
@@ -84,12 +84,12 @@ class MediaExplorer extends Component
                     ->orWhereHas('seller', fn ($seller) => $seller->where('display_name', 'like', $search))
                     ->orWhereHas('placements.formats', fn ($format) => $format->where('name', 'like', $search));
             }))
-            ->when($this->platform === 'traditional', fn ($query) => $query->whereIn('offering_type', self::TRADITIONAL_TYPES))
-            ->when($this->platform === 'digital', fn ($query) => $query->whereIn('offering_type', self::DIGITAL_TYPES))
-            ->when($this->type !== 'all', fn ($query) => $query->where('offering_type', $this->type))
+            ->when($this->platform === 'traditional', fn ($query) => $query->whereIn('medium', self::TRADITIONAL_MEDIA))
+            ->when($this->platform === 'digital', fn ($query) => $query->whereIn('medium', self::DIGITAL_MEDIA))
+            ->when($this->medium !== 'all', fn ($query) => $query->where('medium', $this->medium))
             ->when($this->format !== 'all', fn ($query) => $query->whereHas('placements.formats', fn ($format) => $format->where('format_code', $this->format)))
             ->when($this->owner !== 'all', fn ($query) => $query->whereHas('seller', fn ($seller) => $seller->where('slug', $this->owner)))
-            ->when($this->vendor !== 'all', fn ($query) => $query->where('channel_label', $this->vendor))
+            ->when($this->channel !== 'all', fn ($query) => $query->where('channel_label', $this->channel))
             ->when($this->location !== 'all', fn ($query) => $query->where('location_label', $this->location))
             ->when($this->availability !== 'all', fn ($query) => $query->where('availability_status', $this->availability));
 
@@ -108,7 +108,7 @@ class MediaExplorer extends Component
             $query->orderByDesc('is_featured')->latest('published_at');
         }
 
-        $vendors = MediaOffering::query()
+        $channels = MediaOffering::query()
             ->published()
             ->whereNotNull('channel_label')
             ->distinct()
@@ -128,8 +128,8 @@ class MediaExplorer extends Component
             ->get(['id', 'slug', 'display_name']);
 
         return view('livewire.media-explorer', [
-            'listings' => $query->paginate(9),
-            'vendors' => $vendors,
+            'offerings' => $query->paginate(9),
+            'channels' => $channels,
             'locations' => $locations,
             'owners' => $owners,
             'formats' => AdFormat::query()->orderBy('name')->get(['id', 'format_code', 'name']),

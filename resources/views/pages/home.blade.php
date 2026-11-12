@@ -3,13 +3,13 @@
 @section('content')
     @php
         $channels = [
-            ['title' => 'Outdoor & DOOH', 'copy' => 'Billboards, LED and transit where your audience already moves.', 'image' => 'assets/img/v2/channel-outdoor.webp', 'type' => 'Outdoor', 'class' => 'anchor', 'icon' => 'billboard'],
-            ['title' => 'TV & Broadcast', 'copy' => 'Free-to-air, pay-TV, news and studio formats that build mass reach.', 'image' => 'assets/img/v2/channel-tv.webp', 'type' => 'TV & Broadcast', 'class' => 'medium', 'icon' => 'tv'],
-            ['title' => 'Radio & Audio', 'copy' => 'Drive-time, music and talk formats with loyal, local listeners.', 'image' => 'assets/img/v2/channel-radio.webp', 'type' => 'Radio', 'class' => 'medium', 'icon' => 'radio'],
-            ['title' => 'Digital & Publishing', 'copy' => 'Display, video, editorial and social for precise, measurable reach.', 'image' => 'assets/img/v2/channel-digital.webp', 'type' => 'Digital', 'class' => 'small', 'icon' => 'digital'],
-            ['title' => 'Print & Publishing', 'copy' => 'Newspapers, magazines and advertorials with lasting context.', 'image' => 'assets/img/v2/channel-print.webp', 'type' => 'Print', 'class' => 'small', 'icon' => 'print'],
-            ['title' => 'Creators & Talent', 'copy' => 'Voices and communities that make a message feel native.', 'image' => 'assets/img/v2/channel-creators.webp', 'type' => 'Creators', 'class' => 'small', 'icon' => 'creators'],
-            ['title' => 'Custom Spaces', 'copy' => 'Retail, in-premise and unexpected places turned into media.', 'image' => 'assets/img/v2/channel-spaces.webp', 'type' => 'Indoor', 'class' => 'small', 'icon' => 'spaces'],
+            ['title' => 'Outdoor & DOOH', 'copy' => 'Billboards, LED and transit where your audience already moves.', 'image' => 'assets/img/v2/channel-outdoor.webp', 'medium' => 'Outdoor', 'class' => 'anchor', 'icon' => 'billboard'],
+            ['title' => 'TV & Broadcast', 'copy' => 'Free-to-air, pay-TV, news and studio formats that build mass reach.', 'image' => 'assets/img/v2/channel-tv.webp', 'medium' => 'TV & Broadcast', 'class' => 'medium', 'icon' => 'tv'],
+            ['title' => 'Radio & Audio', 'copy' => 'Drive-time, music and talk formats with loyal, local listeners.', 'image' => 'assets/img/v2/channel-radio.webp', 'medium' => 'Radio', 'class' => 'medium', 'icon' => 'radio'],
+            ['title' => 'Digital & Publishing', 'copy' => 'Display, video, editorial and social for precise, measurable reach.', 'image' => 'assets/img/v2/channel-digital.webp', 'medium' => 'Digital', 'class' => 'small', 'icon' => 'digital'],
+            ['title' => 'Print & Publishing', 'copy' => 'Newspapers, magazines and advertorials with lasting context.', 'image' => 'assets/img/v2/channel-print.webp', 'medium' => 'Print', 'class' => 'small', 'icon' => 'print'],
+            ['title' => 'Creators & Talent', 'copy' => 'Voices and communities that make a message feel native.', 'image' => 'assets/img/v2/channel-creators.webp', 'medium' => 'Creators', 'class' => 'small', 'icon' => 'creators'],
+            ['title' => 'Custom Spaces', 'copy' => 'Retail, in-premise and unexpected places turned into media.', 'image' => 'assets/img/v2/channel-spaces.webp', 'medium' => 'Indoor', 'class' => 'small', 'icon' => 'spaces'],
         ];
 
         $heroFeature = $featuredWork->first();
@@ -98,7 +98,7 @@
 
             <div class="channel-mosaic">
                 @foreach ($channels as $channel)
-                    <a class="channel-tile channel-tile--{{ $channel['class'] }}" href="{{ route('media.index', ['type' => $channel['type']]) }}">
+                    <a class="channel-tile channel-tile--{{ $channel['class'] }}" href="{{ route('media.index', ['medium' => $channel['medium']]) }}">
                         <img src="{{ \App\Support\MediaImage::url($channel['image']) }}" srcset="{{ \App\Support\MediaImage::srcset($channel['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
                         <span class="channel-tile__icon"><x-dm-icon :name="$channel['icon']" :size="19"/></span>
                         <span class="channel-tile__arrow" aria-hidden="true">↗</span>
@@ -241,7 +241,7 @@
                         <x-media-card :item="$item"/>
                     @endforeach
                 </div>
-                <p class="tiny muted" style="margin-top:1.25rem">Indicative inventory only. No availability, rate or supplier relationship is confirmed until verified by our team.</p>
+                <p class="tiny muted" style="margin-top:1.25rem">Indicative inventory only. No availability, rate or media owner relationship is confirmed until verified by our team.</p>
             </div>
         </section>
     @endif

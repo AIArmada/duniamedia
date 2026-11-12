@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class MediaCategory extends BaseModel
+class MediaGroup extends BaseModel
 {
     public function parent(): BelongsTo
     {
@@ -19,6 +19,6 @@ class MediaCategory extends BaseModel
 
     public function types(): HasMany
     {
-        return $this->hasMany(MediaType::class, 'category_id');
+        return $this->hasMany(MediaType::class, 'media_group_id');
     }
 }

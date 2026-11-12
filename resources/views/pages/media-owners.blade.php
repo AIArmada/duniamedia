@@ -4,7 +4,7 @@
     <x-page-hero
         eyebrow="Media directory"
         title="The owners and <span class='editorial'>channels</span> behind the inventory."
-        lede="A media owner is the organisation that controls a channel or property. Browse the groups represented by Dunia Media, then open an owner or outlet to see its current opportunities."
+        lede="A media owner is the organisation that controls a channel or property. Browse the groups represented by Dunia Media, then open an owner or channel to see its current opportunities."
     >
         <x-slot:actions>
             <a class="button button--secondary" href="{{ route('media.index') }}">Browse all media</a>
@@ -16,7 +16,7 @@
             <form method="get" action="{{ route('media.owners') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-bottom:1.6rem">
                 <label class="field">
                     <span class="sr-only">Search media owners</span>
-                    <input type="search" name="q" value="{{ $query }}" placeholder="Search owner, channel or outlet…">
+                    <input type="search" name="q" value="{{ $query }}" placeholder="Search owner, channel or brand…">
                 </label>
                 <button class="button button--primary" type="submit">Search directory</button>
             </form>

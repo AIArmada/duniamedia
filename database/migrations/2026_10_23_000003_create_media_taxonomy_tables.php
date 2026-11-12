@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('media_categories', function (Blueprint $table): void {
+        Schema::create('media_groups', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('parent_id')->nullable()->index();
             $table->string('name');
@@ -20,7 +20,7 @@ return new class extends Migration
 
         Schema::create('media_types', function (Blueprint $table): void {
             $table->uuid('id')->primary();
-            $table->foreignUuid('category_id')->index();
+            $table->foreignUuid('media_group_id')->index();
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('medium_code')->index();

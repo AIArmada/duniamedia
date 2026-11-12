@@ -58,7 +58,7 @@
                 <div class="empty-state" style="text-align:left">
                     <span class="eyebrow">Tailored proposal</span>
                     <h3>Rates for {{ $outlet['name'] }} are available on request.</h3>
-                    <p style="margin-left:0">We will confirm current slots, formats and availability for this outlet. Ask our team for a tailored package.</p>
+                    <p style="margin-left:0">We will confirm current slots, formats and availability for this channel. Ask our team for a tailored package.</p>
                     <div class="empty-state__actions" style="justify-content:flex-start">
                         <a class="button button--primary" href="{{ route('contact') }}">Request rates <span aria-hidden="true">↗</span></a>
                     </div>
@@ -76,7 +76,7 @@
                         <h2 class="section-title">Explore the group.</h2>
                     </div>
                     <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('media.owner', $owner['slug']) }}">View all outlets <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="{{ route('media.owner', $owner['slug']) }}">View all channels <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
                 <div class="outlet-grid">
@@ -102,7 +102,7 @@
         <div class="container">
             <div class="cta-panel__inner">
                 <div>
-                    <span class="eyebrow eyebrow--pale">Plan this outlet</span>
+                    <span class="eyebrow eyebrow--pale">Plan this channel</span>
                     <h2 class="section-title">Put {{ $outlet['name'] }} in your next campaign.</h2>
                     <p style="max-width:560px;margin-top:0.7rem;color:rgba(255,248,247,.66)">Tell us the audience and outcome; we will shape the format, schedule and budget.</p>
                 </div>
