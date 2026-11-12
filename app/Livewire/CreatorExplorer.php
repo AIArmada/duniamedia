@@ -25,6 +25,14 @@ class CreatorExplorer extends Component
         $this->resetPage();
     }
 
+    public function clearFilters(): void
+    {
+        $this->reset(['search', 'niche', 'platform']);
+        $this->niche = 'all';
+        $this->platform = 'all';
+        $this->resetPage();
+    }
+
     public function render()
     {
         $query = CreatorProfile::query()
@@ -39,6 +47,14 @@ class CreatorExplorer extends Component
                     ->orWhereHas('creatorParty', fn ($party) => $party->where('display_name', 'like', '%'.$this->search.'%'));
             }));
 
-        return view('livewire.creator-explorer', ['creators' => $query->orderByDesc('is_featured')->paginate(9)])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
+        $base = CreatorProfile::query()
+            ->where('status', 'active')
+            ->where('verification_status', 'verified');
+
+        return view('livewire.creator-explorer', [
+            'creators' => $query->orderByDesc('is_featured')->paginate(9),
+            'niches' => (clone $base)->whereNotNull('primary_niche')->distinct()->orderBy('primary_niche')->pluck('primary_niche'),
+            'platforms' => (clone $base)->whereNotNull('platform_label')->distinct()->orderBy('platform_label')->pluck('platform_label'),
+        ])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
     }
 }

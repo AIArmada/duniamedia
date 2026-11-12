@@ -60,10 +60,11 @@
                     <article class="topic"><h3>Measurement</h3><p>Clear objectives, agreed deliverables and reporting that separates reach from meaningful response.</p></article>
                 </div>
             @else
-                <div class="filter-horizontal" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:0.6rem;margin-bottom:1.4rem">
-                    <label class="field"><span class="sr-only">Search creators</span><input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator profiles…"></label>
-                    <label class="field"><span class="sr-only">Niche</span><select wire:model.live="niche"><option value="all">All niches</option>@foreach (['Travel', 'Food', 'Technology', 'Family'] as $niche)<option>{{ $niche }}</option>@endforeach</select></label>
-                    <label class="field"><span class="sr-only">Platform</span><select wire:model.live="platform"><option value="all">All platforms</option>@foreach (['TikTok', 'Instagram', 'YouTube'] as $platform)<option>{{ $platform }}</option>@endforeach</select></label>
+                <div class="filter-horizontal" style="display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:0.6rem;margin-bottom:1.4rem">
+                    <label class="field"><span class="sr-only">Search creators</span><input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator name, niche or platform…"></label>
+                    <label class="field"><span class="sr-only">Niche</span><select wire:model.live="niche"><option value="all">All niches</option>@foreach ($niches as $nicheOption)<option value="{{ $nicheOption }}" @selected($niche === $nicheOption)>{{ $nicheOption }}</option>@endforeach</select></label>
+                    <label class="field"><span class="sr-only">Platform</span><select wire:model.live="platform"><option value="all">All platforms</option>@foreach ($platforms as $platformOption)<option value="{{ $platformOption }}" @selected($platform === $platformOption)>{{ $platformOption }}</option>@endforeach</select></label>
+                    <button class="button button--secondary button--sm" type="button" wire:click="clearFilters">Clear</button>
                 </div>
 
                 <div class="media-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">

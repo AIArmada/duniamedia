@@ -67,7 +67,10 @@
                     <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
                 </summary>
                 <div class="nav-panel">
-                    <a href="{{ route('media.index') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>Browse all media</span> <span>TV, radio, out-of-home, digital, print and more</span></a>
+                    <a href="{{ route('media.index') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>Browse media opportunities</span> <span>Filter by platform, medium, owner, format and location</span></a>
+                    <a href="{{ route('media.owners') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>Media owners</span> <span>Broadcasters, publishers, out-of-home and specialist channels</span></a>
+                    <a href="{{ route('ecosystem') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>How the ecosystem fits</span> <span>Owner, property, asset, surface, placement and inventory</span></a>
+                    <a href="{{ route('assets.join') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>List your space</span> <span>For media owners, operators and property managers</span></a>
                     <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}"><span class="nav-panel__label"><x-dm-icon name="tv" :size="17"/>TV &amp; Broadcast</span> <span>Free-to-air, pay-TV, news and studio formats</span></a>
                     <a href="{{ route('media.index', ['type' => 'Radio']) }}"><span class="nav-panel__label"><x-dm-icon name="radio" :size="17"/>Radio &amp; Audio</span> <span>National, regional and drive-time audiences</span></a>
                     <a href="{{ route('media.index', ['type' => 'Outdoor']) }}"><span class="nav-panel__label"><x-dm-icon name="billboard" :size="17"/>Outdoor &amp; DOOH</span> <span>Billboards, LED screens, transit and airports</span></a>
@@ -104,15 +107,23 @@
                 </div>
             </details>
 
-            <a class="nav-link {{ request()->routeIs('academy') ? 'is-active' : '' }}" href="{{ route('academy') }}">Academy</a>
             <a class="nav-link {{ request()->routeIs('plans.*') ? 'is-active' : '' }}" href="{{ route('plans.index') }}">Plans</a>
-            <a class="nav-link {{ request()->routeIs('work.*') ? 'is-active' : '' }}" href="{{ route('work.index') }}">Our Work</a>
-            <a class="nav-link {{ request()->routeIs('insights*') ? 'is-active' : '' }}" href="{{ route('insights') }}">Insights</a>
+            <a class="nav-link {{ request()->routeIs('work.*') ? 'is-active' : '' }}" href="{{ route('work.index') }}">Work</a>
+            <details class="nav-group">
+                <summary class="nav-link {{ request()->routeIs('insights*', 'academy') ? 'is-active' : '' }}">
+                    Learn
+                    <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
+                </summary>
+                <div class="nav-panel">
+                    <a href="{{ route('insights') }}"><span class="nav-panel__label"><x-dm-icon name="book-open" :size="17"/>Insights</span> <span>Media, creators, AI and measurement perspectives</span></a>
+                    <a href="{{ route('academy') }}"><span class="nav-panel__label"><x-dm-icon name="academic-cap" :size="17"/>Academy</span> <span>Practical AI, content and marketing workshops</span></a>
+                </div>
+            </details>
             <a class="nav-link {{ request()->routeIs('about') ? 'is-active' : '' }}" href="{{ route('about') }}">About</a>
         </nav>
 
         <div class="header-actions">
-            <a class="header-search" href="{{ route('media.index') }}" aria-label="Search media">
+            <a class="header-search" href="{{ route('search') }}" aria-label="Search Dunia Media">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 4 4"/></svg>
             </a>
             <a class="button button--primary header-cta" href="{{ route('advisor') }}">Plan a Campaign <span aria-hidden="true">↗</span></a>
@@ -127,7 +138,10 @@
         <details class="mobile-nav__group">
             <summary>Media</summary>
             <div class="mobile-nav__sub">
-                <a href="{{ route('media.index') }}">Browse all media</a>
+                <a href="{{ route('media.index') }}">Browse media opportunities</a>
+                <a href="{{ route('media.owners') }}">Media owners</a>
+                <a href="{{ route('ecosystem') }}">How the ecosystem fits</a>
+                <a href="{{ route('assets.join') }}">List your space</a>
                 <a href="{{ route('media.index', ['type' => 'TV & Broadcast']) }}">TV &amp; Broadcast</a>
                 <a href="{{ route('media.index', ['type' => 'Radio']) }}">Radio &amp; Audio</a>
                 <a href="{{ route('media.index', ['type' => 'Outdoor']) }}">Outdoor &amp; DOOH</a>
@@ -155,9 +169,15 @@
                 <a href="{{ route('creators.join') }}">Join the network</a>
             </div>
         </details>
-        <a class="mobile-nav__direct" href="{{ route('academy') }}">Academy</a>
-        <a class="mobile-nav__direct" href="{{ route('work.index') }}">Our Work</a>
-        <a class="mobile-nav__direct" href="{{ route('insights') }}">Insights</a>
+        <a class="mobile-nav__direct" href="{{ route('plans.index') }}">Campaign plans</a>
+        <a class="mobile-nav__direct" href="{{ route('work.index') }}">Work</a>
+        <details class="mobile-nav__group">
+            <summary>Learn</summary>
+            <div class="mobile-nav__sub">
+                <a href="{{ route('insights') }}">Insights</a>
+                <a href="{{ route('academy') }}">Academy</a>
+            </div>
+        </details>
         <a class="mobile-nav__direct" href="{{ route('about') }}">About</a>
         <div class="mobile-nav__actions">
             <a class="button button--primary" href="{{ route('advisor') }}">Plan a Campaign <span aria-hidden="true">↗</span></a>
@@ -193,7 +213,11 @@
             <div class="footer-col">
                 <strong>Explore</strong>
                 <a href="{{ route('media.index') }}">Media opportunities</a>
+                <a href="{{ route('media.owners') }}">Media owners</a>
+                <a href="{{ route('ecosystem') }}">How the ecosystem fits</a>
+                <a href="{{ route('assets.join') }}">List your space</a>
                 <a href="{{ route('creators.index') }}">Creator network</a>
+                <a href="{{ route('plans.index') }}">Campaign plans</a>
                 <a href="{{ route('work.index') }}">Our work</a>
                 <a href="{{ route('insights') }}">Insights</a>
             </div>

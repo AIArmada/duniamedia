@@ -8,6 +8,7 @@ use App\Livewire\ContactForm;
 use App\Livewire\CreatorJoin;
 use App\Livewire\MediaExplorer;
 use App\Livewire\QuoteBuilder;
+use App\Models\CreatorProfile;
 use App\Models\MediaOffering;
 use App\Models\Party;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -32,8 +33,12 @@ class PublicExperienceTest extends TestCase
             '/',
             '/media',
             '/media/test-billboard',
+            '/media/owners',
             '/media/owners/media-prima',
             '/media/owners/media-prima/tv3',
+            '/search',
+            '/search?q=test',
+            '/campaign-plans',
             '/media-advisor',
             '/quote-builder',
             '/creators',
@@ -56,6 +61,25 @@ class PublicExperienceTest extends TestCase
         $this->get('/media/test-billboard')->assertSee($media->name);
     }
 
+    public function test_global_search_finds_media_and_creators(): void
+    {
+        MediaOffering::factory()->create([
+            'name' => 'Searchable Billboard',
+            'slug' => 'searchable-billboard',
+        ]);
+
+        $party = Party::factory()->create(['display_name' => 'Searchable Creator']);
+        CreatorProfile::factory()->create([
+            'creator_party_id' => $party->id,
+            'slug' => 'searchable-creator',
+        ]);
+
+        $this->get('/search?q=Searchable')
+            ->assertOk()
+            ->assertSee('Searchable Billboard')
+            ->assertSee('Searchable Creator');
+    }
+
     public function test_media_explorer_filters_and_clears_from_url_state(): void
     {
         MediaOffering::factory()->create(['name' => 'Radio One', 'slug' => 'radio-one', 'offering_type' => 'Radio']);
@@ -69,6 +93,27 @@ class PublicExperienceTest extends TestCase
             ->assertSet('type', 'all')
             ->assertSet('vendor', 'all')
             ->assertSet('budget', 'any');
+    }
+
+    public function test_media_explorer_filters_by_platform_and_media_owner(): void
+    {
+        $owner = Party::factory()->create([
+            'slug' => 'test-media-owner',
+            'display_name' => 'Test Media Owner',
+        ]);
+
+        MediaOffering::factory()->create([
+            'name' => 'Owner Billboard',
+            'slug' => 'owner-billboard',
+            'offering_type' => 'Outdoor',
+            'seller_party_id' => $owner->id,
+        ]);
+
+        Livewire::test(MediaExplorer::class)
+            ->set('owner', 'test-media-owner')
+            ->assertSee('Owner Billboard')
+            ->set('platform', 'digital')
+            ->assertDontSee('Owner Billboard');
     }
 
     public function test_quote_builder_creates_a_request_not_a_booking(): void

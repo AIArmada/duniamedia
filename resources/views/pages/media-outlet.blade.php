@@ -6,6 +6,7 @@
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="{{ route('home') }}">Home</a><span aria-hidden="true">/</span>
                 <a href="{{ route('media.index') }}">Media</a><span aria-hidden="true">/</span>
+                <a href="{{ route('media.owners') }}">Media owners</a><span aria-hidden="true">/</span>
                 <a href="{{ route('media.owner', $owner['slug']) }}">{{ $owner['name'] }}</a><span aria-hidden="true">/</span>
                 <span aria-current="page">{{ $outlet['name'] }}</span>
             </nav>

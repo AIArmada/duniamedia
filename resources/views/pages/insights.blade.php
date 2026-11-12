@@ -37,6 +37,32 @@
                     <article class="topic"><span class="tag tag--blush">Measurement</span><h3>From awareness to enquiries</h3><p>Connecting offline media, digital response and the follow-up that decides the outcome.</p></article>
                 </div>
             @else
+                <form method="get" action="{{ route('insights') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr 220px auto;gap:.6rem;margin-bottom:1.6rem">
+                    <label class="field">
+                        <span class="sr-only">Search insights</span>
+                        <input type="search" name="q" value="{{ $search }}" placeholder="Search insights…">
+                    </label>
+                    <label class="field">
+                        <span class="sr-only">Category</span>
+                        <select name="category">
+                            <option value="">All categories</option>
+                            @foreach ($categories as $categoryOption)
+                                <option value="{{ $categoryOption }}" @selected($category === $categoryOption)>{{ $categoryOption }}</option>
+                            @endforeach
+                        </select>
+                    </label>
+                    <button class="button button--primary" type="submit">Filter</button>
+                </form>
+
+                @if ($search !== '' || $category !== '')
+                    <p class="tiny muted" style="margin-bottom:1rem">
+                        {{ $articles->total() }} {{ $articles->total() === 1 ? 'article' : 'articles' }}
+                        @if ($category !== '') in {{ $category }} @endif
+                        @if ($search !== '') matching “{{ $search }}” @endif.
+                        <a href="{{ route('insights') }}">Clear filters</a>
+                    </p>
+                @endif
+
                 <div class="article-grid">
                     @foreach ($articles as $article)
                         <article class="article-card">

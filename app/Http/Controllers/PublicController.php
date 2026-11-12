@@ -10,6 +10,7 @@ use App\Models\Project;
 use App\Models\Service;
 use App\Models\Training;
 use App\Support\ClientWork;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -137,15 +138,37 @@ class PublicController extends Controller
         ]);
     }
 
-    public function insights()
+    public function insights(Request $request)
     {
+        $category = trim((string) $request->query('category', ''));
+        $search = trim((string) $request->query('q', ''));
+
         $articles = Article::published()
             ->whereRaw('LENGTH(body) > 700')
+            ->when($category !== '', fn ($query) => $query->where('category', $category))
+            ->when($search !== '', fn ($query) => $query->where(function ($sub) use ($search): void {
+                $like = '%'.$search.'%';
+
+                $sub->where('title', 'like', $like)
+                    ->orWhere('excerpt', 'like', $like)
+                    ->orWhere('body', 'like', $like)
+                    ->orWhere('category', 'like', $like);
+            }))
             ->latest('published_at')
-            ->paginate(9);
+            ->paginate(9)
+            ->withQueryString();
+
+        $categories = Article::published()
+            ->whereNotNull('category')
+            ->distinct()
+            ->orderBy('category')
+            ->pluck('category');
 
         return view('pages.insights', [
             'articles' => $articles,
+            'categories' => $categories,
+            'category' => $category,
+            'search' => $search,
             'pageTitle' => 'Insights & Ideas | Dunia Media',
             'metaDescription' => 'Practical perspectives on media, creators, AI and measurable campaigns from Dunia Media and RA Media Relations.',
         ]);

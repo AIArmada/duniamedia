@@ -43,8 +43,8 @@
 
                 <h3>Key facts</h3>
                 <div class="fact-grid">
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Channel</span></div><strong>{{ $media->offering_type }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Owner / supplier</span></div><strong>{{ $media->channel_label ?? $media->seller?->display_name ?? 'Confirmed on enquiry' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Medium</span></div><strong>{{ $media->offering_type }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Media owner / seller</span></div><strong>{{ $media->channel_label ?? $media->seller?->display_name ?? 'Confirmed on enquiry' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location_label ?? 'To be discussed' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audience_label ?? 'Defined during briefing' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="calendar" :size="16"/><span>Availability</span></div><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></div>
@@ -168,7 +168,7 @@
                         <h2 id="similar-title" class="section-title">More in {{ $media->offering_type }}.</h2>
                     </div>
                     <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('media.index', ['type' => $media->offering_type]) }}">View the category <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="{{ route('media.index', ['type' => $media->offering_type]) }}">View the medium <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
                 <div class="media-grid">

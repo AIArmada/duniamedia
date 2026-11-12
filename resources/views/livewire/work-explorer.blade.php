@@ -20,6 +20,15 @@
                 </span>
             </label>
             <label class="work-filter">
+                <span>Client</span>
+                <select wire:model.live="client">
+                    <option value="all">All clients</option>
+                    @foreach ($clients as $clientOption)
+                        <option value="{{ $clientOption->slug }}" @selected($client === $clientOption->slug)>{{ $clientOption->display_name }}</option>
+                    @endforeach
+                </select>
+            </label>
+            <label class="work-filter">
                 <span>Client type</span>
                 <select wire:model.live="sector">
                     <option value="all">All clients</option>

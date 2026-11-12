@@ -15,19 +15,20 @@
     <x-page-hero
         eyebrow="Media opportunities"
         title="Explore the <span class='editorial'>media</span> world."
-        lede="Television, radio, outdoor, digital, print, creators and custom spaces — in one place. Rates are indicative and every placement is verified with the media owner before booking."
+        lede="Filter by platform, medium, media owner, format and location. Every opportunity is tied to a media owner, a channel and a commercial rate card before it reaches a proposal."
         :image="'assets/img/v2/hero-media.webp'"
         :image-mobile="'assets/img/v2/hero-media-mobile.webp'"
         image-alt="A Malaysian media strategist presenting a wall of television, print, radio and outdoor media formats"
     >
         <x-slot:actions>
-            <a class="button button--secondary" href="{{ route('advisor') }}">Not sure where to start? Use the advisor</a>
+            <a class="button button--secondary" href="{{ route('media.owners') }}">Browse media owners</a>
+            <a class="button button--secondary" href="{{ route('advisor') }}">Use the media advisor</a>
         </x-slot:actions>
     </x-page-hero>
 
     <section class="catalog" aria-label="Media catalogue">
         <div class="container">
-            <div class="category-chips" role="group" aria-label="Filter by media category">
+            <div class="category-chips" role="group" aria-label="Filter by medium">
                 <button type="button" class="chip @if ($type === 'all') is-active @endif" wire:click="$set('type', 'all')" aria-pressed="{{ $type === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
                 @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $category)
                     <button type="button" class="chip @if ($type === $category) is-active @endif" wire:click="$set('type', '{{ $category }}')" aria-pressed="{{ $type === $category ? 'true' : 'false' }}"><x-dm-icon :name="$categoryIcons[$category] ?? 'spark'" :size="16"/>{{ $category }}</button>
@@ -48,13 +49,22 @@
 
                     <label class="field">
                         <span>Search</span>
-                        <input type="search" wire:model.live.debounce.350ms="search" placeholder="Media, owner, channel, place…">
+                        <input type="search" wire:model.live.debounce.350ms="search" placeholder="Medium, owner, channel, format, place…">
                     </label>
 
                     <label class="field">
-                        <span>Media category</span>
+                        <span>Platform</span>
+                        <select wire:model.live="platform">
+                            <option value="all">Traditional and digital</option>
+                            <option value="traditional" @selected($platform === 'traditional')>Traditional media</option>
+                            <option value="digital" @selected($platform === 'digital')>Digital and creators</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Medium</span>
                         <select wire:model.live="type">
-                            <option value="all">All categories</option>
+                            <option value="all">All mediums</option>
                             @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $category)
                                 <option value="{{ $category }}" @selected($type === $category)>{{ $category }}</option>
                             @endforeach
@@ -62,9 +72,29 @@
                     </label>
 
                     <label class="field">
-                        <span>Owner / channel</span>
-                        <select wire:model.live="vendor">
+                        <span>Format</span>
+                        <select wire:model.live="format">
+                            <option value="all">All formats</option>
+                            @foreach ($formats as $formatOption)
+                                <option value="{{ $formatOption->format_code }}" @selected($format === $formatOption->format_code)>{{ $formatOption->name }}</option>
+                            @endforeach
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Media owner / seller</span>
+                        <select wire:model.live="owner">
                             <option value="all">All owners</option>
+                            @foreach ($owners as $ownerOption)
+                                <option value="{{ $ownerOption->slug }}" @selected($owner === $ownerOption->slug)>{{ $ownerOption->display_name }}</option>
+                            @endforeach
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Channel / brand</span>
+                        <select wire:model.live="vendor">
+                            <option value="all">All channels</option>
                             @foreach ($vendors as $channel)
                                 <option value="{{ $channel }}" @selected($vendor === $channel)>{{ $channel }}</option>
                             @endforeach
@@ -75,10 +105,20 @@
                         <span>Location</span>
                         <select wire:model.live="location">
                             <option value="all">All locations</option>
-                            <option value="Nationwide" @selected($location === 'Nationwide')>Nationwide</option>
-                            <option value="Klang Valley" @selected($location === 'Klang Valley')>Klang Valley</option>
-                            <option value="Sepang (KLIA T1)" @selected($location === 'Sepang (KLIA T1)')>Sepang (KLIA)</option>
-                            <option value="Johor" @selected($location === 'Johor')>Johor</option>
+                            @foreach ($locations as $locationOption)
+                                <option value="{{ $locationOption }}" @selected($location === $locationOption)>{{ $locationOption }}</option>
+                            @endforeach
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Availability</span>
+                        <select wire:model.live="availability">
+                            <option value="all">Any availability</option>
+                            <option value="available" @selected($availability === 'available')>Available</option>
+                            <option value="limited" @selected($availability === 'limited')>Limited</option>
+                            <option value="on_request" @selected($availability === 'on_request')>On request</option>
+                            <option value="unavailable" @selected($availability === 'unavailable')>Unavailable</option>
                         </select>
                     </label>
 
@@ -95,8 +135,8 @@
                     </label>
 
                     <div class="filter-help">
-                        <strong>Starting from the outcome works better.</strong>
-                        <p>Tell us the audience, budget and timing. Our advisor turns that into an illustrative direction before you shortlist.</p>
+                        <strong>Start with the audience, then narrow the inventory.</strong>
+                        <p>The advisor turns an objective, budget and timing into an illustrative direction before you shortlist a medium or owner.</p>
                         <a class="button button--primary button--sm" href="{{ route('advisor') }}">Open the advisor <span aria-hidden="true">↗</span></a>
                     </div>
 
@@ -111,12 +151,12 @@
                     <div class="results-bar">
                         <p class="results-bar__count" aria-live="polite">
                             {{ $listings->total() }} {{ $listings->total() === 1 ? 'opportunity' : 'opportunities' }}
-                            <span>· subject to availability verification</span>
+                            <span>· subject to owner and availability verification</span>
                         </p>
                         <div class="results-bar__controls">
                             <button type="button" class="button button--secondary button--sm filter-open" data-filter-open aria-expanded="false" aria-controls="media-filters">
                                 Filters
-                                @if ($type !== 'all' || $vendor !== 'all' || $location !== 'all' || $budget !== 'any' || $search !== '') (active) @endif
+                                @if ($platform !== 'all' || $type !== 'all' || $format !== 'all' || $owner !== 'all' || $vendor !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any' || $search !== '') (active) @endif
                             </button>
                             <label class="sr-only" for="media-sort">Sort media</label>
                             <select id="media-sort" class="sort-select" wire:model.live="sort">
@@ -127,20 +167,32 @@
                         </div>
                     </div>
 
-                    @if ($search !== '' || $type !== 'all' || $vendor !== 'all' || $location !== 'all' || $budget !== 'any')
+                    @if ($search !== '' || $platform !== 'all' || $type !== 'all' || $format !== 'all' || $owner !== 'all' || $vendor !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any')
                         <div class="applied-filters">
                             <span>Applied:</span>
                             @if ($search !== '')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('search', '')">“{{ $search }}” ×</button>
                             @endif
+                            @if ($platform !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('platform', 'all')">{{ $platform === 'traditional' ? 'Traditional media' : 'Digital and creators' }} ×</button>
+                            @endif
                             @if ($type !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('type', 'all')">{{ $type }} ×</button>
+                            @endif
+                            @if ($format !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('format', 'all')">{{ $formats->firstWhere('format_code', $format)?->name ?? $format }} ×</button>
+                            @endif
+                            @if ($owner !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('owner', 'all')">{{ $owners->firstWhere('slug', $owner)?->display_name ?? $owner }} ×</button>
                             @endif
                             @if ($vendor !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('vendor', 'all')">{{ $vendor }} ×</button>
                             @endif
                             @if ($location !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('location', 'all')">{{ $location }} ×</button>
+                            @endif
+                            @if ($availability !== 'all')
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('availability', 'all')">{{ str_replace('_', ' ', $availability) }} ×</button>
                             @endif
                             @if ($budget !== 'any')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('budget', 'any')">Up to RM{{ number_format((int) $budget) }} ×</button>
@@ -149,13 +201,13 @@
                         </div>
                     @endif
 
-                    <div class="media-grid" wire:loading.class="is-loading" wire:target="search,type,vendor,location,budget,sort">
+                    <div class="media-grid" wire:loading.class="is-loading" wire:target="search,platform,type,format,owner,vendor,location,availability,budget,sort">
                         @forelse ($listings as $item)
                             <x-media-card :item="$item" wire:key="media-{{ $item->id }}"/>
                         @empty
                             <div class="empty-state">
                                 <h3>No media matches those filters.</h3>
-                                <p>Try widening the location or budget, or tell us what you are trying to achieve and we will suggest a direction.</p>
+                                <p>Try widening the medium, owner or location, or tell us what you are trying to achieve and we will suggest a direction.</p>
                                 <div class="empty-state__actions">
                                     <button class="button button--primary" type="button" wire:click="clearFilters">Clear filters</button>
                                     <a class="button button--secondary" href="{{ route('advisor') }}">Ask the media advisor</a>

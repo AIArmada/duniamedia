@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Campaign;
+use App\Models\Party;
 use App\Models\Service;
 use Livewire\Attributes\Url;
 use Livewire\Component;
@@ -98,6 +99,7 @@ class WorkExplorer extends Component
             'years' => Campaign::query()->published()->orderByDesc('starts_on')->pluck('starts_on')->filter()->map(fn ($date) => (int) $date->format('Y'))->unique()->values(),
             'services' => Service::query()->orderBy('name')->pluck('name'),
             'channels' => Campaign::query()->published()->whereNotNull('channel_label')->distinct()->orderBy('channel_label')->pluck('channel_label'),
+            'clients' => Party::query()->whereHas('clientReferences')->orderBy('display_name')->get(['id', 'slug', 'display_name']),
         ]);
     }
 }
