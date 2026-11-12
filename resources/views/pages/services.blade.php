@@ -109,8 +109,11 @@
 
     <x-page-hero
         eyebrow="Our capabilities"
-        title="Everything connects. <span class='editorial'>So can your campaign.</span>"
+        title="Everything connects.<br><span class='editorial'>So can your campaign.</span>"
         lede="From reaching an audience to creating real action: media, branding, content, AI and the digital systems that carry the response."
+        :image="'assets/img/v2/hero-services.webp'"
+        :image-mobile="'assets/img/v2/hero-services-mobile.webp'"
+        image-alt="A Malaysian creative team reviewing a storyboard and colour swatches in a production studio"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('contact') }}">Discuss a brief <span aria-hidden="true">↗</span></a>

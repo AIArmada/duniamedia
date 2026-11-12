@@ -5,7 +5,8 @@
         eyebrow="Dunia Media Academy"
         title="AI fluency.<br><span class='editorial'>Real business advantage.</span>"
         lede="Seminars, hands-on programmes and corporate learning across AI, creativity, branding and business technology — built for the way teams actually work."
-        :media="asset('assets/img/v2/academy-hero.webp')"
+        :media="'assets/img/v2/academy-hero.webp'"
+        :media-mobile="'assets/img/v2/academy-hero-mobile.webp'"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('contact') }}">Design a programme for my team <span aria-hidden="true">↗</span></a>

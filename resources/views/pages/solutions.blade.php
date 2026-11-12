@@ -5,7 +5,8 @@
         eyebrow="Creative × technology × intelligence"
         title="Better reach is <span class='editorial'>only the beginning</span>."
         lede="A placement can create attention. A connected campaign turns that attention into something the business can see: an enquiry, a visit, a sale, a stronger relationship."
-        :media="asset('assets/img/v2/solutions-production.webp')"
+        :media="'assets/img/v2/solutions-production.webp'"
+        :media-mobile="'assets/img/v2/solutions-production-mobile.webp'"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('advisor') }}">Plan a connected campaign <span aria-hidden="true">↗</span></a>

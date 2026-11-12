@@ -3,6 +3,9 @@
         eyebrow="Dunia Media creator network"
         title="Reach communities that <span class='editorial'>actually care</span>."
         lede="For brands, the right creator is not always the one with the biggest following. For creators, the right partnership is more than a one-off post. We connect both sides with a focus on fit, craft and useful outcomes."
+        :image="'assets/img/v2/hero-creators.webp'"
+        :image-mobile="'assets/img/v2/hero-creators-mobile.webp'"
+        image-alt="Three Malaysian creators filming and reviewing content together in a warm home studio"
     />
 
     <section class="section">

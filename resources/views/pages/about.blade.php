@@ -27,7 +27,10 @@
                 </div>
             </div>
             <figure class="about-hero__media">
-                <img src="{{ asset('assets/img/ra-about-hero.webp') }}" alt="RA Media production team at work" width="1200" height="900" fetchpriority="high" decoding="async">
+                <picture>
+                    <source media="(max-width: 760px)" srcset="{{ asset('assets/img/ra-about-hero-mobile.webp') }}">
+                    <img src="{{ asset('assets/img/ra-about-hero.webp') }}" alt="RA Media production team at work" width="1672" height="941" fetchpriority="high" decoding="async">
+                </picture>
             </figure>
         </div>
     </section>

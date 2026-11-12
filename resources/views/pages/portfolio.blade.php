@@ -3,8 +3,11 @@
 @section('content')
     <x-page-hero
         eyebrow="Work, ideas & possibilities"
-        title="Think bigger. <span class='editorial'>Build better.</span>"
+        title="Think bigger.<br><span class='editorial'>Build better.</span>"
         lede="Illustrative directions that show how media, creative and technology can work together. These are concepts, not claimed past campaigns — verified client work lives in the archive."
+        :image="'assets/img/v2/hero-portfolio.webp'"
+        :image-mobile="'assets/img/v2/hero-portfolio-mobile.webp'"
+        image-alt="A creative studio concept wall with storyboards, printed campaign frames and colour swatches"
     >
         <x-slot:actions>
             <a class="button button--primary" href="{{ route('work.index') }}">See real client work <span aria-hidden="true">↗</span></a>

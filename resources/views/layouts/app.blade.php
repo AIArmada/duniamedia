@@ -47,13 +47,17 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
 </head>
-<body @class(['route-home' => request()->routeIs('home')])>
+<body @class([
+    'route-home' => request()->routeIs('home'),
+    'has-cover-header' => request()->routeIs('work.*', 'academy', 'solutions'),
+])>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header" data-site-header>
     <div class="container header-inner">
         <a class="brand" href="{{ route('home') }}" aria-label="Dunia Media home">
-            <img src="{{ asset('assets/brand/logo-horizontal.svg') }}" width="184" height="51" alt="Dunia Media" decoding="async">
+            <img class="brand__logo brand__logo--color" src="{{ asset('assets/brand/logo-horizontal.svg') }}" width="184" height="51" alt="Dunia Media" decoding="async">
+            <img class="brand__logo brand__logo--reversed" src="{{ asset('assets/brand/logo-horizontal-reversed.svg') }}" width="184" height="51" alt="Dunia Media" decoding="async">
         </a>
 
         <nav class="primary-nav" aria-label="Primary navigation">

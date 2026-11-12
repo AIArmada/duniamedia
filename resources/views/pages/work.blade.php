@@ -6,7 +6,12 @@
     <section class="work-hero" aria-labelledby="work-title">
         @if ($heroCover)
             <div class="work-hero__media" aria-hidden="true">
-                <img src="{{ asset($heroCover) }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async">
+                <picture>
+                    @if ($heroCover === 'assets/work/covers/jwp-psa-kl.webp')
+                        <source media="(max-width: 760px)" srcset="{{ asset('assets/work/covers/jwp-psa-kl-mobile.webp') }}">
+                    @endif
+                    <img src="{{ asset($heroCover) }}" alt="" width="960" height="540" fetchpriority="high" decoding="async">
+                </picture>
             </div>
         @endif
         <div class="container work-hero__inner">

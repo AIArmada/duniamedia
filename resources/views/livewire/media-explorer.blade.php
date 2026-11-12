@@ -16,6 +16,9 @@
         eyebrow="Media opportunities"
         title="Explore the <span class='editorial'>media</span> world."
         lede="Television, radio, outdoor, digital, print, creators and custom spaces — in one place. Rates are indicative and every placement is verified with the media owner before booking."
+        :image="'assets/img/v2/hero-media.webp'"
+        :image-mobile="'assets/img/v2/hero-media-mobile.webp'"
+        image-alt="A Malaysian media strategist presenting a wall of television, print, radio and outdoor media formats"
     >
         <x-slot:actions>
             <a class="button button--secondary" href="{{ route('advisor') }}">Not sure where to start? Use the advisor</a>

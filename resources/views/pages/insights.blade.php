@@ -3,8 +3,11 @@
 @section('content')
     <x-page-hero
         eyebrow="Insights & ideas"
-        title="Better questions. <span class='editorial'>Smarter marketing.</span>"
+        title="Better questions.<br><span class='editorial'>Smarter marketing.</span>"
         lede="Practical perspectives on media, creators, AI and measurable campaigns. We publish when there is something useful to say — not to fill a content calendar."
+        :image="'assets/img/v2/hero-insights.webp'"
+        :image-mobile="'assets/img/v2/hero-insights-mobile.webp'"
+        image-alt="A Malaysian strategist reading a printed feature and making notes at a timber desk"
     />
 
     <section class="section">
