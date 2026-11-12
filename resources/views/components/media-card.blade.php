@@ -25,10 +25,10 @@
     </a>
     <div class="media-card__body">
         <div class="media-card__meta">
-            <span class="tag"><x-dm-icon :name="$typeIcons[$item->type] ?? 'spark'" :size="13"/>{{ $item->type }}</span>
-            <span class="media-card__owner">{{ $item->channel ?? $item->supplier_name ?? 'Media owner on request' }} · {{ $item->location ?? 'Nationwide' }}</span>
+            <span class="tag"><x-dm-icon :name="$typeIcons[$item->offering_type] ?? 'spark'" :size="13"/>{{ $item->offering_type }}</span>
+            <span class="media-card__owner">{{ $item->channel_label ?? $item->seller?->display_name ?? 'Media owner on request' }} · {{ $item->location_label ?? 'Nationwide' }}</span>
         </div>
-        <h3><a href="{{ route('media.show', $item->slug) }}">{{ $item->title }}</a></h3>
+        <h3><a href="{{ route('media.show', $item->slug) }}">{{ $item->name }}</a></h3>
         <p class="media-card__summary">{{ $item->summary }}</p>
         <div class="media-card__footer">
             <span class="media-card__price">
@@ -39,7 +39,7 @@
                 @endif
                 <small>{{ $hasFixedPrice ? 'Rate card guide · subject to confirmation' : 'Rates and availability on request' }}</small>
             </span>
-            <a href="{{ route('media.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->title }} details">↗</a>
+            <a href="{{ route('media.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->name }} details">↗</a>
         </div>
     </div>
 </article>

@@ -10,6 +10,10 @@ class MediaImage
     {
         $path = $path ?: $fallback;
 
+        if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
+            return $path;
+        }
+
         if (str_starts_with($path, 'assets/')) {
             $publicPath = public_path($path);
             $version = is_file($publicPath) ? filemtime($publicPath) : null;
@@ -22,12 +26,12 @@ class MediaImage
 
     public static function srcset(?string $path, array $widths = []): ?string
     {
-        if (!$path || !str_starts_with($path, 'assets/')) {
+        if (! $path || ! str_starts_with($path, 'assets/')) {
             return null;
         }
 
         $sourcePath = public_path($path);
-        if (!is_file($sourcePath)) {
+        if (! is_file($sourcePath)) {
             return null;
         }
 

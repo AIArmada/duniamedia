@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MediaListing;
+use App\Models\MediaOffering;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -13,8 +13,8 @@ class RateCardController extends Controller
 {
     public function show(Request $request, string $slug, int $index = 0): BinaryFileResponse|StreamedResponse|RedirectResponse
     {
-        $media = MediaListing::query()
-            ->where('is_published', true)
+        $media = MediaOffering::query()
+            ->published()
             ->where('slug', $slug)
             ->firstOrFail();
 
@@ -24,22 +24,14 @@ class RateCardController extends Controller
             return redirect()->to(route('media.show', $media->slug).'#rate-card');
         }
 
-        $documents = data_get($media->specifications, 'documents', []);
+        $documents = $media->getMedia('documents');
         $document = $documents[$index] ?? null;
         abort_unless($document, 404);
 
-        $path = storage_path('app/private/ratecards/'.$document['file']);
+        $path = $document->getPath();
         abort_unless(is_file($path), 404);
 
-        $ext = $document['ext'] ?? pathinfo($path, PATHINFO_EXTENSION);
-        $mime = match ($ext) {
-            'pdf' => 'application/pdf',
-            'xlsx' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-            'jpg', 'jpeg' => 'image/jpeg',
-            'png' => 'image/png',
-            'mp4' => 'video/mp4',
-            default => 'application/octet-stream',
-        };
+        $mime = $document->mime_type ?: 'application/octet-stream';
 
         $headers = [
             'Content-Type' => $mime,

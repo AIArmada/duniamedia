@@ -46,7 +46,7 @@
                 @foreach ($trainings as $training)
                     <article class="track">
                         <div class="track__media">
-                            <img src="{{ asset($trackImages[$loop->index] ?? $training->image) }}" alt="" loading="lazy" decoding="async">
+                            <img src="{{ \App\Support\MediaImage::url($trackImages[$loop->index] ?? $training->displayImage()) }}" alt="" loading="lazy" decoding="async">
                         </div>
                         <span class="eyebrow eyebrow--plain">{{ strtoupper($training->category) }}</span>
                         <h3>{{ $training->title }}</h3>

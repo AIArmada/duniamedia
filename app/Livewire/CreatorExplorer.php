@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\Creator;
+use App\Models\CreatorProfile;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -27,8 +27,18 @@ class CreatorExplorer extends Component
 
     public function render()
     {
-        $q = Creator::query()->where('status', 'active')->whereNotNull('verified_at')->when($this->niche !== 'all', fn ($q) => $q->where('niche', $this->niche))->when($this->platform !== 'all', fn ($q) => $q->where('platform', $this->platform))->when($this->search !== '', fn ($q) => $q->where(fn ($sub) => $sub->where('name', 'like', '%'.$this->search.'%')->orWhere('bio', 'like', '%'.$this->search.'%')));
+        $query = CreatorProfile::query()
+            ->where('status', 'active')
+            ->where('verification_status', 'verified')
+            ->with('creatorParty')
+            ->when($this->niche !== 'all', fn ($query) => $query->where('primary_niche', $this->niche))
+            ->when($this->platform !== 'all', fn ($query) => $query->where('platform_label', $this->platform))
+            ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
+                $sub->where('bio', 'like', '%'.$this->search.'%')
+                    ->orWhere('slug', 'like', '%'.$this->search.'%')
+                    ->orWhereHas('creatorParty', fn ($party) => $party->where('display_name', 'like', '%'.$this->search.'%'));
+            }));
 
-        return view('livewire.creator-explorer', ['creators' => $q->orderByDesc('is_featured')->paginate(9)])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
+        return view('livewire.creator-explorer', ['creators' => $query->orderByDesc('is_featured')->paginate(9)])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
     }
 }

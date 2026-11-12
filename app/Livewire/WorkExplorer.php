@@ -2,7 +2,8 @@
 
 namespace App\Livewire;
 
-use App\Support\ClientWork;
+use App\Models\Campaign;
+use App\Models\Service;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 
@@ -48,57 +49,55 @@ class WorkExplorer extends Component
 
     public function render()
     {
-        $clients = collect(ClientWork::clients())->keyBy('slug');
-
-        $campaigns = collect(ClientWork::campaigns())
-            ->map(function (array $campaign) use ($clients): array {
-                $client = $clients->get($campaign['client']);
-
-                $campaign['client_name'] = $client['name'] ?? $campaign['client'];
-                $campaign['client_short_name'] = $client['short_name'] ?? $campaign['client'];
-                $campaign['client_logo'] = $client['logo'] ?? null;
-                $campaign['client_sector'] = $client['sector'] ?? null;
-
-                return $campaign;
-            });
-
-        $search = trim(mb_strtolower($this->search));
-
-        $campaigns = $campaigns
-            ->when($search !== '', function ($items) use ($search) {
-                return $items->filter(function (array $campaign) use ($search): bool {
-                    $haystack = mb_strtolower(implode(' ', [
-                        $campaign['client_name'],
-                        $campaign['title'],
-                        $campaign['description'],
-                        $campaign['platform'],
-                        $campaign['service'],
-                        $campaign['channel'],
-                    ]));
-
-                    return str_contains($haystack, $search);
+        $query = Campaign::query()
+            ->published()
+            ->with(['client.organization', 'service'])
+            ->when($this->search !== '', function ($query) {
+                $search = '%'.trim($this->search).'%';
+                $query->where(function ($sub) use ($search) {
+                    $sub->where('name', 'like', $search)
+                        ->orWhere('summary', 'like', $search)
+                        ->orWhere('platform_label', 'like', $search)
+                        ->orWhereHas('client', fn ($client) => $client->where('display_name', 'like', $search));
                 });
             })
-            ->when($this->sector !== 'all', fn ($items) => $items->where('client_sector', $this->sector))
-            ->when($this->service !== 'all', fn ($items) => $items->where('service', $this->service))
-            ->when($this->channel !== 'all', fn ($items) => $items->where('channel', $this->channel))
-            ->when($this->year !== 'all', fn ($items) => $items->where('year', (int) $this->year))
-            ->when($this->client !== 'all', fn ($items) => $items->where('client', $this->client))
-            ->sortByDesc(fn (array $campaign): string => sprintf('%04d-%s', $campaign['year'], $campaign['title']))
-            ->values();
+            ->when($this->sector !== 'all', fn ($query) => $query->whereHas('client.organization', fn ($organization) => $organization->where('organization_type', $this->sector)))
+            ->when($this->service !== 'all', fn ($query) => $query->whereHas('service', fn ($service) => $service->where('name', $this->service)))
+            ->when($this->channel !== 'all', fn ($query) => $query->where('channel_label', $this->channel))
+            ->when($this->year !== 'all', fn ($query) => $query->whereYear('starts_on', (int) $this->year))
+            ->when($this->client !== 'all', fn ($query) => $query->whereHas('client', fn ($client) => $client->where('slug', $this->client)))
+            ->orderByDesc('starts_on');
 
-        $total = $campaigns->count();
-        $visible = $campaigns->take($this->limit);
-        $activeClient = $this->client !== 'all' ? $clients->get($this->client) : null;
+        $total = $query->count();
+        $campaigns = $query->take($this->limit)->get()->map(fn (Campaign $campaign): array => [
+            'client' => $campaign->client?->slug,
+            'client_name' => $campaign->client?->display_name ?? 'Client',
+            'client_short_name' => $campaign->client?->display_name ?? 'Client',
+            'client_logo' => $campaign->client?->displayLogo(),
+            'client_sector' => $campaign->client?->organization?->organization_type,
+            'title' => $campaign->name,
+            'description' => $campaign->summary,
+            'platform' => $campaign->platform_label,
+            'service' => $campaign->service?->name,
+            'channel' => $campaign->channel_label,
+            'date' => $campaign->starts_on?->format('d M Y'),
+            'year' => (int) $campaign->starts_on?->format('Y'),
+            'featured' => $campaign->is_featured,
+            'media' => [],
+        ]);
+
+        $activeClient = $this->client !== 'all'
+            ? Campaign::query()->published()->whereHas('client', fn ($query) => $query->where('slug', $this->client))->first()?->client
+            : null;
 
         return view('livewire.work-explorer', [
-            'campaigns' => $visible,
+            'campaigns' => $campaigns,
             'total' => $total,
-            'hasMore' => $total > $visible->count(),
-            'activeClient' => $activeClient,
-            'years' => ClientWork::years(),
-            'services' => ClientWork::services(),
-            'channels' => ClientWork::channels(),
+            'hasMore' => $total > $campaigns->count(),
+            'activeClient' => $activeClient ? ['name' => $activeClient->display_name, 'slug' => $activeClient->slug] : null,
+            'years' => Campaign::query()->published()->orderByDesc('starts_on')->pluck('starts_on')->filter()->map(fn ($date) => (int) $date->format('Y'))->unique()->values(),
+            'services' => Service::query()->orderBy('name')->pluck('name'),
+            'channels' => Campaign::query()->published()->whereNotNull('channel_label')->distinct()->orderBy('channel_label')->pluck('channel_label'),
         ]);
     }
 }

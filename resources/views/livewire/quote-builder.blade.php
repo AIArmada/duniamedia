@@ -34,10 +34,10 @@
                                         <div class="selection-item" wire:key="selected-{{ $item->id }}">
                                             <img src="{{ \App\Support\MediaImage::url($item->displayImage()) }}" alt="">
                                             <div>
-                                                <strong>{{ $item->title }}</strong>
-                                                <span>{{ $item->type }} · {{ $item->location ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
+                                                <strong>{{ $item->name }}</strong>
+                                                <span>{{ $item->offering_type }} · {{ $item->location_label ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
                                             </div>
-                                            <button type="button" wire:click="remove({{ $item->id }})" aria-label="Remove {{ $item->title }}" class="remove-item">×</button>
+                                            <button type="button" wire:click="remove('{{ $item->id }}')" aria-label="Remove {{ $item->name }}" class="remove-item">×</button>
                                         </div>
                                     @empty
                                         <div class="inline-empty">No media selected yet. <a href="{{ route('media.index') }}">Browse the catalogue</a> to add an opportunity.</div>
@@ -45,12 +45,21 @@
                                 </div>
                                 @error('selected')<span class="form-error">{{ $message }}</span>@enderror
 
+                                @if ($planInstance)
+                                    <div class="notice" style="margin-top:1rem">Loaded from a saved campaign plan. Submitting this request marks the plan as converted.</div>
+                                @endif
+
+                                <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
+                                    <button class="button button--secondary button--sm" type="button" wire:click="saveAsPlan">Save as campaign plan</button>
+                                    <a class="button button--secondary button--sm" href="{{ route('plans.index') }}">View my plans</a>
+                                </div>
+
                                 <label class="field" style="margin-top:1rem">
                                     <span>Add a media opportunity</span>
                                     <select wire:change="add($event.target.value)">
                                         <option value="">Select media…</option>
                                         @foreach ($options as $option)
-                                            <option value="{{ $option->id }}">{{ $option->title }}</option>
+                                            <option value="{{ $option->id }}">{{ $option->name }}</option>
                                         @endforeach
                                     </select>
                                 </label>

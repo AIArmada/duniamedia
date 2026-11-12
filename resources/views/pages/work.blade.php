@@ -110,7 +110,7 @@
                             @endif
                                 <span class="work-client-card__mark @if (empty($client['logo'])) is-typeset @endif">
                                     @if (! empty($client['logo']))
-                                        <img src="{{ asset($client['logo']) }}" alt="" loading="lazy" decoding="async">
+                                        <img src="{{ \App\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy" decoding="async">
                                     @else
                                         <span>{{ $client['mark'] ?? $client['short_name'] }}</span>
                                     @endif

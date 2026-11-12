@@ -74,7 +74,7 @@
                 <div class="trust-strip__logos">
                     @foreach ($trustClients as $client)
                         <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View work for {{ $client['name'] }}">
-                            <img src="{{ asset($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
+                            <img src="{{ \App\Support\MediaImage::url($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
                         </a>
                     @endforeach
                 </div>
@@ -161,7 +161,7 @@
                 <div class="featured-work">
                     <a class="work-feature" href="{{ route('work.index', ['client' => $heroFeature['client']]) }}#archive">
                         @if ($heroFeature['cover'])
-                            <img src="{{ asset($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
+                            <img src="{{ \App\Support\MediaImage::url($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
                         @else
                             <img src="{{ asset('assets/img/v2/channel-tv.webp') }}" alt="" loading="lazy" decoding="async">
                         @endif
@@ -182,9 +182,9 @@
                             <a class="work-support__item" href="{{ route('work.index', ['client' => $work['client']]) }}#archive">
                                 <span class="work-support__thumb">
                                     @if ($work['cover'])
-                                        <img src="{{ asset($work['cover']) }}" alt="" loading="lazy" decoding="async">
+                                        <img src="{{ \App\Support\MediaImage::url($work['cover']) }}" alt="" loading="lazy" decoding="async">
                                     @elseif ($work['client_logo'])
-                                        <img src="{{ asset($work['client_logo']) }}" alt="" loading="lazy" decoding="async" style="object-fit:contain;padding:0.4rem">
+                                        <img src="{{ \App\Support\MediaImage::url($work['client_logo']) }}" alt="" loading="lazy" decoding="async" style="object-fit:contain;padding:0.4rem">
                                     @endif
                                 </span>
                                 <span>

@@ -3,50 +3,49 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use App\Models\MediaListing;
+use App\Models\Campaign;
+use App\Models\MediaOffering;
+use App\Models\Party;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Training;
 use App\Support\ClientWork;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 class PublicController extends Controller
 {
     public function home()
     {
-        $clients = collect(ClientWork::clients())->keyBy('slug');
-        $mediaItems = collect(ClientWork::media())->keyBy('key');
+        $featuredWork = Campaign::query()
+            ->published()
+            ->where('is_featured', true)
+            ->with(['client', 'service'])
+            ->latest('starts_on')
+            ->take(4)
+            ->get()
+            ->map(fn (Campaign $campaign): array => [
+                'client' => $campaign->client?->slug,
+                'client_name' => $campaign->client?->display_name,
+                'client_logo' => $campaign->client?->displayLogo(),
+                'title' => $campaign->name,
+                'service' => $campaign->service?->name,
+                'channel' => $campaign->channel_label,
+                'platform' => $campaign->platform_label,
+                'date' => $campaign->starts_on?->format('d M Y'),
+                'year' => (int) $campaign->starts_on?->format('Y'),
+                'description' => $campaign->summary,
+                'featured' => $campaign->is_featured,
+                'cover' => $campaign->displayCover(),
+            ]);
 
-        $featuredWork = collect(ClientWork::campaigns())
-            ->filter(fn (array $campaign): bool => ! empty($campaign['featured']))
-            ->map(function (array $campaign) use ($clients, $mediaItems): array {
-                $client = $clients->get($campaign['client']);
-                $cover = null;
-
-                foreach ($campaign['media'] ?? [] as $key) {
-                    if ($media = $mediaItems->get($key)) {
-                        $cover = $media['poster'];
-                        break;
-                    }
-                }
-
-                return $campaign + [
-                    'client_name' => $client['name'] ?? $campaign['client'],
-                    'client_logo' => $client['logo'] ?? null,
-                    'cover' => $cover,
-                ];
-            })
-            ->sortByDesc(fn (array $campaign): bool => (bool) $campaign['cover'])
-            ->values()
-            ->take(4);
-
-        $trustClients = collect(ClientWork::featuredClients(20))
-            ->filter(fn (array $client): bool => ! empty($client['logo']) && ($client['mark_style'] ?? '') !== 'is-mark--light')
+        $trustClients = $this->clientParties()
+            ->filter(fn (array $client): bool => ! empty($client['logo']))
             ->take(8);
 
         return view('pages.home', [
-            'media' => MediaListing::where('is_published', true)->where('is_featured', true)->latest()->take(6)->get(),
+            'media' => MediaOffering::published()->with('seller')->where('is_featured', true)->latest('published_at')->take(6)->get(),
             'featuredWork' => $featuredWork,
             'trustClients' => $trustClients,
         ]);
@@ -54,20 +53,21 @@ class PublicController extends Controller
 
     public function mediaShow(string $slug)
     {
-        $media = MediaListing::where('is_published', true)->where('slug', $slug)->firstOrFail();
+        $media = MediaOffering::published()->with('seller')->where('slug', $slug)->firstOrFail();
 
-        $similar = MediaListing::query()
-            ->where('is_published', true)
+        $similar = MediaOffering::query()
+            ->published()
+            ->with('seller')
             ->whereKeyNot($media->id)
-            ->where('type', $media->type)
-            ->latest()
+            ->where('offering_type', $media->offering_type)
+            ->latest('published_at')
             ->take(3)
             ->get();
 
         return view('pages.media-detail', [
             'media' => $media,
             'similar' => $similar,
-            'pageTitle' => $media->title.' — Media Opportunity | Dunia Media',
+            'pageTitle' => $media->name.' — Media Opportunity | Dunia Media',
             'metaDescription' => Str::limit(strip_tags($media->summary), 155),
         ]);
     }
@@ -75,7 +75,7 @@ class PublicController extends Controller
     public function services()
     {
         return view('pages.services', [
-            'services' => Service::where('is_published', true)->orderBy('sort_order')->get(),
+            'services' => Service::published()->orderBy('sort_order')->get(),
             'pageTitle' => 'Services — Media, Creative & Technology | Dunia Media',
             'metaDescription' => 'Media planning and buying, creative production, digital systems, creators, AI and training — connected around a shared campaign objective.',
         ]);
@@ -92,7 +92,7 @@ class PublicController extends Controller
     public function portfolio()
     {
         return view('pages.portfolio', [
-            'projects' => Project::where('is_published', true)->orderBy('sort_order')->get(),
+            'projects' => Project::where('status', 'concept')->whereNotNull('published_at')->orderBy('sort_order')->get(),
             'pageTitle' => 'Work, Ideas & Possibilities | Dunia Media',
             'metaDescription' => 'Illustrative directions showing how media, creative and technology can work together. Verified client work lives in the campaign archive.',
         ]);
@@ -100,16 +100,29 @@ class PublicController extends Controller
 
     public function work()
     {
-        $clients = ClientWork::clients();
+        $clients = $this->clientParties();
+        $campaigns = Campaign::query()->published()->with('client')->get();
+        $campaignCounts = $campaigns->groupBy(fn (Campaign $campaign): string => $campaign->client?->slug ?? 'unknown')
+            ->map(fn ($group): int => $group->count());
+        $years = $campaigns->pluck('starts_on')->filter()->map(fn ($date): int => (int) $date->format('Y'));
 
         return view('pages.work', [
             'pageTitle' => 'Our Work — Clients & Campaigns | Dunia Media',
             'metaDescription' => 'Explore RA Media\'s campaign archive: broadcast, outdoor, digital, print, event and production work for government institutions and Malaysian brands.',
-            'clients' => $clients,
-            'clientsBySector' => collect($clients)->groupBy('sector'),
-            'campaignCounts' => ClientWork::campaignCounts(),
+            'clients' => $clients->values()->all(),
+            'clientsBySector' => $clients->groupBy('sector'),
+            'campaignCounts' => $campaignCounts,
             'media' => ClientWork::media(),
-            'stats' => ClientWork::stats(),
+            'stats' => [
+                'clients' => $clients->count(),
+                'campaigns' => $campaigns->count(),
+                'channels' => $campaigns->pluck('channel_label')->filter()->unique()->count(),
+                'from' => $years->min() ?? now()->year,
+                'to' => $years->max() ?? now()->year,
+                'years' => ($years->max() ?? now()->year) - ($years->min() ?? now()->year) + 1,
+                'government' => $clients->where('sector', 'government')->count(),
+                'business' => $clients->where('sector', 'business')->count(),
+            ],
             'archiveUpdated' => ClientWork::data()['updated'],
             'sourceNote' => ClientWork::data()['source_note'],
         ]);
@@ -118,7 +131,7 @@ class PublicController extends Controller
     public function academy()
     {
         return view('pages.academy', [
-            'trainings' => Training::where('is_published', true)->get(),
+            'trainings' => Training::published()->get(),
             'pageTitle' => 'Academy — AI & Corporate Training | Dunia Media',
             'metaDescription' => 'Practical AI, content and business-technology workshops for founders, marketing teams and corporate groups. Programmes are arranged on request.',
         ]);
@@ -126,7 +139,7 @@ class PublicController extends Controller
 
     public function insights()
     {
-        $articles = Article::where('is_published', true)
+        $articles = Article::published()
             ->whereRaw('LENGTH(body) > 700')
             ->latest('published_at')
             ->paginate(9);
@@ -140,7 +153,7 @@ class PublicController extends Controller
 
     public function article(string $slug)
     {
-        $article = Article::where('slug', $slug)->where('is_published', true)->firstOrFail();
+        $article = Article::published()->where('slug', $slug)->firstOrFail();
 
         return view('pages.article', [
             'article' => $article,
@@ -155,5 +168,25 @@ class PublicController extends Controller
             'pageTitle' => 'About RA Media Relations | Dunia Media',
             'metaDescription' => 'From Rumah Acara in 2008 to RA Media Relations Sdn Bhd — a Kuala Lumpur media house connecting advertising, media planning and content production.',
         ]);
+    }
+
+    private function clientParties(): Collection
+    {
+        return Party::query()
+            ->whereHas('clientReferences')
+            ->with(['organization', 'clientReferences'])
+            ->orderBy('display_name')
+            ->get()
+            ->map(fn (Party $party): array => [
+                'name' => $party->display_name,
+                'short_name' => $party->clientReferences->first()?->public_label ?? $party->display_name,
+                'slug' => $party->slug,
+                'sector' => $party->organization?->organization_type ?? 'business',
+                'industry' => $party->organization?->industry,
+                'logo' => $party->displayLogo(),
+                'summary' => $party->notes,
+                'mark' => null,
+                'mark_style' => null,
+            ]);
     }
 }

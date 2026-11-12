@@ -9,25 +9,25 @@
     @endphp
 
     <x-page-hero
-        eyebrow="Media opportunity · {{ $media->type }}"
-        title="{{ e($media->title) }}"
+        eyebrow="Media opportunity · {{ $media->offering_type }}"
+        title="{{ e($media->name) }}"
         :lede="$media->summary"
         :breadcrumb="[
             ['label' => 'Home', 'url' => route('home')],
             ['label' => 'Media', 'url' => route('media.index')],
-            ['label' => $media->title],
+            ['label' => $media->name],
         ]"
     >
         <x-slot:aside>
             <div class="tag-row">
-                <span class="tag tag--blush">{{ $media->type }}</span>
+                <span class="tag tag--blush">{{ $media->offering_type }}</span>
                 @if ($media->verified_at)
                     <span class="tag tag--verified">Verified {{ $media->verified_at->format('M Y') }}</span>
                 @else
                     <span class="tag">Awaiting verification</span>
                 @endif
             </div>
-            <p class="tiny muted">{{ $media->location ?? 'Nationwide' }} · {{ $media->supplier_name ?? $media->channel ?? 'Media owner on request' }}</p>
+            <p class="tiny muted">{{ $media->location_label ?? 'Nationwide' }} · {{ $media->seller?->display_name ?? $media->channel_label ?? 'Media owner on request' }}</p>
         </x-slot:aside>
     </x-page-hero>
 
@@ -35,7 +35,7 @@
         <div class="container detail__layout">
             <article class="detail__main">
                 <figure class="detail__visual">
-                    <img src="{{ \App\Support\MediaImage::url($media->displayImage()) }}" srcset="{{ \App\Support\MediaImage::srcset($media->displayImage(), [640, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 64vw" alt="{{ $media->title }}" width="1536" height="1024" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url($media->displayImage()) }}" srcset="{{ \App\Support\MediaImage::srcset($media->displayImage(), [640, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 64vw" alt="{{ $media->name }}" width="1536" height="1024" decoding="async">
                 </figure>
 
                 <h2>What this opportunity is</h2>
@@ -43,10 +43,10 @@
 
                 <h3>Key facts</h3>
                 <div class="fact-grid">
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Channel</span></div><strong>{{ $media->type }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Owner / supplier</span></div><strong>{{ $media->channel ?? $media->supplier_name ?? 'Confirmed on enquiry' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location ?? 'To be discussed' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audience ?? 'Defined during briefing' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Channel</span></div><strong>{{ $media->offering_type }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Owner / supplier</span></div><strong>{{ $media->channel_label ?? $media->seller?->display_name ?? 'Confirmed on enquiry' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location_label ?? 'To be discussed' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audience_label ?? 'Defined during briefing' }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="calendar" :size="16"/><span>Availability</span></div><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="chart" :size="16"/><span>Pricing basis</span></div><strong>{{ $hasFixedPrice ? 'Indicative rate card' : 'On request' }}</strong></div>
                 </div>
@@ -95,11 +95,11 @@
                     @php($primary = $documents[0])
                     @if (($primary['ext'] ?? '') === 'pdf')
                         <div class="ratecard-frame">
-                            <iframe src="{{ route('media.ratecard', [$media->slug, 0]) }}#view=FitH" title="Rate card for {{ $media->title }}" loading="lazy"></iframe>
+                            <iframe src="{{ route('media.ratecard', [$media->slug, 0]) }}#view=FitH" title="Rate card for {{ $media->name }}" loading="lazy"></iframe>
                         </div>
                     @elseif (in_array($primary['ext'] ?? '', ['jpg', 'jpeg', 'png']))
                         <div class="ratecard-frame ratecard-image">
-                            <img src="{{ route('media.ratecard', [$media->slug, 0]) }}" alt="Rate card for {{ $media->title }}" loading="lazy">
+                            <img src="{{ route('media.ratecard', [$media->slug, 0]) }}" alt="Rate card for {{ $media->name }}" loading="lazy">
                         </div>
                     @else
                         <div class="ratecard-fallback">
@@ -147,7 +147,7 @@
                 </ul>
                 <ul class="detail-meta-list">
                     <li><span>Availability</span><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></li>
-                    <li><span>Location</span><strong>{{ $media->location ?? 'Nationwide' }}</strong></li>
+                    <li><span>Location</span><strong>{{ $media->location_label ?? 'Nationwide' }}</strong></li>
                     <li><span>Last checked</span><strong>{{ $media->verified_at?->format('d M Y') ?? 'Not yet verified' }}</strong></li>
                 </ul>
                 <p class="detail-note">No payment or reservation takes place online. Rates and availability are confirmed by the media owner before any agreement.</p>
@@ -165,10 +165,10 @@
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow">Similar opportunities</span>
-                        <h2 id="similar-title" class="section-title">More in {{ $media->type }}.</h2>
+                        <h2 id="similar-title" class="section-title">More in {{ $media->offering_type }}.</h2>
                     </div>
                     <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('media.index', ['type' => $media->type]) }}">View the category <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="{{ route('media.index', ['type' => $media->offering_type]) }}">View the category <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
                 <div class="media-grid">

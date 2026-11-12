@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\MediaListing;
+use App\Models\MediaOffering;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -48,25 +48,41 @@ class MediaExplorer extends Component
 
     public function render()
     {
-        $query = MediaListing::query()->where('is_published', true)
-            ->when($this->search !== '', fn ($q) => $q->where(fn ($p) => $p->where('title', 'like', '%'.$this->search.'%')->orWhere('summary', 'like', '%'.$this->search.'%')->orWhere('channel', 'like', '%'.$this->search.'%')->orWhere('audience', 'like', '%'.$this->search.'%')->orWhere('supplier_name', 'like', '%'.$this->search.'%')))
-            ->when($this->type !== 'all', fn ($q) => $q->where('type', $this->type))
-            ->when($this->vendor !== 'all', fn ($q) => $q->where('channel', $this->vendor))
-            ->when($this->location !== 'all', fn ($q) => $q->where('location', $this->location));
+        $query = MediaOffering::query()
+            ->published()
+            ->with('seller')
+            ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
+                $sub->where('name', 'like', '%'.$this->search.'%')
+                    ->orWhere('summary', 'like', '%'.$this->search.'%')
+                    ->orWhere('channel_label', 'like', '%'.$this->search.'%')
+                    ->orWhere('audience_label', 'like', '%'.$this->search.'%')
+                    ->orWhereHas('seller', fn ($seller) => $seller->where('display_name', 'like', '%'.$this->search.'%'));
+            }))
+            ->when($this->type !== 'all', fn ($query) => $query->where('offering_type', $this->type))
+            ->when($this->vendor !== 'all', fn ($query) => $query->where('channel_label', $this->vendor))
+            ->when($this->location !== 'all', fn ($query) => $query->where('location_label', $this->location));
+
         if ($this->budget !== 'any') {
             $ceiling = (int) $this->budget;
-            $query->where(function ($q) use ($ceiling) {
-                $q->whereNull('price_from')->orWhere('price_from', '<=', $ceiling);
+            $query->where(function ($sub) use ($ceiling) {
+                $sub->whereNull('price_from')->orWhere('price_from', '<=', $ceiling);
             });
         }
+
         if ($this->sort === 'az') {
-            $query->orderBy('title');
+            $query->orderBy('name');
         } elseif ($this->sort === 'new') {
-            $query->latest();
+            $query->latest('published_at');
         } else {
-            $query->orderByDesc('is_featured')->latest();
+            $query->orderByDesc('is_featured')->latest('published_at');
         }
-        $vendors = MediaListing::query()->where('is_published', true)->whereNotNull('channel')->distinct()->orderBy('channel')->pluck('channel');
+
+        $vendors = MediaOffering::query()
+            ->published()
+            ->whereNotNull('channel_label')
+            ->distinct()
+            ->orderBy('channel_label')
+            ->pluck('channel_label');
 
         return view('livewire.media-explorer', ['listings' => $query->paginate(9), 'vendors' => $vendors])->layout('layouts.app', ['pageTitle' => 'Explore Media Opportunities | Dunia Media', 'metaDescription' => 'Browse television, radio, outdoor, digital, print and creator media opportunities. Rates are indicative and verified with the media owner before booking.']);
     }

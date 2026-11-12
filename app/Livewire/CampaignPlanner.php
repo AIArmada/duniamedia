@@ -2,7 +2,8 @@
 
 namespace App\Livewire;
 
-use App\Models\Lead;
+use App\Actions\CreatePartyWithContact;
+use App\Models\Enquiry;
 use Livewire\Component;
 
 class CampaignPlanner extends Component
@@ -35,14 +36,51 @@ class CampaignPlanner extends Component
 
     public function plan(): void
     {
-        $this->validate(['objective' => 'required|in:awareness,leads,launch,sales', 'budget' => 'required|string|max:60', 'location' => 'required|string|max:100', 'audience' => 'nullable|string|max:150', 'industry' => 'nullable|string|max:150', 'timeline' => 'required|string|max:100']);
+        $this->validate([
+            'objective' => 'required|in:awareness,leads,launch,sales',
+            'budget' => 'required|string|max:60',
+            'location' => 'required|string|max:100',
+            'audience' => 'nullable|string|max:150',
+            'industry' => 'nullable|string|max:150',
+            'timeline' => 'required|string|max:100',
+        ]);
+
         $this->showResult = true;
     }
 
     public function save(): void
     {
-        $this->validate(['name' => 'required|string|max:120', 'email' => 'required|email|max:255', 'company' => 'nullable|string|max:160', 'consent' => 'accepted', 'website' => 'max:0']);
-        Lead::create(['name' => $this->name, 'email' => $this->email, 'company' => $this->company, 'source' => 'media_advisor', 'objective' => $this->objective, 'budget' => $this->budget, 'location' => $this->location, 'message' => 'Advisor strategy request', 'status' => 'new', 'consent_at' => now(), 'metadata' => ['audience' => $this->audience, 'industry' => $this->industry, 'timeline' => $this->timeline]]);
+        $this->validate([
+            'name' => 'required|string|max:120',
+            'email' => 'required|email|max:255',
+            'company' => 'nullable|string|max:160',
+            'consent' => 'accepted',
+            'website' => 'max:0',
+        ]);
+
+        $party = app(CreatePartyWithContact::class)->handle([
+            'name' => $this->name,
+            'email' => $this->email,
+            'company' => $this->company,
+        ]);
+
+        Enquiry::create([
+            'requester_party_id' => $party->id,
+            'source' => 'media_advisor',
+            'subject' => 'Media advisor brief',
+            'brief' => 'Advisor strategy request',
+            'status' => 'new',
+            'consent_at' => now(),
+            'metadata' => [
+                'objective' => $this->objective,
+                'budget' => $this->budget,
+                'location' => $this->location,
+                'audience' => $this->audience,
+                'industry' => $this->industry,
+                'timeline' => $this->timeline,
+            ],
+        ]);
+
         $this->submitted = true;
     }
 

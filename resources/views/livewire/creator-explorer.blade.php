@@ -70,14 +70,14 @@
                     @foreach ($creators as $creator)
                         <article class="creator-card" wire:key="creator-{{ $creator->id }}">
                             <div class="creator-card__image">
-                                <img src="{{ \App\Support\MediaImage::url($creator->image) }}" alt="{{ $creator->name }}" loading="lazy" decoding="async">
+                                <img src="{{ \App\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy" decoding="async">
                             </div>
                             <div class="creator-card__body">
                                 <div class="creator-card__meta">
                                     <span class="tag tag--verified">Verified</span>
-                                    <span class="tag">{{ $creator->platform }}</span>
+                                    <span class="tag">{{ $creator->platform_label }}</span>
                                 </div>
-                                <h3>{{ $creator->name }}</h3>
+                                <h3>{{ $creator->displayName() }}</h3>
                                 <p>{{ $creator->bio }}</p>
                                 <a href="{{ route('contact') }}" class="text-link" style="margin-top:0.6rem">Discuss a collaboration <span aria-hidden="true">↗</span></a>
                             </div>

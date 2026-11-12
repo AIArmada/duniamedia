@@ -15,8 +15,8 @@
     <section class="section">
         <div class="container">
             <div class="article-layout">
-                @if ($article->image)
-                    <img src="{{ \App\Support\MediaImage::url($article->image) }}" alt="{{ $article->title }}" class="article-hero-image" loading="eager" decoding="async">
+                @if ($article->hasMedia('image'))
+                    <img src="{{ \App\Support\MediaImage::url($article->displayImage()) }}" alt="{{ $article->title }}" class="article-hero-image" loading="eager" decoding="async">
                 @endif
                 <div class="prose">
                     {!! nl2br(e($article->body)) !!}

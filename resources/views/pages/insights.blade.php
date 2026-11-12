@@ -41,7 +41,7 @@
                     @foreach ($articles as $article)
                         <article class="article-card">
                             <a href="{{ route('insights.show', $article->slug) }}" class="article-card__media">
-                                <img src="{{ \App\Support\MediaImage::url($article->image) }}" loading="lazy" alt="{{ $article->title }}">
+                                <img src="{{ \App\Support\MediaImage::url($article->displayImage()) }}" loading="lazy" alt="{{ $article->title }}">
                             </a>
                             <div class="article-card__body">
                                 <span class="eyebrow eyebrow--plain">{{ strtoupper($article->category) }}</span>

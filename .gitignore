@@ -26,3 +26,8 @@
 
 # Source design kit extracted from the supplied handoff archive.
 /.design-kit/
+
+# Media library copies; originals live in public/assets or storage/app/private.
+/storage/app/public/*
+!/storage/app/public/.gitkeep
+/storage/app/media-private/*

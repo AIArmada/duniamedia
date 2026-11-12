@@ -6,7 +6,9 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RateCardController;
 use App\Http\Controllers\WorkMediaController;
 use App\Livewire\AssetOwnerForm;
+use App\Livewire\CampaignPlanBuilder;
 use App\Livewire\CampaignPlanner;
+use App\Livewire\CampaignPlans;
 use App\Livewire\ContactForm;
 use App\Livewire\CreatorExplorer;
 use App\Livewire\CreatorJoin;
@@ -22,6 +24,8 @@ Route::get('/media/{slug}/rate-card/{index?}', [RateCardController::class, 'show
 Route::get('/media/{slug}', [PublicController::class, 'mediaShow'])->name('media.show');
 Route::get('/media-advisor', CampaignPlanner::class)->name('advisor');
 Route::get('/quote-builder', QuoteBuilder::class)->name('quote.builder');
+Route::get('/campaign-plans', CampaignPlans::class)->name('plans.index');
+Route::get('/campaign-plans/{instance}', CampaignPlanBuilder::class)->name('plans.show');
 Route::get('/creators', CreatorExplorer::class)->name('creators.index');
 Route::get('/creators/join', CreatorJoin::class)->name('creators.join');
 Route::get('/services', [PublicController::class, 'services'])->name('services');
@@ -35,7 +39,6 @@ Route::get('/insights/{slug}', [PublicController::class, 'article'])->name('insi
 Route::get('/about', [PublicController::class, 'about'])->name('about');
 Route::get('/contact', ContactForm::class)->name('contact');
 Route::get('/list-your-space', AssetOwnerForm::class)->name('assets.join');
-Route::get('/proposal/{reference}', [ProposalController::class, 'show'])->middleware('signed')->name('quote.view');
 Route::get('/proposal/{reference}', [ProposalController::class, 'show'])->middleware('signed')->name('quote.view');
 Route::view('/privacy', 'pages.privacy')->name('privacy');
 Route::view('/terms', 'pages.terms')->name('terms');

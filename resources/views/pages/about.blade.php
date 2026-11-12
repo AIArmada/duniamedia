@@ -168,7 +168,7 @@
                                 <article class="client-tile">
                                     <div class="client-tile__mark">
                                         @if (! empty($client['logo']))
-                                            <img src="{{ asset($client['logo']) }}" alt="" loading="lazy">
+                                            <img src="{{ \App\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy">
                                         @else
                                             <span>{{ $client['mark'] ?? $client['name'] }}</span>
                                         @endif

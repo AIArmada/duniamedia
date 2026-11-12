@@ -2,7 +2,8 @@
 
 namespace App\Livewire;
 
-use App\Models\Lead;
+use App\Actions\CreatePartyWithContact;
+use App\Models\Enquiry;
 use Livewire\Component;
 
 class ContactForm extends Component
@@ -25,9 +26,27 @@ class ContactForm extends Component
 
     public function submit(): void
     {
-        $data = $this->validate(['name' => 'required|string|max:120', 'email' => 'required|email|max:255', 'phone' => 'nullable|string|max:40', 'company' => 'nullable|string|max:160', 'message' => 'required|string|min:10|max:4000', 'consent' => 'accepted', 'website' => 'max:0']);
-        unset($data['website'],$data['consent']);
-        Lead::create($data + ['source' => 'contact', 'status' => 'new', 'consent_at' => now()]);
+        $data = $this->validate([
+            'name' => 'required|string|max:120',
+            'email' => 'required|email|max:255',
+            'phone' => 'nullable|string|max:40',
+            'company' => 'nullable|string|max:160',
+            'message' => 'required|string|min:10|max:4000',
+            'consent' => 'accepted',
+            'website' => 'max:0',
+        ]);
+
+        $party = app(CreatePartyWithContact::class)->handle($data);
+
+        Enquiry::create([
+            'requester_party_id' => $party->id,
+            'source' => 'contact',
+            'subject' => 'Website contact',
+            'brief' => $data['message'],
+            'status' => 'new',
+            'consent_at' => now(),
+        ]);
+
         $this->submitted = true;
     }
 

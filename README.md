@@ -4,12 +4,13 @@
 
 A custom application starter for **DuniaMedia.com**, the proposed customer-facing brand of RA Media. Includes responsive homepage, media discovery, rule-based campaign adviser, creator network, media asset submissions, proposal builder, CMS and Filament admin.
 
-> **STATUS: Functional source-code delivery / development starter. NOT tested end-to-end or production-ready.** Composer dependencies and runtime packages are intentionally excluded from the ZIP because the isolated build environment has no Packagist network access or Composer executable. Run the installation steps below on a connected computer/server.
+> **STATUS: Functional source-code delivery / development starter. NOT tested end-to-end or production-ready.** Run the installation steps below on a connected computer/server.
 
 ## Requirements
-- PHP 8.3+ for the base app; use **PHP 8.5+** if integrating current AiArmada `dev-main` packages
+- PHP 8.5+ (the AiArmada `dev-main` packages require it)
 - Composer 2.x, PHP extensions required by Laravel + Filament
-- SQLite/PostgreSQL/MySQL
+- The AiArmada packages resolve from `../commerce/packages` through a Composer path repository
+- SQLite/PostgreSQL for the address, contact and person packages (MySQL is not supported by their partial unique indexes)
 - Node is **not required** for the supplied custom CSS and browser JS. Filament installs its own assets via Composer/Artisan.
 
 ## Setup
@@ -28,10 +29,10 @@ php artisan filament:assets
 php artisan make:filament-user
 ```
 
-**Important:** after creating an admin user, **set `is_admin = true`** in the `users` table for that account. Otherwise access to `/admin` is denied by design. Example through `php artisan tinker`:
+**Important:** after creating an admin user, assign the `super_admin` role. Otherwise access to `/admin` is denied by design. The roles and permissions are created by `RolePermissionSeeder`. Example through `php artisan tinker`:
 
 ```php
-App\Models\User::where('email', 'admin@example.com')->update(['is_admin' => true]);
+App\Models\User::where('email', 'admin@example.com')->first()->assignRole('super_admin');
 ```
 
 Change `admin@example.com` to your own real account. Run `php artisan serve` and open `http://127.0.0.1:8000` or your local domain; `/admin` is the protected back office.
@@ -41,6 +42,7 @@ Change `admin@example.com` to your own real account. Run `php artisan serve` and
 - **Media Explorer (Livewire):** search, types, location, budget, sort, pagination, details. Listings published by admin only.
 - **Media Advisor (Livewire):** guided form and deterministic illustrative strategy directions. Saves qualified brief as lead. **No AI model call yet**.
 - **Quote Builder (Livewire):** media shortlist, campaign add-ons, contact form, generated internal reference, quote + items saved in transaction. Approved `sent` proposals can be shared with a temporary signed URL; rate display remains private unless admin explicitly sets visibility to `public` and every line has a price. Approved `sent` proposals can be shared with a temporary signed URL; rate display remains private unless admin explicitly sets visibility to `public` and every line has a price. Quote status starts `requested`, visibility `private`; no payment or media reservation.
+- **Campaign Plans (Livewire):** cart-backed saved media plans with multiple plans per user or session, quantities, package-saving conditions, brief metadata, live subtotal/discount/total and conversion into a quote request.
 - **Creator Network (Livewire):** creator directory and application form; verification controlled by staff.
 - **Asset Owner Leads (Livewire):** collect potential new media spaces for manual review.
 - **Our Work archive (public):** `/work` turns RA Media's March 2026 client lists into a filterable campaign archive, a government/business client wall and an on-screen media gallery. Data lives in `resources/data/client-work.json`; the supplied broadcast files are streamed from `data/`.

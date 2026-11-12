@@ -1,9 +1,28 @@
 <?php
-namespace App\Models;
-use Illuminate\Database\Eloquent\Model;
-class Training extends Model {
- protected $table='trainings';
- protected $fillable=["title", "slug", "category", "summary", "description", "format", "duration", "image", "is_published"];
- protected function casts(): array { return ['is_published'=>'boolean']; }
 
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+
+class Training extends BaseModel
+{
+    protected function casts(): array
+    {
+        return ['published_at' => 'datetime'];
+    }
+
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('image')->singleFile();
+    }
+
+    public function scopePublished(Builder $query): Builder
+    {
+        return $query->where('status', 'published');
+    }
+
+    public function displayImage(): string
+    {
+        return $this->getFirstMediaUrl('image') ?: 'assets/img/training.webp';
+    }
 }

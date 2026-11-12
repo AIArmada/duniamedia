@@ -2,7 +2,7 @@
 
 namespace App\Support;
 
-use App\Models\MediaListing;
+use App\Models\MediaOffering;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -208,8 +208,9 @@ class MediaDirectory
             return collect();
         }
 
-        $listings = MediaListing::query()
-            ->where('is_published', true)
+        $listings = MediaOffering::query()
+            ->published()
+            ->with('seller')
             ->whereIn('slug', $slugs)
             ->get()
             ->keyBy('slug');

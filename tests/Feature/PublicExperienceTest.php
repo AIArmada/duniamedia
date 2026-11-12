@@ -2,11 +2,14 @@
 
 namespace Tests\Feature;
 
+use App\Livewire\AssetOwnerForm;
 use App\Livewire\CampaignPlanner;
 use App\Livewire\ContactForm;
+use App\Livewire\CreatorJoin;
 use App\Livewire\MediaExplorer;
 use App\Livewire\QuoteBuilder;
-use App\Models\MediaListing;
+use App\Models\MediaOffering;
+use App\Models\Party;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\TestCase;
@@ -17,13 +20,12 @@ class PublicExperienceTest extends TestCase
 
     public function test_public_routes_render_the_redesigned_experience(): void
     {
-        $media = MediaListing::create([
-            'title' => 'Test Billboard',
+        $media = MediaOffering::factory()->create([
+            'name' => 'Test Billboard',
             'slug' => 'test-billboard',
-            'type' => 'Outdoor',
-            'location' => 'Klang Valley',
+            'offering_type' => 'Outdoor',
+            'location_label' => 'Klang Valley',
             'summary' => 'A test outdoor opportunity.',
-            'is_published' => true,
         ]);
 
         foreach ([
@@ -51,13 +53,13 @@ class PublicExperienceTest extends TestCase
             $this->get($path)->assertOk();
         }
 
-        $this->get('/media/test-billboard')->assertSee($media->title);
+        $this->get('/media/test-billboard')->assertSee($media->name);
     }
 
     public function test_media_explorer_filters_and_clears_from_url_state(): void
     {
-        MediaListing::create(['title' => 'Radio One', 'slug' => 'radio-one', 'type' => 'Radio', 'summary' => 'Radio', 'is_published' => true]);
-        MediaListing::create(['title' => 'Outdoor One', 'slug' => 'outdoor-one', 'type' => 'Outdoor', 'summary' => 'Outdoor', 'is_published' => true]);
+        MediaOffering::factory()->create(['name' => 'Radio One', 'slug' => 'radio-one', 'offering_type' => 'Radio']);
+        MediaOffering::factory()->create(['name' => 'Outdoor One', 'slug' => 'outdoor-one', 'offering_type' => 'Outdoor']);
 
         Livewire::test(MediaExplorer::class)
             ->set('type', 'Radio')
@@ -71,13 +73,13 @@ class PublicExperienceTest extends TestCase
 
     public function test_quote_builder_creates_a_request_not_a_booking(): void
     {
-        $media = MediaListing::create([
-            'title' => 'Test Radio Spot',
+        Party::factory()->create(['slug' => 'ra-media-relations', 'display_name' => 'RA Media Relations Sdn Bhd']);
+
+        $media = MediaOffering::factory()->create([
+            'name' => 'Test Radio Spot',
             'slug' => 'test-radio-spot',
-            'type' => 'Radio',
-            'summary' => 'A test radio spot.',
+            'offering_type' => 'Radio',
             'pricing_mode' => 'on_request',
-            'is_published' => true,
         ]);
 
         Livewire::test(QuoteBuilder::class)
@@ -90,7 +92,8 @@ class PublicExperienceTest extends TestCase
             ->assertSet('reference', fn ($reference) => str_starts_with($reference, 'DM-'));
 
         $this->assertDatabaseHas('quotes', ['status' => 'requested']);
-        $this->assertDatabaseCount('leads', 1);
+        $this->assertDatabaseCount('enquiries', 1);
+        $this->assertDatabaseCount('quote_lines', 1);
     }
 
     public function test_advisor_returns_an_illustrative_direction_and_saves_a_brief(): void
@@ -108,7 +111,7 @@ class PublicExperienceTest extends TestCase
             ->assertHasNoErrors()
             ->assertSet('submitted', true);
 
-        $this->assertDatabaseHas('leads', ['source' => 'media_advisor', 'email' => 'planner@example.com']);
+        $this->assertDatabaseHas('enquiries', ['source' => 'media_advisor']);
     }
 
     public function test_contact_form_saves_a_consented_enquiry(): void
@@ -122,6 +125,42 @@ class PublicExperienceTest extends TestCase
             ->assertHasNoErrors()
             ->assertSet('submitted', true);
 
-        $this->assertDatabaseHas('leads', ['source' => 'contact', 'email' => 'contact@example.com']);
+        $this->assertDatabaseHas('enquiries', ['source' => 'contact']);
+    }
+
+    public function test_creator_application_creates_a_pending_creator_profile(): void
+    {
+        Livewire::test(CreatorJoin::class)
+            ->set('name', 'New Creator')
+            ->set('email', 'creator@example.com')
+            ->set('handle', '@newcreator')
+            ->set('platform', 'TikTok')
+            ->set('niche', 'Travel')
+            ->set('followers', 12000)
+            ->set('consent', true)
+            ->call('submit')
+            ->assertHasNoErrors()
+            ->assertSet('submitted', true);
+
+        $this->assertDatabaseHas('creator_profiles', ['verification_status' => 'pending', 'status' => 'pending']);
+        $this->assertDatabaseCount('creator_accounts', 1);
+    }
+
+    public function test_media_space_submission_creates_a_prospect_asset_and_enquiry(): void
+    {
+        Livewire::test(AssetOwnerForm::class)
+            ->set('name', 'Space Owner')
+            ->set('email', 'owner@example.com')
+            ->set('asset_type', 'Building wall')
+            ->set('location', 'Petaling Jaya')
+            ->set('description', 'A large wall facing a busy road with good visibility.')
+            ->set('consent', true)
+            ->call('submit')
+            ->assertHasNoErrors()
+            ->assertSet('submitted', true);
+
+        $this->assertDatabaseHas('media_properties', ['status' => 'prospect', 'property_type' => 'prospect']);
+        $this->assertDatabaseHas('media_assets', ['status' => 'prospect']);
+        $this->assertDatabaseHas('enquiries', ['source' => 'asset_submission']);
     }
 }

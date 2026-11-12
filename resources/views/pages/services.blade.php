@@ -128,11 +128,11 @@
                     @php($detail = $details[$service->slug] ?? null)
                     <article class="service-row" id="{{ $detail['anchor'] ?? $service->slug }}">
                         <figure class="service-row__media">
-                            <img src="{{ \App\Support\MediaImage::url($serviceImages[$service->slug] ?? $service->image) }}" srcset="{{ \App\Support\MediaImage::srcset($serviceImages[$service->slug] ?? $service->image, [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 45vw" alt="" loading="lazy" decoding="async">
+                            <img src="{{ \App\Support\MediaImage::url($serviceImages[$service->slug] ?? $service->displayImage()) }}" srcset="{{ \App\Support\MediaImage::srcset($serviceImages[$service->slug] ?? $service->displayImage(), [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 45vw" alt="" loading="lazy" decoding="async">
                         </figure>
                         <div>
                             <div class="service-row__kicker"><span class="service-row__icon"><x-dm-icon :name="$serviceIcons[$service->slug] ?? 'spark'" :size="18"/></span><span class="service-row__index">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }} / {{ strtoupper($service->category) }}</span></div>
-                            <h2>{{ $service->title }}</h2>
+                            <h2>{{ $service->name }}</h2>
                             <p>{{ $service->summary }}</p>
                             @if ($detail)
                                 @foreach ($detail['copy'] as $paragraph)

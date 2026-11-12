@@ -105,6 +105,7 @@
             </details>
 
             <a class="nav-link {{ request()->routeIs('academy') ? 'is-active' : '' }}" href="{{ route('academy') }}">Academy</a>
+            <a class="nav-link {{ request()->routeIs('plans.*') ? 'is-active' : '' }}" href="{{ route('plans.index') }}">Plans</a>
             <a class="nav-link {{ request()->routeIs('work.*') ? 'is-active' : '' }}" href="{{ route('work.index') }}">Our Work</a>
             <a class="nav-link {{ request()->routeIs('insights*') ? 'is-active' : '' }}" href="{{ route('insights') }}">Insights</a>
             <a class="nav-link {{ request()->routeIs('about') ? 'is-active' : '' }}" href="{{ route('about') }}">About</a>
@@ -227,5 +228,6 @@
 </footer>
 
 @livewireScripts
+@signalsTracker
 </body>
 </html>

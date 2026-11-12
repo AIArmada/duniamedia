@@ -80,7 +80,7 @@
                         <div class="work-card__client">
                             <span class="work-card__logo @if (empty($campaign['client_logo'])) is-typeset @endif">
                                 @if (! empty($campaign['client_logo']))
-                                    <img src="{{ asset($campaign['client_logo']) }}" alt="" loading="lazy" decoding="async">
+                                    <img src="{{ \App\Support\MediaImage::url($campaign['client_logo']) }}" alt="" loading="lazy" decoding="async">
                                 @else
                                     <span>{{ $campaign['client_short_name'] }}</span>
                                 @endif
