@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 sarawak/audio/RA update",
+  "updated": "2026-11-12 sarawak/audio/RA + Target Media 2026",
   "sources": [
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
     "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
@@ -968,38 +968,51 @@
       }
     },
     {
-      "title": "Target Media Elevator Screens Q2 2025 — Indoor DOOH",
+      "title": "Target Media 2026 — Elevator Media Network",
       "slug": "target-media-elevator-q2-2025",
       "type": "Indoor",
       "channel": "Target Media",
       "location": "Klang Valley",
-      "audience": "Office, condo and retail lift audiences (2,000–7,500 screens)",
-      "summary": "Outside 7,500 screens RM129.8k/wk, Inside 2,000 RM99.8k/wk, Office/Condo/Area packs + ala carte.",
-      "description": "Q2 2025 pricing + sales weekly reports (Emmy/Elvin/Claire sheets are internal sales trackers — do not publish). Rate sheet: Package A Outside 7,500 screens 120/day RM129.8k/wk (60/day RM66k); B Inside 2,000 RM99.8k/49.8k; Office 1,300 RM80k/40k; Condo 7,200 RM172k/86k; Area 1,000/set RM40k/20k; Ala carte RM200/screen/week (120/day) or RM100 (60/day).",
+      "audience": "Office, condo, mall and hotel lift audiences across up to 10,000 screens",
+      "summary": "Elevator DOOH from RM22k/week: 10,000-screen full coverage RM229.6k, commercial 2,000 screens RM80k, local 1,000 screens RM40k, ala carte RM100–200/screen.",
+      "description": "Target Media 2026 elevator media rate card, effective January 2026 (1 page). Ad duration is 15 seconds and publication runs Monday–Sunday with material due every Tuesday. Full coverage 10,000 screens RM229,600/week at 120 plays/day (RM119,800 at 60); High End office/residences 1,000 screens RM99,800; Commercial office/mall/hotel 2,000 screens RM80,000 (RM42,000 at 60); Localized office/residences/mixed/mall/hotel 1,000 screens RM40,000 (RM22,000 at 60); Building ala carte per screen RM200 (RM100 at 60). Screen count is calculated at 90% of the package. Operation costs: data usage RM1 per screen for up to 2,000 screens and RM0.50 above 2,000 per upload; manual upload RM2/RM1; NFC sticker RM3 standard and RM5 premium. Rates exclude tax; Target Media may adjust pricing.",
       "image": "assets/ratecards/img/target-media-elevator-q2-2025.webp",
-      "price_from": 20000,
+      "price_from": 22000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
       "supplier_name": "Target Media",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Target Media",
+        "vendor": "Target Media Sdn Bhd",
         "formats": [
-          "Outside elevator",
-          "Inside elevator",
-          "Office/Condo/Area packs",
-          "Ala carte"
+          "Full coverage elevator network",
+          "High End office/residences",
+          "Commercial office/mall/hotel",
+          "Localized package",
+          "Building ala carte",
+          "NFC sticker"
         ],
         "price_tiers": [
-          "RM20k–172k/week packs",
+          "Localized 1,000 screens RM22k/week",
+          "Commercial 2,000 screens RM42k/week",
+          "High End 1,000 screens RM99.8k/week",
+          "Full coverage 10,000 screens RM119.8k–229.6k/week",
           "Ala carte RM100–200/screen/week"
         ],
-        "validity": "Q2 2025",
-        "source_file": "Target Media Q2 2025 Pricing (1).xlsx",
+        "validity": "2026; effective January 2026",
+        "language": "English / Chinese",
+        "source_file": "Target Media Y2026 Rate Card (1).pdf (1 page)",
         "documents": [
           {
-            "name": "Target Media Q2 2025 Pricing",
+            "name": "Target Media 2026 Rate Card",
+            "size": 257076,
+            "ext": "pdf",
+            "file": "target-media-elevator-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "Target Media Q2 2025 Pricing (archive)",
             "size": 321628,
             "ext": "xlsx",
             "file": "target-media-elevator-q2-2025.xlsx",

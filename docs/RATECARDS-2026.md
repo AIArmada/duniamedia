@@ -17,14 +17,15 @@ The original import published 29 files as 28 listings. The 12 Nov 2026 refresh a
 | Pakej Media Istimewa Ramadan IKIM_2027.pdf | `ikim-fm-ramadan-2027` | Radio | IKIMfm Ramadan sponsorship and jingle packages |
 | MPA Form 1.2.pdf | `media-prima-audio-trade-show-2025` | Radio | Media Prima Audio trade-show packages across its radio stations |
 | Upfront27 Sales Kit.pdf | `astro-upfront-2027` | TV & Broadcast | Astro's 2027 upfront packages (TV-led, with audio, talent and on-ground add-ons) |
+| Target Media Y2026 Rate Card (1).pdf | `target-media-elevator-q2-2025` (refreshed) | Indoor | Replaces the Q2 2025 workbook as the primary rate source; the older workbook stays attached as an archive |
 
-The refreshed Drive folder also contains TVS Profile, Target Media Y2026, Sinar Karangraf, Malaysiakini 2024, SH anniversary and Mkini event-coverage files. They are not part of this update; Target Media still points to the published Q2 2025 workbook.
+The refreshed Drive folder also contains TVS Profile, Sinar Karangraf, Malaysiakini 2024, SH anniversary and Mkini event-coverage files. They are not part of this update.
 
 The seven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
 
 ## How to read
 - `price_from` = lowest indicative rate-card figure seen (before 8% SST, discounts, DBP/operator approval). `indicative` ≠ confirmed booking rate. Everything stays `availability_status=on_request`, `verified_at=null` until RA Media verifies slots.
-- Internal sales trackers (Target Media Emmy/Elvin/Claire sheets) are **not** published — only the Q2 pricing sheet is used.
+- Internal sales trackers (Target Media Emmy/Elvin/Claire sheets) are **not** published — only the public rate card and workbook are used.
 - Example quotations (PuTERA, RA Website Solution) are templates/references, not live inventory.
 
 ## 29 → 28 mapping
@@ -43,7 +44,7 @@ The seven new entries keep the same guardrails: `pricing_mode=indicative`, `avai
 | 10 | Omnia25 Content Terhangat Brochure (LR) (1).pdf (24p) | A | `omnia-content-terhangat-2026` |
 | 11 | RATE CARD TV & RADIO 2025.pdf (RTM, 50p) | A | `rtm-tv-radio-2025` |
 | 12 | SURIA_2026 RATE CARD (1) (1).pdf (6p) | A | `suria-fm-2026-radio-digital` |
-| 13 | Target Media Q2 2025 Pricing (1).xlsx | A | `target-media-elevator-q2-2025` |
+| 13 | Target Media Q2 2025 Pricing (1).xlsx → Target Media Y2026 Rate Card (1).pdf (refreshed 12 Nov 2026) | A | `target-media-elevator-q2-2025` |
 | 14 | TRAIN ADS SPACE -2026.pdf (5p) | A | `ktm-train-kl-sentral-ads-2026` |
 | 15 | update2706-Quote_PuTERA...xlsx (TERAJU2404) | A | `putera-pre-post-2024-reference` |
 | 16 | UpdateRA Media-Quotation_Website Media Solution_060126.pdf (28p) | A | `ra-media-website-media-solutions-2026` (combined with #17) |
