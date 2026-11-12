@@ -1,10 +1,10 @@
-# Rate Cards 2026 — Allowed-only Inventory (35 listings)
+# Rate Cards 2026 — Allowed-only Inventory (39 listings)
 
 Sources:
 - Folder A `RATECARD-2026DuniaMedia-RAMedia` (imported into this app)
 - Folder B `RAMediaRateCard2026` (imported into this app; refreshed 12 Nov 2026)
 
-The original import published 29 files as 28 listings. The 12 Nov 2026 refresh added 7 listings, bringing the catalog to 35. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no listing, no external link, no price.
+The original import published 29 files as 28 listings. The 12 Nov 2026 refresh added 11 listings, bringing the catalog to 39. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no listing, no external link, no price.
 
 ## 12 Nov 2026 update — Sarawak, IKIM, Media Prima Audio, RA Media Relations
 
@@ -18,10 +18,14 @@ The original import published 29 files as 28 listings. The 12 Nov 2026 refresh a
 | MPA Form 1.2.pdf | `media-prima-audio-trade-show-2025` | Radio | Media Prima Audio trade-show packages across its radio stations |
 | Upfront27 Sales Kit.pdf | `astro-upfront-2027` | TV & Broadcast | Astro's 2027 upfront packages (TV-led, with audio, talent and on-ground add-ons) |
 | Target Media Y2026 Rate Card (1).pdf | `target-media-elevator-q2-2025` (refreshed) | Indoor | Replaces the Q2 2025 workbook as the primary rate source; the older workbook stays attached as an archive |
+| 20th SH ANNIVERSARY PROMO_New1_261005_154818.pdf | `sinar-harian-20th-anniversary-2026` | Print | Sinar Harian's time-limited 20th-anniversary print, programme and social rates |
+| 2024 Malaysiakini Media Kit (as of 20 Feb 2024).pdf | `malaysiakini-media-kit-2024` | Digital | Malaysiakini display, branded content, video, EDM and survey packages |
+| Event Coverage (Video, Article) by Mkini & KiniTV (Oct 2026_2027).pdf | `malaysiakini-kinitv-event-coverage-2026-2027` | Digital | Current event article/video coverage rates for Malaysiakini and KiniTV |
+| SINAR KARANGRAF - RATECARD 2025_2026.pdf | `sinar-karangkraf-ratecard-2025-2026` | Print | Full Sinar Harian, SinarPlus, Sinar Bestari and Sinar Daily media kit |
 
-The refreshed Drive folder also contains TVS Profile, Sinar Karangraf, Malaysiakini 2024, SH anniversary and Mkini event-coverage files. They are not part of this update.
+The refreshed Drive folder also holds the TVS Profile deck (not a rate card) and a duplicate Target Media upload. The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged.
 
-The seven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
+The eleven new entries keep the same guardrails: `pricing_mode=indicative`, `availability_status=on_request`, `verified_at=null`, no fixed price, and no external links.
 
 ## How to read
 - `price_from` = lowest indicative rate-card figure seen (before 8% SST, discounts, DBP/operator approval). `indicative` ≠ confirmed booking rate. Everything stays `availability_status=on_request`, `verified_at=null` until RA Media verifies slots.

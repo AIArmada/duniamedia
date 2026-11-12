@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-12 sarawak/audio/RA + Target Media 2026",
+  "updated": "2026-11-12 full Drive refresh",
   "sources": [
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
     "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
   ],
-  "note": "35 rate-card listings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
+  "note": "39 rate-card listings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
   "listings": [
     {
       "title": "988 FM 2026 — Radio + Digital (Star RFM)",
@@ -1495,6 +1495,195 @@
             "size": 3558499,
             "ext": "pdf",
             "file": "astro-upfront-2027.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Sinar Harian 20th Anniversary 2026 — Exclusive Print, Program & Social Rates",
+      "slug": "sinar-harian-20th-anniversary-2026",
+      "type": "Print",
+      "channel": "Sinar Harian / Sinar Karangkraf",
+      "location": "Nationwide",
+      "audience": "Malay mass-market newspaper readers and Sinar Daily digital audience",
+      "summary": "20th-anniversary offer: Instagram RM2k, Facebook/TikTok RM3.5k, full page RM8k, wraps from RM60k; bundles RM20k–200k.",
+      "description": "Sinar Harian 20th Anniversary exclusive media rates (3 pages), for signings from 1 September to 30 November 2026 with utilisation by 31 December 2026. Print offers: full wrap RM100,000 (casual RM200,000), half wrap RM75,000, cover wrap RM60,000, front-page billboard RM15,000, bottom panel RM8,000, ear space RM10,000, special 8-page pull-out RM150,000, centrespread advertorial RM40,000, full page colour corporate RM8,000, full page advertorial RM12,000, event coverage/PR page RM9,000, half page RM6,000, islands RM4,000. Program sponsorships RM8,000–24,000 (Interviu/Sinar Live, Wacana, Wacana English, Podcast, Dialog Siswa, Meja Bulat, Berani Semuka, She Leads/The Growth Room, Borak Bibir Merah). Social: Facebook/TikTok carousel RM3,500, Instagram RM2,000, Sinar Daily This Or That and Politically Frank videos RM9,000. Digital: Sinar Harian article RM8,000, Sinar Daily article RM5,000, rich-media announcement/custom nudges RM8,000/day, masthead RM5,000/day, banners from RM6,000. Anniversary packages: Spark RM20,000, Amplify RM40,000, Command RM60,000, Legacy Partner RM200,000 (limited to 20 brands).",
+      "price_from": 2000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Sinar Harian / Sinar Karangkraf",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "Sinar Karangkraf Sdn Bhd",
+        "formats": [
+          "Print wrap",
+          "Front page",
+          "Full page",
+          "Centrespread advertorial",
+          "Program sponsorship",
+          "Social posts",
+          "Digital articles",
+          "Anniversary packages"
+        ],
+        "price_tiers": [
+          "Instagram RM2,000",
+          "Facebook/TikTok RM3,500",
+          "Full page RM8,000",
+          "Spark RM20,000",
+          "Amplify RM40,000",
+          "Command RM60,000",
+          "Legacy RM200,000"
+        ],
+        "validity": "Signings 1 Sep–30 Nov 2026; utilisation by 31 Dec 2026",
+        "language": "Malay / English",
+        "source_file": "20th SH ANNIVERSARY PROMO_New1_261005_154818.pdf (3 pages)",
+        "documents": [
+          {
+            "name": "SH 20th Anniversary Exclusive Rates",
+            "size": 2352282,
+            "ext": "pdf",
+            "file": "sinar-harian-20th-anniversary-2026.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Malaysiakini Media Kit 2024 — Digital, Content & Campaign Packages",
+      "slug": "malaysiakini-media-kit-2024",
+      "type": "Digital",
+      "channel": "Malaysiakini / FG Media",
+      "location": "Nationwide",
+      "audience": "Malaysian news readers: ~5m monthly users, 50m pageviews, 9.1m social followers",
+      "summary": "Display CPM RM30–40, branded content RM2.5k/day or RM15k/week, video/talkshow RM45k, carousel RM15k, EDM RM10k–15k, survey RM40k–120k.",
+      "description": "Malaysiakini media kit (45 pages, 2024 edition, audience data from December 2023). Desktop and mobile display CPM RM30–40; site takeover RM40; branded content RM15,000/week or RM2,500/day. Packages: branded video RM45,000 (2-minute full video plus short reel, 10 posts, 500k impressions); interactive quiz/visual content RM45,000; carousel/poll RM15,000; live talkshow RM45,000 (30 minutes across four channels, 10 posts, 500k impressions); EDM RM10,000 non-targeted or RM15,000 segment-targeted; survey RM40,000 for 2,000 respondents or RM120,000 for 8,000. Languages EN/BM/CN (Tamil for selected survey work). Rates exclude 6% SST where stated.",
+      "price_from": 2500,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Malaysiakini / FG Media",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "FG Media (Malaysiakini)",
+        "formats": [
+          "Display CPM",
+          "Branded content",
+          "Branded video",
+          "Interactive content",
+          "Carousel/poll",
+          "Live talkshow",
+          "EDM",
+          "Survey"
+        ],
+        "price_tiers": [
+          "Display CPM RM30–40",
+          "Branded content RM2,500/day",
+          "EDM RM10,000",
+          "Carousel RM15,000",
+          "Video/talkshow RM45,000",
+          "Survey RM40,000–120,000"
+        ],
+        "validity": "2024 media kit; audience data Dec 2023",
+        "language": "English / Malay / Chinese / Tamil",
+        "source_file": "2024 Malaysiakini Media Kit (as of 20 Feb 2024).pdf (45 pages)",
+        "documents": [
+          {
+            "name": "2024 Malaysiakini Media Kit",
+            "size": 10466691,
+            "ext": "pdf",
+            "file": "malaysiakini-media-kit-2024.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Malaysiakini & KiniTV Event Coverage 2026/27 — Article, Video & Bundle",
+      "slug": "malaysiakini-kinitv-event-coverage-2026-2027",
+      "type": "Digital",
+      "channel": "Malaysiakini / KiniTV",
+      "location": "Nationwide",
+      "audience": "Malaysiakini and KiniTV news audiences across web and social",
+      "summary": "Event coverage: article RM12,000, video RM25,000, article + video bundle RM30,000.",
+      "description": "Malaysiakini and KiniTV event coverage packages for 2026/27 (8 pages). Article: ~1,000-word event coverage and media reporting in EN/BM/CN, published on the Malaysiakini desktop and mobile homepage announcement section for one day plus three social posts (FB, X, IG), target 2,000 reads — RM12,000. Video: ~2-minute event coverage video with scriptwriting, shooting, editing, voiceover and subtitles, published across Malaysiakini and KiniTV social channels plus one branded capsule insertion in KiniTV Bulletin News, target 30,000 views — RM25,000. Article plus video bundle RM30,000.",
+      "price_from": 12000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Malaysiakini / KiniTV",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "FG Media (Malaysiakini / KiniTV)",
+        "formats": [
+          "Event coverage article",
+          "Event coverage video",
+          "Article + video bundle",
+          "KiniTV branded capsule"
+        ],
+        "price_tiers": [
+          "Article RM12,000",
+          "Video RM25,000",
+          "Bundle RM30,000"
+        ],
+        "validity": "2026/2027",
+        "language": "English / Malay / Chinese",
+        "source_file": "Event Coverage (Video, Article) by Mkini & KiniTV (Oct 2026_2027).pdf (8 pages)",
+        "documents": [
+          {
+            "name": "Event Coverage by Mkini & KiniTV 2026/2027",
+            "size": 2554724,
+            "ext": "pdf",
+            "file": "malaysiakini-kinitv-event-coverage-2026-2027.pdf",
+            "kind": "document"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Sinar Karangkraf Media Kit 2025/26 — Sinar Harian, SinarPlus, Bestari & Daily",
+      "slug": "sinar-karangkraf-ratecard-2025-2026",
+      "type": "Print",
+      "channel": "Sinar Harian / Karangkraf",
+      "location": "Nationwide",
+      "audience": "Malay grassroots readers: 195k daily readership, 65k circulation, 50m monthly pageviews",
+      "summary": "Sinar Harian print from RM2,240 (quarter page B&W); full page colour RM16,960; digital CPM RM30–90; Sinar Daily article RM8k.",
+      "description": "Sinar Karangkraf media kit 2025/26 (38 pages) covering Sinar Harian and Sinar Ahad, SinarPlus, Sinar Bestari and Sinar Daily. Sinar Harian print: full page B&W RM8,960 / colour RM16,960, half page RM4,480 / RM12,480, quarter page RM2,240 / RM10,240, double page RM26,880 / RM42,480, front-page bottom panel RM19,360, ear space RM21,250, full wrap RM200,000; classified liners RM18–35 per line by frequency. Digital display CPM RM30–90, masthead RM10,000/day, branded advertorial RM8,000–14,000, social posts from RM500, Facebook Live RM5,000, TikTok from RM4,000. SinarPlus and Sinar Bestari digital from RM2,000/week; Sinar Daily display RM8,000–15,000/week and mobile app RM5,000–12,000. Video/programme sponsorships from RM10,000. Rates exclude SST and include 15% agency commission.",
+      "price_from": 2240,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "supplier_name": "Sinar Karangkraf",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "vendor": "Sinar Karangkraf Sdn Bhd",
+        "formats": [
+          "Sinar Harian print",
+          "Classified",
+          "Digital display",
+          "Social media",
+          "Video programmes",
+          "SinarPlus",
+          "Sinar Bestari",
+          "Sinar Daily"
+        ],
+        "price_tiers": [
+          "Quarter page B&W RM2,240",
+          "Full page colour RM16,960",
+          "Digital CPM RM30–90",
+          "Sinar Daily article RM8,000",
+          "Full wrap RM200,000"
+        ],
+        "validity": "2025–2026 media kit; T&C state rates valid 1 Jan–31 Dec 2025",
+        "language": "Malay / English",
+        "source_file": "SINAR KARANGRAF - RATECARD 2025_2026.pdf (38 pages)",
+        "documents": [
+          {
+            "name": "Sinar Karangkraf Ratecard 2025/2026",
+            "size": 28395880,
+            "ext": "pdf",
+            "file": "sinar-karangkraf-ratecard-2025-2026.pdf",
             "kind": "document"
           }
         ]
