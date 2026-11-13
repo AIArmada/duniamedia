@@ -3,7 +3,7 @@
     $displayImage = $item->displayImage();
     $imageSrcset = \App\Support\MediaImage::srcset($displayImage, [360, 480, 720, 960]);
     $hasFixedPrice = $item->price_from && $item->pricing_mode !== 'on_request';
-    $typeIcons = [
+    $mediumIcons = [
         'TV & Broadcast' => 'tv',
         'Radio' => 'radio',
         'Outdoor' => 'billboard',
@@ -25,7 +25,7 @@
     </a>
     <div class="media-card__body">
         <div class="media-card__meta">
-            <span class="tag"><x-dm-icon :name="$typeIcons[$item->medium] ?? 'spark'" :size="13"/>{{ $item->medium }}</span>
+            <span class="tag"><x-dm-icon :name="$mediumIcons[$item->medium] ?? 'spark'" :size="13"/>{{ $item->medium }}</span>
             <span class="media-card__owner">
                 {{ $item->seller?->display_name ?? 'Media owner on request' }}
                 @if ($item->channel_label && $item->channel_label !== $item->seller?->display_name)

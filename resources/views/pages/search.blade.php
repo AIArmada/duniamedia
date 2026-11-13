@@ -55,7 +55,7 @@
                             <article class="creator-card">
                                 <div class="creator-card__image"><img src="{{ \App\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy"></div>
                                 <div class="creator-card__body">
-                                    <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->platform_label }}</span></div>
+                                    <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->social_platform }}</span></div>
                                     <h3>{{ $creator->displayName() }}</h3>
                                     <p>{{ \Illuminate\Support\Str::limit($creator->bio, 140) }}</p>
                                     <a href="{{ route('creators.index') }}" class="text-link">View the creator network →</a>

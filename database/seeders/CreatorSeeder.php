@@ -6,14 +6,14 @@ use AIArmada\Persons\Models\Person;
 use App\Models\CreatorAccount;
 use App\Models\CreatorDeliveryTemplate;
 use App\Models\CreatorProfile;
+use App\Models\DistributionPlatform;
 use App\Models\MediaOffering;
 use App\Models\MediaProperty;
 use App\Models\OfferingPlacement;
 use App\Models\Party;
 use App\Models\PartyRole;
 use App\Models\Placement;
-use App\Models\Platform;
-use App\Models\PropertyPlatform;
+use App\Models\PropertyDistributionPlatform;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 
@@ -60,7 +60,7 @@ class CreatorSeeder extends Seeder
                     'creator_party_id' => $party->id,
                     'creator_type' => 'creator',
                     'primary_niche' => $category,
-                    'platform_label' => $platformName,
+                    'social_platform' => $platformName,
                     'handle' => $handle,
                     'bio' => $bio,
                     'managed_by_party_id' => $seller->id,
@@ -86,11 +86,11 @@ class CreatorSeeder extends Seeder
                 ],
             );
 
-            $platform = Platform::where('name', $platformName)->first();
+            $platform = DistributionPlatform::where('name', $platformName)->first();
 
             if ($platform) {
-                PropertyPlatform::updateOrCreate(
-                    ['media_property_id' => $property->id, 'platform_id' => $platform->id],
+                PropertyDistributionPlatform::updateOrCreate(
+                    ['media_property_id' => $property->id, 'distribution_platform_id' => $platform->id],
                     ['handle' => $handle, 'is_primary' => true],
                 );
             }
@@ -129,7 +129,7 @@ class CreatorSeeder extends Seeder
                     'description' => 'Illustrative creator profile only. Not a real creator or verified partnership.',
                     'pricing_mode' => 'on_request',
                     'availability_status' => 'on_request',
-                    'channel_label' => $platformName,
+                    'channel_label' => $property->name,
                     'location_label' => 'Malaysia',
                     'audience_label' => $niche,
                     'is_featured' => true,

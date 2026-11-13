@@ -98,8 +98,8 @@ return new class extends Migration
             $table->string('campaign_code')->unique();
             $table->string('slug')->unique();
             $table->text('summary')->nullable();
+            $table->string('medium')->nullable()->index();
             $table->string('channel_label')->nullable()->index();
-            $table->string('platform_label')->nullable();
             $table->boolean('is_featured')->default(false)->index();
             $table->string('status')->default('draft')->index();
             $table->decimal('budget_amount', 18, 2)->nullable();

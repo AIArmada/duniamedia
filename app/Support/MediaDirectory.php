@@ -27,7 +27,7 @@ class MediaDirectory
         'Specialist media & events' => 'specialist-media',
     ];
 
-    /** Curated descriptions for the outlets people ask about most. */
+    /** Curated descriptions for the channels people ask about most. */
     private const DESCRIPTIONS = [
         'tv3' => 'Malaysia’s leading free-to-air Malay television network, combining mass entertainment, drama, news and studio formats.',
         'tv9' => 'Mass-Malay entertainment and news channel, strong with family audiences and studio-based talk formats.',
@@ -71,8 +71,8 @@ class MediaDirectory
         'specialist-media' => ['bfm-2026-business-radio', 'fmt-2026-digital-news', 'tmr-super-deal-2026-business-content', 'imedia-blitz-sale-2026', 'konsert-kita-suara-anti-buli-2026'],
     ];
 
-    /** Rate cards shown on a specific outlet page. */
-    private const OUTLET_RATE_CARDS = [
+    /** Rate cards shown on a specific channel page. */
+    private const CHANNEL_RATE_CARDS = [
         'media-prima:tv3' => ['omnia-content-terhangat-2026'],
         'media-prima:tv9' => ['omnia-content-terhangat-2026'],
         'media-prima:8tv' => ['omnia-content-terhangat-2026'],
@@ -126,7 +126,7 @@ class MediaDirectory
             }
 
             $ownerSlug = self::OWNER_SLUGS[$owner['name']] ?? Str::slug($owner['name']);
-            $outlets = [];
+            $channels = [];
 
             foreach ($owner['categories'] as $category) {
                 foreach ($category['brands'] as $brand) {
@@ -140,7 +140,7 @@ class MediaDirectory
                     }
 
                     $seen[$ownerSlug][$slug] = true;
-                    $outlets[] = $brand + [
+                    $channels[] = $brand + [
                         'slug' => $slug,
                         'category' => $category['label'],
                         'owner_slug' => $ownerSlug,
@@ -151,9 +151,9 @@ class MediaDirectory
 
             foreach ($owner['categories'] as &$category) {
                 foreach ($category['brands'] as &$brand) {
-                    foreach ($outlets as $outlet) {
-                        if ($outlet['name'] === $brand['name'] && $outlet['category'] === $category['label']) {
-                            $brand['slug'] = $outlet['slug'];
+                    foreach ($channels as $channel) {
+                        if ($channel['name'] === $brand['name'] && $channel['category'] === $category['label']) {
+                            $brand['slug'] = $channel['slug'];
                             break;
                         }
                     }
@@ -163,7 +163,7 @@ class MediaDirectory
             unset($category);
 
             $owner['slug'] = $ownerSlug;
-            $owner['outlets'] = $outlets;
+            $owner['channels'] = $channels;
             $owner['description'] = self::ownerDescription($ownerSlug, $owner['name']);
             $owners[$ownerSlug] = $owner;
         }
@@ -176,32 +176,32 @@ class MediaDirectory
         return self::owners()[$slug] ?? null;
     }
 
-    public static function outlet(string $ownerSlug, string $outletSlug): ?array
+    public static function channel(string $ownerSlug, string $channelSlug): ?array
     {
         $owner = self::owner($ownerSlug);
         if (! $owner) {
             return null;
         }
 
-        foreach ($owner['outlets'] as $outlet) {
-            if ($outlet['slug'] === $outletSlug) {
-                return $outlet + ['owner' => $owner];
+        foreach ($owner['channels'] as $channel) {
+            if ($channel['slug'] === $channelSlug) {
+                return $channel + ['owner' => $owner];
             }
         }
 
         return null;
     }
 
-    public static function outletDescription(array $outlet): string
+    public static function channelDescription(array $channel): string
     {
-        return self::DESCRIPTIONS[$outlet['slug']]
-            ?? "{$outlet['name']} is part of {$outlet['owner_name']}, listed under {$outlet['category']}. Ask our team for current inventory, audiences and availability.";
+        return self::DESCRIPTIONS[$channel['slug']]
+            ?? "{$channel['name']} is part of {$channel['owner_name']}, listed under {$channel['category']}. Ask our team for current inventory, audiences and availability.";
     }
 
-    public static function rateCards(string $ownerSlug, ?string $outletSlug = null): Collection
+    public static function rateCards(string $ownerSlug, ?string $channelSlug = null): Collection
     {
-        $slugs = $outletSlug !== null
-            ? (self::OUTLET_RATE_CARDS[$ownerSlug.':'.$outletSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
+        $slugs = $channelSlug !== null
+            ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
             : (self::OWNER_RATE_CARDS[$ownerSlug] ?? []);
 
         if ($slugs === []) {

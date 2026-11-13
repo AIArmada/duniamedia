@@ -20,6 +20,9 @@ class WorkExplorer extends Component
     public string $service = 'all';
 
     #[Url(except: 'all')]
+    public string $medium = 'all';
+
+    #[Url(except: 'all')]
     public string $channel = 'all';
 
     #[Url(except: 'all')]
@@ -32,7 +35,7 @@ class WorkExplorer extends Component
 
     public function updated(string $property): void
     {
-        if (in_array($property, ['search', 'sector', 'service', 'channel', 'year', 'client'], true)) {
+        if (in_array($property, ['search', 'sector', 'service', 'medium', 'channel', 'year', 'client'], true)) {
             $this->limit = 9;
         }
     }
@@ -44,7 +47,7 @@ class WorkExplorer extends Component
 
     public function clearFilters(): void
     {
-        $this->reset(['search', 'sector', 'service', 'channel', 'year', 'client']);
+        $this->reset(['search', 'sector', 'service', 'medium', 'channel', 'year', 'client']);
         $this->limit = 9;
     }
 
@@ -58,12 +61,14 @@ class WorkExplorer extends Component
                 $query->where(function ($sub) use ($search) {
                     $sub->where('name', 'like', $search)
                         ->orWhere('summary', 'like', $search)
-                        ->orWhere('platform_label', 'like', $search)
+                        ->orWhere('medium', 'like', $search)
+                        ->orWhere('channel_label', 'like', $search)
                         ->orWhereHas('client', fn ($client) => $client->where('display_name', 'like', $search));
                 });
             })
             ->when($this->sector !== 'all', fn ($query) => $query->whereHas('client.organization', fn ($organization) => $organization->where('organization_type', $this->sector)))
             ->when($this->service !== 'all', fn ($query) => $query->whereHas('service', fn ($service) => $service->where('name', $this->service)))
+            ->when($this->medium !== 'all', fn ($query) => $query->where('medium', $this->medium))
             ->when($this->channel !== 'all', fn ($query) => $query->where('channel_label', $this->channel))
             ->when($this->year !== 'all', fn ($query) => $query->whereYear('starts_on', (int) $this->year))
             ->when($this->client !== 'all', fn ($query) => $query->whereHas('client', fn ($client) => $client->where('slug', $this->client)))
@@ -78,7 +83,7 @@ class WorkExplorer extends Component
             'client_sector' => $campaign->client?->organization?->organization_type,
             'title' => $campaign->name,
             'description' => $campaign->summary,
-            'platform' => $campaign->platform_label,
+            'medium' => $campaign->medium,
             'service' => $campaign->service?->name,
             'channel' => $campaign->channel_label,
             'date' => $campaign->starts_on?->format('d M Y'),
@@ -98,6 +103,7 @@ class WorkExplorer extends Component
             'activeClient' => $activeClient ? ['name' => $activeClient->display_name, 'slug' => $activeClient->slug] : null,
             'years' => Campaign::query()->published()->orderByDesc('starts_on')->pluck('starts_on')->filter()->map(fn ($date) => (int) $date->format('Y'))->unique()->values(),
             'services' => Service::query()->orderBy('name')->pluck('name'),
+            'mediums' => Campaign::query()->published()->whereNotNull('medium')->distinct()->orderBy('medium')->pluck('medium'),
             'channels' => Campaign::query()->published()->whereNotNull('channel_label')->distinct()->orderBy('channel_label')->pluck('channel_label'),
             'clients' => Party::query()->whereHas('clientReferences')->orderBy('display_name')->get(['id', 'slug', 'display_name']),
         ]);

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class PropertyPlatform extends BaseModel
+class PropertyDistributionPlatform extends BaseModel
 {
     protected function casts(): array
     {
@@ -18,6 +18,6 @@ class PropertyPlatform extends BaseModel
 
     public function platform(): BelongsTo
     {
-        return $this->belongsTo(Platform::class);
+        return $this->belongsTo(DistributionPlatform::class, 'distribution_platform_id');
     }
 }

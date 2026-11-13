@@ -111,14 +111,14 @@ class MediaOffering extends BaseModel implements BuyableInterface
         }
 
         return match ($this->medium) {
-            'TV & Broadcast' => 'assets/img/v2/channel-tv.webp',
-            'Radio', 'Podcast' => 'assets/img/v2/channel-radio.webp',
-            'Outdoor' => 'assets/img/v2/channel-outdoor.webp',
-            'Indoor' => 'assets/img/v2/channel-spaces.webp',
-            'Digital' => 'assets/img/v2/channel-digital.webp',
-            'Creators' => 'assets/img/v2/channel-creators.webp',
-            'Print' => 'assets/img/v2/channel-print.webp',
-            default => 'assets/img/v2/channel-spaces.webp',
+            'TV & Broadcast' => 'assets/img/v2/medium-tv.webp',
+            'Radio', 'Podcast' => 'assets/img/v2/medium-radio.webp',
+            'Outdoor' => 'assets/img/v2/medium-outdoor.webp',
+            'Indoor' => 'assets/img/v2/medium-spaces.webp',
+            'Digital' => 'assets/img/v2/medium-digital.webp',
+            'Creators' => 'assets/img/v2/medium-creators.webp',
+            'Print' => 'assets/img/v2/medium-print.webp',
+            default => 'assets/img/v2/medium-spaces.webp',
         };
     }
 

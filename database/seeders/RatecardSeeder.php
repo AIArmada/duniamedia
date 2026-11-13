@@ -80,7 +80,7 @@ class RatecardSeeder extends Seeder
         if (FileFacade::exists($path)) {
             $data = json_decode(FileFacade::get($path), true);
 
-            foreach ($data['listings'] ?? [] as $item) {
+            foreach ($data['offerings'] ?? [] as $item) {
                 if (in_array($item['slug'], self::RESTRICTED, true)) {
                     continue;
                 }
@@ -96,7 +96,7 @@ class RatecardSeeder extends Seeder
 
     private function importListing(array $item): MediaOffering
     {
-        $seller = $this->sellerFor($item['supplier_name'] ?? null);
+        $seller = $this->sellerFor($item['media_owner'] ?? null);
         $property = $this->propertyFor($seller, $item);
         $slug = $item['slug'] ?? Str::slug($item['title']);
         $specs = $item['specifications'] ?? [];
@@ -107,7 +107,7 @@ class RatecardSeeder extends Seeder
                 'media_property_id' => $property->id,
                 'asset_surface_id' => null,
                 'name' => $item['title'],
-                'placement_type' => $item['type'],
+                'placement_type' => $item['medium'],
                 'status' => 'active',
             ],
         );
@@ -116,7 +116,7 @@ class RatecardSeeder extends Seeder
             ['asset_code' => $slug],
             [
                 'media_property_id' => $property->id,
-                'asset_type' => $item['type'],
+                'asset_type' => $item['medium'],
                 'name' => $item['title'],
                 'status' => 'active',
                 'specs' => $specs,
@@ -125,13 +125,13 @@ class RatecardSeeder extends Seeder
 
         $this->replaceMedia($asset, $item['image'] ?? null, 'image');
 
-        if (in_array($item['type'], ['Outdoor', 'Indoor'], true)) {
+        if (in_array($item['medium'], ['Outdoor', 'Indoor'], true)) {
             $location = Location::updateOrCreate(
                 ['name' => $item['location'] ?? 'Nationwide'],
                 [
-                    'location_type' => $item['type'] === 'Outdoor' ? 'site' : 'venue',
-                    'venue_type' => $item['type'] === 'Indoor' ? 'venue' : null,
-                    'site_type' => $item['type'] === 'Outdoor' ? 'outdoor' : null,
+                    'location_type' => $item['medium'] === 'Outdoor' ? 'site' : 'venue',
+                    'venue_type' => $item['medium'] === 'Indoor' ? 'venue' : null,
+                    'site_type' => $item['medium'] === 'Outdoor' ? 'outdoor' : null,
                     'geo_market_id' => $this->marketFor($item['location'] ?? 'Nationwide')->id,
                     'is_public' => true,
                     'status' => 'active',
@@ -153,20 +153,20 @@ class RatecardSeeder extends Seeder
 
             $structure = HostStructure::updateOrCreate(
                 ['label' => $item['title'], 'location_id' => $location->id],
-                ['owner_party_id' => $seller->id, 'structure_type' => $item['type'], 'status' => 'active'],
+                ['owner_party_id' => $seller->id, 'structure_type' => $item['medium'], 'status' => 'active'],
             );
 
             $asset->update(['location_id' => $location->id, 'host_structure_id' => $structure->id]);
 
             $surface = AssetSurface::updateOrCreate(
                 ['asset_id' => $asset->id, 'label' => 'Primary'],
-                ['surface_type' => $item['type']],
+                ['surface_type' => $item['medium']],
             );
 
             $placement->update(['asset_surface_id' => $surface->id, 'media_property_id' => null]);
         }
 
-        $this->attachFormats($placement, $item['type'], $specs['formats'] ?? []);
+        $this->attachFormats($placement, $item['medium'], $specs['formats'] ?? []);
 
         $offering = MediaOffering::updateOrCreate(
             ['slug' => $slug],
@@ -174,14 +174,14 @@ class RatecardSeeder extends Seeder
                 'seller_party_id' => $seller->id,
                 'name' => $item['title'],
                 'sku' => $slug,
-                'medium' => $item['type'],
+                'medium' => $item['medium'],
                 'unit_code' => 'campaign',
                 'summary' => $item['summary'],
                 'description' => $item['description'] ?? null,
                 'pricing_mode' => $item['pricing_mode'] ?? 'on_request',
                 'price_from' => $item['price_from'] ?? null,
                 'availability_status' => $item['availability_status'] ?? 'on_request',
-                'channel_label' => $item['channel'] ?? $seller->display_name,
+                'channel_label' => $item['channel'] ?? null,
                 'location_label' => $item['location'] ?? 'Nationwide',
                 'audience_label' => $item['audience'] ?? null,
                 'is_featured' => (bool) ($item['is_featured'] ?? false),
@@ -231,9 +231,9 @@ class RatecardSeeder extends Seeder
         return $offering;
     }
 
-    private function sellerFor(?string $supplier): Party
+    private function sellerFor(?string $mediaOwner): Party
     {
-        $needle = $this->normalize($supplier ?? '');
+        $needle = $this->normalize($mediaOwner ?? '');
 
         foreach (self::SELLER_MAP as $key => $slug) {
             if (str_contains($needle, $key)) {
@@ -244,11 +244,11 @@ class RatecardSeeder extends Seeder
             }
         }
 
-        $slug = Str::slug($supplier ?: 'independent-media-owner');
+        $slug = Str::slug($mediaOwner ?: 'independent-media-owner');
 
         $party = Party::updateOrCreate(
             ['slug' => $slug],
-            ['party_type' => 'organization', 'display_name' => $supplier ?: 'Independent media owner', 'status' => 'active'],
+            ['party_type' => 'organization', 'display_name' => $mediaOwner ?: 'Independent media owner', 'status' => 'active'],
         );
 
         Organization::updateOrCreate(['party_id' => $party->id], ['organization_type' => 'media_owner', 'industry' => 'Media']);
@@ -274,7 +274,7 @@ class RatecardSeeder extends Seeder
             ['slug' => $seller->slug.'-'.Str::slug($channel)],
             [
                 'owner_party_id' => $seller->id,
-                'property_type' => 'outlet',
+                'property_type' => 'channel',
                 'name' => $channel,
                 'status' => 'active',
             ],
@@ -379,15 +379,15 @@ class RatecardSeeder extends Seeder
     private function demoListings(): array
     {
         return [
-            ['title' => 'Kuala Lumpur LED Billboard', 'type' => 'Outdoor', 'channel' => 'Outdoor', 'location' => 'Klang Valley', 'audience' => 'Urban commuters', 'summary' => 'High-impact digital roadside creative format.', 'image' => 'assets/img/listing-outdoor.webp'],
-            ['title' => 'National TV Brand Feature', 'type' => 'TV & Broadcast', 'channel' => 'TV & Broadcast', 'location' => 'Nationwide', 'audience' => 'Mass-market households', 'summary' => 'Brand storytelling and broadcast feature opportunities.', 'image' => 'assets/img/listing-tv.webp'],
-            ['title' => 'Drive-Time Radio Placement', 'type' => 'Radio', 'channel' => 'Radio', 'location' => 'Nationwide', 'audience' => 'Daily commuters', 'summary' => 'Radio campaigns and audience-focused slots.', 'image' => 'assets/img/listing-radio.webp'],
-            ['title' => 'Retail Mall Screen Network', 'type' => 'Indoor', 'channel' => 'Indoor', 'location' => 'Klang Valley', 'audience' => 'Retail shoppers', 'summary' => 'Digital screen media across shopping environments.', 'image' => 'assets/img/listing-indoor.webp'],
-            ['title' => 'Niche Creator Campaign', 'type' => 'Creators', 'channel' => 'Creators', 'location' => 'Nationwide', 'audience' => 'Targeted interest communities', 'summary' => 'Creator-led storytelling matched to audience interests.', 'image' => 'assets/img/listing-creators.webp'],
-            ['title' => 'Digital Video Advertising', 'type' => 'Digital', 'channel' => 'Digital', 'location' => 'Nationwide', 'audience' => 'Digital-first consumers', 'summary' => 'Cross-platform video and digital campaign placements.', 'image' => 'assets/img/listing-digital.webp'],
-            ['title' => 'Print Feature & Advertorial', 'type' => 'Print', 'channel' => 'Print', 'location' => 'Nationwide', 'audience' => 'Editorial readers', 'summary' => 'Editorial-style and standard print advertising options.', 'image' => 'assets/img/print.webp'],
-            ['title' => 'Podcast Brand Integration', 'type' => 'Podcast', 'channel' => 'Podcast', 'location' => 'Nationwide', 'audience' => 'Focused interest groups', 'summary' => 'Host-led conversations and sponsorship opportunities.', 'image' => 'assets/img/radio.webp'],
-            ['title' => 'Building Wall Activation', 'type' => 'Outdoor', 'channel' => 'Outdoor', 'location' => 'Klang Valley', 'audience' => 'Local high-footfall audience', 'summary' => 'Custom-format wall media subject to site rights and approvals.', 'image' => 'assets/img/custom-media.webp'],
+            ['title' => 'Kuala Lumpur LED Billboard', 'medium' => 'Outdoor', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Klang Valley', 'audience' => 'Urban commuters', 'summary' => 'High-impact digital roadside creative format.', 'image' => 'assets/img/offering-outdoor.webp'],
+            ['title' => 'National TV Brand Feature', 'medium' => 'TV & Broadcast', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Mass-market households', 'summary' => 'Brand storytelling and broadcast feature opportunities.', 'image' => 'assets/img/offering-tv.webp'],
+            ['title' => 'Drive-Time Radio Placement', 'medium' => 'Radio', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Daily commuters', 'summary' => 'Radio campaigns and audience-focused slots.', 'image' => 'assets/img/offering-radio.webp'],
+            ['title' => 'Retail Mall Screen Network', 'medium' => 'Indoor', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Klang Valley', 'audience' => 'Retail shoppers', 'summary' => 'Digital screen media across shopping environments.', 'image' => 'assets/img/offering-indoor.webp'],
+            ['title' => 'Niche Creator Campaign', 'medium' => 'Creators', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Targeted interest communities', 'summary' => 'Creator-led storytelling matched to audience interests.', 'image' => 'assets/img/offering-creators.webp'],
+            ['title' => 'Digital Video Advertising', 'medium' => 'Digital', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Digital-first consumers', 'summary' => 'Cross-platform video and digital campaign placements.', 'image' => 'assets/img/offering-digital.webp'],
+            ['title' => 'Print Feature & Advertorial', 'medium' => 'Print', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Editorial readers', 'summary' => 'Editorial-style and standard print advertising options.', 'image' => 'assets/img/print.webp'],
+            ['title' => 'Podcast Brand Integration', 'medium' => 'Podcast', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Nationwide', 'audience' => 'Focused interest groups', 'summary' => 'Host-led conversations and sponsorship opportunities.', 'image' => 'assets/img/radio.webp'],
+            ['title' => 'Building Wall Activation', 'medium' => 'Outdoor', 'channel' => null, 'media_owner' => 'RA Media Relations', 'location' => 'Klang Valley', 'audience' => 'Local high-footfall audience', 'summary' => 'Custom-format wall media subject to site rights and approvals.', 'image' => 'assets/img/custom-media.webp'],
         ];
     }
 }

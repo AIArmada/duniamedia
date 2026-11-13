@@ -27,7 +27,7 @@
             <div class="solution-grid">
                 @foreach ([
                     ['Discover', 'Understand the audience, the objective, the constraints and what the business actually needs to happen.', 'compass'],
-                    ['Strategise', 'Choose the channel roles, the regional relevance, the content plan and the measurement approach.', 'target'],
+                    ['Strategise', 'Choose the media mix, the regional relevance, the content plan and the measurement approach.', 'target'],
                     ['Produce', 'Create the visual, video, audio and copy assets — using AI-assisted workflows only where they genuinely help.', 'camera'],
                     ['Distribute', 'Place the work across broadcast, out-of-home, editorial, digital, creators and custom media.', 'megaphone'],
                     ['Convert', 'Carry the response into landing pages, lead capture, CRM and a follow-up process that someone owns.', 'code'],
@@ -56,7 +56,7 @@
                     <p>We keep those pieces in one conversation. That reduces the gap between the idea that was approved and the campaign that actually runs.</p>
                     <ul class="feature-list">
                         <li>One brief shared by creative, media and technology</li>
-                        <li>Assets planned for each channel from the start</li>
+                        <li>Assets planned for each medium from the start</li>
                         <li>Response handled while the campaign is live</li>
                         <li>Learning captured before the next round begins</li>
                     </ul>
@@ -70,11 +70,11 @@
 
             <div class="solution-visual">
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-outdoor.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-outdoor.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
                     <figcaption>Place: a real outdoor moment in the city.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
                     <figcaption>Engage: creator content built for the audience.</figcaption>
                 </figure>
                 <figure>
@@ -95,7 +95,7 @@
                 <div>
                     <span class="eyebrow eyebrow--pale">Production, media and technology</span>
                     <h2 class="section-title">Built around a shared objective.</h2>
-                    <p style="max-width:620px;margin-top:0.8rem;color:rgba(255,248,247,.66)">Bring us the outcome and the constraints. We will help decide which channels, creative and systems deserve the investment.</p>
+                    <p style="max-width:620px;margin-top:0.8rem;color:rgba(255,248,247,.66)">Bring us the outcome and the constraints. We will help decide which media, creative and systems deserve the investment.</p>
                 </div>
                 <div class="cta-panel__actions">
                     <a class="button button--on-dark" href="{{ route('advisor') }}">Start planning <span aria-hidden="true">↗</span></a>

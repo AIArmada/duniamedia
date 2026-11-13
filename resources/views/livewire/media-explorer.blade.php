@@ -1,6 +1,6 @@
 <div>
     @php
-        $categoryIcons = [
+        $mediumIcons = [
             'TV & Broadcast' => 'tv',
             'Radio' => 'radio',
             'Outdoor' => 'billboard',
@@ -30,8 +30,8 @@
         <div class="container">
             <div class="category-chips" role="group" aria-label="Filter by medium">
                 <button type="button" class="chip @if ($medium === 'all') is-active @endif" wire:click="$set('medium', 'all')" aria-pressed="{{ $medium === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
-                @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $category)
-                    <button type="button" class="chip @if ($medium === $category) is-active @endif" wire:click="$set('medium', '{{ $category }}')" aria-pressed="{{ $medium === $category ? 'true' : 'false' }}"><x-dm-icon :name="$categoryIcons[$category] ?? 'spark'" :size="16"/>{{ $category }}</button>
+                @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $mediumOption)
+                    <button type="button" class="chip @if ($medium === $mediumOption) is-active @endif" wire:click="$set('medium', '{{ $mediumOption }}')" aria-pressed="{{ $medium === $mediumOption ? 'true' : 'false' }}"><x-dm-icon :name="$mediumIcons[$mediumOption] ?? 'spark'" :size="16"/>{{ $mediumOption }}</button>
                 @endforeach
             </div>
 
@@ -63,10 +63,10 @@
 
                     <label class="field">
                         <span>Medium</span>
-                        <select wire:model.live="type">
+                        <select wire:model.live="medium">
                             <option value="all">All mediums</option>
-                            @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $category)
-                                <option value="{{ $category }}" @selected($medium === $category)>{{ $category }}</option>
+                            @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $mediumOption)
+                                <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
                             @endforeach
                         </select>
                     </label>
@@ -93,7 +93,7 @@
 
                     <label class="field">
                         <span>Channel / brand</span>
-                        <select wire:model.live="vendor">
+                        <select wire:model.live="channel">
                             <option value="all">All channels</option>
                             @foreach ($channels as $channelOption)
                                 <option value="{{ $channelOption }}" @selected($channel === $channelOption)>{{ $channelOption }}</option>
@@ -201,7 +201,7 @@
                         </div>
                     @endif
 
-                    <div class="media-grid" wire:loading.class="is-loading" wire:target="search,platform,type,format,owner,vendor,location,availability,budget,sort">
+                    <div class="media-grid" wire:loading.class="is-loading" wire:target="search,platform,medium,format,owner,channel,location,availability,budget,sort">
                         @forelse ($offerings as $item)
                             <x-media-card :item="$item" wire:key="media-{{ $item->id }}"/>
                         @empty

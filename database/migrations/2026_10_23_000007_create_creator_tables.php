@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string('creator_type');
             $table->string('slug')->unique();
             $table->string('primary_niche')->nullable()->index();
-            $table->string('platform_label')->nullable()->index();
+            $table->string('social_platform')->nullable()->index();
             $table->string('handle')->nullable();
             $table->text('bio')->nullable();
             $table->foreignUuid('managed_by_party_id')->nullable()->index();

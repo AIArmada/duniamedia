@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Platform extends BaseModel
+class DistributionPlatform extends BaseModel
 {
     public function owner(): BelongsTo
     {

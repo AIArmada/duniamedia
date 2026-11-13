@@ -23,7 +23,7 @@ class CreatorProfileFactory extends Factory
             'creator_type' => 'creator',
             'slug' => Str::slug($name).'-'.Str::lower(Str::random(6)),
             'primary_niche' => 'Lifestyle',
-            'platform_label' => 'TikTok',
+            'social_platform' => 'TikTok',
             'bio' => fake()->paragraph(),
             'country_code' => 'MY',
             'location_label' => 'Malaysia',

@@ -17,7 +17,7 @@ class MediaDirectoryController extends Controller
                 $haystack = mb_strtolower(implode(' ', [
                     $owner['name'],
                     $owner['description'] ?? '',
-                    implode(' ', array_column($owner['outlets'], 'name')),
+                    implode(' ', array_column($owner['channels'], 'name')),
                 ]));
 
                 return str_contains($haystack, mb_strtolower($query));
@@ -44,26 +44,26 @@ class MediaDirectoryController extends Controller
         ]);
     }
 
-    public function outlet(string $owner, string $outlet)
+    public function channel(string $owner, string $channel)
     {
         $ownerData = MediaDirectory::owner($owner);
         abort_unless($ownerData, 404);
 
-        $outletData = MediaDirectory::outlet($owner, $outlet);
-        abort_unless($outletData, 404);
+        $channelData = MediaDirectory::channel($owner, $channel);
+        abort_unless($channelData, 404);
 
-        $siblings = collect($ownerData['outlets'])
-            ->where('slug', '!=', $outlet)
+        $siblings = collect($ownerData['channels'])
+            ->where('slug', '!=', $channel)
             ->take(8)
             ->values();
 
-        return view('pages.media-outlet', [
+        return view('pages.media-channel', [
             'owner' => $ownerData,
-            'outlet' => $outletData,
-            'description' => MediaDirectory::outletDescription($outletData),
-            'rateCards' => MediaDirectory::rateCards($owner, $outlet),
+            'channel' => $channelData,
+            'description' => MediaDirectory::channelDescription($channelData),
+            'rateCards' => MediaDirectory::rateCards($owner, $channel),
             'siblings' => $siblings,
-            'pageTitle' => $outletData['name'].' — '.$ownerData['name'].' | Dunia Media',
+            'pageTitle' => $channelData['name'].' — '.$ownerData['name'].' | Dunia Media',
         ]);
     }
 }

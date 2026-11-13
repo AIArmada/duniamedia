@@ -1,14 +1,14 @@
-# Homepage media-owner and outlet marks
+# Homepage media-owner and channel marks
 
-The homepage roster is defined in `resources/data/media-owners.php` and displayed in `resources/views/pages/home.blade.php`. It contains 12 owner groups and 121 individually listed outlet cards. Each owner has a separate identity block; its outlets appear as their own cards under their channel or publishing category.
+The homepage roster is defined in `resources/data/media-owners.php` and displayed in `resources/views/pages/home.blade.php`. It contains 12 owner groups and 121 individually listed channel cards. Each owner has a separate identity block; its channels appear as their own cards under their channel or publishing category.
 
-The cards use artwork from the sources below wherever a distinct mark was available. Eight outlets use their own typeset wordmark in place of a separate official logo file: Astro Digital's Wanita, Thinker Studios, Rocketfuel, Bernama Digital, KLIA Terminal 1, KLIA Terminal 2, KTM Train and KL Sentral Station. The Outdoor Media and Cinema Ads group names are also typeset as umbrella labels. Their listed operators retain their individual logo cards.
+The cards use artwork from the sources below wherever a distinct mark was available. Eight channels use their own typeset wordmark in place of a separate official logo file: Astro Digital's Wanita, Thinker Studios, Rocketfuel, Bernama Digital, KLIA Terminal 1, KLIA Terminal 2, KTM Train and KL Sentral Station. The Outdoor Media and Cinema Ads group names are also typeset as umbrella labels. Their listed operators retain their individual logo cards.
 
 ## Logo sources
 
 | Group | Source |
 | --- | --- |
-| Media Prima | [Media Prima brands](https://www.mediaprima.com.my/who-we-are.html), [Waktu Solat Malaysia app](https://play.google.com/store/apps/details?id=com.murad.waktusolat) and [Media Prima corporate mark](https://commons.wikimedia.org/wiki/File:Media_Prima_logo.svg). Individual outlet marks are from Media Prima's logo library. |
+| Media Prima | [Media Prima brands](https://www.mediaprima.com.my/who-we-are.html), [Waktu Solat Malaysia app](https://play.google.com/store/apps/details?id=com.murad.waktusolat) and [Media Prima corporate mark](https://commons.wikimedia.org/wiki/File:Media_Prima_logo.svg). Individual channel marks are from Media Prima's logo library. |
 | Astro | [Astro Media Solutions brand pages](https://astromedia.com.my/our_brands-sitemap.xml), including its TV, radio and digital marks; [sooka](https://sooka.my/). |
 | RTM | [RTM radio brand image service](https://rtm-images.glueapi.io/720x0/radio-asset/NASIONALfm.png), [RTM TV marks](https://commons.wikimedia.org/wiki/Category:Radio_Televisyen_Malaysia_logos), and the [RTMKlik app listing](https://play.google.com/store/apps/details?id=my.gov.rtm.tv). |
 | Al Hijrah | [TV AlHijrah identity](https://commons.wikimedia.org/wiki/File:TV_Alhijrah_(2013).svg) and [AlHijrah Plus app listing](https://play.google.com/store/apps/details?id=com.alhijrahmedia.app). |

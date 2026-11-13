@@ -179,7 +179,7 @@ class PublicExperienceTest extends TestCase
             ->set('name', 'New Creator')
             ->set('email', 'creator@example.com')
             ->set('handle', '@newcreator')
-            ->set('platform', 'TikTok')
+            ->set('socialPlatform', 'TikTok')
             ->set('niche', 'Travel')
             ->set('followers', 12000)
             ->set('consent', true)

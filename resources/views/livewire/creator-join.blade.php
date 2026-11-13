@@ -46,8 +46,8 @@
                                     @error('handle')<small class="form-error">{{ $message }}</small>@enderror
                                 </label>
                                 <label class="field">
-                                    <span>Main platform</span>
-                                    <select wire:model="platform">
+                                    <span>Social platform</span>
+                                    <select wire:model="socialPlatform">
                                         <option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>Podcast</option><option>Other</option>
                                     </select>
                                 </label>

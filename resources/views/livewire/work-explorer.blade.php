@@ -4,7 +4,7 @@
             <div>
                 <span class="eyebrow">Campaign archive</span>
                 <h2 id="work-archive-title" class="section-title">Every campaign, one place.</h2>
-                <p>Search the record by client, campaign, platform or year. The archive is compiled from RA Media's internal client lists.</p>
+                <p>Search the record by client, campaign, channel or year. The archive is compiled from RA Media's internal client lists.</p>
             </div>
             <div class="section-heading__aside" aria-live="polite">
                 <span class="tag tag--blush">{{ $total }} {{ $total === 1 ? 'campaign' : 'campaigns' }} in view</span>
@@ -16,7 +16,7 @@
                 <span>Search</span>
                 <span class="work-filter__input">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4 4"/></svg>
-                    <input type="search" wire:model.live.debounce.300ms="search" placeholder="Client, campaign, platform…">
+                    <input type="search" wire:model.live.debounce.300ms="search" placeholder="Client, campaign, channel…">
                 </span>
             </label>
             <label class="work-filter">
@@ -31,9 +31,18 @@
             <label class="work-filter">
                 <span>Client type</span>
                 <select wire:model.live="sector">
-                    <option value="all">All clients</option>
+                    <option value="all">All client types</option>
                     <option value="government">Government &amp; public</option>
                     <option value="business">Business &amp; brands</option>
+                </select>
+            </label>
+            <label class="work-filter">
+                <span>Medium</span>
+                <select wire:model.live="medium">
+                    <option value="all">All mediums</option>
+                    @foreach ($mediums as $mediumOption)
+                        <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
+                    @endforeach
                 </select>
             </label>
             <label class="work-filter">
@@ -104,9 +113,9 @@
                         <h3>{{ $campaign['title'] }}</h3>
                         <p>{{ $campaign['description'] }}</p>
                         <dl class="work-card__facts">
-                            <div><dt>Platform</dt><dd>{{ $campaign['platform'] }}</dd></div>
-                            <div><dt>Date</dt><dd>{{ $campaign['date'] }}</dd></div>
+                            <div><dt>Medium</dt><dd>{{ $campaign['medium'] }}</dd></div>
                             <div><dt>Channel</dt><dd>{{ $campaign['channel'] }}</dd></div>
+                            <div><dt>Date</dt><dd>{{ $campaign['date'] }}</dd></div>
                         </dl>
                         @if (! empty($campaign['media']))
                             <a class="work-card__link" href="#work-media-{{ $campaign['media'][0] }}">Watch the film <span aria-hidden="true">↗</span></a>
@@ -118,7 +127,7 @@
                     <div class="empty-state__icon"><x-dm-icon name="search" :size="24"/></div>
                     <span class="eyebrow">No matches</span>
                     <h3>No campaigns match that search.</h3>
-                    <p>Try a different client, platform or year — or reset the filters to see the full archive.</p>
+                    <p>Try a different client, medium or channel — or reset the filters to see the full archive.</p>
                     <button type="button" class="button button--primary" wire:click="clearFilters">Reset filters</button>
                 </div>
             @endforelse

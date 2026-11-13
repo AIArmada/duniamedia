@@ -3,15 +3,15 @@
 namespace Database\Seeders;
 
 use App\Models\AdFormat;
+use App\Models\DistributionPlatform;
 use App\Models\MediaGroup;
 use App\Models\MediaProperty;
 use App\Models\MediaType;
 use App\Models\Organization;
 use App\Models\Party;
 use App\Models\PartyRole;
-use App\Models\Platform;
+use App\Models\PropertyDistributionPlatform;
 use App\Models\PropertyMediaType;
-use App\Models\PropertyPlatform;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -73,7 +73,7 @@ class ReferenceSeeder extends Seeder
             ['YouTube', 'youtube', 'social'],
             ['Facebook', 'facebook', 'social'],
         ] as [$name, $slug, $kind]) {
-            Platform::updateOrCreate(['name' => $name], ['platform_kind' => $kind]);
+            DistributionPlatform::updateOrCreate(['name' => $name], ['platform_kind' => $kind]);
         }
 
         foreach ([
@@ -197,7 +197,7 @@ class ReferenceSeeder extends Seeder
                         ['slug' => $propertySlug],
                         [
                             'owner_party_id' => $party->id,
-                            'property_type' => 'outlet',
+                            'property_type' => 'channel',
                             'name' => $brand['name'],
                             'status' => 'active',
                             'brand_mark' => $owner['mark'] ?? null,
@@ -217,10 +217,10 @@ class ReferenceSeeder extends Seeder
                         ]);
                     }
 
-                    $platform = Platform::where('platform_kind', $mediaType?->medium_code ?? 'digital')->first();
+                    $platform = DistributionPlatform::where('platform_kind', $mediaType?->medium_code ?? 'digital')->first();
                     if ($platform) {
-                        PropertyPlatform::updateOrCreate(
-                            ['media_property_id' => $property->id, 'platform_id' => $platform->id],
+                        PropertyDistributionPlatform::updateOrCreate(
+                            ['media_property_id' => $property->id, 'distribution_platform_id' => $platform->id],
                             ['url' => null, 'is_primary' => true],
                         );
                     }

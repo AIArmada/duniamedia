@@ -22,7 +22,7 @@ Route::get('/media', MediaExplorer::class)->name('media.index');
 Route::get('/media/owners', [MediaDirectoryController::class, 'index'])->name('media.owners');
 Route::view('/ecosystem', 'pages.ecosystem')->name('ecosystem');
 Route::get('/media/owners/{owner}', [MediaDirectoryController::class, 'owner'])->name('media.owner');
-Route::get('/media/owners/{owner}/{outlet}', [MediaDirectoryController::class, 'outlet'])->name('media.outlet');
+Route::get('/media/owners/{owner}/{channel}', [MediaDirectoryController::class, 'channel'])->name('media.channel');
 Route::get('/media/{slug}/rate-card/{index?}', [RateCardController::class, 'show'])->whereNumber('index')->name('media.ratecard');
 Route::get('/media/{slug}', [PublicController::class, 'mediaShow'])->name('media.show');
 Route::get('/search', [SearchController::class, 'index'])->name('search');

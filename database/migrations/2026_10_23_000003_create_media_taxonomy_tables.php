@@ -28,7 +28,7 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('platforms', function (Blueprint $table): void {
+        Schema::create('distribution_platforms', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->string('name')->unique();
             $table->string('platform_kind');
@@ -52,10 +52,10 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('property_platforms', function (Blueprint $table): void {
+        Schema::create('property_distribution_platforms', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('media_property_id')->index();
-            $table->foreignUuid('platform_id')->index();
+            $table->foreignUuid('distribution_platform_id')->index();
             $table->string('handle')->nullable();
             $table->string('url')->nullable();
             $table->boolean('is_primary')->default(false);

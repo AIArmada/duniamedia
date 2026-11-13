@@ -25,6 +25,7 @@
 
 - `media_groups` is the internal **Media Group** layer.
 - `media_types` is the **Media Category / Medium** layer, linked to a media group.
+- `distribution_platforms` is the **Distribution Platform** layer; `property_distribution_platforms` attaches a channel to its delivery platforms.
 - `media_offerings.medium` is the **Medium**.
 - `media_offerings.channel_label` is the **Channel**.
 - `asset_surfaces` is the **Ad Surface**.

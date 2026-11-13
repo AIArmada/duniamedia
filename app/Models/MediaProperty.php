@@ -28,9 +28,9 @@ class MediaProperty extends BaseModel
         return $this->belongsToMany(MediaType::class, 'property_media_types', 'media_property_id', 'media_type_id');
     }
 
-    public function platforms(): BelongsToMany
+    public function distributionPlatforms(): BelongsToMany
     {
-        return $this->belongsToMany(Platform::class, 'property_platforms', 'media_property_id', 'platform_id')
+        return $this->belongsToMany(DistributionPlatform::class, 'property_distribution_platforms', 'media_property_id', 'distribution_platform_id')
             ->withPivot(['handle', 'url', 'is_primary']);
     }
 

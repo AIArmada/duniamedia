@@ -4,12 +4,11 @@
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
     "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
   ],
-  "note": "39 rate-card listings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
-  "listings": [
+  "note": "39 media offerings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
+  "offerings": [
     {
       "title": "988 FM 2026 — Radio + Digital (Star RFM)",
       "slug": "988-fm-2026-radio-digital",
-      "type": "Radio",
       "channel": "988 FM / Star RFM",
       "location": "Nationwide",
       "audience": "Chinese listeners, drive-time commuters",
@@ -19,11 +18,9 @@
       "price_from": 100,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Star RFM (988)",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Star RFM Sdn Bhd (988)",
         "formats": [
           "30s spot buy",
           "ROS",
@@ -51,13 +48,15 @@
             "file": "988-fm-2026-radio-digital.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Star RFM Sdn Bhd (988)"
+      },
+      "medium": "Radio",
+      "media_owner": "Star RFM (988)"
     },
     {
       "title": "Suria FM 2026 — Radio + Digital (Rimakmur)",
       "slug": "suria-fm-2026-radio-digital",
-      "type": "Radio",
       "channel": "Suria FM",
       "location": "Nationwide",
       "audience": "Malay listeners, family and drive-time",
@@ -67,11 +66,9 @@
       "price_from": 150,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Suria FM / Rimakmur",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Rimakmur (Suria)",
         "formats": [
           "Radio ROS/spot",
           "Display",
@@ -92,13 +89,15 @@
             "kind": "document"
           }
         ],
-        "sales_contact": "suriasales@smrg.my · WhatsApp 012-319 1053"
-      }
+        "sales_contact": "suriasales@smrg.my · WhatsApp 012-319 1053",
+        "media_owner": "Rimakmur (Suria)"
+      },
+      "medium": "Radio",
+      "media_owner": "Suria FM / Rimakmur"
     },
     {
       "title": "BFM 89.9 2026 — Business Radio + Digital",
       "slug": "bfm-2026-business-radio",
-      "type": "Radio",
       "channel": "BFM",
       "location": "Nationwide",
       "audience": "English-speaking professionals, PMEBs, business decision-makers",
@@ -108,11 +107,9 @@
       "price_from": 120,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "BFM",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "BFM",
         "formats": [
           "30s spot",
           "Live read",
@@ -138,13 +135,15 @@
             "file": "bfm-2026-business-radio.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "BFM"
+      },
+      "medium": "Radio",
+      "media_owner": "BFM"
     },
     {
       "title": "Hot FM Zoomerz On-Ground — Radio + Sampling Team",
       "slug": "hot-fm-zoomerz-on-ground",
-      "type": "Radio",
       "channel": "Hot FM / Media Prima Audio",
       "location": "Klang Valley",
       "audience": "Malay youth, on-ground crowds, event footfall",
@@ -154,11 +153,9 @@
       "price_from": 1900,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Hot FM / Media Prima Audio",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Media Prima Audio (Hot FM)",
         "formats": [
           "On-air crosses",
           "Recorded promos",
@@ -182,13 +179,15 @@
             "file": "hot-fm-zoomerz-on-ground.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Media Prima Audio (Hot FM)"
+      },
+      "medium": "Radio",
+      "media_owner": "Hot FM / Media Prima Audio"
     },
     {
       "title": "RTM TV & Radio 2025 — Government Broadcast",
       "slug": "rtm-tv-radio-2025",
-      "type": "TV & Broadcast",
       "channel": "RTM",
       "location": "Nationwide",
       "audience": "Mass Malay, Chinese, Tamil, English and regional audiences",
@@ -198,11 +197,9 @@
       "price_from": 125,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RTM",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RTM",
         "formats": [
           "TV slides",
           "Filmlets",
@@ -225,13 +222,15 @@
             "file": "rtm-tv-radio-2025.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "RTM"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "RTM"
     },
     {
       "title": "Media Prima Omnia Content Terhangat 2026 — TV Campaign Planner",
       "slug": "omnia-content-terhangat-2026",
-      "type": "TV & Broadcast",
       "channel": "Media Prima Omnia (TV3 / 8TV)",
       "location": "Nationwide",
       "audience": "Malay and Chinese mass TV + social audiences",
@@ -241,11 +240,9 @@
       "price_from": 200000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Media Prima Omnia",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Media Prima Omnia",
         "formats": [
           "TV3/8TV 15s spots",
           "Social video",
@@ -271,13 +268,15 @@
             "kind": "document"
           }
         ],
-        "rate_card_view": "partials.ratecards.omnia-content-terhangat"
-      }
+        "rate_card_view": "partials.ratecards.omnia-content-terhangat",
+        "media_owner": "Media Prima Omnia"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "Media Prima Omnia"
     },
     {
       "title": "Astro Video360+ & Digital Solutions 2026",
       "slug": "astro-video360-digital-2026",
-      "type": "Digital",
       "channel": "Astro",
       "location": "Nationwide",
       "audience": "CTV + mobile + desktop video audiences, 30 curated personas",
@@ -287,11 +286,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "Astro",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Astro",
         "formats": [
           "CTV",
           "Live channels",
@@ -314,13 +311,15 @@
             "file": "astro-video360-digital-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Astro"
+      },
+      "medium": "Digital",
+      "media_owner": "Astro"
     },
     {
       "title": "Wowshop TV Home Shopping — Airtime + Commerce",
       "slug": "wowshop-airtime-2025",
-      "type": "TV & Broadcast",
       "channel": "Wowshop / Media Prima",
       "location": "Nationwide",
       "audience": "Mass home shoppers (75% female, 30s–60+, Malay + Chinese, rural + urban)",
@@ -330,11 +329,9 @@
       "price_from": 10000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Wowshop",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Wowshop",
         "formats": [
           "TV home shopping",
           "Studio demo",
@@ -355,13 +352,15 @@
             "file": "wowshop-airtime-2025.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Wowshop"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "Wowshop"
     },
     {
       "title": "TV AlHijrah Bincang Niaga 2024 — Islamic Business TV",
       "slug": "tvalhijrah-bincang-niaga-2024",
-      "type": "TV & Broadcast",
       "channel": "TV AlHijrah",
       "location": "Nationwide",
       "audience": "Muslim family and SME / niaga audiences",
@@ -371,11 +370,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "TV AlHijrah",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "TV AlHijrah",
         "formats": [
           "TV talkshow sponsorship",
           "Promo packages"
@@ -391,13 +388,15 @@
             "file": "tvalhijrah-bincang-niaga-2024.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "TV AlHijrah"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "TV AlHijrah"
     },
     {
       "title": "Bernama Media Kit 2026 — National News Agency",
       "slug": "bernama-media-kit-2026",
-      "type": "Digital",
       "channel": "Bernama",
       "location": "Nationwide",
       "audience": "National news readers, government and corporate stakeholders",
@@ -407,11 +406,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "Bernama",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Bernama",
         "formats": [
           "News portal",
           "Wire",
@@ -428,13 +425,15 @@
             "file": "bernama-media-kit-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Bernama"
+      },
+      "medium": "Digital",
+      "media_owner": "Bernama"
     },
     {
       "title": "The Malaysian Reserve Super Deal 2026 — Business Content",
       "slug": "tmr-super-deal-2026-business-content",
-      "type": "Print",
       "channel": "The Malaysian Reserve",
       "location": "Nationwide",
       "audience": "Business readers 80% 35+, 75% male, professionals and decision-makers",
@@ -444,11 +443,9 @@
       "price_from": 3240,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "The Malaysian Reserve",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "The Malaysian Reserve",
         "formats": [
           "Print",
           "Digital article",
@@ -471,13 +468,15 @@
             "file": "tmr-super-deal-2026-business-content.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "The Malaysian Reserve"
+      },
+      "medium": "Print",
+      "media_owner": "The Malaysian Reserve"
     },
     {
       "title": "FMT 2026 — Digital News (Free Malaysia Today)",
       "slug": "fmt-2026-digital-news",
-      "type": "Digital",
       "channel": "FMT / Rev Media",
       "location": "Nationwide",
       "audience": "Educated M40/T40, 64% male, high purchase intent (electronics, auto, health)",
@@ -487,11 +486,9 @@
       "price_from": 300,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "FMT",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "FMT Media",
         "formats": [
           "Lifestyle article",
           "Editorial article",
@@ -513,13 +510,15 @@
             "file": "fmt-2026-digital-news.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "FMT Media"
+      },
+      "medium": "Digital",
+      "media_owner": "FMT"
     },
     {
       "title": "iMedia Year-End Blitz Sale 2026 — Article / Social / Video Packs",
       "slug": "imedia-blitz-sale-2026",
-      "type": "Digital",
       "channel": "iMedia / Rev Media",
       "location": "Nationwide",
       "audience": "BM/CHI/ENG publisher audiences across social + web",
@@ -529,11 +528,9 @@
       "price_from": 50000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "iMedia",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "iMedia",
         "formats": [
           "Articles",
           "Social postings",
@@ -555,13 +552,15 @@
             "file": "imedia-blitz-sale-2026.jpg",
             "kind": "image"
           }
-        ]
-      }
+        ],
+        "media_owner": "iMedia"
+      },
+      "medium": "Digital",
+      "media_owner": "iMedia"
     },
     {
       "title": "Podcast Utama x Buletin TV3 — Video Podcast",
       "slug": "podcast-utama-buletin-tv3",
-      "type": "Podcast",
       "channel": "TV3 / Buletin TV3",
       "location": "Nationwide",
       "audience": "25–44 news vodcast viewers (84.9% male, mobile-first)",
@@ -571,11 +570,9 @@
       "price_from": 69660,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "TV3",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "TV3 / Buletin",
         "formats": [
           "Video podcast",
           "YouTube",
@@ -595,13 +592,15 @@
             "file": "podcast-utama-buletin-tv3.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "TV3 / Buletin"
+      },
+      "medium": "Podcast",
+      "media_owner": "TV3"
     },
     {
       "title": "KLIA Terminal 1 Airport Advertising 2024 — Premium DOOH",
       "slug": "klia-t1-airport-2024-premium",
-      "type": "Outdoor",
       "channel": "KLIA T1 / RA Media",
       "location": "Sepang (KLIA T1)",
       "audience": "International + domestic air travellers (37.8% growth 2022–24)",
@@ -611,11 +610,9 @@
       "price_from": 60000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media / MAHB",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media (KLIA T1)",
         "formats": [
           "Digital spectacular",
           "Departures portrait network",
@@ -643,13 +640,15 @@
             "kind": "video",
             "poster": "assets/ratecards/video/klia-t1-walkthrough.jpg"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media (KLIA T1)"
+      },
+      "medium": "Outdoor",
+      "media_owner": "RA Media / MAHB"
     },
     {
       "title": "KLIA Terminal 2 (KLIA2) Airport Advertising 2024",
       "slug": "klia-t2-airport-2024",
-      "type": "Outdoor",
       "channel": "KLIA T2 / RA Media",
       "location": "Sepang (KLIA2)",
       "audience": "International departures + domestic/arrival flows",
@@ -659,11 +658,9 @@
       "price_from": 2800,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media / MAHB",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media (KLIA T2)",
         "formats": [
           "Digital domination",
           "Coverage network (67 screens)",
@@ -692,13 +689,15 @@
             "kind": "video",
             "poster": "assets/ratecards/video/klia-t2-walkthrough.jpg"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media (KLIA T2)"
+      },
+      "medium": "Outdoor",
+      "media_owner": "RA Media / MAHB"
     },
     {
       "title": "KLCC Snorkels 2024 — Iconic Landmark Lightboxes (Big Tree)",
       "slug": "klcc-snorkels-2024-big-tree",
-      "type": "Outdoor",
       "channel": "Big Tree / KLCC",
       "location": "Klang Valley",
       "audience": "Affluent shoppers, professionals, tourists at Petronas Twin Towers",
@@ -708,11 +707,9 @@
       "price_from": 750000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Big Tree",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Big Tree",
         "formats": [
           "‘O’ snorkel 3 lightboxes",
           "‘D’ snorkel 2 lightboxes",
@@ -732,13 +729,15 @@
             "file": "klcc-snorkels-2024-big-tree.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Big Tree"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Big Tree"
     },
     {
       "title": "Cubig KLCC Junction Welcome Back Promo 2026 — Premium DOOH",
       "slug": "cubig-klcc-junction-2026-promo",
-      "type": "Outdoor",
       "channel": "Media Prima Omnia (Cubig)",
       "location": "Klang Valley",
       "audience": "KLCC / Sultan Ismail / Damansara / TRX / Tun Razak road audiences",
@@ -748,11 +747,9 @@
       "price_from": 150000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Media Prima Omnia",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Media Prima Omnia (Cubig)",
         "formats": [
           "Cubig large format",
           "Bonus panels"
@@ -771,13 +768,15 @@
             "file": "cubig-klcc-junction-2026-promo.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Media Prima Omnia (Cubig)"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Media Prima Omnia"
     },
     {
       "title": "KL Sentral Station Sponsorship 2024 — Transit Hub",
       "slug": "kl-sentral-station-sponsorship-2024",
-      "type": "Outdoor",
       "channel": "Big Tree / KL Sentral",
       "location": "Klang Valley",
       "audience": "Kelana Jaya Line 200k/day + Monorail 50k/day interchange",
@@ -787,11 +786,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "Big Tree",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Big Tree",
         "formats": [
           "Station sponsorship",
           "East/West wings"
@@ -806,13 +803,15 @@
             "file": "kl-sentral-station-sponsorship-2024.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Big Tree"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Big Tree"
     },
     {
       "title": "KTM Train + KL Sentral Ads Space 2026 — Rail Transit",
       "slug": "ktm-train-kl-sentral-ads-2026",
-      "type": "Outdoor",
       "channel": "KTM / KL Sentral",
       "location": "Klang Valley + Ipoh–Butterworth–Padang Besar",
       "audience": "Rail commuters and KL Sentral interchange crowds",
@@ -822,11 +821,9 @@
       "price_from": 120,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "KTM / KL Sentral",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "KTM / KL Sentral",
         "formats": [
           "Train wraparound",
           "Panels/posters/doors",
@@ -848,13 +845,15 @@
             "file": "ktm-train-kl-sentral-ads-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "KTM / KL Sentral"
+      },
+      "medium": "Outdoor",
+      "media_owner": "KTM / KL Sentral"
     },
     {
       "title": "Bus Wrap Klang Valley 2025 — Transit OOH",
       "slug": "bus-wrap-klang-valley-2025",
-      "type": "Outdoor",
       "channel": "Bus / RA Media",
       "location": "Klang Valley",
       "audience": "Urban commuters, pedestrians, road users (>400k daily reach)",
@@ -864,11 +863,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "RA Media / Bus operator",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media",
         "formats": [
           "Bus wrap",
           "Route-based"
@@ -886,13 +883,15 @@
             "file": "bus-wrap-klang-valley-2025.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media"
+      },
+      "medium": "Outdoor",
+      "media_owner": "RA Media / Bus operator"
     },
     {
       "title": "3D Mobile Truck Activation + Life Events",
       "slug": "mobile-truck-activation-life-events",
-      "type": "Outdoor",
       "channel": "RA Media (Raptor Truck)",
       "location": "Klang Valley",
       "audience": "High-traffic commercial, office, campus and bazaar crowds",
@@ -902,11 +901,9 @@
       "price_from": 18000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media",
         "formats": [
           "3D truck",
           "Promoters",
@@ -926,13 +923,15 @@
             "file": "mobile-truck-activation-life-events.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media"
+      },
+      "medium": "Outdoor",
+      "media_owner": "RA Media"
     },
     {
       "title": "Street Lamppost Digital Bunting KL City 2026",
       "slug": "lamppost-digital-bunting-kl-2026",
-      "type": "Outdoor",
       "channel": "DBP / KL City",
       "location": "Klang Valley",
       "audience": "CBD drivers and pedestrians (256k–350k daily traffic)",
@@ -942,11 +941,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "DBP / Operator",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "DBP / Operator",
         "formats": [
           "Lamppost LED bunting",
           "15s slots"
@@ -964,13 +961,15 @@
             "file": "lamppost-digital-bunting-kl-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "DBP / Operator"
+      },
+      "medium": "Outdoor",
+      "media_owner": "DBP / Operator"
     },
     {
       "title": "Target Media 2026 — Elevator Media Network",
       "slug": "target-media-elevator-q2-2025",
-      "type": "Indoor",
       "channel": "Target Media",
       "location": "Klang Valley",
       "audience": "Office, condo, mall and hotel lift audiences across up to 10,000 screens",
@@ -980,11 +979,9 @@
       "price_from": 22000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Target Media",
       "is_featured": true,
       "is_published": true,
       "specifications": {
-        "vendor": "Target Media Sdn Bhd",
         "formats": [
           "Full coverage elevator network",
           "High End office/residences",
@@ -1018,13 +1015,15 @@
             "file": "target-media-elevator-q2-2025.xlsx",
             "kind": "workbook"
           }
-        ]
-      }
+        ],
+        "media_owner": "Target Media Sdn Bhd"
+      },
+      "medium": "Indoor",
+      "media_owner": "Target Media"
     },
     {
       "title": "Konsert Kita Suara Anti Buli 2026 — Platinum Sponsorship",
       "slug": "konsert-kita-suara-anti-buli-2026",
-      "type": "Outdoor",
       "channel": "Nusavue / Concert",
       "location": "Klang Valley",
       "audience": "Gen Z + Millennials, CSR and music fans (1,600–3,000 pax + 3–5M digital)",
@@ -1034,11 +1033,9 @@
       "price_from": 300000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Nusavue",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Nusavue",
         "formats": [
           "Platinum sponsorship",
           "Theme song",
@@ -1058,13 +1055,15 @@
             "file": "konsert-kita-suara-anti-buli-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Nusavue"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Nusavue"
     },
     {
       "title": "Karnival Jom Heboh 2026 — Venue & Carnival Rates (Media Prima)",
       "slug": "karnival-jom-heboh-2026-venue",
-      "type": "Outdoor",
       "channel": "Media Prima (Jom Heboh)",
       "location": "Nationwide",
       "audience": "Family carnival crowds 330k/location, 1.2B social reach",
@@ -1074,11 +1073,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "Media Prima",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Media Prima (Jom Heboh)",
         "formats": [
           "Arabian booths",
           "Concert",
@@ -1096,13 +1093,15 @@
             "file": "karnival-jom-heboh-2026-venue.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Media Prima (Jom Heboh)"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Media Prima"
     },
     {
       "title": "RA Media Website Media Solutions 2026 — TV & Radio Bundle Quotation",
       "slug": "ra-media-website-media-solutions-2026",
-      "type": "TV & Broadcast",
       "channel": "RA Media Relations",
       "location": "Nationwide",
       "audience": "Mass TV news + radio + digital (per brief)",
@@ -1112,11 +1111,9 @@
       "price_from": 4500,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media Relations",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media Relations",
         "formats": [
           "TV news coverage",
           "Custom segments",
@@ -1145,13 +1142,15 @@
             "file": "ra-media-website-media-solutions-2026-2.xlsx",
             "kind": "workbook"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "RA Media Relations"
     },
     {
       "title": "PuTERA Pre & Post Campaign Quote 2024 — Reference (TERAJU/Remedy)",
       "slug": "putera-pre-post-2024-reference",
-      "type": "Digital",
       "channel": "Remedy Resources / TERAJU",
       "location": "Nationwide",
       "audience": "Bumiputera economic plan stakeholders (reference only)",
@@ -1161,11 +1160,9 @@
       "price_from": null,
       "pricing_mode": "on_request",
       "availability_status": "on_request",
-      "supplier_name": "Remedy Resources (reference)",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Remedy Resources",
         "formats": [
           "Reference quotation"
         ],
@@ -1180,13 +1177,15 @@
             "file": "putera-pre-post-2024-reference.xlsx",
             "kind": "workbook"
           }
-        ]
-      }
+        ],
+        "media_owner": "Remedy Resources"
+      },
+      "medium": "Digital",
+      "media_owner": "Remedy Resources (reference)"
     },
     {
       "title": "RA Media News Slot 2026/27 — Prime TV News Placements",
       "slug": "ra-media-relations-news-slot-2026-2027",
-      "type": "TV & Broadcast",
       "channel": "RA Media Relations",
       "location": "Nationwide",
       "audience": "Free-to-air and Astro news viewers across Malay, English, Chinese and Tamil audiences",
@@ -1195,11 +1194,9 @@
       "price_from": 8000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media Relations",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media Relations",
         "formats": [
           "News slot placement (max 2 min)",
           "TV3",
@@ -1226,13 +1223,15 @@
             "file": "ra-media-relations-news-slot-2026-2027.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "RA Media Relations"
     },
     {
       "title": "RA Media Live TV Talkshow 2026/27 — TV3, TV9 & TV AlHijrah",
       "slug": "ra-media-relations-live-tv-talkshow-2026-2027",
-      "type": "TV & Broadcast",
       "channel": "RA Media Relations",
       "location": "Nationwide",
       "audience": "Daytime talk-show viewers: Malay women, families and lifestyle audiences",
@@ -1241,11 +1240,9 @@
       "price_from": 5000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "RA Media Relations",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "RA Media Relations",
         "formats": [
           "Live interview",
           "Video tape (VT)",
@@ -1269,13 +1266,15 @@
             "file": "ra-media-relations-live-tv-talkshow-2026-2027.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "RA Media Relations"
     },
     {
       "title": "TV Sarawak (TVS) 2026 — Sponsorship & Spot Buy",
       "slug": "tvs-sponsorship-spot-buy-2026",
-      "type": "TV & Broadcast",
       "channel": "TV Sarawak (TVS)",
       "location": "Sarawak",
       "audience": "Sarawak and Borneo viewers; 11.7M unique reach and 172.8M TV views in Jan–Sep 2026",
@@ -1284,11 +1283,9 @@
       "price_from": 600,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "TV Sarawak (TVS)",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "TV Sarawak (TVS)",
         "formats": [
           "30s TVC spot buy",
           "Breaker in/out",
@@ -1330,13 +1327,15 @@
             "file": "tvs-profile-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "TV Sarawak (TVS)"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "TV Sarawak (TVS)"
     },
     {
       "title": "Sarawak Digital Billboard Network 2026 — Kuching & Bintulu",
       "slug": "billboard-sarawak-smg-2026",
-      "type": "Outdoor",
       "channel": "Sarawak Media Group (SMG)",
       "location": "Kuching, Bintulu & Miri, Sarawak",
       "audience": "Sarawak road traffic: 110k–139k daily vehicles per site",
@@ -1345,11 +1344,9 @@
       "price_from": 500,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Sarawak Media Group (SMG)",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Sarawak Media Group Sdn Bhd (SMG)",
         "formats": [
           "Digital LED billboard",
           "Single screen",
@@ -1375,13 +1372,15 @@
             "file": "billboard-sarawak-smg-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Sarawak Media Group Sdn Bhd (SMG)"
+      },
+      "medium": "Outdoor",
+      "media_owner": "Sarawak Media Group (SMG)"
     },
     {
       "title": "IKIMfm Ramadan 2027 — Sponsorship & Jingle Packages",
       "slug": "ikim-fm-ramadan-2027",
-      "type": "Radio",
       "channel": "IKIMfm",
       "location": "Nationwide (Peninsular Malaysia, Sabah & Sarawak)",
       "audience": "Malay Muslim listeners around prayer times and Ramadan programming",
@@ -1390,11 +1389,9 @@
       "price_from": 2199.42,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "IKIMfm",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "IKIMfm",
         "formats": [
           "Azan sponsorship",
           "Waktu solat announcement",
@@ -1421,13 +1418,15 @@
             "file": "ikim-fm-ramadan-2027.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "IKIMfm"
+      },
+      "medium": "Radio",
+      "media_owner": "IKIMfm"
     },
     {
       "title": "Media Prima Audio Trade Show 2025 — Radio Packages",
       "slug": "media-prima-audio-trade-show-2025",
-      "type": "Radio",
       "channel": "Media Prima Audio (Hot FM / Fly FM / Molek FM / eight FM / Kool 101)",
       "location": "Peninsular Malaysia, Sabah & Sarawak",
       "audience": "Malay, Chinese, English and East Malaysian radio listeners",
@@ -1436,11 +1435,9 @@
       "price_from": 6500,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Media Prima Audio",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Media Prima Omnia / Media Prima Audio",
         "formats": [
           "30s radio commercial packages",
           "Commercial production",
@@ -1466,13 +1463,15 @@
             "file": "media-prima-audio-trade-show-2025.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Media Prima Omnia / Media Prima Audio"
+      },
+      "medium": "Radio",
+      "media_owner": "Media Prima Audio"
     },
     {
       "title": "Astro Upfront 2027 — TV, Audio, Talent & On-Ground Packages",
       "slug": "astro-upfront-2027",
-      "type": "TV & Broadcast",
       "channel": "Astro",
       "location": "Nationwide",
       "audience": "Astro TV, OTT, radio and digital audiences; 8.1 billion H1FY27 views",
@@ -1481,11 +1480,9 @@
       "price_from": 5000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Astro",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Astro Media Solutions",
         "formats": [
           "TV packages",
           "News and talk-show integration",
@@ -1511,13 +1508,15 @@
             "file": "astro-upfront-2027.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Astro Media Solutions"
+      },
+      "medium": "TV & Broadcast",
+      "media_owner": "Astro"
     },
     {
       "title": "Sinar Harian 20th Anniversary 2026 — Exclusive Print, Program & Social Rates",
       "slug": "sinar-harian-20th-anniversary-2026",
-      "type": "Print",
       "channel": "Sinar Harian / Sinar Karangkraf",
       "location": "Nationwide",
       "audience": "Malay mass-market newspaper readers and Sinar Daily digital audience",
@@ -1526,11 +1525,9 @@
       "price_from": 2000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Sinar Harian / Sinar Karangkraf",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Sinar Karangkraf Sdn Bhd",
         "formats": [
           "Print wrap",
           "Front page",
@@ -1561,13 +1558,15 @@
             "file": "sinar-harian-20th-anniversary-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Sinar Karangkraf Sdn Bhd"
+      },
+      "medium": "Print",
+      "media_owner": "Sinar Harian / Sinar Karangkraf"
     },
     {
       "title": "Malaysiakini Media Kit 2024 — Digital, Content & Campaign Packages",
       "slug": "malaysiakini-media-kit-2024",
-      "type": "Digital",
       "channel": "Malaysiakini / FG Media",
       "location": "Nationwide",
       "audience": "Malaysian news readers: ~5m monthly users, 50m pageviews, 9.1m social followers",
@@ -1576,11 +1575,9 @@
       "price_from": 2500,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Malaysiakini / FG Media",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "FG Media (Malaysiakini)",
         "formats": [
           "Display CPM",
           "Branded content",
@@ -1610,13 +1607,15 @@
             "file": "malaysiakini-media-kit-2024.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "FG Media (Malaysiakini)"
+      },
+      "medium": "Digital",
+      "media_owner": "Malaysiakini / FG Media"
     },
     {
       "title": "Malaysiakini & KiniTV Event Coverage 2026/27 — Article, Video & Bundle",
       "slug": "malaysiakini-kinitv-event-coverage-2026-2027",
-      "type": "Digital",
       "channel": "Malaysiakini / KiniTV",
       "location": "Nationwide",
       "audience": "Malaysiakini and KiniTV news audiences across web and social",
@@ -1625,11 +1624,9 @@
       "price_from": 12000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Malaysiakini / KiniTV",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "FG Media (Malaysiakini / KiniTV)",
         "formats": [
           "Event coverage article",
           "Event coverage video",
@@ -1652,13 +1649,15 @@
             "file": "malaysiakini-kinitv-event-coverage-2026-2027.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "FG Media (Malaysiakini / KiniTV)"
+      },
+      "medium": "Digital",
+      "media_owner": "Malaysiakini / KiniTV"
     },
     {
       "title": "Sinar Karangkraf Media Kit 2025/26 — Sinar Harian, SinarPlus, Bestari & Daily",
       "slug": "sinar-karangkraf-ratecard-2025-2026",
-      "type": "Print",
       "channel": "Sinar Harian / Karangkraf",
       "location": "Nationwide",
       "audience": "Malay grassroots readers: 195k daily readership, 65k circulation, 50m monthly pageviews",
@@ -1667,11 +1666,9 @@
       "price_from": 2240,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
-      "supplier_name": "Sinar Karangkraf",
       "is_featured": false,
       "is_published": true,
       "specifications": {
-        "vendor": "Sinar Karangkraf Sdn Bhd",
         "formats": [
           "Sinar Harian print",
           "Classified",
@@ -1700,8 +1697,11 @@
             "file": "sinar-karangkraf-ratecard-2025-2026.pdf",
             "kind": "document"
           }
-        ]
-      }
+        ],
+        "media_owner": "Sinar Karangkraf Sdn Bhd"
+      },
+      "medium": "Print",
+      "media_owner": "Sinar Karangkraf"
     }
   ]
 }

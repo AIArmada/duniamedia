@@ -33,7 +33,7 @@ class MediaPropertyResource extends Resource
     {
         return $schema->components([
             Select::make('owner_party_id')->relationship('owner', 'display_name')->searchable()->preload(),
-            Select::make('property_type')->options(['outlet' => 'outlet', 'channel' => 'channel', 'publication' => 'publication', 'website' => 'website', 'social_account' => 'social_account', 'network' => 'network', 'prospect' => 'prospect'])->required(),
+            Select::make('property_type')->options(['channel' => 'channel', 'publication' => 'publication', 'website' => 'website', 'social_account' => 'social_account', 'network' => 'network', 'prospect' => 'prospect'])->required(),
             TextInput::make('name')->required()->maxLength(255),
             TextInput::make('slug')->required()->maxLength(255),
             TextInput::make('url')->maxLength(255),

@@ -2,14 +2,14 @@
 
 @section('content')
     @php
-        $channels = [
-            ['title' => 'Outdoor & DOOH', 'copy' => 'Billboards, LED and transit where your audience already moves.', 'image' => 'assets/img/v2/channel-outdoor.webp', 'medium' => 'Outdoor', 'class' => 'anchor', 'icon' => 'billboard'],
-            ['title' => 'TV & Broadcast', 'copy' => 'Free-to-air, pay-TV, news and studio formats that build mass reach.', 'image' => 'assets/img/v2/channel-tv.webp', 'medium' => 'TV & Broadcast', 'class' => 'medium', 'icon' => 'tv'],
-            ['title' => 'Radio & Audio', 'copy' => 'Drive-time, music and talk formats with loyal, local listeners.', 'image' => 'assets/img/v2/channel-radio.webp', 'medium' => 'Radio', 'class' => 'medium', 'icon' => 'radio'],
-            ['title' => 'Digital & Publishing', 'copy' => 'Display, video, editorial and social for precise, measurable reach.', 'image' => 'assets/img/v2/channel-digital.webp', 'medium' => 'Digital', 'class' => 'small', 'icon' => 'digital'],
-            ['title' => 'Print & Publishing', 'copy' => 'Newspapers, magazines and advertorials with lasting context.', 'image' => 'assets/img/v2/channel-print.webp', 'medium' => 'Print', 'class' => 'small', 'icon' => 'print'],
-            ['title' => 'Creators & Talent', 'copy' => 'Voices and communities that make a message feel native.', 'image' => 'assets/img/v2/channel-creators.webp', 'medium' => 'Creators', 'class' => 'small', 'icon' => 'creators'],
-            ['title' => 'Custom Spaces', 'copy' => 'Retail, in-premise and unexpected places turned into media.', 'image' => 'assets/img/v2/channel-spaces.webp', 'medium' => 'Indoor', 'class' => 'small', 'icon' => 'spaces'],
+        $mediums = [
+            ['title' => 'Outdoor & DOOH', 'copy' => 'Billboards, LED and transit where your audience already moves.', 'image' => 'assets/img/v2/medium-outdoor.webp', 'medium' => 'Outdoor', 'class' => 'anchor', 'icon' => 'billboard'],
+            ['title' => 'TV & Broadcast', 'copy' => 'Free-to-air, pay-TV, news and studio formats that build mass reach.', 'image' => 'assets/img/v2/medium-tv.webp', 'medium' => 'TV & Broadcast', 'class' => 'medium', 'icon' => 'tv'],
+            ['title' => 'Radio & Audio', 'copy' => 'Drive-time, music and talk formats with loyal, local listeners.', 'image' => 'assets/img/v2/medium-radio.webp', 'medium' => 'Radio', 'class' => 'medium', 'icon' => 'radio'],
+            ['title' => 'Digital & Publishing', 'copy' => 'Display, video, editorial and social for precise, measurable reach.', 'image' => 'assets/img/v2/medium-digital.webp', 'medium' => 'Digital', 'class' => 'small', 'icon' => 'digital'],
+            ['title' => 'Print & Publishing', 'copy' => 'Newspapers, magazines and advertorials with lasting context.', 'image' => 'assets/img/v2/medium-print.webp', 'medium' => 'Print', 'class' => 'small', 'icon' => 'print'],
+            ['title' => 'Creators & Talent', 'copy' => 'Voices and communities that make a message feel native.', 'image' => 'assets/img/v2/medium-creators.webp', 'medium' => 'Creators', 'class' => 'small', 'icon' => 'creators'],
+            ['title' => 'Custom Spaces', 'copy' => 'Retail, in-premise and unexpected places turned into media.', 'image' => 'assets/img/v2/medium-spaces.webp', 'medium' => 'Indoor', 'class' => 'small', 'icon' => 'spaces'],
         ];
 
         $heroFeature = $featuredWork->first();
@@ -27,7 +27,7 @@
         <div class="container home-hero__inner">
             <div class="home-hero__copy">
                 <span class="eyebrow">Media · Creative · Technology</span>
-                <h1 id="home-title">Every channel.<br>One <span class="editorial">connected</span> campaign.</h1>
+                <h1 id="home-title">Every medium.<br>One <span class="editorial">connected</span> campaign.</h1>
                 <p class="home-hero__lede">From television and radio to outdoor media, digital platforms, creators and custom spaces, Dunia Media helps brands find the right places to be seen. We also connect the strategy, production and technology that turn attention into meaningful action.</p>
                 <div class="home-hero__actions">
                     <a class="button button--primary" href="{{ route('advisor') }}">Plan your campaign <span aria-hidden="true">↗</span></a>
@@ -47,11 +47,11 @@
                     <figcaption>Outdoor · LED</figcaption>
                 </figure>
                 <figure class="hero-shot hero-shot--top" data-hero-shot="top">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-tv.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-tv.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Broadcast</figcaption>
                 </figure>
                 <figure class="hero-shot hero-shot--bottom" data-hero-shot="bottom">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Creators</figcaption>
                 </figure>
             </div>
@@ -83,28 +83,28 @@
         </section>
     @endif
 
-    <section class="section section--cream" aria-labelledby="channels-title">
+    <section class="section section--cream" aria-labelledby="mediums-title">
         <div class="container">
             <div class="section-heading">
                 <div>
                     <span class="eyebrow">The media world, connected</span>
-                    <h2 id="channels-title" class="section-title">Choose the channels your audience actually uses.</h2>
-                    <p>Seven ways in, one coordinated plan. Explore the media landscape by channel — then let us connect the right mix around your objective.</p>
+                    <h2 id="mediums-title" class="section-title">Choose the right medium for the audience.</h2>
+                    <p>Seven ways in, one coordinated plan. Explore the media landscape by medium, then let us connect the right mix around your objective.</p>
                 </div>
                 <div class="section-heading__aside">
                     <a class="text-link" href="{{ route('media.index') }}">Browse all media <span aria-hidden="true">→</span></a>
                 </div>
             </div>
 
-            <div class="channel-mosaic">
-                @foreach ($channels as $channel)
-                    <a class="channel-tile channel-tile--{{ $channel['class'] }}" href="{{ route('media.index', ['medium' => $channel['medium']]) }}">
-                        <img src="{{ \App\Support\MediaImage::url($channel['image']) }}" srcset="{{ \App\Support\MediaImage::srcset($channel['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
-                        <span class="channel-tile__icon"><x-dm-icon :name="$channel['icon']" :size="19"/></span>
-                        <span class="channel-tile__arrow" aria-hidden="true">↗</span>
-                        <span class="channel-tile__body">
-                            <strong>{{ $channel['title'] }}</strong>
-                            <small>{{ $channel['copy'] }}</small>
+            <div class="medium-mosaic">
+                @foreach ($mediums as $medium)
+                    <a class="medium-tile medium-tile--{{ $medium['class'] }}" href="{{ route('media.index', ['medium' => $medium['medium']]) }}">
+                        <img src="{{ \App\Support\MediaImage::url($medium['image']) }}" srcset="{{ \App\Support\MediaImage::srcset($medium['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
+                        <span class="medium-tile__icon"><x-dm-icon :name="$medium['icon']" :size="19"/></span>
+                        <span class="medium-tile__arrow" aria-hidden="true">↗</span>
+                        <span class="medium-tile__body">
+                            <strong>{{ $medium['title'] }}</strong>
+                            <small>{{ $medium['copy'] }}</small>
                         </span>
                     </a>
                 @endforeach
@@ -163,7 +163,7 @@
                         @if ($heroFeature['cover'])
                             <img src="{{ \App\Support\MediaImage::url($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
                         @else
-                            <img src="{{ asset('assets/img/v2/channel-tv.webp') }}" alt="" loading="lazy" decoding="async">
+                            <img src="{{ asset('assets/img/v2/medium-tv.webp') }}" alt="" loading="lazy" decoding="async">
                         @endif
                         <div class="work-feature__body">
                             <div class="work-feature__meta">
@@ -274,7 +274,7 @@
                 <div class="cta-panel__copy">
                     <span class="eyebrow">Start with a conversation</span>
                     <h2 id="cta-title">Tell us where you want your brand to go.</h2>
-                    <p>Share your audience, objective and rough budget. We'll help you see which channels and creative ideas make sense together.</p>
+                    <p>Share your audience, objective and rough budget. We'll help you see which media and creative ideas make sense together.</p>
                     <div class="cta-panel__actions">
                         <a class="button button--primary" href="{{ route('advisor') }}">Start planning <span aria-hidden="true">↗</span></a>
                         <a class="button button--secondary" href="{{ route('contact') }}">Talk to the team</a>

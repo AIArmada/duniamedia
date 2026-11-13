@@ -27,17 +27,17 @@
             'media-planning-buying' => [
                 'anchor' => 'planning',
                 'copy' => [
-                    'Media planning starts with the audience and the outcome, not the inventory list. We map the channels that can do a specific job — mass reach, local relevance, consideration or conversion — then negotiate the formats, timing and conditions around that plan.',
+                    'Media planning starts with the audience and the outcome, not the inventory list. We map the media that can do a specific job — mass reach, local relevance, consideration or conversion — then negotiate the formats, timing and conditions around that plan.',
                     'Because the team also produces content and builds the follow-up systems, the plan stays connected to what happens after the first impression. Recommendations are checked against real availability, rate cards and media owner terms before anything is presented as confirmed.',
                 ],
-                'offers' => ['Channel strategy and media mix', 'Rate-card review and negotiation', 'Scheduling and placement coordination', 'Cross-channel campaign planning'],
+                'offers' => ['Media strategy and media mix', 'Rate-card review and negotiation', 'Scheduling and placement coordination', 'Cross-medium campaign planning'],
                 'deliverables' => ['Media plan with rationale', 'Indicative budget scenarios', 'Booking schedule and artwork specs', 'Post-campaign placement summary'],
                 'proof' => ['label' => 'See campaign records', 'url' => route('work.index')],
             ],
             'branding-creative-studio' => [
                 'anchor' => 'creative',
                 'copy' => [
-                    'Creative work is built for the place it will appear. A billboard needs one clear idea at a glance; a radio spot needs a voice and a rhythm; an advertorial needs a reason to keep reading. We design for the channel rather than shrinking one asset into every format.',
+                    'Creative work is built for the place it will appear. A billboard needs one clear idea at a glance; a radio spot needs a voice and a rhythm; an advertorial needs a reason to keep reading. We design for the medium rather than shrinking one asset into every format.',
                     'The studio covers identity, campaign concepts, graphic design, copywriting, photography and audio. For teams without an in-house department, it can act as a complete creative partner; for teams with one, it can extend capacity around a launch or a specific production.',
                 ],
                 'offers' => ['Brand identity and design systems', 'Campaign concepts and key visuals', 'Copywriting and editorial design', 'Photography and audio production'],
@@ -68,7 +68,7 @@
                 'anchor' => 'creators',
                 'copy' => [
                     'Creator campaigns work when the fit is real. We start with the audience and the creative role the creator will play, then look for a voice that can carry it without sounding like an advert.',
-                    'Briefing, production support, approvals and reporting are handled with the same care as any other channel. The creator keeps their voice; the brand gets a clear set of deliverables and a measurement plan.',
+                    'Briefing, production support, approvals and reporting are handled with the same care as any other medium. The creator keeps their voice; the brand gets a clear set of deliverables and a measurement plan.',
                 ],
                 'offers' => ['Creator discovery and niche matching', 'Briefing and creative direction', 'Production and editing support', 'Deliverable tracking and reporting'],
                 'deliverables' => ['Creator shortlist with rationale', 'Agreed brief and deliverables', 'Approved content and usage rights', 'Campaign performance summary'],

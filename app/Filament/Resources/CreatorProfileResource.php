@@ -39,7 +39,7 @@ class CreatorProfileResource extends Resource
             TextInput::make('creator_type')->default('creator')->required(),
             TextInput::make('slug')->required()->maxLength(255),
             TextInput::make('primary_niche')->maxLength(100),
-            Select::make('platform_label')->options(['TikTok' => 'TikTok', 'Instagram' => 'Instagram', 'YouTube' => 'YouTube', 'Facebook' => 'Facebook', 'Podcast' => 'Podcast', 'Other' => 'Other']),
+            Select::make('social_platform')->options(['TikTok' => 'TikTok', 'Instagram' => 'Instagram', 'YouTube' => 'YouTube', 'Facebook' => 'Facebook', 'Podcast' => 'Podcast', 'Other' => 'Other']),
             TextInput::make('handle')->maxLength(255),
             Textarea::make('bio')->rows(4)->columnSpanFull(),
             TextInput::make('country_code')->maxLength(2)->default('MY'),
@@ -58,7 +58,7 @@ class CreatorProfileResource extends Resource
     {
         return $table->columns([
             TextColumn::make('creatorParty.display_name')->label('Creator')->sortable()->searchable(),
-            TextColumn::make('platform_label')->sortable()->searchable(),
+            TextColumn::make('social_platform')->sortable()->searchable(),
             TextColumn::make('primary_niche')->sortable()->searchable(),
             TextColumn::make('verification_status')->sortable()->searchable(),
             TextColumn::make('status')->sortable()->searchable(),

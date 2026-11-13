@@ -12,7 +12,7 @@
         <div class="container">
             <div class="creator-paths">
                 <a class="creator-path" href="{{ route('contact') }}">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/channel-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/channel-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator filming a product story" loading="lazy" decoding="async">
+                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator filming a product story" loading="lazy" decoding="async">
                     <span class="creator-path__body">
                         <span class="eyebrow eyebrow--pale">For brands</span>
                         <h2>Find voices that fit the brief.</h2>
@@ -61,9 +61,9 @@
                 </div>
             @else
                 <div class="filter-horizontal" style="display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:0.6rem;margin-bottom:1.4rem">
-                    <label class="field"><span class="sr-only">Search creators</span><input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator name, niche or platform…"></label>
+                    <label class="field"><span class="sr-only">Search creators</span><input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator name, niche or social platform…"></label>
                     <label class="field"><span class="sr-only">Niche</span><select wire:model.live="niche"><option value="all">All niches</option>@foreach ($niches as $nicheOption)<option value="{{ $nicheOption }}" @selected($niche === $nicheOption)>{{ $nicheOption }}</option>@endforeach</select></label>
-                    <label class="field"><span class="sr-only">Platform</span><select wire:model.live="platform"><option value="all">All platforms</option>@foreach ($platforms as $platformOption)<option value="{{ $platformOption }}" @selected($platform === $platformOption)>{{ $platformOption }}</option>@endforeach</select></label>
+                    <label class="field"><span class="sr-only">Social platform</span><select wire:model.live="socialPlatform"><option value="all">All social platforms</option>@foreach ($socialPlatforms as $socialPlatformOption)<option value="{{ $socialPlatformOption }}" @selected($socialPlatform === $socialPlatformOption)>{{ $socialPlatformOption }}</option>@endforeach</select></label>
                     <button class="button button--secondary button--sm" type="button" wire:click="clearFilters">Clear</button>
                 </div>
 
@@ -76,7 +76,7 @@
                             <div class="creator-card__body">
                                 <div class="creator-card__meta">
                                     <span class="tag tag--verified">Verified</span>
-                                    <span class="tag">{{ $creator->platform_label }}</span>
+                                    <span class="tag">{{ $creator->social_platform }}</span>
                                 </div>
                                 <h3>{{ $creator->displayName() }}</h3>
                                 <p>{{ $creator->bio }}</p>

@@ -46,7 +46,7 @@ class SearchController extends Controller
                 ->where(function ($sub) use ($like): void {
                     $sub->where('bio', 'like', $like)
                         ->orWhere('primary_niche', 'like', $like)
-                        ->orWhere('platform_label', 'like', $like)
+                        ->orWhere('social_platform', 'like', $like)
                         ->orWhereHas('creatorParty', fn ($party) => $party->where('display_name', 'like', $like));
                 })
                 ->orderByDesc('is_featured')
@@ -59,8 +59,8 @@ class SearchController extends Controller
                 ->where(function ($sub) use ($like): void {
                     $sub->where('name', 'like', $like)
                         ->orWhere('summary', 'like', $like)
+                        ->orWhere('medium', 'like', $like)
                         ->orWhere('channel_label', 'like', $like)
-                        ->orWhere('platform_label', 'like', $like)
                         ->orWhereHas('client', fn ($client) => $client->where('display_name', 'like', $like));
                 })
                 ->orderByDesc('starts_on')

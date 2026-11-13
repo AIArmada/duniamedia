@@ -8,6 +8,10 @@ Dunia Media is a media and advertising marketplace. This glossary fixes the lang
 The broad delivery world. Traditional covers broadcast, print, outdoor and cinema. Digital covers websites, apps, social, OTT and digital screens.
 _Avoid_: Channel, medium
 
+**Distribution Platform**:
+The technical or delivery platform through which a channel is delivered, such as television, radio, website, social network, print or event.
+_Avoid_: Platform, medium
+
 **Medium**:
 The type of media, such as television, radio, print, out-of-home, DOOH, website, social media, creator, cinema or place-based media.
 _Avoid_: Media category, channel, type

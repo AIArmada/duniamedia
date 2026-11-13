@@ -5,10 +5,10 @@ namespace App\Livewire;
 use App\Actions\CreatePartyWithContact;
 use App\Models\CreatorAccount;
 use App\Models\CreatorProfile;
+use App\Models\DistributionPlatform;
 use App\Models\MediaProperty;
 use App\Models\Party;
-use App\Models\Platform;
-use App\Models\PropertyPlatform;
+use App\Models\PropertyDistributionPlatform;
 use Illuminate\Support\Str;
 use Livewire\Component;
 
@@ -22,7 +22,7 @@ class CreatorJoin extends Component
 
     public string $handle = '';
 
-    public string $platform = 'TikTok';
+    public string $socialPlatform = 'TikTok';
 
     public string $niche = '';
 
@@ -43,7 +43,7 @@ class CreatorJoin extends Component
             'email' => 'required|email|max:255',
             'phone' => 'nullable|string|max:40',
             'handle' => 'required|string|max:160',
-            'platform' => 'required|string|max:60',
+            'socialPlatform' => 'required|string|max:60',
             'niche' => 'required|string|max:100',
             'followers' => 'nullable|integer|min:0',
             'message' => 'nullable|string|max:3000',
@@ -64,7 +64,7 @@ class CreatorJoin extends Component
             'creator_type' => 'creator',
             'slug' => $slug,
             'primary_niche' => $data['niche'],
-            'platform_label' => $data['platform'],
+            'social_platform' => $data['socialPlatform'],
             'handle' => $data['handle'],
             'bio' => $data['message'] ?? null,
             'managed_by_party_id' => Party::where('slug', 'ra-media-relations')->value('id'),
@@ -77,19 +77,19 @@ class CreatorJoin extends Component
         $property = MediaProperty::create([
             'owner_party_id' => $party->id,
             'property_type' => 'social_account',
-            'name' => $data['name'].' — '.$data['platform'],
-            'slug' => $slug.'-'.Str::slug($data['platform']),
+            'name' => $data['name'].' — '.$data['socialPlatform'],
+            'slug' => $slug.'-'.Str::slug($data['socialPlatform']),
             'status' => 'active',
         ]);
 
-        $platform = Platform::firstOrCreate(
-            ['name' => $data['platform']],
+        $platform = DistributionPlatform::firstOrCreate(
+            ['name' => $data['socialPlatform']],
             ['platform_kind' => 'social'],
         );
 
-        PropertyPlatform::create([
+        PropertyDistributionPlatform::create([
             'media_property_id' => $property->id,
-            'platform_id' => $platform->id,
+            'distribution_platform_id' => $platform->id,
             'handle' => $data['handle'],
             'is_primary' => true,
         ]);

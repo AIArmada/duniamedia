@@ -16,7 +16,7 @@
             <form method="get" action="{{ route('media.owners') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-bottom:1.6rem">
                 <label class="field">
                     <span class="sr-only">Search media owners</span>
-                    <input type="search" name="q" value="{{ $query }}" placeholder="Search owner, channel or brand…">
+                    <input type="search" name="q" value="{{ $query }}" placeholder="Search owner or channel…">
                 </label>
                 <button class="button button--primary" type="submit">Search directory</button>
             </form>
@@ -32,20 +32,20 @@
                     <a class="button button--primary" href="{{ route('media.owners') }}">View all owners</a>
                 </div>
             @else
-                <div class="outlet-grid">
+                <div class="directory-card-grid">
                     @foreach ($owners as $owner)
-                        <a class="outlet-tile" href="{{ route('media.owner', $owner['slug']) }}" style="align-items:flex-start">
-                            <span class="outlet-tile__mark">
+                        <a class="directory-card" href="{{ route('media.owner', $owner['slug']) }}" style="align-items:flex-start">
+                            <span class="directory-card__mark">
                                 @if (! empty($owner['logo']))
                                     <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="" loading="lazy">
                                 @else
                                     {{ $owner['mark'] ?? $owner['name'] }}
                                 @endif
                             </span>
-                            <span class="outlet-tile__name">{{ $owner['name'] }}</span>
+                            <span class="directory-card__name">{{ $owner['name'] }}</span>
                             <span class="tiny muted" style="display:block;margin-top:.3rem">{{ \Illuminate\Support\Str::limit($owner['description'], 120) }}</span>
-                            <span class="tiny muted" style="display:block;margin-top:.5rem">{{ count($owner['outlets']) }} channels · {{ count($owner['categories']) }} categories</span>
-                            <span class="outlet-tile__arrow" aria-hidden="true">↗</span>
+                            <span class="tiny muted" style="display:block;margin-top:.5rem">{{ count($owner['channels']) }} channels · {{ count($owner['categories']) }} channel groups</span>
+                            <span class="directory-card__arrow" aria-hidden="true">↗</span>
                         </a>
                     @endforeach
                 </div>

@@ -14,8 +14,8 @@ class CreatorExplorer extends Component
     #[Url]
     public string $niche = 'all';
 
-    #[Url]
-    public string $platform = 'all';
+    #[Url(as: 'social_platform')]
+    public string $socialPlatform = 'all';
 
     #[Url]
     public string $search = '';
@@ -27,9 +27,9 @@ class CreatorExplorer extends Component
 
     public function clearFilters(): void
     {
-        $this->reset(['search', 'niche', 'platform']);
+        $this->reset(['search', 'niche', 'socialPlatform']);
         $this->niche = 'all';
-        $this->platform = 'all';
+        $this->socialPlatform = 'all';
         $this->resetPage();
     }
 
@@ -40,7 +40,7 @@ class CreatorExplorer extends Component
             ->where('verification_status', 'verified')
             ->with('creatorParty')
             ->when($this->niche !== 'all', fn ($query) => $query->where('primary_niche', $this->niche))
-            ->when($this->platform !== 'all', fn ($query) => $query->where('platform_label', $this->platform))
+            ->when($this->socialPlatform !== 'all', fn ($query) => $query->where('social_platform', $this->socialPlatform))
             ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
                 $sub->where('bio', 'like', '%'.$this->search.'%')
                     ->orWhere('slug', 'like', '%'.$this->search.'%')
@@ -54,7 +54,7 @@ class CreatorExplorer extends Component
         return view('livewire.creator-explorer', [
             'creators' => $query->orderByDesc('is_featured')->paginate(9),
             'niches' => (clone $base)->whereNotNull('primary_niche')->distinct()->orderBy('primary_niche')->pluck('primary_niche'),
-            'platforms' => (clone $base)->whereNotNull('platform_label')->distinct()->orderBy('platform_label')->pluck('platform_label'),
+            'socialPlatforms' => (clone $base)->whereNotNull('social_platform')->distinct()->orderBy('social_platform')->pluck('social_platform'),
         ])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
     }
 }

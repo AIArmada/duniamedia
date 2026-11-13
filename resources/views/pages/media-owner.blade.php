@@ -23,8 +23,8 @@
                     <h1>{{ $owner['name'] }}</h1>
                     <p class="directory-hero__lede">{{ $owner['description'] }}</p>
                     <div class="directory-hero__stats">
-                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['outlets']) }}</strong> channels</span>
-                        <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> categories</span>
+                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['channels']) }}</strong> channels</span>
+                        <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> channel groups</span>
                         <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> rate cards</span>
                     </div>
                 </div>
@@ -74,18 +74,18 @@
                         <h3>{{ $category['label'] }}</h3>
                         <span>{{ count($category['brands']) }} {{ count($category['brands']) === 1 ? 'channel' : 'channels' }}</span>
                     </div>
-                    <div class="outlet-grid">
-                        @foreach (collect($owner['outlets'])->where('category', $category['label']) as $outlet)
-                            <a class="outlet-tile" href="{{ route('media.outlet', [$owner['slug'], $outlet['slug']]) }}">
-                                <span class="outlet-tile__mark">
-                                    @if (! empty($outlet['logo']))
-                                        <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$outlet['logo']) }}" alt="" loading="lazy">
+                    <div class="directory-card-grid">
+                        @foreach (collect($owner['channels'])->where('category', $category['label']) as $channel)
+                            <a class="directory-card" href="{{ route('media.channel', [$owner['slug'], $channel['slug']]) }}">
+                                <span class="directory-card__mark">
+                                    @if (! empty($channel['logo']))
+                                        <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$channel['logo']) }}" alt="" loading="lazy">
                                     @else
-                                        {{ $outlet['name'] }}
+                                        {{ $channel['name'] }}
                                     @endif
                                 </span>
-                                <span class="outlet-tile__name">{{ $outlet['name'] }}</span>
-                                <span class="outlet-tile__arrow" aria-hidden="true">↗</span>
+                                <span class="directory-card__name">{{ $channel['name'] }}</span>
+                                <span class="directory-card__arrow" aria-hidden="true">↗</span>
                             </a>
                         @endforeach
                     </div>
