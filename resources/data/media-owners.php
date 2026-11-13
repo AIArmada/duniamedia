@@ -53,7 +53,7 @@ return [
         'categories' => [$category('Television', [$brand('TVS', 'tvs.png')])],
     ],
     [
-        'name' => 'Star Media Group', 'logo' => 'star-media-group-logo.jpg', 'mark' => 'STAR MEDIA GROUP', 'accent' => '#c6213b',
+        'name' => 'Star Media Group', 'logo' => 'star-media-group-logo.png', 'mark' => 'STAR MEDIA GROUP', 'accent' => '#c6213b',
         'categories' => [
             $category('News and publishing', [$brand('The Star', 'star-the-star.png'), $brand('mStar', 'star-mstar.png')]),
             $category('Radio', [$brand('Suria FM', 'star-suria.png', 'suria-fm-2026-radio-digital'), $brand('98.8 FM', 'star-988.png', '988-fm-2026-radio-digital')]),
@@ -70,7 +70,7 @@ return [
     ],
     [
         'name' => 'Outdoor Media', 'mark' => 'OUTDOOR MEDIA', 'accent' => '#238174',
-        'categories' => [$category('Outdoor operators', [$brand('Seni Jaya', 'seni-jaya.svg'), $brand('Novus Media', 'novus-media.jpg'), $brand('Harumi Jaya', 'harumi-jaya.jpg'), $brand('EDSB Outdoor', 'edsb-outdoor.png')])],
+        'categories' => [$category('Outdoor operators', [$brand('Seni Jaya', 'seni-jaya.svg'), $brand('Novus Media', 'novus-media.png'), $brand('Harumi Jaya', 'harumi-jaya.jpg'), $brand('EDSB Outdoor', 'edsb-outdoor.png')])],
     ],
     [
         'name' => 'Cinema Ads', 'mark' => 'CINEMA ADS', 'accent' => '#a33047',

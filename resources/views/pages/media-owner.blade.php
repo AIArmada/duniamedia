@@ -11,7 +11,7 @@
             </nav>
 
             <div class="directory-hero__head">
-                <div>
+                <div class="directory-hero__main">
                     <div class="directory-hero__logo">
                         @if (! empty($owner['logo']))
                             <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="{{ $owner['name'] }}">
@@ -19,13 +19,16 @@
                             <span>{{ $owner['mark'] ?? $owner['name'] }}</span>
                         @endif
                     </div>
-                    <span class="eyebrow">Media owner</span>
-                    <h1>{{ $owner['name'] }}</h1>
-                    <p class="directory-hero__lede">{{ $owner['description'] }}</p>
-                    <div class="directory-hero__stats">
-                        <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['channels']) }}</strong> channels</span>
-                        <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> channel groups</span>
-                        <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> rate cards</span>
+                    <div class="directory-hero__intro">
+                        <span class="eyebrow">Media owner</span>
+                        <h1>{{ $owner['name'] }}</h1>
+                        <p class="directory-hero__lede">{{ $owner['description'] }}</p>
+                        <div class="directory-hero__stats">
+                            <span><x-dm-icon name="building" :size="16"/><strong>{{ count($owner['channels']) }}</strong> {{ count($owner['channels']) === 1 ? 'channel' : 'channels' }}</span>
+                            <span><x-dm-icon name="layers" :size="16"/><strong>{{ count($owner['categories']) }}</strong> {{ count($owner['categories']) === 1 ? 'channel group' : 'channel groups' }}</span>
+                            <span><x-dm-icon name="document" :size="16"/><strong>{{ $rateCards->count() }}</strong> {{ $rateCards->count() === 1 ? 'rate card' : 'rate cards' }}</span>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="directory-hero__actions">

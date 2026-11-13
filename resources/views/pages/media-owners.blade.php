@@ -13,7 +13,7 @@
 
     <section class="section">
         <div class="container">
-            <form method="get" action="{{ route('media.owners') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-bottom:1.6rem">
+            <form method="get" action="{{ route('media.owners') }}" class="directory-search">
                 <label class="field">
                     <span class="sr-only">Search media owners</span>
                     <input type="search" name="q" value="{{ $query }}" placeholder="Search owner or channel…">
@@ -34,7 +34,7 @@
             @else
                 <div class="directory-card-grid">
                     @foreach ($owners as $owner)
-                        <a class="directory-card" href="{{ route('media.owner', $owner['slug']) }}" style="align-items:flex-start">
+                        <a class="directory-card" href="{{ route('media.owner', $owner['slug']) }}">
                             <span class="directory-card__mark">
                                 @if (! empty($owner['logo']))
                                     <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="" loading="lazy">
@@ -42,10 +42,11 @@
                                     {{ $owner['mark'] ?? $owner['name'] }}
                                 @endif
                             </span>
-                            <span class="directory-card__name">{{ $owner['name'] }}</span>
-                            <span class="tiny muted" style="display:block;margin-top:.3rem">{{ \Illuminate\Support\Str::limit($owner['description'], 120) }}</span>
-                            <span class="tiny muted" style="display:block;margin-top:.5rem">{{ count($owner['channels']) }} channels · {{ count($owner['categories']) }} channel groups</span>
-                            <span class="directory-card__arrow" aria-hidden="true">↗</span>
+                            <span class="directory-card__content">
+                                <span class="directory-card__name">{{ $owner['name'] }}</span>
+                                <span class="tiny muted">{{ \Illuminate\Support\Str::limit($owner['description'], 120) }}</span>
+                                <span class="directory-card__meta">{{ count($owner['channels']) }} {{ count($owner['channels']) === 1 ? 'channel' : 'channels' }} · {{ count($owner['categories']) }} {{ count($owner['categories']) === 1 ? 'channel group' : 'channel groups' }}</span>
+                            </span>
                         </a>
                     @endforeach
                 </div>
