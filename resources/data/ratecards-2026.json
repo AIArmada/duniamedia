@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-12 full Drive refresh",
+  "updated": "2026-11-13 ERL + KLIA 2026",
   "sources": [
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
     "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
   ],
-  "note": "39 media offerings. Every rate-card document is hosted privately by this application and streamed through /media/{slug}/rate-card; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
+  "note": "40 rate-card offerings. Every document is hosted privately by this application and streamed through the local rate-card route; no external links. Prices are indicative rate-card figures before SST/discounts/availability verification. Nothing booked online.",
   "offerings": [
     {
       "title": "988 FM 2026 — Radio + Digital (Star RFM)",
@@ -599,37 +599,52 @@
       "media_owner": "TV3"
     },
     {
-      "title": "KLIA Terminal 1 Airport Advertising 2024 — Premium DOOH",
+      "title": "KLIA Terminal 1 2026 — Static & Digital Airport Media",
       "slug": "klia-t1-airport-2024-premium",
       "channel": "KLIA T1 / RA Media",
       "location": "Sepang (KLIA T1)",
-      "audience": "International + domestic air travellers (37.8% growth 2022–24)",
-      "summary": "Arrivals Spectacular RM1M/yr, Departures Network RM60k/mo/spot, 26-screen tactical network.",
-      "description": "KLIA T1 recommendation (42 pages, 1 Jul 2024). 1.5–2.5M monthly pax. Formats: Digital Arrivals Spectacular 4x LED (9.5–13ft x 27ft, 10s, max 4 advertisers) RM1M/yr or RM120k/mo; Departures portrait network 26x 75in RM60k/mo/spot (max 8); plus charging, walkthrough videos. +8% SST.",
+      "audience": "International and domestic air travellers; 2.9M–3.5M passengers per month (Sep 2025–Sep 2026)",
+      "summary": "2026 static from RM150k/yr; Arrivals Impact Duo RM1.25M; digital from RM30k/mo, Aerostation RM120k/mo, Departures Branding Zone RM150k/mo.",
+      "description": "KLIA Terminal 1 2026 static and digital decks (56 + 62 pages). Passenger traffic ranges from 2.9M to 3.5M per month (Sep 2025–Sep 2026). Static: Arrivals BDC Impact RM150,000/year; Arrivals Impact Duo RM1.25M; Arrivals Impact Icons RM1.2M–1.25M; Baggage Carousel Flaps RM500,000; Contact Pier Icon RM900,000; Contact Pier Gates RM1.5M; Departures Immigration Domination RM1.875M; Satellite Pier Domination RM2.1M; Transit Train Station Domination RM2M; Transit Train Sponsorship RM3.5M; trolleys RM12,000/month. Digital: Screens & Charging Network from RM30,000/month (RM950,000/year); Departures Network RM60,000/month; Satellite Impact Network RM60,000/month; Arrivals Impact Network RM75,000/month; Aerostation, Arrivals Spectacular, Digital Dream and Duty-Free Spectacular RM100,000–120,000/month; Departures Branding Zone RM150,000/month. Rates exclude 8% SST; production and lighting charges apply.",
       "image": "assets/ratecards/img/klia-t1-airport-2024-premium.webp",
-      "price_from": 60000,
+      "price_from": 30000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
       "is_featured": true,
       "is_published": true,
       "specifications": {
         "formats": [
-          "Digital spectacular",
-          "Departures portrait network",
-          "Charging screens"
+          "Static lightboxes",
+          "Wall and glass wraps",
+          "Baggage carousel",
+          "Digital LED and portrait networks",
+          "Charging stations",
+          "Trolleys",
+          "Transit train sponsorship"
         ],
         "price_tiers": [
-          "Spectacular RM1M/yr",
-          "Network RM60k/mo/spot"
+          "Digital charging network RM30,000/mo",
+          "Departures Network RM60,000/mo",
+          "Aerostation RM120,000/mo",
+          "Static BDC Impact RM150,000/yr",
+          "Arrivals Impact Duo RM1.25M/yr",
+          "Transit train sponsorship RM3.5M/yr"
         ],
-        "validity": "1 Jul 2024 deck",
-        "source_file": "KLIAT1-RA Media_KLIA Terminal 1 Airport Advertising 010724 (3).pdf (42 pages)",
+        "validity": "2026 decks",
+        "source_file": "KLIA Terminal 1_Static_2026.pdf (56 pages) + KLIA T1 & T2_ALL Digital_2026.pdf (62 pages)",
         "documents": [
           {
-            "name": "KLIAT1-RA Media_KLIA Terminal 1 Airport Advertising 010724",
-            "size": 7542665,
+            "name": "KLIA Terminal 1 Static 2026",
+            "size": 16207473,
             "ext": "pdf",
-            "file": "klia-t1-airport-2024-premium.pdf",
+            "file": "klia-t1-static-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "KLIA T1 & T2 Digital 2026",
+            "size": 13825621,
+            "ext": "pdf",
+            "file": "klia-t1-t2-digital-2026.pdf",
             "kind": "document"
           },
           {
@@ -647,38 +662,50 @@
       "media_owner": "RA Media / MAHB"
     },
     {
-      "title": "KLIA Terminal 2 (KLIA2) Airport Advertising 2024",
+      "title": "KLIA Terminal 2 2026 — Static & Digital Airport Media",
       "slug": "klia-t2-airport-2024",
       "channel": "KLIA T2 / RA Media",
       "location": "Sepang (KLIA2)",
-      "audience": "International departures + domestic/arrival flows",
-      "summary": "Digital Domination RM60.5k/mo, Coverage Network 67 screens RM30k/mo, from RM2.8k tactical.",
-      "description": "KLIA T2 deck (41 pages, 1 Jul 2024). Total pax charts. Formats: Digital Domination 1 giant +16 landscape (15s, max 8) RM60.5k/mo/spot; Total Coverage 67x 55in portrait (10s, max 6) RM30k/mo; plus tactical from RM2.8k–32k, RM180–450k dominations. Airside landside coverage.",
+      "audience": "International and domestic air travellers at KLIA Terminal 2",
+      "summary": "2026 static from RM130k/yr; Arrivals Duo RM900k; digital from RM30k/mo, Baggage Network RM32.8k/mo, Digital Domination RM60.5k/mo.",
+      "description": "KLIA Terminal 2 2026 static and digital decks (31 + 62 pages). Static: Domestic Departures Impact RM130,000/year; Public Concourse Departures Impact RM130,000; Foreign Worker Impact RM150,000; Satellite Impact Duo RM180,000; Domestic Wall Domination RM180,000; Skybridge Impact Duo RM200,000 per pair; Domestic Departures Icon RM300,000; Arrivals Impact Duo RM400,000; Baggage Carousel Flaps RM400,000; International Arrivals Icon RM450,000; Arrivals Duo RM900,000; Arrivals Icons RM1M; Satellite Void RM1.5M; trolleys RM12,000/month. Digital: Total Coverage Network RM30,000/month; Baggage Network RM32,800/month; Digital Domination RM60,500/month; Digital Dream RM80,000. Rates exclude 8% SST; production and lighting charges apply.",
       "image": "assets/ratecards/img/klia-t2-airport-2024.webp",
-      "price_from": 2800,
+      "price_from": 30000,
       "pricing_mode": "indicative",
       "availability_status": "on_request",
       "is_featured": true,
       "is_published": true,
       "specifications": {
         "formats": [
-          "Digital domination",
-          "Coverage network (67 screens)",
-          "Tactical"
+          "Static lightboxes",
+          "Wall stickers and murals",
+          "Skybridge and satellite sites",
+          "Digital LCD/LED networks",
+          "Trolleys"
         ],
         "price_tiers": [
-          "Domination RM60.5k/mo",
-          "Coverage RM30k/mo",
-          "Tactical from RM2.8k"
+          "Digital Total Coverage RM30,000/mo",
+          "Baggage Network RM32,800/mo",
+          "Digital Domination RM60,500/mo",
+          "Static departures impact RM130,000/yr",
+          "Arrivals Duo RM900,000/yr",
+          "Satellite Void RM1.5M/yr"
         ],
-        "validity": "1 Jul 2024 deck",
-        "source_file": "KLIAT2-RA Media_KLIA Terminal 2 (KLIA2) Airport Advertising 010724 (2).pdf (41 pages)",
+        "validity": "2026 decks",
+        "source_file": "KLIA Terminal 2_Static_2026.pdf (31 pages) + KLIA T1 & T2_ALL Digital_2026.pdf (62 pages)",
         "documents": [
           {
-            "name": "KLIAT2-RA Media_KLIA Terminal 2",
-            "size": 5301236,
+            "name": "KLIA Terminal 2 Static 2026",
+            "size": 6371799,
             "ext": "pdf",
-            "file": "klia-t2-airport-2024.pdf",
+            "file": "klia-t2-static-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "KLIA T1 & T2 Digital 2026",
+            "size": 13825621,
+            "ext": "pdf",
+            "file": "klia-t1-t2-digital-2026.pdf",
             "kind": "document"
           },
           {
@@ -1702,6 +1729,52 @@
       },
       "medium": "Print",
       "media_owner": "Sinar Karangkraf"
+    },
+    {
+      "title": "ERL Digital Screens 2026 — KLIA Ekspres Station & In-Train Network",
+      "slug": "erl-digital-screens-2026",
+      "channel": "ERL / KLIA Ekspres",
+      "location": "KL Sentral–KLIA corridor",
+      "audience": "7.5M annual ERL riders: 58% male, 39% visitors, 58% travel internationally, 36% business travellers",
+      "summary": "Station coverage network RM35k/mo per spot (32 totems); in-train network RM30k/mo per spot (190 screens across 16 trains).",
+      "description": "ERL KLIA Ekspres and KLIA Transit digital network (10 + 9 pages). Quick facts: 6 stations, 18 trains, 57km of track, 7.5M annual ridership, 5am–12am service every 15–30 minutes, 28–38 minutes end to end. Station Coverage Network: 32 x 65-inch digital totems at KL Sentral (18), Putrajaya/Cyberjaya (4), KLIA T1 (6) and KLIA T2 (4); 15-second spots; maximum 8 advertisers; RM35,000 per spot per month. In-Train Network: 190 x 26/27-inch digital screens across 16 trains; 15-second spots; maximum 8 advertisers; RM30,000 per spot per month. Rates exclude 8% SST.",
+      "price_from": 30000,
+      "pricing_mode": "indicative",
+      "availability_status": "on_request",
+      "is_featured": false,
+      "is_published": true,
+      "specifications": {
+        "formats": [
+          "65-inch station digital totems",
+          "26/27-inch in-train screens"
+        ],
+        "price_tiers": [
+          "Station coverage RM35,000/mo per spot",
+          "In-train network RM30,000/mo per spot"
+        ],
+        "validity": "2026",
+        "language": "Malay / English / Chinese",
+        "source_file": "ERL - DIGITAL SCREENS - COVERAGE NETWORK - 2026.pdf (10 pages) + ERL In-Train Network_Digital Screens- 2026.pdf (9 pages)",
+        "documents": [
+          {
+            "name": "ERL Station Coverage Network 2026",
+            "size": 2359797,
+            "ext": "pdf",
+            "file": "erl-station-coverage-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "ERL In-Train Network 2026",
+            "size": 1775470,
+            "ext": "pdf",
+            "file": "erl-in-train-network-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "ERL / KLIA Ekspres"
+      },
+      "medium": "Outdoor",
+      "media_owner": "ERL / KLIA Ekspres"
     }
   ]
 }

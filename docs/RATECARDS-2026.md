@@ -1,10 +1,20 @@
-# Rate Cards 2026 — Allowed-only Inventory (39 media offerings)
+# Rate Cards 2026 — Allowed-only Inventory (40 media offerings)
 
 Sources:
 - Folder A `RATECARD-2026DuniaMedia-RAMedia` (imported into this app)
-- Folder B `RAMediaRateCard2026` (imported into this app; refreshed 12 Nov 2026)
+- Folder B `RAMediaRateCard2026` (imported into this app; refreshed 13 Nov 2026)
 
-The original import published 29 files as 28 media offerings. The 12 Nov 2026 refresh added 11 media offerings, bringing the catalogue to 39 media offerings. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no media offering, no external link, no price.
+The original import published 29 files as 28 media offerings. The 12–13 Nov 2026 refresh added 12 media offerings, bringing the catalogue to 40. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no media offering, no external link, no price.
+
+## 13 Nov 2026 update — ERL and KLIA 2026
+
+| Source file | Listing slug | Medium | Why it belongs there |
+|---|---|---|---|
+| ERL - DIGITAL SCREENS - COVERAGE NETWORK - 2026.pdf + ERL In-Train Network_Digital Screens- 2026.pdf | `erl-digital-screens-2026` | Outdoor | ERL KLIA Ekspres station totems and in-train screen network |
+| KLIA Terminal 1_Static_2026.pdf + KLIA T1 & T2_ALL Digital_2026.pdf | `klia-t1-airport-2024-premium` (refreshed) | Outdoor | Current T1 static sites plus the combined T1/T2 digital network |
+| KLIA Terminal 2_Static_2026.pdf + KLIA T1 & T2_ALL Digital_2026.pdf | `klia-t2-airport-2024` (refreshed) | Outdoor | Current T2 static sites plus the combined T1/T2 digital network |
+
+The re-uploaded Welcome Back Promo is byte-different but text-identical, so the hosted copy is unchanged. The 2024 KLIA PDFs are no longer referenced; the walkthrough videos remain attached.
 
 ## 12 Nov 2026 update — Sarawak, IKIM, Media Prima Audio, RA Media Relations
 

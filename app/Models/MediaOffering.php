@@ -2,17 +2,14 @@
 
 namespace App\Models;
 
-use AIArmada\Cart\Concerns\Buyable;
-use AIArmada\Cart\Contracts\BuyableInterface;
+use AIArmada\CommerceSupport\Contracts\Buyable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class MediaOffering extends BaseModel implements BuyableInterface
+class MediaOffering extends BaseModel implements Buyable
 {
-    use Buyable;
-
     protected function casts(): array
     {
         return [
@@ -68,9 +65,24 @@ class MediaOffering extends BaseModel implements BuyableInterface
         return $query->where('status', 'published')->whereNotNull('published_at');
     }
 
+    public function getBuyableIdentifier(): string
+    {
+        return (string) $this->getKey();
+    }
+
+    public function getBuyableCatalogIdentifier(): ?string
+    {
+        return (string) $this->getKey();
+    }
+
     public function getBuyablePrice(): int
     {
         return (int) round(((float) ($this->price_from ?? 0)) * 100);
+    }
+
+    public function getBuyableCurrency(): string
+    {
+        return 'MYR';
     }
 
     public function getBuyableName(): string
@@ -88,9 +100,30 @@ class MediaOffering extends BaseModel implements BuyableInterface
         return $this->status === 'published';
     }
 
+    public function getBuyableStock(): ?int
+    {
+        return null;
+    }
+
+    public function getBuyableMinimumQuantity(): int
+    {
+        return 1;
+    }
+
+    public function getBuyableMaximumQuantity(): ?int
+    {
+        return null;
+    }
+
+    public function getBuyableQuantityIncrement(): int
+    {
+        return 1;
+    }
+
     public function getBuyableAttributes(): array
     {
         return [
+            'sku' => $this->sku,
             'offering_id' => $this->id,
             'slug' => $this->slug,
             'medium' => $this->medium,
