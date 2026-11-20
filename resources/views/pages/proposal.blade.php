@@ -37,7 +37,7 @@
 
                 <p class="muted small">{{ $quote->notes }}</p>
                 <p class="muted small">All placements depend on media owner acceptance, inventory confirmation and final signed terms. This page is not an online purchase.</p>
-                <button class="button button--secondary" type="button" onclick="window.print()">Print / Save as PDF</button>
+                <flux:button variant="outline" type="button" icon="printer" onclick="window.print()">Print / Save as PDF</flux:button>
             </div>
         </div>
     </section>

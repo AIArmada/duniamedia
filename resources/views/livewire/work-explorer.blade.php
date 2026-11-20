@@ -12,70 +12,64 @@
         </div>
 
         <div class="work-filters">
-            <label class="work-filter work-filter--search">
+            <div class="work-filter work-filter--search">
                 <span>Search</span>
-                <span class="work-filter__input">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4 4"/></svg>
-                    <input type="search" wire:model.live.debounce.300ms="search" placeholder="Client, campaign, channel…">
-                </span>
-            </label>
-            <label class="work-filter">
+                <flux:input type="search" wire:model.live.debounce.300ms="search" placeholder="Search campaigns…" aria-label="Search campaigns" icon="magnifying-glass" />
+            </div>
+            <div class="work-filter">
                 <span>Client</span>
-                <select wire:model.live="client">
+                <flux:select wire:model.live="client" aria-label="Client">
                     <option value="all">All clients</option>
                     @foreach ($clients as $clientOption)
                         <option value="{{ $clientOption->slug }}" @selected($client === $clientOption->slug)>{{ $clientOption->display_name }}</option>
                     @endforeach
-                </select>
-            </label>
-            <label class="work-filter">
+                </flux:select>
+            </div>
+            <div class="work-filter">
                 <span>Client type</span>
-                <select wire:model.live="sector">
+                <flux:select wire:model.live="sector" aria-label="Client type">
                     <option value="all">All client types</option>
                     <option value="government">Government &amp; public</option>
                     <option value="business">Business &amp; brands</option>
-                </select>
-            </label>
-            <label class="work-filter">
+                </flux:select>
+            </div>
+            <div class="work-filter">
                 <span>Medium</span>
-                <select wire:model.live="medium">
+                <flux:select wire:model.live="medium" aria-label="Medium">
                     <option value="all">All mediums</option>
                     @foreach ($mediums as $mediumOption)
                         <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
                     @endforeach
-                </select>
-            </label>
-            <label class="work-filter">
+                </flux:select>
+            </div>
+            <div class="work-filter">
                 <span>Service</span>
-                <select wire:model.live="service">
+                <flux:select wire:model.live="service" aria-label="Service">
                     <option value="all">All services</option>
                     @foreach ($services as $serviceOption)
                         <option value="{{ $serviceOption }}">{{ $serviceOption }}</option>
                     @endforeach
-                </select>
-            </label>
-            <label class="work-filter">
+                </flux:select>
+            </div>
+            <div class="work-filter">
                 <span>Channel</span>
-                <select wire:model.live="channel">
+                <flux:select wire:model.live="channel" aria-label="Channel">
                     <option value="all">All channels</option>
                     @foreach ($channels as $channelOption)
                         <option value="{{ $channelOption }}">{{ $channelOption }}</option>
                     @endforeach
-                </select>
-            </label>
-            <label class="work-filter">
+                </flux:select>
+            </div>
+            <div class="work-filter">
                 <span>Year</span>
-                <select wire:model.live="year">
+                <flux:select wire:model.live="year" aria-label="Year">
                     <option value="all">All years</option>
                     @foreach ($years as $yearOption)
                         <option value="{{ $yearOption }}">{{ $yearOption }}</option>
                     @endforeach
-                </select>
-            </label>
-            <button type="button" class="work-filter__reset" wire:click="clearFilters">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M5.5 15a7 7 0 0 0 12.2 2M18.5 9A7 7 0 0 0 6.3 7"/></svg>
-                Reset
-            </button>
+                </flux:select>
+            </div>
+            <flux:button type="button" variant="filled" size="sm" icon="arrow-path" wire:click="clearFilters">Reset</flux:button>
         </div>
 
         @if ($activeClient)
@@ -128,16 +122,16 @@
                     <span class="eyebrow">No matches</span>
                     <h3>No campaigns match that search.</h3>
                     <p>Try a different client, medium or channel — or reset the filters to see the full archive.</p>
-                    <button type="button" class="button button--primary" wire:click="clearFilters">Reset filters</button>
+                    <flux:button type="button" variant="primary" wire:click="clearFilters">Reset filters</flux:button>
                 </div>
             @endforelse
         </div>
 
         @if ($hasMore)
             <div class="work-load">
-                <button type="button" class="button button--primary" wire:click="loadMore" wire:loading.attr="disabled">
-                    Load more campaigns <span aria-hidden="true">↓</span>
-                </button>
+                <flux:button type="button" variant="primary" icon:trailing="arrow-down" wire:click="loadMore">
+                    Load more campaigns
+                </flux:button>
             </div>
         @endif
     </div>

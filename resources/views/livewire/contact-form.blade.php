@@ -13,7 +13,7 @@
                         <div class="success-panel">
                             <h2>Your enquiry has been received.</h2>
                             <p>Thank you for connecting with Dunia Media. Our team can now review your message and respond with a useful next step.</p>
-                            <a class="button button--primary" href="{{ route('media.index') }}">Explore media in the meantime <span aria-hidden="true">↗</span></a>
+                            <flux:button href="{{ route('media.index') }}" variant="primary" icon:trailing="arrow-up-right">Explore media in the meantime</flux:button>
                         </div>
                     @else
                         <span class="eyebrow">General enquiry</span>
@@ -22,40 +22,22 @@
 
                         <form wire:submit="submit">
                             <div class="form-grid">
-                                <label class="field">
-                                    <span>Your name</span>
-                                    <input wire:model="name" required autocomplete="name">
-                                    @error('name')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Work email</span>
-                                    <input type="email" wire:model="email" required autocomplete="email" inputmode="email">
-                                    @error('email')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Phone <span class="form-hint">(optional)</span></span>
-                                    <input type="tel" wire:model="phone" autocomplete="tel" inputmode="tel">
-                                </label>
-                                <label class="field">
-                                    <span>Company <span class="form-hint">(optional)</span></span>
-                                    <input wire:model="company" autocomplete="organization">
-                                </label>
-                                <label class="field field--full">
-                                    <span>How can we help?</span>
-                                    <textarea rows="6" wire:model="message" required placeholder="Tell us about your campaign, idea or business challenge…"></textarea>
-                                    @error('message')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
+                                <flux:input wire:model="name" label="Your name" required autocomplete="name" />
+                                <flux:input wire:model="email" type="email" label="Work email" required autocomplete="email" inputmode="email" />
+                                <flux:input wire:model="phone" type="tel" label="Phone" description:trailing="Optional" autocomplete="tel" inputmode="tel" />
+                                <flux:input wire:model="company" label="Company" description:trailing="Optional" autocomplete="organization" />
+                                <flux:textarea wire:model="message" label="How can we help?" rows="6" required placeholder="Tell us about your campaign, idea or business challenge…" field:class="field--full" />
                             </div>
 
                             <div class="honeypot" aria-hidden="true"><label>Leave empty<input wire:model="website" tabindex="-1"></label></div>
 
-                            <label class="check">
-                                <input type="checkbox" wire:model="consent">
-                                <span>I consent to being contacted regarding my enquiry and accept the <a href="{{ route('privacy') }}">privacy notice</a>.</span>
-                            </label>
-                            @error('consent')<small class="form-error">{{ $message }}</small>@enderror
+                            <flux:field variant="inline">
+                                <flux:checkbox wire:model="consent" />
+                                <flux:label>I consent to being contacted regarding my enquiry and accept the&nbsp;<a href="{{ route('privacy') }}">privacy notice</a>.</flux:label>
+                                <flux:error name="consent" />
+                            </flux:field>
 
-                            <button type="submit" class="button button--primary" style="margin-top:1.1rem">Send enquiry <span aria-hidden="true">↗</span></button>
+                            <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right" class="mt-4">Send enquiry</flux:button>
                         </form>
                     @endif
                 </div>

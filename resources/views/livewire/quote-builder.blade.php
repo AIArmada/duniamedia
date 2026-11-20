@@ -14,7 +14,7 @@
                             <h2>Proposal request received.</h2>
                             <p>Reference: <strong>{{ $reference }}</strong></p>
                             <p>Our team will review your selected media and add-ons before issuing confirmed pricing. Nothing has been reserved or charged.</p>
-                            <a class="button button--primary" href="{{ route('media.index') }}">Explore more media <span aria-hidden="true">↗</span></a>
+                            <flux:button href="{{ route('media.index') }}" variant="primary" icon:trailing="arrow-up-right">Explore more media</flux:button>
                         </div>
                     @else
                         <div class="quote-steps" aria-label="Proposal steps">
@@ -50,19 +50,14 @@
                                 @endif
 
                                 <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
-                                    <button class="button button--secondary button--sm" type="button" wire:click="saveAsPlan">Save as campaign plan</button>
-                                    <a class="button button--secondary button--sm" href="{{ route('plans.index') }}">View my plans</a>
+                                    <flux:button size="sm" variant="outline" type="button" wire:click="saveAsPlan">Save as campaign plan</flux:button>
+                                    <flux:button size="sm" variant="outline" href="{{ route('plans.index') }}">View my plans</flux:button>
                                 </div>
 
-                                <label class="field" style="margin-top:1rem">
-                                    <span>Add a media opportunity</span>
-                                    <select wire:change="add($event.target.value)">
-                                        <option value="">Select media…</option>
+                                <flux:select label="Add a media opportunity"><option value="">Select media…</option>
                                         @foreach ($options as $option)
                                             <option value="{{ $option->id }}">{{ $option->name }}</option>
-                                        @endforeach
-                                    </select>
-                                </label>
+                                        @endforeach</flux:select>
                             </div>
 
                             <div class="quote-block">
@@ -70,11 +65,11 @@
                                 <p class="quote-block__intro">Turn a placement into a complete campaign. These are quoted on request.</p>
                                 <div class="addon-list">
                                     @foreach (['Creative production', 'AI video production', 'Landing page & CRM', 'Campaign analytics', 'Influencer activation'] as $addon)
-                                        <label class="addon">
-                                            <input wire:model="addons" type="checkbox" value="{{ $addon }}">
-                                            <span>{{ $addon }}</span>
-                                            <small>Quote on request</small>
-                                        </label>
+                                        <flux:field variant="inline" class="addon">
+                                            <flux:checkbox wire:model="addons" value="{{ $addon }}" />
+                                            <flux:label>{{ $addon }}</flux:label>
+                                            <flux:description>Quote on request</flux:description>
+                                        </flux:field>
                                     @endforeach
                                 </div>
                             </div>
@@ -83,43 +78,23 @@
                                 <h2>Your campaign brief</h2>
                                 <p class="quote-block__intro">A few specifics help us verify the right inventory and shape the recommendation.</p>
                                 <div class="form-grid">
-                                    <label class="field">
-                                        <span>Full name</span>
-                                        <input wire:model="name" required autocomplete="name" placeholder="Your name">
-                                        @error('name')<small class="form-error">{{ $message }}</small>@enderror
-                                    </label>
-                                    <label class="field">
-                                        <span>Email</span>
-                                        <input wire:model="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@company.com">
-                                        @error('email')<small class="form-error">{{ $message }}</small>@enderror
-                                    </label>
-                                    <label class="field">
-                                        <span>Phone <span class="form-hint">(optional)</span></span>
-                                        <input wire:model="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+60 …">
-                                    </label>
-                                    <label class="field">
-                                        <span>Company <span class="form-hint">(optional)</span></span>
-                                        <input wire:model="company" autocomplete="organization" placeholder="Company name">
-                                    </label>
-                                    <label class="field field--full">
-                                        <span>Campaign objective</span>
-                                        <input wire:model="objective" placeholder="What should this campaign achieve?">
-                                    </label>
-                                    <label class="field field--full">
-                                        <span>Specific requirements <span class="form-hint">(optional)</span></span>
-                                        <textarea wire:model="message" rows="4" placeholder="Timeline, audience, preferred media and deliverables…"></textarea>
-                                    </label>
+                                    <flux:input wire:model="name" required autocomplete="name" placeholder="Your name" label="Full name" />
+                                    <flux:input wire:model="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@company.com" label="Email" />
+                                    <flux:input wire:model="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+60 …" label="Phone" description:trailing="Optional" />
+                                    <flux:input wire:model="company" autocomplete="organization" placeholder="Company name" label="Company" description:trailing="Optional" />
+                                    <flux:input wire:model="objective" placeholder="What should this campaign achieve?" label="Campaign objective" field:class="field--full" />
+                                    <flux:textarea wire:model="message" rows="4" placeholder="Timeline, audience, preferred media and deliverables…" label="Specific requirements" description:trailing="Optional" field:class="field--full" />
                                 </div>
 
                                 <div class="honeypot" aria-hidden="true">
                                     <label>Leave this field empty<input wire:model="website" tabindex="-1" autocomplete="off"></label>
                                 </div>
 
-                                <label class="check">
-                                    <input wire:model="consent" type="checkbox">
-                                    <span>I consent to RA Media contacting me about this proposal request and accept the <a href="{{ route('privacy') }}">privacy notice</a>.</span>
-                                </label>
-                                @error('consent')<span class="form-error">{{ $message }}</span>@enderror
+                                <flux:field variant="inline">
+                                    <flux:checkbox wire:model="consent" />
+                                    <flux:label>I consent to RA Media contacting me about this proposal request and accept the&nbsp;<a href="{{ route('privacy') }}">privacy notice</a>.</flux:label>
+                                    <flux:error name="consent" />
+                                </flux:field>
 
                                 <div class="notice" style="margin-bottom:0.9rem">
                                     No payment is collected and no media is reserved. This request is subject to availability, media owner approval and a final quotation.
@@ -131,9 +106,9 @@
                                     <li><x-dm-icon name="check" :size="15"/> One team from brief to delivery</li>
                                 </ul>
 
-                                <button class="button button--primary" type="submit" wire:loading.attr="disabled">
-                                    Request my proposal <span aria-hidden="true">↗</span>
-                                </button>
+                                <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right">
+                                    Request my proposal
+                                </flux:button>
                             </div>
                         </form>
                     @endif

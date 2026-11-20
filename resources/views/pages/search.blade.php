@@ -15,11 +15,8 @@
     <section class="section">
         <div class="container">
             <form method="get" action="{{ route('search') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-bottom:1.8rem">
-                <label class="field">
-                    <span class="sr-only">Search Dunia Media</span>
-                    <input type="search" name="q" value="{{ $query }}" placeholder="Search media, owners, creators, campaigns, insights…" autofocus>
-                </label>
-                <button class="button button--primary" type="submit">Search</button>
+                <flux:input type="search" name="q" value="{{ $query }}" placeholder="Search media, owners, creators, campaigns, insights…" aria-label="Search Dunia Media" icon="magnifying-glass" autofocus />
+                <flux:button type="submit" variant="primary" icon="magnifying-glass">Search</flux:button>
             </form>
 
             @if ($query === '')
@@ -50,7 +47,7 @@
                     <div class="section-heading" style="margin-top:2rem">
                         <div><span class="eyebrow">Creators</span><h2 class="section-title">{{ $creators->count() }} {{ $creators->count() === 1 ? 'profile' : 'profiles' }}.</h2></div>
                     </div>
-                    <div class="media-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+                    <div class="media-grid">
                         @foreach ($creators as $creator)
                             <article class="creator-card">
                                 <div class="creator-card__image"><img src="{{ \App\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy"></div>
@@ -111,8 +108,8 @@
                         <h3>No results for “{{ $query }}”.</h3>
                         <p>Try a medium, a media owner, a creator niche, a client or a campaign name. You can also browse the media explorer directly.</p>
                         <div class="empty-state__actions" style="justify-content:flex-start">
-                            <a class="button button--primary" href="{{ route('media.index') }}">Browse media</a>
-                            <a class="button button--secondary" href="{{ route('media.owners') }}">Browse owners</a>
+                            <flux:button href="{{ route('media.index') }}" variant="primary">Browse media</flux:button>
+                            <flux:button href="{{ route('media.owners') }}" variant="outline">Browse owners</flux:button>
                         </div>
                     </div>
                 @endif
