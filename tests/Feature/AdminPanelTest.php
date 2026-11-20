@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use AIArmada\Products\Models\Product;
 use App\Models\User;
 use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RolePermissionSeeder;
@@ -30,6 +31,16 @@ class AdminPanelTest extends TestCase
             '/admin',
             '/admin/products',
             '/admin/products/create',
+            '/admin/bookings',
+            '/admin/bookings/create',
+            '/admin/orders',
+            '/admin/orders/create',
+            '/admin/price-lists',
+            '/admin/inventory-locations',
+            '/admin/inventory-levels',
+            '/admin/tax-rates',
+            '/admin/promotions',
+            '/admin/vouchers',
             '/admin/media-properties',
             '/admin/creator-profiles',
             '/admin/enquiries',
@@ -45,7 +56,7 @@ class AdminPanelTest extends TestCase
         }
 
         $this->seed(MediaCatalogueSeeder::class);
-        $product = \AIArmada\Products\Models\Product::query()->where('slug', '988-fm-2026-radio-digital')->firstOrFail();
+        $product = Product::query()->where('slug', '988-fm-2026-radio-digital')->firstOrFail();
 
         $this->get('/admin/products/'.$product->getRouteKey().'/edit')->assertOk();
     }
