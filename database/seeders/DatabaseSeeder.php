@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             RatecardSeeder::class,
             CreatorSeeder::class,
+            MediaCatalogueSeeder::class,
             ContentSeeder::class,
             ClientWorkSeeder::class,
         ]);

@@ -1,0 +1,2773 @@
+{
+  "generated_at": "2026-11-20",
+  "offerings": [
+    {
+      "slug": "988-fm-2026-radio-digital",
+      "name": "988 FM 2026 — Radio + Digital (Star RFM)",
+      "sku": "988-fm-2026-radio-digital",
+      "summary": "Spot buy RM100–RM1,890, ROS RM365–RM1,078, plus display, FB/IG, streaming and video production add-ons.",
+      "description": "2026 airtime + digital rate card (Star RFM Sdn Bhd, effective 1 Jan 2026). Mon–Fri spot buy by time zone (e.g. 6–10am RM1,890), weekend spots, ROS national/central/northern, premium loading (+50% to +250%), studio/scripting/VO fees, display banners (CPM RM40–120), social posts RM6k–30k, FB Live, streaming pre/mid/end-roll and podcast sponsorship.",
+      "medium": "Radio",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 100.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "988 FM / Star RFM",
+      "location_label": "Nationwide",
+      "audience_label": "Chinese listeners, drive-time commuters",
+      "specifications": {
+        "formats": [
+          "30s spot buy",
+          "ROS",
+          "Display banners",
+          "FB/IG posts",
+          "FB Live",
+          "Streaming audio",
+          "Podcast sponsorship",
+          "Video production"
+        ],
+        "price_tiers": [
+          "Spot RM100–1890",
+          "ROS RM365–1078",
+          "Social RM6000–30000",
+          "Studio RM1050/hr"
+        ],
+        "validity": "Effective 1 Jan 2026; festive 13 Jan–17 Feb 2026",
+        "language": "Chinese (Mandarin/Cantonese)",
+        "source_file": "2026 Rate Card (1).pdf (4 pages)",
+        "documents": [
+          {
+            "name": "2026 Rate Card",
+            "size": 2043665,
+            "ext": "pdf",
+            "file": "988-fm-2026-radio-digital.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Star RFM Sdn Bhd (988)"
+      },
+      "terms": null,
+      "media_owner_slug": "star-media-group",
+      "media_owner_name": "Star Media Group",
+      "creator_slug": null,
+      "placement_code": "988-fm-2026-radio-digital",
+      "image_path": "assets/ratecards/img/988-fm-2026-radio-digital.webp",
+      "documents": [
+        {
+          "name": "2026 Rate Card",
+          "file": "988-fm-2026-radio-digital.pdf",
+          "path": "private/catalogue/988-fm-2026-radio-digital.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "astro-upfront-2027",
+      "name": "Astro Upfront 2027 — TV, Audio, Talent & On-Ground Packages",
+      "sku": "astro-upfront-2027",
+      "summary": "Upfront27: Best of TV RM25k–55k, news packages RM15k–38k, audio RM5k–47.5k, talent/creator RM5k–75k, festive RM88k–250k.",
+      "description": "Astro Upfront27 sales kit (66 pages) with early-bird bonuses: 100% for sign-up by 30 Oct 2026, 50% by 16 Nov 2026, 20% by 30 Nov 2026. TV: Awani Pagi and Niaga Awani spotlight interviews RM20,000; Buletin Awani special report RM15,000; AEC Prime Talk Market Spotlite RM25,000 plus RM3,000 production; Prime Edition News RM38,000; SME Biz@Sethigal RM5,300–8,300; Best of Malay/Chinese/Indian TV RM25,000–55,000; Best of CNY 2027 RM88,000; CNY Greetings RM120,000; Best of Raya 2027 RM98,000; Raya celebrity greetings RM250,000. Audio: Audio Impact 360 RM5,000–20,000 per brand; nationwide ERA/MYFM/HITZ RM40,000–47,500; regional RM2,800–43,000; CNY/Raya audio sponsorships RM160,000–188,000. Talent: RFE talent posts RM5,000–20,000, music talent RM10,000–30,000, music and MV production RM35,000–75,000; KULT creators RM10,000–50,000. On-ground booth RM10,000–15,000 and AIdvert production RM6,000. Prices exclude 8% SST; production and talent are charged separately.",
+      "medium": "TV & Broadcast",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 5000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Astro",
+      "location_label": "Nationwide",
+      "audience_label": "Astro TV, OTT, radio and digital audiences; 8.1 billion H1FY27 views",
+      "specifications": {
+        "formats": [
+          "TV packages",
+          "News and talk-show integration",
+          "Audio",
+          "Talent and creators",
+          "On-ground activation",
+          "AIdvert production"
+        ],
+        "price_tiers": [
+          "Audio Impact 360 from RM5k",
+          "Buletin Awani special report RM15k",
+          "Best of TV RM25k–55k",
+          "Best of Raya RM98k"
+        ],
+        "validity": "Upfront27; early-bird deadlines Oct–Nov 2026, utilise by 31 Dec 2027",
+        "language": "Malay / Chinese / Indian / English",
+        "source_file": "Upfront27 Sales Kit.pdf (66 pages)",
+        "documents": [
+          {
+            "name": "Upfront27 Sales Kit",
+            "size": 3558499,
+            "ext": "pdf",
+            "file": "astro-upfront-2027.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Astro Media Solutions"
+      },
+      "terms": null,
+      "media_owner_slug": "astro",
+      "media_owner_name": "Astro Media Solutions",
+      "creator_slug": null,
+      "placement_code": "astro-upfront-2027",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Upfront27 Sales Kit",
+          "file": "astro-upfront-2027.pdf",
+          "path": "private/catalogue/astro-upfront-2027.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "astro-video360-digital-2026",
+      "name": "Astro Video360+ & Digital Solutions 2026",
+      "sku": "astro-video360-digital-2026",
+      "summary": "One audience across CTV/live/VOD/YouTube, paid on completed views (CPCV RM0.05–0.08 vs YouTube ~RM0.10).",
+      "description": "The New Astro deck (21 pages). Video360+: plan one audience across live channels, FAST, VOD, in-stream web and YouTube, 30 personas (pick 3), 30s video, CPCV RM0.05–0.08, Kantar cross-screen + brand lift, plus KULT influence community products. Beta measured via Google Ad Manager.",
+      "medium": "Digital",
+      "unit_code": "per completed view",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Astro",
+      "location_label": "Nationwide",
+      "audience_label": "CTV + mobile + desktop video audiences, 30 curated personas",
+      "specifications": {
+        "formats": [
+          "CTV",
+          "Live channels",
+          "VOD",
+          "In-stream",
+          "YouTube",
+          "KULT influence"
+        ],
+        "price_tiers": [
+          "CPCV RM0.05–0.08",
+          "YouTube ref ~RM0.10"
+        ],
+        "validity": "2026 beta",
+        "source_file": "Astro Digital Solutions 2026.pdf (21 pages)",
+        "documents": [
+          {
+            "name": "Astro Digital Solutions 2026.pdf",
+            "size": 3443184,
+            "ext": "pdf",
+            "file": "astro-video360-digital-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Astro"
+      },
+      "terms": null,
+      "media_owner_slug": "astro",
+      "media_owner_name": "Astro Media Solutions",
+      "creator_slug": null,
+      "placement_code": "astro-video360-digital-2026",
+      "image_path": "assets/ratecards/img/astro-video360-digital-2026.webp",
+      "documents": [
+        {
+          "name": "Astro Digital Solutions 2026.pdf",
+          "file": "astro-video360-digital-2026.pdf",
+          "path": "private/catalogue/astro-video360-digital-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "bernama-media-kit-2026",
+      "name": "Bernama Media Kit 2026 — National News Agency",
+      "sku": "bernama-media-kit-2026",
+      "summary": "Official 2026 media kit (24-page scanned deck, request rate tables).",
+      "description": "Bernama Media Kit 2026 (24 pages, scanned images). National wire + portal + TV/radio extensions. View original for inventory and rates.",
+      "medium": "Digital",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Bernama",
+      "location_label": "Nationwide",
+      "audience_label": "National news readers, government and corporate stakeholders",
+      "specifications": {
+        "formats": [
+          "News portal",
+          "Wire",
+          "TV/radio (per kit)"
+        ],
+        "validity": "2026",
+        "language": "Malay / English",
+        "source_file": "BERNAMA MEDIA KIT 2026.pdf (24 pages, scanned)",
+        "documents": [
+          {
+            "name": "BERNAMA MEDIA KIT 2026.pdf",
+            "size": 3686364,
+            "ext": "pdf",
+            "file": "bernama-media-kit-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Bernama"
+      },
+      "terms": null,
+      "media_owner_slug": "bernama",
+      "media_owner_name": "Bernama",
+      "creator_slug": null,
+      "placement_code": "bernama-media-kit-2026",
+      "image_path": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "documents": [
+        {
+          "name": "BERNAMA MEDIA KIT 2026.pdf",
+          "file": "bernama-media-kit-2026.pdf",
+          "path": "private/catalogue/bernama-media-kit-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "bfm-2026-business-radio",
+      "name": "BFM 89.9 2026 — Business Radio + Digital",
+      "sku": "bfm-2026-business-radio",
+      "summary": "Morning Run RM1,000/spot, Enterprise RM600, live reads RM1,300–RM3,000, ROS packs, Marketplace and events.",
+      "description": "BFM Rate Card 2026 (28 pages). Belts: Morning Run 6–10am RM1,000 spot / RM3,000 live read; Enterprise 10am–2pm RM600/2,000; Bigger Picture 2–5pm RM520/1,600; Evening Edition 5–9pm RM770/2,300; Night Shift RM400/1,300; Bila Larut Malam RM120. Spot loading, ROS 123 and 24/7 packs (e.g. ROS 1 weekdays 30 spots RM19,740 value), Marketplace, digital, video/editorial and events.",
+      "medium": "Radio",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 120.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "BFM",
+      "location_label": "Nationwide",
+      "audience_label": "English-speaking professionals, PMEBs, business decision-makers",
+      "specifications": {
+        "formats": [
+          "30s spot",
+          "Live read",
+          "ROS packs",
+          "Marketplace",
+          "Digital",
+          "Events",
+          "Podcast/streaming"
+        ],
+        "price_tiers": [
+          "Spot RM120–1000",
+          "Live read RM1300–3000",
+          "ROS packs from ~RM19k value"
+        ],
+        "validity": "2026",
+        "language": "English (plus Caijin Chinese)",
+        "source_file": "BFM Rate Card 2026_compressed.pdf (28 pages)",
+        "documents": [
+          {
+            "name": "BFM Rate Card 2026_compressed.pdf",
+            "size": 4741267,
+            "ext": "pdf",
+            "file": "bfm-2026-business-radio.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "BFM"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "bfm-2026-business-radio",
+      "image_path": "assets/ratecards/img/bfm-2026-business-radio.webp",
+      "documents": [
+        {
+          "name": "BFM Rate Card 2026_compressed.pdf",
+          "file": "bfm-2026-business-radio.pdf",
+          "path": "private/catalogue/bfm-2026-business-radio.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "billboard-sarawak-smg-2026",
+      "name": "Sarawak Digital Billboard Network 2026 — Kuching & Bintulu",
+      "sku": "billboard-sarawak-smg-2026",
+      "summary": "Three LED double-screen sites from RM500/day or RM15k/month single screen; 2-site 10% and 3-site 15% bundles.",
+      "description": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026. A fourth Miri site at Jalan Padang (opposite Miri Clocktower) is scheduled for completion on 30 November 2026; rates to be confirmed.",
+      "medium": "Outdoor",
+      "unit_code": "per day",
+      "pricing_mode": "indicative",
+      "price_from": 500.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Sarawak Media Group (SMG)",
+      "location_label": "Kuching, Bintulu & Miri, Sarawak",
+      "audience_label": "Sarawak road traffic: 110k–139k daily vehicles per site",
+      "specifications": {
+        "formats": [
+          "Digital LED billboard",
+          "Single screen",
+          "Double screen",
+          "Two-site bundle",
+          "Three-site bundle",
+          "Miri site (from Nov 2026)"
+        ],
+        "price_tiers": [
+          "RM500/day single",
+          "RM15k/month single",
+          "RM30k/month double",
+          "RM1,275/day three-site single"
+        ],
+        "validity": "2026; Miri site expected 30 Nov 2026; cross-city promotion 1 Jun–31 Jul 2026",
+        "language": "Malay / English / Chinese",
+        "source_file": "Billboard Rate Card - Sarawak-compressed (1).pdf (19 pages)",
+        "documents": [
+          {
+            "name": "Billboard Rate Card - Sarawak",
+            "size": 3467279,
+            "ext": "pdf",
+            "file": "billboard-sarawak-smg-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Sarawak Media Group Sdn Bhd (SMG)"
+      },
+      "terms": null,
+      "media_owner_slug": "tvs",
+      "media_owner_name": "TVS (TV Sarawak)",
+      "creator_slug": null,
+      "placement_code": "billboard-sarawak-smg-2026",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Billboard Rate Card - Sarawak",
+          "file": "billboard-sarawak-smg-2026.pdf",
+          "path": "private/catalogue/billboard-sarawak-smg-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "building-wall-activation",
+      "name": "Building Wall Activation",
+      "sku": "building-wall-activation",
+      "summary": "Custom-format wall media subject to site rights and approvals.",
+      "description": null,
+      "medium": "Outdoor",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Klang Valley",
+      "audience_label": "Local high-footfall audience",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "building-wall-activation",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "bus-wrap-klang-valley-2025",
+      "name": "Bus Wrap Klang Valley 2025 — Transit OOH",
+      "sku": "bus-wrap-klang-valley-2025",
+      "summary": "Example Russian Language Centre plan; 260k ridership +192k road impressions, 13M monthly reach.",
+      "description": "Bus Wrap proposal (17 pages, Q4 2025). Why mobile works, 67% recall (~8.7M views/mo), creative (clean visuals + contact), Route 170 Gombak–Sentral–Merdeka example with stop lists, tips (best route + longer period), T&Cs (SST, DBP/operator approval, 4-week artwork, 100% prepayment to RA Media Relations).",
+      "medium": "Outdoor",
+      "unit_code": "package",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Bus / RA Media",
+      "location_label": "Klang Valley",
+      "audience_label": "Urban commuters, pedestrians, road users (>400k daily reach)",
+      "specifications": {
+        "formats": [
+          "Bus wrap",
+          "Route-based"
+        ],
+        "price_tiers": [
+          "On request (route + duration)"
+        ],
+        "validity": "Q4 2025 example",
+        "source_file": "BUSWRAP2025 Bus Advertising Wrap (1).pdf (17 pages)",
+        "documents": [
+          {
+            "name": "BUSWRAP2025 Bus Advertising Wrap",
+            "size": 879639,
+            "ext": "pdf",
+            "file": "bus-wrap-klang-valley-2025.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "RA Media"
+      },
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "bus-wrap-klang-valley-2025",
+      "image_path": "assets/ratecards/img/bus-wrap-klang-valley-2025.webp",
+      "documents": [
+        {
+          "name": "BUSWRAP2025 Bus Advertising Wrap",
+          "file": "bus-wrap-klang-valley-2025.pdf",
+          "path": "private/catalogue/bus-wrap-klang-valley-2025.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "cubig-klcc-junction-2026-promo",
+      "name": "Cubig KLCC Junction Welcome Back Promo 2026 — Premium DOOH",
+      "sku": "cubig-klcc-junction-2026-promo",
+      "summary": "1-mo RM150k (value RM220k) or 2-mo RM300k (value RM680k) + 4 bonus panels; confirm by 15 Jul 2026.",
+      "description": "June 2026 newsletter (2 pages, commercial-in-confidence). Upgraded Cubig network: KLCC Junction, Jalan Sultan Ismail, Walkway, Damansara, TRX gantry, Tun Razak. Package 1 save 32%, Package 2 save 56% + value-added 4 panels for 2 months. Campaign must start 15 Jul–1 Aug 2026, balance by 31 Dec 2026.",
+      "medium": "Outdoor",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 150000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Media Prima Omnia (Cubig)",
+      "location_label": "Klang Valley",
+      "audience_label": "KLCC / Sultan Ismail / Damansara / TRX / Tun Razak road audiences",
+      "specifications": {
+        "formats": [
+          "Cubig large format",
+          "Bonus panels"
+        ],
+        "price_tiers": [
+          "RM150k/1mo",
+          "RM300k/2mo"
+        ],
+        "validity": "Confirm by 15 Jul 2026; run 15 Jul–31 Dec 2026",
+        "source_file": "Welcome Back Promo_KLCC Junction.pdf (2 pages)",
+        "documents": [
+          {
+            "name": "Welcome Back Promo_KLCC Junction.pdf",
+            "size": 1240609,
+            "ext": "pdf",
+            "file": "cubig-klcc-junction-2026-promo.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Media Prima Omnia (Cubig)"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "cubig-klcc-junction-2026-promo",
+      "image_path": "assets/ratecards/img/cubig-klcc-junction-2026-promo.webp",
+      "documents": [
+        {
+          "name": "Welcome Back Promo_KLCC Junction.pdf",
+          "file": "cubig-klcc-junction-2026-promo.pdf",
+          "path": "private/catalogue/cubig-klcc-junction-2026-promo.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "demo-creator-1",
+      "name": "Demo Creator 1",
+      "sku": "demo-creator-1",
+      "summary": "Travel and local discovery creator covering destinations and experiences across Malaysia.",
+      "description": "Illustrative creator profile only. Not a real creator or verified partnership.",
+      "medium": "Creators",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Demo Creator 1 — TikTok",
+      "location_label": "Malaysia",
+      "audience_label": "Travel & Local Discovery",
+      "specifications": {},
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": "demo-creator-1",
+      "placement_code": "demo-creator-1-post",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "demo-creator-2",
+      "name": "Demo Creator 2",
+      "sku": "demo-creator-2",
+      "summary": "Food and lifestyle creator focused on everyday dining, recipes and local favourites.",
+      "description": "Illustrative creator profile only. Not a real creator or verified partnership.",
+      "medium": "Creators",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Demo Creator 2 — Instagram",
+      "location_label": "Malaysia",
+      "audience_label": "Food & Lifestyle",
+      "specifications": {},
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": "demo-creator-2",
+      "placement_code": "demo-creator-2-post",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "demo-creator-3",
+      "name": "Demo Creator 3",
+      "sku": "demo-creator-3",
+      "summary": "Technology creator covering productivity tools, devices and practical workflows.",
+      "description": "Illustrative creator profile only. Not a real creator or verified partnership.",
+      "medium": "Creators",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Demo Creator 3 — YouTube",
+      "location_label": "Malaysia",
+      "audience_label": "Technology & Productivity",
+      "specifications": {},
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": "demo-creator-3",
+      "placement_code": "demo-creator-3-post",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "demo-creator-4",
+      "name": "Demo Creator 4",
+      "sku": "demo-creator-4",
+      "summary": "Family and home creator sharing practical ideas for Malaysian households.",
+      "description": "Illustrative creator profile only. Not a real creator or verified partnership.",
+      "medium": "Creators",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Demo Creator 4 — TikTok",
+      "location_label": "Malaysia",
+      "audience_label": "Home & Family",
+      "specifications": {},
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": "demo-creator-4",
+      "placement_code": "demo-creator-4-post",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "digital-video-advertising",
+      "name": "Digital Video Advertising",
+      "sku": "digital-video-advertising",
+      "summary": "Cross-platform video and digital campaign placements.",
+      "description": null,
+      "medium": "Digital",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Digital-first consumers",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "digital-video-advertising",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "drive-time-radio-placement",
+      "name": "Drive-Time Radio Placement",
+      "sku": "drive-time-radio-placement",
+      "summary": "Radio campaigns and audience-focused slots.",
+      "description": null,
+      "medium": "Radio",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Daily commuters",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "drive-time-radio-placement",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "erl-digital-screens-2026",
+      "name": "ERL Digital Screens 2026 — KLIA Ekspres Station & In-Train Network",
+      "sku": "erl-digital-screens-2026",
+      "summary": "Station coverage network RM35k/mo per spot (32 totems); in-train network RM30k/mo per spot (190 screens across 16 trains).",
+      "description": "ERL KLIA Ekspres and KLIA Transit digital network (10 + 9 pages). Quick facts: 6 stations, 18 trains, 57km of track, 7.5M annual ridership, 5am–12am service every 15–30 minutes, 28–38 minutes end to end. Station Coverage Network: 32 x 65-inch digital totems at KL Sentral (18), Putrajaya/Cyberjaya (4), KLIA T1 (6) and KLIA T2 (4); 15-second spots; maximum 8 advertisers; RM35,000 per spot per month. In-Train Network: 190 x 26/27-inch digital screens across 16 trains; 15-second spots; maximum 8 advertisers; RM30,000 per spot per month. Rates exclude 8% SST.",
+      "medium": "Outdoor",
+      "unit_code": "month",
+      "pricing_mode": "indicative",
+      "price_from": 30000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "ERL / KLIA Ekspres",
+      "location_label": "KL Sentral–KLIA corridor",
+      "audience_label": "7.5M annual ERL riders: 58% male, 39% visitors, 58% travel internationally, 36% business travellers",
+      "specifications": {
+        "formats": [
+          "65-inch station digital totems",
+          "26/27-inch in-train screens"
+        ],
+        "price_tiers": [
+          "Station coverage RM35,000/mo per spot",
+          "In-train network RM30,000/mo per spot"
+        ],
+        "validity": "2026",
+        "language": "Malay / English / Chinese",
+        "source_file": "ERL - DIGITAL SCREENS - COVERAGE NETWORK - 2026.pdf (10 pages) + ERL In-Train Network_Digital Screens- 2026.pdf (9 pages)",
+        "documents": [
+          {
+            "name": "ERL Station Coverage Network 2026",
+            "size": 2359797,
+            "ext": "pdf",
+            "file": "erl-station-coverage-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "ERL In-Train Network 2026",
+            "size": 1775470,
+            "ext": "pdf",
+            "file": "erl-in-train-network-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "ERL / KLIA Ekspres"
+      },
+      "terms": null,
+      "media_owner_slug": "klia",
+      "media_owner_name": "KLIA",
+      "creator_slug": null,
+      "placement_code": "erl-digital-screens-2026",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "ERL Station Coverage Network 2026",
+          "file": "erl-station-coverage-2026.pdf",
+          "path": "private/catalogue/erl-station-coverage-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "ERL In-Train Network 2026",
+          "file": "erl-in-train-network-2026.pdf",
+          "path": "private/catalogue/erl-in-train-network-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "fmt-2026-digital-news",
+      "name": "FMT 2026 — Digital News (Free Malaysia Today)",
+      "sku": "fmt-2026-digital-news",
+      "summary": "3.6M followers, 2.26B impressions; lifestyle/editorial from ~RM300, campaigns RM25k–RM105k.",
+      "description": "FMT Media Rate Card 2026 V15 (8 pages). 567M video views, 62M engagements, 6M UV/mo, 91% higher education, 73% M40+T20. Inventory: lifestyle/editorial articles, platforms by language, impressions, RM500–1,000 entry, RM60–105k hero packs. advertise@freemalaysiatoday.com.",
+      "medium": "Digital",
+      "unit_code": "post",
+      "pricing_mode": "indicative",
+      "price_from": 300.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "FMT / Rev Media",
+      "location_label": "Nationwide",
+      "audience_label": "Educated M40/T40, 64% male, high purchase intent (electronics, auto, health)",
+      "specifications": {
+        "formats": [
+          "Lifestyle article",
+          "Editorial article",
+          "Social",
+          "Video"
+        ],
+        "price_tiers": [
+          "Entry RM300–1000",
+          "Hero RM25k–105k"
+        ],
+        "validity": "2026 (V15)",
+        "language": "English / Malay",
+        "source_file": "FMT Media Rate Card 2026 V15.pdf (8 pages)",
+        "documents": [
+          {
+            "name": "FMT Media Rate Card 2026 V15.pdf",
+            "size": 1763407,
+            "ext": "pdf",
+            "file": "fmt-2026-digital-news.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "FMT Media"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "fmt-2026-digital-news",
+      "image_path": "assets/ratecards/img/fmt-2026-digital-news.webp",
+      "documents": [
+        {
+          "name": "FMT Media Rate Card 2026 V15.pdf",
+          "file": "fmt-2026-digital-news.pdf",
+          "path": "private/catalogue/fmt-2026-digital-news.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "hot-fm-zoomerz-on-ground",
+      "name": "Hot FM Zoomerz On-Ground — Radio + Sampling Team",
+      "sku": "hot-fm-zoomerz-on-ground",
+      "summary": "Zoomerz roving team RM1,900/day or RM10,500/week; on-air crosses + digital value ~RM640k/month.",
+      "description": "Hot FM Zoomerz sponsorship: daily crosses Mon–Sat 4x/day, on-air promos 28x/week, crosses 24x/week, station car branding, 960 products sampling, uniform, optional microsite/social (FB/IG RM240k each). Base from 1 Aug 2022, min 1 month continuous, mainly Klang Valley; outstation production extra.",
+      "medium": "Radio",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 1900.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Hot FM / Media Prima Audio",
+      "location_label": "Klang Valley",
+      "audience_label": "Malay youth, on-ground crowds, event footfall",
+      "specifications": {
+        "formats": [
+          "On-air crosses",
+          "Recorded promos",
+          "Station car wrap",
+          "Sampling",
+          "Microsite/social add-ons"
+        ],
+        "price_tiers": [
+          "RM1,900/day",
+          "RM10,500/week",
+          "Media value ~RM640k/mo"
+        ],
+        "validity": "Base Aug 2022, min 1 month",
+        "language": "Malay",
+        "source_file": "RA Media_ Radio On Ground (Hot Zoomerz).pdf (11 pages)",
+        "documents": [
+          {
+            "name": "RA Media_ Radio On Ground",
+            "size": 1396898,
+            "ext": "pdf",
+            "file": "hot-fm-zoomerz-on-ground.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Media Prima Audio (Hot FM)"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "hot-fm-zoomerz-on-ground",
+      "image_path": "assets/ratecards/img/hot-fm-zoomerz-on-ground.webp",
+      "documents": [
+        {
+          "name": "RA Media_ Radio On Ground",
+          "file": "hot-fm-zoomerz-on-ground.pdf",
+          "path": "private/catalogue/hot-fm-zoomerz-on-ground.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "ikim-fm-ramadan-2027",
+      "name": "IKIMfm Ramadan 2027 — Sponsorship & Jingle Packages",
+      "sku": "ikim-fm-ramadan-2027",
+      "summary": "Ramadan 2027: azan and waktu-solat sponsorships from RM2,199, jingle packs RM25k–RM33k, capsules from RM2,634, drama RM27.5k.",
+      "description": "IKIMfm Pakej Istimewa Ramadan 2027 (11 pages). Azan sponsorship: Subuh RM11,768.81, Zohor RM8,404.57, Asar RM11,768.81, Isyak RM5,100.62 (Maghrib booked). Waktu-solat announcements: Subuh RM2,199.42, Zohor and Asar RM5,910.94, Isyak RM7,304.78. Berbuka Puasa RM17,653.21 and Imsak RM8,404.57. Pre-Maghrib jingle RM18,439.19 for the first 10 advertisers. Jingle packs: Basic RM25,078 (90 ROS spots plus 60 bonus, 2 social posts, 1 jingle) and Advance RM33,437 (150 ROS spots plus 90 bonus, 3 social posts, 2 jingles). Capsules: Tafsir al-Quran RM2,633.85, Elak Pembaziran RM7,714.38, 40 Hadis RM4,847.02, Fadhilat Ramadan RM6,419.35. Programme sponsorships: Lembayung al-Quran RM22,974.84, Tazkirah Ramadan RM19,759.95, Tazkirah Maghrib RM13,013.20, Nur Ramadan RM8,954.07, Fadhilat Ramadan English RM25,135.87 and Malay RM36,037.74, Diari Ramadan RM10,054.35. Drama Ramadan RM27,540; Takbir Raya RM5,670; Takbir production and broadcast RM25,000–35,000.",
+      "medium": "Radio",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 2199.42,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "IKIMfm",
+      "location_label": "Nationwide (Peninsular Malaysia, Sabah & Sarawak)",
+      "audience_label": "Malay Muslim listeners around prayer times and Ramadan programming",
+      "specifications": {
+        "formats": [
+          "Azan sponsorship",
+          "Waktu solat announcement",
+          "Jingle package",
+          "Ramadan capsule",
+          "Programme sponsorship",
+          "Drama",
+          "Takbir Raya"
+        ],
+        "price_tiers": [
+          "Waktu solat from RM2,199.42",
+          "Jingle Basic RM25,078",
+          "Jingle Advance RM33,437",
+          "Drama RM27,540"
+        ],
+        "validity": "Ramadan 2027",
+        "language": "Malay",
+        "source_file": "Pakej Media Istimewa Ramadan IKIM_2027.pdf (11 pages)",
+        "documents": [
+          {
+            "name": "Pakej Media Istimewa Ramadan IKIM 2027",
+            "size": 5607060,
+            "ext": "pdf",
+            "file": "ikim-fm-ramadan-2027.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "IKIMfm"
+      },
+      "terms": null,
+      "media_owner_slug": "ikimfm",
+      "media_owner_name": "IKIMfm",
+      "creator_slug": null,
+      "placement_code": "ikim-fm-ramadan-2027",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Pakej Media Istimewa Ramadan IKIM 2027",
+          "file": "ikim-fm-ramadan-2027.pdf",
+          "path": "private/catalogue/ikim-fm-ramadan-2027.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "imedia-blitz-sale-2026",
+      "name": "iMedia Year-End Blitz Sale 2026 — Article / Social / Video Packs",
+      "sku": "imedia-blitz-sale-2026",
+      "summary": "Allowed promo sheet only: 5 articles RM60k, 5 social RM50k, 5 videos RM75k (50% sale).",
+      "description": "Year-End Sale 2026 promo sheet, hosted in this app. 5x Article Blitz RM60k (value RM295k, 60k reads, 600k reach with FB/IG/X sync); 5x Social Blitz RM50k (value RM220k, 750k reach, shoots included); 5x Video Blitz RM75k (value RM400k, 500k views, event coverage). Synced across BM/CHI/ENG publishers.",
+      "medium": "Digital",
+      "unit_code": "campaign",
+      "pricing_mode": "indicative",
+      "price_from": 50000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "iMedia / Rev Media",
+      "location_label": "Nationwide",
+      "audience_label": "BM/CHI/ENG publisher audiences across social + web",
+      "specifications": {
+        "formats": [
+          "Articles",
+          "Social postings",
+          "Event videos",
+          "Photoshoot"
+        ],
+        "price_tiers": [
+          "Articles 5x RM60k",
+          "Social 5x RM50k",
+          "Video 5x RM75k"
+        ],
+        "validity": "Blitz YES 2026 sale",
+        "source_file": "iMedia Year-End Sale 2026 promo sheet (JPG)",
+        "documents": [
+          {
+            "name": "PHOTO-2026-11-02-12-26-05.jpg",
+            "size": 163511,
+            "ext": "jpg",
+            "file": "imedia-blitz-sale-2026.jpg",
+            "kind": "image"
+          }
+        ],
+        "media_owner": "iMedia"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "imedia-blitz-sale-2026",
+      "image_path": "assets/ratecards/img/imedia-blitz-sale-2026.webp",
+      "documents": [
+        {
+          "name": "PHOTO-2026-11-02-12-26-05.jpg",
+          "file": "imedia-blitz-sale-2026.jpg",
+          "path": "private/catalogue/imedia-blitz-sale-2026.jpg",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "slug": "karnival-jom-heboh-2026-venue",
+      "name": "Karnival Jom Heboh 2026 — Venue & Carnival Rates (Media Prima)",
+      "sku": "karnival-jom-heboh-2026-venue",
+      "summary": "Longest-running outdoor carnival since 2003; Arabian booths 10x10 to 20x80 Platinum/Gold/Silver.",
+      "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
+      "medium": "Outdoor",
+      "unit_code": "sponsorship package",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Media Prima (Jom Heboh)",
+      "location_label": "Nationwide",
+      "audience_label": "Family carnival crowds 330k/location, 1.2B social reach",
+      "specifications": {
+        "formats": [
+          "Arabian booths",
+          "Concert",
+          "Family zone",
+          "Food zone",
+          "Direct sales"
+        ],
+        "validity": "Apr–Nov 2026, 5 locations",
+        "source_file": "Kjh venue & rates.pdf (8 pages)",
+        "documents": [
+          {
+            "name": "Kjh venue & rates.pdf",
+            "size": 1457192,
+            "ext": "pdf",
+            "file": "karnival-jom-heboh-2026-venue.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Media Prima (Jom Heboh)"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "karnival-jom-heboh-2026-venue",
+      "image_path": "assets/ratecards/img/karnival-jom-heboh-2026-venue.webp",
+      "documents": [
+        {
+          "name": "Kjh venue & rates.pdf",
+          "file": "karnival-jom-heboh-2026-venue.pdf",
+          "path": "private/catalogue/karnival-jom-heboh-2026-venue.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "kl-sentral-station-sponsorship-2024",
+      "name": "KL Sentral Station Sponsorship 2024 — Transit Hub",
+      "sku": "kl-sentral-station-sponsorship-2024",
+      "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (request rates).",
+      "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Rates in scanned tables — view original.",
+      "medium": "Outdoor",
+      "unit_code": "production",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Big Tree / KL Sentral",
+      "location_label": "Klang Valley",
+      "audience_label": "Kelana Jaya Line 200k/day + Monorail 50k/day interchange",
+      "specifications": {
+        "formats": [
+          "Station sponsorship",
+          "East/West wings"
+        ],
+        "validity": "2024",
+        "source_file": "KL Sentral East & West Wing Station Sponsorship 2024.pdf (19 pages)",
+        "documents": [
+          {
+            "name": "KL Sentral East & West Wing Station Sponsorship 2024.pdf",
+            "size": 1957563,
+            "ext": "pdf",
+            "file": "kl-sentral-station-sponsorship-2024.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Big Tree"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "kl-sentral-station-sponsorship-2024",
+      "image_path": "assets/ratecards/img/kl-sentral-station-sponsorship-2024.webp",
+      "documents": [
+        {
+          "name": "KL Sentral East & West Wing Station Sponsorship 2024.pdf",
+          "file": "kl-sentral-station-sponsorship-2024.pdf",
+          "path": "private/catalogue/kl-sentral-station-sponsorship-2024.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "klcc-snorkels-2024-big-tree",
+      "name": "KLCC Snorkels 2024 — Iconic Landmark Lightboxes (Big Tree)",
+      "sku": "klcc-snorkels-2024-big-tree",
+      "summary": "‘O’ + ‘D’ snorkels up to 535 sq ft/panel; full domination RM982k/6 mo, RM1.836M/12 mo.",
+      "description": "Big Tree deck (14 pages). Set of curving lightboxes at KLCC base. Surround: Petronas HQ, Maxis, Suria KLCC, Avenue K, Mandarin/Four Seasons/Grand Hyatt, Tropicana/Four Seasons residences. Packages: 4x O +4x D, 12-mo media RM1.5M + production/lighting/SST = RM1.836M; special RM860k media = RM1.121M; 6-mo RM982k. Availability from 01-Jan-25.",
+      "medium": "Outdoor",
+      "unit_code": "package (12 months)",
+      "pricing_mode": "indicative",
+      "price_from": 750000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Big Tree / KLCC",
+      "location_label": "Klang Valley",
+      "audience_label": "Affluent shoppers, professionals, tourists at Petronas Twin Towers",
+      "specifications": {
+        "formats": [
+          "‘O’ snorkel 3 lightboxes",
+          "‘D’ snorkel 2 lightboxes",
+          "Domination"
+        ],
+        "price_tiers": [
+          "12-mo RM1.5M media",
+          "6-mo RM750k media"
+        ],
+        "validity": "2024 deck, avail from 01-Jan-25",
+        "source_file": "KLCC Snorkels 2024.pdf (14 pages)",
+        "documents": [
+          {
+            "name": "KLCC Snorkels 2024.pdf",
+            "size": 3213708,
+            "ext": "pdf",
+            "file": "klcc-snorkels-2024-big-tree.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Big Tree"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "klcc-snorkels-2024-big-tree",
+      "image_path": "assets/ratecards/img/klcc-snorkels-2024-big-tree.webp",
+      "documents": [
+        {
+          "name": "KLCC Snorkels 2024.pdf",
+          "file": "klcc-snorkels-2024-big-tree.pdf",
+          "path": "private/catalogue/klcc-snorkels-2024-big-tree.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "klia-t1-airport-2024-premium",
+      "name": "KLIA Terminal 1 2026 — Static & Digital Airport Media",
+      "sku": "klia-t1-airport-2024-premium",
+      "summary": "2026 static from RM150k/yr; Arrivals Impact Duo RM1.25M; digital from RM30k/mo, Aerostation RM120k/mo, Departures Branding Zone RM150k/mo.",
+      "description": "KLIA Terminal 1 2026 static and digital decks (56 + 62 pages). Passenger traffic ranges from 2.9M to 3.5M per month (Sep 2025–Sep 2026). Static: Arrivals BDC Impact RM150,000/year; Arrivals Impact Duo RM1.25M; Arrivals Impact Icons RM1.2M–1.25M; Baggage Carousel Flaps RM500,000; Contact Pier Icon RM900,000; Contact Pier Gates RM1.5M; Departures Immigration Domination RM1.875M; Satellite Pier Domination RM2.1M; Transit Train Station Domination RM2M; Transit Train Sponsorship RM3.5M; trolleys RM12,000/month. Digital: Screens & Charging Network from RM30,000/month (RM950,000/year); Departures Network RM60,000/month; Satellite Impact Network RM60,000/month; Arrivals Impact Network RM75,000/month; Aerostation, Arrivals Spectacular, Digital Dream and Duty-Free Spectacular RM100,000–120,000/month; Departures Branding Zone RM150,000/month. Rates exclude 8% SST; production and lighting charges apply.",
+      "medium": "Outdoor",
+      "unit_code": "month",
+      "pricing_mode": "indicative",
+      "price_from": 30000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "KLIA T1 / RA Media",
+      "location_label": "Sepang (KLIA T1)",
+      "audience_label": "International and domestic air travellers; 2.9M–3.5M passengers per month (Sep 2025–Sep 2026)",
+      "specifications": {
+        "formats": [
+          "Static lightboxes",
+          "Wall and glass wraps",
+          "Baggage carousel",
+          "Digital LED and portrait networks",
+          "Charging stations",
+          "Trolleys",
+          "Transit train sponsorship"
+        ],
+        "price_tiers": [
+          "Digital charging network RM30,000/mo",
+          "Departures Network RM60,000/mo",
+          "Aerostation RM120,000/mo",
+          "Static BDC Impact RM150,000/yr",
+          "Arrivals Impact Duo RM1.25M/yr",
+          "Transit train sponsorship RM3.5M/yr"
+        ],
+        "validity": "2026 decks",
+        "source_file": "KLIA Terminal 1_Static_2026.pdf (56 pages) + KLIA T1 & T2_ALL Digital_2026.pdf (62 pages)",
+        "documents": [
+          {
+            "name": "KLIA Terminal 1 Static 2026",
+            "size": 16207473,
+            "ext": "pdf",
+            "file": "klia-t1-static-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "KLIA T1 & T2 Digital 2026",
+            "size": 13825621,
+            "ext": "pdf",
+            "file": "klia-t1-t2-digital-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "K1 Digital Arrivals Network walkthrough",
+            "size": 13825782,
+            "ext": "mp4",
+            "file": "video/klia-t1-walkthrough.mp4",
+            "kind": "video",
+            "poster": "assets/ratecards/video/klia-t1-walkthrough.jpg"
+          }
+        ],
+        "media_owner": "RA Media (KLIA T1)"
+      },
+      "terms": null,
+      "media_owner_slug": "klia",
+      "media_owner_name": "KLIA",
+      "creator_slug": null,
+      "placement_code": "klia-t1-airport-2024-premium",
+      "image_path": "assets/ratecards/img/klia-t1-airport-2024-premium.webp",
+      "documents": [
+        {
+          "name": "KLIA Terminal 1 Static 2026",
+          "file": "klia-t1-static-2026.pdf",
+          "path": "private/catalogue/klia-t1-static-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "KLIA T1 & T2 Digital 2026",
+          "file": "klia-t1-t2-digital-2026.pdf",
+          "path": "private/catalogue/klia-t1-t2-digital-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "K1 Digital Arrivals Network walkthrough",
+          "file": "klia-t1-walkthrough.mp4",
+          "path": "private/catalogue/klia-t1-walkthrough.mp4",
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "slug": "klia-t2-airport-2024",
+      "name": "KLIA Terminal 2 2026 — Static & Digital Airport Media",
+      "sku": "klia-t2-airport-2024",
+      "summary": "2026 static from RM130k/yr; Arrivals Duo RM900k; digital from RM30k/mo, Baggage Network RM32.8k/mo, Digital Domination RM60.5k/mo.",
+      "description": "KLIA Terminal 2 2026 static and digital decks (31 + 62 pages). Static: Domestic Departures Impact RM130,000/year; Public Concourse Departures Impact RM130,000; Foreign Worker Impact RM150,000; Satellite Impact Duo RM180,000; Domestic Wall Domination RM180,000; Skybridge Impact Duo RM200,000 per pair; Domestic Departures Icon RM300,000; Arrivals Impact Duo RM400,000; Baggage Carousel Flaps RM400,000; International Arrivals Icon RM450,000; Arrivals Duo RM900,000; Arrivals Icons RM1M; Satellite Void RM1.5M; trolleys RM12,000/month. Digital: Total Coverage Network RM30,000/month; Baggage Network RM32,800/month; Digital Domination RM60,500/month; Digital Dream RM80,000. Rates exclude 8% SST; production and lighting charges apply.",
+      "medium": "Outdoor",
+      "unit_code": "month",
+      "pricing_mode": "indicative",
+      "price_from": 30000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "KLIA T2 / RA Media",
+      "location_label": "Sepang (KLIA2)",
+      "audience_label": "International and domestic air travellers at KLIA Terminal 2",
+      "specifications": {
+        "formats": [
+          "Static lightboxes",
+          "Wall stickers and murals",
+          "Skybridge and satellite sites",
+          "Digital LCD/LED networks",
+          "Trolleys"
+        ],
+        "price_tiers": [
+          "Digital Total Coverage RM30,000/mo",
+          "Baggage Network RM32,800/mo",
+          "Digital Domination RM60,500/mo",
+          "Static departures impact RM130,000/yr",
+          "Arrivals Duo RM900,000/yr",
+          "Satellite Void RM1.5M/yr"
+        ],
+        "validity": "2026 decks",
+        "source_file": "KLIA Terminal 2_Static_2026.pdf (31 pages) + KLIA T1 & T2_ALL Digital_2026.pdf (62 pages)",
+        "documents": [
+          {
+            "name": "KLIA Terminal 2 Static 2026",
+            "size": 6371799,
+            "ext": "pdf",
+            "file": "klia-t2-static-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "KLIA T1 & T2 Digital 2026",
+            "size": 13825621,
+            "ext": "pdf",
+            "file": "klia-t1-t2-digital-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "K2 Total Coverage Network walkthrough",
+            "size": 5358966,
+            "ext": "mp4",
+            "file": "video/klia-t2-walkthrough.mp4",
+            "kind": "video",
+            "poster": "assets/ratecards/video/klia-t2-walkthrough.jpg"
+          }
+        ],
+        "media_owner": "RA Media (KLIA T2)"
+      },
+      "terms": null,
+      "media_owner_slug": "klia",
+      "media_owner_name": "KLIA",
+      "creator_slug": null,
+      "placement_code": "klia-t2-airport-2024",
+      "image_path": "assets/ratecards/img/klia-t2-airport-2024.webp",
+      "documents": [
+        {
+          "name": "KLIA Terminal 2 Static 2026",
+          "file": "klia-t2-static-2026.pdf",
+          "path": "private/catalogue/klia-t2-static-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "KLIA T1 & T2 Digital 2026",
+          "file": "klia-t1-t2-digital-2026.pdf",
+          "path": "private/catalogue/klia-t1-t2-digital-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "K2 Total Coverage Network walkthrough",
+          "file": "klia-t2-walkthrough.mp4",
+          "path": "private/catalogue/klia-t2-walkthrough.mp4",
+          "kind": "video"
+        }
+      ]
+    },
+    {
+      "slug": "konsert-kita-suara-anti-buli-2026",
+      "name": "Konsert Kita Suara Anti Buli 2026 — Platinum Sponsorship",
+      "sku": "konsert-kita-suara-anti-buli-2026",
+      "summary": "Platinum RM300k: UiTM Shah Alam Mar/Apr 2026, Bella Astillah, Nadeera, Alpha + theme song & contests.",
+      "description": "Official sponsorship deck (9 pages, organised by Nusavue). 2-hour musical movement vs bullying: empathy/resilience, e-voucher per ticket, Contest x Konsert, artist photoshoot, meet & greet. Line-up Alpha, Bella Astillah (TikTok Celebrity 2024), Nadeera (Big Stage S5). Mixed seated 1,600 or 3,000 mix, 3–5M impressions. Brand as champion + viral content + nationwide goodwill.",
+      "medium": "Outdoor",
+      "unit_code": "sponsorship package",
+      "pricing_mode": "indicative",
+      "price_from": 300000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Nusavue / Concert",
+      "location_label": "Klang Valley",
+      "audience_label": "Gen Z + Millennials, CSR and music fans (1,600–3,000 pax + 3–5M digital)",
+      "specifications": {
+        "formats": [
+          "Platinum sponsorship",
+          "Theme song",
+          "E-voucher",
+          "Meet & greet"
+        ],
+        "price_tiers": [
+          "Platinum RM300k"
+        ],
+        "validity": "Mar/Apr 2026, UiTM Shah Alam",
+        "source_file": "2026BRAND-PLATINUM SPONSORSHIP - KONSERT KITA SUARA ANTI BULI (2).pdf (9 pages)",
+        "documents": [
+          {
+            "name": "2026BRAND-PLATINUM SPONSORSHIP - KONSERT KITA SUARA ANTI BULI",
+            "size": 504959,
+            "ext": "pdf",
+            "file": "konsert-kita-suara-anti-buli-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Nusavue"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "konsert-kita-suara-anti-buli-2026",
+      "image_path": "assets/ratecards/img/konsert-kita-suara-anti-buli-2026.webp",
+      "documents": [
+        {
+          "name": "2026BRAND-PLATINUM SPONSORSHIP - KONSERT KITA SUARA ANTI BULI",
+          "file": "konsert-kita-suara-anti-buli-2026.pdf",
+          "path": "private/catalogue/konsert-kita-suara-anti-buli-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "ktm-train-kl-sentral-ads-2026",
+      "name": "KTM Train + KL Sentral Ads Space 2026 — Rail Transit",
+      "sku": "ktm-train-kl-sentral-ads-2026",
+      "summary": "Wraparound RM130k/yr/train, panels RM120–RM1,000, KL Sentral banners RM200–RM5k, audio RM800–RM3k.",
+      "description": "5-page rate sheet. EMU: wraparound 1 set (15 sets) RM130k/yr; overhead 24 panels RM120/panel/mo (RM2.5k/train); poster 6 panels RM1k/train (20x30in); door 18 panels RM500/panel/mo. KL Sentral: giant wallbanner 6 units RM5k/panel/mo (Gates A–D), ticket gate wrap RM300, wallbanner RM1k, glass RM500, pillar RM500, bunting RM200–300, ladies waiting RM60k/6mo or RM100k/12mo. Onboard audio 15–30s 3–5 loops: 1 train RM800/1.4k/2k (1/2/3 mo), 2 trains RM1.5k/2.2k/3k.",
+      "medium": "Outdoor",
+      "unit_code": "per panel per month",
+      "pricing_mode": "indicative",
+      "price_from": 120.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "KTM / KL Sentral",
+      "location_label": "Klang Valley + Ipoh–Butterworth–Padang Besar",
+      "audience_label": "Rail commuters and KL Sentral interchange crowds",
+      "specifications": {
+        "formats": [
+          "Train wraparound",
+          "Panels/posters/doors",
+          "Station banners/pillars/bunting",
+          "Onboard audio"
+        ],
+        "price_tiers": [
+          "Wraparound RM130k/yr",
+          "Panels from RM120/mo",
+          "Audio RM800–3k"
+        ],
+        "validity": "2026",
+        "source_file": "TRAIN ADS SPACE -2026.pdf (5 pages)",
+        "documents": [
+          {
+            "name": "TRAIN ADS SPACE -2026.pdf",
+            "size": 924898,
+            "ext": "pdf",
+            "file": "ktm-train-kl-sentral-ads-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "KTM / KL Sentral"
+      },
+      "terms": null,
+      "media_owner_slug": "ktm",
+      "media_owner_name": "KTM Advertising Space",
+      "creator_slug": null,
+      "placement_code": "ktm-train-kl-sentral-ads-2026",
+      "image_path": "assets/ratecards/img/ktm-train-kl-sentral-ads-2026.webp",
+      "documents": [
+        {
+          "name": "TRAIN ADS SPACE -2026.pdf",
+          "file": "ktm-train-kl-sentral-ads-2026.pdf",
+          "path": "private/catalogue/ktm-train-kl-sentral-ads-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "kuala-lumpur-led-billboard",
+      "name": "Kuala Lumpur LED Billboard",
+      "sku": "kuala-lumpur-led-billboard",
+      "summary": "High-impact digital roadside creative format.",
+      "description": null,
+      "medium": "Outdoor",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Klang Valley",
+      "audience_label": "Urban commuters",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "kuala-lumpur-led-billboard",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "lamppost-digital-bunting-kl-2026",
+      "name": "Street Lamppost Digital Bunting KL City 2026",
+      "sku": "lamppost-digital-bunting-kl-2026",
+      "summary": "10+8 panels Jln Tun Razak/Duta/Cheras; 58k–117k exposures/slot, 15s spots 6:30am–12:30am.",
+      "description": "eBunting package (6 pages). Sites: Tun Razak–Intermark (8+8, 86.4k/mo), Duta–Publika (10+5, 117.6k/mo), Cheras–EkoCheras A/B (5+5 each, 58.8k/mo). 15s spots, 18 hrs, max 10+2 civic, min 360 exposures/day/panel. DBP fee incl unless stated; extra visuals RM30 (2 amendments), content mgmt FOC 1/mo then RM50/location.",
+      "medium": "Outdoor",
+      "unit_code": "per month",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "DBP / KL City",
+      "location_label": "Klang Valley",
+      "audience_label": "CBD drivers and pedestrians (256k–350k daily traffic)",
+      "specifications": {
+        "formats": [
+          "Lamppost LED bunting",
+          "15s slots"
+        ],
+        "price_tiers": [
+          "On request; fees RM30–50 noted"
+        ],
+        "validity": "2026",
+        "source_file": "LampPostScreenKL2026_eBuntingPackage-KLCityCentre.pdf (6 pages)",
+        "documents": [
+          {
+            "name": "LampPostScreenKL2026_eBuntingPackage-KLCityCentre.pdf",
+            "size": 835137,
+            "ext": "pdf",
+            "file": "lamppost-digital-bunting-kl-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "DBP / Operator"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "lamppost-digital-bunting-kl-2026",
+      "image_path": "assets/ratecards/img/lamppost-digital-bunting-kl-2026.webp",
+      "documents": [
+        {
+          "name": "LampPostScreenKL2026_eBuntingPackage-KLCityCentre.pdf",
+          "file": "lamppost-digital-bunting-kl-2026.pdf",
+          "path": "private/catalogue/lamppost-digital-bunting-kl-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "malaysiakini-kinitv-event-coverage-2026-2027",
+      "name": "Malaysiakini & KiniTV Event Coverage 2026/27 — Article, Video & Bundle",
+      "sku": "malaysiakini-kinitv-event-coverage-2026-2027",
+      "summary": "Event coverage: article RM12,000, video RM25,000, article + video bundle RM30,000.",
+      "description": "Malaysiakini and KiniTV event coverage packages for 2026/27 (8 pages). Article: ~1,000-word event coverage and media reporting in EN/BM/CN, published on the Malaysiakini desktop and mobile homepage announcement section for one day plus three social posts (FB, X, IG), target 2,000 reads — RM12,000. Video: ~2-minute event coverage video with scriptwriting, shooting, editing, voiceover and subtitles, published across Malaysiakini and KiniTV social channels plus one branded capsule insertion in KiniTV Bulletin News, target 30,000 views — RM25,000. Article plus video bundle RM30,000.",
+      "medium": "Digital",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 12000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Malaysiakini / KiniTV",
+      "location_label": "Nationwide",
+      "audience_label": "Malaysiakini and KiniTV news audiences across web and social",
+      "specifications": {
+        "formats": [
+          "Event coverage article",
+          "Event coverage video",
+          "Article + video bundle",
+          "KiniTV branded capsule"
+        ],
+        "price_tiers": [
+          "Article RM12,000",
+          "Video RM25,000",
+          "Bundle RM30,000"
+        ],
+        "validity": "2026/2027",
+        "language": "English / Malay / Chinese",
+        "source_file": "Event Coverage (Video, Article) by Mkini & KiniTV (Oct 2026_2027).pdf (8 pages)",
+        "documents": [
+          {
+            "name": "Event Coverage by Mkini & KiniTV 2026/2027",
+            "size": 2554724,
+            "ext": "pdf",
+            "file": "malaysiakini-kinitv-event-coverage-2026-2027.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "FG Media (Malaysiakini / KiniTV)"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "malaysiakini-kinitv-event-coverage-2026-2027",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Event Coverage by Mkini & KiniTV 2026/2027",
+          "file": "malaysiakini-kinitv-event-coverage-2026-2027.pdf",
+          "path": "private/catalogue/malaysiakini-kinitv-event-coverage-2026-2027.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "malaysiakini-media-kit-2024",
+      "name": "Malaysiakini Media Kit 2024 — Digital, Content & Campaign Packages",
+      "sku": "malaysiakini-media-kit-2024",
+      "summary": "Display CPM RM30–40, branded content RM2.5k/day or RM15k/week, video/talkshow RM45k, carousel RM15k, EDM RM10k–15k, survey RM40k–120k.",
+      "description": "Malaysiakini media kit (45 pages, 2024 edition, audience data from December 2023). Desktop and mobile display CPM RM30–40; site takeover RM40; branded content RM15,000/week or RM2,500/day. Packages: branded video RM45,000 (2-minute full video plus short reel, 10 posts, 500k impressions); interactive quiz/visual content RM45,000; carousel/poll RM15,000; live talkshow RM45,000 (30 minutes across four channels, 10 posts, 500k impressions); EDM RM10,000 non-targeted or RM15,000 segment-targeted; survey RM40,000 for 2,000 respondents or RM120,000 for 8,000. Languages EN/BM/CN (Tamil for selected survey work). Rates exclude 6% SST where stated.",
+      "medium": "Digital",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 2500.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Malaysiakini / FG Media",
+      "location_label": "Nationwide",
+      "audience_label": "Malaysian news readers: ~5m monthly users, 50m pageviews, 9.1m social followers",
+      "specifications": {
+        "formats": [
+          "Display CPM",
+          "Branded content",
+          "Branded video",
+          "Interactive content",
+          "Carousel/poll",
+          "Live talkshow",
+          "EDM",
+          "Survey"
+        ],
+        "price_tiers": [
+          "Display CPM RM30–40",
+          "Branded content RM2,500/day",
+          "EDM RM10,000",
+          "Carousel RM15,000",
+          "Video/talkshow RM45,000",
+          "Survey RM40,000–120,000"
+        ],
+        "validity": "2024 media kit; audience data Dec 2023",
+        "language": "English / Malay / Chinese / Tamil",
+        "source_file": "2024 Malaysiakini Media Kit (as of 20 Feb 2024).pdf (45 pages)",
+        "documents": [
+          {
+            "name": "2024 Malaysiakini Media Kit",
+            "size": 10466691,
+            "ext": "pdf",
+            "file": "malaysiakini-media-kit-2024.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "FG Media (Malaysiakini)"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "malaysiakini-media-kit-2024",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "2024 Malaysiakini Media Kit",
+          "file": "malaysiakini-media-kit-2024.pdf",
+          "path": "private/catalogue/malaysiakini-media-kit-2024.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "media-prima-audio-trade-show-2025",
+      "name": "Media Prima Audio Trade Show 2025 — Radio Packages",
+      "sku": "media-prima-audio-trade-show-2025",
+      "summary": "30-second radio packages from 1 to 26 weeks: Hot FM RM27k–RM468k, Fly/eight FM RM14k–RM182k, Molek RM6.5k–RM91k, Kool 101 RM9k–RM104k; Sabah/Sarawak RM11.5k–RM195k.",
+      "description": "Media Prima Audio trade-show 2025 booking form covering Hot FM, Kool 101, Molek FM, Fly FM, eight FM and Kool 101 Sabah/Sarawak. All packages use 30-second commercials with 70/280/910/1,820 spots over 1/4/13/26 weeks. Hot FM RM27,000–468,000; Kool 101 RM9,000–104,000; Molek FM RM6,500–91,000; Fly FM and eight FM RM14,000–182,000; Kool 101 Sabah RM12,500–195,000; Kool 101 Sarawak RM11,500–176,800. Four-week packages include commercial production and VO talent; 13- and 26-week packages add social videos, video production and AI jingle production (Sabah/Sarawak exclude AI jingle). Bookings valid until 31 Dec 2025 with utilisation by 30 Jun 2026. Production buyout RM1,550; jingle buyout RM10,000 per version. Malay-station blackout 16 Feb–29 Mar 2026; Sabah/Sarawak blackout 1 May–30 Jun 2026. Rates exclude 8% SST.",
+      "medium": "Radio",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 6500.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Media Prima Audio (Hot FM / Fly FM / Molek FM / eight FM / Kool 101)",
+      "location_label": "Peninsular Malaysia, Sabah & Sarawak",
+      "audience_label": "Malay, Chinese, English and East Malaysian radio listeners",
+      "specifications": {
+        "formats": [
+          "30s radio commercial packages",
+          "Commercial production",
+          "VO talent",
+          "Social video",
+          "Video production",
+          "AI jingle"
+        ],
+        "price_tiers": [
+          "Molek 1-week RM6,500",
+          "Kool 101 1-week RM9,000",
+          "Fly/eight FM 1-week RM14,000",
+          "Hot FM 1-week RM27,000"
+        ],
+        "validity": "Book by 31 Dec 2025; utilise by 30 Jun 2026",
+        "language": "Malay / Chinese / English",
+        "source_file": "MPA Form 1.2.pdf (1 page)",
+        "documents": [
+          {
+            "name": "Media Prima Audio Trade Show 2025 Booking Form",
+            "size": 1001044,
+            "ext": "pdf",
+            "file": "media-prima-audio-trade-show-2025.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Media Prima Omnia / Media Prima Audio"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "media-prima-audio-trade-show-2025",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Media Prima Audio Trade Show 2025 Booking Form",
+          "file": "media-prima-audio-trade-show-2025.pdf",
+          "path": "private/catalogue/media-prima-audio-trade-show-2025.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "mobile-truck-activation-life-events",
+      "name": "3D Mobile Truck Activation + Life Events",
+      "sku": "mobile-truck-activation-life-events",
+      "summary": "Raptor truck + driver + 2 promoters: RM18k/2 hr or RM24k/5 hr with sampling/photo ops.",
+      "description": "Activation proposal (6 pages). 3D head-turning creative, flexible stops (malls, bazaars, campuses), coffee/sampling, brochure/photo ops. Excludes venue licence/parking. Same T&Cs as bus: SST, DBP approval, 4–6 week artwork, 100% prepayment to RA Media Relations.",
+      "medium": "Outdoor",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 18000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "RA Media (Raptor Truck)",
+      "location_label": "Klang Valley",
+      "audience_label": "High-traffic commercial, office, campus and bazaar crowds",
+      "specifications": {
+        "formats": [
+          "3D truck",
+          "Promoters",
+          "Sampling"
+        ],
+        "price_tiers": [
+          "RM18k/2hr",
+          "RM24k/5hr"
+        ],
+        "validity": "Per activation",
+        "source_file": "MOBILETruckAdvertising + Life Events (1).pdf (6 pages)",
+        "documents": [
+          {
+            "name": "MOBILETruckAdvertising + Life Events",
+            "size": 205750,
+            "ext": "pdf",
+            "file": "mobile-truck-activation-life-events.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "RA Media"
+      },
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "mobile-truck-activation-life-events",
+      "image_path": "assets/ratecards/img/mobile-truck-activation-life-events.webp",
+      "documents": [
+        {
+          "name": "MOBILETruckAdvertising + Life Events",
+          "file": "mobile-truck-activation-life-events.pdf",
+          "path": "private/catalogue/mobile-truck-activation-life-events.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "national-tv-brand-feature",
+      "name": "National TV Brand Feature",
+      "sku": "national-tv-brand-feature",
+      "summary": "Brand storytelling and broadcast feature opportunities.",
+      "description": null,
+      "medium": "TV & Broadcast",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Mass-market households",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "national-tv-brand-feature",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "niche-creator-campaign",
+      "name": "Niche Creator Campaign",
+      "sku": "niche-creator-campaign",
+      "summary": "Creator-led storytelling matched to audience interests.",
+      "description": null,
+      "medium": "Creators",
+      "unit_code": "post",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Targeted interest communities",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "niche-creator-campaign",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "omnia-content-terhangat-2026",
+      "name": "Media Prima Omnia Content Terhangat 2026 — TV Campaign Planner",
+      "sku": "omnia-content-terhangat-2026",
+      "summary": "Bronze RM200k (3 mo) to Platinum RM800k (12 mo): TV3/8TV spots, Melodi/WHI, drama and news integration.",
+      "description": "Content Terhangat brochure (24 pages). Four tiers: 200/350/500/800k for 3/6/9/12 months + event bonus RM20–160k. Includes TV3 or 8TV 15s spots, social video posts, Muzik Muzik/Melodi/WHI integration, night/morning drama sponsorship (13 eps), Buletin/news coverage. Excludes 8% SST, tailored by industry (beauty, F&B etc.).",
+      "medium": "TV & Broadcast",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 200000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Media Prima Omnia (TV3 / 8TV)",
+      "location_label": "Nationwide",
+      "audience_label": "Malay and Chinese mass TV + social audiences",
+      "specifications": {
+        "formats": [
+          "TV3/8TV 15s spots",
+          "Social video",
+          "Melodi/WHI/Muzik integration",
+          "Drama sponsorship",
+          "News coverage"
+        ],
+        "price_tiers": [
+          "RM200k/3mo",
+          "RM350k/6mo",
+          "RM500k/9mo",
+          "RM800k/12mo"
+        ],
+        "validity": "2026 planner",
+        "language": "Malay / Chinese",
+        "source_file": "Omnia25 Content Terhangat Brochure (LR) (1).pdf (24 pages)",
+        "documents": [
+          {
+            "name": "Omnia25 Content Terhangat Brochure",
+            "size": 1193792,
+            "ext": "pdf",
+            "file": "omnia-content-terhangat-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "rate_card_view": "partials.ratecards.omnia-content-terhangat",
+        "media_owner": "Media Prima Omnia"
+      },
+      "terms": null,
+      "media_owner_slug": "media-prima",
+      "media_owner_name": "Media Prima Berhad",
+      "creator_slug": null,
+      "placement_code": "omnia-content-terhangat-2026",
+      "image_path": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "documents": [
+        {
+          "name": "Omnia25 Content Terhangat Brochure",
+          "file": "omnia-content-terhangat-2026.pdf",
+          "path": "private/catalogue/omnia-content-terhangat-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "podcast-brand-integration",
+      "name": "Podcast Brand Integration",
+      "sku": "podcast-brand-integration",
+      "summary": "Host-led conversations and sponsorship opportunities.",
+      "description": null,
+      "medium": "Podcast",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Focused interest groups",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "podcast-brand-integration",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "podcast-utama-buletin-tv3",
+      "name": "Podcast Utama x Buletin TV3 — Video Podcast",
+      "sku": "podcast-utama-buletin-tv3",
+      "summary": "Debut Dec 2024, 181k views, 13:11 avg; packages RM69k–RM147k with Buletin YouTube (2.1M subs).",
+      "description": "Podcast Utama deck (18 pages). 39 min avg daily podcast listening, 9.5M social fans, 323.6M video views, B40/M40/T40 split. Extension of Buletin TV3: relaxed in-depth conversations, previous eps 24–118k views. Packages + FAQs/timeline, 2.1M YouTube subs (+10.5%).",
+      "medium": "Podcast",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 69660.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "TV3 / Buletin TV3",
+      "location_label": "Nationwide",
+      "audience_label": "25–44 news vodcast viewers (84.9% male, mobile-first)",
+      "specifications": {
+        "formats": [
+          "Video podcast",
+          "YouTube",
+          "Social clips"
+        ],
+        "price_tiers": [
+          "RM69,660–147,420"
+        ],
+        "validity": "From Dec 2024",
+        "language": "Malay",
+        "source_file": "Podcast Utama.pdf (18 pages)",
+        "documents": [
+          {
+            "name": "Podcast Utama.pdf",
+            "size": 1338906,
+            "ext": "pdf",
+            "file": "podcast-utama-buletin-tv3.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "TV3 / Buletin"
+      },
+      "terms": null,
+      "media_owner_slug": "tv3",
+      "media_owner_name": "TV3",
+      "creator_slug": null,
+      "placement_code": "podcast-utama-buletin-tv3",
+      "image_path": "assets/ratecards/img/podcast-utama-buletin-tv3.webp",
+      "documents": [
+        {
+          "name": "Podcast Utama.pdf",
+          "file": "podcast-utama-buletin-tv3.pdf",
+          "path": "private/catalogue/podcast-utama-buletin-tv3.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "print-feature-advertorial",
+      "name": "Print Feature & Advertorial",
+      "sku": "print-feature-advertorial",
+      "summary": "Editorial-style and standard print advertising options.",
+      "description": null,
+      "medium": "Print",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Nationwide",
+      "audience_label": "Editorial readers",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "print-feature-advertorial",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "putera-pre-post-2024-reference",
+      "name": "PuTERA Pre & Post Campaign Quote 2024 — Reference (TERAJU/Remedy)",
+      "sku": "putera-pre-post-2024-reference",
+      "summary": "Example 6-month quotation (TERAJU2404, 27 Jun 2024): news portals + social sets, not a live rate.",
+      "description": "Remedy Resources quotation QUOTE 3 for TERAJU PENERAJU BUMIPUTERA: Provision of pre/post marketing for Pelan Tindakan Ekonomi Bumiputera 2024, 6 months. Details: digital spotlight/social sets (FB/Twitter/IG/TikTok/websites/newsletters), Utusan social set RM6,000 etc. Kept as commercial reference; do not treat as current rate card.",
+      "medium": "Digital",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Remedy Resources / TERAJU",
+      "location_label": "Nationwide",
+      "audience_label": "Bumiputera economic plan stakeholders (reference only)",
+      "specifications": {
+        "formats": [
+          "Reference quotation"
+        ],
+        "validity": "27 Jun 2024 (TERAJU2404)",
+        "source_file": "update2706-Quote_PuTERA...xlsx",
+        "is_reference": true,
+        "documents": [
+          {
+            "name": "update2706-Quote_PuTERA...xlsx",
+            "size": 70806,
+            "ext": "xlsx",
+            "file": "putera-pre-post-2024-reference.xlsx",
+            "kind": "workbook"
+          }
+        ],
+        "media_owner": "Remedy Resources"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "putera-pre-post-2024-reference",
+      "image_path": "assets/ratecards/img/putera-pre-post-2024-reference.webp",
+      "documents": [
+        {
+          "name": "update2706-Quote_PuTERA...xlsx",
+          "file": "putera-pre-post-2024-reference.xlsx",
+          "path": "private/catalogue/putera-pre-post-2024-reference.xlsx",
+          "kind": "workbook"
+        }
+      ]
+    },
+    {
+      "slug": "ra-media-relations-live-tv-talkshow-2026-2027",
+      "name": "RA Media Live TV Talkshow 2026/27 — TV3, TV9 & TV AlHijrah",
+      "sku": "ra-media-relations-live-tv-talkshow-2026-2027",
+      "summary": "Live interview and VT integrations: MHI from RM18k, WHI from RM25k, NLKO RM8k, TV AlHijrah RM9k–10k.",
+      "description": "RA Media Relations live TV talkshow rate card for 2026/27. TV3 Media Prima: Malaysia Hari Ini (MHI, Mon–Fri 10am) live interview 6 min RM25,000 (RM27,000 with 8% SST), 3 min RM18,000 (RM19,440), VT 3 min RM18,000 (RM19,440). Wanita Hari Ini (WHI, Mon–Sat 12pm) live 6 min RM38,000 (RM41,040), 3 min RM25,000 (RM27,000), VT 3 min RM25,000 (RM27,000), host mention 30 sec RM5,000 (RM5,400). TV9 Nasi Lemak Kopi O (NLKO, Wed–Fri 10:30am) live 6 min RM8,000 (RM8,640). TV AlHijrah Assalamualaikum weekend (Fri–Sun) RM9,000 (RM9,720), weekdays (Mon–Thu) RM10,000 (RM10,800). VT placements require LPF submission; rates may be revised during Ramadan and Raya.",
+      "medium": "TV & Broadcast",
+      "unit_code": "3 minutes",
+      "pricing_mode": "indicative",
+      "price_from": 5000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "RA Media Relations",
+      "location_label": "Nationwide",
+      "audience_label": "Daytime talk-show viewers: Malay women, families and lifestyle audiences",
+      "specifications": {
+        "formats": [
+          "Live interview",
+          "Video tape (VT)",
+          "Host mention",
+          "Programme integration"
+        ],
+        "price_tiers": [
+          "MHI 3-min RM18k / 6-min RM25k",
+          "WHI 3-min RM25k / 6-min RM38k",
+          "NLKO 6-min RM8k",
+          "TV AlHijrah RM9k–10k"
+        ],
+        "validity": "2026/2027; Ramadan and Raya rates may differ",
+        "language": "Malay",
+        "source_file": "RA_Media_Relations_Live_TV_Talkshow_Rate_Card_2026_2027.pdf (1 page)",
+        "documents": [
+          {
+            "name": "RA Media Relations Live TV Talkshow Rate Card 2026/2027",
+            "size": 111983,
+            "ext": "pdf",
+            "file": "ra-media-relations-live-tv-talkshow-2026-2027.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "ra-media-relations-live-tv-talkshow-2026-2027",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "RA Media Relations Live TV Talkshow Rate Card 2026/2027",
+          "file": "ra-media-relations-live-tv-talkshow-2026-2027.pdf",
+          "path": "private/catalogue/ra-media-relations-live-tv-talkshow-2026-2027.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "ra-media-relations-news-slot-2026-2027",
+      "name": "RA Media News Slot 2026/27 — Prime TV News Placements",
+      "sku": "ra-media-relations-news-slot-2026-2027",
+      "summary": "Two-minute news-slot placements: TV3 Buletin Utama RM75k, TV3 1.30PM RM40k, AWANI 7.45PM RM50k, TV1 RM20k, TVS RM9k.",
+      "description": "RA Media Relations news-slot rate card for 2026/27, maximum two-minute placement per news programme. TV3 Buletin Utama RM75,000 (RM81,000 with 8% SST); TV3 Buletin 1.30PM RM40,000 (RM43,200); Astro AWANI AWANI 7.45PM RM50,000 (RM54,000); Astro AWANI Buletin AWANI RM30,000 (RM32,400); TV1 Berita Perdana RM20,000 (RM21,600); TV AlHijrah Berita AlHijrah RM8,000 (RM8,640); TVS TVS Utama 7.40 RM9,000 (RM9,720). Placement, scheduling and content are subject to broadcaster approval and confirmation.",
+      "medium": "TV & Broadcast",
+      "unit_code": "2-minute news slot",
+      "pricing_mode": "indicative",
+      "price_from": 8000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "RA Media Relations",
+      "location_label": "Nationwide",
+      "audience_label": "Free-to-air and Astro news viewers across Malay, English, Chinese and Tamil audiences",
+      "specifications": {
+        "formats": [
+          "News slot placement (max 2 min)",
+          "TV3",
+          "Astro AWANI",
+          "TV1",
+          "TV AlHijrah",
+          "TVS"
+        ],
+        "price_tiers": [
+          "TV3 Buletin Utama RM75k",
+          "AWANI 7.45PM RM50k",
+          "TV3 1.30PM RM40k",
+          "TV1 RM20k",
+          "TVS RM9k"
+        ],
+        "validity": "2026/2027 rate card",
+        "language": "Malay / English / Chinese / Tamil",
+        "source_file": "RA_Media_Relations_News_Slot_Rate_Card_2026_2027.pdf (1 page)",
+        "documents": [
+          {
+            "name": "RA Media Relations News Slot Rate Card 2026/2027",
+            "size": 86434,
+            "ext": "pdf",
+            "file": "ra-media-relations-news-slot-2026-2027.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "ra-media-relations-news-slot-2026-2027",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "RA Media Relations News Slot Rate Card 2026/2027",
+          "file": "ra-media-relations-news-slot-2026-2027.pdf",
+          "path": "private/catalogue/ra-media-relations-news-slot-2026-2027.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "ra-media-website-media-solutions-2026",
+      "name": "RA Media Website Media Solutions 2026 — TV & Radio Bundle Quotation",
+      "sku": "ra-media-website-media-solutions-2026",
+      "summary": "House quotation template (28p + xlsx): Buletin TV3 RM75k, Astro Awani, RTM clockface, radio bugs.",
+      "description": "RA Media Relations (948761-w) QUOTATION (PDF 28p + xlsx QUOTE 1). Event: Website Media Solutions. TV & Radio solutions: live slots, national news, custom segments, flagship collab, ground crossovers, mixed coverage, spot buy. Examples: TV3 Buletin Utama 2-min 8PM + digital RM75k; Astro Awani 7:45 / Tonight 1-min + advertorial/social (1M reach); Berita RTM clockface 10s filmlets x30 days + 30s TVC x30 + programme bugs; Buletin Awani, AlHijrah slots RM4.5k–35k; radio bugs RM8.4k–126k. Amount per slot x qty = RM. Indicative, subject to owner confirmation.",
+      "medium": "TV & Broadcast",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 4500.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "RA Media Relations",
+      "location_label": "Nationwide",
+      "audience_label": "Mass TV news + radio + digital (per brief)",
+      "specifications": {
+        "formats": [
+          "TV news coverage",
+          "Custom segments",
+          "Flagship collab",
+          "Ground crossovers",
+          "Spot buy"
+        ],
+        "price_tiers": [
+          "From RM4.5k/slot",
+          "Hero RM75k"
+        ],
+        "validity": "06 Jan 2026 template",
+        "source_file": "UpdateRA Media-Quotation_Website Media Solution_060126.pdf + .xlsx",
+        "documents": [
+          {
+            "name": "UpdateRA Media-Quotation_Website Media Solution_060126.pdf + .xlsx",
+            "size": 301410,
+            "ext": "pdf",
+            "file": "ra-media-website-media-solutions-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "Supporting workbook.xlsx",
+            "size": 81283,
+            "ext": "xlsx",
+            "file": "ra-media-website-media-solutions-2026-2.xlsx",
+            "kind": "workbook"
+          }
+        ],
+        "media_owner": "RA Media Relations"
+      },
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "ra-media-website-media-solutions-2026",
+      "image_path": "assets/ratecards/img/ra-media-website-media-solutions-2026.webp",
+      "documents": [
+        {
+          "name": "UpdateRA Media-Quotation_Website Media Solution_060126.pdf + .xlsx",
+          "file": "ra-media-website-media-solutions-2026.pdf",
+          "path": "private/catalogue/ra-media-website-media-solutions-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "Supporting workbook.xlsx",
+          "file": "ra-media-website-media-solutions-2026-2.xlsx",
+          "path": "private/catalogue/ra-media-website-media-solutions-2026-2.xlsx",
+          "kind": "workbook"
+        }
+      ]
+    },
+    {
+      "slug": "retail-mall-screen-network",
+      "name": "Retail Mall Screen Network",
+      "sku": "retail-mall-screen-network",
+      "summary": "Digital screen media across shopping environments.",
+      "description": null,
+      "medium": "Indoor",
+      "unit_code": "campaign",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": null,
+      "location_label": "Klang Valley",
+      "audience_label": "Retail shoppers",
+      "specifications": [],
+      "terms": null,
+      "media_owner_slug": "ra-media-relations",
+      "media_owner_name": "RA Media Relations Sdn Bhd",
+      "creator_slug": null,
+      "placement_code": "retail-mall-screen-network",
+      "image_path": null,
+      "documents": []
+    },
+    {
+      "slug": "rtm-tv-radio-2025",
+      "name": "RTM TV & Radio 2025 — Government Broadcast",
+      "sku": "rtm-tv-radio-2025",
+      "summary": "Zone-based TV slides/filmlets from RM125, interview packs RM10,500, capsule/PSA and radio zones.",
+      "description": "Bahagian Pemasaran dan Promosi rate card (50 pages). TV zones A–U by daypart/programme (Selamat Pagi Malaysia, Berita Perdana, Tamil/Mandarin news etc.), slides/filmlets/base rates, interview packages (beli 1 slot RM10,500), capsule/short programmes, radio zones and terms. Excludes 8% SST, single-client, production by sponsor.",
+      "medium": "TV & Broadcast",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 125.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "RTM",
+      "location_label": "Nationwide",
+      "audience_label": "Mass Malay, Chinese, Tamil, English and regional audiences",
+      "specifications": {
+        "formats": [
+          "TV slides",
+          "Filmlets",
+          "Interview packages",
+          "Capsule/PSA",
+          "Radio spots"
+        ],
+        "price_tiers": [
+          "Zone U from RM125",
+          "Interview RM10,500"
+        ],
+        "validity": "2025",
+        "language": "Malay / English / Chinese / Tamil",
+        "source_file": "RATE CARD TV & RADIO 2025.pdf (50 pages)",
+        "documents": [
+          {
+            "name": "RATE CARD TV & RADIO 2025.pdf",
+            "size": 596925,
+            "ext": "pdf",
+            "file": "rtm-tv-radio-2025.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "RTM"
+      },
+      "terms": null,
+      "media_owner_slug": "rtm",
+      "media_owner_name": "Radio Televisyen Malaysia (RTM)",
+      "creator_slug": null,
+      "placement_code": "rtm-tv-radio-2025",
+      "image_path": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "documents": [
+        {
+          "name": "RATE CARD TV & RADIO 2025.pdf",
+          "file": "rtm-tv-radio-2025.pdf",
+          "path": "private/catalogue/rtm-tv-radio-2025.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "sinar-harian-20th-anniversary-2026",
+      "name": "Sinar Harian 20th Anniversary 2026 — Exclusive Print, Program & Social Rates",
+      "sku": "sinar-harian-20th-anniversary-2026",
+      "summary": "20th-anniversary offer: Instagram RM2k, Facebook/TikTok RM3.5k, full page RM8k, wraps from RM60k; bundles RM20k–200k.",
+      "description": "Sinar Harian 20th Anniversary exclusive media rates (3 pages), for signings from 1 September to 30 November 2026 with utilisation by 31 December 2026. Print offers: full wrap RM100,000 (casual RM200,000), half wrap RM75,000, cover wrap RM60,000, front-page billboard RM15,000, bottom panel RM8,000, ear space RM10,000, special 8-page pull-out RM150,000, centrespread advertorial RM40,000, full page colour corporate RM8,000, full page advertorial RM12,000, event coverage/PR page RM9,000, half page RM6,000, islands RM4,000. Program sponsorships RM8,000–24,000 (Interviu/Sinar Live, Wacana, Wacana English, Podcast, Dialog Siswa, Meja Bulat, Berani Semuka, She Leads/The Growth Room, Borak Bibir Merah). Social: Facebook/TikTok carousel RM3,500, Instagram RM2,000, Sinar Daily This Or That and Politically Frank videos RM9,000. Digital: Sinar Harian article RM8,000, Sinar Daily article RM5,000, rich-media announcement/custom nudges RM8,000/day, masthead RM5,000/day, banners from RM6,000. Anniversary packages: Spark RM20,000, Amplify RM40,000, Command RM60,000, Legacy Partner RM200,000 (limited to 20 brands).",
+      "medium": "Print",
+      "unit_code": "per insertion",
+      "pricing_mode": "indicative",
+      "price_from": 2000.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Sinar Harian / Sinar Karangkraf",
+      "location_label": "Nationwide",
+      "audience_label": "Malay mass-market newspaper readers and Sinar Daily digital audience",
+      "specifications": {
+        "formats": [
+          "Print wrap",
+          "Front page",
+          "Full page",
+          "Centrespread advertorial",
+          "Program sponsorship",
+          "Social posts",
+          "Digital articles",
+          "Anniversary packages"
+        ],
+        "price_tiers": [
+          "Instagram RM2,000",
+          "Facebook/TikTok RM3,500",
+          "Full page RM8,000",
+          "Spark RM20,000",
+          "Amplify RM40,000",
+          "Command RM60,000",
+          "Legacy RM200,000"
+        ],
+        "validity": "Signings 1 Sep–30 Nov 2026; utilisation by 31 Dec 2026",
+        "language": "Malay / English",
+        "source_file": "20th SH ANNIVERSARY PROMO_New1_261005_154818.pdf (3 pages)",
+        "documents": [
+          {
+            "name": "SH 20th Anniversary Exclusive Rates",
+            "size": 2352282,
+            "ext": "pdf",
+            "file": "sinar-harian-20th-anniversary-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Sinar Karangkraf Sdn Bhd"
+      },
+      "terms": null,
+      "media_owner_slug": "karangkraf",
+      "media_owner_name": "Karangkraf",
+      "creator_slug": null,
+      "placement_code": "sinar-harian-20th-anniversary-2026",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "SH 20th Anniversary Exclusive Rates",
+          "file": "sinar-harian-20th-anniversary-2026.pdf",
+          "path": "private/catalogue/sinar-harian-20th-anniversary-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "sinar-karangkraf-ratecard-2025-2026",
+      "name": "Sinar Karangkraf Media Kit 2025/26 — Sinar Harian, SinarPlus, Bestari & Daily",
+      "sku": "sinar-karangkraf-ratecard-2025-2026",
+      "summary": "Sinar Harian print from RM2,240 (quarter page B&W); full page colour RM16,960; digital CPM RM30–90; Sinar Daily article RM8k.",
+      "description": "Sinar Karangkraf media kit 2025/26 (38 pages) covering Sinar Harian and Sinar Ahad, SinarPlus, Sinar Bestari and Sinar Daily. Sinar Harian print: full page B&W RM8,960 / colour RM16,960, half page RM4,480 / RM12,480, quarter page RM2,240 / RM10,240, double page RM26,880 / RM42,480, front-page bottom panel RM19,360, ear space RM21,250, full wrap RM200,000; classified liners RM18–35 per line by frequency. Digital display CPM RM30–90, masthead RM10,000/day, branded advertorial RM8,000–14,000, social posts from RM500, Facebook Live RM5,000, TikTok from RM4,000. SinarPlus and Sinar Bestari digital from RM2,000/week; Sinar Daily display RM8,000–15,000/week and mobile app RM5,000–12,000. Video/programme sponsorships from RM10,000. Rates exclude SST and include 15% agency commission.",
+      "medium": "Print",
+      "unit_code": "per insertion",
+      "pricing_mode": "indicative",
+      "price_from": 2240.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Sinar Harian / Karangkraf",
+      "location_label": "Nationwide",
+      "audience_label": "Malay grassroots readers: 195k daily readership, 65k circulation, 50m monthly pageviews",
+      "specifications": {
+        "formats": [
+          "Sinar Harian print",
+          "Classified",
+          "Digital display",
+          "Social media",
+          "Video programmes",
+          "SinarPlus",
+          "Sinar Bestari",
+          "Sinar Daily"
+        ],
+        "price_tiers": [
+          "Quarter page B&W RM2,240",
+          "Full page colour RM16,960",
+          "Digital CPM RM30–90",
+          "Sinar Daily article RM8,000",
+          "Full wrap RM200,000"
+        ],
+        "validity": "2025–2026 media kit; T&C state rates valid 1 Jan–31 Dec 2025",
+        "language": "Malay / English",
+        "source_file": "SINAR KARANGRAF - RATECARD 2025_2026.pdf (38 pages)",
+        "documents": [
+          {
+            "name": "Sinar Karangkraf Ratecard 2025/2026",
+            "size": 28395880,
+            "ext": "pdf",
+            "file": "sinar-karangkraf-ratecard-2025-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Sinar Karangkraf Sdn Bhd"
+      },
+      "terms": null,
+      "media_owner_slug": "karangkraf",
+      "media_owner_name": "Karangkraf",
+      "creator_slug": null,
+      "placement_code": "sinar-karangkraf-ratecard-2025-2026",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "Sinar Karangkraf Ratecard 2025/2026",
+          "file": "sinar-karangkraf-ratecard-2025-2026.pdf",
+          "path": "private/catalogue/sinar-karangkraf-ratecard-2025-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "suria-fm-2026-radio-digital",
+      "name": "Suria FM 2026 — Radio + Digital (Rimakmur)",
+      "sku": "suria-fm-2026-radio-digital",
+      "summary": "ROS and spot packages plus website display, social, branded articles, pre-roll audio and app streaming.",
+      "description": "Suria 2026 rate card (Rimakmur, effective 1 Jan). Radio ROS national/central/northern/southern/east coast by Mon–Sun / Mon–Fri / Sat–Sun, festive 2–29 Mar 2026, plus display (homepage/inner, mega leaderboard), social (FB/IG/TikTok), branded articles, pre-roll audio RM65, app streaming and video production notes.",
+      "medium": "Radio",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 150.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Suria FM",
+      "location_label": "Nationwide",
+      "audience_label": "Malay listeners, family and drive-time",
+      "specifications": {
+        "formats": [
+          "Radio ROS/spot",
+          "Display",
+          "Social",
+          "Branded article",
+          "Pre-roll audio",
+          "App streaming"
+        ],
+        "validity": "Effective 1 Jan 2026",
+        "language": "Malay",
+        "source_file": "SURIA_2026 RATE CARD (1) (1).pdf (6 pages)",
+        "documents": [
+          {
+            "name": "SURIA_2026 RATE CARD",
+            "size": 3206983,
+            "ext": "pdf",
+            "file": "suria-fm-2026-radio-digital.pdf",
+            "kind": "document"
+          }
+        ],
+        "sales_contact": "suriasales@smrg.my · WhatsApp 012-319 1053",
+        "media_owner": "Rimakmur (Suria)"
+      },
+      "terms": null,
+      "media_owner_slug": "star-media-group",
+      "media_owner_name": "Star Media Group",
+      "creator_slug": null,
+      "placement_code": "suria-fm-2026-radio-digital",
+      "image_path": "assets/ratecards/img/suria-fm-2026-radio-digital.webp",
+      "documents": [
+        {
+          "name": "SURIA_2026 RATE CARD",
+          "file": "suria-fm-2026-radio-digital.pdf",
+          "path": "private/catalogue/suria-fm-2026-radio-digital.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "target-media-elevator-q2-2025",
+      "name": "Target Media 2026 — Elevator Media Network",
+      "sku": "target-media-elevator-q2-2025",
+      "summary": "Elevator DOOH from RM22k/week: 10,000-screen full coverage RM229.6k, commercial 2,000 screens RM80k, local 1,000 screens RM40k, ala carte RM100–200/screen.",
+      "description": "Target Media 2026 elevator media rate card, effective January 2026 (1 page). Ad duration is 15 seconds and publication runs Monday–Sunday with material due every Tuesday. Full coverage 10,000 screens RM229,600/week at 120 plays/day (RM119,800 at 60); High End office/residences 1,000 screens RM99,800; Commercial office/mall/hotel 2,000 screens RM80,000 (RM42,000 at 60); Localized office/residences/mixed/mall/hotel 1,000 screens RM40,000 (RM22,000 at 60); Building ala carte per screen RM200 (RM100 at 60). Screen count is calculated at 90% of the package. Operation costs: data usage RM1 per screen for up to 2,000 screens and RM0.50 above 2,000 per upload; manual upload RM2/RM1; NFC sticker RM3 standard and RM5 premium. Rates exclude tax; Target Media may adjust pricing.",
+      "medium": "Indoor",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 22000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Target Media",
+      "location_label": "Klang Valley",
+      "audience_label": "Office, condo, mall and hotel lift audiences across up to 10,000 screens",
+      "specifications": {
+        "formats": [
+          "Full coverage elevator network",
+          "High End office/residences",
+          "Commercial office/mall/hotel",
+          "Localized package",
+          "Building ala carte",
+          "NFC sticker"
+        ],
+        "price_tiers": [
+          "Localized 1,000 screens RM22k/week",
+          "Commercial 2,000 screens RM42k/week",
+          "High End 1,000 screens RM99.8k/week",
+          "Full coverage 10,000 screens RM119.8k–229.6k/week",
+          "Ala carte RM100–200/screen/week"
+        ],
+        "validity": "2026; effective January 2026",
+        "language": "English / Chinese",
+        "source_file": "Target Media Y2026 Rate Card (1).pdf (1 page)",
+        "documents": [
+          {
+            "name": "Target Media 2026 Rate Card",
+            "size": 257076,
+            "ext": "pdf",
+            "file": "target-media-elevator-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "Target Media Q2 2025 Pricing (archive)",
+            "size": 321628,
+            "ext": "xlsx",
+            "file": "target-media-elevator-q2-2025.xlsx",
+            "kind": "workbook"
+          }
+        ],
+        "media_owner": "Target Media Sdn Bhd"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "target-media-elevator-q2-2025",
+      "image_path": "assets/ratecards/img/target-media-elevator-q2-2025.webp",
+      "documents": [
+        {
+          "name": "Target Media 2026 Rate Card",
+          "file": "target-media-elevator-2026.pdf",
+          "path": "private/catalogue/target-media-elevator-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "Target Media Q2 2025 Pricing (archive)",
+          "file": "target-media-elevator-q2-2025.xlsx",
+          "path": "private/catalogue/target-media-elevator-q2-2025.xlsx",
+          "kind": "workbook"
+        }
+      ]
+    },
+    {
+      "slug": "tmr-super-deal-2026-business-content",
+      "name": "The Malaysian Reserve Super Deal 2026 — Business Content",
+      "sku": "tmr-super-deal-2026-business-content",
+      "summary": "Press release RM3,240; infographic, exec interview and press coverage packs RM69k–RM147k.",
+      "description": "TMR Content Solutions 2026 (8 pages). 80k print readership, 480k UV / 610k pageviews, 77.5% Central. Four needs: Announce (press release RM3,240, 1,000 words), Lead (infographic), Position (exec interview), Amplify (press coverage with social/print). Packages RM69,660 / RM147,420 examples.",
+      "medium": "Print",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 3240.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "The Malaysian Reserve",
+      "location_label": "Nationwide",
+      "audience_label": "Business readers 80% 35+, 75% male, professionals and decision-makers",
+      "specifications": {
+        "formats": [
+          "Print",
+          "Digital article",
+          "Social amplification",
+          "Infographic",
+          "Exec interview"
+        ],
+        "price_tiers": [
+          "Release RM3,240",
+          "Packs RM69k–147k"
+        ],
+        "validity": "2026",
+        "language": "English",
+        "source_file": "2026 Super Deal TMR (A).pdf (8 pages)",
+        "documents": [
+          {
+            "name": "2026 Super Deal TMR",
+            "size": 1908924,
+            "ext": "pdf",
+            "file": "tmr-super-deal-2026-business-content.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "The Malaysian Reserve"
+      },
+      "terms": null,
+      "media_owner_slug": "specialist-media",
+      "media_owner_name": "Specialist media & events",
+      "creator_slug": null,
+      "placement_code": "tmr-super-deal-2026-business-content",
+      "image_path": "assets/ratecards/img/tmr-super-deal-2026-business-content.webp",
+      "documents": [
+        {
+          "name": "2026 Super Deal TMR",
+          "file": "tmr-super-deal-2026-business-content.pdf",
+          "path": "private/catalogue/tmr-super-deal-2026-business-content.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "tvalhijrah-bincang-niaga-2024",
+      "name": "TV AlHijrah Bincang Niaga 2024 — Islamic Business TV",
+      "sku": "tvalhijrah-bincang-niaga-2024",
+      "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck, request details).",
+      "description": "Cover-identified as TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, scanned images, no extractable text). View original for package tables. Islamic business talk environment.",
+      "medium": "TV & Broadcast",
+      "unit_code": "package",
+      "pricing_mode": "on_request",
+      "price_from": null,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "TV AlHijrah",
+      "location_label": "Nationwide",
+      "audience_label": "Muslim family and SME / niaga audiences",
+      "specifications": {
+        "formats": [
+          "TV talkshow sponsorship",
+          "Promo packages"
+        ],
+        "validity": "2024",
+        "language": "Malay",
+        "source_file": "BN 2024 PACKAGES (1).pdf (5 pages, scanned)",
+        "documents": [
+          {
+            "name": "BN 2024 PACKAGES",
+            "size": 977617,
+            "ext": "pdf",
+            "file": "tvalhijrah-bincang-niaga-2024.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "TV AlHijrah"
+      },
+      "terms": null,
+      "media_owner_slug": "al-hijrah",
+      "media_owner_name": "Al Hijrah Media Corporation",
+      "creator_slug": null,
+      "placement_code": "tvalhijrah-bincang-niaga-2024",
+      "image_path": "assets/ratecards/img/tvalhijrah-bincang-niaga-2024.webp",
+      "documents": [
+        {
+          "name": "BN 2024 PACKAGES",
+          "file": "tvalhijrah-bincang-niaga-2024.pdf",
+          "path": "private/catalogue/tvalhijrah-bincang-niaga-2024.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "tvs-sponsorship-spot-buy-2026",
+      "name": "TV Sarawak (TVS) 2026 — Sponsorship & Spot Buy",
+      "sku": "tvs-sponsorship-spot-buy-2026",
+      "summary": "30-second TVC RM1,800 fringe / RM3,600 prime; sponsor formats from RM600, naming rights RM18k, special reports RM9k.",
+      "description": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax. TVS Profile (updated 15 October 2026): 11.7M unique reach and 172.8M total views on Nielsen (Peninsular, Jan–Sep 2026); 7.3M reach and 103.6M views via Fifty5Blue; 3.73M social followers with 1.46B social views; 3.05M website visitors; TVS Inspire OTT app at 72.8K lifetime downloads. News belt: TVS Pagi 7am, TVS Tengahari 12pm, Utama 740 7:40pm, TVS Nightline 10:30pm, plus Berita Iban, Rebao, Berita Wilayah and Detik Dunia. 2025 live coverage totalled 126 events and 366.9M linear-plus-digital viewers.",
+      "medium": "TV & Broadcast",
+      "unit_code": "30s spot",
+      "pricing_mode": "indicative",
+      "price_from": 600.0,
+      "availability_status": "on_request",
+      "is_featured": false,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "TV Sarawak (TVS)",
+      "location_label": "Sarawak",
+      "audience_label": "Sarawak and Borneo viewers; 11.7M unique reach and 172.8M TV views in Jan–Sep 2026",
+      "specifications": {
+        "formats": [
+          "30s TVC spot buy",
+          "Breaker in/out",
+          "L-shape",
+          "Lower third",
+          "Info-capsule",
+          "Naming rights",
+          "Special report",
+          "Product placement",
+          "Crawler",
+          "Social media posts",
+          "Website/OTT display",
+          "Live telecast"
+        ],
+        "price_tiers": [
+          "30s fringe RM1,800",
+          "30s prime RM3,600",
+          "Naming rights RM18k prime",
+          "Special report RM9k prime",
+          "Social posts RM1,000–3,000",
+          "Website/OTT CPM RM30–90",
+          "Live telecast from RM120,000"
+        ],
+        "validity": "2026 rate card",
+        "language": "Malay / Iban / Mandarin / English",
+        "source_file": "TVS Full Rate Card 2026 (23 pages) + TVS Profile October 2026 (21 pages)",
+        "documents": [
+          {
+            "name": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy)",
+            "size": 9304143,
+            "ext": "pdf",
+            "file": "tvs-sponsorship-spot-buy-2026.pdf",
+            "kind": "document"
+          },
+          {
+            "name": "TVS Profile October 2026",
+            "size": 9676159,
+            "ext": "pdf",
+            "file": "tvs-profile-2026.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "TV Sarawak (TVS)"
+      },
+      "terms": null,
+      "media_owner_slug": "tvs",
+      "media_owner_name": "TVS (TV Sarawak)",
+      "creator_slug": null,
+      "placement_code": "tvs-sponsorship-spot-buy-2026",
+      "image_path": null,
+      "documents": [
+        {
+          "name": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy)",
+          "file": "tvs-sponsorship-spot-buy-2026.pdf",
+          "path": "private/catalogue/tvs-sponsorship-spot-buy-2026.pdf",
+          "kind": "document"
+        },
+        {
+          "name": "TVS Profile October 2026",
+          "file": "tvs-profile-2026.pdf",
+          "path": "private/catalogue/tvs-profile-2026.pdf",
+          "kind": "document"
+        }
+      ]
+    },
+    {
+      "slug": "wowshop-airtime-2025",
+      "name": "Wowshop TV Home Shopping — Airtime + Commerce",
+      "sku": "wowshop-airtime-2025",
+      "summary": "7.2M TV households, 250k orders/day; sales-driven 23/48-min formats, airtime packs from ~RM10k.",
+      "description": "Airtime proposal deck (29 pages). 7.2M households 2024, 1.5B sales since 2016, 3.6M customers. Formats: awareness+sales reach, 3–4 min call-to-action blocks, studio/demo/full CG, packages RM10k–80k (e.g. RM48k, RM42k, RM16k, RM15k). Nielsen SCV viewership, geo 22% Selangor, 16% Johor etc.",
+      "medium": "TV & Broadcast",
+      "unit_code": "package",
+      "pricing_mode": "indicative",
+      "price_from": 10000.0,
+      "availability_status": "on_request",
+      "is_featured": true,
+      "verified_at": null,
+      "sort_order": 0,
+      "channel_label": "Wowshop / Media Prima",
+      "location_label": "Nationwide",
+      "audience_label": "Mass home shoppers (75% female, 30s–60+, Malay + Chinese, rural + urban)",
+      "specifications": {
+        "formats": [
+          "TV home shopping",
+          "Studio demo",
+          "Full CG",
+          "Call-to-action blocks"
+        ],
+        "price_tiers": [
+          "From ~RM10k",
+          "Packs RM15k–80k"
+        ],
+        "validity": "2025 deck",
+        "source_file": "WOWSHOP - AIRTIME PROPOSAL DECK NEW UPDATED_2025 (3).pdf (29 pages)",
+        "documents": [
+          {
+            "name": "WOWSHOP - AIRTIME PROPOSAL DECK NEW UPDATED_2025",
+            "size": 2100872,
+            "ext": "pdf",
+            "file": "wowshop-airtime-2025.pdf",
+            "kind": "document"
+          }
+        ],
+        "media_owner": "Wowshop"
+      },
+      "terms": null,
+      "media_owner_slug": "wowshop",
+      "media_owner_name": "Wowshop",
+      "creator_slug": null,
+      "placement_code": "wowshop-airtime-2025",
+      "image_path": "assets/ratecards/img/wowshop-airtime-2025.webp",
+      "documents": [
+        {
+          "name": "WOWSHOP - AIRTIME PROPOSAL DECK NEW UPDATED_2025",
+          "file": "wowshop-airtime-2025.pdf",
+          "path": "private/catalogue/wowshop-airtime-2025.pdf",
+          "kind": "document"
+        }
+      ]
+    }
+  ]
+}
