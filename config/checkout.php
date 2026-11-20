@@ -1,0 +1,350 @@
+<?php
+
+declare(strict_types=1);
+use AIArmada\Checkout\Transformers\NullSessionDataTransformer;
+use AIArmada\Customers\Models\Customer;
+use AIArmada\Orders\Models\Order;
+
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | Database
+    |--------------------------------------------------------------------------
+    */
+    'database' => [
+        'table_prefix' => env('CHECKOUT_TABLE_PREFIX', env('COMMERCE_TABLE_PREFIX', '')),
+        'json_column_type' => env('CHECKOUT_JSON_COLUMN_TYPE', 'jsonb'),
+        'tables' => [
+            'checkout_sessions' => 'checkout_sessions',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Defaults
+    |--------------------------------------------------------------------------
+    */
+    'defaults' => [
+        'currency' => env('CHECKOUT_CURRENCY', 'MYR'),
+        'session_ttl' => 60 * 60 * 24, // 24 hours
+        'session_query_param' => 'session', // Query param name for session ID
+        'shipping_rate' => env('CHECKOUT_DEFAULT_SHIPPING_RATE', 1000), // Fallback shipping rate in cents
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Models
+    |--------------------------------------------------------------------------
+    |
+    | Customize the model classes used by the checkout package. This allows
+    | you to extend the default models with your own implementations.
+    |
+    */
+    'models' => [
+        'customer' => Customer::class,
+        'order' => Order::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Session Data Transformers
+    |--------------------------------------------------------------------------
+    */
+    'transformers' => [
+        'billing' => NullSessionDataTransformer::class,
+        'shipping' => NullSessionDataTransformer::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Steps
+    |--------------------------------------------------------------------------
+    */
+    'steps' => [
+        'enabled' => [
+            'validate_cart' => true,
+            'resolve_customer' => true,
+            'calculate_pricing' => true,
+            'apply_discounts' => true,
+            'calculate_shipping' => true,
+            'calculate_tax' => true,
+            'reserve_inventory' => true,
+            'reserve_scoped_capacity' => true,
+            'commit_scoped_capacity' => true,
+            'process_payment' => true,
+            'persist_customer' => true,
+            'create_order' => true,
+            'dispatch_documents' => true,
+        ],
+        'order' => [
+            'validate_cart',
+            'resolve_customer',
+            'calculate_pricing',
+            'apply_discounts',
+            'calculate_shipping',
+            'calculate_tax',
+            'reserve_inventory',
+            'reserve_scoped_capacity',
+            'process_payment',
+            'persist_customer',
+            'create_order',
+            'dispatch_documents',
+            'commit_scoped_capacity',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Create Order Step Settings
+    |--------------------------------------------------------------------------
+    |
+    | Configure how the create_order step behaves after order creation.
+    |
+    | confirm_payment: When true, triggers PaymentConfirmed transition on the
+    |                  order after creation. This creates a Payment record and
+    |                  dispatches the OrderPaid event (for notifications, etc).
+    |                  Free orders are always confirmed via FreeOrderConfirmed:
+    |                  there is no payment to verify, and the operator-facing
+    |                  manual confirm action cannot process a zero amount, so
+    |                  gating them would strand free orders outside
+    |                  operator-facing paths, leaving a direct confirmFreeOrder
+    |                  service call as the only recourse.
+    |
+    */
+    'create_order' => [
+        'confirm_payment' => true,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Owner / Multi-tenancy
+    |--------------------------------------------------------------------------
+    */
+    'owner' => [
+        'enabled' => env('CHECKOUT_OWNER_ENABLED', false),
+        'include_global' => false,
+        'auto_assign_on_create' => true,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Stored Checkout Actor
+    |--------------------------------------------------------------------------
+    |
+    | PersistCustomerStep can resume the authenticated actor stored during
+    | resolve_customer. Only the model classes listed here — plus the auth
+    | provider models and the checkout customer model, which are always
+    | allowed — may be resolved from that stored reference.
+    |
+    */
+    'checkout_actor' => [
+        'allowed_types' => [],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Integrations
+    |--------------------------------------------------------------------------
+    */
+    'integrations' => [
+        'scoped_capacity' => ['reservation_ttl' => 900],
+        'inventory' => [
+            'enabled' => true,
+            'validate_stock' => true,
+            'reserve_before_payment' => true, // True keeps reserve_inventory before process_payment; false runs it first in the post-payment phase
+            'release_on_failure' => true,
+            'reservation_ttl' => 60 * 15, // 15 minutes
+        ],
+        'shipping' => [
+            'enabled' => true,
+            'require_selection' => true,
+            'jnt' => [
+                'enabled' => true,
+                'auto_detect' => true,
+            ],
+        ],
+        'tax' => [
+            'enabled' => false,
+        ],
+        'promotions' => [
+            'enabled' => true,
+            'auto_apply' => true,
+        ],
+        'vouchers' => [
+            'enabled' => true,
+            'allow_multiple' => false,
+        ],
+        'chip' => [
+            'enabled' => true,
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Payment Gateways
+    |--------------------------------------------------------------------------
+    |
+    | Configure payment gateway integration. Provider processors may read their
+    | provider package settings, while checkout owns resolution, references,
+    | callback security, and webhook routing.
+    |
+    | Gateway options: 'chip', 'stripe', 'cashier', 'cashier-chip'. Optional
+    | provider packages can contribute a PaymentProcessorInterface by binding
+    | and tagging it with `checkout.payment_processors`.
+    |
+    */
+    'payment' => [
+        'default_gateway' => env('CHECKOUT_DEFAULT_GATEWAY', 'chip'),
+        'gateway_priority' => ['chip', 'cashier-chip', 'cashier'],
+        'prefer_actor' => (bool) env('CHECKOUT_PREFER_ACTOR', false),
+        'retry_limit' => 3,
+        'callback_token_ttl' => 60 * 60 * 24,
+        'callback_rate_limit' => [
+            'max_attempts' => 10,
+            'decay_seconds' => 60,
+        ],
+
+        'gateways' => [
+            'cashier' => [
+                'enabled' => true,
+            ],
+            'cashier-chip' => [
+                'enabled' => true,
+            ],
+            'chip' => [
+                'enabled' => true,
+            ],
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Routes
+    |--------------------------------------------------------------------------
+    |
+    | Configure all checkout routes. Callback routes handle user redirects
+    | from payment gateways. Webhook routes handle async notifications.
+    |
+    */
+    'routes' => [
+        'enabled' => env('CHECKOUT_ROUTES_ENABLED', true),
+        'prefix' => env('CHECKOUT_ROUTE_PREFIX', 'checkout'),
+        'middleware' => ['web'],
+
+        // Payment callback routes (user redirects from gateway)
+        'callbacks' => [
+            'success' => [
+                'chip' => 'payment/chip/success',
+                'cashier-chip' => 'payment/cashier-chip/success',
+                'cashier' => 'payment/cashier/success',
+            ],
+            'failure' => [
+                'chip' => 'payment/chip/failure',
+                'cashier-chip' => 'payment/cashier-chip/failure',
+                'cashier' => 'payment/cashier/failure',
+            ],
+            'cancel' => [
+                'chip' => 'payment/chip/cancel',
+                'cashier-chip' => 'payment/cashier-chip/cancel',
+                'cashier' => 'payment/cashier/cancel',
+            ],
+        ],
+
+        'webhook_prefix' => env('CHECKOUT_WEBHOOK_PREFIX', 'webhooks'),
+        'webhook_middleware' => ['api'],
+        'webhooks' => [
+            'chip' => [
+                'path' => 'chip',
+                'config' => 'checkout.webhook.chip',
+                'gateways' => ['chip', 'cashier-chip'],
+            ],
+            'stripe' => [
+                'path' => 'stripe',
+                'config' => 'checkout.webhook.stripe',
+                'gateways' => ['cashier'],
+            ],
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Redirects (After Payment Callback)
+    |--------------------------------------------------------------------------
+    |
+    | Where to redirect users after payment callbacks. Supports placeholders:
+    | {order_id}, {session_id}
+    |
+    */
+    'redirects' => [
+        'success' => env('CHECKOUT_REDIRECT_SUCCESS', '/orders/{order_id}'),
+        'failure' => env('CHECKOUT_REDIRECT_FAILURE', '/checkout/failed'),
+        'cancel' => env('CHECKOUT_REDIRECT_CANCEL', '/checkout/cancelled'),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Response Mode
+    |--------------------------------------------------------------------------
+    |
+    | How the package responds after processing payment callbacks:
+    |
+    | 'redirect' - Redirect to URLs in 'redirects' config (default)
+    |              Use this when you have custom result page controllers.
+    |
+    | 'view' - Render package views directly
+    |          Use this for simpler setups without custom controllers.
+    |
+    */
+    'response_mode' => 'redirect',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Views
+    |--------------------------------------------------------------------------
+    |
+    | Configure package views for checkout result pages.
+    | Views can be published with: php artisan vendor:publish --tag=checkout-views
+    |
+    | Only used when response_mode is 'view'.
+    |
+    */
+    'views' => [
+        'enabled' => true,
+        'layout' => 'layouts.app',
+        'routes' => [
+            'success' => 'checkout::success',
+            'failure' => 'checkout::failure',
+            'cancel' => 'checkout::cancel',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Webhook Verification
+    |--------------------------------------------------------------------------
+    |
+    | Webhook signature verification settings. When enabled, webhooks are
+    | validated using the source gateway's verification mechanism:
+    | - CHIP: Uses config('chip.webhooks.verify_signature') and public key
+    | - Stripe: Uses the checkout-owned secret below
+    |
+    */
+    'webhooks' => [
+        'verify_signature' => env('CHECKOUT_WEBHOOK_VERIFY_SIGNATURE', true),
+        'log_channel' => env('CHECKOUT_WEBHOOK_LOG_CHANNEL'),
+        'stripe' => [
+            'secret' => env('CHECKOUT_STRIPE_WEBHOOK_SECRET'),
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Documents
+    |--------------------------------------------------------------------------
+    */
+    'documents' => [
+        'queue' => env('CHECKOUT_DOCUMENTS_QUEUE', 'default'),
+        'generate_invoice' => env('CHECKOUT_DOCUMENTS_GENERATE_INVOICE', false),
+        'generate_receipt' => env('CHECKOUT_DOCUMENTS_GENERATE_RECEIPT', false),
+    ],
+];
