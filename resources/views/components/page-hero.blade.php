@@ -11,8 +11,14 @@
     'breadcrumb' => [],
 ])
 
-<section {{ $attributes->class(['page-hero', 'page-hero--dark' => $tone === 'dark', 'page-hero--media' => (bool) $media, 'page-hero--split' => (bool) $image && ! $media]) }}>
-    @if ($media)
+@php($heroMode = \App\Support\PageHero::mode())
+
+<section {{ $attributes->class([
+    'page-hero',
+    'page-hero--'.$heroMode,
+    'page-hero--dark' => $tone === 'dark',
+]) }}>
+    @if ($media && $heroMode === \App\Support\PageHero::MEDIA)
         <div class="page-hero__media" aria-hidden="true">
             <picture>
                 @if ($mediaMobile)
@@ -39,7 +45,7 @@
                 </nav>
             @endif
             @if ($eyebrow)
-                <span class="eyebrow @if ($tone === 'dark' || $media) eyebrow--pale @endif">{{ $eyebrow }}</span>
+                <span class="eyebrow @if ($tone === 'dark' || $heroMode === \App\Support\PageHero::MEDIA) eyebrow--pale @endif">{{ $eyebrow }}</span>
             @endif
             <h1>{!! $title !!}</h1>
             @if ($lede)
@@ -49,7 +55,7 @@
                 <div class="page-hero__actions">{{ $actions }}</div>
             @endisset
         </div>
-        @if ($image && ! $media)
+        @if ($image && $heroMode === \App\Support\PageHero::SPLIT)
             <figure class="page-hero__visual">
                 <picture>
                     @if ($imageMobile)

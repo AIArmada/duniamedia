@@ -48,8 +48,7 @@
 @livewireStyles
 </head>
 <body @class([
-    'route-home' => request()->routeIs('home'),
-    'has-cover-header' => request()->routeIs('work.*', 'academy', 'solutions'),
+    'has-cover-header' => \App\Support\PageHero::isMediaLed(),
 ])>
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -252,6 +251,7 @@
 </footer>
 
 @livewireScripts
+@fluxScripts
 @signalsTracker
 </body>
 </html>

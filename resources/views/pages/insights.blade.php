@@ -19,8 +19,8 @@
                         <h3>Insights are being prepared.</h3>
                         <p>We are writing the first set of practical pieces around the questions clients actually ask. In the meantime, these are the areas we will cover.</p>
                         <div class="empty-state__actions">
-                            <a class="button button--primary" href="{{ route('media.index') }}">Explore media opportunities <span aria-hidden="true">↗</span></a>
-                            <a class="button button--secondary" href="{{ route('contact') }}">Speak with our team</a>
+                            <flux:button href="{{ route('media.index') }}" variant="primary" icon:trailing="arrow-up-right">Explore media opportunities</flux:button>
+                            <flux:button href="{{ route('contact') }}" variant="outline">Speak with our team</flux:button>
                         </div>
                     </div>
                     <figure class="empty-state__media">
@@ -38,20 +38,14 @@
                 </div>
             @else
                 <form method="get" action="{{ route('insights') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr 220px auto;gap:.6rem;margin-bottom:1.6rem">
-                    <label class="field">
-                        <span class="sr-only">Search insights</span>
-                        <input type="search" name="q" value="{{ $search }}" placeholder="Search insights…">
-                    </label>
-                    <label class="field">
-                        <span class="sr-only">Category</span>
-                        <select name="category">
-                            <option value="">All categories</option>
-                            @foreach ($categories as $categoryOption)
-                                <option value="{{ $categoryOption }}" @selected($category === $categoryOption)>{{ $categoryOption }}</option>
-                            @endforeach
-                        </select>
-                    </label>
-                    <button class="button button--primary" type="submit">Filter</button>
+                    <flux:input type="search" name="q" value="{{ $search }}" placeholder="Search insights…" aria-label="Search insights" icon="magnifying-glass" />
+                    <flux:select name="category" aria-label="Category">
+                        <option value="">All categories</option>
+                        @foreach ($categories as $categoryOption)
+                            <option value="{{ $categoryOption }}" @selected($category === $categoryOption)>{{ $categoryOption }}</option>
+                        @endforeach
+                    </flux:select>
+                    <flux:button type="submit" variant="primary">Filter</flux:button>
                 </form>
 
                 @if ($search !== '' || $category !== '')

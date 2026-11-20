@@ -140,8 +140,8 @@
                     @endif
                     <small>Indicative guide only · excludes taxes and discounts</small>
                 </div>
-                <a class="button button--primary button--block" href="{{ route('quote.builder', ['media' => $media->id]) }}">Add to proposal <span aria-hidden="true">↗</span></a>
-                <a class="button button--secondary button--block" href="{{ route('contact') }}">Ask a media specialist</a>
+                <flux:button href="{{ route('quote.builder', ['media' => $media->id]) }}" variant="primary" class="w-full" icon:trailing="arrow-up-right">Add to proposal</flux:button>
+                <flux:button href="{{ route('contact') }}" variant="outline" class="w-full">Ask a media specialist</flux:button>
                 <ul class="trust-list">
                     <li><x-dm-icon name="check" :size="15"/> Rates verified before quoting</li>
                     <li><x-dm-icon name="check" :size="15"/> No reservation online</li>

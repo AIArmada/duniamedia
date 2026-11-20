@@ -16,9 +16,6 @@
         eyebrow="Media opportunities"
         title="Explore the <span class='editorial'>media</span> world."
         lede="Filter by platform, medium, media owner, format and location. Every opportunity is tied to a media owner, a channel and a commercial rate card before it reaches a proposal."
-        :image="'assets/img/v2/hero-media.webp'"
-        :image-mobile="'assets/img/v2/hero-media-mobile.webp'"
-        image-alt="A Malaysian media strategist presenting a wall of television, print, radio and outdoor media formats"
     >
         <x-slot:actions>
             <a class="button button--secondary" href="{{ route('media.owners') }}">Browse media owners</a>
@@ -47,103 +44,76 @@
                         </div>
                     </div>
 
-                    <label class="field">
-                        <span>Search</span>
-                        <input type="search" wire:model.live.debounce.350ms="search" placeholder="Medium, owner, channel, format, place…">
-                    </label>
+                    <flux:input type="search" wire:model.live.debounce.350ms="search" label="Search" placeholder="Search media…" icon="magnifying-glass" />
 
-                    <label class="field">
-                        <span>Platform</span>
-                        <select wire:model.live="platform">
-                            <option value="all">Traditional and digital</option>
-                            <option value="traditional" @selected($platform === 'traditional')>Traditional media</option>
-                            <option value="digital" @selected($platform === 'digital')>Digital and creators</option>
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="platform" label="Platform">
+                        <option value="all">Traditional and digital</option>
+                        <option value="traditional" @selected($platform === 'traditional')>Traditional media</option>
+                        <option value="digital" @selected($platform === 'digital')>Digital and creators</option>
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Medium</span>
-                        <select wire:model.live="medium">
-                            <option value="all">All mediums</option>
-                            @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $mediumOption)
-                                <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
-                            @endforeach
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="medium" label="Medium">
+                        <option value="all">All mediums</option>
+                        @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $mediumOption)
+                            <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
+                        @endforeach
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Format</span>
-                        <select wire:model.live="format">
-                            <option value="all">All formats</option>
-                            @foreach ($formats as $formatOption)
-                                <option value="{{ $formatOption->format_code }}" @selected($format === $formatOption->format_code)>{{ $formatOption->name }}</option>
-                            @endforeach
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="format" label="Format">
+                        <option value="all">All formats</option>
+                        @foreach ($formats as $formatOption)
+                            <option value="{{ $formatOption->format_code }}" @selected($format === $formatOption->format_code)>{{ $formatOption->name }}</option>
+                        @endforeach
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Media owner / seller</span>
-                        <select wire:model.live="owner">
-                            <option value="all">All owners</option>
-                            @foreach ($owners as $ownerOption)
-                                <option value="{{ $ownerOption->slug }}" @selected($owner === $ownerOption->slug)>{{ $ownerOption->display_name }}</option>
-                            @endforeach
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="owner" label="Media owner / seller">
+                        <option value="all">All owners</option>
+                        @foreach ($owners as $ownerOption)
+                            <option value="{{ $ownerOption->slug }}" @selected($owner === $ownerOption->slug)>{{ $ownerOption->display_name }}</option>
+                        @endforeach
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Channel / brand</span>
-                        <select wire:model.live="channel">
-                            <option value="all">All channels</option>
-                            @foreach ($channels as $channelOption)
-                                <option value="{{ $channelOption }}" @selected($channel === $channelOption)>{{ $channelOption }}</option>
-                            @endforeach
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="channel" label="Channel / brand">
+                        <option value="all">All channels</option>
+                        @foreach ($channels as $channelOption)
+                            <option value="{{ $channelOption }}" @selected($channel === $channelOption)>{{ $channelOption }}</option>
+                        @endforeach
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Location</span>
-                        <select wire:model.live="location">
-                            <option value="all">All locations</option>
-                            @foreach ($locations as $locationOption)
-                                <option value="{{ $locationOption }}" @selected($location === $locationOption)>{{ $locationOption }}</option>
-                            @endforeach
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="location" label="Location">
+                        <option value="all">All locations</option>
+                        @foreach ($locations as $locationOption)
+                            <option value="{{ $locationOption }}" @selected($location === $locationOption)>{{ $locationOption }}</option>
+                        @endforeach
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Availability</span>
-                        <select wire:model.live="availability">
-                            <option value="all">Any availability</option>
-                            <option value="available" @selected($availability === 'available')>Available</option>
-                            <option value="limited" @selected($availability === 'limited')>Limited</option>
-                            <option value="on_request" @selected($availability === 'on_request')>On request</option>
-                            <option value="unavailable" @selected($availability === 'unavailable')>Unavailable</option>
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="availability" label="Availability">
+                        <option value="all">Any availability</option>
+                        <option value="available" @selected($availability === 'available')>Available</option>
+                        <option value="limited" @selected($availability === 'limited')>Limited</option>
+                        <option value="on_request" @selected($availability === 'on_request')>On request</option>
+                        <option value="unavailable" @selected($availability === 'unavailable')>Unavailable</option>
+                    </flux:select>
 
-                    <label class="field">
-                        <span>Indicative budget</span>
-                        <select wire:model.live="budget">
-                            <option value="any">Any / discuss with team</option>
-                            <option value="5000" @selected($budget === '5000')>Up to RM5,000</option>
-                            <option value="10000" @selected($budget === '10000')>Up to RM10,000</option>
-                            <option value="50000" @selected($budget === '50000')>Up to RM50,000</option>
-                            <option value="100000" @selected($budget === '100000')>Up to RM100,000</option>
-                            <option value="300000" @selected($budget === '300000')>Up to RM300,000</option>
-                        </select>
-                    </label>
+                    <flux:select wire:model.live="budget" label="Indicative budget">
+                        <option value="any">Any / discuss with team</option>
+                        <option value="5000" @selected($budget === '5000')>Up to RM5,000</option>
+                        <option value="10000" @selected($budget === '10000')>Up to RM10,000</option>
+                        <option value="50000" @selected($budget === '50000')>Up to RM50,000</option>
+                        <option value="100000" @selected($budget === '100000')>Up to RM100,000</option>
+                        <option value="300000" @selected($budget === '300000')>Up to RM300,000</option>
+                    </flux:select>
 
                     <div class="filter-help">
                         <strong>Start with the audience, then narrow the inventory.</strong>
                         <p>The advisor turns an objective, budget and timing into an illustrative direction before you shortlist a medium or owner.</p>
-                        <a class="button button--primary button--sm" href="{{ route('advisor') }}">Open the advisor <span aria-hidden="true">↗</span></a>
+                        <flux:button href="{{ route('advisor') }}" variant="primary" size="sm" icon:trailing="arrow-up-right">Open the advisor</flux:button>
                     </div>
 
                     <div class="filter-sheet__apply">
-                        <button type="button" class="button button--primary button--block" data-filter-close>
+                        <flux:button type="button" variant="primary" class="w-full" data-filter-close>
                             Show {{ $offerings->total() }} {{ $offerings->total() === 1 ? 'opportunity' : 'opportunities' }}
-                        </button>
+                        </flux:button>
                     </div>
                 </aside>
 
@@ -154,16 +124,17 @@
                             <span>· subject to owner and availability verification</span>
                         </p>
                         <div class="results-bar__controls">
-                            <button type="button" class="button button--secondary button--sm filter-open" data-filter-open aria-expanded="false" aria-controls="media-filters">
+                            <flux:button type="button" variant="outline" size="sm" class="filter-open" data-filter-open aria-expanded="false" aria-controls="media-filters">
                                 Filters
                                 @if ($platform !== 'all' || $medium !== 'all' || $format !== 'all' || $owner !== 'all' || $channel !== 'all' || $location !== 'all' || $availability !== 'all' || $budget !== 'any' || $search !== '') (active) @endif
-                            </button>
-                            <label class="sr-only" for="media-sort">Sort media</label>
-                            <select id="media-sort" class="sort-select" wire:model.live="sort">
-                                <option value="recommended" @selected($sort === 'recommended')>Recommended</option>
-                                <option value="new" @selected($sort === 'new')>Newest</option>
-                                <option value="az" @selected($sort === 'az')>A to Z</option>
-                            </select>
+                            </flux:button>
+                            <div class="sort-control">
+                                <flux:select id="media-sort" wire:model.live="sort" aria-label="Sort media">
+                                    <option value="recommended" @selected($sort === 'recommended')>Recommended</option>
+                                    <option value="new" @selected($sort === 'new')>Newest</option>
+                                    <option value="az" @selected($sort === 'az')>A to Z</option>
+                                </flux:select>
+                            </div>
                         </div>
                     </div>
 
@@ -209,8 +180,8 @@
                                 <h3>No media matches those filters.</h3>
                                 <p>Try widening the medium, owner or location, or tell us what you are trying to achieve and we will suggest a direction.</p>
                                 <div class="empty-state__actions">
-                                    <button class="button button--primary" type="button" wire:click="clearFilters">Clear filters</button>
-                                    <a class="button button--secondary" href="{{ route('advisor') }}">Ask the media advisor</a>
+                                    <flux:button type="button" variant="primary" wire:click="clearFilters">Clear filters</flux:button>
+                                    <flux:button href="{{ route('advisor') }}" variant="outline">Ask the media advisor</flux:button>
                                 </div>
                             </div>
                         @endforelse

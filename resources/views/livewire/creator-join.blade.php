@@ -17,7 +17,7 @@
                         <div class="success-panel">
                             <h2>Application received.</h2>
                             <p>Thanks for your interest. Applications are reviewed before any creator profile becomes public. An application is not a guarantee of paid collaborations.</p>
-                            <a class="button button--primary" href="{{ route('home') }}">Back to Dunia Media</a>
+                            <flux:button href="{{ route('home') }}" variant="primary">Back to Dunia Media</flux:button>
                         </div>
                     @else
                         <span class="eyebrow">Creator application</span>
@@ -26,55 +26,25 @@
 
                         <form wire:submit="submit">
                             <div class="form-grid">
-                                <label class="field">
-                                    <span>Name</span>
-                                    <input wire:model="name" required autocomplete="name">
-                                    @error('name')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Email</span>
-                                    <input wire:model="email" type="email" required autocomplete="email" inputmode="email">
-                                    @error('email')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Phone <span class="form-hint">(optional)</span></span>
-                                    <input wire:model="phone" type="tel" autocomplete="tel" inputmode="tel">
-                                </label>
-                                <label class="field">
-                                    <span>Social handle</span>
-                                    <input wire:model="handle" placeholder="@yourhandle" required>
-                                    @error('handle')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Social platform</span>
-                                    <select wire:model="socialPlatform">
-                                        <option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>Podcast</option><option>Other</option>
-                                    </select>
-                                </label>
-                                <label class="field">
-                                    <span>Primary niche</span>
-                                    <input wire:model="niche" placeholder="Travel, parenting, tech…" required>
-                                    @error('niche')<small class="form-error">{{ $message }}</small>@enderror
-                                </label>
-                                <label class="field">
-                                    <span>Followers <span class="form-hint">(optional)</span></span>
-                                    <input wire:model="followers" type="number" min="0" inputmode="numeric">
-                                </label>
-                                <label class="field field--full">
-                                    <span>More about your content</span>
-                                    <textarea wire:model="message" rows="4" placeholder="Your audience, past brand work, what you enjoy creating…"></textarea>
-                                </label>
+                                <flux:input wire:model="name" required autocomplete="name" label="Name" />
+                                <flux:input wire:model="email" type="email" required autocomplete="email" inputmode="email" label="Email" />
+                                <flux:input wire:model="phone" type="tel" autocomplete="tel" inputmode="tel" label="Phone" description:trailing="Optional" />
+                                <flux:input wire:model="handle" placeholder="@yourhandle" required label="Social handle" />
+                                <flux:select wire:model="socialPlatform" label="Social platform"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>Podcast</option><option>Other</option></flux:select>
+                                <flux:input wire:model="niche" placeholder="Travel, parenting, tech…" required label="Primary niche" />
+                                <flux:input wire:model="followers" type="number" min="0" inputmode="numeric" label="Followers" description:trailing="Optional" />
+                                <flux:textarea wire:model="message" rows="4" placeholder="Your audience, past brand work, what you enjoy creating…" label="More about your content" field:class="field--full" />
                             </div>
 
                             <div class="honeypot" aria-hidden="true"><label>Leave empty<input wire:model="website" tabindex="-1"></label></div>
 
-                            <label class="check">
-                                <input wire:model="consent" type="checkbox">
-                                <span>I agree to be contacted regarding my creator application and accept the <a href="{{ route('privacy') }}">privacy notice</a>.</span>
-                            </label>
-                            @error('consent')<small class="form-error">{{ $message }}</small>@enderror
+                            <flux:field variant="inline">
+                                <flux:checkbox wire:model="consent" />
+                                <flux:label>I agree to be contacted regarding my creator application and accept the&nbsp;<a href="{{ route('privacy') }}">privacy notice</a>.</flux:label>
+                                <flux:error name="consent" />
+                            </flux:field>
 
-                            <button type="submit" class="button button--primary" style="margin-top:1.1rem">Submit application <span aria-hidden="true">↗</span></button>
+                            <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right" class="mt-4">Submit application</flux:button>
                         </form>
                     @endif
                 </div>

@@ -27,7 +27,7 @@ class CreatorSeeder extends Seeder
             ['Travel & Local Discovery', 'Travel', 'TikTok', 'creators', 'Travel and local discovery creator covering destinations and experiences across Malaysia.'],
             ['Food & Lifestyle', 'Food', 'Instagram', 'creator-feature', 'Food and lifestyle creator focused on everyday dining, recipes and local favourites.'],
             ['Technology & Productivity', 'Technology', 'YouTube', 'digital', 'Technology creator covering productivity tools, devices and practical workflows.'],
-            ['Home & Family', 'Family', 'TikTok', 'indoor', 'Family and home creator sharing practical ideas for Malaysian households.'],
+            ['Home & Family', 'Family', 'TikTok', 'demo-creator-home', 'Family and home creator sharing practical ideas for Malaysian households.'],
         ];
 
         foreach ($creators as $index => [$niche, $category, $platformName, $image, $bio]) {

@@ -49,8 +49,8 @@
                     <h3>The creator directory is in preparation.</h3>
                     <p style="margin-left:0">We are onboarding creators carefully rather than filling the page with invented faces and numbers. In the meantime, tell us the audience, niche and format you need — we will suggest a route.</p>
                     <div class="empty-state__actions" style="justify-content:flex-start">
-                        <a class="button button--primary" href="{{ route('creators.join') }}">Join as a creator <span aria-hidden="true">↗</span></a>
-                        <a class="button button--secondary" href="{{ route('contact') }}">Talk about a creator campaign</a>
+                        <flux:button href="{{ route('creators.join') }}" variant="primary" icon:trailing="arrow-up-right">Join as a creator</flux:button>
+                        <flux:button href="{{ route('contact') }}" variant="outline">Talk about a creator campaign</flux:button>
                     </div>
                 </div>
 
@@ -61,13 +61,13 @@
                 </div>
             @else
                 <div class="filter-horizontal" style="display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:0.6rem;margin-bottom:1.4rem">
-                    <label class="field"><span class="sr-only">Search creators</span><input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator name, niche or social platform…"></label>
-                    <label class="field"><span class="sr-only">Niche</span><select wire:model.live="niche"><option value="all">All niches</option>@foreach ($niches as $nicheOption)<option value="{{ $nicheOption }}" @selected($niche === $nicheOption)>{{ $nicheOption }}</option>@endforeach</select></label>
-                    <label class="field"><span class="sr-only">Social platform</span><select wire:model.live="socialPlatform"><option value="all">All social platforms</option>@foreach ($socialPlatforms as $socialPlatformOption)<option value="{{ $socialPlatformOption }}" @selected($socialPlatform === $socialPlatformOption)>{{ $socialPlatformOption }}</option>@endforeach</select></label>
-                    <button class="button button--secondary button--sm" type="button" wire:click="clearFilters">Clear</button>
+                    <flux:input type="search" wire:model.live.debounce.350ms="search" placeholder="Search creator name, niche or social platform…" aria-label="Search creators" icon="magnifying-glass" />
+                    <flux:select wire:model.live="niche" aria-label="Niche"><option value="all">All niches</option>@foreach ($niches as $nicheOption)<option value="{{ $nicheOption }}" @selected($niche === $nicheOption)>{{ $nicheOption }}</option>@endforeach</flux:select>
+                    <flux:select wire:model.live="socialPlatform" aria-label="Social platform"><option value="all">All social platforms</option>@foreach ($socialPlatforms as $socialPlatformOption)<option value="{{ $socialPlatformOption }}" @selected($socialPlatform === $socialPlatformOption)>{{ $socialPlatformOption }}</option>@endforeach</flux:select>
+                    <flux:button type="button" variant="filled" size="sm" wire:click="clearFilters">Clear</flux:button>
                 </div>
 
-                <div class="media-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+                <div class="media-grid">
                     @foreach ($creators as $creator)
                         <article class="creator-card" wire:key="creator-{{ $creator->id }}">
                             <div class="creator-card__image">

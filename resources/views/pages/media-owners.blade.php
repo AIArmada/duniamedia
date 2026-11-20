@@ -14,11 +14,8 @@
     <section class="section">
         <div class="container">
             <form method="get" action="{{ route('media.owners') }}" class="directory-search">
-                <label class="field">
-                    <span class="sr-only">Search media owners</span>
-                    <input type="search" name="q" value="{{ $query }}" placeholder="Search owner or channel…">
-                </label>
-                <button class="button button--primary" type="submit">Search directory</button>
+                <flux:input type="search" name="q" value="{{ $query }}" placeholder="Search owner or channel…" aria-label="Search media owners" icon="magnifying-glass" />
+                <flux:button type="submit" variant="primary" icon="magnifying-glass">Search directory</flux:button>
             </form>
 
             @if ($query !== '')
@@ -29,7 +26,7 @@
                 <div class="empty-state" style="text-align:left">
                     <h3>No media owners match that search.</h3>
                     <p>Try a shorter name, a channel brand, or browse the full directory.</p>
-                    <a class="button button--primary" href="{{ route('media.owners') }}">View all owners</a>
+                    <flux:button href="{{ route('media.owners') }}" variant="primary">View all owners</flux:button>
                 </div>
             @else
                 <div class="directory-card-grid">
