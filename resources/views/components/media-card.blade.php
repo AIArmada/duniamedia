@@ -15,7 +15,7 @@
     ];
 @endphp
 <article class="media-card">
-    <a class="media-card__media" href="{{ route('media.show', $item->slug) }}" tabindex="-1" aria-hidden="true">
+    <a class="media-card__media" href="{{ route('offers.show', $item->slug) }}" tabindex="-1" aria-hidden="true">
         <img src="{{ \App\Support\MediaImage::url($displayImage) }}"
              @if ($imageSrcset) srcset="{{ $imageSrcset }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 30vw" @endif
              alt="" loading="lazy" decoding="async">
@@ -34,7 +34,7 @@
                 · {{ $item->location_label ?? 'Nationwide' }}
             </span>
         </div>
-        <h3><a href="{{ route('media.show', $item->slug) }}">{{ $item->name }}</a></h3>
+        <h3><a href="{{ route('offers.show', $item->slug) }}">{{ $item->name }}</a></h3>
         <p class="media-card__summary">{{ $item->summary }}</p>
         <div class="media-card__footer">
             <span class="media-card__price">
@@ -45,7 +45,7 @@
                 @endif
                 <small>{{ $hasFixedPrice ? 'Rate card guide · subject to confirmation' : 'Rates and availability on request' }}</small>
             </span>
-            <a href="{{ route('media.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->name }} details">↗</a>
+            <a href="{{ route('offers.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->name }} details">↗</a>
         </div>
     </div>
 </article>

@@ -3,8 +3,10 @@
 namespace App\Livewire;
 
 use App\Models\AdFormat;
-use App\Models\MediaOffering;
+use AIArmada\Products\Models\Product;
+use App\Models\MediaProfile;
 use App\Models\Party;
+use App\Support\MediaOffer;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -70,33 +72,36 @@ class MediaExplorer extends Component
 
     public function render()
     {
-        $query = MediaOffering::query()
-            ->published()
-            ->with('seller')
+        $query = Product::query()
+            ->where('status', 'active')
+            ->whereHas('mediaProfile')
+            ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement.formats'])
             ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
                 $search = '%'.$this->search.'%';
 
                 $sub->where('name', 'like', $search)
-                    ->orWhere('summary', 'like', $search)
-                    ->orWhere('channel_label', 'like', $search)
-                    ->orWhere('audience_label', 'like', $search)
-                    ->orWhere('location_label', 'like', $search)
-                    ->orWhereHas('seller', fn ($seller) => $seller->where('display_name', 'like', $search))
-                    ->orWhereHas('placements.formats', fn ($format) => $format->where('name', 'like', $search));
+                    ->orWhere('short_description', 'like', $search)
+                    ->orWhere('description', 'like', $search)
+                    ->orWhereHas('mediaProfile', fn ($profile) => $profile
+                        ->where('channel_label', 'like', $search)
+                        ->orWhere('audience_label', 'like', $search)
+                        ->orWhere('location_label', 'like', $search)
+                        ->orWhereHas('mediaOwner', fn ($owner) => $owner->where('display_name', 'like', $search)))
+                    ->orWhereHas('mediaProfile.placement.formats', fn ($format) => $format->where('name', 'like', $search));
             }))
-            ->when($this->platform === 'traditional', fn ($query) => $query->whereIn('medium', self::TRADITIONAL_MEDIA))
-            ->when($this->platform === 'digital', fn ($query) => $query->whereIn('medium', self::DIGITAL_MEDIA))
-            ->when($this->medium !== 'all', fn ($query) => $query->where('medium', $this->medium))
-            ->when($this->format !== 'all', fn ($query) => $query->whereHas('placements.formats', fn ($format) => $format->where('format_code', $this->format)))
-            ->when($this->owner !== 'all', fn ($query) => $query->whereHas('seller', fn ($seller) => $seller->where('slug', $this->owner)))
-            ->when($this->channel !== 'all', fn ($query) => $query->where('channel_label', $this->channel))
-            ->when($this->location !== 'all', fn ($query) => $query->where('location_label', $this->location))
-            ->when($this->availability !== 'all', fn ($query) => $query->where('availability_status', $this->availability));
+            ->when($this->platform === 'traditional', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->whereIn('medium', self::TRADITIONAL_MEDIA)))
+            ->when($this->platform === 'digital', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->whereIn('medium', self::DIGITAL_MEDIA)))
+            ->when($this->medium !== 'all', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->where('medium', $this->medium)))
+            ->when($this->format !== 'all', fn ($query) => $query->whereHas('mediaProfile.placement.formats', fn ($format) => $format->where('format_code', $this->format)))
+            ->when($this->owner !== 'all', fn ($query) => $query->whereHas('mediaProfile.mediaOwner', fn ($owner) => $owner->where('slug', $this->owner)))
+            ->when($this->channel !== 'all', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->where('channel_label', $this->channel)))
+            ->when($this->location !== 'all', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->where('location_label', $this->location)))
+            ->when($this->availability !== 'all', fn ($query) => $query->whereHas('mediaProfile', fn ($profile) => $profile->where('availability_status', $this->availability)));
 
         if ($this->budget !== 'any') {
             $ceiling = (int) $this->budget;
-            $query->where(function ($sub) use ($ceiling) {
-                $sub->whereNull('price_from')->orWhere('price_from', '<=', $ceiling);
+            $query->whereHas('mediaProfile', function ($profile) use ($ceiling) {
+                $profile->whereNull('price_from')->orWhere('price_from', '<=', $ceiling);
             });
         }
 
@@ -108,27 +113,25 @@ class MediaExplorer extends Component
             $query->orderByDesc('is_featured')->latest('published_at');
         }
 
-        $channels = MediaOffering::query()
-            ->published()
+        $channels = MediaProfile::query()
             ->whereNotNull('channel_label')
             ->distinct()
             ->orderBy('channel_label')
             ->pluck('channel_label');
 
-        $locations = MediaOffering::query()
-            ->published()
+        $locations = MediaProfile::query()
             ->whereNotNull('location_label')
             ->distinct()
             ->orderBy('location_label')
             ->pluck('location_label');
 
         $owners = Party::query()
-            ->whereHas('offerings', fn ($query) => $query->published())
+            ->whereIn('id', MediaProfile::query()->whereNotNull('media_owner_party_id')->select('media_owner_party_id'))
             ->orderBy('display_name')
             ->get(['id', 'slug', 'display_name']);
 
         return view('livewire.media-explorer', [
-            'offerings' => $query->paginate(9),
+            'offerings' => $query->paginate(9)->through(fn (Product $product): MediaOffer => new MediaOffer($product)),
             'channels' => $channels,
             'locations' => $locations,
             'owners' => $owners,

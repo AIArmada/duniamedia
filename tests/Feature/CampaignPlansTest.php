@@ -6,15 +6,16 @@ use AIArmada\Cart\Models\CartModel;
 use App\Livewire\CampaignPlanBuilder;
 use App\Livewire\CampaignPlans;
 use App\Livewire\QuoteBuilder;
-use App\Models\MediaOffering;
 use App\Models\Party;
 use App\Support\CampaignPlans as PlanService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
+use Tests\Concerns\CreatesMediaOffers;
 use Tests\TestCase;
 
 class CampaignPlansTest extends TestCase
 {
+    use CreatesMediaOffers;
     use RefreshDatabase;
 
     public function test_a_user_can_keep_multiple_campaign_plans(): void
@@ -34,7 +35,9 @@ class CampaignPlansTest extends TestCase
 
     public function test_media_offerings_and_package_discounts_update_the_plan_total(): void
     {
-        $offering = MediaOffering::factory()->create([
+        $offering = $this->createMediaOffer([
+            'price' => 100000,
+        ], [
             'price_from' => 1000,
             'pricing_mode' => 'fixed',
         ]);
@@ -61,7 +64,12 @@ class CampaignPlansTest extends TestCase
     {
         Party::factory()->create(['slug' => 'ra-media-relations', 'display_name' => 'RA Media Relations Sdn Bhd']);
 
-        $offering = MediaOffering::factory()->create(['price_from' => 1000, 'pricing_mode' => 'fixed']);
+        $offering = $this->createMediaOffer([
+            'price' => 100000,
+        ], [
+            'price_from' => 1000,
+            'pricing_mode' => 'fixed',
+        ]);
         $plans = app(PlanService::class);
         $plan = $plans->create('Quote conversion', ['objective' => 'Awareness']);
         $plans->addOffering($plan, $offering);

@@ -32,7 +32,7 @@ return [
     */
     'features' => [
         'promotional' => [
-            'enabled' => env('PRICING_PROMOTIONAL_ENABLED', true),
+            'enabled' => env('PRICING_PROMOTIONAL_ENABLED', false),
         ],
 
         'owner' => [

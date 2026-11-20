@@ -41,9 +41,9 @@ class CreatorProfile extends BaseModel
         return $this->hasMany(CreatorDeliveryTemplate::class);
     }
 
-    public function offerings(): HasMany
+    public function mediaProfiles(): HasMany
     {
-        return $this->hasMany(MediaOffering::class);
+        return $this->hasMany(MediaProfile::class);
     }
 
     public function displayName(): string

@@ -30,8 +30,6 @@ class AdminPanelTest extends TestCase
             '/admin',
             '/admin/products',
             '/admin/products/create',
-            '/admin/media-offerings',
-            '/admin/media-offerings/create',
             '/admin/media-properties',
             '/admin/creator-profiles',
             '/admin/enquiries',
@@ -66,7 +64,7 @@ class AdminPanelTest extends TestCase
 
         $this->actingAs($editor);
 
-        $this->get('/admin/media-offerings')->assertOk();
+        $this->get('/admin/products')->assertForbidden();
         $this->get('/admin/enquiries')->assertForbidden();
     }
 }

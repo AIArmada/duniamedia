@@ -86,7 +86,7 @@
                     <h3 id="rate-card">Rate card and source documents</h3>
                     <div class="ratecard-docs">
                         @foreach ($documents as $i => $document)
-                            <a class="ratecard-doc" href="{{ route('media.ratecard', [$media->slug, $i]) }}" target="_blank" rel="noopener">
+                            <a class="ratecard-doc" href="{{ route('offers.ratecard', [$media->slug, $i]) }}" target="_blank" rel="noopener">
                                 <strong>{{ $document['name'] ?? 'Rate card' }}</strong>
                                 <span class="tiny muted">{{ strtoupper($document['ext'] ?? 'FILE') }} · {{ number_format(($document['size'] ?? 0) / 1024 / 1024, 1) }} MB · open full screen ↗</span>
                             </a>
@@ -96,15 +96,15 @@
                     @php($primary = $documents[0])
                     @if (($primary['ext'] ?? '') === 'pdf')
                         <div class="ratecard-frame">
-                            <iframe src="{{ route('media.ratecard', [$media->slug, 0]) }}#view=FitH" title="Rate card for {{ $media->name }}" loading="lazy"></iframe>
+                            <iframe src="{{ route('offers.ratecard', [$media->slug, 0]) }}#view=FitH" title="Rate card for {{ $media->name }}" loading="lazy"></iframe>
                         </div>
                     @elseif (in_array($primary['ext'] ?? '', ['jpg', 'jpeg', 'png']))
                         <div class="ratecard-frame ratecard-image">
-                            <img src="{{ route('media.ratecard', [$media->slug, 0]) }}" alt="Rate card for {{ $media->name }}" loading="lazy">
+                            <img src="{{ route('offers.ratecard', [$media->slug, 0]) }}" alt="Rate card for {{ $media->name }}" loading="lazy">
                         </div>
                     @else
                         <div class="ratecard-fallback">
-                            <p>This workbook opens in a spreadsheet app. <a href="{{ route('media.ratecard', [$media->slug, 0]) }}">Open the hosted file ↗</a></p>
+                            <p>This workbook opens in a spreadsheet app. <a href="{{ route('offers.ratecard', [$media->slug, 0]) }}">Open the hosted file ↗</a></p>
                             <p class="tiny muted">Key rates are summarised above; the original workbook stays on our server.</p>
                         </div>
                     @endif
@@ -117,7 +117,7 @@
                             @if (($document['kind'] ?? '') === 'video')
                                 <figure class="ratecard-video">
                                     <video controls playsinline preload="metadata" poster="{{ asset($document['poster'] ?? '') }}">
-                                        <source src="{{ route('media.ratecard', [$media->slug, $i]) }}" type="video/mp4">
+                                        <source src="{{ route('offers.ratecard', [$media->slug, $i]) }}" type="video/mp4">
                                         Your browser does not support video.
                                     </video>
                                     <figcaption>{{ $document['name'] ?? 'Walkthrough' }} <span class="tiny muted">· {{ number_format(($document['size'] ?? 0) / 1024 / 1024, 1) }} MB</span></figcaption>

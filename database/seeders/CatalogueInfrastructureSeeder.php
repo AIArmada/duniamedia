@@ -12,22 +12,18 @@ use App\Models\InventoryPool;
 use App\Models\InventoryWindow;
 use App\Models\Location;
 use App\Models\MediaAsset;
-use App\Models\MediaOffering;
 use App\Models\MediaProperty;
-use App\Models\OfferingPlacement;
 use App\Models\Organization;
 use App\Models\Party;
 use App\Models\PartyRole;
 use App\Models\Placement;
 use App\Models\PlacementFormat;
-use App\Models\RateCard;
-use App\Models\RateCardLine;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File as FileFacade;
 use Illuminate\Support\Str;
 
-class RatecardSeeder extends Seeder
+class CatalogueInfrastructureSeeder extends Seeder
 {
     use SeedsMedia;
 
@@ -71,8 +67,6 @@ class RatecardSeeder extends Seeder
         'ra media' => 'ra-media-relations',
     ];
 
-    private array $rateCards = [];
-
     public function run(): void
     {
         $path = resource_path('data/ratecards-2026.json');
@@ -94,7 +88,7 @@ class RatecardSeeder extends Seeder
         }
     }
 
-    private function importListing(array $item): MediaOffering
+    private function importListing(array $item): void
     {
         $seller = $this->sellerFor($item['media_owner'] ?? null);
         $property = $this->propertyFor($seller, $item);
@@ -168,46 +162,6 @@ class RatecardSeeder extends Seeder
 
         $this->attachFormats($placement, $item['medium'], $specs['formats'] ?? []);
 
-        $offering = MediaOffering::updateOrCreate(
-            ['slug' => $slug],
-            [
-                'seller_party_id' => $seller->id,
-                'name' => $item['title'],
-                'sku' => $slug,
-                'medium' => $item['medium'],
-                'unit_code' => 'campaign',
-                'summary' => $item['summary'],
-                'description' => $item['description'] ?? null,
-                'pricing_mode' => $item['pricing_mode'] ?? 'on_request',
-                'price_from' => $item['price_from'] ?? null,
-                'availability_status' => $item['availability_status'] ?? 'on_request',
-                'channel_label' => $item['channel'] ?? null,
-                'location_label' => $item['location'] ?? 'Nationwide',
-                'audience_label' => $item['audience'] ?? null,
-                'is_featured' => (bool) ($item['is_featured'] ?? false),
-                'status' => 'published',
-                'published_at' => now(),
-                'specifications' => $specs,
-            ],
-        );
-
-        $this->replaceMedia($offering, $item['image'] ?? null, 'image');
-
-        OfferingPlacement::updateOrCreate(
-            ['offering_id' => $offering->id, 'placement_id' => $placement->id],
-            ['units_per_purchase' => 1],
-        );
-        $rateCard = $this->rateCardFor($seller);
-
-        RateCardLine::updateOrCreate(
-            ['rate_card_id' => $rateCard->id, 'offering_id' => $offering->id],
-            [
-                'pricing_model' => $item['pricing_mode'] ?? 'on_request',
-                'unit_price' => $item['price_from'] ?? 0,
-                'minimum_quantity' => 1,
-            ],
-        );
-
         $pool = InventoryPool::updateOrCreate(
             ['placement_id' => $placement->id, 'unit_code' => 'campaign'],
             [
@@ -226,9 +180,6 @@ class RatecardSeeder extends Seeder
             ['capacity' => 1, 'reserved_quantity' => 0, 'status' => 'open'],
         );
 
-        $this->seedDocuments($offering, $specs['documents'] ?? []);
-
-        return $offering;
     }
 
     private function sellerFor(?string $mediaOwner): Party
@@ -336,37 +287,6 @@ class RatecardSeeder extends Seeder
             PlacementFormat::updateOrCreate(
                 ['placement_id' => $placement->id, 'format_id' => $format->id],
                 ['is_default' => $index === 0],
-            );
-        }
-    }
-
-    private function rateCardFor(Party $seller): RateCard
-    {
-        return $this->rateCards[$seller->id] ??= RateCard::firstOrCreate(
-            ['seller_party_id' => $seller->id, 'effective_from' => now()->startOfYear()],
-            [
-                'name' => $seller->display_name.' Rate Card',
-                'currency_code' => 'MYR',
-                'status' => 'active',
-            ],
-        );
-    }
-
-    private function seedDocuments(MediaOffering $offering, array $documents): void
-    {
-        $offering->clearMediaCollection('documents');
-
-        foreach ($documents as $index => $document) {
-            $this->mediaFile(
-                $offering,
-                'ratecards/'.($document['file'] ?? ''),
-                'documents',
-                'local',
-                [
-                    'name' => $document['name'] ?? null,
-                    'kind' => $document['kind'] ?? 'document',
-                    'index' => $index,
-                ],
             );
         }
     }

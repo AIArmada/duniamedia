@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use AIArmada\Cart\Models\CartModel;
-use App\Models\MediaOffering;
+use AIArmada\Products\Models\Product;
 use App\Support\CampaignPlans as PlanService;
 use Livewire\Component;
 
@@ -43,11 +43,14 @@ class CampaignPlanBuilder extends Component
 
     public function addOffering(): void
     {
-        $data = $this->validate(['offeringId' => 'required|exists:media_offerings,id']);
+        $data = $this->validate(['offeringId' => 'required|exists:products,id']);
 
-        $offering = MediaOffering::published()->findOrFail($data['offeringId']);
+        $product = Product::query()
+            ->where('status', 'active')
+            ->whereHas('mediaProfile')
+            ->findOrFail($data['offeringId']);
 
-        app(PlanService::class)->addOffering($this->plan(), $offering);
+        app(PlanService::class)->addOffering($this->plan(), $product);
         $this->offeringId = '';
     }
 
@@ -104,7 +107,7 @@ class CampaignPlanBuilder extends Component
         return view('livewire.campaign-plan-builder', [
             'plan' => $plan,
             'summary' => $summary,
-            'offerings' => MediaOffering::published()->orderBy('name')->get(['id', 'name']),
+            'offerings' => Product::query()->where('status', 'active')->whereHas('mediaProfile')->orderBy('name')->get(['id', 'name']),
         ])->layout('layouts.app', [
             'pageTitle' => $this->name.' | Campaign Plan | Dunia Media',
             'metaDescription' => 'Build a saved campaign plan, adjust quantities, apply package savings and request a proposal.',

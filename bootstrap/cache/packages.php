@@ -24,6 +24,28 @@
       'Cart' => 'AIArmada\\Cart\\Facades\\Cart',
     ),
   ),
+  'aiarmada/cashier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Cashier\\CashierServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Cashier' => 'AIArmada\\Cashier\\Facades\\Cashier',
+    ),
+  ),
+  'aiarmada/checkout' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Checkout\\CheckoutServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Checkout' => 'AIArmada\\Checkout\\Facades\\Checkout',
+    ),
+  ),
   'aiarmada/commerce-support' => 
   array (
     'providers' => 
@@ -38,6 +60,106 @@
       0 => 'AIArmada\\Contacting\\ContactingServiceProvider',
     ),
   ),
+  'aiarmada/customers' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Customers\\CustomersServiceProvider',
+    ),
+  ),
+  'aiarmada/docs' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Docs\\DocsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Doc' => 'AIArmada\\Docs\\Facades\\Doc',
+    ),
+  ),
+  'aiarmada/filament-authz' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentAuthz\\FilamentAuthzServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-cashier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentCashier\\FilamentCashierServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-inventory' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentInventory\\FilamentInventoryServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-orders' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentOrders\\FilamentOrdersServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-pricing' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentPricing\\FilamentPricingServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-products' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentProducts\\FilamentProductsServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-promotions' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentPromotions\\FilamentPromotionsServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-tax' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentTax\\FilamentTaxServiceProvider',
+    ),
+  ),
+  'aiarmada/filament-vouchers' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\FilamentVouchers\\FilamentVouchersServiceProvider',
+    ),
+  ),
+  'aiarmada/inventory' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Inventory\\InventoryServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Inventory' => 'AIArmada\\Inventory\\Facades\\Inventory',
+      'InventoryAllocation' => 'AIArmada\\Inventory\\Facades\\InventoryAllocation',
+    ),
+  ),
+  'aiarmada/orders' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Orders\\OrdersServiceProvider',
+    ),
+  ),
   'aiarmada/persons' => 
   array (
     'providers' => 
@@ -45,11 +167,61 @@
       0 => 'AIArmada\\Persons\\PersonsServiceProvider',
     ),
   ),
+  'aiarmada/pricing' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Pricing\\PricingServiceProvider',
+    ),
+  ),
+  'aiarmada/products' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Products\\ProductsServiceProvider',
+    ),
+  ),
+  'aiarmada/promotions' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Promotions\\PromotionsServiceProvider',
+    ),
+  ),
+  'aiarmada/shipping' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Shipping\\ShippingServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Shipping' => 'AIArmada\\Shipping\\Facades\\Shipping',
+    ),
+  ),
   'aiarmada/signals' => 
   array (
     'providers' => 
     array (
       0 => 'AIArmada\\Signals\\SignalsServiceProvider',
+    ),
+  ),
+  'aiarmada/tax' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Tax\\TaxServiceProvider',
+    ),
+  ),
+  'aiarmada/vouchers' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AIArmada\\Vouchers\\VoucherServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Voucher' => 'AIArmada\\Vouchers\\Facades\\Voucher',
     ),
   ),
   'akaunting/laravel-money' => 
@@ -127,6 +299,13 @@
     'providers' => 
     array (
       0 => 'Filament\\Schemas\\SchemasServiceProvider',
+    ),
+  ),
+  'filament/spatie-laravel-settings-plugin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\SpatieLaravelSettingsPluginServiceProvider',
     ),
   ),
   'filament/support' => 
@@ -347,6 +526,17 @@
     'providers' => 
     array (
       0 => 'Spatie\\ModelStates\\ModelStatesServiceProvider',
+    ),
+  ),
+  'spatie/laravel-pdf' => 
+  array (
+    'aliases' => 
+    array (
+      'LaravelPdf' => 'Pdf',
+    ),
+    'providers' => 
+    array (
+      0 => 'Spatie\\LaravelPdf\\PdfServiceProvider',
     ),
   ),
   'spatie/laravel-permission' => 

@@ -58,7 +58,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "AIArmada\\Products\\Database\\Factories\\": "../commerce/packages/products/database/factories/"
         }
     },
     "scripts": {

@@ -41,10 +41,9 @@ class Placement extends BaseModel
         return $this->hasMany(PlacementSpec::class);
     }
 
-    public function offerings(): BelongsToMany
+    public function mediaProfiles(): HasMany
     {
-        return $this->belongsToMany(MediaOffering::class, 'offering_placements', 'placement_id', 'offering_id')
-            ->withPivot('units_per_purchase');
+        return $this->hasMany(MediaProfile::class);
     }
 
     public function inventoryPools(): HasMany

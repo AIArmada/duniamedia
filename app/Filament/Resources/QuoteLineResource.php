@@ -32,8 +32,9 @@ class QuoteLineResource extends Resource
     {
         return $schema->components([
             Select::make('quote_id')->relationship('quote', 'quote_number')->searchable()->preload()->required(),
-            Select::make('offering_id')->relationship('offering', 'name')->searchable()->preload(),
+            Select::make('product_id')->relationship('product', 'name')->searchable()->preload(),
             Select::make('kind')->options(['media' => 'media', 'addon' => 'addon'])->required(),
+            TextInput::make('unit_code')->maxLength(255),
             Textarea::make('description')->required()->rows(3)->columnSpanFull(),
             TextInput::make('quantity')->numeric()->default(1),
             TextInput::make('unit_price')->numeric()->prefix('RM')->minValue(0),
