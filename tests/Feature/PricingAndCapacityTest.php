@@ -4,6 +4,8 @@ namespace Tests\Feature;
 
 use AIArmada\Inventory\Data\ScopedCapacityLine;
 use AIArmada\Inventory\Services\Stock\ScopedCapacityReservationService;
+use AIArmada\Orders\Events\OrderCanceled;
+use AIArmada\Orders\Models\Order;
 use AIArmada\Pricing\Models\Price;
 use AIArmada\Pricing\Models\PriceList;
 use App\Livewire\QuoteBuilder;
@@ -125,6 +127,13 @@ class PricingAndCapacityTest extends TestCase
         $this->assertSame(1, $service->available($line->resourceKey, $line->scopeKey));
 
         $service->release('capacity-test-hold');
+        $this->assertSame(2, $service->available($line->resourceKey, $line->scopeKey));
+
+        $order = new Order(['order_number' => 'CAPACITY-CANCEL']);
+        $service->reserve('order:CAPACITY-CANCEL', [$line], 600);
+        $this->assertSame(1, $service->available($line->resourceKey, $line->scopeKey));
+
+        event(new OrderCanceled($order, 'test cancellation'));
         $this->assertSame(2, $service->available($line->resourceKey, $line->scopeKey));
     }
 }
