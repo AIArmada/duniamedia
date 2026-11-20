@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RolePermissionSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -27,6 +28,8 @@ class AdminPanelTest extends TestCase
 
         foreach ([
             '/admin',
+            '/admin/products',
+            '/admin/products/create',
             '/admin/media-offerings',
             '/admin/media-offerings/create',
             '/admin/media-properties',
@@ -42,6 +45,11 @@ class AdminPanelTest extends TestCase
         ] as $path) {
             $this->get($path)->assertOk();
         }
+
+        $this->seed(MediaCatalogueSeeder::class);
+        $product = \AIArmada\Products\Models\Product::query()->where('slug', '988-fm-2026-radio-digital')->firstOrFail();
+
+        $this->get('/admin/products/'.$product->getRouteKey().'/edit')->assertOk();
     }
 
     public function test_editor_permissions_limit_the_resources_they_can_see(): void

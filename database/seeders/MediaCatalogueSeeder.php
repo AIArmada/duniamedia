@@ -137,7 +137,7 @@ class MediaCatalogueSeeder extends Seeder
                             'name' => $document['name'],
                             'kind' => $document['kind'],
                         ])
-                        ->toMediaCollection('documents');
+                        ->toMediaCollection('documents', 'media-private');
                 }
 
                 if ($entry['image_path'] && is_file(public_path($entry['image_path']))) {

@@ -13,6 +13,7 @@ class RolePermissionSeeder extends Seeder
         $permissions = [
             'admin.access',
             'media.manage',
+            'products.manage',
             'enquiries.manage',
             'quotes.manage',
             'content.manage',

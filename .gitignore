@@ -31,6 +31,7 @@
 /storage/app/public/*
 !/storage/app/public/.gitkeep
 /storage/app/media-private/*
+/storage/app/private/catalogue/
 
 # Local deployment backups
 /storage/app/backups/
