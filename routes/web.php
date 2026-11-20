@@ -23,8 +23,8 @@ Route::get('/media/owners', [MediaDirectoryController::class, 'index'])->name('m
 Route::view('/ecosystem', 'pages.ecosystem')->name('ecosystem');
 Route::get('/media/owners/{owner}', [MediaDirectoryController::class, 'owner'])->name('media.owner');
 Route::get('/media/owners/{owner}/{channel}', [MediaDirectoryController::class, 'channel'])->name('media.channel');
-Route::get('/media/{slug}/rate-card/{index?}', [RateCardController::class, 'show'])->whereNumber('index')->name('media.ratecard');
-Route::get('/media/{slug}', [PublicController::class, 'mediaShow'])->name('media.show');
+Route::get('/offers/{slug}/rate-card/{index?}', [RateCardController::class, 'show'])->whereNumber('index')->name('offers.ratecard');
+Route::get('/offers/{slug}', [PublicController::class, 'offerShow'])->name('offers.show');
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 Route::get('/media-advisor', CampaignPlanner::class)->name('advisor');
 Route::get('/quote-builder', QuoteBuilder::class)->name('quote.builder');

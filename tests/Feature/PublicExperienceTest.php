@@ -9,30 +9,32 @@ use App\Livewire\CreatorJoin;
 use App\Livewire\MediaExplorer;
 use App\Livewire\QuoteBuilder;
 use App\Models\CreatorProfile;
-use App\Models\MediaOffering;
 use App\Models\Party;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
+use Tests\Concerns\CreatesMediaOffers;
 use Tests\TestCase;
 
 class PublicExperienceTest extends TestCase
 {
+    use CreatesMediaOffers;
     use RefreshDatabase;
 
     public function test_public_routes_render_the_redesigned_experience(): void
     {
-        $media = MediaOffering::factory()->create([
+        $media = $this->createMediaOffer([
             'name' => 'Test Billboard',
             'slug' => 'test-billboard',
+            'short_description' => 'A test outdoor opportunity.',
+        ], [
             'medium' => 'Outdoor',
             'location_label' => 'Klang Valley',
-            'summary' => 'A test outdoor opportunity.',
         ]);
 
         foreach ([
             '/',
             '/media',
-            '/media/test-billboard',
+            '/offers/test-billboard',
             '/media/owners',
             '/media/owners/media-prima',
             '/media/owners/media-prima/tv3',
@@ -58,12 +60,12 @@ class PublicExperienceTest extends TestCase
             $this->get($path)->assertOk();
         }
 
-        $this->get('/media/test-billboard')->assertSee($media->name);
+        $this->get('/offers/test-billboard')->assertSee($media->name);
     }
 
     public function test_global_search_finds_media_and_creators(): void
     {
-        MediaOffering::factory()->create([
+        $this->createMediaOffer([
             'name' => 'Searchable Billboard',
             'slug' => 'searchable-billboard',
         ]);
@@ -82,8 +84,8 @@ class PublicExperienceTest extends TestCase
 
     public function test_media_explorer_filters_and_clears_from_url_state(): void
     {
-        MediaOffering::factory()->create(['name' => 'Radio One', 'slug' => 'radio-one', 'medium' => 'Radio']);
-        MediaOffering::factory()->create(['name' => 'Outdoor One', 'slug' => 'outdoor-one', 'medium' => 'Outdoor']);
+        $this->createMediaOffer(['name' => 'Radio One', 'slug' => 'radio-one'], ['medium' => 'Radio']);
+        $this->createMediaOffer(['name' => 'Outdoor One', 'slug' => 'outdoor-one'], ['medium' => 'Outdoor']);
 
         Livewire::test(MediaExplorer::class)
             ->set('medium', 'Radio')
@@ -102,11 +104,12 @@ class PublicExperienceTest extends TestCase
             'display_name' => 'Test Media Owner',
         ]);
 
-        MediaOffering::factory()->create([
+        $this->createMediaOffer([
             'name' => 'Owner Billboard',
             'slug' => 'owner-billboard',
+        ], [
             'medium' => 'Outdoor',
-            'seller_party_id' => $owner->id,
+            'media_owner_party_id' => $owner->id,
         ]);
 
         Livewire::test(MediaExplorer::class)
@@ -120,9 +123,10 @@ class PublicExperienceTest extends TestCase
     {
         Party::factory()->create(['slug' => 'ra-media-relations', 'display_name' => 'RA Media Relations Sdn Bhd']);
 
-        $media = MediaOffering::factory()->create([
+        $media = $this->createMediaOffer([
             'name' => 'Test Radio Spot',
             'slug' => 'test-radio-spot',
+        ], [
             'medium' => 'Radio',
             'pricing_mode' => 'on_request',
         ]);

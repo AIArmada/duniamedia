@@ -2,12 +2,13 @@
 
 namespace Tests\Feature;
 
-use App\Models\MediaOffering;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Concerns\CreatesMediaOffers;
 use Tests\TestCase;
 
 class WebsiteTest extends TestCase
 {
+    use CreatesMediaOffers;
     use RefreshDatabase;
 
     public function test_public_pages_are_accessible(): void
@@ -20,12 +21,13 @@ class WebsiteTest extends TestCase
 
     public function test_unpublished_inventory_is_not_public(): void
     {
-        MediaOffering::factory()->draft()->create([
+        $this->createMediaOffer([
             'name' => 'Private Test',
             'slug' => 'private-test',
+            'status' => 'draft',
         ]);
 
-        $this->get('/media/private-test')->assertNotFound();
+        $this->get('/offers/private-test')->assertNotFound();
         $this->get('/work/media/not-a-real-file')->assertNotFound();
     }
 

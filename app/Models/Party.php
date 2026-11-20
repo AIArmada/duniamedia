@@ -61,9 +61,9 @@ class Party extends BaseModel
         return $this->hasMany(Campaign::class, 'client_party_id');
     }
 
-    public function offerings(): HasMany
+    public function mediaProfiles(): HasMany
     {
-        return $this->hasMany(MediaOffering::class, 'seller_party_id');
+        return $this->hasMany(MediaProfile::class, 'media_owner_party_id');
     }
 
     public function displayLogo(): string

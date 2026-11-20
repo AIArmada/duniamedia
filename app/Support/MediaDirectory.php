@@ -2,7 +2,7 @@
 
 namespace App\Support;
 
-use App\Models\MediaOffering;
+use AIArmada\Products\Models\Product;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -208,9 +208,10 @@ class MediaDirectory
             return collect();
         }
 
-        $offerings = MediaOffering::query()
-            ->published()
-            ->with('seller')
+        $offerings = Product::query()
+            ->where('status', 'active')
+            ->whereHas('mediaProfile')
+            ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement'])
             ->whereIn('slug', $slugs)
             ->get()
             ->keyBy('slug');
@@ -218,6 +219,7 @@ class MediaDirectory
         return collect($slugs)
             ->map(fn (string $slug) => $offerings->get($slug))
             ->filter()
+            ->map(fn (Product $product) => new MediaOffer($product))
             ->values();
     }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11a7beecd10a2bec2b44d4133426965d",
+    "content-hash": "14e411e5382826589327757bdc4b1349",
     "packages": [
         {
             "name": "aiarmada/addressing",
@@ -144,6 +144,132 @@
             }
         },
         {
+            "name": "aiarmada/cashier",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/cashier",
+                "reference": "0ad2b4fed8e4e23d61b0be63e14bf06d07e422cd"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/affiliates": "Optional integration",
+                "aiarmada/cart": "Optional integration",
+                "aiarmada/cashier-chip": "Required for CHIP payment gateway support",
+                "aiarmada/chip": "Optional integration",
+                "aiarmada/customers": "Optional integration",
+                "aiarmada/inventory": "Optional integration",
+                "laravel/cashier": "Required for Stripe payment gateway support. Without it, calling the stripe gateway throws a clear error."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Cashier\\CashierServiceProvider"
+                    ],
+                    "aliases": {
+                        "Cashier": "AIArmada\\Cashier\\Facades\\Cashier"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Cashier\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "AIArmada\\Cashier\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Unified multi-gateway billing integration for Laravel supporting Stripe and CHIP",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "keywords": [
+                "billing",
+                "cashier",
+                "chip",
+                "laravel",
+                "multi-gateway",
+                "payments",
+                "stripe",
+                "subscriptions"
+            ],
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/checkout",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/checkout",
+                "reference": "969d95ddff0b16db1da9d70c08e81dabd5934eb3"
+            },
+            "require": {
+                "aiarmada/cart": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/customers": "self.version",
+                "aiarmada/docs": "self.version",
+                "aiarmada/orders": "self.version",
+                "aiarmada/pricing": "self.version",
+                "aiarmada/products": "self.version",
+                "aiarmada/shipping": "self.version",
+                "illuminate/contracts": "^13.40.0",
+                "illuminate/support": "^13.40.0",
+                "php": "^8.5",
+                "spatie/laravel-webhook-client": "^3.7.0"
+            },
+            "suggest": {
+                "aiarmada/cashier": "For unified multi-gateway payment processing (recommended)",
+                "aiarmada/cashier-chip": "For Cashier-style CHIP payment integration",
+                "aiarmada/chip": "For direct CHIP payment gateway integration",
+                "aiarmada/inventory": "For stock validation and reservation during checkout",
+                "aiarmada/jnt": "For J&T Express shipping integration (integrates via shipping adapter)",
+                "aiarmada/promotions": "For automatic promotion application during checkout",
+                "aiarmada/tax": "For tax calculation during checkout",
+                "aiarmada/vouchers": "For voucher/coupon redemption during checkout"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Checkout\\CheckoutServiceProvider"
+                    ],
+                    "aliases": {
+                        "Checkout": "AIArmada\\Checkout\\Facades\\Checkout"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Checkout\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Unified checkout flow orchestrating cart, orders, payments, and fulfillment for the AIArmada Commerce ecosystem",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "aiarmada/commerce-support",
             "version": "dev-main",
             "dist": {
@@ -264,6 +390,652 @@
             }
         },
         {
+            "name": "aiarmada/customers",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/customers",
+                "reference": "7b8808dacc926b67868e549bf75d56e1ccd34682"
+            },
+            "require": {
+                "aiarmada/addressing": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/contacting": "self.version",
+                "php": "^8.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Customers\\CustomersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Customers\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Customer relationship management for the AIArmada Commerce ecosystem",
+            "keywords": [
+                "addresses",
+                "commerce",
+                "crm",
+                "customers",
+                "laravel",
+                "segments"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/docs",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/docs",
+                "reference": "edab42ee6c37a2d62b55ace198fd869e70c26e1c"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5",
+                "spatie/browsershot": "^5.4.2",
+                "spatie/laravel-pdf": "^2.14.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Docs\\DocsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Doc": "AIArmada\\Docs\\Facades\\Doc"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Docs\\": "src/",
+                    "AIArmada\\Docs\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Doc generation package for Laravel with PDF support for invoices, receipts, shipping labels, and customizable templates",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-authz",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-authz",
+                "reference": "8b38fcf56d1f4d38d607d09555e1eedf9c0b49ef"
+            },
+            "require": {
+                "aiarmada/authz": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5",
+                "spatie/laravel-package-tools": "^1.93.3",
+                "spatie/laravel-permission": "^8.3.2"
+            },
+            "suggest": {
+                "aiarmada/affiliates": "Optional integration",
+                "aiarmada/filament-affiliates": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentAuthz\\FilamentAuthzServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentAuthz\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Filament v5 permissions suite powered by Spatie laravel-permission with multi-guard, panel-aware gating, and admin UX.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-cashier",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-cashier",
+                "reference": "397ec1d57f4c5db6f72438e548154869b6c1e4df"
+            },
+            "require": {
+                "aiarmada/cashier": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/cashier-chip": "Required for CHIP gateway features",
+                "aiarmada/chip": "Optional integration",
+                "aiarmada/filament-cashier-chip": "Enhanced CHIP-specific UI",
+                "laravel/cashier": "Required for Stripe gateway features"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentCashier\\FilamentCashierServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentCashier\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "support@aiarmada.com"
+                }
+            ],
+            "description": "Unified Filament admin interface for multi-gateway billing management",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "keywords": [
+                "billing",
+                "cashier",
+                "chip",
+                "filament",
+                "multi-gateway",
+                "payments",
+                "stripe",
+                "subscriptions"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-inventory",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-inventory",
+                "reference": "ce07024fe375d5bb60a58b468bb6c240f01a0913"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/inventory": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentInventory\\FilamentInventoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentInventory\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Filament admin panel for inventory and warehouse management",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-orders",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-orders",
+                "reference": "3a491e58cd45c0a4c5d92b70c1627a6be73fd7f6"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/orders": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/jnt": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentOrders\\FilamentOrdersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentOrders\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Filament admin panel for order management",
+            "keywords": [
+                "admin",
+                "commerce",
+                "filament",
+                "laravel",
+                "orders"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-pricing",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-pricing",
+                "reference": "4bc197aab94a11b99277add62217356469182458"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/pricing": "self.version",
+                "filament/filament": "^5.11.1",
+                "filament/spatie-laravel-settings-plugin": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/customers": "Optional integration",
+                "aiarmada/filament-promotions": "For promotions administration",
+                "aiarmada/products": "Optional integration",
+                "aiarmada/promotions": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentPricing\\FilamentPricingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentPricing\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Filament admin panel for pricing rules management",
+            "keywords": [
+                "admin",
+                "commerce",
+                "filament",
+                "laravel",
+                "pricing",
+                "promotions"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-products",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-products",
+                "reference": "4c65d68fe3e9f0eea17e59ea974f4e1a91731529"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/products": "self.version",
+                "filament/filament": "^5.11.1",
+                "filament/spatie-laravel-media-library-plugin": "^5.11.1",
+                "filament/spatie-laravel-tags-plugin": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/customers": "Optional integration",
+                "aiarmada/pricing": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentProducts\\FilamentProductsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentProducts\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Filament admin panel for product catalog management",
+            "keywords": [
+                "admin",
+                "commerce",
+                "filament",
+                "laravel",
+                "products"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-promotions",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-promotions",
+                "reference": "e0b1315aaf90c51d7b2a0cbb139d74300b71865c"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/promotions": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/filament-cart": "Enables deep linking from promotion usage to cart snapshots",
+                "aiarmada/filament-products": "Enables product-based promotion targeting",
+                "aiarmada/filament-vouchers": "Optional integration",
+                "aiarmada/vouchers": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentPromotions\\FilamentPromotionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentPromotions\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Filament v5 plugin for administering promotions provided by the AIArmada promotions package",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-tax",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-tax",
+                "reference": "8067202d80e2a210ace9a93f09faac7c4f694547"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/filament-authz": "self.version",
+                "aiarmada/tax": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/customers": "Required for Customer/CustomerGroup exemption entity types",
+                "filament/spatie-laravel-settings-plugin": "Required for the ManageTaxSettings page"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentTax\\FilamentTaxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentTax\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Filament admin panel for tax configuration",
+            "keywords": [
+                "admin",
+                "commerce",
+                "filament",
+                "laravel",
+                "tax",
+                "vat"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/filament-vouchers",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/filament-vouchers",
+                "reference": "351f0b3d65d9ae50e1e752d2e05ff93b71b7465f"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "aiarmada/vouchers": "self.version",
+                "filament/filament": "^5.11.1",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/affiliates": "Optional integration",
+                "aiarmada/cart": "Optional integration",
+                "aiarmada/filament-cart": "Enables deep linking from voucher usage records to cart snapshots"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\FilamentVouchers\\FilamentVouchersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\FilamentVouchers\\": "src/",
+                    "AIArmada\\FilamentVouchers\\Database\\Factories\\": "database/factories/",
+                    "AIArmada\\FilamentVouchers\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Filament v5 plugin for administering vouchers provided by the AIArmada vouchers package",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/inventory",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/inventory",
+                "reference": "c0aee80d9648098c9bc7cd633c40896ac67de805"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/cart": "Required for cart integration features (stock reservation, allocation on checkout)",
+                "aiarmada/cashier": "Optional integration",
+                "aiarmada/cashier-chip": "Optional integration",
+                "aiarmada/orders": "Required for automatic inventory deduction on payment and release on cancellation",
+                "aiarmada/products": "Recommended for product stock queries via Inventoryable interface",
+                "aiarmada/shipping": "Required for fulfillment location optimization"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Inventory\\InventoryServiceProvider"
+                    ],
+                    "aliases": {
+                        "Inventory": "AIArmada\\Inventory\\Facades\\Inventory",
+                        "InventoryAllocation": "AIArmada\\Inventory\\Facades\\InventoryAllocation"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Inventory\\": "src/",
+                    "AIArmada\\Inventory\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Multi-location inventory and warehouse management system for Laravel with allocation strategies, cart integration, and movement tracking",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/orders",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/orders",
+                "reference": "632a7c0a58b35057fd0afa30fe45cfd3a00a4280"
+            },
+            "require": {
+                "aiarmada/addressing": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5",
+                "spatie/browsershot": "^5.4.2",
+                "spatie/laravel-pdf": "^2.14.0"
+            },
+            "suggest": {
+                "aiarmada/docs": "Optional integration",
+                "aiarmada/inventory": "Optional integration",
+                "aiarmada/shipping": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Orders\\OrdersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Orders\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Order management and transaction lifecycle for the AIArmada Commerce ecosystem",
+            "keywords": [
+                "commerce",
+                "invoices",
+                "laravel",
+                "orders",
+                "state-machine",
+                "transactions"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "aiarmada/persons",
             "version": "dev-main",
             "dist": {
@@ -323,6 +1095,205 @@
             }
         },
         {
+            "name": "aiarmada/pricing",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/pricing",
+                "reference": "33332ed124bdf1c8758438e4a3e21b083cb8e60f"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/promotions": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Pricing\\PricingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Pricing\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Dynamic pricing engine for the AIArmada Commerce ecosystem",
+            "keywords": [
+                "commerce",
+                "laravel",
+                "price-rules",
+                "pricing",
+                "promotions",
+                "tiered-pricing"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/products",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/products",
+                "reference": "659efe0e36f5358489764b87c2ca8551ccc2ec02"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/inventory": "Optional integration",
+                "aiarmada/pricing": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Products\\ProductsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Products\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Product catalog and PIM for the AIArmada Commerce ecosystem",
+            "keywords": [
+                "catalog",
+                "categories",
+                "commerce",
+                "laravel",
+                "pim",
+                "products",
+                "variants"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/promotions",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/promotions",
+                "reference": "b5c0269cf2b16d253d3c4a65c6b71c5552db1262"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "illuminate/database": "^13.40.0",
+                "illuminate/support": "^13.40.0",
+                "php": "^8.5",
+                "spatie/laravel-activitylog": "^5.1.3",
+                "spatie/laravel-data": "^4.23.1",
+                "spatie/laravel-package-tools": "^1.93.3"
+            },
+            "suggest": {
+                "aiarmada/cart": "Optional integration",
+                "aiarmada/orders": "Optional integration",
+                "aiarmada/products": "For product/category targeting in promotions",
+                "aiarmada/vouchers": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Promotions\\PromotionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Promotions\\": "src/",
+                    "AIArmada\\Promotions\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada Team"
+                }
+            ],
+            "description": "Automatic promotions and discount campaigns for commerce",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/shipping",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/shipping",
+                "reference": "18240d7bf60e74ffbdcfb0485e02db9c91bef9ad"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/addressing": "Validates destination shippability against per-country address profiles",
+                "aiarmada/cart": "Required for free shipping evaluation with cart subtotals",
+                "aiarmada/inventory": "Optional integration",
+                "aiarmada/orders": "Required for order fulfillment handler integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Shipping\\ShippingServiceProvider"
+                    ],
+                    "aliases": {
+                        "Shipping": "AIArmada\\Shipping\\Facades\\Shipping"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Shipping\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Multi-carrier shipping abstraction layer for Laravel commerce applications",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "aiarmada/signals",
             "version": "dev-main",
             "dist": {
@@ -368,6 +1339,106 @@
                 "product-analytics",
                 "signals"
             ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/tax",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/tax",
+                "reference": "c6fad69c74d5aba92012417f15a427a872ae9b83"
+            },
+            "require": {
+                "aiarmada/commerce-support": "self.version",
+                "akaunting/laravel-money": "^6.0.3",
+                "owen-it/laravel-auditing": "^14.0.7",
+                "php": "^8.5",
+                "spatie/laravel-activitylog": "^5.1.3",
+                "spatie/laravel-data": "^4.23.1",
+                "spatie/laravel-model-states": "^2.14.3",
+                "spatie/laravel-settings": "^3.10.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Tax\\TaxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Tax\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AIArmada",
+                    "email": "dev@aiarmada.com"
+                }
+            ],
+            "description": "Tax calculation engine for the AIArmada Commerce ecosystem",
+            "keywords": [
+                "commerce",
+                "gst",
+                "laravel",
+                "sales-tax",
+                "tax",
+                "vat"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "aiarmada/vouchers",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../commerce/packages/vouchers",
+                "reference": "88812abf6833707331363044ae5be2eefccbd56d"
+            },
+            "require": {
+                "aiarmada/cart": "self.version",
+                "aiarmada/commerce-support": "self.version",
+                "php": "^8.5"
+            },
+            "suggest": {
+                "aiarmada/affiliates": "Optional integration",
+                "aiarmada/filament-cart": "Optional integration",
+                "aiarmada/orders": "Optional integration"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AIArmada\\Vouchers\\VoucherServiceProvider"
+                    ],
+                    "aliases": {
+                        "Voucher": "AIArmada\\Vouchers\\Facades\\Voucher"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AIArmada\\Vouchers\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Voucher and coupon system for Laravel built on the cart package's condition system, with support for multiple redemption types, usage limits, and expiry dates",
+            "homepage": "https://github.com/aiarmada/commerce",
+            "support": {
+                "issues": "https://github.com/aiarmada/commerce/issues",
+                "source": "https://github.com/aiarmada/commerce"
+            },
             "transport-options": {
                 "relative": true
             }
@@ -2280,6 +3351,89 @@
                 "source": "https://github.com/filamentphp/filament"
             },
             "time": "2026-11-13T13:22:50+00:00"
+        },
+        {
+            "name": "filament/spatie-laravel-settings-plugin",
+            "version": "v5.11.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filamentphp/spatie-laravel-settings-plugin.git",
+                "reference": "1e9f3a3952afb92c70b59e39083e93181fc26f3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-settings-plugin/zipball/1e9f3a3952afb92c70b59e39083e93181fc26f3f",
+                "reference": "1e9f3a3952afb92c70b59e39083e93181fc26f3f",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "self.version",
+                "php": "^8.2",
+                "spatie/laravel-settings": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Filament\\SpatieLaravelSettingsPluginServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Filament\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Filament support for `spatie/laravel-settings`.",
+            "homepage": "https://github.com/filamentphp/filament",
+            "support": {
+                "issues": "https://github.com/filamentphp/filament/issues",
+                "source": "https://github.com/filamentphp/filament"
+            },
+            "time": "2026-11-03T11:53:08+00:00",
+            "published-time": "2026-11-13T13:19:03+00:00"
+        },
+        {
+            "name": "filament/spatie-laravel-tags-plugin",
+            "version": "v5.11.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filamentphp/spatie-laravel-tags-plugin.git",
+                "reference": "2041abcc5a5988d32f7be2691eed42f840826e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-tags-plugin/zipball/2041abcc5a5988d32f7be2691eed42f840826e3e",
+                "reference": "2041abcc5a5988d32f7be2691eed42f840826e3e",
+                "shasum": ""
+            },
+            "require": {
+                "filament/support": "self.version",
+                "php": "^8.2",
+                "spatie/laravel-tags": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Filament\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Filament support for `spatie/laravel-tags`.",
+            "homepage": "https://github.com/filamentphp/filament",
+            "support": {
+                "issues": "https://github.com/filamentphp/filament/issues",
+                "source": "https://github.com/filamentphp/filament"
+            },
+            "time": "2026-11-03T11:47:10+00:00",
+            "published-time": "2026-11-13T12:59:31+00:00"
         },
         {
             "name": "filament/support",
@@ -7136,6 +8290,75 @@
             "time": "2022-12-17T21:53:22+00:00"
         },
         {
+            "name": "spatie/browsershot",
+            "version": "5.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/browsershot.git",
+                "reference": "eba71ab7f4aba23d9321d653ccd19d4e94432516"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/eba71ab7f4aba23d9321d653ccd19d4e94432516",
+                "reference": "eba71ab7f4aba23d9321d653ccd19d4e94432516",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-json": "*",
+                "php": "^8.2",
+                "spatie/temporary-directory": "^2.0",
+                "symfony/process": "^6.0|^7.0|^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^3.0|^4.0|^5.0",
+                "spatie/image": "^3.6",
+                "spatie/pdf-to-text": "^1.52",
+                "spatie/phpunit-snapshot-assertions": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Browsershot\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://github.com/freekmurze",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert a webpage to an image or pdf using headless Chrome",
+            "homepage": "https://github.com/spatie/browsershot",
+            "keywords": [
+                "chrome",
+                "convert",
+                "headless",
+                "image",
+                "pdf",
+                "puppeteer",
+                "screenshot",
+                "webpage"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/browsershot/tree/5.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-11-06T09:42:13+00:00",
+            "published-time": "2026-11-06T09:42:43+00:00"
+        },
+        {
             "name": "spatie/eloquent-sortable",
             "version": "5.0.1",
             "source": {
@@ -8005,6 +9228,102 @@
                 }
             ],
             "time": "2026-09-28T07:16:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-pdf",
+            "version": "2.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-pdf.git",
+                "reference": "9581e64f96092cc3a0857b76d9ee180d6abdce78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-pdf/zipball/9581e64f96092cc3a0857b76d9ee180d6abdce78",
+                "reference": "9581e64f96092cc3a0857b76d9ee180d6abdce78",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^11.0|^12.0|^13.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.16.1",
+                "spatie/temporary-directory": "^2.2.1"
+            },
+            "require-dev": {
+                "chrome-php/chrome": "^1.0",
+                "dompdf/dompdf": "^3.0",
+                "ext-imagick": "*",
+                "larastan/larastan": "^2.7.0|^3.0",
+                "laravel/pint": "^1.13.7",
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^9.6|^10.0|^11.0",
+                "pestphp/pest": "^2.30|^3.7|^4.4",
+                "pestphp/pest-plugin-arch": "^2.5|^3.0|^4.0",
+                "pestphp/pest-plugin-laravel": "^2.2|^3.1|^4.1",
+                "phpstan/extension-installer": "^1.3.1",
+                "phpstan/phpstan-deprecation-rules": "^1.1.4|^2.0",
+                "phpstan/phpstan-phpunit": "^1.3.15|^2.0",
+                "pontedilana/php-weasyprint": "^2.4",
+                "spatie/image": "^3.3.2",
+                "spatie/invade": "^2.1",
+                "spatie/laravel-ray": "^1.33",
+                "spatie/pdf-to-image": "^2.2|^3.1",
+                "spatie/pdf-to-text": "^1.52.1",
+                "spatie/pest-expectations": "^1.5",
+                "spatie/pest-plugin-snapshots": "^2.1",
+                "spatie/pixelmatch-php": "^1.0",
+                "tecnickcom/tc-lib-pdf-encrypt": "^2.5",
+                "wnx/sidecar-browsershot": "^2.0"
+            },
+            "suggest": {
+                "chrome-php/chrome": "Required for the Chrome PHP driver (^1.0)",
+                "dompdf/dompdf": "Required for the DOMPDF driver (^3.0)",
+                "spatie/browsershot": "Required for the Browsershot driver (^4.0|^5.0)",
+                "tecnickcom/tc-lib-pdf-encrypt": "Required to password-protect PDFs with the default encrypter (^2.5)"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "LaravelPdf": "Pdf"
+                    },
+                    "providers": [
+                        "Spatie\\LaravelPdf\\PdfServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/functions.php"
+                ],
+                "psr-4": {
+                    "Spatie\\LaravelPdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create PDFs in Laravel apps",
+            "homepage": "https://github.com/spatie/laravel-pdf",
+            "keywords": [
+                "laravel",
+                "laravel-pdf",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-pdf/issues",
+                "source": "https://github.com/spatie/laravel-pdf/tree/2.14.0"
+            },
+            "time": "2026-10-05T08:48:41+00:00",
+            "published-time": "2026-10-05T08:49:40+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -15467,9 +16786,26 @@
         "aiarmada/addressing": 20,
         "aiarmada/authz": 20,
         "aiarmada/cart": 20,
+        "aiarmada/cashier": 20,
+        "aiarmada/checkout": 20,
         "aiarmada/contacting": 20,
+        "aiarmada/filament-cashier": 20,
+        "aiarmada/filament-inventory": 20,
+        "aiarmada/filament-orders": 20,
+        "aiarmada/filament-pricing": 20,
+        "aiarmada/filament-products": 20,
+        "aiarmada/filament-promotions": 20,
+        "aiarmada/filament-tax": 20,
+        "aiarmada/filament-vouchers": 20,
+        "aiarmada/inventory": 20,
+        "aiarmada/orders": 20,
         "aiarmada/persons": 20,
-        "aiarmada/signals": 20
+        "aiarmada/pricing": 20,
+        "aiarmada/products": 20,
+        "aiarmada/promotions": 20,
+        "aiarmada/signals": 20,
+        "aiarmada/tax": 20,
+        "aiarmada/vouchers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -15477,5 +16813,5 @@
         "php": "^8.5"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }

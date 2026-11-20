@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Campaign;
-use App\Models\MediaOffering;
 use App\Models\Party;
+use App\Support\MediaOffer;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Training;
 use App\Support\ClientWork;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use AIArmada\Products\Models\Product;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -46,24 +47,40 @@ class PublicController extends Controller
             ->take(8);
 
         return view('pages.home', [
-            'media' => MediaOffering::published()->with('seller')->where('is_featured', true)->latest('published_at')->take(6)->get(),
+            'media' => Product::query()
+                ->where('status', 'active')
+                ->whereHas('mediaProfile')
+                ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement'])
+                ->where('is_featured', true)
+                ->latest('published_at')
+                ->take(6)
+                ->get()
+                ->map(fn (Product $product): MediaOffer => new MediaOffer($product)),
             'featuredWork' => $featuredWork,
             'trustClients' => $trustClients,
         ]);
     }
 
-    public function mediaShow(string $slug)
+    public function offerShow(string $slug)
     {
-        $media = MediaOffering::published()->with('seller')->where('slug', $slug)->firstOrFail();
+        $product = Product::query()
+            ->where('status', 'active')
+            ->whereHas('mediaProfile')
+            ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement', 'media'])
+            ->where('slug', $slug)
+            ->firstOrFail();
 
-        $similar = MediaOffering::query()
-            ->published()
-            ->with('seller')
-            ->whereKeyNot($media->id)
-            ->where('medium', $media->medium)
+        $media = new MediaOffer($product);
+
+        $similar = Product::query()
+            ->where('status', 'active')
+            ->whereHas('mediaProfile', fn ($query) => $query->where('medium', $media->medium))
+            ->whereKeyNot($product->id)
+            ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement'])
             ->latest('published_at')
             ->take(3)
-            ->get();
+            ->get()
+            ->map(fn (Product $item): MediaOffer => new MediaOffer($item));
 
         return view('pages.media-detail', [
             'media' => $media,

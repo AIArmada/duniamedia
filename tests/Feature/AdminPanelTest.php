@@ -2,7 +2,9 @@
 
 namespace Tests\Feature;
 
+use AIArmada\Products\Models\Product;
 use App\Models\User;
+use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RolePermissionSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -27,8 +29,18 @@ class AdminPanelTest extends TestCase
 
         foreach ([
             '/admin',
-            '/admin/media-offerings',
-            '/admin/media-offerings/create',
+            '/admin/products',
+            '/admin/products/create',
+            '/admin/bookings',
+            '/admin/bookings/create',
+            '/admin/orders',
+            '/admin/orders/create',
+            '/admin/price-lists',
+            '/admin/inventory-locations',
+            '/admin/inventory-levels',
+            '/admin/tax-rates',
+            '/admin/promotions',
+            '/admin/vouchers',
             '/admin/media-properties',
             '/admin/creator-profiles',
             '/admin/enquiries',
@@ -42,6 +54,11 @@ class AdminPanelTest extends TestCase
         ] as $path) {
             $this->get($path)->assertOk();
         }
+
+        $this->seed(MediaCatalogueSeeder::class);
+        $product = Product::query()->where('slug', '988-fm-2026-radio-digital')->firstOrFail();
+
+        $this->get('/admin/products/'.$product->getRouteKey().'/edit')->assertOk();
     }
 
     public function test_editor_permissions_limit_the_resources_they_can_see(): void
@@ -58,7 +75,7 @@ class AdminPanelTest extends TestCase
 
         $this->actingAs($editor);
 
-        $this->get('/admin/media-offerings')->assertOk();
+        $this->get('/admin/products')->assertForbidden();
         $this->get('/admin/enquiries')->assertForbidden();
     }
 }

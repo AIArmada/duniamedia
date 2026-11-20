@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MediaOffering;
+use AIArmada\Products\Models\Product;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -13,18 +13,18 @@ class RateCardController extends Controller
 {
     public function show(Request $request, string $slug, int $index = 0): BinaryFileResponse|StreamedResponse|RedirectResponse
     {
-        $media = MediaOffering::query()
-            ->published()
+        $product = Product::query()
+            ->where('status', 'active')
             ->where('slug', $slug)
             ->firstOrFail();
 
-        $view = data_get($media->specifications, 'rate_card_view');
+        $view = data_get($product->mediaProfile?->specifications, 'rate_card_view');
 
         if ($index === 0 && $view && ! $request->boolean('raw')) {
-            return redirect()->to(route('media.show', $media->slug).'#rate-card');
+            return redirect()->to(route('offers.show', $product->slug).'#rate-card');
         }
 
-        $documents = $media->getMedia('documents');
+        $documents = $product->getMedia('documents');
         $document = $documents[$index] ?? null;
         abort_unless($document, 404);
 

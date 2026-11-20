@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use AIArmada\Products\Models\Product;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class QuoteLine extends BaseModel
@@ -20,13 +21,8 @@ class QuoteLine extends BaseModel
         return $this->belongsTo(Quote::class);
     }
 
-    public function offering(): BelongsTo
+    public function product(): BelongsTo
     {
-        return $this->belongsTo(MediaOffering::class);
-    }
-
-    public function package(): BelongsTo
-    {
-        return $this->belongsTo(Package::class);
+        return $this->belongsTo(Product::class);
     }
 }

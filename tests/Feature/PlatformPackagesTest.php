@@ -2,26 +2,27 @@
 
 namespace Tests\Feature;
 
-use App\Models\MediaOffering;
 use App\Models\User;
 use Database\Seeders\SignalSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Concerns\CreatesMediaOffers;
 use Tests\TestCase;
 
 class PlatformPackagesTest extends TestCase
 {
+    use CreatesMediaOffers;
     use RefreshDatabase;
 
     public function test_media_library_attaches_images_and_documents(): void
     {
-        $offering = MediaOffering::factory()->create();
+        $product = $this->createMediaOffer();
 
-        $offering->addMedia(public_path('assets/img/outdoor.webp'))
+        $product->addMedia(public_path('assets/img/outdoor.webp'))
             ->preservingOriginal()
-            ->toMediaCollection('image');
+            ->toMediaCollection('hero');
 
-        $this->assertTrue($offering->hasMedia('image'));
-        $this->assertStringContainsString('/storage/', $offering->getFirstMediaUrl('image'));
+        $this->assertTrue($product->hasMedia('hero'));
+        $this->assertStringContainsString('/storage/', $product->getFirstMediaUrl('hero'));
     }
 
     public function test_signals_tracker_renders_on_public_pages(): void

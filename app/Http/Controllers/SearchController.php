@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Campaign;
 use App\Models\CreatorProfile;
-use App\Models\MediaOffering;
+use App\Support\MediaOffer;
+use AIArmada\Products\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -23,21 +24,25 @@ class SearchController extends Controller
         if ($query !== '') {
             $like = '%'.$query.'%';
 
-            $media = MediaOffering::query()
-                ->published()
-                ->with('seller')
+            $media = Product::query()
+                ->where('status', 'active')
+                ->whereHas('mediaProfile')
+                ->with(['mediaProfile.mediaOwner', 'mediaProfile.placement'])
                 ->where(function ($sub) use ($like): void {
                     $sub->where('name', 'like', $like)
-                        ->orWhere('summary', 'like', $like)
-                        ->orWhere('channel_label', 'like', $like)
-                        ->orWhere('location_label', 'like', $like)
-                        ->orWhere('audience_label', 'like', $like)
-                        ->orWhereHas('seller', fn ($seller) => $seller->where('display_name', 'like', $like))
-                        ->orWhereHas('placements.formats', fn ($format) => $format->where('name', 'like', $like));
+                        ->orWhere('short_description', 'like', $like)
+                        ->orWhere('description', 'like', $like)
+                        ->orWhereHas('mediaProfile', fn ($profile) => $profile
+                            ->where('channel_label', 'like', $like)
+                            ->orWhere('location_label', 'like', $like)
+                            ->orWhere('audience_label', 'like', $like)
+                            ->orWhereHas('mediaOwner', fn ($owner) => $owner->where('display_name', 'like', $like)))
+                        ->orWhereHas('mediaProfile.placement.formats', fn ($format) => $format->where('name', 'like', $like));
                 })
                 ->latest('published_at')
                 ->limit(12)
-                ->get();
+                ->get()
+                ->map(fn (Product $product): MediaOffer => new MediaOffer($product));
 
             $creators = CreatorProfile::query()
                 ->where('status', 'active')

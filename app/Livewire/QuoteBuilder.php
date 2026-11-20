@@ -2,13 +2,15 @@
 
 namespace App\Livewire;
 
+use AIArmada\Products\Models\Product;
 use App\Actions\CreatePartyWithContact;
 use App\Models\Enquiry;
-use App\Models\MediaOffering;
 use App\Models\Party;
 use App\Models\Quote;
 use App\Models\QuoteLine;
 use App\Support\CampaignPlans as PlanService;
+use App\Support\CataloguePricing;
+use App\Support\MediaOffer;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Livewire\Component;
@@ -52,7 +54,7 @@ class QuoteBuilder extends Component
                 $this->objective = (string) $plan->getMetadataValue('objective', '');
                 $this->message = (string) $plan->getMetadataValue('brief', '');
                 $this->selected = $plans->summary($plan)['items']
-                    ->map(fn ($item): ?string => $item->attributes->get('offering_id'))
+                    ->map(fn ($item): ?string => $item->attributes->get('product_id'))
                     ->filter()
                     ->values()
                     ->all();
@@ -60,14 +62,14 @@ class QuoteBuilder extends Component
         }
 
         $id = (string) request('media', '');
-        if ($id !== '' && MediaOffering::published()->whereKey($id)->exists()) {
+        if ($id !== '' && Product::query()->where('status', 'active')->whereKey($id)->exists()) {
             $this->selected = [$id];
         }
     }
 
     public function add(string $id): void
     {
-        if (MediaOffering::published()->whereKey($id)->exists() && ! in_array($id, $this->selected, true)) {
+        if (Product::query()->where('status', 'active')->whereKey($id)->exists() && ! in_array($id, $this->selected, true)) {
             $this->selected[] = $id;
         }
     }
@@ -81,7 +83,7 @@ class QuoteBuilder extends Component
     {
         $this->validate([
             'selected' => 'required|array|min:1',
-            'selected.*' => 'string|distinct|exists:media_offerings,id',
+            'selected.*' => 'string|distinct|exists:products,id',
             'name' => 'required|string|max:120',
             'email' => 'required|email|max:255',
             'phone' => 'nullable|string|max:40',
@@ -92,7 +94,7 @@ class QuoteBuilder extends Component
             'website' => 'max:0',
         ]);
 
-        $offerings = MediaOffering::published()->whereIn('id', $this->selected)->get();
+        $offerings = Product::query()->where('status', 'active')->whereIn('id', $this->selected)->with('mediaProfile')->get();
 
         if ($offerings->count() !== count($this->selected)) {
             $this->addError('selected', 'Please select valid media.');
@@ -102,7 +104,9 @@ class QuoteBuilder extends Component
 
         $plan = $this->planInstance !== null ? app(PlanService::class)->find($this->planInstance) : null;
 
-        $this->reference = DB::transaction(function () use ($offerings) {
+        $pricing = app(CataloguePricing::class);
+
+        $this->reference = DB::transaction(function () use ($offerings, $pricing) {
             $buyer = app(CreatePartyWithContact::class)->handle([
                 'name' => $this->name,
                 'email' => $this->email,
@@ -122,7 +126,7 @@ class QuoteBuilder extends Component
                 'metadata' => ['addons' => $this->addons],
             ]);
 
-            $allPublic = $offerings->every(fn (MediaOffering $offering): bool => $offering->pricing_mode === 'fixed' && $offering->price_from !== null);
+            $allPublic = $offerings->every(fn (Product $offering): bool => $pricing->isPubliclyPriced($offering));
             $reference = 'DM-'.now()->format('ymd').'-'.strtoupper(Str::random(6));
 
             $quote = Quote::create([
@@ -135,19 +139,18 @@ class QuoteBuilder extends Component
                 'price_visibility' => 'private',
                 'notes' => 'Indicative only; subject to media-owner confirmation.',
                 'valid_until' => now()->addDays(14)->toDateString(),
-                'subtotal_amount' => $allPublic ? $offerings->sum('price_from') : 0,
+                'subtotal_amount' => $allPublic ? $offerings->sum(fn (Product $offering): float => $pricing->unitPrice($offering) / 100) : 0,
             ]);
 
             foreach ($offerings as $offering) {
-                $unitPrice = $offering->pricing_mode === 'fixed' && $offering->price_from !== null
-                    ? (float) $offering->price_from
-                    : 0.0;
+                $unitPrice = $pricing->unitPrice($offering) / 100;
 
                 QuoteLine::create([
                     'quote_id' => $quote->id,
-                    'offering_id' => $offering->id,
+                    'product_id' => $offering->id,
                     'kind' => 'media',
                     'description' => $offering->name,
+                    'unit_code' => $offering->mediaProfile?->unit_code,
                     'quantity' => 1,
                     'unit_price' => $unitPrice,
                     'line_total' => $unitPrice,
@@ -177,7 +180,7 @@ class QuoteBuilder extends Component
 
     public function saveAsPlan()
     {
-        $this->validate(['selected' => 'required|array|min:1', 'selected.*' => 'string|exists:media_offerings,id']);
+        $this->validate(['selected' => 'required|array|min:1', 'selected.*' => 'string|exists:products,id']);
 
         $plans = app(PlanService::class);
         $plan = $plans->create($this->objective ?: 'Campaign plan '.now()->format('d M Y'), [
@@ -185,8 +188,8 @@ class QuoteBuilder extends Component
             'brief' => $this->message,
         ]);
 
-        foreach (MediaOffering::whereIn('id', $this->selected)->get() as $offering) {
-            $plans->addOffering($plan, $offering);
+        foreach (Product::query()->where('status', 'active')->whereIn('id', $this->selected)->with('mediaProfile')->get() as $product) {
+            $plans->addOffering($plan, $product);
         }
 
         return $this->redirectRoute('plans.show', ['instance' => $plan->instance]);
@@ -194,13 +197,16 @@ class QuoteBuilder extends Component
 
     public function render()
     {
-        $offerings = MediaOffering::published()->whereIn('id', $this->selected)->get();
-        $subtotal = $offerings->where('pricing_mode', 'fixed')->whereNotNull('price_from')->sum('price_from');
+        $offerings = Product::query()->where('status', 'active')->whereIn('id', $this->selected)->with('mediaProfile')->get();
+        $pricing = app(CataloguePricing::class);
+        $subtotal = $offerings
+            ->filter(fn (Product $offering): bool => $pricing->isPubliclyPriced($offering))
+            ->sum(fn (Product $offering): float => $pricing->unitPrice($offering) / 100);
 
         return view('livewire.quote-builder', [
-            'media' => $offerings,
+            'media' => $offerings->map(fn (Product $offering): MediaOffer => new MediaOffer($offering)),
             'subtotal' => $subtotal > 0 ? $subtotal : null,
-            'options' => MediaOffering::published()->orderBy('name')->get(['id', 'name']),
+            'options' => Product::query()->where('status', 'active')->whereHas('mediaProfile')->orderBy('name')->get(['id', 'name']),
         ])->layout('layouts.app', ['pageTitle' => 'Build a Proposal | Dunia Media', 'metaDescription' => 'Select media and campaign services, add your brief and request a verified proposal from Dunia Media.']);
     }
 }

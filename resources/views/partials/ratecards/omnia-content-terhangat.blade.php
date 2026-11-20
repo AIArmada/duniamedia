@@ -169,6 +169,6 @@
 
     <div class="container rc-source">
         <p>Source: Media Prima Omnia Content Terhangat 2026 · {{ $rc['validity'] }} · Excludes 8% SST and production.</p>
-        <a href="{{ route('media.ratecard', [$media->slug, 0]) }}?raw=1" target="_blank" rel="noopener">Download original PDF <span aria-hidden="true">↗</span></a>
+        <a href="{{ route('offers.ratecard', [$media->slug, 0]) }}?raw=1" target="_blank" rel="noopener">Download original PDF <span aria-hidden="true">↗</span></a>
     </div>
 </div>

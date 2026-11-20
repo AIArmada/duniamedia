@@ -31,6 +31,11 @@
 /storage/app/public/*
 !/storage/app/public/.gitkeep
 /storage/app/media-private/*
+/storage/app/private/catalogue/
 
 # Local deployment backups
 /storage/app/backups/
+
+# Decision-document answers (local only)
+/docs/answers.db
+/dunia-media-decisions.zip

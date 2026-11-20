@@ -7,9 +7,7 @@ use App\Models\CreatorAccount;
 use App\Models\CreatorDeliveryTemplate;
 use App\Models\CreatorProfile;
 use App\Models\DistributionPlatform;
-use App\Models\MediaOffering;
 use App\Models\MediaProperty;
-use App\Models\OfferingPlacement;
 use App\Models\Party;
 use App\Models\PartyRole;
 use App\Models\Placement;
@@ -114,35 +112,6 @@ class CreatorSeeder extends Seeder
                     'placement_type' => 'Creators',
                     'status' => 'active',
                 ],
-            );
-
-            $offering = MediaOffering::updateOrCreate(
-                ['slug' => $slug],
-                [
-                    'seller_party_id' => $seller->id,
-                    'creator_profile_id' => $profile->id,
-                    'name' => 'Demo Creator '.$number,
-                    'sku' => $slug,
-                    'medium' => 'Creators',
-                    'unit_code' => 'post',
-                    'summary' => $bio,
-                    'description' => 'Illustrative creator profile only. Not a real creator or verified partnership.',
-                    'pricing_mode' => 'on_request',
-                    'availability_status' => 'on_request',
-                    'channel_label' => $property->name,
-                    'location_label' => 'Malaysia',
-                    'audience_label' => $niche,
-                    'is_featured' => true,
-                    'status' => 'published',
-                    'published_at' => now(),
-                ],
-            );
-
-            $this->replaceMedia($offering, 'assets/img/'.$image.'.webp', 'image');
-
-            OfferingPlacement::updateOrCreate(
-                ['offering_id' => $offering->id, 'placement_id' => $placement->id],
-                ['units_per_purchase' => 1],
             );
 
             CreatorDeliveryTemplate::updateOrCreate(

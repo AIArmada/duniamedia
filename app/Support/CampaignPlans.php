@@ -7,7 +7,8 @@ use AIArmada\Cart\Collections\CartConditionCollection;
 use AIArmada\Cart\Facades\Cart;
 use AIArmada\Cart\Models\CartModel;
 use AIArmada\Cart\Support\CartIdentifierResolver;
-use App\Models\MediaOffering;
+use AIArmada\Products\Models\Product;
+use App\Support\MediaOffer;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
@@ -42,9 +43,15 @@ class CampaignPlans
             ?? throw new \RuntimeException('The campaign plan could not be created.');
     }
 
-    public function addOffering(CartModel $plan, MediaOffering $offering, int $quantity = 1): void
+    public function addOffering(CartModel $plan, Product $product, int $quantity = 1): void
     {
-        Cart::getCartInstance($plan->instance)->addBuyable($offering, $quantity);
+        $offer = new MediaOffer($product);
+
+        Cart::getCartInstance($plan->instance)->addBuyable($product, $quantity, [
+            'image' => $offer->displayImage(),
+            'medium' => $product->mediaProfile?->medium,
+            'location' => $product->mediaProfile?->location_label,
+        ]);
     }
 
     public function updateQuantity(CartModel $plan, string $itemId, int $quantity): void
