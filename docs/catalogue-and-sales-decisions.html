@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3ec">
+<title>Catalogue &amp; Sales — Dunia Media Decision Q&amp;A</title>
+<style>
+  :root {
+    --paper: #f6f3ec;
+    --paper-2: #fffdf8;
+    --ink: #1c1b18;
+    --muted: #6c675d;
+    --line: #e2dccf;
+    --accent: #0f5f54;
+    --accent-soft: #e3f0ec;
+    --accent-ink: #0b4a41;
+    --warm: #a55a1b;
+    --warm-soft: #f7ead9;
+    --warm-line: #e7cfb3;
+    --danger: #8d2f2f;
+    --radius: 18px;
+    --shadow: 0 1px 2px rgba(28,27,24,.04), 0 10px 28px rgba(28,27,24,.05);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141513; --paper-2: #1b1d1a; --ink: #eee9df; --muted: #a7a196;
+      --line: #2d302b; --accent: #6fc3b2; --accent-soft: #16302b; --accent-ink: #9ad9cc;
+      --warm: #e0a05f; --warm-soft: #2c2317; --warm-line: #4a3a25; --danger: #e58b8b; --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(1100px 500px at 15% -10%, rgba(165,90,27,.07), transparent 60%),
+      radial-gradient(900px 500px at 95% 5%, rgba(15,95,84,.06), transparent 60%);
+  }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 840px; margin: 0 auto; padding: 0 20px 96px; }
+
+  /* top bar */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper);
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-inner {
+    max-width: 840px; margin: 0 auto; padding: 10px 20px 9px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .topbar-title {
+    font-family: var(--serif); font-size: 15px; letter-spacing: .01em;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .topbar-meta {
+    margin-left: auto; display: flex; align-items: center; gap: 14px;
+    font-size: 12.5px; color: var(--muted); white-space: nowrap;
+  }
+  .topbar-meta a { text-decoration: none; font-weight: 600; color: var(--accent); }
+  .progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: transparent; }
+  .progress > div { height: 100%; width: 0; background: var(--accent); transition: width .25s ease; }
+
+  /* hero */
+  .hero { padding: 54px 0 10px; }
+  .kicker {
+    margin: 0 0 14px; font-size: 12px; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--warm);
+  }
+  h1 {
+    margin: 0; font-family: var(--serif); font-weight: 600;
+    font-size: clamp(2.1rem, 6.4vw, 3.5rem); line-height: 1.04; letter-spacing: -.02em;
+  }
+  .hero-lead {
+    margin: 20px 0 0; max-width: 62ch; font-size: 18px; color: var(--muted);
+  }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px;
+    font-size: 12.5px; color: var(--muted); background: var(--paper-2);
+  }
+  .notice {
+    margin-top: 26px; padding: 16px 18px; border-radius: 14px;
+    background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    font-size: 15.5px;
+  }
+  .notice strong { color: var(--accent-ink); }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; font-size: 13px; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+  /* badges */
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    vertical-align: 2px; white-space: nowrap;
+  }
+  .badge-rec { background: var(--warm-soft); color: var(--warm); border: 1px solid var(--warm-line); }
+  .badge-biz { background: var(--accent-soft); color: var(--accent-ink); }
+  .badge-tech { background: color-mix(in srgb, var(--muted) 12%, transparent); color: var(--muted); }
+
+  /* exec summary */
+  .exec { margin: 34px 0 8px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper-2); box-shadow: var(--shadow); }
+  .exec h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 600; }
+  .exec > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+  .exec ol { margin: 0; padding-left: 20px; }
+  .exec li { margin: 7px 0; }
+  .exec li strong { font-weight: 650; }
+
+  /* tabs */
+  .tabs {
+    display: flex; gap: 8px; overflow-x: auto; padding: 18px 0 6px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs a {
+    flex: none; text-decoration: none; color: var(--muted);
+    border: 1px solid var(--line); background: var(--paper-2);
+    padding: 8px 13px; border-radius: 999px; font-size: 13.5px; font-weight: 600;
+  }
+  .tabs a:hover { color: var(--accent-ink); border-color: var(--accent); }
+
+  /* sections */
+  .section { margin-top: 44px; scroll-margin-top: 80px; }
+  .section-head { display: flex; gap: 14px; align-items: baseline; margin-bottom: 6px; }
+  .section-num {
+    font-family: var(--serif); font-size: 15px; font-weight: 700; color: var(--warm);
+    border: 1px solid var(--warm-line); background: var(--warm-soft);
+    width: 30px; height: 30px; border-radius: 50%; display: inline-flex;
+    align-items: center; justify-content: center; flex: none;
+  }
+  .section-head h2 { margin: 0; font-family: var(--serif); font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 600; letter-spacing: -.01em; }
+  .section-sub { margin: 0 0 20px 44px; color: var(--muted); font-size: 15px; }
+
+  /* question card */
+  .q {
+    margin: 16px 0; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper-2); box-shadow: var(--shadow); scroll-margin-top: 84px;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .q:hover { border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); }
+  .q-head { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; }
+  .q-num { font-family: var(--serif); font-size: 15px; font-weight: 700; color: var(--warm); letter-spacing: .03em; }
+  .q h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.3; font-weight: 680; letter-spacing: -.01em; }
+  .q .lead { margin: 0 0 16px; color: var(--muted); font-size: 15.5px; }
+
+  /* options */
+  .options { display: grid; gap: 9px; }
+  .opt {
+    position: relative; display: flex; gap: 12px; padding: 13px 14px;
+    border: 1px solid var(--line); border-radius: 13px; background: var(--paper);
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+    transition: border-color .18s ease, background .18s ease;
+  }
+  .opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .opt .dot {
+    width: 20px; height: 20px; flex: none; margin-top: 2px; border-radius: 50%;
+    border: 2px solid color-mix(in srgb, var(--muted) 45%, transparent); background: transparent;
+    transition: border-color .18s ease, background .18s ease;
+  }
+  .opt-body { display: block; min-width: 0; }
+  .opt-title { display: block; font-weight: 640; font-size: 15.5px; line-height: 1.4; }
+  .opt-desc { display: block; margin-top: 4px; font-size: 14px; color: var(--muted); line-height: 1.55; }
+  .opt.is-rec { border-left: 3px solid var(--warm); }
+  .opt.selected {
+    border-color: var(--accent); background: var(--accent-soft);
+  }
+  .opt.selected .dot {
+    border-color: var(--accent);
+    background: radial-gradient(circle, var(--accent) 0 45%, transparent 46%);
+  }
+  .opt:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* impact + tech */
+  .impact {
+    margin-top: 15px; padding: 14px 16px; border-radius: 13px;
+    background: var(--warm-soft); border-left: 3px solid var(--warm);
+  }
+  .impact-label {
+    display: block; font-size: 10.5px; font-weight: 800; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--warm); margin-bottom: 6px;
+  }
+  .impact p { margin: 5px 0; font-size: 14.5px; line-height: 1.55; }
+  .impact p strong { font-weight: 700; }
+  details.tech {
+    margin-top: 13px; border-top: 1px dashed var(--line); padding-top: 11px;
+  }
+  details.tech summary {
+    cursor: pointer; font-size: 13px; font-weight: 650; color: var(--muted);
+    list-style: none; display: flex; align-items: center; gap: 7px;
+  }
+  details.tech summary::-webkit-details-marker { display: none; }
+  details.tech summary::before {
+    content: "+"; display: inline-flex; width: 18px; height: 18px; border-radius: 50%;
+    border: 1px solid var(--line); align-items: center; justify-content: center;
+    font-size: 13px; line-height: 1; color: var(--muted);
+  }
+  details.tech[open] summary::before { content: "−"; }
+  details.tech p { margin: 9px 0 0; font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+  /* facts */
+  .fact {
+    padding: 16px 18px; margin: 10px 0; border: 1px solid var(--line);
+    border-radius: 13px; background: var(--paper-2);
+  }
+  .fact h3 { margin: 0 0 5px; font-size: 16px; font-weight: 680; }
+  .fact p { margin: 0; font-size: 14.5px; color: var(--muted); }
+  .fact .impl { display: block; margin-top: 7px; font-size: 14.5px; color: var(--ink); }
+  .fact .impl strong { color: var(--accent-ink); }
+
+  /* two-column change lists */
+  .change-grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .change-grid { grid-template-columns: 1fr 1fr; } }
+  .change {
+    padding: 18px; border-radius: 14px; border: 1px solid var(--line); background: var(--paper-2);
+  }
+  .change h3 { margin: 0 0 8px; font-size: 15px; letter-spacing: .02em; }
+  .change ul { margin: 0; padding-left: 18px; }
+  .change li { margin: 5px 0; font-size: 14.5px; color: var(--muted); }
+
+  /* summary */
+  #ringkasan { scroll-margin-top: 80px; }
+  .summary-card {
+    margin-top: 18px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper-2); box-shadow: var(--shadow);
+  }
+  .answer-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
+    gap: 7px; margin: 16px 0 6px;
+  }
+  .chip {
+    display: flex; align-items: center; justify-content: space-between; gap: 4px;
+    text-decoration: none; padding: 7px 9px; border-radius: 9px;
+    border: 1px solid var(--line); font-size: 12.5px; color: var(--muted); background: var(--paper);
+  }
+  .chip b { font-weight: 700; color: var(--ink); }
+  .chip.done { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-ink); }
+  .chip.diff { border-color: var(--warm); background: var(--warm-soft); color: var(--warm); }
+  .chip.empty span { opacity: .4; }
+  .summary-note { margin: 8px 0 0; font-size: 13.5px; color: var(--muted); }
+  .actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+  .btn {
+    appearance: none; border: 1px solid var(--accent); background: var(--accent); color: #fff;
+    padding: 10px 16px; border-radius: 11px; font-size: 14px; font-weight: 650;
+    cursor: pointer; font-family: inherit; min-height: 44px;
+  }
+  .btn.ghost { background: transparent; color: var(--accent-ink); border-color: var(--line); }
+  .btn.warm { background: var(--warm); border-color: var(--warm); color: #fff; }
+  .btn:active { transform: translateY(1px); }
+  textarea#summaryText {
+    width: 100%; margin-top: 18px; padding: 14px; border-radius: 12px;
+    border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12.5px; line-height: 1.55; min-height: 220px; resize: vertical;
+  }
+  footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .q { padding: 18px 16px; }
+    .exec { padding: 20px 18px; }
+    .section-sub { margin-left: 0; }
+    .topbar-title { font-size: 13.5px; }
+    .topbar-meta a { display: none; }
+  }
+
+  @media print {
+    .topbar, .tabs, .actions, .hero .notice, .legend { display: none !important; }
+    body { background: #fff; color: #000; font-size: 12pt; }
+    body::before { display: none; }
+    .wrap { max-width: none; padding: 0; }
+    .q, .exec, .summary-card { break-inside: avoid; box-shadow: none; }
+    details.tech { display: block; }
+    details.tech > summary { display: none; }
+    details.tech > p { display: block !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Dunia Media · Catalogue &amp; Sales</div>
+    <div class="topbar-meta">
+      <span id="progressText">0 / 31 answered</span>
+      <a href="#summary">Summary ↓</a>
+    </div>
+  </div>
+  <div class="progress"><div id="progressBar"></div></div>
+</header>
+
+<main class="wrap">
+<section class="hero">
+  <p class="kicker">Decision document · 17 November 2026</p>
+  <h1>Catalogue &amp; sales:<br>the decisions we need</h1>
+  <p class="hero-lead">
+    This document lists the decisions to make before Dunia Media's media catalogue is rebuilt.
+    Each question shows the choices, the recommended answer, and what each choice affects.
+    It is written to be read together: the plain-language parts for the owner, the technical notes
+    for the developer.
+  </p>
+  <div class="hero-meta">
+    <span class="pill">31 questions</span>
+    <span class="pill">5 sections</span>
+    <span class="pill">Plain English</span>
+    <span class="pill">Answerable on a phone</span>
+  </div>
+  <div class="notice">
+    <strong>These are recommendations, not final decisions.</strong>
+    Nothing in the code or data changes because of this document. Pick the answer that truly fits.
+    If you are unsure, leave the recommendation and mark it for discussion.
+  </div>
+  <div class="legend">
+    <span><span class="badge badge-rec">Recommended</span> suggested answer</span>
+    <span><span class="badge badge-biz">Business</span> owner's call</span>
+    <span><span class="badge badge-tech">Technical</span> developer's check</span>
+  </div>
+</section>
+
+<section class="exec">
+  <h2>The recommendation at a glance</h2>
+  <p>If every recommendation is accepted, this is what Dunia Media's catalogue and sales will look like.</p>
+  <ol>
+    <li><strong>One product catalogue:</strong> every media and creator offer, plus packages. Services and training stay as website content until they are billed as a fee line.</li>
+    <li><strong>Dunia Media is the seller:</strong> one invoice, one payment flow, and media owners appear as offer information.</li>
+    <li><strong>Quote first, order later:</strong> an accepted quote becomes an order; online checkout is added later without changing the catalogue.</li>
+    <li><strong>Honest prices:</strong> real prices live in price lists; "from" prices are display only, and "on request" offers can never be sold for RM0.</li>
+    <li><strong>Rate-card PDFs stay:</strong> official documents do not disappear; the unused rate table is deleted.</li>
+    <li><strong>Capacity survives:</strong> inventory windows stay as the calendar; capacity holds become atomic and expire on their own.</li>
+  </ol>
+</section>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#section-a">A · Business basics</a>
+  <a href="#section-b">B · Products &amp; pricing</a>
+  <a href="#section-c">C · Catalogue &amp; data</a>
+  <a href="#section-d">D · Transactions</a>
+  <a href="#section-e">E · Operations</a>
+  <a href="#facts">Locked facts</a>
+  <a href="#summary">Summary</a>
+</nav>
+
+<section class="section" id="section-a">
+  <div class="section-head">
+    <span class="section-num">A</span>
+    <h2>Business basics</h2>
+  </div>
+  <p class="section-sub">Who sells, how money comes in, and what we sell.</p>
+
+  <article class="q" id="q-a1" data-q="A1" data-rec="A">
+    <div class="q-head"><span class="q-num">A1</span><span class="badge badge-biz">Business</span></div>
+    <h3>Whose name is on the invoice?</h3>
+    <p class="lead">When a customer accepts a quote, whose name is shown as the seller, and who receives the payment? This decides the invoice shape, the payment flow, and who is responsible for tax.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="a1" value="A" data-label="Dunia Media is the seller (principal)">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Dunia Media is the seller <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">We contract the media owner, resell to the advertiser, and receive payment. The media owner is shown as information on the offer.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a1" value="B" data-label="The media owner is the seller (agent)">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. The media owner is the seller (agent)</span>
+          <span class="opt-desc">We manage the booking and take a commission; the invoice comes from the media owner.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a1" value="C" data-label="Marketplace">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Marketplace</span>
+          <span class="opt-desc">Each media owner sells through the platform themselves; we take a fee.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One invoice, one payment flow, one tax record. No owner payout system — settlements happen outside the system. This is the simplest option and matches what the order package can do today.</p>
+      <p><strong>B or C.</strong> Every order line must know its seller, and the system must record payments to owners. The order package does not support this; it would have to be built.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p><code>aiarmada/orders</code> stores one owner per order and forces every item to that owner. There is no seller model, line split, or payout. Changing this later means rewriting the order layer.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-a2" data-q="A2" data-rec="A">
+    <div class="q-head"><span class="q-num">A2</span><span class="badge badge-biz">Business</span></div>
+    <h3>When does the customer pay?</h3>
+    <p class="lead">Can a customer buy online right away, or must they go through a quote first?</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="a2" value="A" data-label="Quote first, order later">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Quote first, order later <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The customer asks for a proposal; we confirm availability; an accepted quote becomes an order. Online checkout is added later.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a2" value="B" data-label="Online checkout now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Online checkout now</span>
+          <span class="opt-desc">The customer buys and pays online immediately.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a2" value="C" data-label="Both at once">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Both at once</span>
+          <span class="opt-desc">Quote and online checkout are built at the same time.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Focuses on what actually happens today: the customer asks for a quote, we confirm availability, then accept the booking. Orders and invoices are still recorded. Checkout can be added without changing the catalogue.</p>
+      <p><strong>B.</strong> Needs a payment gateway, tax, refunds, live availability, and failed-payment handling before a single booking is tested.</p>
+      <p><strong>C.</strong> Two flows to maintain; a risk that neither matures.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Orders can be created without a cart or checkout, with free-form lines and a calculated total. The checkout package depends on orders, not the other way around. Building checkout first means building the payment path before any product has a real price.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-a3" data-q="A3" data-rec="A">
+    <div class="q-head"><span class="q-num">A3</span><span class="badge badge-biz">Business</span></div>
+    <h3>What belongs in the sales catalogue?</h3>
+    <p class="lead">This catalogue becomes the only list of things that can be sold and put into a quote.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="a3" value="A" data-label="Media and creator offers, plus packages">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Media and creator offers, plus packages <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Every media and creator offer we have now, plus packages that combine several offers.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a3" value="B" data-label="Media offers only">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Media offers only</span>
+          <span class="opt-desc">Creator offers leave the sales catalogue.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="a3" value="C" data-label="Everything we sell">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Everything we sell</span>
+          <span class="opt-desc">Media, creators, agency services, training, events, and merchandise.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Services and training stay as website content until they are actually billed as a fee line. Creators already use the same offer structure, so there is no second catalogue.</p>
+      <p><strong>C.</strong> Services and training have no price, no unit, and no media profile today. They would become empty products that clutter search and admin.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Eight services and all training have no price or SKU field. A quote today can only carry offers; extra lines are free text at zero price. Making them products now creates catalogue rows that cannot be quoted correctly.</p>
+    </details>
+  </article>
+</section>
+
+<section class="section" id="section-b">
+  <div class="section-head">
+    <span class="section-num">B</span>
+    <h2>Products &amp; pricing</h2>
+  </div>
+  <p class="section-sub">What one product is, how prices are shown, and how they are calculated.</p>
+
+  <article class="q" id="q-b1" data-q="B1" data-rec="A">
+    <div class="q-head"><span class="q-num">B1</span><span class="badge badge-biz">Business</span></div>
+    <h3>What is the real unit being sold?</h3>
+    <p class="lead">Today the "from" price mixes units: RM100 might be one radio spot, RM30,000 a month for a KLIA screen, RM150,000 a year for a static billboard, and RM200,000 for one campaign package. Prices cannot be compared or calculated if the units are not the same.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b1" value="A" data-label="Set a real unit for each offer">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Set a real unit for each offer <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Spot, month, year, or package. The real price follows that unit.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b1" value="B" data-label="Keep campaign for everything">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Keep "campaign" for everything</span>
+          <span class="opt-desc">Every offer uses one unit even when the meaning differs.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b1" value="C" data-label="Sell only at campaign level">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Sell only at campaign level</span>
+          <span class="opt-desc">No spot or monthly sales; everything is wrapped as one campaign.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Prices become comparable, quotable, and calculable. It requires deciding a unit for 53 offers, but only once.</p>
+      <p><strong>B.</strong> Prices stay display-only; the system does not know what the RM100 is for.</p>
+      <p><strong>C.</strong> Works if every sale really is one campaign, but loses the ability to compare spots and months.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>The pricing engine stores one price per unit and integer quantities. It has no concept of CPM, GRP, or fractional units. The unit must be set on the product or variant, not in rate-card text.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b2" data-q="B2" data-rec="A">
+    <div class="q-head"><span class="q-num">B2</span><span class="badge badge-biz">Business</span></div>
+    <h3>What happens to the "from" price?</h3>
+    <p class="lead">The "from" price is the lowest number on the rate card, not the real price. It is useful for search and display, but it must not become the transaction price.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b2" value="A" data-label="Keep it as a display-only field">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep it as a display-only field <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The "from" price is separate from the real price in the price list.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b2" value="B" data-label="Make from the product price">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Make "from" the product price</span>
+          <span class="opt-desc">One price field for both display and transaction.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b2" value="C" data-label="Remove it">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Remove it</span>
+          <span class="opt-desc">No "from" number in the catalogue.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Budget filters and "From RM..." messages stay. The real price lives in the price list and cannot be used by mistake.</p>
+      <p><strong>B.</strong> Every "on request" offer becomes RM0 and can be sold for free.</p>
+      <p><strong>C.</strong> Loses the budget filter and the early information that helps customers.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>A product price is required and defaults to 0; there is no "no price" state. A mixed-unit "from" number stored as the product price will corrupt quotes and checkout.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b3" data-q="B3" data-rec="A">
+    <div class="q-head"><span class="q-num">B3</span><span class="badge badge-biz">Business</span></div>
+    <h3>How are "on request" offers handled?</h3>
+    <p class="lead">Almost half of today's offers have no public price. The system must tell "free" apart from "price not set yet".</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b3" value="A" data-label="Flag on the profile; quote only">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Flag on the profile; quote only <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The offer is shown, but cannot be bought directly or added to checkout.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b3" value="B" data-label="Store price 0 and allow checkout">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Store price 0 and allow checkout</span>
+          <span class="opt-desc">The offer counts as free until the price is updated.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b3" value="C" data-label="Hide it from the catalogue">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Hide it from the catalogue</span>
+          <span class="opt-desc">Only offers with a price are shown.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> The catalogue stays complete, and no offer is sold for RM0.</p>
+      <p><strong>B.</strong> A customer could "buy" an offer worth hundreds of thousands for zero.</p>
+      <p><strong>C.</strong> 21 offers disappear from search and the directory.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>The pricing engine treats 0 as a valid price. A <code>pricing_mode</code> flag on the media profile must block adding to cart or checkout and point people to the quote flow.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b4" data-q="B4" data-rec="A">
+    <div class="q-head"><span class="q-num">B4</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Do we need variants?</h3>
+    <p class="lead">A variant is a choice inside one product, for example 30s/60s duration, morning/evening daypart, or video/audio format. It is not a separate line on the rate-card PDF.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b4" value="A" data-label="Only when the customer really chooses">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Only when the customer really chooses <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">One product with choices that differ in price or availability.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b4" value="B" data-label="One product per rate-card line">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. One product per rate-card line</span>
+          <span class="opt-desc">No variants; each choice becomes its own product.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b4" value="C" data-label="No variants at all">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No variants at all</span>
+          <span class="opt-desc">Each product has only one option.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One product page with clear choices; each choice can have its own price.</p>
+      <p><strong>B.</strong> The catalogue grows with small products that are hard to maintain.</p>
+      <p><strong>C.</strong> Choices like duration and daypart cannot be represented.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Variants have their own price, SKU, and capacity identity. They fit choices the customer actually makes, not every line of text in a rate document.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b5" data-q="B5" data-rec="A">
+    <div class="q-head"><span class="q-num">B5</span><span class="badge badge-biz">Business</span></div>
+    <h3>When does a package become a composite product?</h3>
+    <p class="lead">A composite product combines several offers and calculates price and availability from its components.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b5" value="A" data-label="Only when a package truly combines offers">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Only when a package truly combines offers <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Price, discount, and availability are calculated from the components.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b5" value="B" data-label="Every package as a normal product">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Every package as a normal product</span>
+          <span class="opt-desc">One fixed price, with no links to components.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b5" value="C" data-label="No packages for now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No packages for now</span>
+          <span class="opt-desc">Sell offers individually only.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Package price, percentage discounts, and component availability can be calculated; it fits packages across media owners.</p>
+      <p><strong>B.</strong> Simple, but the package does not know its components and cannot check availability.</p>
+      <p><strong>C.</strong> No extra work, but the need for packages will come back.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Composite packages support nested components, per-component pricing, percentage discounts, and availability by variant. Rewriting a package as a fixed price later means losing all of this.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b6" data-q="B6" data-rec="A">
+    <div class="q-head"><span class="q-num">B6</span><span class="badge badge-tech">Technical</span></div>
+    <h3>What happens to the rate-card PDF?</h3>
+    <p class="lead">The official rate card today is a PDF attached to the offer. The structured rate table only copies the "from" price and is never read by the system.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b6" value="A" data-label="PDF stays; old rate table deleted">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. PDF stays; old rate table deleted <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The official document stays on the media profile; structured prices go into the price list once confirmed.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b6" value="B" data-label="Keep a separate rate table">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Keep a separate rate table</span>
+          <span class="opt-desc">Its own table that points to products.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b6" value="C" data-label="Drop the PDF">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Drop the PDF</span>
+          <span class="opt-desc">All rates move into structured prices.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> The official document stays for customers; no duplicate data; structured prices are added only when confirmed.</p>
+      <p><strong>B.</strong> Two price sources that can disagree.</p>
+      <p><strong>C.</strong> 15 rate cards must be re-entered by hand before launch.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p><code>rate_card_lines</code> only copies <code>price_from</code>, and no code reads it. The PDF is attached through the media library and can stay on the product profile.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-b7" data-q="B7" data-rec="A">
+    <div class="q-head"><span class="q-num">B7</span><span class="badge badge-biz">Business</span></div>
+    <h3>When do real prices go in?</h3>
+    <p class="lead">A real price is a rate we are willing to quote and confirm, not the "from" number on a PDF.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="b7" value="A" data-label="Now, for rates already confirmed">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Now, for rates already confirmed <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The rest stay as PDF or "on request".</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b7" value="B" data-label="After launch">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. After launch</span>
+          <span class="opt-desc">Quotes stay at RM0 until later.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="b7" value="C" data-label="Only when checkout is built">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Only when checkout is built</span>
+          <span class="opt-desc">The pricing engine is not used until checkout exists.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Quotes start using real prices for offers that are settled; the rest stay negotiated.</p>
+      <p><strong>B.</strong> Quotes stay RM0 until later.</p>
+      <p><strong>C.</strong> The pricing engine is never used, so it is never tested.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Prices can carry dates (start/end), so 2026 rates can go in now and old rates stay as history. Unconfirmed prices do not need to be filled in.</p>
+    </details>
+  </article>
+</section>
+
+<section class="section" id="section-c">
+  <div class="section-head">
+    <span class="section-num">C</span>
+    <h2>Catalogue &amp; data</h2>
+  </div>
+  <p class="section-sub">Catalogue structure, media owners, creators, and old data.</p>
+
+  <article class="q" id="q-c1" data-q="C1" data-rec="A">
+    <div class="q-head"><span class="q-num">C1</span><span class="badge badge-tech">Technical</span></div>
+    <h3>One product per offer?</h3>
+    <p class="lead">Does each media offer (for example 988 FM, KLIA T1) become one product, or does each slot in the rate card become its own product?</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c1" value="A" data-label="One product per offer">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. One product per offer <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Choices inside the offer are handled as variants.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c1" value="B" data-label="One product per slot">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. One product per slot</span>
+          <span class="opt-desc">Each rate line becomes a separate product.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c1" value="C" data-label="One product per media owner">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. One product per media owner</span>
+          <span class="opt-desc">The owner becomes the catalogue unit.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Matches the 53 offers today and is easy to search.</p>
+      <p><strong>B.</strong> Could reach hundreds of products and become hard to maintain.</p>
+      <p><strong>C.</strong> Too coarse; customers cannot compare offers.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>An offer today has one placement and one inventory window. Slots are not modelled structurally; they are only text in the PDF or specifications.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c2" data-q="C2" data-rec="A">
+    <div class="q-head"><span class="q-num">C2</span><span class="badge badge-biz">Business</span></div>
+    <h3>Where is the media owner stored?</h3>
+    <p class="lead">A media owner (TV3, KLIA, 988 FM) can own the product, or simply be information on the offer.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c2" value="A" data-label="A field on the media profile">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. A field on the media profile <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The catalogue stays global; the owner becomes attribution and a filter.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c2" value="B" data-label="As the product owner (multi-tenant)">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. As the product owner</span>
+          <span class="opt-desc">Each owner has their own catalogue.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c2" value="C" data-label="No owner attribution">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No owner attribution</span>
+          <span class="opt-desc">The owner is not shown on the offer.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Search across all owners works; packages across owners are possible.</p>
+      <p><strong>B.</strong> Packages across owners become impossible, and every read needs an owner context.</p>
+      <p><strong>C.</strong> Loses attribution and owner filtering.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>If the owner owns the product, packages cannot cross owners. Owner mode also forces an owner context on every public read, which does not suit an open catalogue.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c3" data-q="C3" data-rec="A">
+    <div class="q-head"><span class="q-num">C3</span><span class="badge badge-biz">Business</span></div>
+    <h3>Creator offers</h3>
+    <p class="lead">Creator offers (for example "Demo Creator 1") already use the same offer structure, with a link to the creator profile.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c3" value="A" data-label="Same product, linked to the creator">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Same product, linked to the creator <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Link to the creator profile; one search and one quote flow.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c3" value="B" data-label="A separate product type">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. A separate product type</span>
+          <span class="opt-desc">Creators get their own catalogue and flow.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c3" value="C" data-label="Keep them out of the catalogue until priced">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Keep them out until priced</span>
+          <span class="opt-desc">Creators are not shown until they have a price.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One search and one quote flow for media and creators.</p>
+      <p><strong>B.</strong> Two catalogues and two flows.</p>
+      <p><strong>C.</strong> Creators disappear from search and the directory.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Creators already use <code>media_offering</code> with <code>creator_profile_id</code> and the unit "post". A separate product type would duplicate the catalogue and the quote flow.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c4" data-q="C4" data-rec="A">
+    <div class="q-head"><span class="q-num">C4</span><span class="badge badge-tech">Technical</span></div>
+    <h3>What fields does the media profile need?</h3>
+    <p class="lead">The media profile stores what does not belong to a generic product: owner, medium, unit, pricing status, search labels, and documents.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c4" value="A" data-label="The proposed list">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. The proposed list <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Owner, creator, medium, unit, pricing mode, availability, channel/location/audience labels, specifications, verification, ordering, rate-card display, terms, "from" price.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c4" value="B" data-label="Fewer core fields, the rest as JSON">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Fewer core fields, the rest as JSON</span>
+          <span class="opt-desc">Only a few fields; everything else in JSON.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c4" value="C" data-label="Add more fields">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Add more fields</span>
+          <span class="opt-desc">The proposed list plus any new fields we need.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Every filter and public view has a clear field.</p>
+      <p><strong>B.</strong> Key filters depend on JSON; harder to index and validate.</p>
+      <p><strong>C.</strong> Extra schema work, but doable.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Search fields like medium, location, and availability status should be real columns. Free-form specifications and terms can stay as JSON or text.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c5" data-q="C5" data-rec="A">
+    <div class="q-head"><span class="q-num">C5</span><span class="badge badge-tech">Technical</span></div>
+    <h3>What terms do we use?</h3>
+    <p class="lead">Code and the database use technical terms; customers see media terms. They do not have to match.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c5" value="A" data-label="Product in code; Media Offers for customers; Products in admin">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Product in code; "Media Offers" for customers <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Admin uses "Products"; the public site stays media-friendly.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c5" value="B" data-label="Keep MediaOffering in code">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Keep "MediaOffering" in code</span>
+          <span class="opt-desc">The old name stays even though the engine uses products.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c5" value="C" data-label="Rename everything to Product">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Rename everything to "Product"</span>
+          <span class="opt-desc">Including the public site.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One sales identity, customer terms stay friendly.</p>
+      <p><strong>B.</strong> Two names for the same thing; confusing for new developers.</p>
+      <p><strong>C.</strong> Media terms disappear; customers may be confused.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Code and database use <code>Product</code> so there are no two sales identities. Only the presentation layer keeps the term "Media Offers".</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c6" data-q="C6" data-rec="A">
+    <div class="q-head"><span class="q-num">C6</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Public URLs</h3>
+    <p class="lead">Do existing links (for example <code>/media/988-fm-2026-radio-digital</code>) need to keep working?</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c6" value="A" data-label="Keep the existing slugs">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep the existing slugs <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Public URLs do not change.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c6" value="B" data-label="Use new URLs">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Use new URLs</span>
+          <span class="opt-desc">All old links stop working.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c6" value="C" data-label="New URLs with a redirect">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. New URLs with a redirect</span>
+          <span class="opt-desc">Old links forward to the new ones.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> No broken links; SEO and shared links survive.</p>
+      <p><strong>B.</strong> Old links die.</p>
+      <p><strong>C.</strong> Extra work with little benefit if the site has not launched.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Slugs can move straight to products. A URL is a public identity, not leftover code.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-c7" data-q="C7" data-rec="A">
+    <div class="q-head"><span class="q-num">C7</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Old data</h3>
+    <p class="lead">Today's data is demo data: 53 offers, 49 rate lines, and no real quotes or bookings.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="c7" value="A" data-label="Wipe and reseed from JSON">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Wipe and reseed from JSON <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The catalogue is rebuilt from the existing data files.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c7" value="B" data-label="Migrate the old data">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Migrate the old data</span>
+          <span class="opt-desc">Every old row is moved into the new structure.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="c7" value="C" data-label="Start with an empty catalogue">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Start with an empty catalogue</span>
+          <span class="opt-desc">No demo data; the catalogue is filled by hand.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Clean, no leftovers, and safe because there are no real transactions.</p>
+      <p><strong>B.</strong> Extra work for data that has no value yet.</p>
+      <p><strong>C.</strong> No demo data to test search and quotes.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>There are no quotes, bookings, invoices, or payments in the database. A data migration adds no value; reseeding is easier to test and delete.</p>
+    </details>
+  </article>
+</section>
+
+<section class="section" id="section-d">
+  <div class="section-head">
+    <span class="section-num">D</span>
+    <h2>Transactions</h2>
+  </div>
+  <p class="section-sub">Quotes, orders, invoices, bookings, and capacity.</p>
+
+  <article class="q" id="q-d1" data-q="D1" data-rec="A">
+    <div class="q-head"><span class="q-num">D1</span><span class="badge badge-biz">Business</span></div>
+    <h3>Does the quote stay its own record?</h3>
+    <p class="lead">A quote has an expiry date, a price-privacy level, a signed proposal link, and a request status. An order has none of these fields.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d1" value="A" data-label="Keep the quote as its own record">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep the quote as its own record <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Negotiation is recorded separately from the order.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d1" value="B" data-label="Use an early-status order as the quote">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Use an early-status order as the quote</span>
+          <span class="opt-desc">An order in its first status replaces the quote.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d1" value="C" data-label="Drop quotes">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Drop quotes</span>
+          <span class="opt-desc">Customers place orders directly.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> The negotiation, approval, and proposal-link flow stays.</p>
+      <p><strong>B.</strong> The existing fields and flow disappear.</p>
+      <p><strong>C.</strong> No negotiation stage before an order.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Orders have no expiry date, price privacy, or proposal link. Using them as quotes means rebuilding all of that on top of orders.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d2" data-q="D2" data-rec="A">
+    <div class="q-head"><span class="q-num">D2</span><span class="badge badge-biz">Business</span></div>
+    <h3>How does a quote become an order?</h3>
+    <p class="lead">When a customer accepts a quote, the system needs to create an order that can be invoiced.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d2" value="A" data-label="Accepted quote becomes an order">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Accepted quote → order <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Name, price, and quantity are stored as a snapshot.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d2" value="B" data-label="An admin creates the order">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. An admin creates the order</span>
+          <span class="opt-desc">No automatic link from the quote.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d2" value="C" data-label="No orders; invoices stay separate">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No orders</span>
+          <span class="opt-desc">The invoice remains the main financial record.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Finance uses one order record; price history survives even when the catalogue changes.</p>
+      <p><strong>B.</strong> No automatic trail; easy to make mistakes.</p>
+      <p><strong>C.</strong> Two finance systems.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>An order can be created directly from quote data, including a unique reference number to prevent duplicates. No cart is needed.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d3" data-q="D3" data-rec="A">
+    <div class="q-head"><span class="q-num">D3</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Our own invoices and payments</h3>
+    <p class="lead">There are invoice and payment tables now, but no records are used. The order package already provides invoices, payments, refunds, and statuses.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d3" value="A" data-label="Use orders and manual payments">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Use orders and manual payments <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The old invoice and payment tables are deleted.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d3" value="B" data-label="Keep our own tables">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Keep our own tables</span>
+          <span class="opt-desc">Invoices and payments stay separate from orders.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d3" value="C" data-label="Install a payment gateway now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Install a payment gateway now</span>
+          <span class="opt-desc">Online payments are integrated immediately.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One finance source; no duplicates.</p>
+      <p><strong>B.</strong> Two ledgers that can disagree.</p>
+      <p><strong>C.</strong> Integration work before the basic flow is tested.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Orders support full manual payment records and PDF invoices. A gateway can be added later without changing the order model.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d4" data-q="D4" data-rec="A">
+    <div class="q-head"><span class="q-num">D4</span><span class="badge badge-biz">Business</span></div>
+    <h3>Bookings</h3>
+    <p class="lead">A booking stores flight dates, creative deadlines, and operational status. An order stores money and invoices. They are not the same thing.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d4" value="A" data-label="Keep bookings, link them to orders">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep bookings, link them to orders <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Media operations stay structured; money stays in orders.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d4" value="B" data-label="Make booking data part of the order">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Make booking data part of the order</span>
+          <span class="opt-desc">Dates and operational status are stored in the order.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d4" value="C" data-label="Remove bookings">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Remove bookings</span>
+          <span class="opt-desc">Operations are managed outside the system.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Media operations stay structured; finance stays in orders.</p>
+      <p><strong>B.</strong> Dates and operational status lose their structure.</p>
+      <p><strong>C.</strong> Daily operations are no longer recorded.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Bookings, flights, and creative deadlines are media domain, not finance domain. A link to the order gives one financial reference without mixing the two models.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d5" data-q="D5" data-rec="A">
+    <div class="q-head"><span class="q-num">D5</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Inventory capacity</h3>
+    <p class="lead">The inventory package provides atomic capacity holds, but it does not understand a calendar. The existing inventory windows hold the dates and seasons.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d5" value="A" data-label="Keep windows; each window becomes a capacity pool">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep windows; each window becomes a capacity pool <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Resource = placement, scope = window.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d5" value="B" data-label="Replace windows with pools only">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Replace windows with pools only</span>
+          <span class="opt-desc">Dates and seasons are no longer stored.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d5" value="C" data-label="Keep our own hold system">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Keep our own hold system</span>
+          <span class="opt-desc">No change to existing holds.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> The calendar stays in the app; holds become atomic and expire automatically.</p>
+      <p><strong>B.</strong> Dates, seasons, and context are lost.</p>
+      <p><strong>C.</strong> No atomic or auto-expiring holds.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>A capacity pool only has <code>resource_key</code>, <code>scope_key</code>, and numbers. The calendar, seasons, and windows stay in app tables; each window maps to one pool.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d6" data-q="D6" data-rec="A">
+    <div class="q-head"><span class="q-num">D6</span><span class="badge badge-biz">Business</span></div>
+    <h3>When is capacity held?</h3>
+    <p class="lead">A hold stops two customers from getting the same slot. It should not be taken while a customer is only looking or trying things out.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d6" value="A" data-label="When the order is created; commit after payment">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. When the order is created <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Commit when payment arrives; release if expired or cancelled.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d6" value="B" data-label="When the customer adds to a plan">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. When the customer adds to a plan</span>
+          <span class="opt-desc">Every item in a plan holds capacity.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d6" value="C" data-label="No holds; confirm by hand">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No holds; confirm by hand</span>
+          <span class="opt-desc">The team checks availability manually.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Visitors do not lock inventory; real bookings are protected.</p>
+      <p><strong>B.</strong> Abandoned plans lock inventory and block sales.</p>
+      <p><strong>C.</strong> Risk of two bookings for the same slot.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>A hold has an expiry time and can be extended, committed, or released. It can be created in one transaction across several windows.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-d7" data-q="D7" data-rec="A">
+    <div class="q-head"><span class="q-num">D7</span><span class="badge badge-biz">Business</span></div>
+    <h3>Availability display</h3>
+    <p class="lead">Customers like to know whether something is still available. But showing the exact remaining number reveals our commercial capacity.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="d7" value="A" data-label="Status only: Available, Limited, On request">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Status only <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Available / Limited / On request.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d7" value="B" data-label="Show the exact remaining number">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Show the exact remaining number</span>
+          <span class="opt-desc">For example: "3 slots left".</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="d7" value="C" data-label="Hide availability">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Hide availability</span>
+          <span class="opt-desc">Customers have to ask.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Useful information without revealing internal numbers.</p>
+      <p><strong>B.</strong> Numbers go stale fast and reveal capacity.</p>
+      <p><strong>C.</strong> Customers must ask about every offer.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Status can be calculated from the remaining capacity without showing the number. The "limited" threshold is set by the app.</p>
+    </details>
+  </article>
+</section>
+
+<section class="section" id="section-e">
+  <div class="section-head">
+    <span class="section-num">E</span>
+    <h2>Operations &amp; launch</h2>
+  </div>
+  <p class="section-sub">Admin, tax, currency, and how we switch over.</p>
+
+  <article class="q" id="q-e1" data-q="E1" data-rec="A">
+    <div class="q-head"><span class="q-num">E1</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Where does admin manage the catalogue?</h3>
+    <p class="lead">The products package provides a generic admin, but all of its pages and relation managers are final. Media fields are not in the generic form.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e1" value="A" data-label="Our own product resource with a Media tab">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Our own product resource with a Media tab <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Reuse the package form and table, add media fields.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e1" value="B" data-label="Use the package generic resource">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Use the package's generic resource</span>
+          <span class="opt-desc">No media-specific fields.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e1" value="C" data-label="Use both">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Use both</span>
+          <span class="opt-desc">Two places to edit products.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> One place to manage products and media fields.</p>
+      <p><strong>B.</strong> Media fields missing; admin is incomplete.</p>
+      <p><strong>C.</strong> Two places to edit the same thing.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Package pages and relation managers are marked <code>final</code>. Their form and table can be reused, so an app resource can call them and add a media section.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e2" data-q="E2" data-rec="A">
+    <div class="q-head"><span class="q-num">E2</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Admin permissions</h3>
+    <p class="lead">There are already <code>media.manage</code>, <code>quotes.manage</code>, <code>campaigns.manage</code>, and so on.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e2" value="A" data-label="Keep existing permissions; add products.manage">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Keep existing permissions; add <code>products.manage</code> <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Matches the existing roles.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e2" value="B" data-label="One generic permission">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. One generic permission</span>
+          <span class="opt-desc">Every admin can manage everything.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e2" value="C" data-label="No permissions">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No permissions</span>
+          <span class="opt-desc">Anyone who enters admin can edit.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Matches existing roles.</p>
+      <p><strong>B.</strong> Less control.</p>
+      <p><strong>C.</strong> Risk of unlimited access.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>The new resource can use its own permission without changing existing roles. Content editors do not need catalogue access.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e3" data-q="E3" data-rec="A">
+    <div class="q-head"><span class="q-num">E3</span><span class="badge badge-tech">Technical</span></div>
+    <h3>Which packages do we install now?</h3>
+    <p class="lead">Every package adds tables, admin screens, and maintenance surface.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e3" value="A" data-label="Four core packages plus the admin">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Four core packages <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Products, pricing, inventory, orders, plus the Filament admin.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e3" value="B" data-label="Add everything now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Add everything now</span>
+          <span class="opt-desc">Including checkout, payments, tax, promotions, and vouchers.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e3" value="C" data-label="Products only">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Products only</span>
+          <span class="opt-desc">No pricing, capacity, or orders.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Enough for the catalogue, prices, capacity, and orders.</p>
+      <p><strong>B.</strong> Too many surfaces before the basic flow is proven.</p>
+      <p><strong>C.</strong> No pricing, capacity, or orders.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>The products and pricing packages do not strictly require each other, but they are combined here for one catalogue that can be quoted. Checkout and tax can follow without a catalogue migration.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e4" data-q="E4" data-rec="A">
+    <div class="q-head"><span class="q-num">E4</span><span class="badge badge-biz">Business</span></div>
+    <h3>Tax</h3>
+    <p class="lead">The existing rate cards mention "before SST 8%". The question is when tax must be calculated automatically.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e4" value="A" data-label="Show SST 8% as a note now; tax engine later">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Show SST 8% as a note now; tax engine later <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Quotes state the tax; tax invoices are installed when needed.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e4" value="B" data-label="Install the tax engine now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Install the tax engine now</span>
+          <span class="opt-desc">Tax is calculated automatically on every price.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e4" value="C" data-label="No tax">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. No tax</span>
+          <span class="opt-desc">Prices are treated as tax-free.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Clear quotes without tax-engine work.</p>
+      <p><strong>B.</strong> Extra work before the first invoice.</p>
+      <p><strong>C.</strong> Invoices do not match the rate.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>The pricing package only stores a tax display flag; it does not calculate tax. A separate tax engine can be installed later without changing base prices.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e5" data-q="E5" data-rec="A">
+    <div class="q-head"><span class="q-num">E5</span><span class="badge badge-biz">Business</span></div>
+    <h3>Currency</h3>
+    <p class="lead">All prices today are in Malaysian Ringgit.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e5" value="A" data-label="MYR only; schema ready for others">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. MYR only <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">The schema keeps a currency field for the future.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e5" value="B" data-label="MYR and SGD now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. MYR and SGD now</span>
+          <span class="opt-desc">Two price lists at once.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e5" value="C" data-label="Full multi-currency">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Full multi-currency</span>
+          <span class="opt-desc">Including currency conversion.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Simple; no conversion.</p>
+      <p><strong>B or C.</strong> Every price list must be duplicated; no automatic conversion.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>A price supports one currency per list. Multi-currency means one list per currency, not automatic conversion.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e6" data-q="E6" data-rec="A">
+    <div class="q-head"><span class="q-num">E6</span><span class="badge badge-biz">Business</span></div>
+    <h3>How do we switch over?</h3>
+    <p class="lead">The app has not launched and has no real transactions. This is the chance to cut over cleanly, not build a temporary layer.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e6" value="A" data-label="Big bang before launch; no data migration">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Big bang before launch <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">No old code, no dual-write, no old data.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e6" value="B" data-label="Phased migration with two systems at once">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Phased migration</span>
+          <span class="opt-desc">The old and new catalogues run side by side.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e6" value="C" data-label="Keep two catalogues for now">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Keep two catalogues for now</span>
+          <span class="opt-desc">Both stay until one is proven.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> Clean, no leftovers, and easier to test.</p>
+      <p><strong>B or C.</strong> Two sources of truth; risk of conflicting data and double work.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>There is no transaction data to preserve. A phased migration only adds compatibility code that must be removed later.</p>
+    </details>
+  </article>
+
+  <article class="q" id="q-e7" data-q="E7" data-rec="A">
+    <div class="q-head"><span class="q-num">E7</span><span class="badge badge-tech">Technical</span></div>
+    <h3>What gets deleted?</h3>
+    <p class="lead">This list decides what disappears from the code and database.</p>
+    <div class="options">
+      <label class="opt is-rec">
+        <input type="radio" name="e7" value="A" data-label="Delete the old catalogue only; keep operations and negotiation">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">A. Delete the old catalogue only <span class="badge badge-rec">Recommended</span></span>
+          <span class="opt-desc">Remove old offers, packages, rates, and finance; keep placements, windows, quotes, bookings, and campaigns.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e7" value="B" data-label="Keep all old tables">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">B. Keep all old tables</span>
+          <span class="opt-desc">Old tables stay next to the new ones.</span>
+        </span>
+      </label>
+      <label class="opt">
+        <input type="radio" name="e7" value="C" data-label="Delete more">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="opt-body">
+          <span class="opt-title">C. Delete more</span>
+          <span class="opt-desc">Including quotes and bookings.</span>
+        </span>
+      </label>
+    </div>
+    <div class="impact">
+      <span class="impact-label">Impact</span>
+      <p><strong>A.</strong> No old catalogue leftovers; quotes and operations stay.</p>
+      <p><strong>B.</strong> Two sources of truth.</p>
+      <p><strong>C.</strong> Lose the negotiation and operations flow.</p>
+    </div>
+    <details class="tech">
+      <summary>Technical note</summary>
+      <p>Deleted: <code>media_offerings</code>, <code>offering_placements</code>, <code>packages</code>, <code>package_lines</code>, <code>rate_cards</code>, <code>rate_card_lines</code>, <code>invoices</code>, <code>payments</code>. Kept: <code>placements</code>, <code>inventory_windows</code>, <code>quotes</code>, <code>bookings</code>, <code>campaigns</code>.</p>
+    </details>
+  </article>
+</section>
+
+<section class="section" id="facts">
+  <div class="section-head">
+    <span class="section-num">F</span>
+    <h2>Facts that lock these decisions</h2>
+  </div>
+  <p class="section-sub">These are not questions. They are facts confirmed from the code and data, and the reason the recommendations above look the way they do.</p>
+
+  <div class="fact">
+    <h3>MySQL is not supported</h3>
+    <p>The products package uses partial unique indexes that exist only on PostgreSQL and SQLite. Other engines fail during migration.</p>
+    <span class="impl"><strong>What it means:</strong> production uses PostgreSQL; SQLite stays for development and tests.</span>
+  </div>
+  <div class="fact">
+    <h3>Orders have no per-line seller</h3>
+    <p>One order has one owner, and every item is forced to that owner. There is no seller model, split, or payout.</p>
+    <span class="impl"><strong>What it means:</strong> Dunia Media must be the seller of record (A1).</span>
+  </div>
+  <div class="fact">
+    <h3>A price of 0 means free</h3>
+    <p>There is no "no price" state in products or price lists. Zero is a valid, payable price.</p>
+    <span class="impl"><strong>What it means:</strong> "on request" offers need a flag and a checkout block (B3).</span>
+  </div>
+  <div class="fact">
+    <h3>Capacity has no calendar</h3>
+    <p>A capacity pool stores only two text keys and three numbers. There are no dates, seasons, or overlap checks.</p>
+    <span class="impl"><strong>What it means:</strong> inventory windows stay in the app and become the pool scope (D5).</span>
+  </div>
+  <div class="fact">
+    <h3>Products cannot practically be subclassed</h3>
+    <p>Actions and relationships use the base product class, and all package admin pages are marked <code>final</code>.</p>
+    <span class="impl"><strong>What it means:</strong> media admin is built as an app resource that reuses the package form and table (E1).</span>
+  </div>
+  <div class="fact">
+    <h3>The structured rate table is unused</h3>
+    <p>Rate lines only copy the "from" price. No code reads them for display, quotes, or bookings.</p>
+    <span class="impl"><strong>What it means:</strong> the old rate table is deleted; PDFs stay; real prices go into price lists (B6).</span>
+  </div>
+  <div class="fact">
+    <h3>Media owners have no login</h3>
+    <p>There is one admin panel and no tenancy by party. Media owners exist as party records, not users.</p>
+    <span class="impl"><strong>What it means:</strong> the catalogue stays global and the owner becomes a profile field (C2). Owner self-service can be added later without changing the catalogue.</span>
+  </div>
+  <div class="fact">
+    <h3>No CPM, GRP, or fractional units</h3>
+    <p>All quantities are integers and all prices are in minor units. The pricing engine has no daypart, time sheet, or media formula.</p>
+    <span class="impl"><strong>What it means:</strong> units must be discrete (spot, month, year, package); media formulas stay in the app (B1).</span>
+  </div>
+</section>
+
+<section class="section" id="changes">
+  <div class="section-head">
+    <span class="section-num">✓</span>
+    <h2>What changes, what stays</h2>
+  </div>
+  <div class="change-grid">
+    <div class="change">
+      <h3>Changes</h3>
+      <ul>
+        <li>One product catalogue replaces <code>media_offerings</code>.</li>
+        <li>Real prices are separate from display prices.</li>
+        <li>Quotes can become orders and invoices.</li>
+        <li>Capacity uses atomic holds.</li>
+        <li>Less custom code, more packages.</li>
+      </ul>
+    </div>
+    <div class="change">
+      <h3>Stays</h3>
+      <ul>
+        <li>The Dunia Media brand and name.</li>
+        <li>The media directory, owner pages, and search filters.</li>
+        <li>Rate-card PDFs as official documents.</li>
+        <li>The quote flow and signed proposals.</li>
+        <li>Campaigns and case studies as content.</li>
+        <li>Existing admin roles and permissions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="summary">
+  <div class="section-head">
+    <span class="section-num">✓</span>
+    <h2>Your answers</h2>
+  </div>
+  <p class="section-sub">Pick answers above, then check the board below. Press "Copy answers" to send them back to the developer.</p>
+
+  <div class="summary-card">
+    <p class="summary-note" id="diffText">No answers yet. Every question still follows the recommendation.</p>
+    <div class="answer-grid" id="answerGrid" aria-label="Answer board"></div>
+    <p class="summary-note">
+      Green = answered as recommended. Orange = different from the recommendation. Empty = not answered.
+      Answers autosave in this browser. "Save to database" writes them to <code>answers.db</code>;
+      "Load from database" restores them.
+    </p>
+    <div class="actions">
+      <button class="btn warm" id="applyAll" type="button">Use all recommendations</button>
+      <button class="btn" id="copyBtn" type="button">Copy answers</button>
+      <button class="btn ghost" id="saveDb" type="button">Save to database</button>
+      <button class="btn ghost" id="loadDb" type="button">Load from database</button>
+      <button class="btn ghost" id="printBtn" type="button">Print / PDF</button>
+      <button class="btn ghost" id="resetBtn" type="button">Reset</button>
+    </div>
+    <textarea id="summaryText" readonly aria-label="Answer summary"></textarea>
+  </div>
+
+  <div class="notice" style="margin-top:22px">
+    <strong>Next step.</strong>
+    Once the answers are confirmed, the work order is: install the core packages, build the media
+    profile and migrate the catalogue, connect quotes to orders, then rebuild admin and tests.
+    No code changes until you confirm.
+  </div>
+</section>
+
+<footer>
+  Prepared for product-owner review · 17 November 2026 · No code or data changed ·
+  This document works offline.
+</footer>
+
+</main>
+
+<script>
+(function () {
+  var KEY = 'dm-catalogue-sales-v1';
+  var qs = Array.prototype.slice.call(document.querySelectorAll('.q'));
+  var grid = document.getElementById('answerGrid');
+  var progressBar = document.getElementById('progressBar');
+  var progressText = document.getElementById('progressText');
+  var summaryText = document.getElementById('summaryText');
+  var diffText = document.getElementById('diffText');
+  var saved = {};
+
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { saved = {}; }
+
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+  }
+
+  function valueOf(q) {
+    var input = q.querySelector('input[type="radio"]:checked');
+    return input ? input.value : null;
+  }
+
+  function labelOf(q, value) {
+    var input = q.querySelector('input[type="radio"][value="' + value + '"]');
+    return input ? (input.getAttribute('data-label') || value) : value;
+  }
+
+  function titleOf(q) {
+    return q.querySelector('h3').textContent.replace(/\s+/g, ' ').trim();
+  }
+
+  function syncSelected() {
+    qs.forEach(function (q) {
+      Array.prototype.forEach.call(q.querySelectorAll('.opt'), function (opt) {
+        var input = opt.querySelector('input');
+        opt.classList.toggle('selected', !!(input && input.checked));
+      });
+    });
+  }
+
+  function render() {
+    var answered = 0;
+    var different = 0;
+
+    qs.forEach(function (q) {
+      var value = valueOf(q);
+      if (value) {
+        answered += 1;
+        if (value !== q.getAttribute('data-rec')) { different += 1; }
+      }
+    });
+
+    progressBar.style.width = (answered / qs.length * 100) + '%';
+    progressText.textContent = answered + ' / ' + qs.length + ' answered';
+    diffText.textContent = answered === 0
+      ? 'No answers yet. Every question still follows the recommendation.'
+      : (different === 0
+        ? 'All ' + answered + ' answers so far follow the recommendation.'
+        : answered + ' answered, ' + different + ' differ from the recommendation.');
+
+    grid.innerHTML = qs.map(function (q) {
+      var value = valueOf(q);
+      var rec = q.getAttribute('data-rec');
+      var cls = !value ? 'empty' : (value === rec ? 'done' : 'diff');
+      return '<a class="chip ' + cls + '" href="#' + q.id + '" title="' + q.getAttribute('data-q') + '">' +
+        '<b>' + q.getAttribute('data-q') + '</b><span>' + (value || '·') + '</span></a>';
+    }).join('');
+
+    var text = 'DUNIA MEDIA — CATALOGUE & SALES DECISIONS\nDate: 17 November 2026\n\n';
+    qs.forEach(function (q) {
+      var value = valueOf(q);
+      text += q.getAttribute('data-q') + ' — ' + titleOf(q) + '\n';
+      if (value) {
+        text += 'Choice: ' + value + ' — ' + labelOf(q, value);
+      } else {
+        text += 'Not answered. Recommendation: ' + q.getAttribute('data-rec') + ' — ' + labelOf(q, q.getAttribute('data-rec'));
+      }
+      text += '\n\n';
+    });
+    text += 'Note: answers are generated from this recommendation document. Please confirm before implementation.';
+    summaryText.value = text;
+  }
+
+  qs.forEach(function (q) {
+    var value = saved[q.getAttribute('data-q')];
+    if (value) {
+      var input = q.querySelector('input[type="radio"][value="' + value + '"]');
+      if (input) { input.checked = true; }
+    }
+  });
+
+  syncSelected();
+  render();
+
+  document.addEventListener('change', function (event) {
+    var input = event.target.closest ? event.target.closest('input[type="radio"]') : null;
+    if (!input) { return; }
+    var q = input.closest('.q');
+    if (!q) { return; }
+    saved[q.getAttribute('data-q')] = input.value;
+    persist();
+    syncSelected();
+    render();
+  });
+
+  document.getElementById('applyAll').addEventListener('click', function () {
+    qs.forEach(function (q) {
+      if (valueOf(q)) { return; }
+      var input = q.querySelector('input[type="radio"][value="' + q.getAttribute('data-rec') + '"]');
+      if (input) {
+        input.checked = true;
+        saved[q.getAttribute('data-q')] = input.value;
+      }
+    });
+    persist();
+    syncSelected();
+    render();
+  });
+
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    var button = this;
+    var done = function () {
+      button.textContent = 'Copied ✓';
+      setTimeout(function () { button.textContent = 'Copy answers'; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(summaryText.value).then(done, function () {
+        summaryText.focus();
+        summaryText.select();
+        try { document.execCommand('copy'); done(); } catch (e) { button.textContent = 'Copy manually'; }
+      });
+    } else {
+      summaryText.focus();
+      summaryText.select();
+      try { document.execCommand('copy'); done(); } catch (e) { button.textContent = 'Copy manually'; }
+    }
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function () {
+    if (!window.confirm('Reset all answers? This cannot be undone.')) { return; }
+    saved = {};
+    persist();
+    qs.forEach(function (q) {
+      Array.prototype.forEach.call(q.querySelectorAll('input[type="radio"]'), function (input) {
+        input.checked = false;
+      });
+    });
+    syncSelected();
+    render();
+  });
+
+  function answerPayload() {
+    var answers = {};
+    qs.forEach(function (q) {
+      var value = valueOf(q);
+      if (value) {
+        answers[q.getAttribute('data-q')] = { choice: value, label: labelOf(q, value) };
+      }
+    });
+    return answers;
+  }
+
+  function dbUnavailable() {
+    window.alert('Could not reach answers.php.\n\nStart a local server from the project root:\nphp -S 127.0.0.1:8099 -t docs\n\nThen open http://127.0.0.1:8099/catalogue-and-sales-decisions.html');
+  }
+
+  document.getElementById('saveDb').addEventListener('click', function () {
+    var button = this;
+    var answers = answerPayload();
+    if (Object.keys(answers).length === 0) {
+      button.textContent = 'No answers yet';
+      setTimeout(function () { button.textContent = 'Save to database'; }, 1800);
+      return;
+    }
+    button.disabled = true;
+    fetch('answers.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+      body: JSON.stringify({ answers: answers })
+    }).then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      if (!data.ok) { throw new Error(data.error || 'Save failed'); }
+      button.textContent = 'Saved ' + data.saved + ' ✓';
+      button.disabled = false;
+      setTimeout(function () { button.textContent = 'Save to database'; }, 2600);
+    }).catch(function () {
+      button.disabled = false;
+      button.textContent = 'Save to database';
+      dbUnavailable();
+    });
+  });
+
+  document.getElementById('loadDb').addEventListener('click', function () {
+    var button = this;
+    button.disabled = true;
+    fetch('answers.php', { cache: 'no-store' }).then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      if (!data.ok) { throw new Error(data.error || 'Load failed'); }
+      var restored = 0;
+      (data.answers || []).forEach(function (row) {
+        var q = qs.filter(function (item) { return item.getAttribute('data-q') === row.question; })[0];
+        if (!q) { return; }
+        var input = q.querySelector('input[type="radio"][value="' + row.choice + '"]');
+        if (!input) { return; }
+        input.checked = true;
+        saved[q.getAttribute('data-q')] = row.choice;
+        restored += 1;
+      });
+      persist();
+      syncSelected();
+      render();
+      button.textContent = 'Loaded ' + restored + ' ✓';
+      button.disabled = false;
+      setTimeout(function () { button.textContent = 'Load from database'; }, 2600);
+    }).catch(function () {
+      button.disabled = false;
+      button.textContent = 'Load from database';
+      dbUnavailable();
+    });
+  });
+
+  document.getElementById('printBtn').addEventListener('click', function () {
+    var opened = Array.prototype.filter.call(document.querySelectorAll('details'), function (detail) {
+      return !detail.open;
+    });
+    opened.forEach(function (detail) { detail.open = true; });
+    window.print();
+    setTimeout(function () {
+      opened.forEach(function (detail) { detail.open = false; });
+    }, 600);
+  });
+})();
+</script>
+</body>
+</html>
