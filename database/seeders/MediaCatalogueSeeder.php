@@ -77,6 +77,7 @@ class MediaCatalogueSeeder extends Seeder
                     'currency' => 'MYR',
                     'is_featured' => $entry['is_featured'],
                     'is_taxable' => true,
+                    'tax_class' => 'sst-8',
                     'requires_shipping' => false,
                     'supports_variants' => false,
                     'tracks_inventory' => false,

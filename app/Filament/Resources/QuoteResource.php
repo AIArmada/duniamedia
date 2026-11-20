@@ -2,9 +2,11 @@
 
 namespace App\Filament\Resources;
 
+use App\Actions\AcceptQuote;
 use App\Filament\Concerns\HasResourcePermissions;
 use App\Filament\Resources\QuoteResource\Pages;
 use App\Models\Quote;
+use Filament\Actions\Action;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
@@ -61,7 +63,16 @@ class QuoteResource extends Resource
             TextColumn::make('valid_until')->sortable(),
             TextColumn::make('subtotal_amount')->sortable(),
             TextColumn::make('created_at')->sortable(),
-        ])->recordActions([EditAction::make()])->defaultSort('created_at', 'desc');
+        ])->recordActions([
+            Action::make('accept')
+                ->label('Accept & create order')
+                ->icon('heroicon-o-check-circle')
+                ->requiresConfirmation()
+                ->visible(fn (Quote $record): bool => $record->order_id === null && ! in_array($record->status, ['declined', 'expired'], true))
+                ->action(fn (Quote $record) => app(AcceptQuote::class)->execute($record))
+                ->successNotificationTitle('Order created'),
+            EditAction::make(),
+        ])->defaultSort('created_at', 'desc');
     }
 
     public static function getPages(): array

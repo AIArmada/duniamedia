@@ -2,14 +2,15 @@
 
 namespace App\Livewire;
 
+use AIArmada\Products\Models\Product;
 use App\Actions\CreatePartyWithContact;
 use App\Models\Enquiry;
-use AIArmada\Products\Models\Product;
-use App\Support\MediaOffer;
 use App\Models\Party;
 use App\Models\Quote;
 use App\Models\QuoteLine;
 use App\Support\CampaignPlans as PlanService;
+use App\Support\CataloguePricing;
+use App\Support\MediaOffer;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Livewire\Component;
@@ -103,7 +104,9 @@ class QuoteBuilder extends Component
 
         $plan = $this->planInstance !== null ? app(PlanService::class)->find($this->planInstance) : null;
 
-        $this->reference = DB::transaction(function () use ($offerings) {
+        $pricing = app(CataloguePricing::class);
+
+        $this->reference = DB::transaction(function () use ($offerings, $pricing) {
             $buyer = app(CreatePartyWithContact::class)->handle([
                 'name' => $this->name,
                 'email' => $this->email,
@@ -123,7 +126,7 @@ class QuoteBuilder extends Component
                 'metadata' => ['addons' => $this->addons],
             ]);
 
-            $allPublic = $offerings->every(fn (Product $offering): bool => $offering->mediaProfile?->pricing_mode === 'fixed' && $offering->mediaProfile?->price_from !== null);
+            $allPublic = $offerings->every(fn (Product $offering): bool => $pricing->isPubliclyPriced($offering));
             $reference = 'DM-'.now()->format('ymd').'-'.strtoupper(Str::random(6));
 
             $quote = Quote::create([
@@ -136,13 +139,11 @@ class QuoteBuilder extends Component
                 'price_visibility' => 'private',
                 'notes' => 'Indicative only; subject to media-owner confirmation.',
                 'valid_until' => now()->addDays(14)->toDateString(),
-                'subtotal_amount' => $allPublic ? $offerings->sum(fn (Product $offering): float => (float) ($offering->mediaProfile?->price_from ?? 0)) : 0,
+                'subtotal_amount' => $allPublic ? $offerings->sum(fn (Product $offering): float => $pricing->unitPrice($offering) / 100) : 0,
             ]);
 
             foreach ($offerings as $offering) {
-                $unitPrice = $offering->mediaProfile?->pricing_mode === 'fixed' && $offering->mediaProfile?->price_from !== null
-                    ? (float) $offering->mediaProfile->price_from
-                    : 0.0;
+                $unitPrice = $pricing->unitPrice($offering) / 100;
 
                 QuoteLine::create([
                     'quote_id' => $quote->id,
@@ -197,9 +198,10 @@ class QuoteBuilder extends Component
     public function render()
     {
         $offerings = Product::query()->where('status', 'active')->whereIn('id', $this->selected)->with('mediaProfile')->get();
+        $pricing = app(CataloguePricing::class);
         $subtotal = $offerings
-            ->filter(fn (Product $offering): bool => $offering->mediaProfile?->pricing_mode === 'fixed' && $offering->mediaProfile?->price_from !== null)
-            ->sum(fn (Product $offering): float => (float) $offering->mediaProfile->price_from);
+            ->filter(fn (Product $offering): bool => $pricing->isPubliclyPriced($offering))
+            ->sum(fn (Product $offering): float => $pricing->unitPrice($offering) / 100);
 
         return view('livewire.quote-builder', [
             'media' => $offerings->map(fn (Product $offering): MediaOffer => new MediaOffer($offering)),
