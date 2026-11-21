@@ -3,7 +3,7 @@
 namespace Tests\Concerns;
 
 use AIArmada\Products\Models\Product;
-use App\Models\MediaProfile;
+use App\Features\Catalog\Models\MediaProfile;
 
 trait CreatesMediaOffers
 {

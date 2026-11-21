@@ -41,17 +41,17 @@
                 </svg>
                 <figure class="hero-shot hero-shot--main" data-hero-shot="main">
                     <picture>
-                        <source media="(max-width: 760px)" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city-mobile-bg.webp', [480, 640, 960]) }}" sizes="100vw">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
+                        <source media="(max-width: 760px)" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/hero-city-mobile-bg.webp', [480, 640, 960]) }}" sizes="100vw">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
                     </picture>
                     <figcaption>Outdoor · LED</figcaption>
                 </figure>
                 <figure class="hero-shot hero-shot--top" data-hero-shot="top">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-tv.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-tv.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Broadcast</figcaption>
                 </figure>
                 <figure class="hero-shot hero-shot--bottom" data-hero-shot="bottom">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Creators</figcaption>
                 </figure>
             </div>
@@ -74,7 +74,7 @@
                 <div class="trust-strip__logos">
                     @foreach ($trustClients as $client)
                         <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View work for {{ $client['name'] }}">
-                            <img src="{{ \App\Support\MediaImage::url($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
                         </a>
                     @endforeach
                 </div>
@@ -99,7 +99,7 @@
             <div class="medium-mosaic">
                 @foreach ($mediums as $medium)
                     <a class="medium-tile medium-tile--{{ $medium['class'] }}" href="{{ route('media.index', ['medium' => $medium['medium']]) }}">
-                        <img src="{{ \App\Support\MediaImage::url($medium['image']) }}" srcset="{{ \App\Support\MediaImage::srcset($medium['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($medium['image']) }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($medium['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
                         <span class="medium-tile__icon"><x-dm-icon :name="$medium['icon']" :size="19"/></span>
                         <span class="medium-tile__arrow" aria-hidden="true">↗</span>
                         <span class="medium-tile__body">
@@ -113,7 +113,7 @@
     </section>
 
     <section class="section process process--image" data-process aria-labelledby="process-title">
-        <div class="process__bg" aria-hidden="true"><img src="{{ \App\Support\MediaImage::url('assets/img/v2/process-bg.webp') }}" alt="" loading="lazy" decoding="async"></div>
+        <div class="process__bg" aria-hidden="true"><img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/process-bg.webp') }}" alt="" loading="lazy" decoding="async"></div>
         <div class="container process__inner">
             <div class="process__intro">
                 <span class="eyebrow eyebrow--pale">Not just placement</span>
@@ -161,7 +161,7 @@
                 <div class="featured-work">
                     <a class="work-feature" href="{{ route('work.index', ['client' => $heroFeature['client']]) }}#archive">
                         @if ($heroFeature['cover'])
-                            <img src="{{ \App\Support\MediaImage::url($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
                         @else
                             <img src="{{ asset('assets/img/v2/medium-tv.webp') }}" alt="" loading="lazy" decoding="async">
                         @endif
@@ -182,9 +182,9 @@
                             <a class="work-support__item" href="{{ route('work.index', ['client' => $work['client']]) }}#archive">
                                 <span class="work-support__thumb">
                                     @if ($work['cover'])
-                                        <img src="{{ \App\Support\MediaImage::url($work['cover']) }}" alt="" loading="lazy" decoding="async">
+                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($work['cover']) }}" alt="" loading="lazy" decoding="async">
                                     @elseif ($work['client_logo'])
-                                        <img src="{{ \App\Support\MediaImage::url($work['client_logo']) }}" alt="" loading="lazy" decoding="async" style="object-fit:contain;padding:0.4rem">
+                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($work['client_logo']) }}" alt="" loading="lazy" decoding="async" style="object-fit:contain;padding:0.4rem">
                                     @endif
                                 </span>
                                 <span>
@@ -211,7 +211,7 @@
             <div class="persona-grid">
                 @foreach ($personas as $persona)
                     <a class="persona" href="{{ $persona['url'] }}">
-                        <img src="{{ \App\Support\MediaImage::url($persona['image']) }}" srcset="{{ \App\Support\MediaImage::srcset($persona['image'], [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 24vw" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($persona['image']) }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($persona['image'], [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 24vw" alt="" loading="lazy" decoding="async">
                         <span class="persona__body">
                             <h3>{{ $persona['title'] }}</h3>
                             <p>{{ $persona['copy'] }}</p>
@@ -250,7 +250,7 @@
         <div class="container">
             <div class="feature-split">
                 <figure class="feature-split__media">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on workshop with a small team" width="1536" height="1024" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on workshop with a small team" width="1536" height="1024" loading="lazy" decoding="async">
                     <figcaption>Practical workshops, built around real workflows.</figcaption>
                 </figure>
                 <div class="feature-split__body">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <figure class="cta-panel__media">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 34vw" alt="A quiet creative studio meeting table with notebooks, coffee and printed contact sheets" loading="eager" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 34vw" alt="A quiet creative studio meeting table with notebooks, coffee and printed contact sheets" loading="eager" decoding="async">
                 </figure>
             </div>
         </div>

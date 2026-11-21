@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <figure class="empty-state__media">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/insight-media-mix.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="A media planning notebook, printed channel cards and coffee on a cream desk" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/insight-media-mix.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="A media planning notebook, printed channel cards and coffee on a cream desk" loading="lazy" decoding="async">
                     </figure>
                 </div>
 
@@ -61,7 +61,7 @@
                     @foreach ($articles as $article)
                         <article class="article-card">
                             <a href="{{ route('insights.show', $article->slug) }}" class="article-card__media">
-                                <img src="{{ \App\Support\MediaImage::url($article->displayImage()) }}" loading="lazy" alt="{{ $article->title }}">
+                                <img src="{{ \App\Features\Catalog\Support\MediaImage::url($article->displayImage()) }}" loading="lazy" alt="{{ $article->title }}">
                             </a>
                             <div class="article-card__body">
                                 <span class="eyebrow eyebrow--plain">{{ strtoupper($article->category) }}</span>

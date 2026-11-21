@@ -50,10 +50,10 @@
                     <div class="media-grid">
                         @foreach ($creators as $creator)
                             <article class="creator-card">
-                                <div class="creator-card__image"><img src="{{ \App\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy"></div>
+                                <div class="creator-card__image"><img src="{{ \App\Features\Catalog\Support\MediaImage::url($creator->imageUrl) }}" alt="{{ $creator->name }}" loading="lazy"></div>
                                 <div class="creator-card__body">
-                                    <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->social_platform }}</span></div>
-                                    <h3>{{ $creator->displayName() }}</h3>
+                                    <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->socialPlatform }}</span></div>
+                                    <h3>{{ $creator->name }}</h3>
                                     <p>{{ \Illuminate\Support\Str::limit($creator->bio, 140) }}</p>
                                     <a href="{{ route('creators.index') }}" class="text-link">View the creator network →</a>
                                 </div>
@@ -71,14 +71,14 @@
                         @foreach ($campaigns as $campaign)
                             <article class="work-card">
                                 <header class="work-card__head">
-                                    <div class="work-card__client"><span class="work-card__client-name">{{ $campaign->client?->display_name }}</span></div>
-                                    <span class="work-card__year">{{ $campaign->starts_on?->format('Y') }}</span>
+                                    <div class="work-card__client"><span class="work-card__client-name">{{ $campaign['client_name'] }}</span></div>
+                                    <span class="work-card__year">{{ $campaign['year'] }}</span>
                                 </header>
                                 <div class="work-card__body">
-                                    <span class="work-card__service">{{ $campaign->service?->name }}</span>
-                                    <h3>{{ $campaign->name }}</h3>
-                                    <p>{{ \Illuminate\Support\Str::limit($campaign->summary, 160) }}</p>
-                                    <a class="text-link" href="{{ route('work.index', ['client' => $campaign->client?->slug]) }}">View client work →</a>
+                                    <span class="work-card__service">{{ $campaign['channel'] }}</span>
+                                    <h3>{{ $campaign['title'] }}</h3>
+                                    <p>{{ \Illuminate\Support\Str::limit($campaign['description'], 160) }}</p>
+                                    <a class="text-link" href="{{ route('work.index', ['client' => $campaign['client_slug']]) }}">View client work →</a>
                                 </div>
                             </article>
                         @endforeach
@@ -92,7 +92,7 @@
                     <div class="article-grid">
                         @foreach ($articles as $article)
                             <article class="article-card">
-                                <a href="{{ route('insights.show', $article->slug) }}" class="article-card__media"><img src="{{ \App\Support\MediaImage::url($article->displayImage()) }}" loading="lazy" alt="{{ $article->title }}"></a>
+                                <a href="{{ route('insights.show', $article->slug) }}" class="article-card__media"><img src="{{ \App\Features\Catalog\Support\MediaImage::url($article->imageUrl) }}" loading="lazy" alt="{{ $article->title }}"></a>
                                 <div class="article-card__body">
                                     <span class="eyebrow eyebrow--plain">{{ strtoupper($article->category) }}</span>
                                     <h3><a href="{{ route('insights.show', $article->slug) }}">{{ $article->title }}</a></h3>

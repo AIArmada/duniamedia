@@ -11,21 +11,21 @@
     'breadcrumb' => [],
 ])
 
-@php($heroMode = \App\Support\PageHero::mode())
+@php($heroMode = \App\Shared\Support\PageHero::mode())
 
 <section {{ $attributes->class([
     'page-hero',
     'page-hero--'.$heroMode,
     'page-hero--dark' => $tone === 'dark',
 ]) }}>
-    @if ($media && $heroMode === \App\Support\PageHero::MEDIA)
+    @if ($media && $heroMode === \App\Shared\Support\PageHero::MEDIA)
         <div class="page-hero__media" aria-hidden="true">
             <picture>
                 @if ($mediaMobile)
-                    <source media="(max-width: 760px)" srcset="{{ \App\Support\MediaImage::srcset($mediaMobile, [480, 640, 960]) }}" sizes="100vw">
+                    <source media="(max-width: 760px)" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($mediaMobile, [480, 640, 960]) }}" sizes="100vw">
                 @endif
-                <img src="{{ \App\Support\MediaImage::url($media) }}"
-                     srcset="{{ \App\Support\MediaImage::srcset($media, [640, 960, 1280]) }}"
+                <img src="{{ \App\Features\Catalog\Support\MediaImage::url($media) }}"
+                     srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($media, [640, 960, 1280]) }}"
                      sizes="100vw" alt="" width="1672" height="941" loading="eager" decoding="async">
             </picture>
         </div>
@@ -45,7 +45,7 @@
                 </nav>
             @endif
             @if ($eyebrow)
-                <span class="eyebrow @if ($tone === 'dark' || $heroMode === \App\Support\PageHero::MEDIA) eyebrow--pale @endif">{{ $eyebrow }}</span>
+                <span class="eyebrow @if ($tone === 'dark' || $heroMode === \App\Shared\Support\PageHero::MEDIA) eyebrow--pale @endif">{{ $eyebrow }}</span>
             @endif
             <h1>{!! $title !!}</h1>
             @if ($lede)
@@ -55,14 +55,14 @@
                 <div class="page-hero__actions">{{ $actions }}</div>
             @endisset
         </div>
-        @if ($image && $heroMode === \App\Support\PageHero::SPLIT)
+        @if ($image && $heroMode === \App\Shared\Support\PageHero::SPLIT)
             <figure class="page-hero__visual">
                 <picture>
                     @if ($imageMobile)
-                        <source media="(max-width: 760px)" srcset="{{ \App\Support\MediaImage::srcset($imageMobile, [480, 640, 960]) }}" sizes="(max-width: 760px) 92vw, 38vw">
+                        <source media="(max-width: 760px)" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($imageMobile, [480, 640, 960]) }}" sizes="(max-width: 760px) 92vw, 38vw">
                     @endif
-                    <img src="{{ \App\Support\MediaImage::url($image) }}"
-                         srcset="{{ \App\Support\MediaImage::srcset($image, [480, 960, 1280]) }}"
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($image) }}"
+                         srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($image, [480, 960, 1280]) }}"
                          sizes="(max-width: 1024px) 92vw, 38vw"
                          alt="{{ $imageAlt ?? '' }}" width="1536" height="1024"
                          loading="eager" decoding="async">

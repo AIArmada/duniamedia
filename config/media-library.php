@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Media;
+use App\Shared\Models\Media;
 use Spatie\ImageOptimizer\Optimizers\Avifenc;
 use Spatie\ImageOptimizer\Optimizers\Cwebp;
 use Spatie\ImageOptimizer\Optimizers\Gifsicle;

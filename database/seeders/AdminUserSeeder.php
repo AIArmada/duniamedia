@@ -1,9 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use AIArmada\Authz\Models\Role;
-use App\Models\User;
+use App\Features\Identity\Models\User;
+use App\Features\Identity\Persistence\UpsertUser;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
@@ -13,28 +16,25 @@ class AdminUserSeeder extends Seeder
     {
         $this->call(RolePermissionSeeder::class);
 
-        $email = (string) env('ADMIN_EMAIL', 'admin@duniamedia.test');
-        $name = (string) env('ADMIN_NAME', 'Dunia Media Admin');
-        $password = env('ADMIN_PASSWORD') ?: null;
-
-        $user = User::query()->firstOrNew(['email' => $email]);
-        $user->name = $name;
-        $user->email_verified_at ??= now();
+        $email = (string) config('duniamedia.admin_email', 'admin@duniamedia.test');
+        $name = (string) config('duniamedia.admin_name', 'Dunia Media Admin');
+        $password = config('duniamedia.admin_password') ?: null;
 
         $generatedPassword = null;
 
-        if (! $user->exists) {
-            if (! $password) {
-                $password = Str::password(16);
-                $generatedPassword = $password;
-            }
-
-            $user->password = $password;
-        } elseif ($password) {
-            $user->password = $password;
+        if (! User::query()->where('email', $email)->exists() && ! $password) {
+            $password = Str::password(16);
+            $generatedPassword = $password;
         }
 
-        $user->save();
+        $attributes = ['name' => $name, 'email' => $email];
+
+        if ($password !== null) {
+            $attributes['password'] = $password;
+        }
+
+        $user = app(UpsertUser::class)->handle($attributes);
+
         $user->assignRole(Role::findOrCreate(config('authz.super_admin_role'), 'web'));
 
         $this->command?->info("Admin user ready: {$email}");

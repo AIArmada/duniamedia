@@ -30,16 +30,6 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('location_parties', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('location_id')->index();
-            $table->foreignUuid('party_id')->index();
-            $table->string('role_code');
-            $table->date('valid_from')->nullable();
-            $table->date('valid_to')->nullable();
-            $table->timestampsTz();
-        });
-
         Schema::create('location_zones', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('location_id')->index();
@@ -75,16 +65,5 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('traffic_observations', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('location_id')->index();
-            $table->date('observed_on');
-            $table->string('metric_code');
-            $table->decimal('estimated_value', 18, 2);
-            $table->string('unit_code');
-            $table->string('source')->nullable();
-            $table->string('confidence')->nullable();
-            $table->timestampsTz();
-        });
     }
 };

@@ -21,7 +21,7 @@
                         <div class="selection-list">
                             @forelse ($summary['items'] as $item)
                                 <div class="selection-item" wire:key="plan-item-{{ $item->id }}">
-                                    <img src="{{ \App\Support\MediaImage::url($item->attributes->get('image')) }}" alt="">
+                                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($item->attributes->get('image')) }}" alt="">
                                     <div>
                                         <strong>{{ $item->name }}</strong>
                                         <span>{{ $item->attributes->get('medium') }} · {{ $item->attributes->get('location') }} · RM {{ number_format($item->price / 100, 2) }} each</span>
@@ -39,8 +39,8 @@
                         </div>
 
                         <flux:select wire:model="offeringId" label="Add media"><option value="">Select media…</option>
-                                @foreach ($offerings as $offering)
-                                    <option value="{{ $offering->id }}">{{ $offering->name }}</option>
+                                @foreach ($offerings as $offeringId => $offeringName)
+                                    <option value="{{ $offeringId }}">{{ $offeringName }}</option>
                                 @endforeach</flux:select>
                         <flux:button type="button" variant="primary" size="sm" wire:click="addOffering">Add to plan</flux:button>
                     </div>
@@ -83,7 +83,7 @@
 
                 <aside class="quote-summary" aria-label="Plan summary">
                     <figure class="quote-summary__media">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" alt="" loading="lazy" decoding="async">
                     </figure>
                     <h2>Plan total</h2>
                     <div class="quote-summary__row"><span>Media subtotal</span><strong>RM {{ number_format($summary['subtotal'] / 100, 2) }}</strong></div>

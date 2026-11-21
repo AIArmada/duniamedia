@@ -166,26 +166,6 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('inventory_allocations', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('booking_line_id')->index();
-            $table->foreignUuid('inventory_window_id')->index();
-            $table->foreignUuid('hold_id')->nullable()->index();
-            $table->decimal('quantity', 18, 3);
-            $table->string('status')->default('allocated')->index();
-            $table->timestampTz('released_at')->nullable();
-            $table->timestampsTz();
-        });
-
-        Schema::create('purchase_orders', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('booking_id')->index();
-            $table->string('buyer_po_number');
-            $table->date('issued_on')->nullable();
-            $table->decimal('amount', 18, 2)->nullable();
-            $table->timestampsTz();
-        });
-
         Schema::create('invoices', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('booking_id')->index();

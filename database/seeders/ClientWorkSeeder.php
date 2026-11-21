@@ -1,18 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Campaign;
-use App\Models\CaseStudy;
-use App\Models\CaseStudyCampaign;
-use App\Models\CaseStudyProject;
-use App\Models\ClientReference;
-use App\Models\Organization;
-use App\Models\Party;
-use App\Models\PartyRole;
-use App\Models\Project;
-use App\Models\ProjectService;
-use App\Models\Service;
+use App\Features\Clients\Models\Service;
+use App\Features\Clients\Persistence\WriteCampaigns;
+use App\Features\Clients\Persistence\WriteClientReferences;
+use App\Features\Clients\Persistence\WriteProjects;
+use App\Features\Clients\Persistence\WriteProjectServices;
+use App\Features\Clients\Persistence\WriteServices;
+use App\Features\Identity\Persistence\WriteParties;
 use Carbon\Carbon;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
@@ -32,15 +30,24 @@ class ClientWorkSeeder extends Seeder
         }
 
         $data = json_decode(FileFacade::get($path), true);
-        $raMedia = Party::where('slug', 'ra-media-relations')->firstOrFail();
+
+        $parties = app(WriteParties::class);
+        $references = app(WriteClientReferences::class);
+        $projects = app(WriteProjects::class);
+        $campaigns = app(WriteCampaigns::class);
+        $projectServices = app(WriteProjectServices::class);
+        $services = app(WriteServices::class);
+
+        $raMedia = $parties->findBySlug('ra-media-relations')
+            ?? throw new \RuntimeException('The RA Media seller party must be seeded before client work.');
 
         $mediaByKey = collect($data['media'] ?? [])->keyBy('key');
-        $parties = [];
-        $projects = [];
+        $clientParties = [];
+        $clientProjects = [];
         $years = [];
 
         foreach ($data['clients'] ?? [] as $client) {
-            $party = Party::updateOrCreate(
+            $party = $parties->party(
                 ['slug' => $client['slug']],
                 [
                     'party_type' => 'organization',
@@ -53,7 +60,7 @@ class ClientWorkSeeder extends Seeder
 
             $this->replaceMedia($party, $client['logo'] ?? null, 'logo');
 
-            Organization::updateOrCreate(
+            $parties->organization(
                 ['party_id' => $party->id],
                 [
                     'industry' => $client['industry'] ?? null,
@@ -61,12 +68,12 @@ class ClientWorkSeeder extends Seeder
                 ],
             );
 
-            PartyRole::updateOrCreate(
+            $parties->role(
                 ['party_id' => $party->id, 'role_code' => 'client'],
                 ['valid_from' => now()->startOfYear()],
             );
 
-            ClientReference::updateOrCreate(
+            $references->upsert(
                 ['client_party_id' => $party->id, 'reference_type' => 'client_logo'],
                 [
                     'permission_granted' => true,
@@ -74,7 +81,7 @@ class ClientWorkSeeder extends Seeder
                 ],
             );
 
-            $parties[$client['slug']] = $party;
+            $clientParties[$client['slug']] = $party;
             $years[$client['slug']] = [];
         }
 
@@ -89,10 +96,10 @@ class ClientWorkSeeder extends Seeder
                 $clientYears = [now()->year];
             }
 
-            $projects[$client['slug']] = Project::updateOrCreate(
+            $clientProjects[$client['slug']] = $projects->upsert(
                 ['project_code' => 'work-'.$client['slug']],
                 [
-                    'client_party_id' => $parties[$client['slug']]->id,
+                    'client_party_id' => $clientParties[$client['slug']]->id,
                     'project_name' => $client['name'].' work archive',
                     'slug' => 'work-'.$client['slug'],
                     'category' => $client['sector'] ?? null,
@@ -107,14 +114,14 @@ class ClientWorkSeeder extends Seeder
         }
 
         foreach ($data['campaigns'] ?? [] as $index => $campaign) {
-            $client = $parties[$campaign['client']] ?? null;
+            $client = $clientParties[$campaign['client']] ?? null;
 
             if (! $client) {
                 continue;
             }
 
-            $project = $projects[$campaign['client']] ?? null;
-            $service = $this->serviceFor($campaign['service']);
+            $project = $clientProjects[$campaign['client']] ?? null;
+            $service = $this->serviceFor($services, $campaign['service']);
             $date = $this->parseDate($campaign['date'] ?? null, (int) $campaign['year']);
             $slug = Str::limit(Str::slug($campaign['title'].' '.$campaign['client'].' '.$campaign['year']), 200, '').'-'.$index;
             $cover = null;
@@ -127,7 +134,7 @@ class ClientWorkSeeder extends Seeder
                 }
             }
 
-            $record = Campaign::updateOrCreate(
+            $record = $campaigns->upsert(
                 ['campaign_code' => 'work-'.str_pad((string) ($index + 1), 3, '0', STR_PAD_LEFT)],
                 [
                     'project_id' => $project?->id,
@@ -151,33 +158,13 @@ class ClientWorkSeeder extends Seeder
             $this->replaceMedia($record, $cover, 'cover');
 
             if ($project) {
-                ProjectService::updateOrCreate(
+                $projectServices->upsert(
                     ['project_id' => $project->id, 'service_id' => $service->id],
                     ['notes' => null],
                 );
             }
 
-            $caseStudy = CaseStudy::updateOrCreate(
-                ['slug' => $slug.'-case-study'],
-                [
-                    'title' => $campaign['title'],
-                    'summary' => $campaign['description'] ?? null,
-                    'challenge' => null,
-                    'approach' => $campaign['description'] ?? null,
-                    'outcome' => null,
-                    'status' => 'published',
-                    'visibility' => 'public',
-                    'published_at' => now(),
-                ],
-            );
-
-            CaseStudyCampaign::updateOrCreate(['case_study_id' => $caseStudy->id, 'campaign_id' => $record->id]);
-
-            if ($project) {
-                CaseStudyProject::updateOrCreate(['case_study_id' => $caseStudy->id, 'project_id' => $project->id]);
-            }
-
-            $caseStudy->clearMediaCollection('portfolio');
+            $record->clearMediaCollection('media');
 
             foreach (array_values($campaign['media'] ?? []) as $sort => $key) {
                 $media = $mediaByKey->get($key);
@@ -187,9 +174,9 @@ class ClientWorkSeeder extends Seeder
                 }
 
                 $this->mediaFile(
-                    $caseStudy,
+                    $record,
                     $media['poster'] ?? null,
-                    'portfolio',
+                    'media',
                     'public',
                     [
                         'caption' => $media['title'] ?? null,
@@ -201,9 +188,9 @@ class ClientWorkSeeder extends Seeder
         }
     }
 
-    private function serviceFor(string $name): Service
+    private function serviceFor(WriteServices $services, string $name): Service
     {
-        return Service::updateOrCreate(
+        return $services->upsert(
             ['service_code' => Str::slug($name)],
             [
                 'name' => $name,

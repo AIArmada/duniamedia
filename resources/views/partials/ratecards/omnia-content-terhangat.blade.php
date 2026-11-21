@@ -16,7 +16,7 @@
                 <a class="btn btn-white" href="#rc-packages">Compare packages <span aria-hidden="true">↓</span></a>
             </div>
             <figure class="rc-hero__visual">
-                <img src="{{ \App\Support\MediaImage::url('assets/ratecards/img/omnia-content-terhangat-2026.webp') }}" alt="Television production set with a large LED wall">
+                <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/ratecards/img/omnia-content-terhangat-2026.webp') }}" alt="Television production set with a large LED wall">
                 <figcaption><span>Media Prima Omnia</span> Content Terhangat 2026</figcaption>
             </figure>
         </div>

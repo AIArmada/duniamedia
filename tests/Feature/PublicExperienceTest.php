@@ -2,14 +2,14 @@
 
 namespace Tests\Feature;
 
-use App\Livewire\AssetOwnerForm;
-use App\Livewire\CampaignPlanner;
-use App\Livewire\ContactForm;
-use App\Livewire\CreatorJoin;
-use App\Livewire\MediaExplorer;
-use App\Livewire\QuoteBuilder;
-use App\Models\CreatorProfile;
-use App\Models\Party;
+use App\Features\Catalog\EntryPoints\Livewire\MediaExplorer;
+use App\Features\Creators\EntryPoints\Livewire\CreatorJoin;
+use App\Features\Creators\Models\CreatorProfile;
+use App\Features\Identity\Models\Party;
+use App\Features\Sales\EntryPoints\Livewire\AssetOwnerForm;
+use App\Features\Sales\EntryPoints\Livewire\CampaignPlanner;
+use App\Features\Sales\EntryPoints\Livewire\ContactForm;
+use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\Concerns\CreatesMediaOffers;

@@ -1,0 +1,29 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Features\Catalog\Models;
+
+use App\Shared\Models\BaseModel;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
+class MediaGroup extends BaseModel
+{
+    protected $table = 'media_groups';
+
+    public function parent(): BelongsTo
+    {
+        return $this->belongsTo(self::class, 'parent_id');
+    }
+
+    public function children(): HasMany
+    {
+        return $this->hasMany(self::class, 'parent_id');
+    }
+
+    public function types(): HasMany
+    {
+        return $this->hasMany(MediaType::class, 'media_group_id');
+    }
+}

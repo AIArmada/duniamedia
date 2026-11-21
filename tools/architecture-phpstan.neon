@@ -1,0 +1,27 @@
+includes:
+    - ../vendor/larastan/larastan/extension.neon
+
+parameters:
+    customRulesetUsed: true
+    paths:
+        - ../app
+        - ../routes
+        - ../database/seeders
+    excludePaths:
+        analyse:
+            - ../app/Features/*/Database/Migrations/*
+    ignoreErrors:
+        -
+            message: "#Relation 'mediaProfile' is not found in AIArmada\\\\Products\\\\Models\\\\Product model\\.#"
+            identifier: larastan.relationExistence
+            paths:
+                - ../app/Features/Catalog/*
+    tmpDir: ../storage/framework/cache/architecture-phpstan
+
+services:
+    -
+        class: AppArchitecture\StaticAnalysis\OwnedWriteRule
+        arguments:
+            projectRoot: %currentWorkingDirectory%
+        tags:
+            - phpstan.rules.rule

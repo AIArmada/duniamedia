@@ -44,7 +44,7 @@
 
                 <aside>
                     <figure class="aside-media">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 34vw" alt="A quiet studio table with notebooks, coffee and printed contact sheets" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 34vw" alt="A quiet studio table with notebooks, coffee and printed contact sheets" loading="lazy" decoding="async">
                     </figure>
                     <div class="aside-panel">
                         <span class="eyebrow eyebrow--plain">More specific?</span>

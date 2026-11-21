@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "name": "Sales",
+  "owns": {
+    "table:enquiries": [
+      "App\\Features\\Sales\\Persistence\\WriteEnquiries",
+      "App\\Features\\Sales\\Actions\\RecordEnquiry",
+      "App\\Features\\Sales\\Actions\\RequestQuote"
+    ],
+    "table:quotes": [
+      "App\\Features\\Sales\\Persistence\\WriteQuotes",
+      "App\\Features\\Sales\\Actions\\RequestQuote",
+      "App\\Features\\Sales\\Actions\\AcceptQuote"
+    ],
+    "table:quote_lines": [
+      "App\\Features\\Sales\\Persistence\\WriteQuoteLines",
+      "App\\Features\\Sales\\Actions\\RequestQuote"
+    ],
+    "table:bookings": [
+      "App\\Features\\Sales\\Persistence\\WriteBookings",
+      "App\\Features\\Sales\\Actions\\AcceptQuote"
+    ],
+    "table:booking_lines": [
+      "App\\Features\\Sales\\Persistence\\WriteBookingLines",
+      "App\\Features\\Sales\\Actions\\AcceptQuote"
+    ],
+    "table:flight_placements": [
+      "App\\Features\\Sales\\Persistence\\WriteFlightPlacements"
+    ],
+    "table:carts": [
+      "App\\Features\\Sales\\Persistence\\WriteCampaignPlan"
+    ]
+  },
+  "extensions": {}
+}

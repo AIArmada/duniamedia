@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "name": "Clients",
+  "owns": {
+    "table:campaigns": [
+      "App\\Features\\Clients\\Persistence\\WriteCampaigns"
+    ],
+    "table:projects": [
+      "App\\Features\\Clients\\Persistence\\WriteProjects"
+    ],
+    "table:services": [
+      "App\\Features\\Clients\\Persistence\\WriteServices"
+    ],
+    "table:brands": [
+      "App\\Features\\Clients\\Persistence\\WriteBrands"
+    ],
+    "table:client_references": [
+      "App\\Features\\Clients\\Persistence\\WriteClientReferences"
+    ],
+    "table:campaign_flights": [
+      "App\\Features\\Clients\\Persistence\\WriteCampaignFlights"
+    ],
+    "table:advertised_items": [
+      "App\\Features\\Clients\\Persistence\\WriteAdvertisedItems"
+    ],
+    "table:project_parties": [
+      "App\\Features\\Clients\\Persistence\\WriteProjectParties"
+    ],
+    "table:project_services": [
+      "App\\Features\\Clients\\Persistence\\WriteProjectServices"
+    ],
+    "table:performance_metrics": [
+      "App\\Features\\Clients\\Persistence\\WritePerformanceMetrics"
+    ]
+  },
+  "extensions": {}
+}

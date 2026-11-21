@@ -46,7 +46,7 @@
                 @foreach ($trainings as $training)
                     <article class="track">
                         <div class="track__media">
-                            <img src="{{ \App\Support\MediaImage::url($trackImages[$loop->index] ?? $training->displayImage()) }}" alt="" loading="lazy" decoding="async">
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($trackImages[$loop->index] ?? $training->displayImage()) }}" alt="" loading="lazy" decoding="async">
                         </div>
                         <span class="eyebrow eyebrow--plain">{{ strtoupper($training->category) }}</span>
                         <h3>{{ $training->title }}</h3>
@@ -59,7 +59,7 @@
                 @endforeach
                 <article class="track">
                     <div class="track__media">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/insight-media-mix.webp') }}" alt="" loading="lazy" decoding="async">
                     </div>
                     <span class="eyebrow eyebrow--plain">Strategy</span>
                     <h3>AI adoption for leadership</h3>
@@ -68,7 +68,7 @@
                 </article>
                 <article class="track">
                     <div class="track__media">
-                        <img src="{{ \App\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" alt="" loading="lazy" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" alt="" loading="lazy" decoding="async">
                     </div>
                     <span class="eyebrow eyebrow--plain">Operations</span>
                     <h3>Automation &amp; workflow design</h3>
@@ -83,7 +83,7 @@
         <div class="container">
             <div class="feature-split feature-split--reverse">
                 <figure class="feature-split__media">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on AI workshop with a team" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on AI workshop with a team" loading="lazy" decoding="async">
                     <figcaption>Brief → demonstration → practice → useful output → follow-up.</figcaption>
                 </figure>
                 <div class="feature-split__body">

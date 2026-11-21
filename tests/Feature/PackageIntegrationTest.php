@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use AIArmada\Addressing\Models\Address;
-use App\Actions\CreatePartyWithContact;
-use App\Models\Location;
+use App\Features\Identity\Actions\CreatePartyWithContact;
+use App\Features\Locations\Models\Location;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
 use Tests\TestCase;

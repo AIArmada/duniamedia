@@ -5,7 +5,7 @@
         $specs = is_array($media->specifications) ? $media->specifications : (is_string($media->specifications) ? (json_decode($media->specifications, true) ?: []) : []);
         $documents = $specs['documents'] ?? [];
         $videos = collect($documents)->filter(fn ($document) => ($document['kind'] ?? '') === 'video');
-        $hasFixedPrice = $media->pricing_mode !== 'on_request' && $media->price_from;
+        $hasFixedPrice = $media->pricingMode !== 'on_request' && $media->priceFrom;
     @endphp
 
     <x-page-hero
@@ -21,13 +21,13 @@
         <x-slot:aside>
             <div class="tag-row">
                 <span class="tag tag--blush">{{ $media->medium }}</span>
-                @if ($media->verified_at)
-                    <span class="tag tag--verified">Verified {{ $media->verified_at->format('M Y') }}</span>
+                @if ($media->verifiedAt)
+                    <span class="tag tag--verified">Verified {{ \Illuminate\Support\Carbon::parse($media->verifiedAt)->format('M Y') }}</span>
                 @else
                     <span class="tag">Awaiting verification</span>
                 @endif
             </div>
-            <p class="tiny muted">{{ $media->location_label ?? 'Nationwide' }} · {{ $media->seller?->display_name ?? 'Media owner on request' }}</p>
+            <p class="tiny muted">{{ $media->locationLabel ?? 'Nationwide' }} · {{ $media->sellerName ?? 'Media owner on request' }}</p>
         </x-slot:aside>
     </x-page-hero>
 
@@ -35,7 +35,7 @@
         <div class="container detail__layout">
             <article class="detail__main">
                 <figure class="detail__visual">
-                    <img src="{{ \App\Support\MediaImage::url($media->displayImage()) }}" srcset="{{ \App\Support\MediaImage::srcset($media->displayImage(), [640, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 64vw" alt="{{ $media->name }}" width="1536" height="1024" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($media->displayImage()) }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($media->displayImage(), [640, 960, 1280]) }}" sizes="(max-width: 1024px) 92vw, 64vw" alt="{{ $media->name }}" width="1536" height="1024" decoding="async">
                 </figure>
 
                 <h2>What this opportunity is</h2>
@@ -44,11 +44,11 @@
                 <h3>Key facts</h3>
                 <div class="fact-grid">
                     <div class="fact"><div class="fact__head"><x-dm-icon name="tv" :size="16"/><span>Medium</span></div><strong>{{ $media->medium }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="layers" :size="16"/><span>Channel</span></div><strong>{{ $media->channel_label ?? 'Confirmed on enquiry' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Media owner / seller</span></div><strong>{{ $media->seller?->display_name ?? 'Confirmed on enquiry' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->location_label ?? 'To be discussed' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audience_label ?? 'Defined during briefing' }}</strong></div>
-                    <div class="fact"><div class="fact__head"><x-dm-icon name="calendar" :size="16"/><span>Availability</span></div><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="layers" :size="16"/><span>Channel</span></div><strong>{{ $media->channelLabel ?? 'Confirmed on enquiry' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="building" :size="16"/><span>Media owner / seller</span></div><strong>{{ $media->sellerName ?? 'Confirmed on enquiry' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="pin" :size="16"/><span>Location</span></div><strong>{{ $media->locationLabel ?? 'To be discussed' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="users" :size="16"/><span>Audience</span></div><strong>{{ $media->audienceLabel ?? 'Defined during briefing' }}</strong></div>
+                    <div class="fact"><div class="fact__head"><x-dm-icon name="calendar" :size="16"/><span>Availability</span></div><strong>{{ str_replace('_', ' ', ucfirst($media->availabilityStatus)) }}</strong></div>
                     <div class="fact"><div class="fact__head"><x-dm-icon name="chart" :size="16"/><span>Pricing basis</span></div><strong>{{ $hasFixedPrice ? 'Indicative rate card' : 'On request' }}</strong></div>
                 </div>
 
@@ -134,7 +134,7 @@
                 <p>We verify the media owner, format, rate, slots and commercial conditions before any booking.</p>
                 <div class="detail-price">
                     @if ($hasFixedPrice)
-                        Indicative from RM{{ number_format($media->price_from, 2) }}
+                        Indicative from RM{{ number_format($media->priceFrom, 2) }}
                     @else
                         Pricing on request
                     @endif
@@ -147,9 +147,9 @@
                     <li><x-dm-icon name="check" :size="15"/> No reservation online</li>
                 </ul>
                 <ul class="detail-meta-list">
-                    <li><span>Availability</span><strong>{{ str_replace('_', ' ', ucfirst($media->availability_status)) }}</strong></li>
-                    <li><span>Location</span><strong>{{ $media->location_label ?? 'Nationwide' }}</strong></li>
-                    <li><span>Last checked</span><strong>{{ $media->verified_at?->format('d M Y') ?? 'Not yet verified' }}</strong></li>
+                    <li><span>Availability</span><strong>{{ str_replace('_', ' ', ucfirst($media->availabilityStatus)) }}</strong></li>
+                    <li><span>Location</span><strong>{{ $media->locationLabel ?? 'Nationwide' }}</strong></li>
+                    <li><span>Last checked</span><strong>{{ $media->verifiedAt ? \Illuminate\Support\Carbon::parse($media->verifiedAt)->format('d M Y') : 'Not yet verified' }}</strong></li>
                 </ul>
                 <p class="detail-note">No payment or reservation takes place online. Rates and availability are confirmed by the media owner before any agreement.</p>
             </aside>

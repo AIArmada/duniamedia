@@ -3,11 +3,11 @@
 namespace Tests\Feature;
 
 use AIArmada\Cart\Models\CartModel;
-use App\Livewire\CampaignPlanBuilder;
-use App\Livewire\CampaignPlans;
-use App\Livewire\QuoteBuilder;
-use App\Models\Party;
-use App\Support\CampaignPlans as PlanService;
+use App\Features\Identity\Models\Party;
+use App\Features\Sales\EntryPoints\Livewire\CampaignPlanBuilder;
+use App\Features\Sales\EntryPoints\Livewire\CampaignPlans;
+use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
+use App\Features\Sales\Support\CampaignPlans as PlanService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\Concerns\CreatesMediaOffers;

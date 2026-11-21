@@ -48,7 +48,7 @@
 @livewireStyles
 </head>
 <body @class([
-    'has-cover-header' => \App\Support\PageHero::isMediaLed(),
+    'has-cover-header' => \App\Shared\Support\PageHero::isMediaLed(),
 ])>
 <a class="skip-link" href="#main">Skip to content</a>
 

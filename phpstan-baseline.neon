@@ -1,0 +1,583 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Catalog/EntryPoints/Filament/ProductResource/Pages/EditProduct.php
+
+		-
+			message: '#^Parameter \#1 \$product of method AIArmada\\Products\\Actions\\UpdateProduct\:\:execute\(\) expects AIArmada\\Products\\Models\\Product, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Catalog/EntryPoints/Filament/ProductResource/Pages/EditProduct.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, array\|null given\.$#'
+			identifier: argument.type
+			count: 3
+			path: app/Features/Catalog/EntryPoints/Http/MediaDirectoryController.php
+
+		-
+			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Catalog/EntryPoints/Http/RateCardController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, Spatie\\MediaLibrary\\MediaCollections\\Models\\Media\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Catalog/EntryPoints/Http/RateCardController.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\EntryPoints\\Livewire\\MediaExplorer\:\:ownerIdsMatching\(\) is unused\.$#'
+			identifier: method.unused
+			count: 1
+			path: app/Features/Catalog/EntryPoints/Livewire/MediaExplorer.php
+
+		-
+			message: '#^Relation ''mediaProfile'' is not found in AIArmada\\Products\\Models\\Product model\.$#'
+			identifier: larastan.relationExistence
+			count: 13
+			path: app/Features/Catalog/EntryPoints/Livewire/MediaExplorer.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Models\\MediaAsset\:\:placements\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasMany but returns Illuminate\\Database\\Eloquent\\Relations\\HasManyThrough\<App\\Features\\Catalog\\Models\\Placement, App\\Features\\Catalog\\Models\\AssetSurface, \$this\(App\\Features\\Catalog\\Models\\MediaAsset\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Models/MediaAsset.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteAdFormats\:\:update\(\) should return App\\Features\\Catalog\\Models\\AdFormat but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteAdFormats.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteAssetSurfaces\:\:update\(\) should return App\\Features\\Catalog\\Models\\AssetSurface but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteAssetSurfaces.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteDistributionPlatforms\:\:update\(\) should return App\\Features\\Catalog\\Models\\DistributionPlatform but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteDistributionPlatforms.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteMediaAssets\:\:update\(\) should return App\\Features\\Catalog\\Models\\MediaAsset but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteMediaAssets.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteMediaGroups\:\:update\(\) should return App\\Features\\Catalog\\Models\\MediaGroup but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteMediaGroups.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteMediaProfiles\:\:update\(\) should return App\\Features\\Catalog\\Models\\MediaProfile but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteMediaProfiles.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteMediaProperties\:\:update\(\) should return App\\Features\\Catalog\\Models\\MediaProperty but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteMediaProperties.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WriteMediaTypes\:\:update\(\) should return App\\Features\\Catalog\\Models\\MediaType but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WriteMediaTypes.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WritePlacementFormats\:\:update\(\) should return App\\Features\\Catalog\\Models\\PlacementFormat but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WritePlacementFormats.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WritePlacementSpecs\:\:update\(\) should return App\\Features\\Catalog\\Models\\PlacementSpec but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WritePlacementSpecs.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WritePlacements\:\:update\(\) should return App\\Features\\Catalog\\Models\\Placement but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WritePlacements.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WritePropertyDistributionPlatforms\:\:update\(\) should return App\\Features\\Catalog\\Models\\PropertyDistributionPlatform but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WritePropertyDistributionPlatforms.php
+
+		-
+			message: '#^Method App\\Features\\Catalog\\Persistence\\WritePropertyMediaTypes\:\:update\(\) should return App\\Features\\Catalog\\Models\\PropertyMediaType but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Catalog/Persistence/WritePropertyMediaTypes.php
+
+		-
+			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Catalog/Queries/PresentMedia.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: App\\Features\\Catalog\\Api\\MediaOfferView, Closure\(AIArmada\\Products\\Models\\Product\)\: App\\Features\\Catalog\\Api\\MediaOfferView given\.$#'
+			identifier: argument.type
+			count: 3
+			path: app/Features/Catalog/Queries/PresentMedia.php
+
+		-
+			message: '#^Parameter \#1 \$product of method App\\Features\\Catalog\\Queries\\PresentMedia\:\:present\(\) expects AIArmada\\Products\\Models\\Product, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 3
+			path: app/Features/Catalog/Queries/PresentMedia.php
+
+		-
+			message: '#^Relation ''mediaProfile'' is not found in AIArmada\\Products\\Models\\Product model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: app/Features/Catalog/Queries/PresentMedia.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type AIArmada\\Products\\Enums\\ProductStatus\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Features/Catalog/Queries/PresentMedia.php
+
+		-
+			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Catalog/Queries/PriceMedia.php
+
+		-
+			message: '#^Relation ''mediaProfile'' is not found in AIArmada\\Products\\Models\\Product model\.$#'
+			identifier: larastan.relationExistence
+			count: 4
+			path: app/Features/Catalog/Queries/PriceMedia.php
+
+		-
+			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Features/Catalog/Support/CataloguePricing.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type AIArmada\\Products\\Enums\\ProductStatus\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Features/Catalog/Support/CataloguePricing.php
+
+		-
+			message: '#^Relation ''mediaProfile'' is not found in AIArmada\\Products\\Models\\Product model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: app/Features/Catalog/Support/MediaDirectory.php
+
+		-
+			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
+			identifier: property.notFound
+			count: 3
+			path: app/Features/Catalog/Support/MediaOffer.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>specifications" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Features/Catalog/Support/MediaOffer.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type AIArmada\\Products\\Enums\\ProductStatus\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Features/Catalog/Support/MediaOffer.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Clients/EntryPoints/Http/PublicController.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Features/Clients/EntryPoints/Http/PublicController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Features\\Clients\\Models\\Campaign\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Features/Clients/EntryPoints/Http/PublicController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Clients/EntryPoints/Livewire/WorkExplorer.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Features/Clients/EntryPoints/Livewire/WorkExplorer.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Features\\Clients\\Models\\Campaign\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Features/Clients/EntryPoints/Livewire/WorkExplorer.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteAdvertisedItems\:\:update\(\) should return App\\Features\\Clients\\Models\\AdvertisedItem but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteAdvertisedItems.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteBrands\:\:update\(\) should return App\\Features\\Clients\\Models\\Brand but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteBrands.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteCampaignFlights\:\:update\(\) should return App\\Features\\Clients\\Models\\CampaignFlight but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteCampaignFlights.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteCampaigns\:\:update\(\) should return App\\Features\\Clients\\Models\\Campaign but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteCampaigns.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteClientReferences\:\:update\(\) should return App\\Features\\Clients\\Models\\ClientReference but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteClientReferences.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WritePerformanceMetrics\:\:update\(\) should return App\\Features\\Clients\\Models\\PerformanceMetric but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WritePerformanceMetrics.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteProjectParties\:\:update\(\) should return App\\Features\\Clients\\Models\\ProjectParty but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteProjectParties.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteProjectServices\:\:update\(\) should return App\\Features\\Clients\\Models\\ProjectService but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteProjectServices.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteProjects\:\:update\(\) should return App\\Features\\Clients\\Models\\Project but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteProjects.php
+
+		-
+			message: '#^Method App\\Features\\Clients\\Persistence\\WriteServices\:\:update\(\) should return App\\Features\\Clients\\Models\\Service but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Clients/Persistence/WriteServices.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Features/Clients/Queries/SearchCampaigns.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Features\\Clients\\Models\\Campaign\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Features/Clients/Queries/SearchCampaigns.php
+
+		-
+			message: '#^Parameter \#2 \$article of method App\\Features\\Content\\Actions\\SaveArticle\:\:handle\(\) expects App\\Features\\Content\\Models\\Article\|null, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Content/EntryPoints/Filament/ArticleResource/Pages/EditRecord.php
+
+		-
+			message: '#^Parameter \#2 \$training of method App\\Features\\Content\\Actions\\SaveTraining\:\:handle\(\) expects App\\Features\\Content\\Models\\Training\|null, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Content/EntryPoints/Filament/TrainingResource/Pages/EditRecord.php
+
+		-
+			message: '#^Cannot call method toIso8601String\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Features/Content/Queries/SearchArticles.php
+
+		-
+			message: '#^Method App\\Features\\Creators\\Models\\CreatorProfile\:\:primaryAccount\(\) should return App\\Features\\Creators\\Models\\CreatorAccount\|null but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Creators/Models/CreatorProfile.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Features/Creators/Models/CreatorProfile.php
+
+		-
+			message: '#^Method App\\Features\\Creators\\Persistence\\WriteCreatorAccounts\:\:update\(\) should return App\\Features\\Creators\\Models\\CreatorAccount but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Creators/Persistence/WriteCreatorAccounts.php
+
+		-
+			message: '#^Method App\\Features\\Creators\\Persistence\\WriteCreatorDeliveryTemplates\:\:update\(\) should return App\\Features\\Creators\\Models\\CreatorDeliveryTemplate but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Creators/Persistence/WriteCreatorDeliveryTemplates.php
+
+		-
+			message: '#^Method App\\Features\\Creators\\Persistence\\WriteCreatorProfiles\:\:update\(\) should return App\\Features\\Creators\\Models\\CreatorProfile but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Creators/Persistence/WriteCreatorProfiles.php
+
+		-
+			message: '#^Property App\\Features\\Identity\\Models\\User\:\:\$email_verified_at \(string\|null\) does not accept Carbon\\CarbonImmutable\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: app/Features/Identity/Persistence/UpsertUser.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$industry\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Identity/Queries/FindParties.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$organization_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Identity/Queries/FindParties.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>organization_type" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Features/Identity/Queries/FindParties.php
+
+		-
+			message: '#^Method App\\Features\\Inventory\\Persistence\\WriteInventoryPools\:\:update\(\) should return App\\Features\\Inventory\\Models\\InventoryPool but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Inventory/Persistence/WriteInventoryPools.php
+
+		-
+			message: '#^Method App\\Features\\Inventory\\Persistence\\WriteInventoryWindows\:\:update\(\) should return App\\Features\\Inventory\\Models\\InventoryWindow but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Inventory/Persistence/WriteInventoryWindows.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Features/Inventory/Queries/ListInventoryWindows.php
+
+		-
+			message: '#^Method App\\Features\\Locations\\Persistence\\WriteGeoMarkets\:\:update\(\) should return App\\Features\\Locations\\Models\\GeoMarket but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Locations/Persistence/WriteGeoMarkets.php
+
+		-
+			message: '#^Method App\\Features\\Locations\\Persistence\\WriteHostStructures\:\:update\(\) should return App\\Features\\Locations\\Models\\HostStructure but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Locations/Persistence/WriteHostStructures.php
+
+		-
+			message: '#^Method App\\Features\\Locations\\Persistence\\WriteLocationZones\:\:update\(\) should return App\\Features\\Locations\\Models\\LocationZone but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Locations/Persistence/WriteLocationZones.php
+
+		-
+			message: '#^Method App\\Features\\Locations\\Persistence\\WriteLocations\:\:update\(\) should return App\\Features\\Locations\\Models\\Location but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Locations/Persistence/WriteLocations.php
+
+		-
+			message: '#^Method App\\Features\\Locations\\Persistence\\WriteSitePermits\:\:update\(\) should return App\\Features\\Locations\\Models\\SitePermit but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Locations/Persistence/WriteSitePermits.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$description\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$product\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$product_id\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 3
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$unit_price\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Features/Sales/Actions/AcceptQuote.php
+
+		-
+			message: '#^Cannot call method copy\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Features/Sales/EntryPoints/Console/GenerateProposalLink.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Features/Sales/EntryPoints/Filament/BookingResource.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Features/Sales/EntryPoints/Filament/QuoteResource.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, AIArmada\\Cart\\Models\\CartModel\|null given\.$#'
+			identifier: argument.type
+			count: 2
+			path: app/Features/Sales/EntryPoints/Livewire/CampaignPlanBuilder.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, AIArmada\\Cart\\Models\\CartModel\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Sales/EntryPoints/Livewire/CampaignPlans.php
+
+		-
+			message: '#^Parameter \#1 \$plan of method App\\Features\\Sales\\Support\\CampaignPlans\:\:summary\(\) expects AIArmada\\Cart\\Models\\CartModel, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Sales/EntryPoints/Livewire/CampaignPlans.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Features/Sales/Models/Enquiry.php
+
+		-
+			message: '#^Cannot call method copy\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Features/Sales/Models/Quote.php
+
+		-
+			message: '#^Parameter \#1 \$key of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:every\(\) expects \(callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: bool\)\|Illuminate\\Database\\Eloquent\\Model\|string, Closure\(App\\Features\\Sales\\Models\\QuoteLine\)\: true given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Features/Sales/Models/Quote.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between float and null will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: app/Features/Sales/Models/Quote.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteBookingLines\:\:update\(\) should return App\\Features\\Sales\\Models\\BookingLine but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteBookingLines.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteBookings\:\:update\(\) should return App\\Features\\Sales\\Models\\Booking but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteBookings.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteEnquiries\:\:update\(\) should return App\\Features\\Sales\\Models\\Enquiry but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteEnquiries.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteFlightPlacements\:\:update\(\) should return App\\Features\\Sales\\Models\\FlightPlacement but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteFlightPlacements.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteQuoteLines\:\:update\(\) should return App\\Features\\Sales\\Models\\QuoteLine but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteQuoteLines.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Persistence\\WriteQuotes\:\:update\(\) should return App\\Features\\Sales\\Models\\Quote but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Persistence/WriteQuotes.php
+
+		-
+			message: '#^Method App\\Features\\Sales\\Support\\CampaignPlans\:\:find\(\) should return AIArmada\\Cart\\Models\\CartModel\|null but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Features/Sales/Support/CampaignPlans.php
+
+		-
+			message: '#^Call to function method_exists\(\) with \$this\(App\\Platform\\PlatformServiceProvider\) and ''optimizes'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: app/Platform/PlatformServiceProvider.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>medium_code" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: database/seeders/ReferenceSeeder.php

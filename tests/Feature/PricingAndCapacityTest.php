@@ -8,15 +8,15 @@ use AIArmada\Orders\Events\OrderCanceled;
 use AIArmada\Orders\Models\Order;
 use AIArmada\Pricing\Models\Price;
 use AIArmada\Pricing\Models\PriceList;
-use App\Livewire\QuoteBuilder;
-use App\Models\InventoryPool;
-use App\Models\InventoryWindow;
-use App\Models\MediaProperty;
-use App\Models\Party;
-use App\Models\Placement;
-use App\Models\Quote;
-use App\Support\CatalogueCapacity;
-use App\Support\CataloguePricing;
+use App\Features\Catalog\Models\MediaProperty;
+use App\Features\Catalog\Models\Placement;
+use App\Features\Catalog\Support\CataloguePricing;
+use App\Features\Identity\Models\Party;
+use App\Features\Inventory\Actions\EnsureCapacityPool;
+use App\Features\Inventory\Models\InventoryPool;
+use App\Features\Inventory\Models\InventoryWindow;
+use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
+use App\Features\Sales\Models\Quote;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\Concerns\CreatesMediaOffers;
@@ -111,8 +111,8 @@ class PricingAndCapacityTest extends TestCase
             'status' => 'open',
         ]);
 
-        $capacity = app(CatalogueCapacity::class);
-        $capacity->ensurePool($window);
+        $capacity = app(EnsureCapacityPool::class);
+        $capacity->handle($window);
 
         $service = app(ScopedCapacityReservationService::class);
         $line = new ScopedCapacityLine(

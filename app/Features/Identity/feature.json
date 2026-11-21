@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "name": "Identity",
+  "owns": {
+    "table:parties": [
+      "App\\Features\\Identity\\Actions\\CreatePartyWithContact",
+      "App\\Features\\Identity\\Persistence\\WriteParties"
+    ],
+    "table:organizations": [
+      "App\\Features\\Identity\\Actions\\CreatePartyWithContact",
+      "App\\Features\\Identity\\Persistence\\WriteParties"
+    ],
+    "table:party_roles": [
+      "App\\Features\\Identity\\Persistence\\AssignPartyRole",
+      "App\\Features\\Identity\\Persistence\\WriteParties"
+    ],
+    "table:party_relationships": [
+      "App\\Features\\Identity\\Actions\\CreatePartyWithContact",
+      "App\\Features\\Identity\\Persistence\\WriteParties"
+    ],
+    "table:users": [
+      "App\\Features\\Identity\\Persistence\\UpsertUser"
+    ]
+  },
+  "extensions": {}
+}

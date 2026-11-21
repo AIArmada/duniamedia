@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\MediaProfile;
+use App\Features\Catalog\Models\MediaProfile;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

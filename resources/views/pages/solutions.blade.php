@@ -63,26 +63,26 @@
                     <a class="button button--primary" href="{{ route('contact') }}">Talk through your next campaign <span aria-hidden="true">↗</span></a>
                 </div>
                 <figure class="feature-split__media">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/persona-training.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/persona-training.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A team working through a campaign plan together" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/persona-training.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/persona-training.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A team working through a campaign plan together" loading="lazy" decoding="async">
                     <figcaption>Strategy, production and delivery in one room.</figcaption>
                 </figure>
             </div>
 
             <div class="solution-visual">
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-outdoor.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-outdoor.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
                     <figcaption>Place: a real outdoor moment in the city.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
                     <figcaption>Engage: creator content built for the audience.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/service-web.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A digital interface on a laptop screen" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/service-web.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A digital interface on a laptop screen" loading="lazy" decoding="async">
                     <figcaption>Convert: the digital journey after the impression.</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/insight-measurement.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/insight-measurement.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="Campaign measurement notes and charts" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/insight-measurement.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/insight-measurement.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="Campaign measurement notes and charts" loading="lazy" decoding="async">
                     <figcaption>Learn: reporting that answers a decision.</figcaption>
                 </figure>
             </div>

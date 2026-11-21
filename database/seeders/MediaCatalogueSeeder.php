@@ -7,12 +7,12 @@ use AIArmada\Products\Enums\ProductStatus;
 use AIArmada\Products\Enums\ProductType;
 use AIArmada\Products\Enums\ProductVisibility;
 use AIArmada\Products\Models\Product;
-use App\Models\CreatorProfile;
-use App\Models\InventoryPool;
-use App\Models\InventoryWindow;
-use App\Models\MediaProfile;
-use App\Models\Party;
-use App\Models\Placement;
+use App\Features\Catalog\Actions\SaveMediaProfile;
+use App\Features\Catalog\Models\Placement;
+use App\Features\Creators\Models\CreatorProfile;
+use App\Features\Identity\Models\Party;
+use App\Features\Inventory\Models\InventoryPool;
+use App\Features\Inventory\Models\InventoryWindow;
 use Illuminate\Database\Seeder;
 
 class MediaCatalogueSeeder extends Seeder
@@ -99,8 +99,8 @@ class MediaCatalogueSeeder extends Seeder
                     : null;
             }
 
-            MediaProfile::updateOrCreate(
-                ['product_id' => $product->id],
+            app(SaveMediaProfile::class)->handle(
+                $product->id,
                 [
                     'media_owner_party_id' => $entry['media_owner_slug'] ? ($partyIds[$entry['media_owner_slug']] ?? null) : null,
                     'creator_profile_id' => $entry['creator_slug'] ? ($creatorIds[$entry['creator_slug']] ?? null) : null,
@@ -121,7 +121,6 @@ class MediaCatalogueSeeder extends Seeder
                     'inventory_window_id' => $window?->id,
                 ],
             );
-
             if (! app()->runningUnitTests()) {
                 $product->clearMediaCollection('documents');
 

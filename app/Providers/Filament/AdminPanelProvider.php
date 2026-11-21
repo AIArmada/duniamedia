@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Providers\Filament;
 
 use AIArmada\FilamentCashier\FilamentCashierPlugin;
@@ -9,6 +11,7 @@ use AIArmada\FilamentPricing\FilamentPricingPlugin;
 use AIArmada\FilamentPromotions\FilamentPromotionsPlugin;
 use AIArmada\FilamentTax\FilamentTaxPlugin;
 use AIArmada\FilamentVouchers\FilamentVouchersPlugin;
+use App\Platform\FilamentComponents;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -28,13 +31,12 @@ class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        return $panel->default()->id('admin')->path('admin')->login()
+        $panel = $panel->default()->id('admin')->path('admin')->login()
             ->brandName('Dunia Media | RA Media')
             ->brandLogo(asset('assets/brand/logo-horizontal.svg'))
             ->brandLogoHeight('2rem')
             ->favicon(asset('assets/brand/favicon.svg'))
             ->colors(['primary' => Color::hex('#C30866')])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->plugins([
                 FilamentOrdersPlugin::make(),
                 FilamentPricingPlugin::make(),
@@ -47,5 +49,9 @@ class AdminPanelProvider extends PanelProvider
             ->pages([Dashboard::class])
             ->middleware([EncryptCookies::class, AddQueuedCookiesToResponse::class, StartSession::class, AuthenticateSession::class, ShareErrorsFromSession::class, VerifyCsrfToken::class, SubstituteBindings::class, DisableBladeIconComponents::class, DispatchServingFilamentEvent::class])
             ->authMiddleware([Authenticate::class]);
+
+        FilamentComponents::discover($panel, base_path());
+
+        return $panel;
     }
 }

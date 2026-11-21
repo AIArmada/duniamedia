@@ -24,16 +24,6 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('asset_parties', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('asset_id')->index();
-            $table->foreignUuid('party_id')->index();
-            $table->string('role_code');
-            $table->date('valid_from')->nullable();
-            $table->date('valid_to')->nullable();
-            $table->timestampsTz();
-        });
-
         Schema::create('asset_surfaces', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('asset_id')->index();
@@ -85,13 +75,5 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('asset_networks', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('asset_id')->index();
-            $table->foreignUuid('network_property_id')->index();
-            $table->date('starts_on')->nullable();
-            $table->date('ends_on')->nullable();
-            $table->timestampsTz();
-        });
     }
 };

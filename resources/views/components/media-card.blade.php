@@ -1,8 +1,8 @@
 @props(['item'])
 @php
     $displayImage = $item->displayImage();
-    $imageSrcset = \App\Support\MediaImage::srcset($displayImage, [360, 480, 720, 960]);
-    $hasFixedPrice = $item->price_from && $item->pricing_mode !== 'on_request';
+    $imageSrcset = \App\Features\Catalog\Support\MediaImage::srcset($displayImage, [360, 480, 720, 960]);
+    $hasFixedPrice = $item->priceFrom && $item->pricingMode !== 'on_request';
     $mediumIcons = [
         'TV & Broadcast' => 'tv',
         'Radio' => 'radio',
@@ -16,10 +16,10 @@
 @endphp
 <article class="media-card">
     <a class="media-card__media" href="{{ route('offers.show', $item->slug) }}" tabindex="-1" aria-hidden="true">
-        <img src="{{ \App\Support\MediaImage::url($displayImage) }}"
+        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($displayImage) }}"
              @if ($imageSrcset) srcset="{{ $imageSrcset }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 30vw" @endif
              alt="" loading="lazy" decoding="async">
-        @if ($item->is_featured)
+        @if ($item->isFeatured)
             <span class="media-card__badge">Featured</span>
         @endif
     </a>
@@ -27,11 +27,11 @@
         <div class="media-card__meta">
             <span class="tag"><x-dm-icon :name="$mediumIcons[$item->medium] ?? 'spark'" :size="13"/>{{ $item->medium }}</span>
             <span class="media-card__owner">
-                {{ $item->seller?->display_name ?? 'Media owner on request' }}
-                @if ($item->channel_label && $item->channel_label !== $item->seller?->display_name)
-                    · {{ $item->channel_label }}
+                {{ $item->sellerName ?? 'Media owner on request' }}
+                @if ($item->channelLabel && $item->channelLabel !== $item->sellerName)
+                    · {{ $item->channelLabel }}
                 @endif
-                · {{ $item->location_label ?? 'Nationwide' }}
+                · {{ $item->locationLabel ?? 'Nationwide' }}
             </span>
         </div>
         <h3><a href="{{ route('offers.show', $item->slug) }}">{{ $item->name }}</a></h3>
@@ -39,7 +39,7 @@
         <div class="media-card__footer">
             <span class="media-card__price">
                 @if ($hasFixedPrice)
-                    Indicative from RM {{ number_format($item->price_from) }}
+                    Indicative from RM {{ number_format($item->priceFrom) }}
                 @else
                     Request quotation
                 @endif

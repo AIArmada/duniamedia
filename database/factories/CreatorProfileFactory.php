@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\CreatorProfile;
-use App\Models\Party;
+use App\Features\Creators\Models\CreatorProfile;
+use App\Features\Identity\Models\Party;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 

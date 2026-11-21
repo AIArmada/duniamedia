@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "name": "Locations",
+  "owns": {
+    "table:locations": [
+      "App\\Features\\Locations\\Persistence\\WriteLocations",
+      "App\\Features\\Locations\\Actions\\RegisterSite"
+    ],
+    "table:geo_markets": [
+      "App\\Features\\Locations\\Persistence\\WriteGeoMarkets"
+    ],
+    "table:host_structures": [
+      "App\\Features\\Locations\\Persistence\\WriteHostStructures",
+      "App\\Features\\Locations\\Actions\\RegisterSite"
+    ],
+    "table:location_zones": [
+      "App\\Features\\Locations\\Persistence\\WriteLocationZones"
+    ],
+    "table:site_permits": [
+      "App\\Features\\Locations\\Persistence\\WriteSitePermits"
+    ]
+  },
+  "extensions": {}
+}

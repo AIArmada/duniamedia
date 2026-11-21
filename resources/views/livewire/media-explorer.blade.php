@@ -69,7 +69,7 @@
                     <flux:select wire:model.live="owner" label="Media owner / seller">
                         <option value="all">All owners</option>
                         @foreach ($owners as $ownerOption)
-                            <option value="{{ $ownerOption->slug }}" @selected($owner === $ownerOption->slug)>{{ $ownerOption->display_name }}</option>
+                            <option value="{{ $ownerOption['slug'] }}" @selected($owner === $ownerOption['slug'])>{{ $ownerOption['display_name'] }}</option>
                         @endforeach
                     </flux:select>
 
@@ -154,7 +154,7 @@
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('format', 'all')">{{ $formats->firstWhere('format_code', $format)?->name ?? $format }} ×</button>
                             @endif
                             @if ($owner !== 'all')
-                                <button class="chip chip--dismiss" type="button" wire:click="$set('owner', 'all')">{{ $owners->firstWhere('slug', $owner)?->display_name ?? $owner }} ×</button>
+                                <button class="chip chip--dismiss" type="button" wire:click="$set('owner', 'all')">{{ collect($owners)->firstWhere('slug', $owner)['display_name'] ?? $owner }} ×</button>
                             @endif
                             @if ($channel !== 'all')
                                 <button class="chip chip--dismiss" type="button" wire:click="$set('channel', 'all')">{{ $channel }} ×</button>

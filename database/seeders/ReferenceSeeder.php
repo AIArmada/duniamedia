@@ -1,17 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\AdFormat;
-use App\Models\DistributionPlatform;
-use App\Models\MediaGroup;
-use App\Models\MediaProperty;
-use App\Models\MediaType;
-use App\Models\Organization;
-use App\Models\Party;
-use App\Models\PartyRole;
-use App\Models\PropertyDistributionPlatform;
-use App\Models\PropertyMediaType;
+use App\Features\Catalog\Persistence\WriteAdFormats;
+use App\Features\Catalog\Persistence\WriteDistributionPlatforms;
+use App\Features\Catalog\Persistence\WriteMediaGroups;
+use App\Features\Catalog\Persistence\WriteMediaProperties;
+use App\Features\Catalog\Persistence\WriteMediaTypes;
+use App\Features\Catalog\Persistence\WritePropertyDistributionPlatforms;
+use App\Features\Catalog\Persistence\WritePropertyMediaTypes;
+use App\Features\Identity\Persistence\WriteParties;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -22,6 +22,11 @@ class ReferenceSeeder extends Seeder
 
     public function run(): void
     {
+        $groups = app(WriteMediaGroups::class);
+        $types = app(WriteMediaTypes::class);
+        $platforms = app(WriteDistributionPlatforms::class);
+        $formats = app(WriteAdFormats::class);
+
         $categories = [
             ['Broadcast', 'broadcast', 1],
             ['Audio', 'audio', 2],
@@ -33,10 +38,10 @@ class ReferenceSeeder extends Seeder
         ];
 
         foreach ($categories as [$name, $slug, $sort]) {
-            MediaGroup::updateOrCreate(['slug' => $slug], ['name' => $name, 'sort_order' => $sort]);
+            $groups->upsert(['slug' => $slug], ['name' => $name, 'sort_order' => $sort]);
         }
 
-        $types = [
+        $typeDefinitions = [
             ['TV & Broadcast', 'tv-broadcast', 'broadcast', 'broadcast', 1],
             ['Radio', 'radio', 'audio', 'radio', 2],
             ['Podcast', 'podcast', 'audio', 'podcast', 3],
@@ -47,12 +52,12 @@ class ReferenceSeeder extends Seeder
             ['Creators', 'creators', 'creator', 'creator', 8],
         ];
 
-        foreach ($types as [$name, $slug, $category, $medium, $sort]) {
-            MediaType::updateOrCreate(
+        foreach ($typeDefinitions as [$name, $slug, $category, $medium, $sort]) {
+            $types->upsert(
                 ['slug' => $slug],
                 [
                     'name' => $name,
-                    'media_group_id' => MediaGroup::where('slug', $category)->value('id'),
+                    'media_group_id' => $groups->findBySlug($category)?->id,
                     'medium_code' => $medium,
                     'sort_order' => $sort,
                 ],
@@ -73,7 +78,7 @@ class ReferenceSeeder extends Seeder
             ['YouTube', 'youtube', 'social'],
             ['Facebook', 'facebook', 'social'],
         ] as [$name, $slug, $kind]) {
-            DistributionPlatform::updateOrCreate(['name' => $name], ['platform_kind' => $kind]);
+            $platforms->upsert(['name' => $name], ['platform_kind' => $kind]);
         }
 
         foreach ([
@@ -91,7 +96,7 @@ class ReferenceSeeder extends Seeder
             ['Transit wrap', 'transit-wrap', 'display', null],
             ['Print advertisement', 'print-advertisement', 'print', null],
         ] as [$name, $code, $creativeType, $duration]) {
-            AdFormat::updateOrCreate(
+            $formats->upsert(
                 ['format_code' => $code],
                 ['name' => $name, 'creative_type' => $creativeType, 'default_duration_seconds' => $duration],
             );
@@ -102,7 +107,14 @@ class ReferenceSeeder extends Seeder
 
     private function seedMediaOwners(): void
     {
-        $raMedia = Party::updateOrCreate(
+        $parties = app(WriteParties::class);
+        $properties = app(WriteMediaProperties::class);
+        $propertyTypes = app(WritePropertyMediaTypes::class);
+        $propertyPlatforms = app(WritePropertyDistributionPlatforms::class);
+        $types = app(WriteMediaTypes::class);
+        $platforms = app(WriteDistributionPlatforms::class);
+
+        $raMedia = $parties->party(
             ['slug' => 'ra-media-relations'],
             [
                 'party_type' => 'organization',
@@ -112,12 +124,12 @@ class ReferenceSeeder extends Seeder
             ],
         );
 
-        Organization::updateOrCreate(
+        $parties->organization(
             ['party_id' => $raMedia->id],
             ['organization_type' => 'media_agency', 'industry' => 'Media and advertising'],
         );
 
-        PartyRole::updateOrCreate(
+        $parties->role(
             ['party_id' => $raMedia->id, 'role_code' => 'seller'],
             ['valid_from' => now()->startOfYear()],
         );
@@ -169,7 +181,7 @@ class ReferenceSeeder extends Seeder
 
         foreach ($owners as $owner) {
             $ownerSlug = $ownerSlugs[$owner['name']] ?? Str::slug($owner['name']);
-            $party = Party::updateOrCreate(
+            $party = $parties->party(
                 ['slug' => $ownerSlug],
                 [
                     'party_type' => 'organization',
@@ -180,12 +192,12 @@ class ReferenceSeeder extends Seeder
 
             $this->replaceMedia($party, isset($owner['logo']) ? 'assets/partners/'.$owner['logo'] : null, 'logo');
 
-            Organization::updateOrCreate(
+            $parties->organization(
                 ['party_id' => $party->id],
                 ['organization_type' => 'media_owner', 'industry' => 'Media'],
             );
 
-            PartyRole::updateOrCreate(
+            $parties->role(
                 ['party_id' => $party->id, 'role_code' => 'media_owner'],
                 ['valid_from' => now()->startOfYear()],
             );
@@ -193,7 +205,7 @@ class ReferenceSeeder extends Seeder
             foreach ($owner['categories'] as $category) {
                 foreach ($category['brands'] as $brand) {
                     $propertySlug = $ownerSlug.'-'.Str::slug($brand['name']);
-                    $property = MediaProperty::updateOrCreate(
+                    $property = $properties->upsert(
                         ['slug' => $propertySlug],
                         [
                             'owner_party_id' => $party->id,
@@ -208,18 +220,18 @@ class ReferenceSeeder extends Seeder
                     $this->replaceMedia($property, isset($brand['logo']) ? 'assets/partners/'.$brand['logo'] : null, 'logo');
 
                     $typeSlug = $typeMap[$category['label']] ?? 'digital';
-                    $mediaType = MediaType::where('slug', $typeSlug)->first();
+                    $mediaType = $types->findBySlug($typeSlug);
 
                     if ($mediaType) {
-                        PropertyMediaType::updateOrCreate([
-                            'media_property_id' => $property->id,
-                            'media_type_id' => $mediaType->id,
-                        ]);
+                        $propertyTypes->upsert(
+                            ['media_property_id' => $property->id, 'media_type_id' => $mediaType->id],
+                            [],
+                        );
                     }
 
-                    $platform = DistributionPlatform::where('platform_kind', $mediaType?->medium_code ?? 'digital')->first();
+                    $platform = $platforms->findByKind($mediaType?->medium_code ?? 'digital');
                     if ($platform) {
-                        PropertyDistributionPlatform::updateOrCreate(
+                        $propertyPlatforms->upsert(
                             ['media_property_id' => $property->id, 'distribution_platform_id' => $platform->id],
                             ['url' => null, 'is_primary' => true],
                         );

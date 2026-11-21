@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Party;
-use App\Models\Quote;
+use App\Features\Identity\Models\Party;
+use App\Features\Sales\Models\Quote;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 

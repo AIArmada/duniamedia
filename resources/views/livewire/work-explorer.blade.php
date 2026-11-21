@@ -21,7 +21,7 @@
                 <flux:select wire:model.live="client" aria-label="Client">
                     <option value="all">All clients</option>
                     @foreach ($clients as $clientOption)
-                        <option value="{{ $clientOption->slug }}" @selected($client === $clientOption->slug)>{{ $clientOption->display_name }}</option>
+                        <option value="{{ $clientOption['slug'] }}" @selected($client === $clientOption['slug'])>{{ $clientOption['display_name'] }}</option>
                     @endforeach
                 </flux:select>
             </div>
@@ -92,7 +92,7 @@
                         <div class="work-card__client">
                             <span class="work-card__logo @if (empty($campaign['client_logo'])) is-typeset @endif">
                                 @if (! empty($campaign['client_logo']))
-                                    <img src="{{ \App\Support\MediaImage::url($campaign['client_logo']) }}" alt="" loading="lazy" decoding="async">
+                                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($campaign['client_logo']) }}" alt="" loading="lazy" decoding="async">
                                 @else
                                     <span>{{ $campaign['client_short_name'] }}</span>
                                 @endif

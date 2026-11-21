@@ -19,7 +19,7 @@
             <div class="concept-grid">
                 @foreach ($projects as $project)
                     <article class="concept-card">
-                        <img src="{{ \App\Support\MediaImage::url($project->displayImage()) }}" loading="lazy" alt="" decoding="async">
+                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($project->displayImage()) }}" loading="lazy" alt="" decoding="async">
                         <div class="concept-card__body">
                             <span class="eyebrow eyebrow--plain">{{ strtoupper($project->category) }} @if ($project->status === 'concept') · Concept @endif</span>
                             <h2>{{ $project->project_name }}</h2>

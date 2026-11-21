@@ -12,7 +12,7 @@
         <div class="container">
             <div class="creator-paths">
                 <a class="creator-path" href="{{ route('contact') }}">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator filming a product story" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator filming a product story" loading="lazy" decoding="async">
                     <span class="creator-path__body">
                         <span class="eyebrow eyebrow--pale">For brands</span>
                         <h2>Find voices that fit the brief.</h2>
@@ -21,7 +21,7 @@
                     </span>
                 </a>
                 <a class="creator-path" href="{{ route('creators.join') }}">
-                    <img src="{{ \App\Support\MediaImage::url('assets/img/v2/persona-creator.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/persona-creator.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator working with a camera and content setup" loading="lazy" decoding="async">
+                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/persona-creator.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/persona-creator.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 92vw, 46vw" alt="Creator working with a camera and content setup" loading="lazy" decoding="async">
                     <span class="creator-path__body">
                         <span class="eyebrow eyebrow--pale">For creators</span>
                         <h2>Your craft deserves the right opportunities.</h2>
@@ -71,7 +71,7 @@
                     @foreach ($creators as $creator)
                         <article class="creator-card" wire:key="creator-{{ $creator->id }}">
                             <div class="creator-card__image">
-                                <img src="{{ \App\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy" decoding="async">
+                                <img src="{{ \App\Features\Catalog\Support\MediaImage::url($creator->displayImage()) }}" alt="{{ $creator->displayName() }}" loading="lazy" decoding="async">
                             </div>
                             <div class="creator-card__body">
                                 <div class="creator-card__meta">

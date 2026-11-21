@@ -32,10 +32,10 @@
                                 <div class="selection-list">
                                     @forelse ($media as $item)
                                         <div class="selection-item" wire:key="selected-{{ $item->id }}">
-                                            <img src="{{ \App\Support\MediaImage::url($item->displayImage()) }}" alt="">
+                                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($item->displayImage()) }}" alt="">
                                             <div>
                                                 <strong>{{ $item->name }}</strong>
-                                                <span>{{ $item->medium }} · {{ $item->location_label ?? 'Nationwide' }} · {{ $item->pricing_mode === 'fixed' && $item->price_from ? 'Indicative RM '.number_format($item->price_from) : 'Pricing by consultation' }}</span>
+                                                <span>{{ $item->medium }} · {{ $item->locationLabel ?? 'Nationwide' }} · {{ $item->pricingMode === 'fixed' && $item->priceFrom ? 'Indicative RM '.number_format($item->priceFrom) : 'Pricing by consultation' }}</span>
                                             </div>
                                             <button type="button" wire:click="remove('{{ $item->id }}')" aria-label="Remove {{ $item->name }}" class="remove-item">×</button>
                                         </div>
@@ -55,8 +55,8 @@
                                 </div>
 
                                 <flux:select label="Add a media opportunity"><option value="">Select media…</option>
-                                        @foreach ($options as $option)
-                                            <option value="{{ $option->id }}">{{ $option->name }}</option>
+                                        @foreach ($options as $optionId => $optionName)
+                                            <option value="{{ $optionId }}">{{ $optionName }}</option>
                                         @endforeach</flux:select>
                             </div>
 
@@ -117,7 +117,7 @@
                 @unless ($reference)
                     <aside class="quote-summary" aria-label="Proposal summary">
                         <figure class="quote-summary__media">
-                            <img src="{{ \App\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960]) }}" sizes="320px" alt="A warm creative studio table with notebooks and printed contact sheets" loading="lazy" decoding="async">
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960]) }}" sizes="320px" alt="A warm creative studio table with notebooks and printed contact sheets" loading="lazy" decoding="async">
                         </figure>
                         <h2>Your shortlist</h2>
                         <div class="quote-summary__row"><span>Media selected</span><strong>{{ count($selected) }}</strong></div>

@@ -34,7 +34,7 @@
                         <a class="directory-card" href="{{ route('media.owner', $owner['slug']) }}">
                             <span class="directory-card__mark">
                                 @if (! empty($owner['logo']))
-                                    <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="" loading="lazy">
+                                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="" loading="lazy">
                                 @else
                                     {{ $owner['mark'] ?? $owner['name'] }}
                                 @endif

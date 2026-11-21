@@ -14,4 +14,8 @@ return [
     'work_media_disk' => env('WORK_MEDIA_DISK', 'local'),
     'work_media_prefix' => env('WORK_MEDIA_PREFIX', 'client-work'),
     'work_media_url_ttl' => (int) env('WORK_MEDIA_URL_TTL', 120),
+
+    'admin_email' => env('ADMIN_EMAIL', 'admin@duniamedia.test'),
+    'admin_name' => env('ADMIN_NAME', 'Dunia Media Admin'),
+    'admin_password' => env('ADMIN_PASSWORD'),
 ];

@@ -1,17 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use AIArmada\Persons\Models\Person;
-use App\Models\CreatorAccount;
-use App\Models\CreatorDeliveryTemplate;
-use App\Models\CreatorProfile;
-use App\Models\DistributionPlatform;
-use App\Models\MediaProperty;
-use App\Models\Party;
-use App\Models\PartyRole;
-use App\Models\Placement;
-use App\Models\PropertyDistributionPlatform;
+use App\Features\Catalog\Persistence\WriteDistributionPlatforms;
+use App\Features\Catalog\Persistence\WriteMediaProperties;
+use App\Features\Catalog\Persistence\WritePlacements;
+use App\Features\Catalog\Persistence\WritePropertyDistributionPlatforms;
+use App\Features\Creators\Persistence\WriteCreatorAccounts;
+use App\Features\Creators\Persistence\WriteCreatorDeliveryTemplates;
+use App\Features\Creators\Persistence\WriteCreatorProfiles;
+use App\Features\Identity\Persistence\WriteParties;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 
@@ -21,7 +22,17 @@ class CreatorSeeder extends Seeder
 
     public function run(): void
     {
-        $seller = Party::where('slug', 'ra-media-relations')->firstOrFail();
+        $parties = app(WriteParties::class);
+        $profiles = app(WriteCreatorProfiles::class);
+        $properties = app(WriteMediaProperties::class);
+        $propertyPlatforms = app(WritePropertyDistributionPlatforms::class);
+        $platforms = app(WriteDistributionPlatforms::class);
+        $accounts = app(WriteCreatorAccounts::class);
+        $placements = app(WritePlacements::class);
+        $templates = app(WriteCreatorDeliveryTemplates::class);
+
+        $seller = $parties->findBySlug('ra-media-relations')
+            ?? throw new \RuntimeException('The RA Media seller party must be seeded before creators.');
 
         $creators = [
             ['Travel & Local Discovery', 'Travel', 'TikTok', 'creators', 'Travel and local discovery creator covering destinations and experiences across Malaysia.'],
@@ -35,7 +46,7 @@ class CreatorSeeder extends Seeder
             $slug = 'demo-creator-'.$number;
             $handle = '@demo_creator_'.$number;
 
-            $party = Party::updateOrCreate(
+            $party = $parties->party(
                 ['slug' => $slug],
                 ['party_type' => 'individual', 'display_name' => 'Demo Creator '.$number, 'status' => 'active'],
             );
@@ -45,14 +56,14 @@ class CreatorSeeder extends Seeder
                 ['name' => 'Demo Creator '.$number, 'bio' => ['en' => $bio], 'status' => 'active'],
             );
 
-            $party->update(['person_id' => $person->id]);
+            $parties->updateParty($party, ['person_id' => $person->id]);
 
-            PartyRole::updateOrCreate(
+            $parties->role(
                 ['party_id' => $party->id, 'role_code' => 'creator'],
                 ['valid_from' => now()->startOfYear()],
             );
 
-            $profile = CreatorProfile::updateOrCreate(
+            $profile = $profiles->upsert(
                 ['slug' => $slug],
                 [
                     'creator_party_id' => $party->id,
@@ -74,7 +85,7 @@ class CreatorSeeder extends Seeder
 
             $this->replaceMedia($profile, 'assets/img/'.$image.'.webp', 'image');
 
-            $property = MediaProperty::updateOrCreate(
+            $property = $properties->upsert(
                 ['slug' => $slug.'-'.strtolower($platformName)],
                 [
                     'owner_party_id' => $party->id,
@@ -84,16 +95,16 @@ class CreatorSeeder extends Seeder
                 ],
             );
 
-            $platform = DistributionPlatform::where('name', $platformName)->first();
+            $platform = $platforms->findByName($platformName);
 
             if ($platform) {
-                PropertyDistributionPlatform::updateOrCreate(
+                $propertyPlatforms->upsert(
                     ['media_property_id' => $property->id, 'distribution_platform_id' => $platform->id],
                     ['handle' => $handle, 'is_primary' => true],
                 );
             }
 
-            CreatorAccount::updateOrCreate(
+            $accounts->upsert(
                 ['creator_profile_id' => $profile->id, 'media_property_id' => $property->id],
                 [
                     'handle' => $handle,
@@ -104,7 +115,7 @@ class CreatorSeeder extends Seeder
                 ],
             );
 
-            $placement = Placement::updateOrCreate(
+            $placement = $placements->upsert(
                 ['placement_code' => $slug.'-post'],
                 [
                     'media_property_id' => $property->id,
@@ -114,7 +125,7 @@ class CreatorSeeder extends Seeder
                 ],
             );
 
-            CreatorDeliveryTemplate::updateOrCreate(
+            $templates->upsert(
                 ['creator_profile_id' => $profile->id, 'placement_id' => $placement->id],
                 ['quantity' => 1, 'usage_rights_days' => 30, 'exclusivity_days' => 0, 'notes' => 'One sponsored post.'],
             );

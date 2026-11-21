@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use AIArmada\Products\Models\Product;
-use App\Models\User;
+use App\Features\Identity\Models\User;
 use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RolePermissionSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;

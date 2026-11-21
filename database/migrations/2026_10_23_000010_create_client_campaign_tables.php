@@ -18,16 +18,6 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('brand_parties', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('brand_id')->index();
-            $table->foreignUuid('party_id')->index();
-            $table->string('relation_type');
-            $table->date('valid_from')->nullable();
-            $table->date('valid_to')->nullable();
-            $table->timestampsTz();
-        });
-
         Schema::create('advertised_items', function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->foreignUuid('brand_id')->index();
@@ -118,29 +108,5 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('campaign_advertised_items', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('campaign_id')->index();
-            $table->foreignUuid('advertised_item_id')->index();
-            $table->timestampsTz();
-        });
-
-        Schema::create('campaign_objectives', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('campaign_id')->index();
-            $table->string('objective_code');
-            $table->string('kpi_code')->nullable();
-            $table->decimal('target_value', 18, 3)->nullable();
-            $table->timestampsTz();
-        });
-
-        Schema::create('campaign_audiences', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('campaign_id')->index();
-            $table->foreignUuid('segment_id')->index();
-            $table->foreignUuid('geo_market_id')->nullable()->index();
-            $table->text('notes')->nullable();
-            $table->timestampsTz();
-        });
     }
 };

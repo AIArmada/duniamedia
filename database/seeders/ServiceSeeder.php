@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Service;
+use App\Features\Clients\Persistence\WriteServices;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -13,6 +15,8 @@ class ServiceSeeder extends Seeder
 
     public function run(): void
     {
+        $serviceWriter = app(WriteServices::class);
+
         $services = [
             ['Media Planning & Buying', 'Media Strategy', 'Strategy and placements across TV, radio, outdoor, print and digital.', 'tv'],
             ['Branding & Creative Studio', 'Creative', 'Identity systems, graphic design, campaign concepts, visual and audio assets.', 'digital'],
@@ -25,7 +29,7 @@ class ServiceSeeder extends Seeder
         ];
 
         foreach ($services as $index => [$name, $category, $summary, $image]) {
-            $service = Service::updateOrCreate(
+            $service = $serviceWriter->upsert(
                 ['service_code' => Str::slug($name)],
                 [
                     'name' => $name,

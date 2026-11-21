@@ -1,23 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use AIArmada\Addressing\Models\Address;
 use AIArmada\Addressing\Models\AddressCountry;
-use App\Models\AdFormat;
-use App\Models\AssetSurface;
-use App\Models\GeoMarket;
-use App\Models\HostStructure;
-use App\Models\InventoryPool;
-use App\Models\InventoryWindow;
-use App\Models\Location;
-use App\Models\MediaAsset;
-use App\Models\MediaProperty;
-use App\Models\Organization;
-use App\Models\Party;
-use App\Models\PartyRole;
-use App\Models\Placement;
-use App\Models\PlacementFormat;
+use App\Features\Catalog\Models\MediaProperty;
+use App\Features\Catalog\Models\Placement;
+use App\Features\Catalog\Persistence\WriteAdFormats;
+use App\Features\Catalog\Persistence\WriteAssetSurfaces;
+use App\Features\Catalog\Persistence\WriteMediaAssets;
+use App\Features\Catalog\Persistence\WriteMediaProperties;
+use App\Features\Catalog\Persistence\WritePlacementFormats;
+use App\Features\Catalog\Persistence\WritePlacements;
+use App\Features\Identity\Models\Party;
+use App\Features\Identity\Persistence\WriteParties;
+use App\Features\Inventory\Persistence\WriteInventoryPools;
+use App\Features\Inventory\Persistence\WriteInventoryWindows;
+use App\Features\Locations\Persistence\WriteGeoMarkets;
+use App\Features\Locations\Persistence\WriteHostStructures;
+use App\Features\Locations\Persistence\WriteLocations;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File as FileFacade;
@@ -90,12 +93,25 @@ class CatalogueInfrastructureSeeder extends Seeder
 
     private function importListing(array $item): void
     {
-        $seller = $this->sellerFor($item['media_owner'] ?? null);
-        $property = $this->propertyFor($seller, $item);
+        $parties = app(WriteParties::class);
+        $properties = app(WriteMediaProperties::class);
+        $placements = app(WritePlacements::class);
+        $assets = app(WriteMediaAssets::class);
+        $surfaces = app(WriteAssetSurfaces::class);
+        $locations = app(WriteLocations::class);
+        $markets = app(WriteGeoMarkets::class);
+        $hostStructures = app(WriteHostStructures::class);
+        $formats = app(WriteAdFormats::class);
+        $placementFormats = app(WritePlacementFormats::class);
+        $pools = app(WriteInventoryPools::class);
+        $windows = app(WriteInventoryWindows::class);
+
+        $seller = $this->sellerFor($parties, $item['media_owner'] ?? null);
+        $property = $this->propertyFor($properties, $seller, $item);
         $slug = $item['slug'] ?? Str::slug($item['title']);
         $specs = $item['specifications'] ?? [];
 
-        $placement = Placement::updateOrCreate(
+        $placement = $placements->upsert(
             ['placement_code' => $slug],
             [
                 'media_property_id' => $property->id,
@@ -106,7 +122,7 @@ class CatalogueInfrastructureSeeder extends Seeder
             ],
         );
 
-        $asset = MediaAsset::updateOrCreate(
+        $asset = $assets->upsert(
             ['asset_code' => $slug],
             [
                 'media_property_id' => $property->id,
@@ -120,13 +136,18 @@ class CatalogueInfrastructureSeeder extends Seeder
         $this->replaceMedia($asset, $item['image'] ?? null, 'image');
 
         if (in_array($item['medium'], ['Outdoor', 'Indoor'], true)) {
-            $location = Location::updateOrCreate(
+            $market = $markets->upsert(
+                ['slug' => Str::slug($item['location'] ?? 'Nationwide')],
+                ['name' => $item['location'] ?? 'Nationwide', 'market_type' => 'market', 'country_code' => 'MY'],
+            );
+
+            $location = $locations->upsert(
                 ['name' => $item['location'] ?? 'Nationwide'],
                 [
                     'location_type' => $item['medium'] === 'Outdoor' ? 'site' : 'venue',
                     'venue_type' => $item['medium'] === 'Indoor' ? 'venue' : null,
                     'site_type' => $item['medium'] === 'Outdoor' ? 'outdoor' : null,
-                    'geo_market_id' => $this->marketFor($item['location'] ?? 'Nationwide')->id,
+                    'geo_market_id' => $market->id,
                     'is_public' => true,
                     'status' => 'active',
                 ],
@@ -145,24 +166,24 @@ class CatalogueInfrastructureSeeder extends Seeder
 
             $location->attachAddress($address, 'primary', true);
 
-            $structure = HostStructure::updateOrCreate(
+            $structure = $hostStructures->upsert(
                 ['label' => $item['title'], 'location_id' => $location->id],
                 ['owner_party_id' => $seller->id, 'structure_type' => $item['medium'], 'status' => 'active'],
             );
 
-            $asset->update(['location_id' => $location->id, 'host_structure_id' => $structure->id]);
+            $assets->update($asset, ['location_id' => $location->id, 'host_structure_id' => $structure->id]);
 
-            $surface = AssetSurface::updateOrCreate(
+            $surface = $surfaces->upsert(
                 ['asset_id' => $asset->id, 'label' => 'Primary'],
                 ['surface_type' => $item['medium']],
             );
 
-            $placement->update(['asset_surface_id' => $surface->id, 'media_property_id' => null]);
+            $placements->update($placement, ['asset_surface_id' => $surface->id, 'media_property_id' => null]);
         }
 
-        $this->attachFormats($placement, $item['medium'], $specs['formats'] ?? []);
+        $this->attachFormats($formats, $placementFormats, $placement, $item['medium'], $specs['formats'] ?? []);
 
-        $pool = InventoryPool::updateOrCreate(
+        $pool = $pools->upsert(
             ['placement_id' => $placement->id, 'unit_code' => 'campaign'],
             [
                 'capacity_model' => 'exclusive',
@@ -171,7 +192,7 @@ class CatalogueInfrastructureSeeder extends Seeder
             ],
         );
 
-        InventoryWindow::updateOrCreate(
+        $windows->upsert(
             [
                 'pool_id' => $pool->id,
                 'starts_at' => now()->startOfYear(),
@@ -179,49 +200,44 @@ class CatalogueInfrastructureSeeder extends Seeder
             ],
             ['capacity' => 1, 'reserved_quantity' => 0, 'status' => 'open'],
         );
-
     }
 
-    private function sellerFor(?string $mediaOwner): Party
+    private function sellerFor(WriteParties $parties, ?string $mediaOwner): Party
     {
         $needle = $this->normalize($mediaOwner ?? '');
 
         foreach (self::SELLER_MAP as $key => $slug) {
-            if (str_contains($needle, $key)) {
-                $party = Party::where('slug', $slug)->first();
-                if ($party) {
-                    return $party;
-                }
+            if (str_contains($needle, (string) $key) && ($party = $parties->findBySlug($slug)) !== null) {
+                return $party;
             }
         }
 
         $slug = Str::slug($mediaOwner ?: 'independent-media-owner');
 
-        $party = Party::updateOrCreate(
+        $party = $parties->party(
             ['slug' => $slug],
             ['party_type' => 'organization', 'display_name' => $mediaOwner ?: 'Independent media owner', 'status' => 'active'],
         );
 
-        Organization::updateOrCreate(['party_id' => $party->id], ['organization_type' => 'media_owner', 'industry' => 'Media']);
-        PartyRole::updateOrCreate(['party_id' => $party->id, 'role_code' => 'media_owner'], ['valid_from' => now()->startOfYear()]);
+        $parties->organization(['party_id' => $party->id], ['organization_type' => 'media_owner', 'industry' => 'Media']);
+        $parties->role(['party_id' => $party->id, 'role_code' => 'media_owner'], ['valid_from' => now()->startOfYear()]);
 
         return $party;
     }
 
-    private function propertyFor(Party $seller, array $item): MediaProperty
+    private function propertyFor(WriteMediaProperties $properties, Party $seller, array $item): MediaProperty
     {
         $channel = $item['channel'] ?? $seller->display_name;
         $needle = $this->normalize($channel);
 
-        $property = MediaProperty::where('owner_party_id', $seller->id)
-            ->get()
-            ->first(fn (MediaProperty $candidate): bool => str_contains($needle, $this->normalize($candidate->name)));
+        $property = $properties->byOwner($seller->id)
+            ->first(fn ($candidate): bool => str_contains($needle, $this->normalize($candidate->name)));
 
         if ($property) {
             return $property;
         }
 
-        return MediaProperty::updateOrCreate(
+        return $properties->upsert(
             ['slug' => $seller->slug.'-'.Str::slug($channel)],
             [
                 'owner_party_id' => $seller->id,
@@ -247,20 +263,10 @@ class CatalogueInfrastructureSeeder extends Seeder
         };
     }
 
-    private function marketFor(string $label): GeoMarket
+    private function attachFormats(WriteAdFormats $formats, WritePlacementFormats $placementFormats, Placement $placement, string $type, array $listingFormats): void
     {
-        $slug = Str::slug($label);
-
-        return GeoMarket::updateOrCreate(
-            ['slug' => $slug],
-            ['name' => $label, 'market_type' => 'market', 'country_code' => 'MY'],
-        );
-    }
-
-    private function attachFormats(Placement $placement, string $type, array $formats): void
-    {
-        if ($formats === []) {
-            $formats = match ($type) {
+        if ($listingFormats === []) {
+            $listingFormats = match ($type) {
                 'TV & Broadcast' => ['30-second TV spot', '15-second TV spot'],
                 'Radio', 'Podcast' => ['Radio spot', 'Podcast integration'],
                 'Print' => ['Print advertisement', 'Article'],
@@ -270,7 +276,7 @@ class CatalogueInfrastructureSeeder extends Seeder
             };
         }
 
-        foreach (array_values(array_unique($formats)) as $index => $name) {
+        foreach (array_values(array_unique($listingFormats)) as $index => $name) {
             $code = Str::slug($name);
             $creativeType = match (true) {
                 str_contains($code, 'spot') => 'audio',
@@ -279,12 +285,12 @@ class CatalogueInfrastructureSeeder extends Seeder
                 default => 'display',
             };
 
-            $format = AdFormat::updateOrCreate(
+            $format = $formats->upsert(
                 ['format_code' => $code],
                 ['name' => $name, 'creative_type' => $creativeType],
             );
 
-            PlacementFormat::updateOrCreate(
+            $placementFormats->upsert(
                 ['placement_id' => $placement->id, 'format_id' => $format->id],
                 ['is_default' => $index === 0],
             );

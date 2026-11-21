@@ -69,23 +69,5 @@ return new class extends Migration
             $table->timestampsTz();
         });
 
-        Schema::create('property_parties', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('media_property_id')->index();
-            $table->foreignUuid('party_id')->index();
-            $table->string('role_code');
-            $table->date('valid_from')->nullable();
-            $table->date('valid_to')->nullable();
-            $table->timestampsTz();
-        });
-
-        Schema::create('network_members', function (Blueprint $table): void {
-            $table->uuid('id')->primary();
-            $table->foreignUuid('network_property_id')->index();
-            $table->foreignUuid('member_property_id')->index();
-            $table->date('starts_on')->nullable();
-            $table->date('ends_on')->nullable();
-            $table->timestampsTz();
-        });
     }
 };

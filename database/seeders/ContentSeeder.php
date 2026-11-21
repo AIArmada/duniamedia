@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Article;
-use App\Models\Training;
+use App\Features\Content\Actions\SaveArticle;
+use App\Features\Content\Actions\SaveTraining;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -14,6 +16,9 @@ class ContentSeeder extends Seeder
 
     public function run(): void
     {
+        $articles = app(SaveArticle::class);
+        $trainings = app(SaveTraining::class);
+
         foreach ([
             ['How to Plan a Better Media Mix', 'Strategy', 'Start with the audience, outcome and measurement plan before choosing channels.', 'editorial-media-mix'],
             ['Why Niche Creators Matter', 'Creator Economy', 'The right creator is not always the one with the most followers.', 'editorial-creators'],
@@ -21,7 +26,7 @@ class ContentSeeder extends Seeder
         ] as $article) {
             [$title, $category, $excerpt, $image] = $article;
 
-            $article = Article::updateOrCreate(
+            $article = $articles->upsert(
                 ['slug' => Str::slug($title)],
                 [
                     'title' => $title,
@@ -43,7 +48,7 @@ class ContentSeeder extends Seeder
         ] as $training) {
             [$title, $category, $summary] = $training;
 
-            $training = Training::updateOrCreate(
+            $training = $trainings->upsert(
                 ['slug' => Str::slug($title)],
                 [
                     'title' => $title,

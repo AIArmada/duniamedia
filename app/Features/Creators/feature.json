@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "name": "Creators",
+  "owns": {
+    "table:creator_profiles": [
+      "App\\Features\\Creators\\Persistence\\WriteCreatorProfiles",
+      "App\\Features\\Creators\\Actions\\RegisterCreator"
+    ],
+    "table:creator_accounts": [
+      "App\\Features\\Creators\\Persistence\\WriteCreatorAccounts",
+      "App\\Features\\Creators\\Actions\\RegisterCreator"
+    ],
+    "table:creator_delivery_templates": [
+      "App\\Features\\Creators\\Persistence\\WriteCreatorDeliveryTemplates"
+    ]
+  },
+  "extensions": {}
+}

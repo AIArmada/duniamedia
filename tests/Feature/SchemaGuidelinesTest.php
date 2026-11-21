@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\Placement;
+use App\Features\Catalog\Models\Placement;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;

@@ -10,6 +10,7 @@
         "aiarmada/cart": "dev-main",
         "aiarmada/cashier": "dev-main",
         "aiarmada/checkout": "dev-main",
+        "aiarmada/commerce-support": "dev-main",
         "aiarmada/contacting": "dev-main",
         "aiarmada/filament-cashier": "dev-main",
         "aiarmada/filament-inventory": "dev-main",
@@ -39,6 +40,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^3.14",
         "laravel/boost": "^2.10",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
@@ -48,6 +50,7 @@
         "pestphp/pest": "^5.0",
         "pestphp/pest-plugin-arch": "^5.0",
         "pestphp/pest-plugin-laravel": "^5.0",
+        "phpstan/phpstan": "^2.3",
         "phpunit/phpunit": "^13.4.6"
     },
     "autoload": {
@@ -64,6 +67,19 @@
         }
     },
     "scripts": {
+        "arch:boundaries": "@php tools/architecture-check.php",
+        "arch:boundaries:diff": "@php tools/architecture-check.php --diff-base=main",
+        "arch:writes": "@php vendor/bin/phpstan analyse -c tools/architecture-phpstan.neon --autoload-file=tools/Architecture/OwnedWriteRule.php --no-progress",
+        "analyse": "@php vendor/bin/phpstan analyse -c phpstan.neon --no-progress",
+        "arch:check": [
+            "@arch:boundaries",
+            "@arch:writes",
+            "@analyse"
+        ],
+        "quality": [
+            "@arch:check",
+            "@test"
+        ],
         "setup": [
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",

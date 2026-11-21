@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "name": "Content",
+  "owns": {
+    "table:articles": [
+      "App\\Features\\Content\\Actions\\SaveArticle"
+    ],
+    "table:trainings": [
+      "App\\Features\\Content\\Actions\\SaveTraining"
+    ]
+  },
+  "extensions": {}
+}

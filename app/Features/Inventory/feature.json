@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "name": "Inventory",
+  "owns": {
+    "table:inventory_pools": [
+      "App\\Features\\Inventory\\Persistence\\WriteInventoryPools"
+    ],
+    "table:inventory_windows": [
+      "App\\Features\\Inventory\\Persistence\\WriteInventoryWindows"
+    ],
+    "table:capacity_pools": [
+      "App\\Features\\Inventory\\Actions\\EnsureCapacityPool"
+    ]
+  },
+  "extensions": {}
+}

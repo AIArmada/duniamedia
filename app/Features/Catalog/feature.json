@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "name": "Catalog",
+  "owns": {
+    "table:media_groups": [
+      "App\\Features\\Catalog\\Persistence\\WriteMediaGroups"
+    ],
+    "table:media_types": [
+      "App\\Features\\Catalog\\Persistence\\WriteMediaTypes"
+    ],
+    "table:media_properties": [
+      "App\\Features\\Catalog\\Persistence\\WriteMediaProperties",
+      "App\\Features\\Catalog\\Actions\\RegisterMediaAsset"
+    ],
+    "table:property_media_types": [
+      "App\\Features\\Catalog\\Persistence\\WritePropertyMediaTypes"
+    ],
+    "table:property_distribution_platforms": [
+      "App\\Features\\Catalog\\Persistence\\WritePropertyDistributionPlatforms",
+      "App\\Features\\Catalog\\Actions\\RegisterMediaAsset"
+    ],
+    "table:distribution_platforms": [
+      "App\\Features\\Catalog\\Persistence\\WriteDistributionPlatforms",
+      "App\\Features\\Catalog\\Actions\\RegisterMediaAsset"
+    ],
+    "table:media_assets": [
+      "App\\Features\\Catalog\\Persistence\\WriteMediaAssets",
+      "App\\Features\\Catalog\\Actions\\RegisterMediaAsset"
+    ],
+    "table:asset_surfaces": [
+      "App\\Features\\Catalog\\Persistence\\WriteAssetSurfaces"
+    ],
+    "table:placements": [
+      "App\\Features\\Catalog\\Persistence\\WritePlacements"
+    ],
+    "table:ad_formats": [
+      "App\\Features\\Catalog\\Persistence\\WriteAdFormats"
+    ],
+    "table:placement_specs": [
+      "App\\Features\\Catalog\\Persistence\\WritePlacementSpecs"
+    ],
+    "table:media_profiles": [
+      "App\\Features\\Catalog\\Persistence\\WriteMediaProfiles",
+      "App\\Features\\Catalog\\Actions\\SaveMediaProfile"
+    ],
+    "table:placement_formats": [
+      "App\\Features\\Catalog\\Persistence\\WritePlacementFormats"
+    ]
+  },
+  "extensions": {}
+}

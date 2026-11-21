@@ -4,7 +4,7 @@
     <x-page-hero
         eyebrow="Confidential client proposal"
         title="Campaign <span class='editorial'>proposal.</span>"
-        :lede="'Prepared for '.$quote->buyer?->display_name.' · '.$quote->quote_number"
+        :lede="'Prepared for '.$buyerName.' · '.$quote->quote_number"
     />
 
     <section class="section">
@@ -12,7 +12,7 @@
             <div class="proposal">
                 <span class="eyebrow">Dunia Media by RA Media</span>
                 <h2>Proposal {{ $quote->quote_number }}</h2>
-                <p class="proposal__meta">Issued for {{ $quote->buyer?->display_name }} · Status {{ ucfirst($quote->status) }}@if ($quote->valid_until) · Valid until {{ $quote->valid_until->format('d M Y') }}@endif</p>
+                <p class="proposal__meta">Issued for {{ $buyerName }} · Status {{ ucfirst($quote->status) }}@if ($quote->valid_until) · Valid until {{ $quote->valid_until->format('d M Y') }}@endif</p>
 
                 <div class="proposal__items">
                     @foreach ($quote->lines as $item)

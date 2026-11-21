@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Quote;
-use App\Models\QuoteLine;
+use App\Features\Sales\Models\Quote;
+use App\Features\Sales\Models\QuoteLine;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

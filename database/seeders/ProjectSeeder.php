@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\Project;
+use App\Features\Clients\Persistence\WriteProjects;
 use Database\Seeders\Concerns\SeedsMedia;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -13,12 +15,14 @@ class ProjectSeeder extends Seeder
 
     public function run(): void
     {
+        $projects = app(WriteProjects::class);
+
         foreach ([
             ['Integrated City Awareness Concept', 'Outdoor', 'A conceptual multi-touchpoint city awareness campaign.', 'outdoor'],
             ['Creator-Led Product Launch Concept', 'Creators', 'A demonstration of targeted creator collaboration and conversion journeys.', 'creators'],
             ['Smart Media Conversion Concept', 'Digital', 'An example of connecting broadcast attention to a measurable enquiry funnel.', 'digital'],
         ] as $index => [$name, $category, $summary, $image]) {
-            $project = Project::updateOrCreate(
+            $project = $projects->upsert(
                 ['project_code' => 'concept-'.Str::slug($name)],
                 [
                     'client_party_id' => null,

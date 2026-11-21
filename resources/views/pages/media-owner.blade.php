@@ -14,7 +14,7 @@
                 <div class="directory-hero__main">
                     <div class="directory-hero__logo">
                         @if (! empty($owner['logo']))
-                            <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="{{ $owner['name'] }}">
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/partners/'.$owner['logo']) }}" alt="{{ $owner['name'] }}">
                         @else
                             <span>{{ $owner['mark'] ?? $owner['name'] }}</span>
                         @endif
@@ -82,7 +82,7 @@
                             <a class="directory-card" href="{{ route('media.channel', [$owner['slug'], $channel['slug']]) }}">
                                 <span class="directory-card__mark">
                                     @if (! empty($channel['logo']))
-                                        <img src="{{ \App\Support\MediaImage::url('assets/partners/'.$channel['logo']) }}" alt="" loading="lazy">
+                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/partners/'.$channel['logo']) }}" alt="" loading="lazy">
                                     @else
                                         {{ $channel['name'] }}
                                     @endif
