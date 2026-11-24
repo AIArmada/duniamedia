@@ -7,7 +7,8 @@
         $production = $zoomerz->get('zoomerz-sponsorship-production-cost');
         $outstation = $zoomerz->get('hot-fm-zoomerz-sponsorship');
         $mediaValue = $zoomerz->get('zoomerz-sponsorship-media-value');
-        $otherSections = collect($sections)->reject(fn (array $section): bool => $zoomerz->has($section['key']));
+        $featuredKeys = ['zoomerz-sponsorship-media-investment', 'zoomerz-sponsorship-production-cost', 'hot-fm-zoomerz-sponsorship', 'zoomerz-sponsorship-media-value'];
+        $otherSections = collect($sections)->reject(fn (array $section): bool => ($section['product']['slug'] ?? null) === 'hot-fm-zoomerz-on-ground' && in_array($section['key'], $featuredKeys, true));
         $money = static fn ($value): string => $value === null ? 'On request' : 'RM '.number_format((float) $value, fmod((float) $value, 1.0) === 0.0 ? 0 : 2);
         $logo = 'assets/partners/mp-hotfm-v2.png';
         $ownerSlug = 'media-prima';
@@ -65,7 +66,7 @@
         </section>
 
         <section id="hotfm-rates" class="hotfm-opportunities" aria-label="Hot FM rates and packages">
-            @if ($investment)
+            @if ($investment !== null)
                 <article class="hotfm-feature">
                     <span class="hotfm-eyebrow">Featured sponsorship</span>
                     <h2>Hot FM <em>Zoomerz</em></h2>

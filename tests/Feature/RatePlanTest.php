@@ -71,6 +71,7 @@ class RatePlanTest extends TestCase
             ->assertOk()
             ->assertSee($entry->item);
     }
+
     public function test_hot_fm_media_value_is_not_a_purchasable_rate(): void
     {
         $this->seed(MediaCatalogueSeeder::class);
