@@ -35,9 +35,9 @@
                                     <div><strong>{{ $item->name }}</strong><span>{{ $item->attributes->get('medium') }} · {{ $item->attributes->get('location') }} @if ($item->attributes->get('unit')) · {{ $item->attributes->get('unit') }} @endif</span>@unless($row['available']) <span class="proposal-error">No longer available</span> @endunless</div>
                                 </div>
                                 <div class="proposal-quantity">
-                                    <button type="button" wire:click="updateQuantity('{{ $item->id }}', {{ max(1, (int) $item->quantity - 1) }})" @disabled((int) $item->quantity <= 1) aria-label="Decrease quantity of {{ $item->name }}">−</button>
+                                    <button type="button" wire:click="updateQuantity('{{ $item->id }}', {{ max(1, (int) $item->quantity - 1) }})" @disabled(! $row['available'] || (int) $item->quantity <= 1) aria-label="Decrease quantity of {{ $item->name }}">−</button>
                                     <span aria-label="Quantity">{{ $item->quantity }}</span>
-                                    <button type="button" wire:click="updateQuantity('{{ $item->id }}', {{ (int) $item->quantity + 1 }})" @disabled((int) $item->quantity >= 10000) aria-label="Increase quantity of {{ $item->name }}">+</button>
+                                    <button type="button" wire:click="updateQuantity('{{ $item->id }}', {{ (int) $item->quantity + 1 }})" @disabled(! $row['available'] || (int) $item->quantity >= 10000) aria-label="Increase quantity of {{ $item->name }}">+</button>
                                 </div>
                                 <div class="proposal-line-price"><span>Unit rate</span><strong>{{ $row['priced'] ? 'RM '.number_format($item->price / 100, 2) : 'On request' }}</strong></div>
                                 <div class="proposal-line-price"><span>Subtotal</span><strong>{{ $row['priced'] ? 'RM '.number_format($item->price * (int) $item->quantity / 100, 2) : 'On request' }}</strong></div>
@@ -64,6 +64,7 @@
                         @empty
                             <p>No additional services are currently listed.</p>
                         @endforelse
+                        @error('addons') <p class="proposal-error">{{ $message }}</p> @enderror
                         @error('addons.*') <p class="proposal-error">{{ $message }}</p> @enderror
                     </div>
                     <flux:button type="button" variant="primary" wire:click="$set('step', 'details')" icon:trailing="arrow-right">Campaign details</flux:button>

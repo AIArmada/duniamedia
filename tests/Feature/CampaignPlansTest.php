@@ -87,6 +87,20 @@ class CampaignPlansTest extends TestCase
         $this->assertSame(1, $summary['items']->count());
     }
 
+    public function test_proposal_media_uses_the_same_draft_when_reopened(): void
+    {
+        $offering = $this->createMediaOffer(['price' => 100000], ['pricing_mode' => 'fixed']);
+
+        $component = Livewire::test(QuoteBuilder::class)->call('add', $offering->id)->assertHasNoErrors();
+        $instance = $component->get('planInstance');
+
+        Livewire::test(QuoteBuilder::class)
+            ->assertSet('planInstance', $instance)
+            ->assertSee($offering->name);
+
+        $this->assertDatabaseCount('carts', 1);
+    }
+
     public function test_a_saved_plan_can_be_converted_into_a_quote_request(): void
     {
         Party::factory()->create(['slug' => 'ra-media-relations', 'display_name' => 'RA Media Relations Sdn Bhd']);

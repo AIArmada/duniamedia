@@ -65,6 +65,7 @@ class QuoteBuilder extends Component
             $record = app(PlanService::class)->find($instance);
             abort_unless($record, 404);
             $this->planInstance = $instance;
+            session(['campaign-plan-draft' => $instance]);
             $this->objective = (string) $record->getMetadataValue('objective', '');
             $this->message = (string) $record->getMetadataValue('brief', '');
             $this->startsOn = (string) $record->getMetadataValue('starts_on', '');
@@ -92,6 +93,7 @@ class QuoteBuilder extends Component
             'services' => $this->addons,
         ]);
         $this->planInstance = $plan->instance;
+        session(['campaign-plan-draft' => $plan->instance]);
 
         if (! $plans->summary($plan)['items']->contains(fn ($item): bool => $item->attributes->get('product_id') === $id && $item->attributes->get('rate_entry_id') === null)) {
             $plans->addOffering($plan, Product::query()->findOrFail($id));
@@ -141,7 +143,6 @@ class QuoteBuilder extends Component
             return;
         }
 
-        $this->step = 'details';
         $this->validateDetails();
         $this->persistDetails($plan);
 
@@ -284,13 +285,18 @@ class QuoteBuilder extends Component
 
     private function validateDetails(): void
     {
+        $this->step = 'media';
+        $this->validate([
+            'addons' => 'array',
+            'addons.*' => ['string', 'distinct', \Illuminate\Validation\Rule::in(array_keys($this->serviceOptions()))],
+        ]);
+
+        $this->step = 'details';
         $this->validate([
             'objective' => 'nullable|string|max:255',
             'message' => 'nullable|string|max:3000',
             'startsOn' => 'nullable|date',
             'endsOn' => 'nullable|date|after_or_equal:startsOn',
-            'addons' => 'array',
-            'addons.*' => ['string', 'distinct', \Illuminate\Validation\Rule::in(array_keys($this->serviceOptions()))],
         ]);
     }
 
