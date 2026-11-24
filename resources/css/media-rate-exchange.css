@@ -149,3 +149,8 @@
     .exchange-tray__total strong { font-size:.95rem; }
     .exchange-tray__actions > * { font-size:.76rem; }
 }
+
+.exchange-tray--empty{position:static;background:#f7eeea;color:var(--color-plum-900);box-shadow:none;border:1px solid var(--exchange-border)}
+.exchange-tray--empty .exchange-tray__title strong,.exchange-tray--empty .exchange-tray__title span,.exchange-tray--empty .exchange-tray__items p{color:var(--color-plum-900)}
+.exchange-tray--empty .exchange-tray-plan{color:var(--color-plum-900);border-color:var(--color-plum-900)}
+@media(max-width:900px){.exchange-tray--empty{display:none}}

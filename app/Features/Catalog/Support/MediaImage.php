@@ -26,6 +26,17 @@ class MediaImage
         return Storage::disk('public')->url($path);
     }
 
+    public static function sourceDeckArtwork(string $slug): ?string
+    {
+        return match ($slug) {
+            'hot-fm-zoomerz-on-ground' => 'assets/home/hot-fm-activation.webp',
+            'klcc-snorkels-2024-big-tree' => 'assets/home/big-tree-klcc-placement.webp',
+            'podcast-utama-buletin-tv3' => 'assets/home/tv3-podcast.webp',
+            'sinar-karangkraf-ratecard-2025-2026' => 'assets/home/sinar-editorial.webp',
+            default => null,
+        };
+    }
+
     public static function srcset(?string $path, array $widths = []): ?string
     {
         if (! $path || ! str_starts_with($path, 'assets/')) {
