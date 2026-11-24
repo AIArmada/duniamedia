@@ -2,7 +2,7 @@
   "slug": "hot-fm-zoomerz-on-ground",
   "owner": "media-prima",
   "title": "Hot FM Zoomerz On-Ground — Radio + Sampling Team",
-  "summary": "Zoomerz roving team RM1,900/day or RM10,500/week; on-air crosses + digital value ~RM640k/month.",
+  "summary": "Four-week Zoomerz sponsorship listed at RM100,000 before SST and production. Outstation cross production RM1,900/day or RM10,500/week. Historical rate card.",
   "description": "Hot FM Zoomerz sponsorship: daily crosses Mon–Sat 4x/day, on-air promos 28x/week, crosses 24x/week, station car branding, 960 products sampling, uniform, optional microsite/social (FB/IG RM240k each). Base from 1 Aug 2022, min 1 month continuous, mainly Klang Valley; outstation production extra.",
   "validity": "Base Aug 2022, min 1 month",
   "terms": null,
@@ -21,16 +21,16 @@
     {
       "type": "feature_list",
       "payload": {
-        "title": "Rate tiers",
+        "title": "Historical sponsorship and outstation charges",
         "items": [
           {
-            "title": "RM1,900/day"
+            "title": "Outstation production — RM1,900/day"
           },
           {
-            "title": "RM10,500/week"
+            "title": "Outstation production — RM10,500/week"
           },
           {
-            "title": "Media value ~RM640k/mo"
+            "title": "Listed four-week sponsorship — RM100,000 before SST and production"
           }
         ]
       }

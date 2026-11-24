@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Features\Catalog\EntryPoints\Livewire\RateFinder;
 use App\Features\Catalog\Models\RateCardEntry;
+use App\Features\Catalog\Models\RateCardSection;
 use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RateCardContentSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -33,6 +34,7 @@ class RateFinderTest extends TestCase
         $this->seed(RateCardContentSeeder::class);
 
         $entries = RateCardEntry::query()->whereHas('rateSection.product', fn ($query) => $query->where('status', 'active'))
+            ->whereHas('rateSection', fn ($query) => $query->where('key', '!=', RateCardSection::MEDIA_VALUE_KEY))
             ->where('price_rm', '>', 0)->limit(5)->get();
         $this->assertCount(5, $entries);
 
@@ -59,6 +61,7 @@ class RateFinderTest extends TestCase
             ->assertSet('comparison', [])
             ->assertSet('showComparison', false);
     }
+
     public function test_rate_filters_use_catalogue_units_packages_and_budget(): void
     {
         $this->seed(MediaCatalogueSeeder::class);
@@ -66,6 +69,7 @@ class RateFinderTest extends TestCase
 
         $entry = RateCardEntry::query()
             ->whereHas('rateSection.product', fn ($query) => $query->where('status', 'active'))
+            ->whereHas('rateSection', fn ($query) => $query->where('key', '!=', RateCardSection::MEDIA_VALUE_KEY))
             ->whereNotNull('unit')
             ->where('is_package', true)
             ->where('price_rm', '>', 0)

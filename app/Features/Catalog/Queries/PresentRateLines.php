@@ -16,7 +16,7 @@ final readonly class PresentRateLines implements PresentsRateLines
             ->with(['rateSection.channels', 'rateSection.product.mediaProfile'])
             ->find($rateLineId);
 
-        if ($entry === null || $entry->rateSection === null || $entry->rateSection->product === null) {
+        if ($entry === null || $entry->rateSection === null || $entry->rateSection->product === null || $entry->rateSection->isMediaValue()) {
             return null;
         }
 

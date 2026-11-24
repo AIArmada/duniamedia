@@ -7,6 +7,7 @@ namespace App\Features\Catalog\EntryPoints\Livewire;
 use App\Features\Catalog\Models\MediaProfile;
 use App\Features\Catalog\Models\MediaProperty;
 use App\Features\Catalog\Models\RateCardEntry;
+use App\Features\Catalog\Models\RateCardSection;
 use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\Attributes\Locked;
@@ -194,6 +195,7 @@ class RateFinder extends Component
     private function publicRates(): Builder
     {
         return RateCardEntry::query()
+            ->whereHas('rateSection', fn (Builder $section) => $section->where('key', '!=', RateCardSection::MEDIA_VALUE_KEY))
             ->whereHas('rateSection.product', fn (Builder $product) => $product->where('status', 'active'));
     }
 }

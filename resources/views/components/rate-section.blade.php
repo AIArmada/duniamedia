@@ -16,6 +16,9 @@
     <header class="rate-section__head">
         <div>
             <h3>{{ $section['title'] }}</h3>
+            @if ($section['is_media_value'])
+                <p>Reference media value only — not a payable rate or purchasable placement.</p>
+            @endif
             @if (! empty($section['intro']))
                 <p>{{ $section['intro'] }}</p>
             @endif
@@ -52,7 +55,7 @@
                                         @if (! empty($cell['unit']))
                                             <small>{{ $cell['unit'] }}</small>
                                         @endif
-                                        @if ($cell['price'] > 0)
+                                        @if (! $section['is_media_value'] && $cell['price'] > 0)
                                             <form method="POST" action="{{ route('plans.rate.add', $cell['id']) }}" class="rate-matrix__add">
                                                 @csrf
                                                 <button type="submit" aria-label="Add {{ $cell['item'] }} to plan">+ Plan</button>
@@ -99,7 +102,7 @@
                         @if ($entry['price'] === null)
                             <small>Confirmed on request</small>
                         @endif
-                        @if ($entry['price'] !== null && $entry['price'] > 0)
+                        @if (! $section['is_media_value'] && $entry['price'] !== null && $entry['price'] > 0)
                             <form method="POST" action="{{ route('plans.rate.add', $entry['id']) }}" class="rate-line__action">
                                 @csrf
                                 <button type="submit" class="rate-add">Add to plan</button>

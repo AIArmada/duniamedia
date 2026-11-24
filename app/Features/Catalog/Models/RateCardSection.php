@@ -25,7 +25,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  */
 class RateCardSection extends BaseModel
 {
+    public const MEDIA_VALUE_KEY = 'zoomerz-sponsorship-media-value';
+
     protected $table = 'rate_card_sections';
+
+    public function isMediaValue(): bool
+    {
+        return $this->key === self::MEDIA_VALUE_KEY;
+    }
 
     protected function casts(): array
     {

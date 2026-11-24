@@ -68,6 +68,7 @@ final class RateCardPresenter
                 'id' => $section->id,
                 'key' => $section->key,
                 'title' => $section->title,
+                'is_media_value' => $section->isMediaValue(),
                 'intro' => $section->intro,
                 'medium' => $section->medium,
                 'channels' => $section->channels->map(fn ($channel): array => [
