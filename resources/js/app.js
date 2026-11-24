@@ -230,7 +230,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
 }
 
 const loadScrollMotion = () => {
-    const targets = document.querySelector('[data-hero-art], [data-process], [data-timeline]');
+    const targets = document.querySelector('[data-process], [data-timeline]');
 
     if (!targets || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;

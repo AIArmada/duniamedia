@@ -27,7 +27,7 @@ final readonly class PresentRateLines implements PresentsRateLines
 
         foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print'] as $medium) {
             $entry = $this->publicRates()
-                ->whereHas('rateSection', fn (Builder $section) => $section->where('medium', $medium))
+                ->whereHas('rateSection.channels', fn (Builder $channel) => $channel->where('is_public', true)->where('medium', $medium))
                 ->where('price_rm', '>', 0)
                 ->orderBy('sort_order')
                 ->orderBy('id')
@@ -68,7 +68,7 @@ final readonly class PresentRateLines implements PresentsRateLines
             ->whereHas('rateSection', fn (Builder $section) => $section->where('key', '!=', RateCardSection::MEDIA_VALUE_KEY))
             ->whereHas('rateSection.product', fn (Builder $product) => $product->where('status', 'active'))
             ->whereHas('rateSection.channels', fn (Builder $channel) => $channel->where('is_public', true))
-            ->with(['rateSection.channels', 'rateSection.product.mediaProfile']);
+            ->with(['rateSection.channels' => fn ($channels) => $channels->where('is_public', true), 'rateSection.product.mediaProfile']);
     }
 
     private function present(RateCardEntry $entry): ?RateLineView

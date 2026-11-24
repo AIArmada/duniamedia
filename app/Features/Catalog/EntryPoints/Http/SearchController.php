@@ -73,6 +73,7 @@ class SearchController extends Controller
             'metaDescription' => 'Search media opportunities, media owners, creators, campaigns and insights across Dunia Media.',
         ]);
     }
+
     /** @return list<array{title: string, type: string, description: string, url: string}> */
     private function directoryMatches(string $query): array
     {
@@ -92,7 +93,7 @@ class SearchController extends Controller
             }
         }
 
-        $hot = json_decode(file_get_contents(resource_path('data/hot-fm-profile.json')), true, flags: JSON_THROW_ON_ERROR);
+        $hot = json_decode((string) file_get_contents(resource_path('data/hot-fm-profile.json')), true, flags: JSON_THROW_ON_ERROR);
 
         foreach ($hot['programmes'] as $programme) {
             if ($contains($programme['title'].' '.$programme['hosts'])) {

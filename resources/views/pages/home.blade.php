@@ -43,7 +43,7 @@
                     @foreach ($mediums as [$label, $medium, $icon])
                         <a href="{{ route('media.index', ['medium' => $medium]) }}">{{ $label }}</a>
                     @endforeach
-                    <a href="{{ route('rates.index') }}">Rates</a>
+                    <a href="{{ route('rates.index') }}">Rates</a><a href="{{ route('plans.index') }}">Campaign plans</a>
                 </nav>
             </div>
             <div class="market-hero__brands" aria-label="Explore media brands">
