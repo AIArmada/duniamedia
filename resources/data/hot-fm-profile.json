@@ -12,8 +12,8 @@
       "time": "6am–10am",
       "description": "Breakfast conversations, comedy, inspiration and interviews.",
       "opportunity": "Breakfast sponsorships and branded conversations",
-      "source": "https://www.hotfm.audio/bekpes-hot/",
-      "image": "https://assets.hotfm.audio/2026/07/featured_hurix_BekpesHot_hotfm2026.jpg"
+      "source": "https://www.hotfm.audio/bekpes-hot-/",
+      "source_image": "https://assets.hotfm.audio/2026/07/featured_hurix_BekpesHot_hotfm2026.jpg"
     },
     {
       "title": "FYP@Hot",
@@ -22,16 +22,16 @@
       "description": "Trending tracks, viral stories and listener requests.",
       "opportunity": "Music, lifestyle and youth campaigns",
       "source": "https://www.hotfm.audio/fyphot/",
-      "image": "https://assets.hotfm.audio/2026/05/featured_HotFM_2026_1200x630-02.jpg"
+      "source_image": "https://assets.hotfm.audio/2026/05/featured_HotFM_2026_1200x630-02.jpg"
     },
     {
       "title": "Hot Vibe Club",
-      "hosts": "Fizi Ali",
+      "hosts": "Fizi Ali & Haniff Hamzah",
       "time": "3pm–7pm",
       "description": "Entertainment news, celebrity interviews and challenges.",
       "opportunity": "Drive-time integrations and entertainment promotions",
       "source": "https://www.hotfm.audio/hot-vibe-club/",
-      "image": "https://assets.hotfm.audio/2026/09/featured_Perfume-Paradise-X-Hot-Squad_Sponsorship_2026.jpg"
+      "source_image": "https://assets.hotfm.audio/2026/09/featured_Perfume-Paradise-X-Hot-Squad_Sponsorship_2026.jpg"
     },
     {
       "title": "Hotflix",
@@ -40,7 +40,7 @@
       "description": "Evening music and conversations about life and relationships.",
       "opportunity": "Evening lifestyle and entertainment integrations",
       "source": "https://www.hotfm.audio/hot-flix/",
-      "image": "https://assets.hotfm.audio/2026/05/featured_HotFM_2026_1200x630-04.jpg"
+      "source_image": "https://assets.hotfm.audio/2026/05/featured_HotFM_2026_1200x630-04.jpg"
     }
   ],
   "campaigns": [
@@ -50,7 +50,7 @@
       "metric": "24-hour live broadcast",
       "description": "A mountain expedition with a Malaysia Book of Records achievement, supported by campaign partners.",
       "source": "https://www.mediaprima.audio/bekpes-hot-tawan-puncak-kinabalu-siaran-radio-tanpa-henti-terpanjang-di-gunung-kinabalu/",
-      "image": "https://assets.mediaprima.audio/2024/11/7bekpeskinabalu00.jpg"
+      "source_image": "https://assets.mediaprima.audio/2024/11/7bekpeskinabalu00.jpg"
     },
     {
       "title": "Hot FM × Starbucks · Kopi Run",
@@ -58,7 +58,7 @@
       "metric": "1,000 registrations",
       "description": "Presenter-led community run; 217,529 content views and 3,355 engagements reported by Media Prima Audio.",
       "source": "https://www.mediaprima.audio/hot-fm-and-starbucks-celebrate-world-coffee-day-with-kopi-run-drawing-1000-registrations/",
-      "image": "https://assets.mediaprima.audio/2026/11/Untitled-1.jpg"
+      "source_image": "https://assets.mediaprima.audio/2026/11/Untitled-1.jpg"
     },
     {
       "title": "Hot FM × Gardenia · World Bread Day",
@@ -66,7 +66,7 @@
       "metric": "10,000 loaves · four states",
       "description": "A community activation for delivery riders; 2,725,960 views and 40,484 engagements reported across Hot FM platforms.",
       "source": "https://www.mediaprima.audio/hot-fm-and-gardenia-thank-delivery-riders-with-10000-loaves-across-four-states-on-world-bread-day/",
-      "image": "https://assets.mediaprima.audio/2026/10/banner.png"
+      "source_image": "https://assets.mediaprima.audio/2026/10/banner.png"
     }
   ],
   "digital": [

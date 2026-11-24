@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir -p bootstrap/cache storage/framework/{cache/data,sessions,views} storage/logs
           cp .env.example .env
+          sed -i 's|^APP_URL=.*|APP_URL=http://127.0.0.1:8000|' .env
           composer install --prefer-dist --no-interaction --no-progress
           npm ci --ignore-scripts
           npm run build
@@ -35,6 +36,7 @@ jobs:
           touch database/database.sqlite
           php artisan key:generate --force
           php artisan migrate --seed --force
+          php artisan storage:link
           php artisan serve --host=127.0.0.1 --port=8000 > /tmp/dunia-server.log 2>&1 &
           for i in $(seq 1 30); do curl -s -o /dev/null http://127.0.0.1:8000 && break; sleep 1; done
       - name: Capture actual browser renders
@@ -59,9 +61,11 @@ jobs:
                 const response = await page.goto('http://127.0.0.1:8000'+path,{waitUntil:'domcontentloaded',timeout:30000});
                 await page.evaluate(()=>document.fonts.ready);
                 await page.evaluate(()=>{document.querySelectorAll('img[loading="lazy"]').forEach(i=>i.loading='eager')});
-                await page.waitForTimeout(800);
+                await page.evaluate(async()=>{await Promise.race([Promise.allSettled([...document.images].map(i=>i.decode())),new Promise(r=>setTimeout(r,10000))])});
+                await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=800){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,50))}window.scrollTo(0,0)});
+                await page.waitForTimeout(350);
                 await page.screenshot({path:'/tmp/dunia-screenshots/'+name+'-'+width+'.jpg',fullPage:true,type:'jpeg',quality:65,animations:'disabled',timeout:30000});
-                report.push({name,width,status:response?.status(),title:await page.title(),errors, ...(await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,brokenImages:[...document.images].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.getAttribute('src'))})))});
+                report.push({name,width,status:response?.status(),title:await page.title(),errors, ...(await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,brokenImages:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.getAttribute('src'))})))});
               } catch(e) { report.push({name,width,error:e.message,errors}); }
               await context.close();
             }
@@ -74,14 +78,14 @@ jobs:
       - name: Store temporary review screenshots on separate branch
         if: success()
         run: |
-          git switch --orphan audit/redesign-browser-renders
+          git switch --orphan audit/redesign-browser-renders-v2
           mkdir -p renders
           cp /tmp/dunia-screenshots/* renders/
           git add renders/
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Temporary browser render review'
-          git push origin HEAD:audit/redesign-browser-renders
+          git push origin HEAD:audit/redesign-browser-renders-v2
       - name: Server log
         if: failure()
         run: tail -80 /tmp/dunia-server.log || true
