@@ -9,6 +9,10 @@ use Livewire\Component;
 
 class CampaignPlans extends Component
 {
+    public string $search = '';
+
+    public string $sort = 'recent';
+
     public string $name = '';
 
     public string $objective = '';
@@ -59,7 +63,33 @@ class CampaignPlans extends Component
             'summary' => $plans->summary($plan),
         ]);
 
-        return view('livewire.campaign-plans', ['plans' => $items])->layout('layouts.app', [
+        $overview = [
+            'count' => $items->count(),
+            'items' => $items->sum(fn (array $entry): int => $entry['summary']['items']->count()),
+            'total' => $items->sum('summary.total'),
+            'discount' => $items->sum('summary.discount'),
+        ];
+
+        $search = trim($this->search);
+        if ($search !== '') {
+            $items = $items->filter(function (array $entry) use ($search): bool {
+                $plan = $entry['plan'];
+
+                return mb_stripos(implode(' ', [
+                    (string) $plan->getMetadataValue('name', ''),
+                    (string) $plan->getMetadataValue('objective', ''),
+                    (string) $plan->getMetadataValue('brief', ''),
+                ]), $search) !== false;
+            });
+        }
+
+        $items = match ($this->sort) {
+            'name' => $items->sortBy(fn (array $entry): string => mb_strtolower((string) $entry['plan']->getMetadataValue('name', ''))),
+            'investment' => $items->sortByDesc('summary.total'),
+            default => $items,
+        };
+
+        return view('livewire.campaign-plans', ['plans' => $items->values(), 'overview' => $overview])->layout('layouts.app', [
             'pageTitle' => 'Campaign Plans | Dunia Media',
             'metaDescription' => 'Save media shortlists, package discounts and campaign briefs, then turn a plan into a proposal request.',
         ]);
