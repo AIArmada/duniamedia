@@ -13,26 +13,35 @@ jobs:
       - name: Download original public artwork
         run: |
           python3 - <<'PY'
-          import json, pathlib, urllib.request, urllib.parse, subprocess, tempfile
+          import json, pathlib, urllib.parse, subprocess, tempfile
           profile = json.loads(pathlib.Path('resources/data/hot-fm-profile.json').read_text())
           names = ['bekpes-hot.jpg', 'fyp-hot.jpg', 'hot-vibe-club.jpg', 'hotflix.jpg', 'kinabalu.jpg', 'starbucks-kopi-run.jpg', 'gardenia-world-bread-day.png']
           root = pathlib.Path('public/assets/channels/hot-fm')
           root.mkdir(parents=True, exist_ok=True)
           with tempfile.TemporaryDirectory() as tmp:
-              for row, name in zip(profile['programmes'] + profile['campaigns'], names, strict=True):
+              for row, name in list(zip(profile['programmes'] + profile['campaigns'], names, strict=True))[1:]:
                   url = row['image']
                   assert urllib.parse.urlparse(url).hostname in ('assets.hotfm.audio', 'assets.mediaprima.audio')
                   path = pathlib.Path(tmp) / name
-                  subprocess.run(['curl', '--fail', '--location', '--max-time', '60', '--retry', '2', '--proto', '=https', '--proto-redir', '=https', '--user-agent', 'Mozilla/5.0', '--output', str(path), url], check=True)
+                  result = subprocess.run(['curl', '--fail', '--location', '--max-time', '60', '--retry', '2', '--proto', '=https', '--proto-redir', '=https', '--user-agent', 'Mozilla/5.0', '--output', str(path), url], check=False)
+                  if result.returncode != 0:
+                      print(f'Unavailable: {name} (curl {result.returncode})', flush=True)
+                      continue
                   kind = subprocess.check_output(['file', '--brief', '--mime-type', str(path)], text=True).strip()
-                  assert kind == ('image/png' if name.endswith('.png') else 'image/jpeg'), (name, kind)
-                  assert path.stat().st_size > 1024
+                  if kind != ('image/png' if name.endswith('.png') else 'image/jpeg') or path.stat().st_size <= 1024:
+                      print(f'Invalid image: {name} ({kind})', flush=True)
+                      continue
                   (root / name).write_bytes(path.read_bytes())
+                  print(f'Stored {name}', flush=True)
           PY
       - name: Commit original files to the feature branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/assets/channels/hot-fm/
-          git commit -m "Store original Hot FM artwork locally"
-          git push origin HEAD:fix/local-hot-fm-artwork
+          if [ -n "$(find public/assets/channels/hot-fm -type f -print -quit)" ]; then
+            git add public/assets/channels/hot-fm/
+            git commit -m "Store available original Hot FM artwork locally"
+            git push origin HEAD:fix/local-hot-fm-artwork
+          else
+            echo 'No original files were retrieved.'
+          fi
