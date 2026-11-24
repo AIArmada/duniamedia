@@ -40,18 +40,18 @@
                     <a class="hotfm-primary" href="{{ route('contact') }}">Discuss your campaign <span aria-hidden="true">→</span></a>
                     <a class="hotfm-secondary" href="#hotfm-rates">Explore rates &amp; packages</a>
                 </div>
-                <a class="hotfm-detail-link" href="https://dengar.hotfm.audio/" target="_blank" rel="noopener noreferrer"><x-dm-icon name="play" :size="18"/> Listen to Hot FM live ↗</a>
+                <a class="hotfm-detail-link" href="#hotfm-programmes-title"><x-dm-icon name="users" :size="18"/> Meet the presenters ↓</a>
             </div>
-            <a class="hotfm-hero__photo" href="{{ $programmes[0]['source'] }}" target="_blank" rel="noopener noreferrer" aria-label="Official Bekpes Hot programme">
+            <a class="hotfm-hero__photo" href="#hotfm-programme-bekpes-hot" aria-label="Explore Bekpes Hot on DuniaMedia">
                 <img src="{{ $programmes[0]['image'] }}" alt="Official Bekpes Hot programme artwork" width="1000" height="525" fetchpriority="high" referrerpolicy="no-referrer">
-                <div class="hotfm-hero__programme"><span>Weekday breakfast · 6am–10am</span><strong>Bekpes Hot</strong><span>{{ $programmes[0]['hosts'] }}</span><small>Official programme ↗</small></div>
+                <div class="hotfm-hero__programme"><span>Weekday breakfast · 6am–10am</span><strong>Bekpes Hot</strong><span>{{ $programmes[0]['hosts'] }}</span><small>Explore programme ↓</small></div>
             </a>
         </header>
 
         <section class="hotfm-reach" aria-label="Hot FM audience and capabilities">
             <div class="hotfm-audience">
                 <x-dm-icon name="radio" :size="42"/>
-                <div><span>Weekly radio listenership</span><strong>{{ $profile['audience']['value'] }}</strong><p>{{ $profile['audience']['method'] }} <a href="{{ $profile['audience']['source'] }}" target="_blank" rel="noopener noreferrer">Source: Media Prima Audio ↗</a></p></div>
+                <div><span>Weekly radio listenership</span><strong>{{ $profile['audience']['value'] }}</strong><p>{{ $profile['audience']['method'] }} <span class="hotfm-attribution">Source: Media Prima Audio.</span></p></div>
             </div>
             <div class="hotfm-formats">
                 @foreach ($formats as $format)
@@ -62,14 +62,14 @@
 
         <section class="hotfm-discovery" aria-labelledby="hotfm-programmes-title">
             <div class="hotfm-programmes">
-                <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">On air</span><h2 id="hotfm-programmes-title">Meet the voices behind Hot FM</h2><p>Explore the shows, personalities and possible brand integrations.</p></div><a class="hotfm-detail-link" href="https://www.hotfm.audio/segmen/" target="_blank" rel="noopener noreferrer">All programmes ↗</a></div>
+                <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">On air</span><h2 id="hotfm-programmes-title">Meet the voices behind Hot FM</h2><p>Explore the shows, personalities and possible brand integrations.</p></div><a class="hotfm-detail-link" href="#hotfm-schedule">Weekday schedule ↓</a></div>
                 <div class="hotfm-programme-grid">
                     @foreach ($programmes as $programme)
-                        <article class="hotfm-programme">
-                            <a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer" class="hotfm-programme__image"><img src="{{ $programme['image'] }}" alt="Official {{ $programme['title'] }} artwork" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>
+                        <article class="hotfm-programme" id="hotfm-programme-{{ \Illuminate\Support\Str::slug($programme['title']) }}">
+                            <div class="hotfm-programme__image"><img src="{{ $programme['image'] }}" alt="Official {{ $programme['title'] }} artwork" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
                             <div class="hotfm-programme__body">
                                 <span class="hotfm-programme__time">{{ $programme['time'] }}</span>
-                                <h3><a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer">{{ $programme['title'] }} ↗</a></h3>
+                                <h3>{{ $programme['title'] }}</h3>
                                 <strong>{{ $programme['hosts'] }}</strong>
                                 <p>{{ $programme['description'] }}</p>
                                 <div class="hotfm-programme__opportunity"><span>Campaign idea</span>{{ $programme['opportunity'] }}</div>
@@ -81,30 +81,30 @@
             </div>
 
             <aside class="hotfm-sidebar" aria-label="Programme schedule and digital platforms">
-                <section class="hotfm-schedule">
+                <section class="hotfm-schedule" id="hotfm-schedule">
                     <h2><x-dm-icon name="calendar" :size="23"/> Weekday programmes</h2>
                     <p>Monday–Friday · Malaysia time</p>
                     @foreach ($programmes as $programme)
-                        <a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer"><span>{{ $programme['time'] }}</span><strong>{{ $programme['title'] }} ↗</strong></a>
+                        <a href="#hotfm-programme-{{ \Illuminate\Support\Str::slug($programme['title']) }}"><span>{{ $programme['time'] }}</span><strong>{{ $programme['title'] }} →</strong></a>
                     @endforeach
-                    <a class="hotfm-schedule__more" href="https://www.hotfm.audio/segmen/" target="_blank" rel="noopener noreferrer">See complete official schedule ↗</a>
+                    <p class="hotfm-schedule__note">Selected weekday shows. Programme times are subject to change.</p>
                 </section>
                 <section class="hotfm-digital">
                     <h2><x-dm-icon name="digital" :size="23"/> Beyond the airwaves</h2>
                     @foreach ($profile['digital'] as $platform)
-                        <a href="{{ $platform['url'] }}" target="_blank" rel="noopener noreferrer"><strong>{{ $platform['label'] }}</strong><span>{{ $platform['handle'] }} ↗</span></a>
+                        <div class="hotfm-digital__item"><strong>{{ $platform['label'] }}</strong><span>{{ $platform['handle'] }}</span></div>
                     @endforeach
                 </section>
             </aside>
         </section>
 
         <section class="hotfm-campaigns" aria-labelledby="hotfm-campaigns-title">
-            <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">Real campaigns</span><h2 id="hotfm-campaigns-title">From airwaves to real life.</h2><p>Examples published by Media Prima Audio, showing how Hot FM connects brands with listeners.</p></div><a class="hotfm-detail-link" href="https://www.mediaprima.audio/news-insights/" target="_blank" rel="noopener noreferrer">More campaigns ↗</a></div>
+            <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">Real campaigns</span><h2 id="hotfm-campaigns-title">From airwaves to real life.</h2><p>Examples published by Media Prima Audio, showing how Hot FM connects brands with listeners.</p></div></div>
             <div class="hotfm-campaign-grid">
                 @foreach ($profile['campaigns'] as $campaign)
                     <article class="hotfm-campaign">
-                        <a class="hotfm-campaign__image" href="{{ $campaign['source'] }}" target="_blank" rel="noopener noreferrer"><img src="{{ $campaign['image'] }}" alt="{{ $campaign['title'] }} — Media Prima Audio campaign photograph" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>
-                        <div class="hotfm-campaign__body"><span>{{ $campaign['date'] }}</span><h3>{{ $campaign['title'] }}</h3><strong>{{ $campaign['metric'] }}</strong><p>{{ $campaign['description'] }}</p><a class="hotfm-detail-link" href="{{ $campaign['source'] }}" target="_blank" rel="noopener noreferrer">Official campaign story ↗</a></div>
+                        <div class="hotfm-campaign__image"><img src="{{ $campaign['image'] }}" alt="{{ $campaign['title'] }} — Media Prima Audio campaign photograph" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+                        <div class="hotfm-campaign__body"><span>{{ $campaign['date'] }}</span><h3>{{ $campaign['title'] }}</h3><strong>{{ $campaign['metric'] }}</strong><p>{{ $campaign['description'] }}</p><a class="hotfm-detail-link" href="#hotfm-commercial-title">Explore similar activations ↓</a></div>
                     </article>
                 @endforeach
             </div>
