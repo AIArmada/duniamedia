@@ -102,7 +102,15 @@ class CampaignPlansTest extends TestCase
         $plans->addOffering($plan, $offering, 3);
         $plans->applyDiscount($plan, 'Package saving', '10%');
 
+        $itemId = $plans->summary($plan)['items']->first()->id;
+
         Livewire::test(QuoteBuilder::class, ['plan' => $plan->instance])
+            ->assertSee('RM 2,700.00')
+            ->call('updateQuantity', $itemId, 4)
+            ->assertHasNoErrors()
+            ->assertSee('RM 3,600.00')
+            ->call('updateQuantity', $itemId, 3)
+            ->assertHasNoErrors()
             ->set('name', 'Test Buyer')
             ->set('email', 'buyer@example.com')
             ->set('consent', true)

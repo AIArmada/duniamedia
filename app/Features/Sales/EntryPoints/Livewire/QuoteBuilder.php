@@ -77,7 +77,13 @@ class QuoteBuilder extends Component
         abort_unless(app(PresentsMedia::class)->contains($id), 404);
 
         $plans = app(PlanService::class);
-        $plan = $this->plan() ?? $plans->create('Campaign plan '.now()->format('d M Y'));
+        $plan = $this->plan() ?? $plans->create('Campaign plan '.now()->format('d M Y'), [
+            'objective' => $this->objective,
+            'brief' => $this->message,
+            'starts_on' => $this->startsOn,
+            'ends_on' => $this->endsOn,
+            'services' => $this->addons,
+        ]);
         $this->planInstance = $plan->instance;
 
         if (! $plans->summary($plan)['items']->contains(fn ($item): bool => $item->attributes->get('product_id') === $id)) {
@@ -128,6 +134,7 @@ class QuoteBuilder extends Component
             return;
         }
 
+        $this->step = 'details';
         $this->validateDetails();
         $this->persistDetails($plan);
 
@@ -172,6 +179,7 @@ class QuoteBuilder extends Component
             foreach ($summary['items'] as $item) {
                 $id = (string) $item->attributes->get('product_id');
                 if (! $media->contains($id)) {
+                    $this->step = 'media';
                     throw \Illuminate\Validation\ValidationException::withMessages(['media' => 'Remove unavailable media before submitting.']);
                 }
 
@@ -227,6 +235,7 @@ class QuoteBuilder extends Component
             'rows' => $rows,
             'options' => $media->optionList(),
             'services' => $this->serviceOptions(),
+            'showCartTotals' => $rows->every(fn (array $row): bool => $row['priced'] || (int) $row['item']->price === 0),
         ])->layout('layouts.app', [
             'pageTitle' => 'Proposal Studio | Dunia Media',
             'metaDescription' => 'Review your campaign plan and request a verified media proposal.',

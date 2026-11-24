@@ -14,7 +14,7 @@
             <a class="button button--primary" href="{{ route('media.index') }}">Explore media →</a>
         </section>
     @else
-        <form wire:submit="submit" class="proposal-studio-layout" data-step="{{ $step }}">
+        <form wire:submit="submit" novalidate class="proposal-studio-layout" data-step="{{ $step }}">
             <section class="proposal-editor" aria-label="Build your proposal">
                 <nav class="proposal-steps" aria-label="Proposal steps">
                     @foreach (['media' => ['layers', 'Media & services'], 'details' => ['target', 'Campaign details'], 'review' => ['document', 'Review & request']] as $key => [$icon, $label])
@@ -81,8 +81,8 @@
                     </div>
                     <h2>Contact information</h2>
                     <div class="proposal-fields">
-                        <flux:input wire:model="name" required autocomplete="name" label="Full name" />
-                        <flux:input wire:model="email" required type="email" autocomplete="email" label="Email" />
+                        <flux:input wire:model.live.debounce.500ms="name" required autocomplete="name" label="Full name" />
+                        <flux:input wire:model.live.debounce.500ms="email" required type="email" autocomplete="email" label="Email" />
                         <flux:input wire:model="phone" type="tel" autocomplete="tel" label="Phone (optional)" />
                         <flux:input wire:model="company" autocomplete="organization" label="Company (optional)" />
                     </div>
@@ -94,6 +94,7 @@
                 <div class="proposal-editor-panel proposal-step-review">
                     <h2>Review &amp; request</h2>
                     <p>Check the media, services and indicative investment in the proposal preview. Your request will be reviewed by the commercial team.</p>
+                    <dl class="proposal-preview-facts"><div><dt>Contact name</dt><dd>{{ $name ?: 'Not provided' }}</dd></div><div><dt>Email</dt><dd>{{ $email ?: 'Not provided' }}</dd></div></dl>
                     <div class="proposal-review-note"><x-dm-icon name="document" :size="27"/><div><strong>Not a booking or confirmed quotation</strong><p>No payment will be collected. Package savings, availability, rates and taxes must be verified.</p></div></div>
                     <flux:button type="submit" variant="primary" wire:loading.attr="disabled" wire:target="submit">Request proposal</flux:button>
                 </div>
@@ -108,7 +109,7 @@
                         <div><dt>Campaign period</dt><dd>{{ $startsOn ?: 'To be agreed' }} @if($endsOn) – {{ $endsOn }} @endif</dd></div>
                         <div><dt>Media &amp; services</dt><dd>{{ $rows->count() }} media · {{ count($addons) }} services</dd></div>
                     </dl>
-                    @if($message)<p class="proposal-preview-brief">{{ $message }}</p>@endif
+                    @if ($message)<p class="proposal-preview-brief">{{ $message }}</p>@endif
                     <div class="proposal-preview-items">
                         <div class="proposal-preview-row proposal-preview-row-head"><span>Media / placement</span><span>Qty</span><span>Amount</span></div>
                         @forelse($rows as $row)
@@ -118,11 +119,15 @@
                             <p class="proposal-pane-note">Your selected media will appear here.</p>
                         @endforelse
                     </div>
+                    @if ($showCartTotals)
                     <dl class="proposal-totals">
                         <div><dt>Cart media subtotal</dt><dd>RM {{ number_format($summary['subtotal'] / 100, 2) }}</dd></div>
                         <div class="proposal-saving"><dt>Indicative package savings</dt><dd>− RM {{ number_format($summary['discount'] / 100, 2) }}</dd></div>
                         <div class="proposal-estimate"><dt>Estimated cart total</dt><dd>RM {{ number_format($summary['total'] / 100, 2) }}</dd></div>
                     </dl>
+                    @else
+                        <p class="proposal-pane-note">Commercial estimate available on request. Some selected media do not have public rates.</p>
+                    @endif
                     @if($rows->contains(fn ($row) => ! $row['priced']))
                         <p class="proposal-pane-note">Some media require a quotation. The cart total is not the complete payable amount.</p>
                     @endif

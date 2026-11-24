@@ -3435,51 +3435,6 @@ a.pager__link:hover {
     align-items: start;
 }
 
-.quote-steps {
-    display: grid;
-    gap: 0;
-    margin-bottom: 2rem;
-    border-top: 1px solid var(--color-border);
-}
-
-.quote-step {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-    padding: 0.9rem 0;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.quote-step__number {
-    display: grid;
-    flex-shrink: 0;
-    place-items: center;
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--color-border-strong);
-    border-radius: 50%;
-    color: var(--color-text-muted);
-    font-size: 0.76rem;
-    font-weight: 800;
-}
-
-.quote-step.is-active .quote-step__number {
-    border-color: var(--color-magenta-600);
-    background: var(--color-magenta-600);
-    color: #fff;
-}
-
-.quote-step strong {
-    color: var(--color-plum-900);
-    font-size: 0.9rem;
-}
-
-.quote-step span:last-child {
-    margin-left: auto;
-    color: var(--color-text-muted);
-    font-size: 0.76rem;
-}
-
 .quote-block {
     padding-block: 1.8rem;
     border-bottom: 1px solid var(--color-border);
@@ -3560,36 +3515,6 @@ a.pager__link:hover {
 .remove-item:hover {
     border-color: var(--color-danger);
     color: var(--color-danger);
-}
-
-.addon-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.6rem;
-}
-
-.addon {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.7rem 0.8rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    background: #fff;
-    font-size: 0.84rem;
-    font-weight: 600;
-}
-
-.addon [data-flux-label] {
-    display: block;
-    color: var(--color-text);
-}
-
-.addon [data-flux-description] {
-    margin-left: auto;
-    color: var(--color-text-muted);
-    font-size: 0.7rem;
-    font-weight: 500;
 }
 
 .quote-summary {
@@ -7871,7 +7796,6 @@ body:has(.contact-page) .footer-legal {
     }
 
     .fact-grid,
-    .addon-list,
     .form-grid,
     .ratecard-docs,
     .solution-visual,
@@ -7980,10 +7904,6 @@ body:has(.contact-page) .footer-legal {
 
     .directory-card .directory-card__meta {
         align-self: center;
-    }
-
-    .quote-step span:last-child {
-        display: none;
     }
 
     .cta-panel__inner {

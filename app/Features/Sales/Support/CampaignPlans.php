@@ -59,9 +59,15 @@ class CampaignPlans
 
     public function updateQuantity(CartModel $plan, string $itemId, int $quantity): void
     {
-        Cart::getCartInstance($plan->instance)->update($itemId, [
-            'quantity' => ['value' => max(1, $quantity)],
-        ]);
+        $cart = Cart::getCartInstance($plan->instance);
+        $item = $cart->getItems()->getItem($itemId);
+
+        abort_unless($item, 404);
+
+        $product = Product::query()->findOrFail($item->attributes->get('product_id'));
+        abort_unless(app(PresentsMedia::class)->contains($product->id), 404);
+
+        $cart->updateBuyable($product, max(1, $quantity), $itemId);
     }
 
     public function removeItem(CartModel $plan, string $itemId): void
