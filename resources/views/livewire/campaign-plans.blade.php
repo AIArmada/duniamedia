@@ -18,10 +18,10 @@
 
     <div class="container plans-overview">
         <dl class="plans-metrics" aria-label="Saved campaign overview">
-            <div class="plans-metric"><x-dm-icon name="briefcase" :size="30"/><div><dd>{{ number_format($overview['count']) }}</dd><dt>Saved plans</dt></div></div>
-            <div class="plans-metric"><x-dm-icon name="layers" :size="30"/><div><dd>{{ number_format($overview['items']) }}</dd><dt>Shortlisted media</dt></div></div>
-            <div class="plans-metric"><x-dm-icon name="chart" :size="30"/><div><dd>RM {{ number_format($overview['total'] / 100, 2) }}</dd><dt>Estimated investment</dt></div></div>
-            <div class="plans-metric"><x-dm-icon name="target" :size="30"/><div><dd>RM {{ number_format($overview['discount'] / 100, 2) }}</dd><dt>Package savings</dt></div></div>
+            <div class="plans-metric"><x-dm-icon name="briefcase" :size="30"/><div><dt>Saved plans</dt><dd>{{ number_format($overview['count']) }}</dd></div></div>
+            <div class="plans-metric"><x-dm-icon name="layers" :size="30"/><div><dt>Shortlisted media</dt><dd>{{ number_format($overview['items']) }}</dd></div></div>
+            <div class="plans-metric"><x-dm-icon name="chart" :size="30"/><div><dt>Estimated investment</dt><dd>RM {{ number_format($overview['total'] / 100, 2) }}</dd></div></div>
+            <div class="plans-metric"><x-dm-icon name="target" :size="30"/><div><dt>Package savings</dt><dd>RM {{ number_format($overview['discount'] / 100, 2) }}</dd></div></div>
         </dl>
         <p class="plans-note">Totals cover all your saved working plans, including alternative versions. Estimates and savings are subject to confirmation; no media is reserved until confirmed.</p>
     </div>
