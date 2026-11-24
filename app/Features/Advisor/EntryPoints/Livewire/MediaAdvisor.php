@@ -438,7 +438,7 @@ class MediaAdvisor extends Component
             'shareUrl' => $this->token === null ? null : route('advisor.show', ['token' => $this->token]),
             'shortlistTotal' => $this->shortlistTotal($customLines),
         ])->layout('layouts.app', [
-            'pageTitle' => 'Media Advisor | Dunia Media',
+            'pageTitle' => 'Media Strategy Studio | Dunia Media',
             'metaDescription' => 'An interactive media planning workbench. Score live Malaysian inventory against your objective, budget, regions and languages, then save a plan or request a proposal.',
         ]);
     }
@@ -479,7 +479,6 @@ class MediaAdvisor extends Component
     {
         $this->fillFromSession($session);
         $this->generated = true;
-        $this->workspaceTab = 'strategy';
         $this->selectedScenario = (string) ($session->selected_scenario_key ?? 'balanced');
         $this->shortlist = $this->scenarioProductIds($this->selectedScenario);
         $this->selectedServices = [];

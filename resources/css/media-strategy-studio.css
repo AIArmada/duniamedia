@@ -18,7 +18,9 @@
 .advisor-pane-intro { margin:0; font-size:.84rem; line-height:1.55; color:var(--color-text-muted); }
 .advisor-brief-pane, .advisor-shortlist-pane { position:sticky; top:calc(var(--header-height) + .8rem); max-height:calc(100dvh - var(--header-height) - 1.6rem); overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; }
 .advisor-presets,.advisor-block,.advisor-fields { display:grid; gap:.55rem; }
-.advisor-presets { padding-bottom:.8rem; border-bottom:1px solid var(--studio-border); }
+.advisor-presets { padding-bottom:.65rem; border-bottom:1px solid var(--studio-border); }
+.advisor-preset-summary { min-height:44px; padding:.6rem 0; cursor:pointer; font-weight:800; font-size:.86rem; color:var(--color-plum-900); }
+.advisor-presets[open] .advisor-preset-row { margin-top:.4rem; }
 .advisor-preset-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.4rem; }
 .advisor-preset { display:grid; gap:.25rem; padding:.65rem; text-align:left; border:1px solid var(--studio-border); border-radius:9px; background:#fff; cursor:pointer; min-width:0; }
 .advisor-preset strong { color:var(--color-plum-900); font-size:.78rem; }
@@ -31,7 +33,7 @@
 .advisor-choice:hover,.advisor-chip:hover,.advisor-check:hover { border-color:var(--studio-accent); }
 .advisor-check input,.advisor-line__toggle input { accent-color:var(--studio-accent); flex:none; }
 .advisor-fields { gap:.8rem; }
-.advisor-studio__actions { display:grid; gap:.5rem; }
+.advisor-studio__actions { display:grid; gap:.5rem; position:sticky; bottom:0; z-index:2; padding:.55rem 0; background:var(--studio-surface); }
 .advisor-studio__actions > * { width:100%; min-height:46px; }
 .advisor-error { color:#a61b36; font-size:.8rem; }
 .advisor-centre-nav,.advisor-mobile-nav { display:flex; gap:.35rem; border-bottom:1px solid var(--studio-border); padding-bottom:.55rem; }
@@ -164,6 +166,7 @@
     .advisor-mobile-nav { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); position:sticky; top:var(--header-height); z-index:5; background:var(--color-cream); margin-bottom:.8rem; padding:.35rem 0; }
     .advisor-mobile-nav button { padding:.35rem .15rem; gap:.2rem; font-size:.78rem; }
     .advisor-brief-pane,.advisor-shortlist-pane { position:static; max-height:none; overflow:visible; }
+    .advisor-studio__actions { position:static; }
     .advisor-workspace > .advisor-workspace-pane { display:none; }
     .advisor-studio-page[data-workspace-tab=brief] .advisor-brief-pane,
     .advisor-studio-page[data-workspace-tab=shortlist] .advisor-shortlist-pane,

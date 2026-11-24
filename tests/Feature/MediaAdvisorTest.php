@@ -36,7 +36,8 @@ class MediaAdvisorTest extends TestCase
             ->set('objective', 'awareness')
             ->set('budgetAmount', '20000')
             ->call('generate')
-            ->assertHasNoErrors();
+            ->assertHasNoErrors()
+            ->assertSet('workspaceTab', 'strategy');
 
         $session = AdvisorSession::query()->firstOrFail();
 

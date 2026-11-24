@@ -1,4 +1,4 @@
-<div class="advisor-studio-page" data-workspace-tab="{{ $workspaceTab }}">
+<div class="advisor-studio-page" data-workspace-tab="{{ $workspaceTab }}" x-data="{}">
     <header class="advisor-workspace-heading">
         <div class="advisor-workspace-title"><x-dm-icon name="chart" :size="36"/><h1>Media Strategy Studio</h1></div>
         <p>Plan, compare and refine your campaign.</p>
@@ -15,8 +15,8 @@
         <aside class="advisor-workspace-pane advisor-brief-pane" aria-labelledby="advisor-brief-title">
             <div class="advisor-pane-title"><x-dm-icon name="document" :size="26"/><h2 id="advisor-brief-title">Campaign brief</h2></div>
             <p class="advisor-pane-intro">Tell us about your campaign. We’ll recommend a media strategy using the active catalogue.</p>
-            <div class="advisor-presets" aria-label="Quick-start briefs">
-                <span class="eyebrow eyebrow--plain">Quick start</span>
+            <details class="advisor-presets" aria-label="Quick-start briefs">
+                <summary class="advisor-preset-summary">Quick-start briefs</summary>
                 <div class="advisor-preset-row">
                     @foreach ($presets as $preset)
                         <button
@@ -33,7 +33,7 @@
                         </button>
                     @endforeach
                 </div>
-            </div>
+            </details>
             <div class="advisor-block">
                 <h3>Objective</h3>
                 <div class="advisor-choices">
@@ -155,7 +155,7 @@
                     @foreach ($scenarios as $key => $scenario)
                         <button
                             type="button"
-                            
+
                             wire:key="scenario-tab-{{ $key }}"
                             aria-pressed="{{ $selectedScenario === $key ? 'true' : 'false' }}"
                             class="advisor-scenario-tab {{ $selectedScenario === $key ? 'is-active' : '' }}"
@@ -427,7 +427,7 @@
                         @endforeach
                     </ul>
                 </div>
-                    <details class="advisor-review">
+                    <details class="advisor-review" @if ($submitted || $errors->hasAny(['requesterName', 'requesterEmail', 'requesterCompany', 'requesterPhone', 'consent', 'website'])) open @endif>
                         <summary>Request a senior planner review</summary>
                 @if (! $submitted)
                     <div class="advisor-submit">
@@ -500,7 +500,7 @@
                     <ul class="advisor-basket__list">
                         @foreach ($basketLines as $line)
                             <li wire:key="basket-{{ $line['product_id'] }}" class="advisor-basket__item">
-                            <img class="advisor-basket__thumb" src="{{ \App\Features\Catalog\Support\MediaImage::url($line['image'] ?? null) }}" alt="" loading="lazy" decoding="async">
+                                <img class="advisor-basket__thumb" src="{{ \App\Features\Catalog\Support\MediaImage::url($line['image'] ?? null) }}" alt="" loading="lazy" decoding="async">
                                 <div class="advisor-basket__body">
                                     <div class="advisor-basket__top">
                                         @if (! empty($line['slug']))
@@ -526,7 +526,7 @@
                                     wire:click="removeFromBasket('{{ $line['product_id'] }}')"
                                     wire:loading.attr="disabled"
                                     wire:target="removeFromBasket('{{ $line['product_id'] }}')"
-                                    aria-label="Remove {{ $line['name'] }} from basket"
+                                    aria-label="Remove {{ $line['name'] }} from shortlist"
                                     title="Remove"
                                 >&times;</button>
                             </li>
@@ -547,14 +547,13 @@
                                     wire:click="removeService('{{ $service['slug'] }}')"
                                     wire:loading.attr="disabled"
                                     wire:target="removeService('{{ $service['slug'] }}')"
-                                    aria-label="Remove {{ $service['name'] }} from basket"
+                                    aria-label="Remove {{ $service['name'] }} from shortlist"
                                     title="Remove"
                                 >&times;</button>
                             </li>
                         @endforeach
                     </ul>
 
-                    
                 @endif
             </div>
             @else
@@ -575,7 +574,7 @@
             <p class="advisor-pane-intro">Estimates exclude unpriced media and service costs. Confirm rates, taxes and availability before booking.</p>
             @if ($generated && $activeScenario)
             <div class="advisor-conversions">
-                
+
                 @error('shortlist')
                     <flux:callout variant="warning" icon="exclamation-triangle" :text="$message" />
                 @enderror
