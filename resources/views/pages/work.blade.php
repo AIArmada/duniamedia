@@ -6,7 +6,11 @@
         $heroFilm = $films->get('jwp-psa-kl');
         $featuredFilm = $films->get('jwp-psa-putrajaya');
         $gallery = $films->except(['jwp-psa-kl', 'jwp-psa-putrajaya'])->values();
-        $featuredClients = collect($clients)->filter(fn ($client) => ! empty($client['logo']))->sortBy(fn ($client) => array_search($client['slug'], ['kpj-kajang', 'suruhanjaya-tenaga', 'yayasan-maghfirah', 'yayasan-pelajaran-mara', 'perkeso', 'todak'], true) === false ? 99 : array_search($client['slug'], ['kpj-kajang', 'suruhanjaya-tenaga', 'yayasan-maghfirah', 'yayasan-pelajaran-mara', 'perkeso', 'todak'], true))->take(6);
+        $clientPriority = array_flip(['kpj-kajang', 'suruhanjaya-tenaga', 'yayasan-maghfirah', 'yayasan-pelajaran-mara', 'perkeso', 'todak']);
+        $featuredClients = collect($clients)
+            ->filter(fn ($client) => ! empty($client['logo']) && ($campaignCounts[$client['slug']] ?? 0) > 0)
+            ->sortBy(fn ($client) => $clientPriority[$client['slug']] ?? 99)
+            ->take(6);
     @endphp
 
     <div class="work-page">
@@ -19,7 +23,7 @@
                     <a class="work-text-link" href="#archive">Explore our campaigns <span aria-hidden="true">↓</span></a>
                 </div>
                 @if ($heroFilm)
-                    <x-work-film :item="$heroFilm" class="work-film--hero" :eager="true"/>
+                    <x-work-film :item="$heroFilm" class="work-film--hero"/>
                 @endif
             </div>
         </section>

@@ -28,7 +28,7 @@
             <div class="work-filter">
                 <span>Medium</span>
                 <flux:select wire:model.live="medium" aria-label="Medium">
-                    <option value="all">All mediums</option>
+                    <option value="all">All media</option>
                     @foreach ($mediums as $mediumOption)
                         <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
                     @endforeach
@@ -43,6 +43,7 @@
                     @endforeach
                 </flux:select>
             </div>
+            <flux:button type="button" variant="filled" size="sm" icon="arrow-path" wire:click="clearFilters">Reset</flux:button>
             <details class="work-filter-more" wire:ignore.self @if ($sector !== 'all' || $service !== 'all' || $channel !== 'all') open @endif>
                 <summary><x-dm-icon name="layers" :size="19"/> More filters</summary>
                 <div class="work-filter-more__fields">
@@ -74,7 +75,6 @@
                     </div>
                 </div>
             </details>
-            <flux:button type="button" variant="filled" size="sm" icon="arrow-path" wire:click="clearFilters">Reset</flux:button>
         </div>
 
         @if ($activeClient)
@@ -94,7 +94,7 @@
             @forelse ($campaigns as $campaign)
                 <article class="work-card" wire:key="work-card-{{ $campaign['id'] }}">
                     @if (! empty($campaign['media']))
-                        <a class="work-card__cover" href="#work-media-{{ $campaign['media'][0]['key'] }}" aria-label="Play {{ $campaign['media'][0]['title'] }}">
+                        <a class="work-card__cover" href="#work-media-{{ $campaign['media'][0]['key'] }}" aria-label="View {{ $campaign['media'][0]['title'] }}">
                             <img src="{{ asset($campaign['media'][0]['poster']) }}" alt="" loading="lazy" decoding="async">
                             <span><x-dm-icon name="play" :size="34"/></span>
                         </a>

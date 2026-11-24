@@ -1,4 +1,4 @@
-@props(['item', 'eager' => false])
+@props(['item'])
 
 <article id="work-media-{{ $item['key'] }}" {{ $attributes->class(['work-film']) }}>
     @if ($item['type'] === 'video')

@@ -9,6 +9,7 @@ use App\Features\Clients\Models\Campaign;
 use App\Features\Clients\Models\Service;
 use App\Features\Clients\Support\ClientWork;
 use App\Features\Identity\Api\ResolvesParties;
+use Illuminate\Support\Collection;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 
@@ -55,7 +56,7 @@ class WorkExplorer extends Component
         $this->limit = 9;
     }
 
-    private function archiveMedia(?array $entry, \Illuminate\Support\Collection $media, string $title, ?string $client): array
+    private function archiveMedia(?array $entry, Collection $media, string $title, ?string $client): array
     {
         if ($entry === null || $entry['title'] !== $title || $entry['client'] !== $client) {
             return [];

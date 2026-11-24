@@ -993,10 +993,6 @@ body.has-cover-header .page-hero--media .page-hero__inner {
     padding-top: calc(var(--header-height) + clamp(4rem, 8vw, 7rem));
 }
 
-body.has-cover-header .work-hero__inner {
-    padding-top: calc(var(--header-height) + clamp(4rem, 8vw, 7.5rem));
-}
-
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -5288,7 +5284,7 @@ body:has(.work-page) .footer-legal {
 
 .work-page .work-filters {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
     align-items: end;
     gap: 0.8rem;
     padding: 1.1rem;
@@ -5319,7 +5315,8 @@ body:has(.work-page) .footer-legal {
 }
 
 .work-filter-more {
-    display: contents;
+    grid-column: 1 / -1;
+    min-width: 0;
 }
 
 .work-filter-more summary {
@@ -5346,9 +5343,8 @@ body:has(.work-page) .footer-legal {
 }
 
 .work-filter-more__fields {
-    grid-column: 1 / -1;
-    grid-row: 3;
     display: grid;
+    margin-top: 0.8rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.8rem;
 }
@@ -5567,7 +5563,6 @@ body:has(.work-page) .footer-legal {
     }
 
     .work-filter-more__fields {
-        grid-row: auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -8570,9 +8565,6 @@ body:has(.contact-page) .footer-legal {
         text-align: left;
     }
 
-    .work-stats {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 900px) {
