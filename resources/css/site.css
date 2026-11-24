@@ -4926,6 +4926,19 @@ a.topic:hover {
     color: var(--about-ink);
 }
 
+body:has(.about-page) .site-footer {
+    padding-top: 0;
+    background: #27231f;
+}
+
+body:has(.about-page) .footer-lead {
+    display: none;
+}
+
+body:has(.about-page) .footer-legal {
+    color: #c4bbae;
+}
+
 .about-page h1,
 .about-page h2 {
     font-family: var(--font-editorial);
