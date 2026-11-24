@@ -331,6 +331,28 @@ class PublicExperienceTest extends TestCase
         $this->assertDatabaseCount('enquiries', 0);
     }
 
+    public function test_contact_form_fails_closed_without_an_approved_turnstile_hostname(): void
+    {
+        $this->configureContactTurnstile();
+        config(['turnstile.hostname' => '']);
+        Http::preventStrayRequests();
+        Http::fake(['https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::response()]);
+
+        Livewire::test(ContactForm::class)
+            ->set('name', 'Test Contact')
+            ->set('email', 'contact@example.com')
+            ->set('message', 'We would like to discuss a campaign.')
+            ->set('consent', true)
+            ->set('turnstileToken', 'unverified-token')
+            ->call('submit')
+            ->assertHasErrors(['turnstileToken'])
+            ->assertSet('submitted', false);
+
+        Http::assertNothingSent();
+        $this->assertDatabaseCount('enquiries', 0);
+        $this->assertDatabaseMissing('parties', ['display_name' => 'Test Contact']);
+    }
+
     public function test_contact_form_fails_closed_when_turnstile_cannot_be_reached(): void
     {
         $this->configureContactTurnstile();
