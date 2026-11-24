@@ -203,6 +203,7 @@
 
 <footer class="site-footer">
     <div class="container">
+        @unless(request()->routeIs('home', 'media.index', 'media.owners', 'creators.index', 'solutions', 'plans.*', 'advisor', 'advisor.*', 'quote.*', 'rates.*'))
         <div class="footer-lead">
             <div>
                 <span class="eyebrow eyebrow--pale">All media. Bigger possibilities.</span>
@@ -215,6 +216,7 @@
             </div>
         </div>
 
+        @endunless
         <div class="footer-grid">
             <div class="footer-brand">
                 <img src="{{ asset('assets/brand/logo-horizontal-reversed.svg') }}" width="176" height="49" alt="Dunia Media" loading="lazy" decoding="async">

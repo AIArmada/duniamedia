@@ -203,3 +203,6 @@
     .advisor-studio-page .advisor-centre-pane,.advisor-studio-page .advisor-shortlist-pane,.advisor-studio-page .advisor-strategy-view,.advisor-studio-page .advisor-roadmap-view { display:block!important; position:static; max-height:none; overflow:visible; box-shadow:none; border:0; }
     .advisor-line,.advisor-basket__item,.advisor-scenario-tab { break-inside:avoid; }
 }
+
+.advisor-start-actions{display:grid;justify-items:start;gap:.5rem;margin:1rem 0}.advisor-start-actions p{margin:0}.advisor-start-actions button{min-height:44px}
+@media(max-width:760px){.advisor-start-actions{justify-items:stretch}}

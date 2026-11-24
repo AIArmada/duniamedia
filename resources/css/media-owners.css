@@ -129,7 +129,7 @@
 .owner-directory-cta .button span { color: inherit; }
 .owner-directory :is(a,button,input):focus-visible { outline: 2px solid #a4004b; outline-offset: 3px; }
 .owner-directory-cta a:focus-visible { outline-color: #fff; }
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
     .owner-directory-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
 @media (max-width: 1100px) {

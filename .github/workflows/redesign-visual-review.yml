@@ -64,12 +64,35 @@ jobs:
                 await page.evaluate(async()=>{await Promise.race([Promise.allSettled([...document.images].map(i=>i.decode())),new Promise(r=>setTimeout(r,10000))])});
                 await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=800){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,50))}window.scrollTo(0,0)});
                 await page.waitForTimeout(350);
+                await page.screenshot({path:'/tmp/dunia-screenshots/'+name+'-'+width+'-top.jpg',type:'jpeg',quality:75,animations:'disabled'});
                 await page.screenshot({path:'/tmp/dunia-screenshots/'+name+'-'+width+'.jpg',fullPage:true,type:'jpeg',quality:65,animations:'disabled',timeout:30000});
                 report.push({name,width,status:response?.status(),title:await page.title(),errors, ...(await page.evaluate(()=>({scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,brokenImages:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.getAttribute('src'))})))});
               } catch(e) { report.push({name,width,error:e.message,errors}); }
               await context.close();
             }
           }
+          // Exercise stateful tools with the isolated seeded catalogue.
+          const context = await browser.newContext({viewport:{width:1440,height:900}});
+          const page = await context.newPage();
+          try {
+            await page.goto('http://127.0.0.1:8000/media-advisor');
+            await page.getByRole('button',{name:'Generate strategy',exact:false}).first().click();
+            await page.waitForTimeout(2200);
+            await page.screenshot({path:'/tmp/dunia-screenshots/advisor-generated.jpg',fullPage:true,type:'jpeg',quality:70});
+            report.push({name:'advisor-generated',title:await page.title(),regenerate:await page.getByText('Regenerate strategy',{exact:true}).count()});
+          } catch(e) {report.push({name:'advisor-generated',error:e.message});}
+          try {
+            await page.goto('http://127.0.0.1:8000/rates');
+            await page.getByRole('button',{name:'Compare',exact:true}).nth(0).click();
+            await page.waitForTimeout(500);
+            await page.getByRole('button',{name:'Compare',exact:true}).first().click();
+            await page.waitForTimeout(500);
+            await page.getByRole('button',{name:'Compare now',exact:true}).click();
+            await page.waitForTimeout(700);
+            await page.screenshot({path:'/tmp/dunia-screenshots/rates-compared.jpg',fullPage:true,type:'jpeg',quality:70});
+            report.push({name:'rates-compared',comparison:await page.getByRole('heading',{name:'Compare placements'}).count()});
+          } catch(e) {report.push({name:'rates-compared',error:e.message});}
+          await context.close();
           await browser.close();
           await writeFile('/tmp/dunia-screenshots/report.json',JSON.stringify(report,null,2));
           JS
@@ -78,14 +101,14 @@ jobs:
       - name: Store temporary review screenshots on separate branch
         if: success()
         run: |
-          git switch --orphan audit/redesign-browser-renders-v2
+          git switch --orphan audit/redesign-browser-renders-final
           mkdir -p renders
           cp /tmp/dunia-screenshots/* renders/
           git add renders/
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Temporary browser render review'
-          git push origin HEAD:audit/redesign-browser-renders-v2
+          git push origin HEAD:audit/redesign-browser-renders-final
       - name: Server log
         if: failure()
         run: tail -80 /tmp/dunia-server.log || true
