@@ -9,6 +9,7 @@
 @import './media-strategy-studio.css';
 @import './proposal-studio.css';
 @import './ratecard.css';
+@import './media-rate-exchange.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
