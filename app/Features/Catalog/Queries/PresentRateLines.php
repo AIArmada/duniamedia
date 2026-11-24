@@ -8,6 +8,7 @@ use App\Features\Catalog\Api\PresentsRateLines;
 use App\Features\Catalog\Api\RateLineView;
 use App\Features\Catalog\Models\RateCardEntry;
 use App\Features\Catalog\Models\RateCardSection;
+use App\Features\Catalog\Support\MediaImage;
 use Illuminate\Database\Eloquent\Builder;
 
 final readonly class PresentRateLines implements PresentsRateLines
@@ -79,7 +80,7 @@ final readonly class PresentRateLines implements PresentsRateLines
 
         $product = $entry->rateSection->product;
         $channel = $entry->rateSection->channels->first();
-        $image = 'assets/ratecards/img/'.$product->slug.'.webp';
+        $image = MediaImage::sourceDeckArtwork((string) $product->slug) ?? 'assets/ratecards/img/'.$product->slug.'.webp';
 
         if (! is_file(public_path($image))) {
             $image = ($channel === null ? null : $channel->hero_path)

@@ -22,6 +22,10 @@ class CreatorSeeder extends Seeder
 
     public function run(): void
     {
+        if (! app()->runningUnitTests()) {
+            return;
+        }
+
         $parties = app(WriteParties::class);
         $profiles = app(WriteCreatorProfiles::class);
         $properties = app(WriteMediaProperties::class);

@@ -129,7 +129,13 @@
     border-radius: var(--radius-md);
     background: var(--color-paper);
     box-shadow: var(--shadow-card);
+    text-decoration: none;
+    color: var(--color-charcoal);
+    transition: border-color var(--dur-fast), transform var(--dur-fast);
 }
+
+.connected-objective:hover { border-color: var(--color-plum-800); transform: translateY(-2px); }
+.connected-objective__link { display: block; margin-top: .75rem; color: var(--color-plum-800); font-size: .8rem; font-weight: 800; }
 
 .connected-objective > svg {
     flex: none;

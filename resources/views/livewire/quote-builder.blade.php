@@ -16,6 +16,9 @@
     @else
         <form wire:submit="submit" novalidate class="proposal-studio-layout" data-step="{{ $step }}">
             <section class="proposal-editor" aria-label="Build your proposal">
+                @if ($errors->any())
+                    <div class="proposal-validation" role="alert"><strong>Please review these details before requesting a proposal.</strong><ul>@foreach ($errors->all() as $message)<li>{{ $message }}</li>@endforeach</ul><button type="button" class="text-link" wire:click="$set('step', 'details')">Review campaign details →</button></div>
+                @endif
                 <nav class="proposal-steps" aria-label="Proposal steps">
                     @foreach (['media' => ['layers', 'Media & services'], 'details' => ['target', 'Campaign details'], 'review' => ['document', 'Review & request']] as $key => [$icon, $label])
                         <button type="button" wire:key="proposal-step-{{ $key }}" wire:click="$set('step', '{{ $key }}')" aria-pressed="{{ $step === $key ? 'true' : 'false' }}"><x-dm-icon :name="$icon" :size="23"/>{{ $label }}</button>
@@ -102,7 +105,7 @@
                 </div>
             </section>
 
-            <aside class="proposal-preview" aria-label="Live proposal preview">
+            <aside class="proposal-preview" id="proposal-preview" aria-label="Live proposal preview">
                 <div class="proposal-paper">
                     <div class="proposal-paper-brand"><img src="{{ asset('assets/brand/logo-horizontal.svg') }}" alt="Dunia Media" width="160"><span>Draft estimate</span></div>
                     <h2>Campaign Proposal</h2>
@@ -141,7 +144,7 @@
                         <flux:button type="button" variant="primary" wire:click="$set('step', 'review')">Review &amp; request</flux:button>
                         <flux:button type="button" variant="outline" wire:click="saveAsPlan">Save campaign plan</flux:button>
                     </div>
-                    <p class="proposal-pane-note">Illustrative preview — not a confirmed quotation or booking.</p>
+                    <p class="proposal-pane-note">Draft estimate — not a confirmed quotation or booking.</p>
                 </div>
             </aside>
         </form>

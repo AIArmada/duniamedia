@@ -12,14 +12,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Checkout Commerce packages
+        run: git clone --depth 1 https://github.com/AIArmada/commerce.git ../commerce
+
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.5'
           coverage: none
+          extensions: pdo_sqlite, sqlite3, gd, intl, zip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Prepare Laravel runtime directories
+        run: mkdir -p bootstrap/cache storage/framework/{cache/data,sessions,views} storage/logs
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Build frontend assets
+        run: |
+          npm ci --ignore-scripts
+          npm run build
 
       - name: Architecture boundaries
         run: composer arch:boundaries

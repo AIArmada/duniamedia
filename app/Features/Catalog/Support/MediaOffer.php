@@ -44,6 +44,12 @@ class MediaOffer
 
     public function displayImage(): string
     {
+        $sourceArtwork = MediaImage::sourceDeckArtwork((string) $this->product->slug);
+
+        if ($sourceArtwork !== null) {
+            return $sourceArtwork;
+        }
+
         $path = 'assets/ratecards/img/'.$this->product->slug.'.webp';
 
         if (is_file(public_path($path))) {

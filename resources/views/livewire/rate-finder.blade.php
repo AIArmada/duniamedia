@@ -130,7 +130,7 @@
                         $channelNames = $section->channels->pluck('name')->join(', ');
                         $names = $section->channels->pluck('owner_party_id')->map(fn ($id) => $ownerNames->get($id))->filter()->unique()->join(', ');
                         $locationLabel = $product->getRelationValue('mediaProfile')?->location_label;
-                        $image = 'assets/ratecards/img/'.$product->slug.'.webp';
+                        $image = \App\Features\Catalog\Support\MediaImage::sourceDeckArtwork((string) $product->slug) ?? 'assets/ratecards/img/'.$product->slug.'.webp';
                         if (! is_file(public_path($image))) {
                             $image = $section->channels->first()?->hero_path;
                         }
@@ -192,8 +192,8 @@
         </section>
     </div>
 
-    <div class="exchange-tray" aria-label="Comparison shortlist">
-        <div class="exchange-tray__title"><x-dm-icon name="layers" :size="25"/><div><strong>Compare list</strong><span>{{ $compared->count() }} of 4 selected</span></div></div>
+    <div class="exchange-tray @if ($compared->isEmpty()) exchange-tray--empty @endif" aria-label="Comparison shortlist">
+        <div class="exchange-tray__title"><x-dm-icon name="layers" :size="25"/><div><strong>Compare list</strong><span aria-live="polite">{{ $compared->count() }} of 4 selected</span></div></div>
         <div class="exchange-tray__items">
             @forelse ($compared as $rate)
                 <div class="exchange-tray-item" wire:key="tray-{{ $rate->id }}"><span><strong>{{ $rate->item }}</strong><small>{{ (float) $rate->price_rm > 0 ? 'RM '.number_format((float) $rate->price_rm, 2) : 'On request' }}</small></span><button type="button" wire:click="toggleComparison('{{ $rate->id }}')" aria-label="Remove {{ $rate->item }} from comparison">×</button></div>

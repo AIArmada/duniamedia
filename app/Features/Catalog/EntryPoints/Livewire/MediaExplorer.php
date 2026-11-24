@@ -109,6 +109,7 @@ class MediaExplorer extends Component
     {
         $query = Product::query()
             ->where('status', 'active')
+            ->where('slug', 'not like', 'demo-creator-%')
             ->whereHas('mediaProfile')
             ->with(['mediaProfile.placement.formats'])
             ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {

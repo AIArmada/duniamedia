@@ -43,7 +43,7 @@
                 <a class="hotfm-detail-link" href="#hotfm-programmes-title"><x-dm-icon name="users" :size="18"/> Meet the presenters ↓</a>
             </div>
             <a class="hotfm-hero__photo" href="#hotfm-programme-bekpes-hot" aria-label="Explore Bekpes Hot on DuniaMedia">
-                <img src="{{ $programmes[0]['image'] }}" alt="Official Bekpes Hot programme artwork" width="1000" height="525" fetchpriority="high" referrerpolicy="no-referrer">
+                <div class="hotfm-show-art hotfm-show-art--hero"><img src="{{ asset($logo) }}" alt="" width="240" height="100"><span>Weekday breakfast</span><strong>Bekpes <em>Hot</em></strong><div class="hotfm-wave" aria-hidden="true">@foreach ([18,32,48,27,63,38,72,44,23,56,36,68,29,42,18,30,48,23] as $height)<i style="--wave-height:{{ $height }}px"></i>@endforeach</div><p>{{ $programmes[0]['hosts'] }}</p></div>
                 <div class="hotfm-hero__programme"><span>Weekday breakfast · 6am–10am</span><strong>Bekpes Hot</strong><span>{{ $programmes[0]['hosts'] }}</span><small>Explore programme ↓</small></div>
             </a>
         </header>
@@ -66,7 +66,7 @@
                 <div class="hotfm-programme-grid">
                     @foreach ($programmes as $programme)
                         <article class="hotfm-programme" id="hotfm-programme-{{ \Illuminate\Support\Str::slug($programme['title']) }}">
-                            <div class="hotfm-programme__image"><img src="{{ $programme['image'] }}" alt="Official {{ $programme['title'] }} artwork" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+                            <div class="hotfm-show-art hotfm-show-art--{{ $loop->index }}"><img src="{{ asset($logo) }}" alt="" width="112" height="47"><span>{{ $programme['time'] }}</span><strong>{{ $programme['title'] }}</strong><div class="hotfm-wave" aria-hidden="true">@foreach ([18,32,48,27,63,38,72,44,23,56,36,68,29,42,18,30,48,23] as $height)<i style="--wave-height:{{ $height }}px"></i>@endforeach</div></div>
                             <div class="hotfm-programme__body">
                                 <span class="hotfm-programme__time">{{ $programme['time'] }}</span>
                                 <h3>{{ $programme['title'] }}</h3>
@@ -78,7 +78,7 @@
                         </article>
                     @endforeach
                 </div>
-                <p class="hotfm-editorial-note">Programme artwork and listings: Hot FM. Host bookings, endorsements and specific integrations require broadcaster approval and a tailored quotation. Listings reviewed {{ $profile['reviewed_on'] }}.</p>
+                <p class="hotfm-editorial-note">Programme details: Hot FM. Host bookings, endorsements and specific integrations require broadcaster approval and a tailored quotation. Listings reviewed {{ $profile['reviewed_on'] }}.</p>
             </div>
 
             <aside class="hotfm-sidebar" aria-label="Programme schedule and digital platforms">
@@ -105,7 +105,7 @@
             <div class="hotfm-campaign-grid">
                 @foreach ($profile['campaigns'] as $campaign)
                     <article class="hotfm-campaign">
-                        <div class="hotfm-campaign__image"><img src="{{ $campaign['image'] }}" alt="{{ $campaign['title'] }} — Media Prima Audio campaign photograph" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+                        <div class="hotfm-campaign-art hotfm-campaign-art--{{ $loop->index }}"><span>{{ $campaign['date'] }}</span><strong>{{ $campaign['metric'] }}</strong><small>{{ $campaign['title'] }}</small></div>
                         <div class="hotfm-campaign__body"><span>{{ $campaign['date'] }}</span><h3>{{ $campaign['title'] }}</h3><strong>{{ $campaign['metric'] }}</strong><p>{{ $campaign['description'] }}</p><a class="hotfm-reference" href="{{ $campaign['source'] }}" target="_blank" rel="noopener noreferrer">Official campaign story ↗</a><a class="hotfm-detail-link" href="#hotfm-commercial-title">Explore similar activations ↓</a></div>
                     </article>
                 @endforeach
@@ -123,7 +123,7 @@
                 <article class="hotfm-feature">
                     <span class="hotfm-eyebrow">Featured sponsorship</span>
                     <h2>Hot FM <em>Zoomerz</em></h2>
-                    <p>A four-week radio and on-ground sponsorship combining station promotions, live crosses, sampling and car branding.</p>
+                    <p>A four-week radio and on-ground sponsorship combining station promotions, live crosses, sampling and car branding.</p><img class="hotfm-zoomerz-photo" src="{{ asset('assets/home/hot-fm-activation.webp') }}" alt="Hot FM Zoomerz on-ground activation, from the broadcaster’s rate-card deck" width="800" height="450" loading="lazy" decoding="async">
                     <div class="hotfm-feature__prices">
                         <div><span>Listed sponsorship investment</span><strong>{{ $money($investment['price']) }}</strong><small>{{ $investment['unit'] ?: 'Package' }} · four weeks</small></div>
                         @if ($investment['price_incl_sst'] !== null)

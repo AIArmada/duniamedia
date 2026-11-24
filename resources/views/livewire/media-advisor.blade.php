@@ -461,6 +461,7 @@
                     <span class="eyebrow">Your strategy starts here</span>
                     <h2>Find the right media mix.</h2>
                     <p>Set your campaign objective, budget and audience in the brief. Generate a strategy to compare three directions, explore media recommendations and refine your shortlist.</p>
+                    <div class="advisor-start-actions"><flux:button type="button" variant="primary" wire:click="generate" wire:loading.attr="disabled" wire:target="generate" icon:trailing="arrow-up-right">Generate strategy</flux:button><p class="tiny muted">Using your current campaign brief and budget.</p></div>
                     <div class="advisor-empty-steps">
                         <div><x-dm-icon name="layers" :size="24"/><strong>Compare scenarios</strong><span>Explore different approaches.</span></div>
                         <div><x-dm-icon name="chart" :size="24"/><strong>Review allocation</strong><span>Understand the channel mix.</span></div>

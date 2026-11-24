@@ -3,10 +3,10 @@
 @section('content')
     @php
         $objectives = [
-            ['Build awareness', 'Get your brand noticed by the right audience.', 'megaphone'],
-            ['Generate leads', 'Attract and capture qualified prospects.', 'users'],
-            ['Launch a product', 'Create demand for your new offering.', 'spark'],
-            ['Grow sales', 'Turn customer interest into action.', 'chart'],
+            ['Build awareness', 'Get your brand noticed by the right audience.', 'megaphone', 'awareness'],
+            ['Generate leads', 'Attract and capture qualified prospects.', 'users', 'leads'],
+            ['Launch a product', 'Create demand for your new offering.', 'spark', 'launch'],
+            ['Grow sales', 'Turn customer interest into action.', 'chart', 'sales'],
         ];
         $capabilities = [
             ['Strategy', 'Insights, audience research and campaign planning.', 'target', 'service-planning', route('services').'#planning'],
@@ -56,11 +56,11 @@
                 <p>Whether you’re building a brand, reaching new customers or driving sales, we’ll help you find the right mix of media, creative and technology.</p>
             </div>
             <div class="connected-objectives">
-                @foreach ($objectives as [$title, $description, $icon])
-                    <article class="connected-objective">
+                @foreach ($objectives as [$title, $description, $icon, $objective])
+                    <a class="connected-objective" href="{{ route('advisor', ['objective' => $objective]) }}">
                         <x-dm-icon :name="$icon" :size="34"/>
-                        <div><h3>{{ $title }}</h3><p>{{ $description }}</p></div>
-                    </article>
+                        <div><h3>{{ $title }}</h3><p>{{ $description }}</p><span class="connected-objective__link">Plan this objective →</span></div>
+                    </a>
                 @endforeach
             </div>
         </section>
