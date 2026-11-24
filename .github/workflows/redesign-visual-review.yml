@@ -23,6 +23,8 @@ jobs:
           node-version: '24'
       - name: Install application and build assets
         run: |
+          mkdir -p bootstrap/cache storage/framework/{cache/data,sessions,views} storage/logs
+          cp .env.example .env
           composer install --prefer-dist --no-interaction --no-progress
           npm ci --ignore-scripts
           npm run build
@@ -30,7 +32,6 @@ jobs:
         env:
           ADMIN_PASSWORD: review-only-password
         run: |
-          cp .env.example .env
           touch database/database.sqlite
           php artisan key:generate --force
           php artisan migrate --seed --force
