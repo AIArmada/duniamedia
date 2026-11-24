@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Features\Catalog\Models\RateCardEntry;
+use App\Features\Catalog\Models\RateCardSection;
 use App\Features\Identity\Models\User;
 use App\Features\Sales\Support\CampaignPlans;
 use Database\Seeders\MediaCatalogueSeeder;
@@ -28,7 +29,7 @@ class RatePlanTest extends TestCase
         $this->withSession(['_token' => 'test-token']);
 
         $entry = RateCardEntry::query()
-            ->whereNotNull('section_id')
+            ->whereHas('rateSection', fn ($query) => $query->where('key', '!=', RateCardSection::MEDIA_VALUE_KEY))
             ->where('price_rm', '>', 0)
             ->firstOrFail();
 
@@ -69,5 +70,42 @@ class RatePlanTest extends TestCase
         $this->get('/rates?q='.urlencode($entry->item))
             ->assertOk()
             ->assertSee($entry->item);
+    }
+
+    public function test_hot_fm_media_value_is_not_a_purchasable_rate(): void
+    {
+        $this->seed(MediaCatalogueSeeder::class);
+        $this->seed(RateCardContentSeeder::class);
+        $reference = RateCardEntry::query()->whereHas('rateSection', fn ($query) => $query->where('key', RateCardSection::MEDIA_VALUE_KEY))->firstOrFail();
+        $investment = RateCardEntry::query()->whereHas('rateSection', fn ($query) => $query->where('key', 'zoomerz-sponsorship-media-investment'))->firstOrFail();
+
+        foreach (['/media/owners/media-prima/hot-fm', '/media/channels/media-prima-hot-fm'] as $url) {
+            $this->get($url)
+                ->assertOk()
+                ->assertSee('Get heard.')
+                ->assertSee('RM 100,000')
+                ->assertSee('RM 108,000')
+                ->assertSee('Media value — reference only')
+                ->assertSee(route('plans.rate.add', $investment->id), false)
+                ->assertDontSee(route('plans.rate.add', $reference->id), false);
+        }
+
+        $this->get('/offers/hot-fm-zoomerz-on-ground')
+            ->assertOk()
+            ->assertDontSee(route('plans.rate.add', $reference->id), false);
+
+        $this->get('/rates?q='.urlencode($reference->item))
+            ->assertOk()
+            ->assertDontSee(route('plans.rate.add', $reference->id), false);
+
+        $this->withSession(['_token' => 'test-token']);
+        $this->post(route('plans.rate.add', $reference->id), ['_token' => 'test-token'])->assertNotFound();
+        $this->assertNull(session('campaign-plan-draft'));
+
+        $this->post(route('plans.rate.add', $investment->id), ['_token' => 'test-token'])->assertRedirect();
+        $plans = app(CampaignPlans::class);
+        $plan = $plans->find((string) session('campaign-plan-draft'));
+        $this->assertNotNull($plan);
+        $this->assertSame(10000000, $plans->summary($plan)['subtotal']);
     }
 }
