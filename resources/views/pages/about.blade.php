@@ -29,7 +29,6 @@
                     <p>We bring ideas to life, connect them with the right audiences and make them matter — across screens, spaces, platforms and communities.</p>
                     <a href="#our-story" class="about-story-link"><span class="about-story-link__circle" aria-hidden="true">↓</span> Discover our story</a>
                 </div>
-                <span class="about-hero__caption">Concept imagery · Kuala Lumpur</span>
             </div>
         </section>
 
@@ -38,13 +37,10 @@
                 <figure class="about-album">
                     <div class="about-album__print about-album__print--early">
                         <img src="{{ asset('assets/img/ra-about-event.webp') }}" alt="Illustration of an early film production setup" loading="lazy" decoding="async">
-                        <span>Where it all began</span>
                     </div>
                     <div class="about-album__print about-album__print--today">
                         <img src="{{ asset('assets/img/about-story-live.jpg') }}" alt="Illustration of a contemporary live broadcast crew" loading="lazy" decoding="async">
-                        <span>The world grows wider</span>
                     </div>
-                    <figcaption>Illustrative scenes inspired by our journey, not archival photographs.</figcaption>
                 </figure>
                 <div class="about-story__intro">
                     <span class="about-kicker">Our journey</span>
@@ -167,7 +163,6 @@
                         @endforeach
                     </div>
                 </details>
-                <p class="about-client-source">Client names and service counts are drawn from RA Media's company profile. Explore our campaign archive for documented work and placements.</p>
             </div>
         </section>
 
@@ -186,7 +181,6 @@
                         <a class="about-link about-link--light" href="{{ route('advisor') }}">Find your starting point <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
-                <span class="about-future__caption">Concept imagery</span>
             </div>
         </section>
 

@@ -21,7 +21,6 @@
                 <p>Tell us what you have in mind.<br>We'll help you find the right way forward.</p>
                 <a class="contact-hero__link" href="#enquiry"><span aria-hidden="true">↓</span> Start a conversation</a>
             </div>
-            <span class="contact-image-caption">Illustrative studio scene</span>
         </div>
     </section>
 
@@ -101,7 +100,6 @@
                     <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}"
                         srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1280]) }}"
                         sizes="(max-width: 900px) 90vw, 35vw" alt="Coffee, notebooks and creative contact sheets on a studio table" loading="lazy" decoding="async">
-                    <figcaption>Every idea starts somewhere. · Illustrative imagery</figcaption>
                 </figure>
             </aside>
         </div>
@@ -142,7 +140,6 @@
             <img src="{{ asset('assets/img/about-editorial-kl.jpg') }}"
                 srcset="{{ asset('assets/img/about-editorial-kl-mobile.jpg') }} 760w, {{ asset('assets/img/about-editorial-kl.jpg') }} 1672w"
                 sizes="(max-width: 900px) 100vw, 52vw" width="1672" height="941" alt="Illustration of Kuala Lumpur's skyline at sunset" loading="lazy" decoding="async">
-            <figcaption>Kuala Lumpur, Malaysia · Illustrative city scene</figcaption>
         </figure>
         <div class="contact-office__copy">
             <span class="contact-kicker">Our office</span>
