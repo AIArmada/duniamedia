@@ -2,288 +2,210 @@
 
 @section('content')
     @php
+        $directory = \App\Features\Catalog\Support\MediaDirectory::class;
+        $image = \App\Features\Catalog\Support\MediaImage::class;
+        $hot = json_decode(file_get_contents(resource_path('data/hot-fm-profile.json')), true, flags: JSON_THROW_ON_ERROR);
         $mediums = [
-            ['title' => 'Outdoor & DOOH', 'copy' => 'Billboards, LED and transit where your audience already moves.', 'image' => 'assets/img/v2/medium-outdoor.webp', 'medium' => 'Outdoor', 'class' => 'anchor', 'icon' => 'billboard'],
-            ['title' => 'TV & Broadcast', 'copy' => 'Free-to-air, pay-TV, news and studio formats that build mass reach.', 'image' => 'assets/img/v2/medium-tv.webp', 'medium' => 'TV & Broadcast', 'class' => 'medium', 'icon' => 'tv'],
-            ['title' => 'Radio & Audio', 'copy' => 'Drive-time, music and talk formats with loyal, local listeners.', 'image' => 'assets/img/v2/medium-radio.webp', 'medium' => 'Radio', 'class' => 'medium', 'icon' => 'radio'],
-            ['title' => 'Digital & Publishing', 'copy' => 'Display, video, editorial and social for precise, measurable reach.', 'image' => 'assets/img/v2/medium-digital.webp', 'medium' => 'Digital', 'class' => 'small', 'icon' => 'digital'],
-            ['title' => 'Print & Publishing', 'copy' => 'Newspapers, magazines and advertorials with lasting context.', 'image' => 'assets/img/v2/medium-print.webp', 'medium' => 'Print', 'class' => 'small', 'icon' => 'print'],
-            ['title' => 'Creators & Talent', 'copy' => 'Voices and communities that make a message feel native.', 'image' => 'assets/img/v2/medium-creators.webp', 'medium' => 'Creators', 'class' => 'small', 'icon' => 'creators'],
-            ['title' => 'Custom Spaces', 'copy' => 'Retail, in-premise and unexpected places turned into media.', 'image' => 'assets/img/v2/medium-spaces.webp', 'medium' => 'Indoor', 'class' => 'small', 'icon' => 'spaces'],
+            ['TV', 'TV & Broadcast', 'tv'], ['Radio', 'Radio', 'radio'], ['Outdoor', 'Outdoor', 'billboard'],
+            ['Digital', 'Digital', 'digital'], ['Print', 'Print', 'print'], ['Creators', 'Creators', 'users'], ['Custom spaces', 'Indoor', 'spaces'],
         ];
-
-        $heroFeature = $featuredWork->first();
-        $supportWork = $featuredWork->slice(1, 3);
-
-        $personas = [
-            ['title' => 'Brands & advertisers', 'copy' => 'Find suitable media, then a team that can execute around it.', 'cta' => 'Plan a campaign', 'url' => route('advisor'), 'image' => 'assets/img/v2/persona-brand.webp'],
-            ['title' => 'Media & property owners', 'copy' => 'Explore the advertising potential of the space you manage.', 'cta' => 'List your space', 'url' => route('assets.join'), 'image' => 'assets/img/v2/persona-owner.webp'],
-            ['title' => 'Creators & talent', 'copy' => 'Access collaborations, production support and growth.', 'cta' => 'Join the network', 'url' => route('creators.join'), 'image' => 'assets/img/v2/persona-creator.webp'],
-            ['title' => 'Business & training teams', 'copy' => 'Make AI and technology genuinely useful at work.', 'cta' => 'Explore training', 'url' => route('academy'), 'image' => 'assets/img/v2/persona-training.webp'],
+        $tools = [
+            ['Media Explorer', 'Discover channels and advertising opportunities.', 'compass', 'media.index'],
+            ['Media Rate Exchange', 'Compare indicative rates and formats.', 'layers', 'rates.index'],
+            ['Media Strategy Studio', 'Find a media mix for your brief and budget.', 'chart', 'advisor'],
+            ['Campaign Plans', 'Save and organise your shortlisted media.', 'briefcase', 'plans.index'],
+            ['Proposal Studio', 'Build a proposal and request a quotation.', 'document', 'quote.builder'],
         ];
+        $brands = [
+            ['owner' => 'media-prima', 'channel' => 'hot-fm', 'label' => 'Radio · Personality-led campaigns', 'icon' => 'radio', 'accent' => '#d71938'],
+            ['owner' => 'media-prima', 'channel' => 'tv3', 'label' => 'TV · News & entertainment', 'icon' => 'tv', 'accent' => '#3154ba'],
+            ['owner' => 'media-prima', 'channel' => 'big-tree', 'label' => 'Outdoor · Landmark locations', 'icon' => 'billboard', 'accent' => '#178264'],
+            ['owner' => 'karangkraf', 'channel' => 'sinar-harian', 'label' => 'Print · Digital news', 'icon' => 'print', 'accent' => '#bd202d'],
+        ];
+        $ownerSlugs = ['media-prima', 'astro', 'rtm', 'bernama', 'star-media-group', 'karangkraf', 'klia', 'al-hijrah'];
+        $money = static fn ($price): string => 'RM '.number_format((float) $price, fmod((float) $price, 1.0) === 0.0 ? 0 : 2);
     @endphp
 
-    <section class="home-hero" aria-labelledby="home-title">
-        <div class="container home-hero__inner">
-            <div class="home-hero__copy">
-                <span class="eyebrow">Media · Creative · Technology</span>
-                <h1 id="home-title">Every medium.<br>One <span class="editorial">connected</span> campaign.</h1>
-                <p class="home-hero__lede">From television and radio to outdoor media, digital platforms, creators and custom spaces, Dunia Media helps brands find the right places to be seen. We also connect the strategy, production and technology that turn attention into meaningful action.</p>
-                <div class="home-hero__actions">
-                    <a class="button button--primary" href="{{ route('advisor') }}">Plan your campaign <span aria-hidden="true">↗</span></a>
-                    <a class="button button--secondary" href="{{ route('media.index') }}">Explore media</a>
-                </div>
-            </div>
-
-            <div class="home-hero__art" data-hero-art aria-label="A connected media world">
-                <svg class="hero-ribbon" data-hero-ribbon viewBox="0 0 520 300" fill="none" aria-hidden="true">
-                    <path d="M14 244C90 176 126 78 236 62c86-13 156 32 210 104" stroke="#D3A071" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 7"/>
-                </svg>
-                <figure class="hero-shot hero-shot--main" data-hero-shot="main">
-                    <picture>
-                        <source media="(max-width: 760px)" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/hero-city-mobile-bg.webp', [480, 640, 960]) }}" sizes="100vw">
-                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/hero-city.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/hero-city.webp', [640, 960, 1536]) }}" sizes="(max-width: 1024px) 100vw, 46vw" alt="Kuala Lumpur city street at dusk with a large digital billboard and pedestrians" width="1536" height="1024" fetchpriority="high" decoding="async">
-                    </picture>
-                    <figcaption>Outdoor · LED</figcaption>
-                </figure>
-                <figure class="hero-shot hero-shot--top" data-hero-shot="top">
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-tv.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-tv.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 42vw, 22vw" alt="Television studio with a presenter and camera crew" width="1536" height="1024" loading="lazy" decoding="async">
-                    <figcaption>Broadcast</figcaption>
-                </figure>
-                <figure class="hero-shot hero-shot--bottom" data-hero-shot="bottom">
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1280]) }}" sizes="(max-width: 760px) 48vw, 24vw" alt="Creator filming a product story at home" width="1536" height="1024" loading="lazy" decoding="async">
-                    <figcaption>Creators</figcaption>
-                </figure>
-            </div>
-
-            <div class="home-hero__utility">
-                <a href="{{ route('media.index') }}"><span aria-hidden="true">01</span> Find media</a>
-                <a href="{{ route('work.index') }}"><span aria-hidden="true">02</span> See real campaigns</a>
-                <a href="{{ route('contact') }}"><span aria-hidden="true">03</span> Talk to the team</a>
-            </div>
-        </div>
-    </section>
-
-    @if ($trustClients->isNotEmpty())
-        <section class="trust-strip" aria-label="Selected clients">
-            <div class="container trust-strip__inner">
-                <div class="trust-strip__intro">
-                    <strong>Trusted across sectors</strong>
-                    <p>Government institutions, national agencies and Malaysian brands — drawn from the RA Media archive.</p>
-                </div>
-                <div class="trust-strip__logos">
-                    @foreach ($trustClients as $client)
-                        <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View work for {{ $client['name'] }}">
-                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
-                        </a>
+    <div class="market-home">
+        <section class="market-hero" aria-labelledby="home-title">
+            <div class="market-hero__copy">
+                <span class="eyebrow">Malaysia’s media landscape, in one place</span>
+                <h1 id="home-title">Discover, compare &amp;<br class="market-desktop-break"> plan media in Malaysia.</h1>
+                <p>Find the right media owners, channels, personalities and advertising opportunities. Explore real campaigns, compare rates and build a plan with confidence.</p>
+                <form method="GET" action="{{ route('search') }}" class="market-search" role="search">
+                    <label class="sr-only" for="home-search">Search DuniaMedia</label>
+                    <x-dm-icon name="search" :size="23"/>
+                    <input id="home-search" name="q" type="search" placeholder="Search media, owners, programmes or rates…" autocomplete="off" required>
+                    <button type="submit" aria-label="Search"><x-dm-icon name="search" :size="22"/></button>
+                </form>
+                <nav class="market-quick" aria-label="Quick media filters">
+                    <span>Quick explore</span><a href="{{ route('media.owners') }}">Media owners</a>
+                    @foreach ($mediums as [$label, $medium, $icon])
+                        <a href="{{ route('media.index', ['medium' => $medium]) }}">{{ $label }}</a>
                     @endforeach
-                </div>
-                <a class="text-link" href="{{ route('work.index') }}">See our work <span aria-hidden="true">→</span></a>
+                    <a href="{{ route('rates.index') }}">Rates</a>
+                </nav>
+            </div>
+            <div class="market-hero__brands" aria-label="Explore media brands">
+                @foreach ($brands as $brand)
+                    @php($channel = $directory::channel($brand['owner'], $brand['channel']))
+                    @if ($channel)
+                        <a class="market-hero-brand" style="--brand-accent:{{ $brand['accent'] }}" href="{{ route('media.channel', [$brand['owner'], $brand['channel']]) }}">
+                            <div class="market-hero-brand__visual">
+                                <x-dm-icon :name="$brand['icon']" :size="76"/>
+                                @if (! empty($channel['logo']))
+                                    <img src="{{ $image::url('assets/partners/'.$channel['logo']) }}" alt="{{ $channel['name'] }}" width="180" height="80" decoding="async">
+                                @else
+                                    <strong>{{ $channel['name'] }}</strong>
+                                @endif
+                            </div>
+                            <div class="market-hero-brand__body"><div><strong>{{ $channel['name'] }}</strong><span>{{ $brand['label'] }}</span></div><x-dm-icon name="arrow" :size="21"/></div>
+                        </a>
+                    @endif
+                @endforeach
             </div>
         </section>
-    @endif
 
-    <section class="section section--cream" aria-labelledby="mediums-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">The media world, connected</span>
-                    <h2 id="mediums-title" class="section-title">Choose the right medium for the audience.</h2>
-                    <p>Seven ways in, one coordinated plan. Explore the media landscape by medium, then let us connect the right mix around your objective.</p>
-                </div>
-                <div class="section-heading__aside">
-                    <a class="text-link" href="{{ route('media.index') }}">Browse all media <span aria-hidden="true">→</span></a>
-                </div>
-            </div>
+        <nav class="market-tools" aria-label="Campaign workspaces">
+            @foreach ($tools as [$title, $copy, $icon, $route])
+                <a class="market-tool" href="{{ route($route) }}"><span class="market-icon"><x-dm-icon :name="$icon" :size="28"/></span><div><strong>{{ $title }}</strong><p>{{ $copy }}</p></div><span class="market-arrow" aria-hidden="true">→</span></a>
+            @endforeach
+        </nav>
 
-            <div class="medium-mosaic">
-                @foreach ($mediums as $medium)
-                    <a class="medium-tile medium-tile--{{ $medium['class'] }}" href="{{ route('media.index', ['medium' => $medium['medium']]) }}">
-                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($medium['image']) }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($medium['image'], [480, 960, 1536]) }}" sizes="(max-width: 560px) 92vw, (max-width: 900px) 46vw, (max-width: 1180px) 30vw, 33vw" alt="" loading="lazy" decoding="async">
-                        <span class="medium-tile__icon"><x-dm-icon :name="$medium['icon']" :size="19"/></span>
-                        <span class="medium-tile__arrow" aria-hidden="true">↗</span>
-                        <span class="medium-tile__body">
-                            <strong>{{ $medium['title'] }}</strong>
-                            <small>{{ $medium['copy'] }}</small>
-                        </span>
-                    </a>
+        <section class="market-section" aria-labelledby="market-owners-title">
+            <header class="market-heading"><div><h2 id="market-owners-title">Explore Malaysia’s media landscape.</h2><p>Broadcasters, publishers and networks — find the brands behind the media.</p></div><a href="{{ route('media.owners') }}">View all media owners →</a></header>
+            <div class="market-owner-grid">
+                @foreach ($ownerSlugs as $slug)
+                    @php($owner = $directory::owner($slug))
+                    @if ($owner)
+                        <a class="market-owner" href="{{ route('media.owner', $slug) }}">
+                            @if (! empty($owner['logo']))
+                                <img src="{{ $image::url('assets/partners/'.$owner['logo']) }}" alt="" width="130" height="55" loading="lazy" decoding="async">
+                            @endif
+                            <strong>{{ $owner['mark'] ?? $owner['name'] }}</strong><span>{{ count($owner['channels']) }} listed channels</span>
+                        </a>
+                    @endif
                 @endforeach
             </div>
-        </div>
-    </section>
-
-    <section class="section process process--image" data-process aria-labelledby="process-title">
-        <div class="process__bg" aria-hidden="true"><img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/process-bg.webp') }}" alt="" loading="lazy" decoding="async"></div>
-        <div class="container process__inner">
-            <div class="process__intro">
-                <span class="eyebrow eyebrow--pale">Not just placement</span>
-                <h2 id="process-title" class="section-title">A campaign is a system, not a slot.</h2>
-                <p>We connect the brief, the creative, the media and the follow-up — so each part makes the next one work harder.</p>
-                <a class="button button--on-dark" href="{{ route('solutions') }}">See how it fits together <span aria-hidden="true">↗</span></a>
-            </div>
-            <div class="process__steps">
-                <svg class="process__thread" viewBox="0 0 1200 2" preserveAspectRatio="none" aria-hidden="true">
-                    <path data-process-line d="M0 1H1200" pathLength="1"/>
-                </svg>
-                @foreach ([
-                    ['Understand', 'Audience, objective, constraints and what success actually means.', 'Brief excerpt'],
-                    ['Create', 'A creative idea built for the channel, not adapted after the fact.', 'Creative frame'],
-                    ['Place', 'The right media mix, formats, timing and negotiated conditions.', 'Media plan'],
-                    ['Engage', 'Creator content, activations and experiences that invite a response.', 'Campaign moment'],
-                    ['Convert', 'Landing pages, lead capture and follow-up workflows that keep momentum.', 'Landing page'],
-                    ['Learn', 'Measurement, reporting and the next round of decisions.', 'Performance note'],
-                ] as $i => $step)
-                    <article class="process-step">
-                        <span class="process-step__number">0{{ $i + 1 }}</span>
-                        <h3>{{ $step[0] }}</h3>
-                        <p>{{ $step[1] }}</p>
-                        <small>{{ $step[2] }}</small>
-                    </article>
+            <nav class="market-mediums" aria-label="Browse by medium">
+                @foreach ($mediums as [$label, $medium, $icon])
+                    <a href="{{ route('media.index', ['medium' => $medium]) }}"><x-dm-icon :name="$icon" :size="22"/>{{ $label }}<span aria-hidden="true">→</span></a>
                 @endforeach
+            </nav>
+        </section>
+
+        <section class="market-section" aria-labelledby="market-intelligence-title">
+            <header class="market-heading"><div><h2 id="market-intelligence-title">What actually sells attention.</h2><p>Discover the audiences, personalities, programmes and places behind the placements.</p></div><a href="{{ route('insights') }}">Media insights →</a></header>
+            <div class="market-intelligence">
+                <article class="market-intel market-intel--radio">
+                    <div class="market-intel__visual"><img src="{{ $image::url('assets/partners/mp-hotfm-v2.png') }}" alt="Hot FM" width="150" height="65" loading="lazy"><x-dm-icon name="radio" :size="72"/></div>
+                    <div class="market-intel__body"><span class="market-kicker">Radio audience</span><h3>Hot FM</h3><strong>{{ $hot['audience']['value'] }} weekly listeners</strong><p>{{ $hot['audience']['method'] }}</p><a href="{{ route('media.channel', ['media-prima', 'hot-fm']) }}">Explore Hot FM →</a><a class="market-source" href="{{ $hot['audience']['source'] }}" target="_blank" rel="noopener noreferrer">Source: Media Prima Audio ↗</a></div>
+                </article>
+                <article class="market-intel market-intel--programme">
+                    <div class="market-intel__visual"><span>Bekpes<br><em>Hot</em></span><x-dm-icon name="users" :size="72"/></div>
+                    <div class="market-intel__body"><span class="market-kicker">Programme &amp; personalities</span><h3>{{ $hot['programmes'][0]['title'] }}</h3><strong>{{ $hot['programmes'][0]['hosts'] }}</strong><p>Weekday breakfast · {{ $hot['programmes'][0]['time'] }}. Explore programme sponsorship and branded conversations.</p><a href="{{ route('media.channel', ['media-prima', 'hot-fm']) }}#hotfm-programme-bekpes-hot">Meet the presenters →</a></div>
+                </article>
+                <article class="market-intel market-intel--tv">
+                    <div class="market-intel__visual"><img src="{{ $image::url('assets/partners/mp-tv3.png') }}" alt="TV3" width="150" height="65" loading="lazy"><x-dm-icon name="tv" :size="72"/></div>
+                    <div class="market-intel__body"><span class="market-kicker">Television</span><h3>TV3</h3><strong>News, drama &amp; entertainment</strong><p>Explore television spots, studio formats, programme integrations and sponsorships.</p><a href="{{ route('media.channel', ['media-prima', 'tv3']) }}">Explore TV3 →</a></div>
+                </article>
+                <article class="market-intel market-intel--outdoor">
+                    <div class="market-intel__visual"><img src="{{ $image::url('assets/partners/mp-bigtree.png') }}" alt="Big Tree" width="150" height="65" loading="lazy"><x-dm-icon name="billboard" :size="72"/></div>
+                    <div class="market-intel__body"><span class="market-kicker">Out-of-home</span><h3>Big Tree</h3><strong>Landmark advertising locations</strong><p>Discover outdoor formats and placement opportunities including KLCC and KL Sentral.</p><a href="{{ route('media.channel', ['media-prima', 'big-tree']) }}">Explore Big Tree →</a></div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    @if ($heroFeature)
-        <section class="section" aria-labelledby="work-title">
-            <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <span class="eyebrow">Featured work</span>
-                        <h2 id="work-title" class="section-title">Proof from real campaigns.</h2>
-                        <p>Television, radio, outdoor and production work drawn from the RA Media archive — not stock case studies.</p>
-                    </div>
-                    <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('work.index') }}">Explore the archive <span aria-hidden="true">→</span></a>
-                    </div>
-                </div>
-
-                <div class="featured-work">
-                    <a class="work-feature" href="{{ route('work.index', ['client' => $heroFeature['client']]) }}#archive">
-                        @if ($heroFeature['cover'])
-                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($heroFeature['cover']) }}" alt="A frame from {{ $heroFeature['title'] }}" loading="eager" decoding="async">
-                        @else
-                            <img src="{{ asset('assets/img/v2/medium-tv.webp') }}" alt="" loading="lazy" decoding="async">
-                        @endif
-                        <div class="work-feature__body">
-                            <div class="work-feature__meta">
-                                <span>{{ $heroFeature['client_name'] }}</span>
-                                <span>{{ $heroFeature['channel'] }}</span>
-                                <span>{{ $heroFeature['year'] }}</span>
-                            </div>
-                            <h3>{{ $heroFeature['title'] }}</h3>
-                            <p>{{ $heroFeature['description'] }}</p>
-                            <span class="text-link text-link--dark" style="margin-top:0.8rem">View this work <span aria-hidden="true">↗</span></span>
-                        </div>
-                    </a>
-
-                    <div class="work-support">
-                        @foreach ($supportWork as $work)
-                            <a class="work-support__item" href="{{ route('work.index', ['client' => $work['client']]) }}#archive">
-                                <span class="work-support__thumb">
+        @if ($featuredWork->isNotEmpty() || $trustClients->isNotEmpty())
+            <section class="market-section" aria-labelledby="market-work-title">
+                <header class="market-heading"><div><h2 id="market-work-title">Proof from real campaigns.</h2><p>Selected client work from the RA Media archive.</p></div><a href="{{ route('work.index') }}">Explore our work →</a></header>
+                @if ($featuredWork->isNotEmpty())
+                    <div class="market-work-grid">
+                        @foreach ($featuredWork->take(3) as $work)
+                            <a class="market-work-card" href="{{ route('work.index', ['client' => $work['client']]) }}#archive">
+                                <div class="market-work-card__visual">
                                     @if ($work['cover'])
-                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($work['cover']) }}" alt="" loading="lazy" decoding="async">
+                                        <img src="{{ $image::url($work['cover']) }}" alt="" loading="lazy" decoding="async">
                                     @elseif ($work['client_logo'])
-                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($work['client_logo']) }}" alt="" loading="lazy" decoding="async" style="object-fit:contain;padding:0.4rem">
+                                        <img class="market-work-card__logo" src="{{ $image::url($work['client_logo']) }}" alt="" loading="lazy" decoding="async">
+                                    @else
+                                        <x-dm-icon name="camera" :size="56"/>
                                     @endif
-                                </span>
-                                <span>
-                                    <span class="work-support__client">{{ $work['client_name'] }}</span>
-                                    <h3>{{ $work['title'] }}</h3>
-                                    <p>{{ $work['channel'] }} · {{ $work['year'] }}</p>
-                                </span>
+                                </div>
+                                <div class="market-work-card__body"><span class="market-kicker">{{ $work['channel'] ?? $work['medium'] }} @if ($work['year']) · {{ $work['year'] }} @endif</span><h3>{{ $work['title'] }}</h3><strong>{{ $work['client_name'] }}</strong><p>{{ \Illuminate\Support\Str::limit((string) $work['description'], 140) }}</p><span class="market-link">View archive →</span></div>
                             </a>
                         @endforeach
                     </div>
+                @endif
+                @if ($trustClients->isNotEmpty())
+                    <div class="market-client-strip"><strong>Selected clients from our archive</strong><div>
+                        @foreach ($trustClients as $client)
+                            <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="Work for {{ $client['name'] }}"><img src="{{ $image::url($client['logo']) }}" alt="{{ $client['name'] }}" width="100" height="48" loading="lazy"></a>
+                        @endforeach
+                    </div></div>
+                @endif
+            </section>
+        @endif
+
+        <section class="market-section" aria-labelledby="market-rates-title">
+            <header class="market-heading"><div><h2 id="market-rates-title">Compare opportunities, not just impressions.</h2><p>Indicative catalogue rates, clear formats and real buying options.</p></div><a href="{{ route('rates.index') }}">Open Rate Exchange →</a></header>
+            <div class="market-rates">
+                <aside class="market-rates__intro"><span class="market-icon"><x-dm-icon name="layers" :size="32"/></span><h3>Media Rate Exchange</h3><p>Compare actual rate lines from available media decks, then build your shortlist.</p><a href="{{ route('rates.index') }}">Compare rates →</a></aside>
+                <div class="market-rates__content">
+                    <nav class="market-rate-filters" aria-label="Filter rates in Rate Exchange">
+                        @foreach (array_slice($mediums, 0, 6) as [$label, $medium, $icon])
+                            <a href="{{ route('rates.index', ['medium' => $medium]) }}">{{ $label }} →</a>
+                        @endforeach
+                    </nav>
+                    @if ($ratePreview !== [])
+                        <div class="market-rate-table">
+                            <div class="market-rate-head" aria-hidden="true"><span>Placement</span><span>Indicative rate</span><span>Unit</span><span>Action</span></div>
+                            @foreach ($ratePreview as $rate)
+                                <article class="market-rate-row">
+                                    <div><span class="market-kicker">{{ $rate->channelName ?? $rate->channelMedium }}</span><a href="{{ route('offers.show', $rate->productSlug) }}">{{ $rate->item }}</a><small>{{ $rate->productName }}</small></div>
+                                    <strong>{{ $money($rate->price) }}</strong><span class="market-rate-unit">{{ $rate->unit ?? 'Per placement' }}</span>
+                                    <form method="POST" action="{{ route('plans.rate.add', $rate->id) }}">@csrf<button class="market-primary" type="submit" aria-label="Add {{ $rate->item }} to plan">+ Add to plan</button></form>
+                                </article>
+                            @endforeach
+                        </div>
+                    @else
+                        <div class="market-empty"><strong>Find a rate that fits your brief.</strong><p>Browse the rate catalogue or ask our team for a current quotation.</p><a href="{{ route('rates.index') }}">Browse rates →</a></div>
+                    @endif
+                    <p class="market-note">Published rate-card examples, not confirmed availability or final quotations. Taxes, validity and applicable terms are confirmed with the media owner.</p>
                 </div>
             </div>
         </section>
-    @endif
 
-    <section class="section section--cream" aria-labelledby="personas-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">One opportunity, many ways in</span>
-                    <h2 id="personas-title" class="section-title">Where do you want to go next?</h2>
-                </div>
-            </div>
-            <div class="persona-grid">
-                @foreach ($personas as $persona)
-                    <a class="persona" href="{{ $persona['url'] }}">
-                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($persona['image']) }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset($persona['image'], [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 24vw" alt="" loading="lazy" decoding="async">
-                        <span class="persona__body">
-                            <h3>{{ $persona['title'] }}</h3>
-                            <p>{{ $persona['copy'] }}</p>
-                            <span>{{ $persona['cta'] }} <span aria-hidden="true">↗</span></span>
-                        </span>
-                    </a>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    @if ($media->isNotEmpty())
-        <section class="section" aria-labelledby="media-preview-title">
-            <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <span class="eyebrow">Media discovery</span>
-                        <h2 id="media-preview-title" class="section-title">A first look at what's possible.</h2>
-                        <p>Selected opportunities across broadcast, outdoor, digital, creators and custom spaces. Rates and availability are verified with the media owner before any booking.</p>
-                    </div>
-                    <div class="section-heading__aside">
-                        <a class="text-link" href="{{ route('media.index') }}">Open the media catalogue <span aria-hidden="true">→</span></a>
-                    </div>
-                </div>
-                <div class="media-grid">
-                    @foreach ($media as $item)
-                        <x-media-card :item="$item"/>
+        @if ($media->isNotEmpty())
+            <section class="market-section" aria-labelledby="market-offers-title">
+                <header class="market-heading"><div><h2 id="market-offers-title">Featured advertising opportunities.</h2><p>Browse available catalogue listings and source decks.</p></div><a href="{{ route('media.index') }}">Explore all media →</a></header>
+                <div class="market-offers">
+                    @foreach ($media->take(4) as $item)
+                        <article class="market-offer"><span class="market-kicker">{{ $item->medium ?? 'Media' }}</span><h3><a href="{{ route('offers.show', $item->slug) }}">{{ $item->name }}</a></h3><p>{{ \Illuminate\Support\Str::limit((string) $item->summary, 120) }}</p><a class="market-link" href="{{ route('offers.show', $item->slug) }}">View opportunity →</a></article>
                     @endforeach
                 </div>
-                <p class="tiny muted" style="margin-top:1.25rem">Indicative inventory only. No availability, rate or media owner relationship is confirmed until verified by our team.</p>
+            </section>
+        @endif
+
+        <section class="market-section" aria-labelledby="market-process-title">
+            <header class="market-heading"><div><h2 id="market-process-title">From discovery to launch.</h2><p>Research, shortlist, plan and execute with the right media mix.</p></div><a href="{{ route('solutions') }}">Our connected solutions →</a></header>
+            <div class="market-steps">
+                @foreach ([['Discover', 'Find media and audiences.', 'search', 'media.index'], ['Compare', 'Review rates, formats and fit.', 'layers', 'rates.index'], ['Plan', 'Build a campaign around your brief.', 'calendar', 'advisor'], ['Launch', 'Request a proposal and execute.', 'megaphone', 'quote.builder']] as [$title, $copy, $icon, $route])
+                    <a href="{{ route($route) }}"><span class="market-icon"><x-dm-icon :name="$icon" :size="27"/></span><div><strong>{{ $title }}</strong><p>{{ $copy }}</p></div><span aria-hidden="true">→</span></a>
+                @endforeach
             </div>
         </section>
-    @endif
 
-    <section class="section section--cream" aria-labelledby="academy-title">
-        <div class="container">
-            <div class="feature-split">
-                <figure class="feature-split__media">
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A facilitator leading a hands-on workshop with a small team" width="1536" height="1024" loading="lazy" decoding="async">
-                    <figcaption>Practical workshops, built around real workflows.</figcaption>
-                </figure>
-                <div class="feature-split__body">
-                    <span class="eyebrow">Dunia Media Academy</span>
-                    <h2 id="academy-title" class="section-title">AI changes what a team can do when it becomes part of how they work.</h2>
-                    <p>Our sessions move past the demo. Teams bring a real task, learn the tools in context, and leave with something useful — a workflow, a piece of content, a clearer decision.</p>
-                    <ul class="feature-list">
-                        <li>Introductory talks for leaders and wider teams</li>
-                        <li>Hands-on workshops for marketing, content and operations</li>
-                        <li>Custom programmes built around your tools and objectives</li>
-                    </ul>
-                    <a class="button button--primary" href="{{ route('academy') }}">Explore training <span aria-hidden="true">↗</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="market-academy" aria-labelledby="market-academy-title">
+            <div class="market-academy__art" aria-hidden="true"><span><x-dm-icon name="spark" :size="44"/></span><span><x-dm-icon name="chart" :size="44"/></span><span><x-dm-icon name="camera" :size="44"/></span><span><x-dm-icon name="code" :size="44"/></span><strong>DuniaMedia<br>Academy</strong></div>
+            <div><span class="eyebrow">Learn by doing</span><h2 id="market-academy-title">DuniaMedia Academy</h2><p>Practical AI, media planning, content and marketing workshops for teams and professionals.</p><a class="market-primary" href="{{ route('academy') }}">Explore training →</a><a class="market-link" href="{{ route('services') }}">Creative &amp; technology services →</a></div>
+        </section>
 
-    <section class="section" aria-labelledby="cta-title">
-        <div class="container">
-            <div class="cta-panel cta-panel--media">
-                <div class="cta-panel__copy">
-                    <span class="eyebrow">Start with a conversation</span>
-                    <h2 id="cta-title">Tell us where you want your brand to go.</h2>
-                    <p>Share your audience, objective and rough budget. We'll help you see which media and creative ideas make sense together.</p>
-                    <div class="cta-panel__actions">
-                        <a class="button button--primary" href="{{ route('advisor') }}">Start planning <span aria-hidden="true">↗</span></a>
-                        <a class="button button--secondary" href="{{ route('contact') }}">Talk to the team</a>
-                    </div>
-                </div>
-                <figure class="cta-panel__media">
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/contact-studio.webp', [480, 960, 1536]) }}" sizes="(max-width: 760px) 92vw, 34vw" alt="A quiet creative studio meeting table with notebooks, coffee and printed contact sheets" loading="eager" decoding="async">
-                </figure>
-            </div>
-        </div>
-    </section>
+        <section class="market-onboard" aria-label="Join the media ecosystem">
+            <a href="{{ route('assets.join') }}"><x-dm-icon name="building" :size="30"/><div><strong>Media &amp; property owners</strong><p>Make your space discoverable to advertisers.</p></div><span>List your space →</span></a>
+            <a href="{{ route('creators.join') }}"><x-dm-icon name="users" :size="30"/><div><strong>Creators &amp; talent</strong><p>Join our network and discover collaborations.</p></div><span>Join the network →</span></a>
+        </section>
+
+        <section class="market-cta" aria-labelledby="market-cta-title"><div><h2 id="market-cta-title">Tell us where your brand should go next.</h2><p>Start with your audience, objective and budget.</p></div><div><a class="button button--on-dark" href="{{ route('advisor') }}">Start planning →</a><a class="button button--outline-light" href="{{ route('contact') }}">Talk to the team</a></div></section>
+    </div>
 @endsection

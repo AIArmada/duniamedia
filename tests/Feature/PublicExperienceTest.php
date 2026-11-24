@@ -67,6 +67,30 @@ class PublicExperienceTest extends TestCase
         $this->get('/offers/test-billboard')->assertSee($media->name);
     }
 
+    public function test_homepage_connects_media_discovery_to_campaign_workspaces(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Discover, compare')
+            ->assertSee('Media Rate Exchange')
+            ->assertSee('Proposal Studio')
+            ->assertSee('4.3 million')
+            ->assertSee('Source: Media Prima Audio')
+            ->assertSee('action="'.route('search').'"', false)
+            ->assertSee(route('media.channel', ['media-prima', 'hot-fm']))
+            ->assertSee(route('media.owner', 'astro'))
+            ->assertSee(route('advisor'))
+            ->assertSee(route('plans.index'))
+            ->assertSee(route('quote.builder'))
+            ->assertDontSee('hero-city-mobile-bg-640.webp');
+
+        $this->get('/search?q=Bekpes')->assertOk()->assertSee('Bekpes Hot')
+            ->assertSee('#hotfm-programme-bekpes-hot', false);
+        $this->get('/search?q=Media+Prima')->assertOk()->assertSee('Media Prima Berhad')
+            ->assertSee(route('media.owner', 'media-prima'));
+        $this->get('/search?q=Keymi')->assertOk()->assertSee('FYP@Hot');
+    }
+
     public function test_work_page_exposes_every_playable_archive_asset(): void
     {
         $response = $this->get('/work');

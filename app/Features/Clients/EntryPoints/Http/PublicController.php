@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Features\Clients\EntryPoints\Http;
 
 use App\Features\Catalog\Api\PresentsMedia;
+use App\Features\Catalog\Api\PresentsRateLines;
 use App\Features\Clients\Api\ListsClientParties;
 use App\Features\Clients\Models\Campaign;
 use App\Features\Clients\Models\Project;
@@ -42,7 +43,7 @@ class PublicController extends Controller
             'year' => (int) $campaign->starts_on?->format('Y'),
             'description' => $campaign->summary,
             'featured' => $campaign->is_featured,
-            'cover' => $campaign->displayCover(),
+            'cover' => $campaign->getFirstMediaUrl('cover'),
         ]);
 
         $trustClients = $this->clientParties()
@@ -51,6 +52,9 @@ class PublicController extends Controller
 
         return view('pages.home', [
             'media' => collect($this->presentMedia()->featured(6)),
+            'ratePreview' => app(PresentsRateLines::class)->preview(),
+            'pageTitle' => 'Dunia Media — Discover, Compare & Plan Media in Malaysia',
+            'metaDescription' => 'Discover Malaysian media owners, channels, personalities and advertising opportunities. Compare indicative rates, plan campaigns and request proposals.',
             'featuredWork' => $featuredWork,
             'trustClients' => $trustClients,
         ]);
