@@ -126,8 +126,9 @@ class MediaCatalogueSeeder extends Seeder
 
                 foreach ($entry['documents'] ?? [] as $document) {
                     $file = storage_path('app/'.$document['path']);
+                    $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
 
-                    if (! is_file($file) || strtolower(pathinfo($file, PATHINFO_EXTENSION)) !== 'pdf') {
+                    if (! is_file($file) || ! in_array($extension, ['pdf', 'jpg', 'jpeg', 'png', 'xlsx', 'mp4'], true)) {
                         continue;
                     }
 
@@ -136,6 +137,7 @@ class MediaCatalogueSeeder extends Seeder
                         ->withCustomProperties([
                             'name' => $document['name'],
                             'kind' => $document['kind'],
+                            'poster' => $document['poster'] ?? null,
                         ])
                         ->toMediaCollection('documents', 'media-private');
                 }

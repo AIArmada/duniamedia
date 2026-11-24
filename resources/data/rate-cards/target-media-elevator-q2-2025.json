@@ -1,0 +1,275 @@
+{
+  "slug": "target-media-elevator-q2-2025",
+  "owner": "specialist-media",
+  "title": "Target Media 2026 — Elevator Media Network",
+  "summary": "Elevator DOOH from RM22k/week: 10,000-screen full coverage RM229.6k, commercial 2,000 screens RM80k, local 1,000 screens RM40k, ala carte RM100–200/screen.",
+  "description": "Target Media 2026 elevator media rate card, effective January 2026 (1 page). Ad duration is 15 seconds and publication runs Monday–Sunday with material due every Tuesday. Full coverage 10,000 screens RM229,600/week at 120 plays/day (RM119,800 at 60); High End office/residences 1,000 screens RM99,800; Commercial office/mall/hotel 2,000 screens RM80,000 (RM42,000 at 60); Localized office/residences/mixed/mall/hotel 1,000 screens RM40,000 (RM22,000 at 60); Building ala carte per screen RM200 (RM100 at 60). Screen count is calculated at 90% of the package. Operation costs: data usage RM1 per screen for up to 2,000 screens and RM0.50 above 2,000 per upload; manual upload RM2/RM1; NFC sticker RM3 standard and RM5 premium. Rates exclude tax; Target Media may adjust pricing.",
+  "validity": "2026; effective January 2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/target-media-elevator-q2-2025.webp",
+  "medium": "Indoor",
+  "source_pages": 1,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Target Media 2026 elevator media rate card, effective January 2026 (1 page). Ad duration is 15 seconds and publication runs Monday–Sunday with material due every Tuesday. Full coverage 10,000 screens RM229,600/week at 120 plays/day (RM119,800 at 60); High End office/residences 1,000 screens RM99,800; Commercial office/mall/hotel 2,000 screens RM80,000 (RM42,000 at 60); Localized office/residences/mixed/mall/hotel 1,000 screens RM40,000 (RM22,000 at 60); Building ala carte per screen RM200 (RM100 at 60). Screen count is calculated at 90% of the package. Operation costs: data usage RM1 per screen for up to 2,000 screens and RM0.50 above 2,000 per upload; manual upload RM2/RM1; NFC sticker RM3 standard and RM5 premium. Rates exclude tax; Target Media may adjust pricing."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Localized 1,000 screens RM22k/week"
+          },
+          {
+            "title": "Commercial 2,000 screens RM42k/week"
+          },
+          {
+            "title": "High End 1,000 screens RM99.8k/week"
+          },
+          {
+            "title": "Full coverage 10,000 screens RM119.8k–229.6k/week"
+          },
+          {
+            "title": "Ala carte RM100–200/screen/week"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Full coverage elevator network"
+          },
+          {
+            "title": "High End office/residences"
+          },
+          {
+            "title": "Commercial office/mall/hotel"
+          },
+          {
+            "title": "Localized package"
+          },
+          {
+            "title": "Building ala carte"
+          },
+          {
+            "title": "NFC sticker"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-target-media",
+      "name": "Target Media",
+      "owner": "specialist-media",
+      "medium": "Indoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/target-media-elevator-q2-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "elevator-media-packages",
+          "title": "Elevator Media — packages",
+          "intro": null,
+          "medium": "Indoor",
+          "channels": [
+            "specialist-media-target-media"
+          ],
+          "items": [
+            {
+              "item": "Building ala carte - 120 plays/day",
+              "unit": "per screen",
+              "price": 200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15s ad; priced per screen.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Building ala carte - 60 plays/day",
+              "unit": "per screen",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15s ad; priced per screen.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Commercial package - 120 plays/day",
+              "unit": "package",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "2,000 screens; 15s ad; office/mall/hotel. Price line is printed above the 'Commercial Package' label in the text; could belong to High End package (see gaps).",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Commercial package - 60 plays/day",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2,000 screens; 15s ad; office/mall/hotel.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Full coverage package - 120 plays/day",
+              "unit": "package",
+              "price": 229600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10,000 screens; 15s ad; frequency 120/day; office/residences/mixed/mall/hotel.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Full coverage package - 60 plays/day",
+              "unit": "package",
+              "price": 119800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10,000 screens; 15s ad; frequency 60/day; office/residences/mixed/mall/hotel.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "High End package - 120 plays/day",
+              "unit": "package",
+              "price": 99800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1,000 screens; 15s ad; office/residences. No 60/day rate printed for this package.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Localized package - 120 plays/day",
+              "unit": "package",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1,000 screens; 15s ad; office/residences/mixed/mall/hotel.",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "Localized package - 60 plays/day",
+              "unit": "package",
+              "price": 22000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1,000 screens; 15s ad; office/residences/mixed/mall/hotel.",
+              "is_package": true,
+              "sort_order": 8
+            }
+          ]
+        },
+        {
+          "key": "operation-cost",
+          "title": "Operation cost",
+          "intro": null,
+          "medium": "Indoor",
+          "channels": [
+            "specialist-media-target-media"
+          ],
+          "items": [
+            {
+              "item": "Data usage per upload - 2,000 to 10,000 screens",
+              "unit": "per upload per screen",
+              "price": 0.5,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Extra data usage applies for non-scheduled or multiple content uploads.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Data usage per upload - up to 2,000 screens",
+              "unit": "per upload per screen",
+              "price": 1,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Extra data usage applies for non-scheduled or multiple content uploads.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Manual upload - 2,000 to 10,000 screens",
+              "unit": "per upload per screen",
+              "price": 1,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Manual posting applies when network delivery fails.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Manual upload - up to 2,000 screens",
+              "unit": "per upload per screen",
+              "price": 2,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Manual posting applies when network delivery fails.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Premium NFC sticker",
+              "unit": "per piece",
+              "price": 5,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "High-frequency 240 placements with performance tracking.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Standard NFC sticker",
+              "unit": "per piece",
+              "price": 3,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Applicable for high-frequency (240) campaigns.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

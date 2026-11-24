@@ -1,0 +1,287 @@
+{
+  "slug": "kl-sentral-station-sponsorship-2024",
+  "owner": "media-prima",
+  "title": "KL Sentral Station Sponsorship 2024 — Transit Hub",
+  "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (rates extracted).",
+  "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Extracted tables: station domination RM1.2M–1.44M for 12 months, plus production line items RM800–28,800.",
+  "validity": "2024",
+  "terms": null,
+  "hero": "assets/ratecards/img/kl-sentral-station-sponsorship-2024.webp",
+  "medium": "Outdoor",
+  "source_pages": 19,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Extracted tables: station domination RM1.2M–1.44M for 12 months, plus production line items RM800–28,800."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Station domination RM1.2M–1.44M (12 months)"
+          },
+          {
+            "title": "Production RM800–28,800 per item"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Station sponsorship"
+          },
+          {
+            "title": "East/West wings"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "ktm-kl-sentral-station",
+      "name": "KL Sentral Station",
+      "owner": "ktm",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/kl-sentral-station-sponsorship-2024.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "kl-sentral-west-east-wing-station-domination",
+          "title": "KL Sentral West & East Wing station domination",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-kl-sentral-station"
+          ],
+          "items": [
+            {
+              "item": "Station sponsorship - 12 months",
+              "unit": "package (12 months)",
+              "price": 1440000,
+              "price_incl_sst": 1866024,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes KL Sentral Spectacular Lightbox + KL Sentral Adtrack x 4 units; media rental 1,440,000; production 280,600; lighting 7,200; 8% SST 138,224; total 1,866,024.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Total proposal",
+              "unit": "package (12 months)",
+              "price": 1200000,
+              "price_incl_sst": 1605960,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Row printed as TOTAL PROPOSAL; media 1,200,000; production 280,000; lighting 7,000; 8% SST 118,960; total 1,605,960. Scope versus station sponsorship row unclear.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "production-breakdown-west-wing-concourse-platform",
+          "title": "Production breakdown — West Wing (concourse/platform)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-kl-sentral-station"
+          ],
+          "items": [
+            {
+              "item": "Concourse - 1. Turnstile wrap",
+              "unit": "production",
+              "price": 28800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Various size; 16 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Concourse - 2. Pillar graphics (half-wrap)",
+              "unit": "production",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "178in(h) x 81in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Concourse - 3. Double-sided glass panel graphic",
+              "unit": "production",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "134in(h) x 259in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Concourse - 4. Single-sided glass panel graphic",
+              "unit": "production",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "203in(h) x 193.5in(w); 1 unit; cost cell shared with adjacent line in layout. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Concourse - 5. Vertical panels near stairs",
+              "unit": "production",
+              "price": 28000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "69in(h) x 46in(w); 12 units; cost-cell allocation inferred. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Concourse - 6. Vertical panels near escalator",
+              "unit": "production",
+              "price": 28000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "69in(h) x 46in(w); 12 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Concourse - 7. Wall at side of escalator (TP bound)",
+              "unit": "production",
+              "price": 2800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "98.5in(h) x 114.5in(w); 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Concourse - 8. Wall at side of escalator (KJ bound)",
+              "unit": "production",
+              "price": 2800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "93.5in(h) x 114.5in(w); 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Concourse - 9. Escalator graphic facing concourse",
+              "unit": "production",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Various size; 1 unit; one side only. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Platform - 10. Round pillar graphic at KJ bound (full wrap)",
+              "unit": "production",
+              "price": 4800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "90.5in(h) x 112in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Platform - 11. Double-sided banner above stairs/escalator (TP bound)",
+              "unit": "production",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "120in(h) x 216in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Platform - 12. Double-sided track graphics",
+              "unit": "production",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "48in(h) x 120in(w); 6 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Platform - 13. Perforated metal cladding on top of platform",
+              "unit": "production",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 1m(h) x 10m(w) per unit; 3 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Platform - 14. Infoscreen (double-sided)",
+              "unit": "production",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2ft(h) x 5ft(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Platform - 15. KL Sentral Adtrack",
+              "unit": "production",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5ft x 10ft; 4 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Platform - 16. KL Sentral Spectacular Lightbox",
+              "unit": "production",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6ft x 18ft; 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "is_package": false,
+              "sort_order": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

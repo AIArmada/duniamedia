@@ -7,6 +7,7 @@ namespace App\Features\Sales\EntryPoints\Livewire;
 use AIArmada\Cart\Models\CartModel;
 use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Api\PresentsMedia;
+use App\Features\Catalog\Api\PresentsRateLines;
 use App\Features\Catalog\Api\PricesMedia;
 use App\Features\Clients\Api\ListsServices;
 use App\Features\Identity\Api\ResolvesParties;
@@ -53,6 +54,12 @@ class QuoteBuilder extends Component
     public function mount(?string $plan = null): void
     {
         $instance = $plan ?? (string) request('plan', '');
+        if ($instance === '') {
+            $draft = (string) session('campaign-plan-draft', '');
+            if ($draft !== '' && app(PlanService::class)->find($draft) !== null) {
+                $instance = $draft;
+            }
+        }
 
         if ($instance !== '') {
             $record = app(PlanService::class)->find($instance);
@@ -86,7 +93,7 @@ class QuoteBuilder extends Component
         ]);
         $this->planInstance = $plan->instance;
 
-        if (! $plans->summary($plan)['items']->contains(fn ($item): bool => $item->attributes->get('product_id') === $id)) {
+        if (! $plans->summary($plan)['items']->contains(fn ($item): bool => $item->attributes->get('product_id') === $id && $item->attributes->get('rate_entry_id') === null)) {
             $plans->addOffering($plan, Product::query()->findOrFail($id));
         }
 
@@ -176,9 +183,16 @@ class QuoteBuilder extends Component
             $media = app(PresentsMedia::class);
             $lines = [];
 
+            if ($summary['items']->isEmpty()) {
+                $this->step = 'media';
+                throw \Illuminate\Validation\ValidationException::withMessages(['media' => 'Select at least one media opportunity.']);
+            }
+
             foreach ($summary['items'] as $item) {
                 $id = (string) $item->attributes->get('product_id');
-                if (! $media->contains($id)) {
+                $rateEntryId = $item->attributes->get('rate_entry_id');
+                $rateLine = is_string($rateEntryId) ? app(PresentsRateLines::class)->find($rateEntryId) : null;
+                if (! $media->contains($id) || ($rateEntryId !== null && (! $rateLine || ! $rateLine->isPriced() || $rateLine->productId !== $id))) {
                     $this->step = 'media';
                     throw \Illuminate\Validation\ValidationException::withMessages(['media' => 'Remove unavailable media before submitting.']);
                 }
@@ -186,9 +200,10 @@ class QuoteBuilder extends Component
                 $lines[] = [
                     'product_id' => $id,
                     'name' => $item->name,
-                    'unit_code' => $pricing->unitCode($id),
+                    'unit_code' => $rateLine ? $rateLine->unit : $pricing->unitCode($id),
                     'quantity' => (int) $item->quantity,
-                    'unit_price' => $pricing->isPubliclyPriced($id) ? $item->price / 100 : 0,
+                    'unit_price' => ($rateLine || $pricing->isPubliclyPriced($id)) ? $item->price / 100 : 0,
+                    'rate_entry_id' => $rateEntryId,
                 ];
             }
 
@@ -226,7 +241,15 @@ class QuoteBuilder extends Component
         $rows = $summary['items']->map(function ($item) use ($pricing, $media): array {
             $id = (string) $item->attributes->get('product_id');
 
-            return ['item' => $item, 'priced' => $pricing->isPubliclyPriced($id), 'available' => $media->contains($id)];
+            $rateEntryId = $item->attributes->get('rate_entry_id');
+            $rateLine = is_string($rateEntryId) ? app(PresentsRateLines::class)->find($rateEntryId) : null;
+            $available = $media->contains($id) && ($rateEntryId === null || ($rateLine && $rateLine->isPriced() && $rateLine->productId === $id));
+
+            return [
+                'item' => $item,
+                'priced' => $available && ($rateLine !== null || $pricing->isPubliclyPriced($id)),
+                'available' => $available,
+            ];
         });
 
         return view('livewire.quote-builder', [

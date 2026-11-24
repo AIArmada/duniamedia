@@ -1,0 +1,185 @@
+{
+  "slug": "lamppost-digital-bunting-kl-2026",
+  "owner": "specialist-media",
+  "title": "Street Lamppost Digital Bunting KL City 2026",
+  "summary": "10+8 panels Jln Tun Razak/Duta/Cheras; 58k–117k exposures/slot, 15s spots 6:30am–12:30am.",
+  "description": "eBunting package (6 pages). Sites: Tun Razak–Intermark (8+8, 86.4k/mo), Duta–Publika (10+5, 117.6k/mo), Cheras–EkoCheras A/B (5+5 each, 58.8k/mo). 15s spots, 18 hrs, max 10+2 civic, min 360 exposures/day/panel. DBP fee incl unless stated; extra visuals RM30 (2 amendments), content mgmt FOC 1/mo then RM50/location.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/lamppost-digital-bunting-kl-2026.webp",
+  "medium": "Outdoor",
+  "source_pages": 6,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "eBunting package (6 pages). Sites: Tun Razak–Intermark (8+8, 86.4k/mo), Duta–Publika (10+5, 117.6k/mo), Cheras–EkoCheras A/B (5+5 each, 58.8k/mo). 15s spots, 18 hrs, max 10+2 civic, min 360 exposures/day/panel. DBP fee incl unless stated; extra visuals RM30 (2 amendments), content mgmt FOC 1/mo then RM50/location."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "On request; fees RM30–50 noted"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Lamppost LED bunting"
+          },
+          {
+            "title": "15s slots"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-dbp",
+      "name": "DBP",
+      "owner": "specialist-media",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/lamppost-digital-bunting-kl-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "lamp-post-led-jalan-tun-razak-intermark",
+          "title": "Lamp Post LED — Jalan Tun Razak / Intermark",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-dbp"
+          ],
+          "items": [
+            {
+              "item": "Jalan Tun Razak–Intermark lamp post LED — 1 slot",
+              "unit": "per month",
+              "price": 108000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 panels + 10 lamp posts (1 direction); from Jalan Tun Razak to KLCC; 350,000 daily traffic; 15s spot; 18 hours daily",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "lamp-post-led-jalan-dutamas-publika",
+          "title": "Lamp Post LED — Jalan Dutamas / Publika",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-dbp"
+          ],
+          "items": [
+            {
+              "item": "Jalan Dutamas–Publika lamp post LED — 1 slot",
+              "unit": "per month",
+              "price": 86400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 panels + 8 lamp posts (1 direction); in front of Publika, to/from Mont Kiara; 256,000 daily traffic; 15s spot",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "lamp-post-led-jalan-cheras-set-a",
+          "title": "Lamp Post LED — Jalan Cheras Set A",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-dbp"
+          ],
+          "items": [
+            {
+              "item": "Jalan Cheras–Eko Cheras Mall / Leisure Mall (Set A) lamp post LED — 1 slot",
+              "unit": "per month",
+              "price": 117600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 panels + 5 lamp posts (2 directions); to/from Cheras to Kajang; 1,916,251 monthly traffic; 15s spot",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "lamp-post-led-jalan-cheras-set-b",
+          "title": "Lamp Post LED — Jalan Cheras Set B",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-dbp"
+          ],
+          "items": [
+            {
+              "item": "Jalan Cheras–Business Center (Set B) lamp post LED — 1 slot",
+              "unit": "per month",
+              "price": 58800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 panels + 5 lamp posts (1 direction); to/from Cheras to Kajang; 150,000 daily traffic; 15s spot",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "other-cost",
+          "title": "Other Cost",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-dbp"
+          ],
+          "items": [
+            {
+              "item": "Content management fee — subsequent content",
+              "unit": "per location",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "First content/month FOC; includes upload & photo proof fees",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "DBP fee per additional visual",
+              "unit": "per visual",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes 2 amendments only; DBP fee included unless stated otherwise",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

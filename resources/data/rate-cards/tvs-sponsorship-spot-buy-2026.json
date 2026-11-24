@@ -1,0 +1,2307 @@
+{
+  "slug": "tvs-sponsorship-spot-buy-2026",
+  "owner": "tvs",
+  "title": "TV Sarawak (TVS) 2026 — Sponsorship & Spot Buy",
+  "summary": "30-second TVC RM1,800 fringe / RM3,600 prime; sponsor formats from RM600, naming rights RM18k, special reports RM9k.",
+  "description": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax. TVS Profile (updated 15 October 2026): 11.7M unique reach and 172.8M total views on Nielsen (Peninsular, Jan–Sep 2026); 7.3M reach and 103.6M views via Fifty5Blue; 3.73M social followers with 1.46B social views; 3.05M website visitors; TVS Inspire OTT app at 72.8K lifetime downloads. News belt: TVS Pagi 7am, TVS Tengahari 12pm, Utama 740 7:40pm, TVS Nightline 10:30pm, plus Berita Iban, Rebao, Berita Wilayah and Detik Dunia. 2025 live coverage totalled 126 events and 366.9M linear-plus-digital viewers.",
+  "validity": "2026 rate card",
+  "terms": null,
+  "hero": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 44,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "TV Sarawak (TVS) 2026 sponsorship and spot-buy rate card (23 pages). TVC 10–60 seconds: fringe RM600–RM3,600, prime RM1,200–RM7,200; 30-second spot is RM1,800 fringe and RM3,600 prime. Sponsorship formats: breaker in/out RM1,200–2,400, L-shape RM9,000–12,000, lower third RM7,200–10,800, info-capsule RM7,200–14,400, animated bug RM3,600–7,200, clock face RM1,200–1,800, YouTube countdown RM1,800, end credit RM600–1,200, logo placement RM1,800–3,600, naming rights RM9,000–18,000, special report RM9,000 prime, host mention RM600–2,400, guest appearance RM4,000–25,000, sponsored content RM3,000–9,000, crawler RM2,700–4,500, product placement RM3,600–25,200, competitor disallowance RM1,800–10,800, premium placement RM3,600–10,800 and brand participation RM1,800–3,600. Fringe is 12:01am–5:59pm, prime is 6pm–12am; rates exclude applicable tax. TVS Profile (updated 15 October 2026): 11.7M unique reach and 172.8M total views on Nielsen (Peninsular, Jan–Sep 2026); 7.3M reach and 103.6M views via Fifty5Blue; 3.73M social followers with 1.46B social views; 3.05M website visitors; TVS Inspire OTT app at 72.8K lifetime downloads. News belt: TVS Pagi 7am, TVS Tengahari 12pm, Utama 740 7:40pm, TVS Nightline 10:30pm, plus Berita Iban, Rebao, Berita Wilayah and Detik Dunia. 2025 live coverage totalled 126 events and 366.9M linear-plus-digital viewers."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "30s fringe RM1,800"
+          },
+          {
+            "title": "30s prime RM3,600"
+          },
+          {
+            "title": "Naming rights RM18k prime"
+          },
+          {
+            "title": "Special report RM9k prime"
+          },
+          {
+            "title": "Social posts RM1,000–3,000"
+          },
+          {
+            "title": "Website/OTT CPM RM30–90"
+          },
+          {
+            "title": "Live telecast from RM120,000"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "30s TVC spot buy"
+          },
+          {
+            "title": "Breaker in/out"
+          },
+          {
+            "title": "L-shape"
+          },
+          {
+            "title": "Lower third"
+          },
+          {
+            "title": "Info-capsule"
+          },
+          {
+            "title": "Naming rights"
+          },
+          {
+            "title": "Special report"
+          },
+          {
+            "title": "Product placement"
+          },
+          {
+            "title": "Crawler"
+          },
+          {
+            "title": "Social media posts"
+          },
+          {
+            "title": "Website/OTT display"
+          },
+          {
+            "title": "Live telecast"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "tvs-tvs",
+      "name": "TVS",
+      "owner": "tvs",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-airtime-news-2",
+          "title": "TV airtime — news",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Special report on prime-time news (TVS Utama / Berita Iban / Mandarin / Nightline), 3 minutes",
+              "unit": "per insertion",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Single rate listed; prime-time news. Fringe rate not stated.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "tvs-breaker-in-breaker-out-ad-10-sec",
+          "title": "TVS — Breaker In / Breaker Out ad (10 sec)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10s opening/closing ad; sponsorship option includes sponsor crediting. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10s opening/closing ad; sponsorship option includes sponsor crediting. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-l-shape-ad-1-min",
+          "title": "TVS — L-Shape ad (1 min)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min continuous on-screen presence. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min continuous on-screen presence. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-bottom-panel-lower-third-ad-1-min",
+          "title": "TVS — Bottom panel / lower third ad (1 min)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min graphic panel. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min graphic panel. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-info-capsule-2-mins",
+          "title": "TVS — Info-capsule (2 mins)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2-min branded video outside programme. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 14400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2-min branded video outside programme. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-animated-bug-1-min",
+          "title": "TVS — Animated bug (1 min)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min animated on-screen logo. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min animated on-screen logo. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-end-credit-10-sec",
+          "title": "TVS — End credit (10 sec)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10s branded end credit. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10s branded end credit. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-graphic-logo-placement-1-min",
+          "title": "TVS — Graphic logo placement (1 min)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min graphic logo placement. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min graphic logo placement. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-naming-right-per-episode",
+          "title": "TVS — Naming right (per episode)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per episode; includes programme title credit, logo animation, bumpers, host mentions, digital/social mentions. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per episode; includes programme title credit, logo animation, bumpers, host mentions, digital/social mentions. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tvs-special-report-3-min",
+          "title": "TVS — Special report (3 min)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "Fringe time",
+              "unit": "per airing",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TVS Utama 740 / Berita Iban / Mandarin / Niteline Berita Wilayah & other news. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Prime time",
+              "unit": "per airing",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TVS Utama 740 / Berita Iban / Mandarin / Niteline Berita Wilayah & other news. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tvs-miri-billboard",
+      "name": "TVS Miri Billboard",
+      "owner": "tvs",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "digital-billboard-charges",
+          "title": "Digital billboard — charges",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-miri-billboard"
+          ],
+          "items": [
+            {
+              "item": "Billboard management charge",
+              "unit": "per material",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Stated on billboard pages 16-18 and bundle page 20, if applicable.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "digital-billboard-single-double-screen",
+          "title": "Digital billboard — single / double screen",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-miri-billboard"
+          ],
+          "items": [
+            {
+              "item": "Taman Heritage, Kuching — double screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Taman Heritage, Kuching — double screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Taman Heritage, Kuching — double screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Taman Heritage, Kuching — single screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Taman Heritage, Kuching — single screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Taman Heritage, Kuching — single screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — double screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — double screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — double screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — single screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — single screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Tun Salahuddin, Kuching — single screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Tun Taib, Bintulu — double screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Tun Taib, Bintulu — double screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Tun Taib, Bintulu — double screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Tun Taib, Bintulu — single screen, 1 slot (3-min cycle), per day",
+              "unit": "per day",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Tun Taib, Bintulu — single screen, 1 slot (3-min cycle), per month",
+              "unit": "per month",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Tun Taib, Bintulu — single screen, 1 slot (3-min cycle), per week",
+              "unit": "per week",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "is_package": false,
+              "sort_order": 17
+            }
+          ]
+        },
+        {
+          "key": "digital-billboard-bundle-packages-2026",
+          "title": "Digital billboard — bundle packages 2026",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-miri-billboard"
+          ],
+          "items": [
+            {
+              "item": "2 sites, double screen, per day",
+              "unit": "per day",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "2 sites, double screen, per month",
+              "unit": "per month",
+              "price": 54000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "2 sites, double screen, per week",
+              "unit": "per week",
+              "price": 12600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "2 sites, single screen, per day",
+              "unit": "per day",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "2 sites, single screen, per month",
+              "unit": "per month",
+              "price": 27000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "2 sites, single screen, per week",
+              "unit": "per week",
+              "price": 6300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "3 sites, double screen, per day",
+              "unit": "per day",
+              "price": 2550,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "3 sites, double screen, per month",
+              "unit": "per month",
+              "price": 76000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "3 sites, double screen, per week",
+              "unit": "per week",
+              "price": 17850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "3 sites, single screen, per day",
+              "unit": "per day",
+              "price": 1275,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "3 sites, single screen, per month",
+              "unit": "per month",
+              "price": 38250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "3 sites, single screen, per week",
+              "unit": "per week",
+              "price": 8925,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "is_package": false,
+              "sort_order": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tvs-group",
+      "name": "TVS Group",
+      "owner": "tvs",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-airtime-tv-commercial-spot-buy",
+          "title": "TV airtime — TV commercial spot buy",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "10-second TVC spot",
+              "unit": "per spot",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM600; no fringe/prime split given. Rates exclude government taxes.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "30-second TVC spot",
+              "unit": "per spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM1,800.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "60-second TVC spot",
+              "unit": "per spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM3,600.",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-programme-entitlements",
+          "title": "TV airtime — programme entitlements",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Animated bug, fringe time",
+              "unit": "per day",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Animated bug, prime time",
+              "unit": "per day",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Bottom panel / lower third, fringe time",
+              "unit": "per airing",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Bottom panel / lower third, prime time",
+              "unit": "per airing",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Breaker in / breaker out, fringe time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Breaker in / breaker out, prime time",
+              "unit": "per airing",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Clock face slide, fringe time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Clock face slide, prime time",
+              "unit": "per airing",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Crawler, fringe time",
+              "unit": "per airing",
+              "price": 2700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Crawler, prime time",
+              "unit": "per airing",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "End credit, fringe time",
+              "unit": "per airing",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "End credit, prime time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Graphic logo placement, fringe time",
+              "unit": "per airing",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Graphic logo placement, prime time",
+              "unit": "per airing",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Host mention (live), fringe time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Host mention (live), prime time",
+              "unit": "per airing",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Host mention (pre-recorded), fringe time",
+              "unit": "per airing",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Host mention (pre-recorded), prime time",
+              "unit": "per airing",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Info-capsule, 2 minutes, fringe time",
+              "unit": "per airing",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Info-capsule, 2 minutes, prime time",
+              "unit": "per airing",
+              "price": 14400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "L-shape ads, fringe time",
+              "unit": "per airing",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "L-shape ads, prime time",
+              "unit": "per airing",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 21
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-news",
+          "title": "TV airtime — news",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Fringe-time news (Berita Wilayah / other non-prime-time news), 3 minutes",
+              "unit": "per insertion",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time only.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-commercial-brand-participation",
+          "title": "TV airtime — commercial / brand participation",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Guest appearance, 15 minutes, fringe time",
+              "unit": "per appearance",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Guest appearance, 15 minutes, prime time",
+              "unit": "per appearance",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Guest appearance, 45 minutes, fringe time",
+              "unit": "per appearance",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Guest appearance, 45 minutes, prime time",
+              "unit": "per appearance",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Live telecast, 120 minutes",
+              "unit": "per telecast",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes airtime, live production with up to 10 personnel, broadcast transmission and 14-day ROS promotional campaign; MCP equipment extra.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Naming right, fringe time",
+              "unit": "per episode",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes airtime sponsorship, social media mentions and optional on-ground or live event association.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Naming right, prime time",
+              "unit": "per episode",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes airtime sponsorship, social media mentions and optional on-ground or live event association.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Script-in / brand integration, 30 seconds, fringe time",
+              "unit": "per spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Script-in / brand integration, 30 seconds, prime time",
+              "unit": "per spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Sponsored content, 5 minutes, fringe time",
+              "unit": "per insertion",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Fringe time 12:01am-5:59pm.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Sponsored content, 5 minutes, prime time",
+              "unit": "per insertion",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime time 6:00pm-12:00am.",
+              "is_package": false,
+              "sort_order": 10
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-brand-product-placement",
+          "title": "TV airtime — brand / product placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "120-minute programme, 6 segments, fringe time",
+              "unit": "per programme",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain from interleaved columns.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "120-minute programme, 6 segments, prime time",
+              "unit": "per programme",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain from interleaved columns.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "120-minute programme, 7 segments, fringe time",
+              "unit": "per programme",
+              "price": 12600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain from interleaved columns.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "120-minute programme, 7 segments, prime time",
+              "unit": "per programme",
+              "price": 25200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain from interleaved columns.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "30-minute programme, 1 segment, fringe time",
+              "unit": "per programme",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rate alignment inferred from column order.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "30-minute programme, 1 segment, prime time",
+              "unit": "per programme",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rate alignment inferred from column order.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "60-minute programme, 3 segments, fringe time",
+              "unit": "per programme",
+              "price": 5400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rate alignment inferred from column order.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "60-minute programme, 3 segments, prime time",
+              "unit": "per programme",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rate alignment inferred from column order.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "90-minute programme, 5 segments, fringe time",
+              "unit": "per programme",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain: extracted text pairs these rates with the 60-minute label.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "90-minute programme, 5 segments, prime time",
+              "unit": "per programme",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Alignment uncertain: extracted text pairs these rates with the 60-minute label.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "website-ott-cpm",
+          "title": "Website / OTT (CPM)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Bottom leaderboard",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Middle leaderboard",
+              "unit": "CPM",
+              "price": 45,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Pop-up banner",
+              "unit": "CPM",
+              "price": 55,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Premium video, pre/mid/post roll",
+              "unit": "CPM",
+              "price": 90,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Top leaderboard",
+              "unit": "CPM",
+              "price": 65,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Website side panel 1 & 2",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "social-media",
+          "title": "Social media",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Branded article (website)",
+              "unit": "per article",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Digital countdown, YouTube, 90 seconds",
+              "unit": "per post",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Facebook / Instagram post",
+              "unit": "per post",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Facebook / Instagram story",
+              "unit": "per story",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Instagram reels / Facebook shorts",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "TikTok post",
+              "unit": "per post",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-competitor-disallowance",
+          "title": "TV airtime — competitor disallowance",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Competitor disallowance, 1 category, fringe time",
+              "unit": "per campaign",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Competitor disallowance, 1 category, prime time",
+              "unit": "per campaign",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Competitor disallowance, 2-3 categories, fringe time",
+              "unit": "per campaign",
+              "price": 5400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Competitor disallowance, 2-3 categories, prime time",
+              "unit": "per campaign",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "tv-airtime-premium-placement",
+          "title": "TV airtime — premium placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "First spot in first break, 30 seconds, fringe time",
+              "unit": "per spot",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "First spot in first break, 30 seconds, prime time",
+              "unit": "per spot",
+              "price": 6300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Subsequent spot in first break / other break, 30 seconds, fringe time",
+              "unit": "per spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Subsequent spot in first break / other break, 30 seconds, prime time",
+              "unit": "per spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Premium placement.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "tvc-rate-card-fringe-time",
+          "title": "TVC rate card — Fringe Time",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "10s TVC, fringe time",
+              "unit": "10s spot",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "15s TVC, fringe time",
+              "unit": "15s spot",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "20s TVC, fringe time",
+              "unit": "20s spot",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "25s TVC, fringe time",
+              "unit": "25s spot",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "30s TVC, fringe time",
+              "unit": "30s spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "35s TVC, fringe time",
+              "unit": "35s spot",
+              "price": 2100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "40s TVC, fringe time",
+              "unit": "40s spot",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "45s TVC, fringe time",
+              "unit": "45s spot",
+              "price": 2700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "50s TVC, fringe time",
+              "unit": "50s spot",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "60s TVC, fringe time",
+              "unit": "60s spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "tvc-rate-card-prime-time",
+          "title": "TVC rate card — Prime Time",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "10s TVC, prime time",
+              "unit": "10s spot",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "15s TVC, prime time",
+              "unit": "15s spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "20s TVC, prime time",
+              "unit": "20s spot",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "25s TVC, prime time",
+              "unit": "25s spot",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "30s TVC, prime time",
+              "unit": "30s spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "35s TVC, prime time",
+              "unit": "35s spot",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "40s TVC, prime time",
+              "unit": "40s spot",
+              "price": 4800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "45s TVC, prime time",
+              "unit": "45s spot",
+              "price": 5400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "50s TVC, prime time",
+              "unit": "50s spot",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "60s TVC, prime time",
+              "unit": "60s spot",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "tvc-spotbuy-promo-30-sec",
+          "title": "TVC Spotbuy / Promo (30 Sec)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "TVC spotbuy 30s - fringe time",
+              "unit": "30s spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Duplicates the 30s fringe-time rate on p.3; spotbuy available in 15/30/60/90s, prorated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "TVC spotbuy 30s - prime time",
+              "unit": "30s spot",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Duplicates the 30s prime-time rate on p.3; spotbuy available in 15/30/60/90s, prorated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "clock-face-slide-10-sec",
+          "title": "Clock face slide (10 sec)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Clock face slide - fringe time",
+              "unit": "10s spot",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Prime-time rate is quoted as 'from RM1,800' (floor price, see gaps); tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "digital-countdown-youtube-90-sec",
+          "title": "Digital countdown YouTube (90 sec)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Digital countdown on YouTube",
+              "unit": "90s digital spot",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "YouTube countdown before programme airs; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "host-mention",
+          "title": "Host mention",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Host mention - live 10s, fringe time",
+              "unit": "10s mention",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Live host mention; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Host mention - live 10s, prime time",
+              "unit": "10s mention",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Live host mention; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Host mention - pre-recorded 10s, fringe time",
+              "unit": "10s mention",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Pre-recorded host mention; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Host mention - pre-recorded 10s, prime time",
+              "unit": "10s mention",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Pre-recorded host mention; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "guest-appearance",
+          "title": "Guest appearance",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Guest appearance 15 mins - fringe time",
+              "unit": "15-min appearance",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Guest appearance 15 mins - prime time",
+              "unit": "15-min appearance",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Guest appearance 45 mins - fringe time",
+              "unit": "45-min appearance",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Guest appearance 45 mins - prime time",
+              "unit": "45-min appearance",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "sponsored-content-crawler",
+          "title": "Sponsored content & crawler",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Crawler (x 6 spots) - fringe time",
+              "unit": "6 spots",
+              "price": 2700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Crawler (x 6 spots) - prime time",
+              "unit": "6 spots",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Sponsored content within programme (max 5 min) - fringe time",
+              "unit": "5-min segment",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Sponsored content within programme (max 5 min) - prime time",
+              "unit": "5-min segment",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "brand-product-placement",
+          "title": "Brand / product placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Product placement 120 mins programme, 5 mins x 7 segments - fringe time",
+              "unit": "placement",
+              "price": 12600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "120 mins programme; 5 mins x 7 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Product placement 120 mins programme, 5 mins x 7 segments - prime time",
+              "unit": "placement",
+              "price": 25200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "120 mins programme; 5 mins x 7 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Product placement 30 mins programme, 5 mins x 1 segment - fringe time",
+              "unit": "placement",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "30 mins programme; 5 mins x 1 segment; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Product placement 30 mins programme, 5 mins x 1 segment - prime time",
+              "unit": "placement",
+              "price": 7200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "30 mins programme; 5 mins x 1 segment; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Product placement 30 mins programme, 5 mins x 3 segments - fringe time",
+              "unit": "placement",
+              "price": 5400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "30 mins programme; 5 mins x 3 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Product placement 30 mins programme, 5 mins x 3 segments - prime time",
+              "unit": "placement",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "30 mins programme; 5 mins x 3 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Product placement 60 mins programme, 5 mins x 5 segments - fringe time",
+              "unit": "placement",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "60 mins programme; 5 mins x 5 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Product placement 60 mins programme, 5 mins x 5 segments - prime time",
+              "unit": "placement",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "60 mins programme; 5 mins x 5 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Product placement 90 mins programme, 5 mins x 6 segments - fringe time",
+              "unit": "placement",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "90 mins programme; 5 mins x 6 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Product placement 90 mins programme, 5 mins x 6 segments - prime time",
+              "unit": "placement",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "90 mins programme; 5 mins x 6 segments; tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "brand-participation-inside-program",
+          "title": "Brand participation inside program",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-group"
+          ],
+          "items": [
+            {
+              "item": "Script-in or 30s brand integration - fringe time",
+              "unit": "30s integration",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Script-in or 30s brand integration - prime time",
+              "unit": "30s integration",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tax percentage not stated.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

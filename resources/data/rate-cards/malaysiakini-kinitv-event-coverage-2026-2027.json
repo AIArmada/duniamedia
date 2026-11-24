@@ -1,0 +1,120 @@
+{
+  "slug": "malaysiakini-kinitv-event-coverage-2026-2027",
+  "owner": "specialist-media",
+  "title": "Malaysiakini & KiniTV Event Coverage 2026/27 — Article, Video & Bundle",
+  "summary": "Event coverage: article RM12,000, video RM25,000, article + video bundle RM30,000.",
+  "description": "Malaysiakini and KiniTV event coverage packages for 2026/27 (8 pages). Article: ~1,000-word event coverage and media reporting in EN/BM/CN, published on the Malaysiakini desktop and mobile homepage announcement section for one day plus three social posts (FB, X, IG), target 2,000 reads — RM12,000. Video: ~2-minute event coverage video with scriptwriting, shooting, editing, voiceover and subtitles, published across Malaysiakini and KiniTV social channels plus one branded capsule insertion in KiniTV Bulletin News, target 30,000 views — RM25,000. Article plus video bundle RM30,000.",
+  "validity": "2026/2027",
+  "terms": null,
+  "hero": "assets/ratecards/img/malaysiakini-kinitv-event-coverage-2026-2027.webp",
+  "medium": "Digital",
+  "source_pages": 8,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Malaysiakini and KiniTV event coverage packages for 2026/27 (8 pages). Article: ~1,000-word event coverage and media reporting in EN/BM/CN, published on the Malaysiakini desktop and mobile homepage announcement section for one day plus three social posts (FB, X, IG), target 2,000 reads — RM12,000. Video: ~2-minute event coverage video with scriptwriting, shooting, editing, voiceover and subtitles, published across Malaysiakini and KiniTV social channels plus one branded capsule insertion in KiniTV Bulletin News, target 30,000 views — RM25,000. Article plus video bundle RM30,000."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Article RM12,000"
+          },
+          {
+            "title": "Video RM25,000"
+          },
+          {
+            "title": "Bundle RM30,000"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Event coverage article"
+          },
+          {
+            "title": "Event coverage video"
+          },
+          {
+            "title": "Article + video bundle"
+          },
+          {
+            "title": "KiniTV branded capsule"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-malaysiakini",
+      "name": "Malaysiakini",
+      "owner": "specialist-media",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/malaysiakini-kinitv-event-coverage-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "event-coverage-packages",
+          "title": "Event coverage packages",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "specialist-media-malaysiakini"
+          ],
+          "items": [
+            {
+              "item": "Bundle package — article + video",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Total value worth RM50,000.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Event coverage article (with media interview), ~1,000 words, 1 language EN/BM/CN",
+              "unit": "package",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 article + 3 social posts; homepage announcement 1 day; target >2,000 reads. Value worth RM20,000.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Event coverage video (with media interview), ~2 min, 1 language EN/BM/CN",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 video + 5 social posts + 1 branded capsule insertion in KiniTV bulletin; target >30,000 views. Value worth RM30,000.",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

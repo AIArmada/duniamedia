@@ -133,9 +133,15 @@ class ProductResource extends Resource
                     SpatieMediaLibraryFileUpload::make('documents')
                         ->collection('documents')
                         ->disk('media-private')
-                        ->acceptedFileTypes(['application/pdf'])
+                        ->acceptedFileTypes([
+                            'application/pdf',
+                            'image/jpeg',
+                            'image/png',
+                            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                            'video/mp4',
+                        ])
                         ->multiple()
-                        ->label('Rate-card PDFs'),
+                        ->label('Rate-card documents'),
                 ])
                 ->columns(2),
         ]);

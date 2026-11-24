@@ -1,0 +1,111 @@
+{
+  "slug": "cubig-klcc-junction-2026-promo",
+  "owner": "media-prima",
+  "title": "Cubig KLCC Junction Welcome Back Promo 2026 — Premium DOOH",
+  "summary": "1-mo RM150k (value RM220k) or 2-mo RM300k (value RM680k) + 4 bonus panels; confirm by 15 Jul 2026.",
+  "description": "June 2026 newsletter (2 pages, commercial-in-confidence). Upgraded Cubig network: KLCC Junction, Jalan Sultan Ismail, Walkway, Damansara, TRX gantry, Tun Razak. Package 1 save 32%, Package 2 save 56% + value-added 4 panels for 2 months. Campaign must start 15 Jul–1 Aug 2026, balance by 31 Dec 2026.",
+  "validity": "Confirm by 15 Jul 2026; run 15 Jul–31 Dec 2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/cubig-klcc-junction-2026-promo.webp",
+  "medium": "Outdoor",
+  "source_pages": 2,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "June 2026 newsletter (2 pages, commercial-in-confidence). Upgraded Cubig network: KLCC Junction, Jalan Sultan Ismail, Walkway, Damansara, TRX gantry, Tun Razak. Package 1 save 32%, Package 2 save 56% + value-added 4 panels for 2 months. Campaign must start 15 Jul–1 Aug 2026, balance by 31 Dec 2026."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM150k/1mo"
+          },
+          {
+            "title": "RM300k/2mo"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Cubig large format"
+          },
+          {
+            "title": "Bonus panels"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-media-prima-omnia-cubig",
+      "name": "Media Prima Omnia (Cubig)",
+      "owner": "media-prima",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/cubig-klcc-junction-2026-promo.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "welcome-back-promo",
+          "title": "Welcome Back Promo",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-media-prima-omnia-cubig"
+          ],
+          "items": [
+            {
+              "item": "Package 1 - Welcome Back Promo (1-month campaign)",
+              "unit": "package",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-month campaign at Cubig @ KLCC Junction; rate card value RM220,000; save up to 32%; confirmations by 15 July 2026; campaign must start 15 July-1 August 2026",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "commitment-promo",
+          "title": "Commitment Promo",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-media-prima-omnia-cubig"
+          ],
+          "items": [
+            {
+              "item": "Package 2 - Commitment Promo (2-month campaign)",
+              "unit": "package",
+              "price": 300000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2-month campaign at Cubig @ KLCC Junction; rate card value RM680,000; save up to 56%; includes any four panels from the listed Cubig sites; first month must start 15 July-1 August 2026, second month completed by 31 December 2026",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

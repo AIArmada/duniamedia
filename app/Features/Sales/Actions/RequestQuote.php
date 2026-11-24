@@ -17,7 +17,7 @@ final readonly class RequestQuote
 
     /**
      * @param  array{name: string, email?: string|null, phone?: string|null, company?: string|null}  $buyer
-     * @param  list<array{product_id: string, name: string, unit_code: ?string, unit_price: float, quantity: int}>  $lines
+     * @param  list<array{product_id: string, name: string, unit_code: ?string, unit_price: float, quantity: int, rate_entry_id: ?string}>  $lines
      * @param  list<string>  $addons
      * @param  array<string, mixed>  $campaign
      */
@@ -40,7 +40,7 @@ final readonly class RequestQuote
                 'brief' => $brief,
                 'status' => 'new',
                 'consent_at' => now(),
-                'metadata' => ['addons' => $addons, 'campaign' => $campaign],
+                'metadata' => ['addons' => $addons, 'campaign' => $campaign + ['lines' => $lines]],
             ]);
 
             $reference = 'DM-'.now()->format('ymd').'-'.strtoupper(Str::random(6));

@@ -8,7 +8,6 @@ use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Models\Placement;
 use App\Features\Creators\Api\ResolvesCreators;
 use App\Features\Identity\Api\ResolvesParties;
-use Illuminate\Support\Collection;
 
 class MediaOffer
 {
@@ -17,6 +16,9 @@ class MediaOffer
     public function __get(string $key): mixed
     {
         $profile = $this->product->mediaProfile;
+        $seller = $profile?->media_owner_party_id !== null
+            ? collect(app(ResolvesParties::class)->byIds($profile->media_owner_party_id))->first()
+            : null;
 
         return match ($key) {
             'id' => $this->product->id,
@@ -30,9 +32,8 @@ class MediaOffer
             'medium', 'channel_label', 'location_label', 'audience_label',
             'pricing_mode', 'price_from', 'availability_status', 'verified_at', 'sort_order' => $profile?->{$key},
             'specifications' => $this->specifications(),
-            'seller' => $profile?->media_owner_party_id !== null
-                ? app(ResolvesParties::class)->byIds($profile->media_owner_party_id)[0] ?? null
-                : null,
+            'seller' => $seller,
+            'sellerName' => $seller?->displayName,
             'creatorProfile' => $profile?->creator_profile_id !== null
                 ? app(ResolvesCreators::class)->summary($profile->creator_profile_id)
                 : null,
@@ -43,16 +44,16 @@ class MediaOffer
 
     public function displayImage(): string
     {
-        $url = $this->product->getFirstMediaUrl('hero');
-
-        if ($url !== '') {
-            return $url;
-        }
-
         $path = 'assets/ratecards/img/'.$this->product->slug.'.webp';
 
         if (is_file(public_path($path))) {
             return $path;
+        }
+
+        $url = $this->product->getFirstMediaUrl('hero');
+
+        if ($url !== '') {
+            return $url;
         }
 
         return match ($this->product->mediaProfile?->medium) {
@@ -72,36 +73,15 @@ class MediaOffer
         return $this->product->mediaProfile?->placement;
     }
 
-    public function getMedia(string $collection = 'documents'): Collection
-    {
-        return $this->product->getMedia($collection);
-    }
-
-    public function documents(): array
-    {
-        return $this->product->getMedia('documents')
-            ->values()
-            ->map(function ($media): array {
-                return [
-                    'name' => $media->getCustomProperty('name') ?: $media->name,
-                    'ext' => strtolower(pathinfo($media->file_name, PATHINFO_EXTENSION)),
-                    'size' => $media->size,
-                    'kind' => $media->getCustomProperty('kind', 'document'),
-                    'index' => $media->order_column,
-                ];
-            })
-            ->all();
-    }
-
     private function specifications(): array
     {
         $specs = $this->product->mediaProfile?->specifications ?? [];
 
         if (! is_array($specs)) {
-            $specs = [];
+            return [];
         }
 
-        $specs['documents'] = $this->documents();
+        unset($specs['documents'], $specs['source_file']);
 
         return $specs;
     }

@@ -70,6 +70,7 @@
                 </summary>
                 <div class="nav-panel">
                     <a href="{{ route('media.index') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>Browse media opportunities</span> <span>Filter by platform, medium, owner, format and location</span></a>
+                    <a href="{{ route('rates.index') }}"><span class="nav-panel__label"><x-dm-icon name="chart" :size="17"/>Rate finder</span> <span>Search every extracted rate line by owner, channel and budget</span></a>
                     <a href="{{ route('media.owners') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>Media owners</span> <span>Broadcasters, publishers, out-of-home and specialist channels</span></a>
                     <a href="{{ route('ecosystem') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>How the ecosystem fits</span> <span>Owner, property, asset, surface, placement and inventory</span></a>
                     <a href="{{ route('assets.join') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>List your space</span> <span>For media owners, operators and property managers</span></a>
@@ -187,6 +188,17 @@
         </div>
     </div>
 </header>
+
+@if (session('plan_added'))
+    <div class="plan-flash">
+        <div class="container plan-flash__inner">
+            <span>Added <strong>{{ session('plan_added.name') }}</strong> to your plan.</span>
+            <a href="{{ route('plans.show', session('plan_added.instance')) }}">
+                Review plan · {{ session('plan_added.count') }} {{ session('plan_added.count') === 1 ? 'item' : 'items' }} · RM {{ number_format(session('plan_added.total'), 2) }} ↗
+            </a>
+        </div>
+    </div>
+@endif
 
 <main id="main">
     {{ $slot ?? '' }}

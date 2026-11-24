@@ -1,0 +1,152 @@
+{
+  "slug": "bus-wrap-klang-valley-2025",
+  "owner": "ra-media-relations",
+  "title": "Bus Wrap Klang Valley 2025 — Transit OOH",
+  "summary": "Example Russian Language Centre plan; 260k ridership +192k road impressions, 13M monthly reach.",
+  "description": "Bus Wrap proposal (17 pages, Q4 2025). Why mobile works, 67% recall (~8.7M views/mo), creative (clean visuals + contact), Route 170 Gombak–Sentral–Merdeka example with stop lists, tips (best route + longer period), T&Cs (SST, DBP/operator approval, 4-week artwork, 100% prepayment to RA Media Relations).",
+  "validity": "Q4 2025 example",
+  "terms": null,
+  "hero": "assets/ratecards/img/bus-wrap-klang-valley-2025.webp",
+  "medium": "Outdoor",
+  "source_pages": 17,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Bus Wrap proposal (17 pages, Q4 2025). Why mobile works, 67% recall (~8.7M views/mo), creative (clean visuals + contact), Route 170 Gombak–Sentral–Merdeka example with stop lists, tips (best route + longer period), T&Cs (SST, DBP/operator approval, 4-week artwork, 100% prepayment to RA Media Relations)."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "On request (route + duration)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Bus wrap"
+          },
+          {
+            "title": "Route-based"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "ra-media-relations-bus",
+      "name": "Bus",
+      "owner": "ra-media-relations",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bus-wrap-klang-valley-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "investment-calculation-10-buses-3-months",
+          "title": "Investment Calculation — 10 Buses / 3 Months",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ra-media-relations-bus"
+          ],
+          "items": [
+            {
+              "item": "Bus wrap (single) — Klang Valley, monthly rental",
+              "unit": "per bus per month",
+              "price": 4700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 buses, 3 months, 1 time production; total rental RM141,100; production RM4,200 per bus; add 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Bus wrap package — 10 buses, 3 months",
+              "unit": "package",
+              "price": 183100,
+              "price_incl_sst": 197740,
+              "price_basis": "calculated",
+              "confidence": "medium",
+              "notes": "Calculated from printed rental + production totals; Total rental RM141,100 + production RM42,000 = RM183,100; add 8% SST RM14,640; total payable RM197,740 (as printed)",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Bus wrap — production cost",
+              "unit": "per bus (one-time)",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 buses, 1 time production; total production RM42,000",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "investment-calculation-15-buses-6-months",
+          "title": "Investment Calculation — 15 Buses / 6 Months",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ra-media-relations-bus"
+          ],
+          "items": [
+            {
+              "item": "Bus wrap (single) — Klang Valley, monthly rental",
+              "unit": "per bus per month",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15 buses, 6 months, 2 productions (sticker changes every 3 months); total rental RM360,000; production RM8,000 per bus; add 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Bus wrap package — 15 buses, 6 months",
+              "unit": "package",
+              "price": 480000,
+              "price_incl_sst": 518400,
+              "price_basis": "calculated",
+              "confidence": "medium",
+              "notes": "Calculated from printed rental + production totals; Total rental RM360,000 + production RM120,000 = RM480,000; add 8% SST RM38,400; total payable RM518,400",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Bus wrap — production cost (2 productions)",
+              "unit": "per bus",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15 buses × RM8,000 = RM120,000 production; sticker changes every 3 months",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

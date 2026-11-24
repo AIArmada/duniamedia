@@ -1,0 +1,2813 @@
+{
+  "slug": "sinar-karangkraf-ratecard-2025-2026",
+  "owner": "karangkraf",
+  "title": "Sinar Karangkraf Media Kit 2025/26 — Sinar Harian, SinarPlus, Bestari & Daily",
+  "summary": "Sinar Harian print from RM2,240 (quarter page B&W); full page colour RM16,960; digital CPM RM30–90; Sinar Daily article RM8k.",
+  "description": "Sinar Karangkraf media kit 2025/26 (38 pages) covering Sinar Harian and Sinar Ahad, SinarPlus, Sinar Bestari and Sinar Daily. Sinar Harian print: full page B&W RM8,960 / colour RM16,960, half page RM4,480 / RM12,480, quarter page RM2,240 / RM10,240, double page RM26,880 / RM42,480, front-page bottom panel RM19,360, ear space RM21,250, full wrap RM200,000; classified liners RM18–35 per line by frequency. Digital display CPM RM30–90, masthead RM10,000/day, branded advertorial RM8,000–14,000, social posts from RM500, Facebook Live RM5,000, TikTok from RM4,000. SinarPlus and Sinar Bestari digital from RM2,000/week; Sinar Daily display RM8,000–15,000/week and mobile app RM5,000–12,000. Video/programme sponsorships from RM10,000. Rates exclude SST and include 15% agency commission.",
+  "validity": "2025–2026 media kit; T&C state rates valid 1 Jan–31 Dec 2025",
+  "terms": null,
+  "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+  "medium": "Print",
+  "source_pages": 38,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Sinar Karangkraf media kit 2025/26 (38 pages) covering Sinar Harian and Sinar Ahad, SinarPlus, Sinar Bestari and Sinar Daily. Sinar Harian print: full page B&W RM8,960 / colour RM16,960, half page RM4,480 / RM12,480, quarter page RM2,240 / RM10,240, double page RM26,880 / RM42,480, front-page bottom panel RM19,360, ear space RM21,250, full wrap RM200,000; classified liners RM18–35 per line by frequency. Digital display CPM RM30–90, masthead RM10,000/day, branded advertorial RM8,000–14,000, social posts from RM500, Facebook Live RM5,000, TikTok from RM4,000. SinarPlus and Sinar Bestari digital from RM2,000/week; Sinar Daily display RM8,000–15,000/week and mobile app RM5,000–12,000. Video/programme sponsorships from RM10,000. Rates exclude SST and include 15% agency commission."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Quarter page B&W RM2,240"
+          },
+          {
+            "title": "Full page colour RM16,960"
+          },
+          {
+            "title": "Digital CPM RM30–90"
+          },
+          {
+            "title": "Sinar Daily article RM8,000"
+          },
+          {
+            "title": "Full wrap RM200,000"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Sinar Harian print"
+          },
+          {
+            "title": "Classified"
+          },
+          {
+            "title": "Digital display"
+          },
+          {
+            "title": "Social media"
+          },
+          {
+            "title": "Video programmes"
+          },
+          {
+            "title": "SinarPlus"
+          },
+          {
+            "title": "Sinar Bestari"
+          },
+          {
+            "title": "Sinar Daily"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "karangkraf-sinar-harian",
+      "name": "Sinar Harian",
+      "owner": "karangkraf",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "karangkraf-sinarplus",
+      "name": "SinarPlus",
+      "owner": "karangkraf",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "sinarplus-digital-rates-main-page",
+          "title": "SinarPlus digital rates — main page",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinarplus"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 / 320x50",
+              "unit": "per day",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate; rich media production RM3,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "per week",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "per day",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate; rich media production RM3,000.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "per week",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "per day",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed in the weekly-rate column but marked (Daily).",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "per week",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "sinarplus-digital-rates-inside-page-cpm",
+          "title": "SinarPlus digital rates — inside page (CPM)",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinarplus"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 / 320x50",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Curtain ad 640x1280",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Expandable catfish 970x90 to 970x500 / 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "In-image ad (no video)",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "In-image ad (with video) 624x125 responsive",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "In-view video 640x360",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Mobile catfish 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Mobile spin invitation / expand ad cards 640x853",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Mobile spin plus invitation / expand ad background 640x640",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Pre-roll 15 seconds 640x480 desktop",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Pre-roll 30 seconds 400x300 mobile",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            }
+          ]
+        },
+        {
+          "key": "sinarplus-digital-rates-native-social-media",
+          "title": "SinarPlus digital rates — native & social media",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinarplus"
+          ],
+          "items": [
+            {
+              "item": "Branded advertorial",
+              "unit": "per post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "FWOD infographics",
+              "unit": "per post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM8,000.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "FWOD motion videos",
+              "unit": "per post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM10,000.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Facebook live",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Facebook pin to top",
+              "unit": "per post",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Facebook post",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Facebook timeline cover 820x312",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Instagram carousel",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Instagram post",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Instagram stories",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Live X, up to 10 tweets",
+              "unit": "per event day",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Microsite",
+              "unit": "per campaign",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM10,000.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Mini game",
+              "unit": "per campaign",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM8,000.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "TikTok (new media)",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM4,000.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "TikTok post",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "X (Twitter) post",
+              "unit": "per post",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "karangkraf-sinar-bestari",
+      "name": "Sinar Bestari",
+      "owner": "karangkraf",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "sinar-bestari-digital-rates-run-on-site",
+          "title": "Sinar Bestari digital rates — run-on-site",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinar-bestari"
+          ],
+          "items": [
+            {
+              "item": "Branded advertorial",
+              "unit": "per post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Curtain ad 640x1280",
+              "unit": "per week",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Email marketing 700x900",
+              "unit": "per email",
+              "price": 0.35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Expandable leaderboard 728x90 to 728x200 / 320x100",
+              "unit": "per week",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Expandable medium rectangle 300x250 to 600x250",
+              "unit": "per week",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Facebook live",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Facebook post",
+              "unit": "per post",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Facebook timeline cover 820x312",
+              "unit": "per day",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "per week",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Header banner 1024x90 / 320x100",
+              "unit": "per week",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Instagram carousel",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Instagram post",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Instagram story",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "per day",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "per week",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "per day",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed in the weekly-rate column but marked (Daily).",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "per week",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Microsite",
+              "unit": "per campaign",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM10,000.",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Mini game",
+              "unit": "per campaign",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM5,000.",
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Mobile catfish 320x50 to 320x416",
+              "unit": "per week",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "SMS marketing",
+              "unit": "per SMS",
+              "price": 0.3,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "Super leaderboard 970x90 / 320x50",
+              "unit": "per week",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 21
+            },
+            {
+              "item": "TikTok post",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM4,000.",
+              "is_package": false,
+              "sort_order": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "karangkraf-sinar-daily",
+      "name": "Sinar Daily",
+      "owner": "karangkraf",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "sinar-daily-digital-rates-main-page",
+          "title": "Sinar Daily digital rates — main page",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinar-daily"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 / 320x50",
+              "unit": "per week",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "33% share of voice.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Expandable catfish 970x90 to 970x500 / 320x50 to 320x416",
+              "unit": "per week",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "33% share of voice.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "per week",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "per day",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate; 100% SOV.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "per week",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "33% share of voice. Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "per day",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed in the weekly-rate column but marked (Daily); 100% SOV.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "per week",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "33% share of voice.",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "sinar-daily-digital-rates-inside-page-cpm",
+          "title": "Sinar Daily digital rates — inside page (CPM)",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinar-daily"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 / 320x50",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Curtain ad 640x1280",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Expandable catfish 970x90 to 970x500 / 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "In-image ad (no video)",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "In-image ad (with video) 624x125 responsive",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "In-view video 640x360",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Mobile catfish 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Mobile spin invitation / expand ad cards 640x853",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Mobile spin plus invitation / expand ad background 640x640",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Pre-roll 15 seconds 640x480 desktop / 400x300 mobile",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Pre-roll 30 seconds",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            }
+          ]
+        },
+        {
+          "key": "sinar-daily-digital-rates-native-social-media",
+          "title": "Sinar Daily digital rates — native & social media",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinar-daily"
+          ],
+          "items": [
+            {
+              "item": "Branded advertorial",
+              "unit": "per post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Facebook live",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Facebook pin to top",
+              "unit": "per post",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Facebook post",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Facebook timeline cover 820x312",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Instagram carousel",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Instagram post",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Instagram stories",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Live X, up to 10 tweets",
+              "unit": "per event day",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Microsite",
+              "unit": "per campaign",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM10,000.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Mini game",
+              "unit": "per campaign",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM8,000.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "TikTok post",
+              "unit": "per post",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM4,000.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "X (Twitter) post",
+              "unit": "per post",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM1,000.",
+              "is_package": false,
+              "sort_order": 12
+            }
+          ]
+        },
+        {
+          "key": "sinar-daily-digital-rates-mobile-app",
+          "title": "Sinar Daily digital rates — mobile app",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-sinar-daily"
+          ],
+          "items": [
+            {
+              "item": "Interstitial 320x480 / 768x1024 tablet",
+              "unit": "per week",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "50% SOV.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Large rectangle 336x280",
+              "unit": "per week",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100% SOV.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Leaderboard 320x50",
+              "unit": "per week",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100% SOV.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "per week",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100% SOV.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Mobile app ad takeover 336x280 / 320x50",
+              "unit": "per week",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100% SOV.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Welcome ad / splash screen 320x480",
+              "unit": "per day",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "karangkraf-ideaktif",
+      "name": "IdeAktif",
+      "owner": "karangkraf",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "karangkraf-group",
+      "name": "Sinar Karangkraf Group",
+      "owner": "karangkraf",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "print-rates-display",
+          "title": "Print rates — display",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Advertorial, full page, black & white",
+              "unit": "per insertion",
+              "price": 10460,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM20,400. Creative charge RM3,500.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Advertorial, full page, colour",
+              "unit": "per insertion",
+              "price": 20400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Advertorial, half page, black & white",
+              "unit": "per insertion",
+              "price": 5980,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM15,980.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Advertorial, half page, colour",
+              "unit": "per insertion",
+              "price": 15980,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Creative charges / advertorial",
+              "unit": "per advertorial",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Advertorial creative charge.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Double page, black & white",
+              "unit": "per insertion",
+              "price": 26880,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM42,480.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Double page, colour",
+              "unit": "per insertion",
+              "price": 42480,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Full page, black & white",
+              "unit": "per insertion",
+              "price": 8960,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM16,960. Display rates exclude SST (p.37).",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Full page, colour",
+              "unit": "per insertion",
+              "price": 16960,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Position loadings: front page +100%, page 3 +50%, DPS +50%, consecutive pages +50%, facing pages +50%, front half +30%.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Half page, black & white",
+              "unit": "per insertion",
+              "price": 4480,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM12,480.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Half page, colour",
+              "unit": "per insertion",
+              "price": 12480,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Per column centimetre, 1 insertion",
+              "unit": "per column cm",
+              "price": 35.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column. Series shown once, B&W/colour split not stated.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Per column centimetre, 13 insertions",
+              "unit": "per column cm",
+              "price": 31.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Per column centimetre, 26 insertions",
+              "unit": "per column cm",
+              "price": 30.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Per column centimetre, 3 insertions",
+              "unit": "per column cm",
+              "price": 33.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Per column centimetre, 52 insertions",
+              "unit": "per column cm",
+              "price": 27.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column.",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Per column centimetre, 6 insertions",
+              "unit": "per column cm",
+              "price": 32.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per single column centimetre; 3cm per column.",
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Quarter page, black & white",
+              "unit": "per insertion",
+              "price": 2240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Colour rate RM10,240.",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Quarter page, colour",
+              "unit": "per insertion",
+              "price": 10240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 18
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-main-page",
+          "title": "Digital rates — main page",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 / 320x50",
+              "unit": "per week",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions; rich media production cost RM3,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Digital production cost — rich media formats",
+              "unit": "per creative",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed against rich media formats on main page.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Digital production cost — standard display formats",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed against standard banner formats on main page.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Expandable catfish 970x90 to 970x500 / 320x50 to 320x416",
+              "unit": "per week",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Expandable leaderboard 728x90 to 728x200 / 320x100",
+              "unit": "per week",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Mobile non-expandable. Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Expandable medium rectangle 300x250 to 600x250",
+              "unit": "per week",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Mobile non-expandable. Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "per week",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Header banner 1024x90 / 320x100",
+              "unit": "per week",
+              "price": 16000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "per day",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate; rich media production cost RM3,000.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "per week",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions. Production cost RM1,000.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "per day",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Daily rate.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "per week",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Super leaderboard 970x90 / 320x50",
+              "unit": "per week",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Estimated 300,000 impressions.",
+              "is_package": false,
+              "sort_order": 12
+            }
+          ]
+        },
+        {
+          "key": "print-rates-classified-liners-run-ons",
+          "title": "Print rates — classified liners (run-ons)",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Classified liner, additional words",
+              "unit": "per word",
+              "price": 1.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "After the first 20 words.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Classified liner, logo/picture",
+              "unit": "per insertion",
+              "price": 20.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "print-rates-colour-surcharge",
+          "title": "Print rates — colour surcharge",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Colour surcharge, 1 spot process",
+              "unit": "per insertion",
+              "price": 2700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Colour surcharge, 2 spot process",
+              "unit": "per insertion",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Colour surcharge, full colour",
+              "unit": "per insertion",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Event news coverage",
+              "unit": "per event",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Klang Valley area only.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "print-rates-premium-positions",
+          "title": "Print rates — premium positions",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Cover wrap",
+              "unit": "per insertion",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Newsprint material only.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Front page bottom panel",
+              "unit": "per insertion",
+              "price": 19360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Flat premium-position rate; newsprint material only.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Front page earspace",
+              "unit": "per insertion",
+              "price": 21250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Flat premium-position rate; newsprint material only.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Full wrap",
+              "unit": "per insertion",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Newsprint material only.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Half wrap",
+              "unit": "per insertion",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Newsprint material only.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-native-social-media",
+          "title": "Digital rates — native & social media",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Branded advertorial",
+              "unit": "per post",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production from RM1,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Email marketing 700x900",
+              "unit": "per email",
+              "price": 0.35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM500.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Facebook live",
+              "unit": "per post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Facebook paid partnership",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM5,000.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Facebook pin to top",
+              "unit": "per post",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Facebook post",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Facebook timeline cover 820x312",
+              "unit": "per day",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Instagram carousel",
+              "unit": "per post",
+              "price": 2250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Instagram paid partnership",
+              "unit": "per post",
+              "price": 2250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed as From RM2,250.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Instagram post",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Instagram stories",
+              "unit": "per post",
+              "price": 2250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Live X, up to 10 tweets",
+              "unit": "per event day",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Microsite",
+              "unit": "per campaign",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed as From RM10,000.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Mini game",
+              "unit": "per campaign",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed as From RM8,000.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "SMS marketing",
+              "unit": "per SMS",
+              "price": 0.3,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production cost RM500.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "TikTok (Buletin)",
+              "unit": "per post",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "TikTok post",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "X (Twitter) post",
+              "unit": "per post",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "YouTube video placement",
+              "unit": "per post",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed as From RM3,000.",
+              "is_package": false,
+              "sort_order": 18
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-inside-page-cpm",
+          "title": "Digital rates — inside page (CPM)",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Catfish 970x90 to 970x500",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Curtain ad 640x1280",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Expandable catfish 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Expandable leaderboard 728x90 to 728x200 / 320x100",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Expandable medium rectangle 300x250 to 600x250",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Expanded ad 640x1138 (5 cards)",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Half page 300x600",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Header banner 1024x90 / 320x100",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "In-image ad (no video) 624x125 responsive",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "In-image ad (with video/carousel) 624x125 responsive",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "In-view video 640x360",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Interstitial 800x600 / 640x600",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Leaderboard 728x90 / 320x50",
+              "unit": "CPM",
+              "price": 35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Masthead 970x250 / 300x300",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "CPM",
+              "price": 35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Mobile catfish 320x50 to 320x416",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Mobile cube 560x560 (up to 4 images)",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Mobile revolver invitation 300x1806",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Mobile spin invitation / expand ad, max 3 cards 640x853",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Mobile spin plus invitation / expand ad background 640x640",
+              "unit": "CPM",
+              "price": 90,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "Pre-roll 15 seconds 640x480 desktop",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "In-stream video.",
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "Pre-roll 30 seconds 400x300 mobile",
+              "unit": "CPM",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "In-stream video.",
+              "is_package": false,
+              "sort_order": 21
+            },
+            {
+              "item": "Sticky bottom video 640x360 (16:9)",
+              "unit": "CPM",
+              "price": 70,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 22
+            },
+            {
+              "item": "Super leaderboard 970x90 / 320x50",
+              "unit": "CPM",
+              "price": 45,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 23
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-activation-live-programme-sponsorships",
+          "title": "Digital rates — activation / live programme sponsorships",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Berani Semuka",
+              "unit": "per programme",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM25,000; 1 hour 30 minutes.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Dialog Siswa",
+              "unit": "per programme",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM10,000; 1 hour 30 minutes.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Interviu",
+              "unit": "per programme",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM10,000; 40 minutes.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Meja Bulat",
+              "unit": "per programme",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM25,000; 1 hour 30 minutes.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "On The Way",
+              "unit": "per programme",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM10,000; 15 minutes.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Podcast",
+              "unit": "per programme",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM10,000; 30 minutes.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Townhall",
+              "unit": "per programme",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM45,000; 1 hour 30 minutes.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Wacana",
+              "unit": "per programme",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM35,000; 1 hour 30 minutes.",
+              "is_package": false,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-in-program-branding",
+          "title": "Digital rates — in-program branding",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Crawler",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM5,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Infographics",
+              "unit": "per post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM8,000.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Lower third banner",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM5,000.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Lower third banner / host mention / product integration",
+              "unit": "per episode",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "From RM10,000.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Motion graphic on screen",
+              "unit": "per post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM5,000.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Motion videos",
+              "unit": "per post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM10,000.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Product placement",
+              "unit": "per episode",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM3,000.",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-video-programmes",
+          "title": "Digital rates — video programmes",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Creative content",
+              "unit": "per video",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM30,000; 2-3 minutes.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "News coverage",
+              "unit": "per video",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM15,000; 2-3 minutes; Klang Valley only.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Vox pop / voice of the people",
+              "unit": "per video",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM15,000; 2-3 minutes.",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-mobile-app",
+          "title": "Digital rates — mobile app",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Interstitial 320x480 / 768x1024 tablet",
+              "unit": "CPM",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Large rectangle 336x280",
+              "unit": "CPM",
+              "price": 35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Leaderboard 320x50",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Medium rectangle 300x250",
+              "unit": "CPM",
+              "price": 30,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Mobile app ad takeover 336x280 / 320x50 / 300x250",
+              "unit": "per day",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Splash screen 320x480",
+              "unit": "per day",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-website-live-engagement",
+          "title": "Digital rates — website & live engagement",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Logo placement",
+              "unit": "per day",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "From RM2,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Main slider placement",
+              "unit": "per day",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM8,000.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Pilihan Editor placement",
+              "unit": "per day",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM5,000.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Quiz / undian pembaca on website",
+              "unit": "per post",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "From RM3,000.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Web push notification",
+              "unit": "per post",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM2,000.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "digital-rates-signature-mega-niche-events",
+          "title": "Digital rates — signature / mega / niche events",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "karangkraf-group"
+          ],
+          "items": [
+            {
+              "item": "Niche curated events",
+              "unit": "per event",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM50,000; approx. 50 pax.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Seminar / forum",
+              "unit": "per event",
+              "price": 240000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "From RM240,000; approx. 300 pax.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

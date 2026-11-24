@@ -75,7 +75,13 @@ return [
             ],
             'documents' => [
                 'limit' => 10,
-                'mimes' => ['application/pdf'],
+                'mimes' => [
+                    'application/pdf',
+                    'image/jpeg',
+                    'image/png',
+                    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                    'video/mp4',
+                ],
             ],
             'variant_images' => [
                 'limit' => 10,

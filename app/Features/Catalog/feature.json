@@ -43,6 +43,27 @@
       "App\\Features\\Catalog\\Persistence\\WriteMediaProfiles",
       "App\\Features\\Catalog\\Actions\\SaveMediaProfile"
     ],
+    "table:rate_card_entries": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardEntries"
+    ],
+    "table:rate_card_notes": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardNotes"
+    ],
+    "table:rate_card_sections": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardSections"
+    ],
+    "table:rate_card_section_media_property": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardSections"
+    ],
+    "table:media_profile_media_property": [
+      "App\\Features\\Catalog\\Persistence\\WriteDeckChannels"
+    ],
+    "table:rate_card_assets": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardAssets"
+    ],
+    "table:rate_card_blocks": [
+      "App\\Features\\Catalog\\Persistence\\WriteRateCardBlocks"
+    ],
     "table:placement_formats": [
       "App\\Features\\Catalog\\Persistence\\WritePlacementFormats"
     ]

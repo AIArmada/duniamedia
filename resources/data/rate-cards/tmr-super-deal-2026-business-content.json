@@ -1,0 +1,219 @@
+{
+  "slug": "tmr-super-deal-2026-business-content",
+  "owner": "specialist-media",
+  "title": "The Malaysian Reserve Super Deal 2026 — Business Content",
+  "summary": "Press release RM3,240; infographic, exec interview and press coverage packs RM69k–RM147k.",
+  "description": "TMR Content Solutions 2026 (8 pages). 80k print readership, 480k UV / 610k pageviews, 77.5% Central. Four needs: Announce (press release RM3,240, 1,000 words), Lead (infographic), Position (exec interview), Amplify (press coverage with social/print). Packages RM69,660 / RM147,420 examples.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/tmr-super-deal-2026-business-content.webp",
+  "medium": "Print",
+  "source_pages": 8,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "TMR Content Solutions 2026 (8 pages). 80k print readership, 480k UV / 610k pageviews, 77.5% Central. Four needs: Announce (press release RM3,240, 1,000 words), Lead (infographic), Position (exec interview), Amplify (press coverage with social/print). Packages RM69,660 / RM147,420 examples."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Release RM3,240"
+          },
+          {
+            "title": "Packs RM69k–147k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Print"
+          },
+          {
+            "title": "Digital article"
+          },
+          {
+            "title": "Social amplification"
+          },
+          {
+            "title": "Infographic"
+          },
+          {
+            "title": "Exec interview"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-the-malaysian-reserve",
+      "name": "The Malaysian Reserve",
+      "owner": "specialist-media",
+      "medium": "Print",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/tmr-super-deal-2026-business-content.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "01-announce-online-press-release",
+          "title": "01 Announce — Online Press Release",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "specialist-media-the-malaysian-reserve"
+          ],
+          "items": [
+            {
+              "item": "TMR Online Branded Content / Press Release + Facebook",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 5400,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value RM21,600; client-supplied copy max 1,000 words; no viewing/approval prior to publication; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "TMR Online Press Release",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 3240,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Corporate announcement published on TMR website plus Facebook article link; client-supplied copy max 1,000 words; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "02-lead-the-conversation-insight-infographic-sponsorship",
+          "title": "02 Lead the Conversation — Insight Infographic Sponsorship",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "specialist-media-the-malaysian-reserve"
+          ],
+          "items": [
+            {
+              "item": "TMR Insight Infographic Sponsorship",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 11000,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM35,467.20; full page full colour sponsored infographic, Facebook and Instagram posts (100,000 reach each) and 50 copies of The Malaysian Reserve; page also shows RM16,200.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "03-position-executive-interview",
+          "title": "03 Position — Executive Interview",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "specialist-media-the-malaysian-reserve"
+          ],
+          "items": [
+            {
+              "item": "Executive Interview - Option 1: Digital",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 8640,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM25,380; TMR branded content, Facebook 100K reach, Instagram 100K reach, X 500 impressions; page also shows RM12,420.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Executive Interview - Option 2: Half Page",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 11000,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM41,493.60; half page full colour interview advertorial plus online replica, Facebook/Instagram 100K reach, X 500 impressions and 50 newspaper copies; page also shows RM16,200.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Executive Interview - Option 3: Full Page",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 13160,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM50,047.20; full page full colour interview advertorial plus online replica, Facebook/Instagram 100K reach, X 500 impressions and 50 newspaper copies; page also shows RM19,440.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "04-amplify-press-coverage",
+          "title": "04 Amplify — Press Coverage",
+          "intro": null,
+          "medium": "Print",
+          "channels": [
+            "specialist-media-the-malaysian-reserve"
+          ],
+          "items": [
+            {
+              "item": "Press Coverage - Option 1: Video Only",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 5400,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM18,360; press coverage video max 1.5 min shared via Facebook, Instagram and TikTok, 10,000 total video views; page also shows RM6,480.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Press Coverage - Option 2: Video + Half Page",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 14580,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM59,853.60; video plus half page full colour advertorial, online replica 3,000 reads, Facebook/Instagram 100K reach and X 500 impressions; page also shows RM23,760.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Press Coverage - Option 3: Video + Full Page",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": 16200,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value RM68,407.20; video plus full page full colour advertorial, online replica 3,000 reads, Facebook/Instagram 100K reach and X 500 impressions; page also shows RM19,440.00*; All package investments are inclusive of 8% SST",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

@@ -1,0 +1,1390 @@
+{
+  "slug": "bernama-media-kit-2026",
+  "owner": "bernama",
+  "title": "Bernama Media Kit 2026 — National News Agency",
+  "summary": "Official 2026 media kit (24-page scanned deck; rate tables extracted).",
+  "description": "Bernama Media Kit 2026 (24 pages, scanned images; rate tables extracted). National wire + portal + TV/radio extensions. Extracted rates cover press releases RM3k–24k, TV/radio spots RM220–5k, event coverage RM12k–50k, production RM3k–50k, and archives/images RM100–1,000.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+  "medium": "Digital",
+  "source_pages": 24,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Bernama Media Kit 2026 (24 pages, scanned images; rate tables extracted). National wire + portal + TV/radio extensions. Extracted rates cover press releases RM3k–24k, TV/radio spots RM220–5k, event coverage RM12k–50k, production RM3k–50k, and archives/images RM100–1,000."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Press releases RM3k–24k"
+          },
+          {
+            "title": "TV/radio spots RM220–5k"
+          },
+          {
+            "title": "Coverage RM12k–50k"
+          },
+          {
+            "title": "Production RM3k–50k"
+          },
+          {
+            "title": "Archives/images RM100–1,000"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "News portal"
+          },
+          {
+            "title": "Wire"
+          },
+          {
+            "title": "TV/radio (per kit)"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "bernama-tv",
+      "name": "Bernama TV",
+      "owner": "bernama",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "social-media-recorded-copy",
+          "title": "Social media recorded copy",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-tv"
+          ],
+          "items": [
+            {
+              "item": "BTV programme copy - 1+ hour",
+              "unit": "1+ hour recording",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BTV programme, 1+ hour.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "tv-spot-airtime-2",
+          "title": "TV spot airtime",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-tv"
+          ],
+          "items": [
+            {
+              "item": "TV spot - 10 sec",
+              "unit": "10s spot",
+              "price": 750,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama TV airtime rate per spot.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "TV spot - 15 sec",
+              "unit": "15s spot",
+              "price": 1125,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama TV airtime rate per spot.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "TV spot - 20 sec",
+              "unit": "20s spot",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama TV airtime rate per spot.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "TV spot - 30 sec",
+              "unit": "30s spot",
+              "price": 2250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama TV airtime rate per spot.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "TV spot - 60 sec",
+              "unit": "60s spot",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama TV airtime rate per spot.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bernama-radio",
+      "name": "Bernama Radio",
+      "owner": "bernama",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "bernama-radio",
+          "title": "Bernama Radio",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-radio"
+          ],
+          "items": [
+            {
+              "item": "1-2 minutes video production",
+              "unit": "video",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "30 secs promo ROS",
+              "unit": "30s spot",
+              "price": 220,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "30 secs spot buy inside news 'Utama Puncak Jam Ini'",
+              "unit": "30s spot",
+              "price": 350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "30-minute talkshow (drivetime)",
+              "unit": "30-min programme",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "30-minute talkshow (normal hour)",
+              "unit": "30-min programme",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Audio clip - news/programme",
+              "unit": "clip",
+              "price": 800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Crossover inside programme",
+              "unit": "crossover",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "In-house programme sponsorship",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "Info capsule (max 2 min)",
+              "unit": "capsule (max 2 min)",
+              "price": 720,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Live read",
+              "unit": "live read",
+              "price": 350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "News cast with audio",
+              "unit": "newscast",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "News clip/programme clip",
+              "unit": "clip",
+              "price": 800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Normal news coverage/crossover",
+              "unit": "coverage",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Opening & closing (before/after in-house programme)",
+              "unit": "item",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Radio app - 100,000 impressions",
+              "unit": "per 100,000 impressions",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "SEGMEN DIMENSI HARI (11 AM - 4 PM)",
+              "unit": "spot",
+              "price": 250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "SEGMEN REFLEKSI NUANSA (4 PM - 9 PM)",
+              "unit": "spot",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "SEGMEN SPEKTRUM PAGI (6 AM - 11 AM)",
+              "unit": "spot",
+              "price": 350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Scripting & editing music bed",
+              "unit": "per item",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Social media (FB, TikTok, Instagram)",
+              "unit": "post",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "Special report (5-8 min), repeated 3x same day",
+              "unit": "report",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "Studio fee, in-house talent",
+              "unit": "studio + talent",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 21
+            },
+            {
+              "item": "Video coverage (max 2 min)",
+              "unit": "video (max 2 min)",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 22
+            },
+            {
+              "item": "Video production (3-7 min)",
+              "unit": "video",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "is_package": false,
+              "sort_order": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bernama-com",
+      "name": "Bernama.com",
+      "owner": "bernama",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "coverage-2",
+          "title": "Coverage",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-com"
+          ],
+          "items": [
+            {
+              "item": "Upload article on BERNAMA.com (BM & English)",
+              "unit": "article",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Upload article on website BERNAMA.com, Bahasa Malaysia & English.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "production-services-2",
+          "title": "Production services",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-com"
+          ],
+          "items": [
+            {
+              "item": "Corporate video production (max 5 min)",
+              "unit": "production",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Sharing on Facebook & Twitter; publishing at BERNAMA.com.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Publishing at BERNAMA.com / Facebook / Twitter / IG",
+              "unit": "production",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Label partly OCR-garbled ('RESEARES ... sti').",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Special report video (max 3 min)",
+              "unit": "production",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Video max 3 minutes, publishing at BERNAMA.com.",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "website-advertising-bernama-com",
+          "title": "Website advertising — BERNAMA.com",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-com"
+          ],
+          "items": [
+            {
+              "item": "300 x 250 mid page square A",
+              "unit": "per item",
+              "price": 3900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "300 x 250 mid page square B",
+              "unit": "per item",
+              "price": 3900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "450 x 450 front page",
+              "unit": "per day",
+              "price": 2100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "970 x 90 below highlight rectangular banner",
+              "unit": "per item",
+              "price": 4300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "970 x 90 below top story",
+              "unit": "per item",
+              "price": 6500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "970 x 90 bottom rectangular",
+              "unit": "per item",
+              "price": 2650,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "970 x 90 in-between news category leaderboard",
+              "unit": "per item",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "970 x 90 masthead",
+              "unit": "per item",
+              "price": 9600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "970 x 90 mid page rectangular",
+              "unit": "per item",
+              "price": 5500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "BERNAMA home & inside page - bottom page rectangular (below news)",
+              "unit": "per item",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "BERNAMA home & inside page - masthead",
+              "unit": "per item",
+              "price": 9400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "BERNAMA home & inside page - mid page rectangular (below live TV)",
+              "unit": "per item",
+              "price": 6300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Video publishing - ready material",
+              "unit": "per content page",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "is_package": false,
+              "sort_order": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bernama-wire",
+      "name": "Bernama Wire",
+      "owner": "bernama",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "bernama-group",
+      "name": "Bernama Group",
+      "owner": "bernama",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bernama-media-kit-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "strategic-writing",
+          "title": "Strategic writing",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Analysis (research / research process) + 1 photo",
+              "unit": "article",
+              "price": 24000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, with 1 photo.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Exclusive interview - one-to-one (max 3 photos)",
+              "unit": "interview",
+              "price": 16000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, with max 3 photos.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Exclusive interview with video (max 3 minutes)",
+              "unit": "interview + video",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, video max 3 minutes.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Features (with 3 photos)",
+              "unit": "article",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, with 3 photos.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "News release process & publish + 1 photo",
+              "unit": "article",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, with 1 photo.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "News release process & publish + 1 photo (more than 1,000 words)",
+              "unit": "article",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "English & Malay, with 1 photo, more than 1,000 words.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "coverage",
+          "title": "Coverage",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Event news coverage (max 3 photos), English & Malay",
+              "unit": "coverage",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Event news coverage with max 3 photos, English & Malay.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "archives",
+          "title": "Archives",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Archival visual - edited material",
+              "unit": "per minute",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Edited archival material.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Archival visual - raw material",
+              "unit": "per minute",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Raw archival material.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "news-coverage-crossover",
+          "title": "News coverage & crossover",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Extended news coverage - dual language, max 4 min",
+              "unit": "coverage",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Dual language, max 4 minutes, per coverage; label partly OCR-garbled.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Extended news coverage - one version, max 4 min",
+              "unit": "coverage",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "One version, max 4 minutes, per coverage; label partly OCR-garbled.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Live crossover - BM or ENG news",
+              "unit": "crossover",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Live BM or ENG news crossover, per crossover.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Normal news coverage - dual language version, 1 min",
+              "unit": "coverage",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Dual language, 1 minute, per coverage.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Normal news coverage - one version (BM/ENG/Mandarin/Tamil), 1 min",
+              "unit": "coverage",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "One version, 1 minute, per coverage; label partly reconstructed from OCR.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "tv-spot-airtime",
+          "title": "TV spot airtime",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Interrupter - 20 sec",
+              "unit": "20s spot",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Interrupter, per spot.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Product placement in programme",
+              "unit": "placement",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Product placement per placement in the programme.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Sound slide - 15 sec",
+              "unit": "15s spot",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Sound slide, per spot.",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "social-media-recorded-copy-2",
+          "title": "Social media recorded copy",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Recorded copy for FB/Twitter - 15 mins",
+              "unit": "15-min recording",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Social media recorded copy, 15 minutes.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Recorded copy for FB/Twitter - 30 mins",
+              "unit": "30-min recording",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Social media recorded copy, 30 minutes.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "services",
+          "title": "Services",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Service without crew",
+              "unit": "per hour",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Without crew.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "talkshow-programme",
+          "title": "Talkshow / programme",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Talkshow / programme - 30 mins",
+              "unit": "30-min programme",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Talkshow/programme rate, 30 minutes.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "production-services",
+          "title": "Production services",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Advertorial & online news branded content",
+              "unit": "production",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "With social media sharing (FB & Twitter).",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Digital video coverage within Klang Valley (max 3 min)",
+              "unit": "production",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Event coverage within Klang Valley, max 3 minutes.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Live Facebook event (60 mins)",
+              "unit": "production",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Live Facebook event, 60 minutes.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Mini documentary (max 3 min)",
+              "unit": "production",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Digital video production.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Press conference (30 mins)",
+              "unit": "production",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Press conference coverage, 30 minutes.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Social media hosting - all platforms",
+              "unit": "production",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Label OCR-garbled ('SACL MEDIA ROSTING').",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Studio programme (30-60 mins)",
+              "unit": "production",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Studio programme 30-60 minutes.",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "press-release-distribution",
+          "title": "Press release distribution",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Ad hoc photo distribution",
+              "unit": "per unit",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Photo distribution per unit.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Ad hoc press release / media invite distribution",
+              "unit": "distribution",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Ad hoc press release or media invite distribution.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "press-release-packages",
+          "title": "Press release packages",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Package 1 - 10 press releases + 5 photos FOC",
+              "unit": "package",
+              "price": 7800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 press releases, FOC 5 photos.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Package 2 - 30 press releases + 10 photos FOC",
+              "unit": "package",
+              "price": 22230,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "30 press releases, FOC 10 photos.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Package 3 (printed as 'Package 2') - 50 press releases + 15 photos FOC",
+              "unit": "package",
+              "price": 35100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "50 press releases, FOC 15 photos; source repeats the 'Package 2' label.",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "library-infolink-service-blis",
+          "title": "Library & InfoLink service (BLIS)",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "BERNAMA News",
+              "unit": "item",
+              "price": 700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Directory",
+              "unit": "item",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Facts and Figures",
+              "unit": "item",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Info Providers",
+              "unit": "item",
+              "price": 400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Mandarin News",
+              "unit": "item",
+              "price": 150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Who's Who",
+              "unit": "item",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "BLIS rate card item.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "images-rate-card",
+          "title": "Images rate card",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "bernama-group"
+          ],
+          "items": [
+            {
+              "item": "Foreign media agencies / broadcasting / TVC",
+              "unit": "image",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Image licence rate.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "GLC / government / semi-government",
+              "unit": "image",
+              "price": 150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Image licence rate.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Medium",
+              "unit": "image",
+              "price": 250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Image licence rate.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Original",
+              "unit": "image",
+              "price": 450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Image licence rate.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Publication / printing / advertising",
+              "unit": "image",
+              "price": 150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Image licence rate.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": [
+    {
+      "key": "website-advertising-bernama-com-2",
+      "title": "Website advertising — BERNAMA.com",
+      "intro": null,
+      "medium": "Digital",
+      "channels": [
+        "bernama-com",
+        "bernama-radio"
+      ],
+      "items": [
+        {
+          "item": "BERNAMA Radio/podcast page - bottom page rectangular",
+          "unit": "per item",
+          "price": 2500,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "is_package": false,
+          "sort_order": 0
+        },
+        {
+          "item": "BERNAMA Radio/podcast page - masthead",
+          "unit": "per item",
+          "price": 2500,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "is_package": false,
+          "sort_order": 1
+        },
+        {
+          "item": "BERNAMA Radio/podcast page - mid page rectangular",
+          "unit": "per item",
+          "price": 2625,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "is_package": false,
+          "sort_order": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "slug": "fmt-2026-digital-news",
+  "owner": "specialist-media",
+  "title": "FMT 2026 — Digital News (Free Malaysia Today)",
+  "summary": "3.6M followers, 2.26B impressions; lifestyle/editorial from ~RM300, campaigns RM25k–RM105k.",
+  "description": "FMT Media Rate Card 2026 V15 (8 pages). 567M video views, 62M engagements, 6M UV/mo, 91% higher education, 73% M40+T20. Inventory: lifestyle/editorial articles, platforms by language, impressions, RM500–1,000 entry, RM60–105k hero packs. advertise@freemalaysiatoday.com.",
+  "validity": "2026 (V15)",
+  "terms": null,
+  "hero": "assets/ratecards/img/fmt-2026-digital-news.webp",
+  "medium": "Digital",
+  "source_pages": 8,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "FMT Media Rate Card 2026 V15 (8 pages). 567M video views, 62M engagements, 6M UV/mo, 91% higher education, 73% M40+T20. Inventory: lifestyle/editorial articles, platforms by language, impressions, RM500–1,000 entry, RM60–105k hero packs. advertise@freemalaysiatoday.com."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Entry RM300–1000"
+          },
+          {
+            "title": "Hero RM25k–105k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Lifestyle article"
+          },
+          {
+            "title": "Editorial article"
+          },
+          {
+            "title": "Social"
+          },
+          {
+            "title": "Video"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-fmt",
+      "name": "FMT",
+      "owner": "specialist-media",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/fmt-2026-digital-news.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "advertorial",
+          "title": "Advertorial",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "specialist-media-fmt"
+          ],
+          "items": [
+            {
+              "item": "Editorial Article (ENG)",
+              "unit": "article",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "20,000 impressions; Branded article from client brief, written in editorial tone; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Editorial Article - BM translation",
+              "unit": "article",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Translation row; impressions column not stated on the page; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Event Coverage outside Klang Valley - additional charge",
+              "unit": "per 50km",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Additional charge on top of event coverage; page shows impressions 100,000; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Event Coverage within Klang Valley",
+              "unit": "event coverage",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; On-site event coverage within Klang Valley; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Lifestyle Article (ENG/BM)",
+              "unit": "article",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Branded lifestyle storytelling; impressions column not stated on the page; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Special Report Article (ENG)",
+              "unit": "article",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "50,000 impressions; Longer-form editorial feature with expert or stakeholder analysis; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Special Report Article - BM translation",
+              "unit": "article",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "50,000 impressions; Translation row; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Strategic Editorial Article (ENG)",
+              "unit": "article",
+              "price": 70000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; High-impact editorial feature for leadership positioning; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Strategic Editorial Article - BM translation",
+              "unit": "article",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Translation row; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 8
+            }
+          ]
+        },
+        {
+          "key": "a-la-carte",
+          "title": "A la carte",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "specialist-media-fmt"
+          ],
+          "items": [
+            {
+              "item": "Campaign Report",
+              "unit": "report",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Campaign performance and audience engagement analysis; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Carousel Infographic",
+              "unit": "infographic",
+              "price": 17000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Multi-slide carousel infographic; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Digital Banner Ads",
+              "unit": "14-day campaign",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1,000,000 impressions; Continuous 14-day display advertising; price and impressions appear in reverse order in the text; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Infographic",
+              "unit": "infographic",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Single-page infographic designed in-house; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Photo Gallery",
+              "unit": "post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Photo gallery of client-supplied images across FMT social platforms; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Pinned Playlist (Stories)",
+              "unit": "package",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "N/A impressions; Pinned playlist with five curated highlight stories; Prices stated not inclusive of SST",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Press Release (single language)",
+              "unit": "article",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "N/A impressions; Published in English OR Bahasa Malaysia; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Press Release - dual-language package",
+              "unit": "package",
+              "price": 28000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "N/A impressions; Published in English AND Bahasa Malaysia; Prices stated not inclusive of SST",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "Sentiment Report",
+              "unit": "report",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Data-driven sentiment report over a two-week campaign window; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Video Posting",
+              "unit": "post",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Re-circulation of client-provided video material; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "video",
+          "title": "Video",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "specialist-media-fmt"
+          ],
+          "items": [
+            {
+              "item": "Mini Explainer Reel",
+              "unit": "video",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; 1-3 minute vertical explainer reel; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "News Reel",
+              "unit": "video",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "50,000 impressions; News-reel adaptation of article; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Special Report (video)",
+              "unit": "video",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; 1-3 minute horizontal special report; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Lifestyle Reel",
+              "unit": "video",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Portfolio reels: health, property, automotive, education, food, entertainment, travel, special interest; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Corporate Video",
+              "unit": "video",
+              "price": 250000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "50,000 impressions; 1-3 minute horizontal brand profile; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Event Coverage Reel outside Klang Valley - additional charge",
+              "unit": "per 50km",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Additional charge on top of event coverage reel; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Event Coverage Reel within Klang Valley",
+              "unit": "video",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Mini explainer + quick reels, within Klang Valley; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Interview Video",
+              "unit": "video",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "75,000 impressions; Long-form video interview or podcast episode; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Special Report outside Klang Valley - additional charge",
+              "unit": "per 50km",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Additional charge on top of special report; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Special Report within Klang Valley",
+              "unit": "video",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100,000 impressions; Horizontal special report under 3 minutes, within Klang Valley; Prices stated not inclusive of SST",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "packages",
+          "title": "Packages",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "specialist-media-fmt"
+          ],
+          "items": [
+            {
+              "item": "Event Coverage Package",
+              "unit": "package",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "400K impressions; 1 article + 1 translation article + 2 news/lifestyle reels + 4 social media circulations; total media value RM90,000; Prices stated not inclusive of SST",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Mini Explainer Package",
+              "unit": "package",
+              "price": 70000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "300K impressions; 1 article + 1 mini explainer reel + 3 social media circulations; total media value RM105,000; Prices stated not inclusive of SST",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Starter Package",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "100K impressions; 1 article (pre-event) + 1 article (post-event) + 1 news/lifestyle reel + 2 social media circulations; total media value RM55,000; Prices stated not inclusive of SST",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

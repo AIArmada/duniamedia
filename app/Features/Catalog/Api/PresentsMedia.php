@@ -47,4 +47,32 @@ interface PresentsMedia
      * @return array<string, string>
      */
     public function optionList(): array;
+
+    /**
+     * Structured rate sections for a deck.
+     *
+     * @return list<array<string, mixed>>
+     */
+    public function rateSections(string $productId): array;
+
+    /**
+     * Channels covered by a deck.
+     *
+     * @return list<array{slug: string, name: string, medium: string|null, hero: string|null}>
+     */
+    public function channels(string $productId): array;
+
+    /**
+     * Curated imagery for a deck.
+     *
+     * @return list<array{path: string, alt: string, caption: string|null, kind: string}>
+     */
+    public function assets(string $productId): array;
+
+    /**
+     * Editorial content blocks for a deck.
+     *
+     * @return list<array{type: string, payload: array<string, mixed>}>
+     */
+    public function contentBlocks(string $productId): array;
 }

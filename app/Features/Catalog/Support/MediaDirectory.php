@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace App\Features\Catalog\Support;
 
 use AIArmada\Products\Models\Product;
+use App\Features\Catalog\Models\MediaProfile;
+use App\Features\Catalog\Models\MediaProperty;
+use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -200,8 +203,158 @@ class MediaDirectory
             ?? "{$channel['name']} is part of {$channel['owner_name']}, listed under {$channel['category']}. Ask our team for current inventory, audiences and availability.";
     }
 
+    public static function mediaKey(string $ownerSlug, string $channelSlug): string
+    {
+        if ($ownerSlug === 'bernama') {
+            return match ($channelSlug) {
+                'bernama-tv' => 'bernama-tv',
+                'bernama-radio' => 'bernama-radio',
+                default => 'bernama-group',
+            };
+        }
+
+        return $ownerSlug.'-'.$channelSlug;
+    }
+
+    public static function property(string $ownerSlug, string $channelSlug): ?MediaProperty
+    {
+        return MediaProperty::query()
+            ->where('slug', self::mediaKey($ownerSlug, $channelSlug))
+            ->where('is_public', true)
+            ->first();
+    }
+
+    public static function propertyBySlug(string $slug): ?MediaProperty
+    {
+        return MediaProperty::query()
+            ->where('slug', $slug)
+            ->where('is_public', true)
+            ->first();
+    }
+
+    public static function channelData(string $slug): ?array
+    {
+        $property = self::propertyBySlug($slug);
+
+        if ($property === null) {
+            return null;
+        }
+
+        $owner = $property->owner_party_id === null
+            ? null
+            : (app(ResolvesParties::class)->summariesByIds($property->owner_party_id)[$property->owner_party_id] ?? null);
+
+        $ownerSlug = $owner === null ? 'specialist-media' : $owner->slug;
+        $ownerName = $owner === null ? 'Media owner' : $owner->displayName;
+
+        return [
+            'slug' => $property->slug,
+            'name' => $property->name,
+            'category' => $property->category ?? 'Channel',
+            'owner_slug' => $ownerSlug,
+            'owner_name' => $ownerName,
+            'description' => $property->description,
+            'logo' => $property->displayLogo() ?: null,
+            'owner' => [
+                'slug' => $ownerSlug,
+                'name' => $ownerName,
+                'description' => null,
+            ],
+        ];
+    }
+
+    /**
+     * @return Collection<int, array{slug: string, name: string, logo: string|null}>
+     */
+    public static function siblingChannels(MediaProperty $property, int $limit = 8): Collection
+    {
+        if ($property->owner_party_id === null) {
+            return collect();
+        }
+
+        return MediaProperty::query()
+            ->where('owner_party_id', $property->owner_party_id)
+            ->where('id', '!=', $property->id)
+            ->where('is_public', true)
+            ->orderBy('sort_order')
+            ->limit($limit)
+            ->get()
+            ->map(fn (MediaProperty $channel): array => [
+                'slug' => $channel->slug,
+                'name' => $channel->name,
+                'logo' => $channel->displayLogo() ?: null,
+            ]);
+    }
+
+    public static function rateCardsForProperty(MediaProperty $property): Collection
+    {
+        $products = collect();
+
+        foreach ($property->decks()->with('product.mediaProfile')->get() as $profile) {
+            $product = $profile->product;
+            $products->put($product->id, $product);
+        }
+
+        return $products
+            ->values()
+            ->sortBy('name')
+            ->map(fn (Product $product) => new MediaOffer($product))
+            ->values();
+    }
+
+    /**
+     * @return Collection<int, MediaProperty>
+     */
+    public static function ownerProperties(string $ownerSlug): Collection
+    {
+        $ownerId = app(ResolvesParties::class)->idForSlug($ownerSlug);
+
+        if ($ownerId === null) {
+            return collect();
+        }
+
+        return MediaProperty::query()
+            ->where('owner_party_id', $ownerId)
+            ->where('is_public', true)
+            ->orderBy('sort_order')
+            ->get();
+    }
+
     public static function rateCards(string $ownerSlug, ?string $channelSlug = null): Collection
     {
+        $properties = $channelSlug !== null
+            ? collect(array_filter([self::property($ownerSlug, $channelSlug)]))
+            : self::ownerProperties($ownerSlug);
+
+        $products = collect();
+
+        foreach ($properties as $property) {
+            foreach ($property->decks()->with('product.mediaProfile')->get() as $profile) {
+                $product = $profile->product;
+                $products->put($product->id, $product);
+            }
+        }
+
+        if ($channelSlug === null) {
+            $ownerId = app(ResolvesParties::class)->idForSlug($ownerSlug);
+
+            if ($ownerId !== null) {
+                $products = $products->filter(function (Product $product) use ($ownerId): bool {
+                    $profile = $product->getRelationValue('mediaProfile');
+
+                    return $profile instanceof MediaProfile && $profile->media_owner_party_id === $ownerId;
+                });
+            }
+        }
+
+        if ($products->isNotEmpty()) {
+            return $products
+                ->values()
+                ->sortBy('name')
+                ->map(fn (Product $product) => new MediaOffer($product))
+                ->values();
+        }
+
         $slugs = $channelSlug !== null
             ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
             : (self::OWNER_RATE_CARDS[$ownerSlug] ?? []);

@@ -1,0 +1,373 @@
+{
+  "slug": "ktm-train-kl-sentral-ads-2026",
+  "owner": "ktm",
+  "title": "KTM Train + KL Sentral Ads Space 2026 — Rail Transit",
+  "summary": "Wraparound RM130k/yr/train, panels RM120–RM1,000, KL Sentral banners RM200–RM5k, audio RM800–RM3k.",
+  "description": "5-page rate sheet. EMU: wraparound 1 set (15 sets) RM130k/yr; overhead 24 panels RM120/panel/mo (RM2.5k/train); poster 6 panels RM1k/train (20x30in); door 18 panels RM500/panel/mo. KL Sentral: giant wallbanner 6 units RM5k/panel/mo (Gates A–D), ticket gate wrap RM300, wallbanner RM1k, glass RM500, pillar RM500, bunting RM200–300, ladies waiting RM60k/6mo or RM100k/12mo. Onboard audio 15–30s 3–5 loops: 1 train RM800/1.4k/2k (1/2/3 mo), 2 trains RM1.5k/2.2k/3k.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/ktm-train-kl-sentral-ads-2026.webp",
+  "medium": "Outdoor",
+  "source_pages": 5,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "5-page rate sheet. EMU: wraparound 1 set (15 sets) RM130k/yr; overhead 24 panels RM120/panel/mo (RM2.5k/train); poster 6 panels RM1k/train (20x30in); door 18 panels RM500/panel/mo. KL Sentral: giant wallbanner 6 units RM5k/panel/mo (Gates A–D), ticket gate wrap RM300, wallbanner RM1k, glass RM500, pillar RM500, bunting RM200–300, ladies waiting RM60k/6mo or RM100k/12mo. Onboard audio 15–30s 3–5 loops: 1 train RM800/1.4k/2k (1/2/3 mo), 2 trains RM1.5k/2.2k/3k."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Wraparound RM130k/yr"
+          },
+          {
+            "title": "Panels from RM120/mo"
+          },
+          {
+            "title": "Audio RM800–3k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Train wraparound"
+          },
+          {
+            "title": "Panels/posters/doors"
+          },
+          {
+            "title": "Station banners/pillars/bunting"
+          },
+          {
+            "title": "Onboard audio"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "ktm-ktm",
+      "name": "KTM",
+      "owner": "ktm",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ktm-train-kl-sentral-ads-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "advertising-space-on-emu-trains",
+          "title": "Advertising space on EMU trains",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-ktm"
+          ],
+          "items": [
+            {
+              "item": "Door panel sticker",
+              "unit": "per panel per month",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "18 panels in 3 coaches per train set; 15 train sets.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Overhead panel sticker",
+              "unit": "per panel per month",
+              "price": 120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "24 panels in 3 coaches per train set; 15 train sets.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Overhead panel sticker",
+              "unit": "per train",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Alternative per-train rate on the same item; period not stated.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Poster panel sticker, 20in x 30in",
+              "unit": "per train",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 panels in 3 coaches per train set; 15 train sets. Period not stated.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Train wraparound, 1 EMU train set",
+              "unit": "per annum",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 set = 3 coaches; 15 train sets available.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "advertising-space-at-kl-sentral-station-gates-platforms",
+          "title": "Advertising space at KL Sentral station — gates & platforms",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-ktm"
+          ],
+          "items": [
+            {
+              "item": "ACG (ticket gate wrap)",
+              "unit": "per panel per month",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Gates A, B, C, D.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Giant wallbanner",
+              "unit": "per panel per month",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 units; gates A, B, C, D.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Glass panel sticker, 94in x 63.5in",
+              "unit": "per panel per month",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Gates A, B, C, D.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Wallbanner, 10ft x 4ft",
+              "unit": "per panel per month",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Gates C and platforms 3, 4, 5, 6.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "advertising-space-at-kl-sentral-station-bunting-pillars-glass",
+          "title": "Advertising space at KL Sentral station — bunting, pillars & glass",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-ktm"
+          ],
+          "items": [
+            {
+              "item": "Bunting standee, 68in x 30in",
+              "unit": "per panel per month",
+              "price": 200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 sets, 3 units per set; gates A, B, C, D.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Glass panel sticker (single), 92in x 62.5in",
+              "unit": "per panel per month",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 units; gate D.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Pillar wrap",
+              "unit": "per panel per month",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 units; gate D and platforms 3, 4, 5, 6.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Wall bunting, 5ft x 3ft",
+              "unit": "per panel per month",
+              "price": 200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 units; gates A, B, C, D.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Wall bunting, 6ft x 2ft",
+              "unit": "per panel per month",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 units; platforms 3, 4, 5, 6.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "advertising-space-at-kl-sentral-station-ladies-waiting-area",
+          "title": "Advertising space at KL Sentral station — ladies waiting area",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-ktm"
+          ],
+          "items": [
+            {
+              "item": "Ladies waiting area, 12-month booking",
+              "unit": "per 12 months",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Platforms 3, 4, 5, 6.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Ladies waiting area, 6-month booking",
+              "unit": "per 6 months",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Platforms 3, 4, 5, 6.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "onboard-advertising-audio-ala-carte",
+          "title": "Onboard advertising audio — ala-carte",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ktm-ktm"
+          ],
+          "items": [
+            {
+              "item": "Onboard audio, 1 train, 1 month",
+              "unit": "per train per month",
+              "price": 800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops; Ipoh-Butterworth-Ipoh and Butterworth-Padang Besar-Butterworth; 1 client per train.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Onboard audio, 1 train, 2 months",
+              "unit": "per train per 2 months",
+              "price": 1400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Onboard audio, 1 train, 3 months",
+              "unit": "per train per 3 months",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Onboard audio, 2 trains, 1 month",
+              "unit": "per 2 trains per month",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Onboard audio, 2 trains, 2 months",
+              "unit": "per 2 trains per 2 months",
+              "price": 2200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Onboard audio, 2 trains, 3 months",
+              "unit": "per 2 trains per 3 months",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-30 second audio, 3-5 loops.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

@@ -1,0 +1,181 @@
+{
+  "slug": "karnival-jom-heboh-2026-venue",
+  "owner": "media-prima",
+  "title": "Karnival Jom Heboh 2026 — Venue & Carnival Rates (Media Prima)",
+  "summary": "Longest-running outdoor carnival since 2003; Arabian booths 10x10 to 20x80 Platinum/Gold/Silver.",
+  "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Sponsorship tiers extracted: Longhouse RM5k–8k, Ground RM30k, Premium RM50k, Silver RM90k, Gold RM300k, Platinum RM450k, Title RM800k. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
+  "validity": "Apr–Nov 2026, 5 locations",
+  "terms": null,
+  "hero": "assets/ratecards/img/karnival-jom-heboh-2026-venue.webp",
+  "medium": "Outdoor",
+  "source_pages": 8,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Sponsorship tiers extracted: Longhouse RM5k–8k, Ground RM30k, Premium RM50k, Silver RM90k, Gold RM300k, Platinum RM450k, Title RM800k. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Longhouse RM5k–8k"
+          },
+          {
+            "title": "Ground RM30k / Premium RM50k"
+          },
+          {
+            "title": "Silver RM90k / Gold RM300k"
+          },
+          {
+            "title": "Platinum RM450k / Title RM800k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Arabian booths"
+          },
+          {
+            "title": "Concert"
+          },
+          {
+            "title": "Family zone"
+          },
+          {
+            "title": "Food zone"
+          },
+          {
+            "title": "Direct sales"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-jom-heboh",
+      "name": "Jom Heboh",
+      "owner": "media-prima",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/karnival-jom-heboh-2026-venue.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "karnival-jom-heboh-2026-sponsorship-tiers",
+          "title": "Karnival Jom Heboh 2026 sponsorship tiers",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-jom-heboh"
+          ],
+          "items": [
+            {
+              "item": "Gold package",
+              "unit": "sponsorship package",
+              "price": 300000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Booth ARABIAN 20ft x 60ft; price printed as '300K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Ground package",
+              "unit": "sponsorship package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Booth ARABIAN 20ft x 40ft & 20ft x 20ft; price printed as '30K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Longhouse Corner package",
+              "unit": "sponsorship package",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Booth ARABIAN 10ft x 10ft; price printed as '8K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Longhouse Intermediate package",
+              "unit": "sponsorship package",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Booth ARABIAN 10ft x 10ft; price printed as '5K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Platinum package",
+              "unit": "sponsorship package",
+              "price": 450000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Booth ARABIAN 20ft x 60ft; price printed as '450K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Premium package",
+              "unit": "sponsorship package",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Booth ARABIAN 20ft x 40ft & 20ft x 20ft; price printed as '50K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Silver package",
+              "unit": "sponsorship package",
+              "price": 90000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Booth ARABIAN 20ft x 60ft; price printed as '90K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Title Sponsor package",
+              "unit": "sponsorship package",
+              "price": 800000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Booth ARABIAN 20ft x 80ft; price printed as '800K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "is_package": true,
+              "sort_order": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

@@ -1,0 +1,3442 @@
+{
+  "slug": "rtm-tv-radio-2025",
+  "owner": "rtm",
+  "title": "RTM TV & Radio 2025 — Government Broadcast",
+  "summary": "Zone-based TV slides/filmlets from RM125, interview packs RM10,500, capsule/PSA and radio zones.",
+  "description": "Bahagian Pemasaran dan Promosi rate card (50 pages). TV zones A–U by daypart/programme (Selamat Pagi Malaysia, Berita Perdana, Tamil/Mandarin news etc.), slides/filmlets/base rates, interview packages (beli 1 slot RM10,500), capsule/short programmes, radio zones and terms. Excludes 8% SST, single-client, production by sponsor.",
+  "validity": "2025",
+  "terms": null,
+  "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 50,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Bahagian Pemasaran dan Promosi rate card (50 pages). TV zones A–U by daypart/programme (Selamat Pagi Malaysia, Berita Perdana, Tamil/Mandarin news etc.), slides/filmlets/base rates, interview packages (beli 1 slot RM10,500), capsule/short programmes, radio zones and terms. Excludes 8% SST, single-client, production by sponsor."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Zone U from RM125"
+          },
+          {
+            "title": "Interview RM10,500"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "TV slides"
+          },
+          {
+            "title": "Filmlets"
+          },
+          {
+            "title": "Interview packages"
+          },
+          {
+            "title": "Capsule/PSA"
+          },
+          {
+            "title": "Radio spots"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "rtm-tv1",
+      "name": "TV1",
+      "owner": "rtm",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "pakej-khas-penajaan-program-sedia-ada-terbitan-rtm",
+          "title": "Pakej Khas Penajaan Program Sedia Ada Terbitan RTM",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-tv1"
+          ],
+          "items": [
+            {
+              "item": "Pakej penajaan program — TV1 10 malam (Isnin/Selasa) + ulangan Rabu/Jumaat 4.30 petang",
+              "unit": "package",
+              "price": 25200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Opening x1, closing x1, TVC 30s inside program x2, product placement, credit mention, closing credit; TV1 6 petang Sabtu; kos produksi tertakluk perbincangan",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rtm-tv2",
+      "name": "TV2",
+      "owner": "rtm",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-okey",
+      "name": "OKEY",
+      "owner": "rtm",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-nasional-fm",
+      "name": "Nasional FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-klasik-fm",
+      "name": "Klasik FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-traxx-fm",
+      "name": "TraXX FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-ai-fm",
+      "name": "Ai FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "ros-tempatan-sarawak-20-saat-2",
+          "title": "ROS Tempatan Sarawak — 20 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-ai-fm"
+          ],
+          "items": [
+            {
+              "item": "WAI FM (BIDAYUH) — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "WAI FM (IBAN) — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 spots/day; 3 hari 18 spots RM720; 5 hari 30 spots RM1,200; 7 hari 42 spots RM1,680",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "WAI FM (KAYAN / KENYAH) — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM240; 5 hari 10 spots RM400; 7 hari 14 spots RM560",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sarawak-30-saat-2",
+          "title": "ROS Tempatan Sarawak — 30 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-ai-fm"
+          ],
+          "items": [
+            {
+              "item": "WAI FM (BIDAYUH) — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "WAI FM (IBAN) — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 spots/day; 3 hari 18 spots RM1,080; 5 hari 30 spots RM1,800; 7 hari 42 spots RM2,520",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "WAI FM (KAYAN / KENYAH) — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM360; 5 hari 10 spots RM600; 7 hari 14 spots RM840",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sarawak-10-saat-2",
+          "title": "ROS Tempatan Sarawak — 10 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-ai-fm"
+          ],
+          "items": [
+            {
+              "item": "WAI FM (BIDAYUH) — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "WAI FM (IBAN) — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 spots/day; 3 hari 18 spots RM360; 5 hari 30 spots RM600; 7 hari 42 spots RM840",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "WAI FM (KAYAN / KENYAH) — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM120; 5 hari 10 spots RM200; 7 hari 14 spots RM280",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rtm-minnal-fm",
+      "name": "Minnal FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-asyik-fm",
+      "name": "Asyik FM",
+      "owner": "rtm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "rtm-klik",
+      "name": "RTMKlik",
+      "owner": "rtm",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "pakej-siaran-langsung-radio",
+          "title": "Pakej Siaran Langsung Radio",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-klik"
+          ],
+          "items": [
+            {
+              "item": "Siaran langsung radio 60 hingga 120 minit",
+              "unit": "program (60-120 minit)",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM25,000 – RM50,400; termasuk opening & closing, platform rtmklik streaming, poster, spotbuy, temubual radio",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rtm-group",
+      "name": "RTM Group Packages",
+      "owner": "rtm",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/rtm-tv-radio-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-zone-base-rate-kadar-zon-tv",
+          "title": "TV Zone Base Rate (Kadar Zon TV)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Zone A — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 4980,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Zone A — 10s slide",
+              "unit": "10s slide",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Zone A — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 6270,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Zone A — 15s slide",
+              "unit": "15s slide",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Zone A — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 8360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Zone A — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 10900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Zone A — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 13800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Zone A — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 20700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Zone A — 7s slide",
+              "unit": "7s slide",
+              "price": 2420,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Zone B — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 4660,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Zone B — 10s slide",
+              "unit": "10s slide",
+              "price": 3360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Zone B — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 5870,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Zone B — 15s slide",
+              "unit": "15s slide",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Zone B — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 7820,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Zone B — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 10200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Zone B — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 12920,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Zone B — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 19380,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Zone B — 7s slide",
+              "unit": "7s slide",
+              "price": 2260,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Zone C — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 4390,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Zone C — 10s slide",
+              "unit": "10s slide",
+              "price": 3160,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "Zone C — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 5520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "Zone C — 15s slide",
+              "unit": "15s slide",
+              "price": 3950,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 21
+            },
+            {
+              "item": "Zone C — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 7360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 22
+            },
+            {
+              "item": "Zone C — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 9600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 23
+            },
+            {
+              "item": "Zone C — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 12160,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 24
+            },
+            {
+              "item": "Zone C — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 18240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 25
+            },
+            {
+              "item": "Zone C — 7s slide",
+              "unit": "7s slide",
+              "price": 2120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 26
+            },
+            {
+              "item": "Zone D — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 3050,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 27
+            },
+            {
+              "item": "Zone D — 10s slide",
+              "unit": "10s slide",
+              "price": 2290,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 28
+            },
+            {
+              "item": "Zone D — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 29
+            },
+            {
+              "item": "Zone D — 15s slide",
+              "unit": "15s slide",
+              "price": 3430,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 30
+            },
+            {
+              "item": "Zone D — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 31
+            },
+            {
+              "item": "Zone D — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 8900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 32
+            },
+            {
+              "item": "Zone D — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 11500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 33
+            },
+            {
+              "item": "Zone D — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 17300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 34
+            },
+            {
+              "item": "Zone D — 7s slide",
+              "unit": "7s slide",
+              "price": 1990,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "is_package": false,
+              "sort_order": 35
+            },
+            {
+              "item": "Zone E — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 2850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 36
+            },
+            {
+              "item": "Zone E — 10s slide",
+              "unit": "10s slide",
+              "price": 2150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 37
+            },
+            {
+              "item": "Zone E — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 4200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 38
+            },
+            {
+              "item": "Zone E — 15s slide",
+              "unit": "15s slide",
+              "price": 3220,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 39
+            },
+            {
+              "item": "Zone E — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 5600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 40
+            },
+            {
+              "item": "Zone E — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 8300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 41
+            },
+            {
+              "item": "Zone E — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 42
+            },
+            {
+              "item": "Zone E — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 16200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 43
+            },
+            {
+              "item": "Zone E — 7s slide",
+              "unit": "7s slide",
+              "price": 1850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 44
+            },
+            {
+              "item": "Zone F — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 2650,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 45
+            },
+            {
+              "item": "Zone F — 10s slide",
+              "unit": "10s slide",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 46
+            },
+            {
+              "item": "Zone F — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 3900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 47
+            },
+            {
+              "item": "Zone F — 15s slide",
+              "unit": "15s slide",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 48
+            },
+            {
+              "item": "Zone F — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 5200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 49
+            },
+            {
+              "item": "Zone F — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 7700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 50
+            },
+            {
+              "item": "Zone F — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 10100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 51
+            },
+            {
+              "item": "Zone F — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 15100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 52
+            },
+            {
+              "item": "Zone F — 7s slide",
+              "unit": "7s slide",
+              "price": 1710,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 53
+            },
+            {
+              "item": "Zone G — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 2450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 54
+            },
+            {
+              "item": "Zone G — 10s slide",
+              "unit": "10s slide",
+              "price": 1890,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 55
+            },
+            {
+              "item": "Zone G — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 56
+            },
+            {
+              "item": "Zone G — 15s slide",
+              "unit": "15s slide",
+              "price": 2830,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 57
+            },
+            {
+              "item": "Zone G — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 4800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 58
+            },
+            {
+              "item": "Zone G — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 7100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 59
+            },
+            {
+              "item": "Zone G — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 9400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 60
+            },
+            {
+              "item": "Zone G — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 61
+            },
+            {
+              "item": "Zone G — 7s slide",
+              "unit": "7s slide",
+              "price": 1590,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 62
+            },
+            {
+              "item": "Zone H — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 2300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 63
+            },
+            {
+              "item": "Zone H — 10s slide",
+              "unit": "10s slide",
+              "price": 1790,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 64
+            },
+            {
+              "item": "Zone H — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 3400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 65
+            },
+            {
+              "item": "Zone H — 15s slide",
+              "unit": "15s slide",
+              "price": 2680,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 66
+            },
+            {
+              "item": "Zone H — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 4500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 67
+            },
+            {
+              "item": "Zone H — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 6600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 68
+            },
+            {
+              "item": "Zone H — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 8700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 69
+            },
+            {
+              "item": "Zone H — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 13000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 70
+            },
+            {
+              "item": "Zone H — 7s slide",
+              "unit": "7s slide",
+              "price": 1490,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 71
+            },
+            {
+              "item": "Zone J — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 2100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 72
+            },
+            {
+              "item": "Zone J — 10s slide",
+              "unit": "10s slide",
+              "price": 1630,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 73
+            },
+            {
+              "item": "Zone J — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 3100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 74
+            },
+            {
+              "item": "Zone J — 15s slide",
+              "unit": "15s slide",
+              "price": 2440,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 75
+            },
+            {
+              "item": "Zone J — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 4100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 76
+            },
+            {
+              "item": "Zone J — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 6100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 77
+            },
+            {
+              "item": "Zone J — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 8100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 78
+            },
+            {
+              "item": "Zone J — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 79
+            },
+            {
+              "item": "Zone J — 7s slide",
+              "unit": "7s slide",
+              "price": 1330,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 80
+            },
+            {
+              "item": "Zone K — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1950,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 81
+            },
+            {
+              "item": "Zone K — 10s slide",
+              "unit": "10s slide",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 82
+            },
+            {
+              "item": "Zone K — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 2900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 83
+            },
+            {
+              "item": "Zone K — 15s slide",
+              "unit": "15s slide",
+              "price": 2250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 84
+            },
+            {
+              "item": "Zone K — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 3800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 85
+            },
+            {
+              "item": "Zone K — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 5600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 86
+            },
+            {
+              "item": "Zone K — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 7400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 87
+            },
+            {
+              "item": "Zone K — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 11000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 88
+            },
+            {
+              "item": "Zone K — 7s slide",
+              "unit": "7s slide",
+              "price": 1130,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 89
+            },
+            {
+              "item": "Zone L — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 90
+            },
+            {
+              "item": "Zone L — 10s slide",
+              "unit": "10s slide",
+              "price": 1360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 91
+            },
+            {
+              "item": "Zone L — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 2600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 92
+            },
+            {
+              "item": "Zone L — 15s slide",
+              "unit": "15s slide",
+              "price": 2040,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 93
+            },
+            {
+              "item": "Zone L — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 3400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 94
+            },
+            {
+              "item": "Zone L — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 5100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 95
+            },
+            {
+              "item": "Zone L — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 6800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 96
+            },
+            {
+              "item": "Zone L — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 10200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 97
+            },
+            {
+              "item": "Zone L — 7s slide",
+              "unit": "7s slide",
+              "price": 950,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 98
+            },
+            {
+              "item": "Zone M — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1650,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 99
+            },
+            {
+              "item": "Zone M — 10s slide",
+              "unit": "10s slide",
+              "price": 1140,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 100
+            },
+            {
+              "item": "Zone M — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 101
+            },
+            {
+              "item": "Zone M — 15s slide",
+              "unit": "15s slide",
+              "price": 1710,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 102
+            },
+            {
+              "item": "Zone M — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 3100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 103
+            },
+            {
+              "item": "Zone M — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 4600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 104
+            },
+            {
+              "item": "Zone M — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 6100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 105
+            },
+            {
+              "item": "Zone M — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 9100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 106
+            },
+            {
+              "item": "Zone M — 7s slide",
+              "unit": "7s slide",
+              "price": 800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 107
+            },
+            {
+              "item": "Zone N — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 108
+            },
+            {
+              "item": "Zone N — 10s slide",
+              "unit": "10s slide",
+              "price": 970,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 109
+            },
+            {
+              "item": "Zone N — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 2100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 110
+            },
+            {
+              "item": "Zone N — 15s slide",
+              "unit": "15s slide",
+              "price": 1450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 111
+            },
+            {
+              "item": "Zone N — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 2800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 112
+            },
+            {
+              "item": "Zone N — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 4100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 113
+            },
+            {
+              "item": "Zone N — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 5400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 114
+            },
+            {
+              "item": "Zone N — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 115
+            },
+            {
+              "item": "Zone N — 7s slide",
+              "unit": "7s slide",
+              "price": 680,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 116
+            },
+            {
+              "item": "Zone P — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 117
+            },
+            {
+              "item": "Zone P — 10s slide",
+              "unit": "10s slide",
+              "price": 820,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 118
+            },
+            {
+              "item": "Zone P — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 1700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 119
+            },
+            {
+              "item": "Zone P — 15s slide",
+              "unit": "15s slide",
+              "price": 1230,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 120
+            },
+            {
+              "item": "Zone P — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 121
+            },
+            {
+              "item": "Zone P — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 122
+            },
+            {
+              "item": "Zone P — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 4700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 123
+            },
+            {
+              "item": "Zone P — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 124
+            },
+            {
+              "item": "Zone P — 7s slide",
+              "unit": "7s slide",
+              "price": 570,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 125
+            },
+            {
+              "item": "Zone Q — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 126
+            },
+            {
+              "item": "Zone Q — 10s slide",
+              "unit": "10s slide",
+              "price": 640,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 127
+            },
+            {
+              "item": "Zone Q — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 128
+            },
+            {
+              "item": "Zone Q — 15s slide",
+              "unit": "15s slide",
+              "price": 960,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 129
+            },
+            {
+              "item": "Zone Q — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 130
+            },
+            {
+              "item": "Zone Q — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 131
+            },
+            {
+              "item": "Zone Q — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 132
+            },
+            {
+              "item": "Zone Q — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 133
+            },
+            {
+              "item": "Zone Q — 7s slide",
+              "unit": "7s slide",
+              "price": 450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 134
+            },
+            {
+              "item": "Zone R — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 135
+            },
+            {
+              "item": "Zone R — 10s slide",
+              "unit": "10s slide",
+              "price": 520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 136
+            },
+            {
+              "item": "Zone R — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 137
+            },
+            {
+              "item": "Zone R — 15s slide",
+              "unit": "15s slide",
+              "price": 780,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 138
+            },
+            {
+              "item": "Zone R — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 1700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 139
+            },
+            {
+              "item": "Zone R — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 140
+            },
+            {
+              "item": "Zone R — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 3100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 141
+            },
+            {
+              "item": "Zone R — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 4600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 142
+            },
+            {
+              "item": "Zone R — 7s slide",
+              "unit": "7s slide",
+              "price": 360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 143
+            },
+            {
+              "item": "Zone S — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 144
+            },
+            {
+              "item": "Zone S — 10s slide",
+              "unit": "10s slide",
+              "price": 380,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 145
+            },
+            {
+              "item": "Zone S — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 146
+            },
+            {
+              "item": "Zone S — 15s slide",
+              "unit": "15s slide",
+              "price": 570,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 147
+            },
+            {
+              "item": "Zone S — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 148
+            },
+            {
+              "item": "Zone S — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 149
+            },
+            {
+              "item": "Zone S — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 150
+            },
+            {
+              "item": "Zone S — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 3600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 151
+            },
+            {
+              "item": "Zone S — 7s slide",
+              "unit": "7s slide",
+              "price": 270,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 152
+            },
+            {
+              "item": "Zone T — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 153
+            },
+            {
+              "item": "Zone T — 10s slide",
+              "unit": "10s slide",
+              "price": 260,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 154
+            },
+            {
+              "item": "Zone T — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 650,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 155
+            },
+            {
+              "item": "Zone T — 15s slide",
+              "unit": "15s slide",
+              "price": 390,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 156
+            },
+            {
+              "item": "Zone T — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 157
+            },
+            {
+              "item": "Zone T — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 1200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 158
+            },
+            {
+              "item": "Zone T — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 1550,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 159
+            },
+            {
+              "item": "Zone T — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 2300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 160
+            },
+            {
+              "item": "Zone T — 7s slide",
+              "unit": "7s slide",
+              "price": 180,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 161
+            },
+            {
+              "item": "Zone U — 10s filmlet",
+              "unit": "10s filmlet",
+              "price": 350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 162
+            },
+            {
+              "item": "Zone U — 10s slide",
+              "unit": "10s slide",
+              "price": 180,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 163
+            },
+            {
+              "item": "Zone U — 15s filmlet",
+              "unit": "15s filmlet",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 164
+            },
+            {
+              "item": "Zone U — 15s slide",
+              "unit": "15s slide",
+              "price": 270,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 165
+            },
+            {
+              "item": "Zone U — 20s filmlet",
+              "unit": "20s filmlet",
+              "price": 650,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 166
+            },
+            {
+              "item": "Zone U — 30s filmlet",
+              "unit": "30s filmlet",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 167
+            },
+            {
+              "item": "Zone U — 40s filmlet",
+              "unit": "40s filmlet",
+              "price": 1150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 168
+            },
+            {
+              "item": "Zone U — 60s filmlet",
+              "unit": "60s filmlet",
+              "price": 1700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 169
+            },
+            {
+              "item": "Zone U — 7s slide",
+              "unit": "7s slide",
+              "price": 125,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 170
+            }
+          ]
+        },
+        {
+          "key": "pakej-temu-bual",
+          "title": "Pakej Temu Bual",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Pakej Temu Bual (SPM, BIZ, KUPPA KUPPI, KAMI BAH INI, PERSONA XY, FRESH BREW dan program lain) — beli 1 slot",
+              "unit": "1 slot",
+              "price": 10500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Satu klien sahaja; crawler sepanjang slot; video clip high quality; skrip & produk perlu kelulusan Cawangan Perdagangan, KK & Kementerian Kesihatan; harga tidak termasuk 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "pakej-kapsul-program-pendek-psa",
+          "title": "Pakej Kapsul / Program Pendek / PSA",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Kapsul 1 hingga 5 minit — siaran dalam terbitan program sedia ada / luar",
+              "unit": "kapsul (1-5 minit)",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Kos produksi ditanggung sepenuhnya oleh penaja; diskaun 50% untuk siaran ulangan & layak ROI; terpakai untuk semua saluran TV",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Program pendek / PSA — maksimum 8-10 minit",
+              "unit": "program (8-10 minit)",
+              "price": 11000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Kos produksi ditanggung penaja; diskaun 50% siaran ulangan; terpakai semua saluran TV",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "pakej-siaran-langsung",
+          "title": "Pakej Siaran Langsung",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Siaran langsung 60 hingga 120 minit",
+              "unit": "program (60-120 minit)",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM50,000 – RM200,000; kos produksi ditanggung bersama klien dan RTM; tertakluk kepada kelulusan",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "pakej-lintas-langsung-liputan-berita-laporan-khas",
+          "title": "Pakej Lintas Langsung / Liputan Berita / Laporan Khas",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Lintas langsung 2 hingga 5 minit",
+              "unit": "live cross (2-5 minit)",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM15,000 – RM25,000; menggunakan kru RTM; kos produksi tertakluk pada keperluan",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "rerayap-crawler",
+          "title": "Rerayap (Crawler)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Rerayap (crawler) — 1 kali",
+              "unit": "per crawl",
+              "price": 350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tidak lebih daripada 30 patah perkataan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Rerayap (crawler) — 25 kali + 5 kali",
+              "unit": "package (30 crawls)",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "25 kali + 5 kali percuma; tidak lebih daripada 30 patah perkataan",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "program-percuma-dengan-tajaan-foc-bertaia",
+          "title": "Program Percuma dengan Tajaan (FOC Bertaia)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Program percuma dengan tajaan — 120 minit (0600-1800)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM40,000 - RM60,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Program percuma dengan tajaan — 120 minit (1801-0000)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM60,000 - RM80,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Program percuma dengan tajaan — 30 minit (0600-1800)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM13,000 - RM18,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Program percuma dengan tajaan — 30 minit (1801-0000)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM18,000 - RM25,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Program percuma dengan tajaan — 60 minit (0600-1800)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM25,000 - RM35,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Program percuma dengan tajaan — 60 minit (1801-0000)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM35,000 – RM45,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "program-bertaia-khas-kanak-kanak-in-house",
+          "title": "Program Bertaia Khas Kanak-Kanak In-House",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Program bertaia khas kanak-kanak in-house — 30 minit (0600-1200)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM6,000 – RM8,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Program bertaia khas kanak-kanak in-house — 30 minit (1201-1900)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM8,000 – RM10,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "program-bertaia-swasta-in-house",
+          "title": "Program Bertaia (Swasta/In-House)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Program bertaia swasta/in-house — 15 hingga 60 minit (0600-0000)",
+              "unit": "program slot",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM5,000 – RM20,000; harga tertakluk untuk 1 x siaran sahaja; menggunakan kos produksi RTM (in-house); nilai tajaan tertakluk rundingan",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "program-bertaia-syndicated",
+          "title": "Program Bertaia (Syndicated)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Program bertaia syndicated — 30 hingga 120 minit (0600-0000)",
+              "unit": "per episode",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM8,000 – RM40,000; harga tertakluk untuk 1 x siaran sahaja; tertakluk terma dan syarat perolehan program",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "pakej-home-shopping",
+          "title": "Pakej Home Shopping",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "Home shopping — durasi maksima 30 minit per episod",
+              "unit": "package (per episode)",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM7,200 – RM10,800; slot dan format tertakluk perbincangan; ROI bergantung pada jumlah pelaburan; terpakai semua saluran TV; harga tidak termasuk 8% SST; ulang siar 50% dan layak ROI",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "ros-30s-radio",
+          "title": "ROS 30S — Radio",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 30s radio spot — band 1 (RM360/spot)",
+              "unit": "30s spot",
+              "price": 360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM5,400; 5 hari = 25 spots RM9,000; 7 hari = 35 spots RM12,600; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 30s radio spot — band 2 (RM300/spot)",
+              "unit": "30s spot",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM4,500; 5 hari = 25 spots RM7,500; 7 hari = 35 spots RM10,500; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 30s radio spot — band 3 (RM240/spot)",
+              "unit": "30s spot",
+              "price": 240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM3,600; 5 hari = 25 spots RM6,000; 7 hari = 35 spots RM8,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "ROS 30s radio spot — band 4 (RM150/spot)",
+              "unit": "30s spot",
+              "price": 150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM2,250; 5 hari = 25 spots RM3,750; 7 hari = 35 spots RM5,250; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "ROS 30s radio spot — band 5 (RM120/spot)",
+              "unit": "30s spot",
+              "price": 120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,800; 5 hari = 25 spots RM3,000; 7 hari = 35 spots RM4,200; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "ros-20s-radio",
+          "title": "ROS 20S — Radio",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 20s radio spot — band 1 (RM240/spot)",
+              "unit": "20s spot",
+              "price": 240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM3,600; 5 hari = 25 spots RM6,000; 7 hari = 35 spots RM8,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 20s radio spot — band 2 (RM200/spot)",
+              "unit": "20s spot",
+              "price": 200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM3,000; 5 hari = 25 spots RM5,000; 7 hari = 35 spots RM7,000; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 20s radio spot — band 3 (RM160/spot)",
+              "unit": "20s spot",
+              "price": 160,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM2,400; 5 hari = 25 spots RM4,000; 7 hari = 35 spots RM5,600; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "ROS 20s radio spot — band 4 (RM100/spot)",
+              "unit": "20s spot",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,500; 5 hari = 25 spots RM2,500; 7 hari = 35 spots RM3,500; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "ROS 20s radio spot — band 5 (RM80/spot)",
+              "unit": "20s spot",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,200; 5 hari = 25 spots RM2,000; 7 hari = 35 spots RM2,800; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "ros-10s-radio",
+          "title": "ROS 10S — Radio",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 10s radio spot — band 1 (RM120/spot)",
+              "unit": "10s spot",
+              "price": 120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,800; 5 hari = 25 spots RM3,000; 7 hari = 35 spots RM4,200; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 10s radio spot — band 2 (RM110/spot)",
+              "unit": "10s spot",
+              "price": 110,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,650; 5 hari = 25 spots RM2,750; 7 hari = 35 spots RM3,850; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 10s radio spot — band 3 (RM80/spot)",
+              "unit": "10s spot",
+              "price": 80,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM1,200; 5 hari = 25 spots RM2,000; 7 hari = 35 spots RM2,800; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "ROS 10s radio spot — band 4 (RM50/spot)",
+              "unit": "10s spot",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM750; 5 hari = 25 spots RM1,250; 7 hari = 35 spots RM1,750; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "ROS 10s radio spot — band 5 (RM40/spot)",
+              "unit": "10s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "5 spots/day; 3 hari = 15 spots RM600; 5 hari = 25 spots RM1,000; 7 hari = 35 spots RM1,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sarawak-20-saat",
+          "title": "ROS Tempatan Sarawak — 20 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "BINTULU FM — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "LIMBANG FM — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "MIRI FM — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "RED FM (CINA) — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "RED FM (ENG) — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "SIBU FM — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "SRI AMAN FM — ROS 20s spot (Sarawak)",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM240; 5 hari 10 spots RM400; 7 hari 14 spots RM560",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sarawak-30-saat",
+          "title": "ROS Tempatan Sarawak — 30 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "BINTULU FM — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "LIMBANG FM — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "MIRI FM — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "RED FM (CINA) — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "RED FM (ENG) — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "SIBU FM — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "SRI AMAN FM — ROS 30s spot (Sarawak)",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM360; 5 hari 10 spots RM600; 7 hari 14 spots RM840",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sarawak-10-saat",
+          "title": "ROS Tempatan Sarawak — 10 Saat",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "BINTULU FM — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "LIMBANG FM — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "MIRI FM — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "RED FM (CINA) — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "RED FM (ENG) — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "SIBU FM — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "SRI AMAN FM — ROS 10s spot (Sarawak)",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 spots/day; 3 hari 6 spots RM120; 5 hari 10 spots RM200; 7 hari 14 spots RM280",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sabah-30s",
+          "title": "ROS Tempatan Sabah — 30S",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 30s spot Sabah — 4 spots/day band",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 30s spot Sabah — 6 spots/day band",
+              "unit": "30s spot",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "6 spots/day; 3 hari 18 spots RM1,080; 5 hari 30 spots RM1,800; 7 hari 42 spots RM2,520; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sabah-20s",
+          "title": "ROS Tempatan Sabah — 20S",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 20s spot Sabah — 4 spots/day band",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 20s spot Sabah — 6 spots/day band",
+              "unit": "20s spot",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "6 spots/day; 3 hari 18 spots RM720; 5 hari 30 spots RM1,200; 7 hari 42 spots RM1,680; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "ros-tempatan-sabah-10s",
+          "title": "ROS Tempatan Sabah — 10S",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 10s spot Sabah — 4 spots/day band",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 10s spot Sabah — 6 spots/day band",
+              "unit": "10s spot",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "6 spots/day; 3 hari 18 spots RM360; 5 hari 30 spots RM600; 7 hari 42 spots RM840; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "ros-labuan-fm-langkawi-fm",
+          "title": "ROS Labuan FM & Langkawi FM",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-group"
+          ],
+          "items": [
+            {
+              "item": "ROS 10s spot — Labuan FM & Langkawi FM",
+              "unit": "10s spot",
+              "price": 25,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM300; 5 hari 20 spots RM500; 7 hari 28 spots RM700",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 20s spot — Labuan FM & Langkawi FM",
+              "unit": "20s spot",
+              "price": 50,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM600; 5 hari 20 spots RM1,000; 7 hari 28 spots RM1,400",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 30s spot — Labuan FM & Langkawi FM",
+              "unit": "30s spot",
+              "price": 75,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 spots/day; 3 hari 12 spots RM900; 5 hari 20 spots RM1,500; 7 hari 28 spots RM2,100",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": [
+    {
+      "key": "pakej-special-spot-buy-rm40-000",
+      "title": "Pakej Special Spot Buy — RM40,000",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "rtm-okey",
+        "rtm-tv1",
+        "rtm-tv2"
+      ],
+      "items": [
+        {
+          "item": "Infografik + audio 20s — RM40,000 package",
+          "unit": "per spot",
+          "price": 650,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "61 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 0
+        },
+        {
+          "item": "Video 20s — RM40,000 package",
+          "unit": "per spot",
+          "price": 1200,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "33 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 1
+        },
+        {
+          "item": "Video 30s — RM40,000 package",
+          "unit": "per spot",
+          "price": 1800,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "22 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 2
+        },
+        {
+          "item": "Video 40s — RM40,000 package",
+          "unit": "per spot",
+          "price": 2400,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "17 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 3
+        },
+        {
+          "item": "Video 60s — RM40,000 package",
+          "unit": "per spot",
+          "price": 3600,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "11 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "key": "pakej-special-spot-buy-rm60-000",
+      "title": "Pakej Special Spot Buy — RM60,000",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "rtm-okey",
+        "rtm-tv1",
+        "rtm-tv2"
+      ],
+      "items": [
+        {
+          "item": "Infografik + audio 20s — RM60,000 package",
+          "unit": "per spot",
+          "price": 850,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "71 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 0
+        },
+        {
+          "item": "Video 20s — RM60,000 package",
+          "unit": "per spot",
+          "price": 1200,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "50 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 1
+        },
+        {
+          "item": "Video 30s — RM60,000 package",
+          "unit": "per spot",
+          "price": 1200,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "50 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 2
+        },
+        {
+          "item": "Video 40s — RM60,000 package",
+          "unit": "per spot",
+          "price": 1550,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "39 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 3
+        },
+        {
+          "item": "Video 60s — RM60,000 package",
+          "unit": "per spot",
+          "price": 2300,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "26 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "key": "pakej-special-spot-buy-rm120-000",
+      "title": "Pakej Special Spot Buy — RM120,000",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "rtm-okey",
+        "rtm-tv1",
+        "rtm-tv2"
+      ],
+      "items": [
+        {
+          "item": "Infografik + audio 20s — RM120,000 package",
+          "unit": "per spot",
+          "price": 850,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "141 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 0
+        },
+        {
+          "item": "Video 20s — RM120,000 package",
+          "unit": "per spot",
+          "price": 850,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "141 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 1
+        },
+        {
+          "item": "Video 30s — RM120,000 package",
+          "unit": "per spot",
+          "price": 900,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "133 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 2
+        },
+        {
+          "item": "Video 40s — RM120,000 package",
+          "unit": "per spot",
+          "price": 1150,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "104 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 3
+        },
+        {
+          "item": "Video 60s — RM120,000 package",
+          "unit": "per spot",
+          "price": 1700,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "71 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "is_package": false,
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "key": "pakej-temu-bual-terbitan-berita-ehwal-semasa",
+      "title": "Pakej Temu Bual Terbitan Berita Ehwal Semasa",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "rtm-tv1",
+        "rtm-tv2"
+      ],
+      "items": [
+        {
+          "item": "Temu bual 60 minit — Bicara Naratif (TV1) / What Say You (TV2) / Vasantham",
+          "unit": "program (60 minit)",
+          "price": 35000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "3 x breaker in & out (7s), 1 x opening & closing (10s), 3 x TVC inside program (30s) + 3 x floaters TV & radio",
+          "is_package": false,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "pakej-clockface",
+      "title": "Pakej Clockface",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "rtm-okey",
+        "rtm-tv1",
+        "rtm-tv2"
+      ],
+      "items": [
+        {
+          "item": "Pakej clockface — 10 saat filmlets x 30 hari (Zon E) + TVC 30s dalam program + bugs; 30 hari",
+          "unit": "package (30 hari)",
+          "price": 70000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "TV1 Berita Perdana/Berita Mandarin/Berita Tamil/Berita Inggeris; TV2; TV Okey; BES TV; tempoh pakej 30 hari; bahan 10 saat filmlets",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    }
+  ]
+}

@@ -13,24 +13,6 @@ parameters:
 			path: app/Features/Catalog/EntryPoints/Filament/ProductResource/Pages/EditProduct.php
 
 		-
-			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, array\|null given\.$#'
-			identifier: argument.type
-			count: 3
-			path: app/Features/Catalog/EntryPoints/Http/MediaDirectoryController.php
-
-		-
-			message: '#^Access to an undefined property AIArmada\\Products\\Models\\Product\:\:\$mediaProfile\.$#'
-			identifier: property.notFound
-			count: 1
-			path: app/Features/Catalog/EntryPoints/Http/RateCardController.php
-
-		-
-			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, Spatie\\MediaLibrary\\MediaCollections\\Models\\Media\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/Features/Catalog/EntryPoints/Http/RateCardController.php
-
-		-
 			message: '#^Method App\\Features\\Catalog\\EntryPoints\\Livewire\\MediaExplorer\:\:ownerIdsMatching\(\) is unused\.$#'
 			identifier: method.unused
 			count: 1
@@ -499,12 +481,6 @@ parameters:
 			path: app/Features/Sales/EntryPoints/Livewire/CampaignPlans.php
 
 		-
-			message: '#^Parameter \#1 \$plan of method App\\Features\\Sales\\Support\\CampaignPlans\:\:summary\(\) expects AIArmada\\Cart\\Models\\CartModel, Illuminate\\Database\\Eloquent\\Model given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/Features/Sales/EntryPoints/Livewire/CampaignPlans.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1
@@ -563,12 +539,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: app/Features/Sales/Persistence/WriteQuotes.php
-
-		-
-			message: '#^Method App\\Features\\Sales\\Support\\CampaignPlans\:\:find\(\) should return AIArmada\\Cart\\Models\\CartModel\|null but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: app/Features/Sales/Support/CampaignPlans.php
 
 		-
 			message: '#^Call to function method_exists\(\) with \$this\(App\\Platform\\PlatformServiceProvider\) and ''optimizes'' will always evaluate to true\.$#'

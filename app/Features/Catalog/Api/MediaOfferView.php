@@ -8,7 +8,6 @@ final readonly class MediaOfferView
 {
     /**
      * @param  array<string, mixed>  $specifications
-     * @param  list<array{name: string, ext: string, size: int, kind: string, index: int|null}>  $documents
      */
     public function __construct(
         public string $id,
@@ -30,7 +29,6 @@ final readonly class MediaOfferView
         public ?string $sellerId,
         public string $imageUrl,
         public array $specifications,
-        public array $documents,
         public ?string $unitCode = null,
     ) {}
 

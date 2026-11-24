@@ -1,0 +1,1232 @@
+{
+  "slug": "klia-t2-airport-2024",
+  "owner": "klia",
+  "title": "KLIA Terminal 2 2026 — Static & Digital Airport Media",
+  "summary": "2026 static from RM130k/yr; Arrivals Duo RM900k; digital from RM30k/mo, Baggage Network RM32.8k/mo, Digital Domination RM60.5k/mo.",
+  "description": "KLIA Terminal 2 2026 static and digital decks (31 + 62 pages). Static: Domestic Departures Impact RM130,000/year; Public Concourse Departures Impact RM130,000; Foreign Worker Impact RM150,000; Satellite Impact Duo RM180,000; Domestic Wall Domination RM180,000; Skybridge Impact Duo RM200,000 per pair; Domestic Departures Icon RM300,000; Arrivals Impact Duo RM400,000; Baggage Carousel Flaps RM400,000; International Arrivals Icon RM450,000; Arrivals Duo RM900,000; Arrivals Icons RM1M; Satellite Void RM1.5M; trolleys RM12,000/month. Digital: Total Coverage Network RM30,000/month; Baggage Network RM32,800/month; Digital Domination RM60,500/month; Digital Dream RM80,000. Rates exclude 8% SST; production and lighting charges apply.",
+  "validity": "2026 decks",
+  "terms": null,
+  "hero": "assets/ratecards/img/klia-t2-airport-2024.webp",
+  "medium": "Outdoor",
+  "source_pages": 93,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "KLIA Terminal 2 2026 static and digital decks (31 + 62 pages). Static: Domestic Departures Impact RM130,000/year; Public Concourse Departures Impact RM130,000; Foreign Worker Impact RM150,000; Satellite Impact Duo RM180,000; Domestic Wall Domination RM180,000; Skybridge Impact Duo RM200,000 per pair; Domestic Departures Icon RM300,000; Arrivals Impact Duo RM400,000; Baggage Carousel Flaps RM400,000; International Arrivals Icon RM450,000; Arrivals Duo RM900,000; Arrivals Icons RM1M; Satellite Void RM1.5M; trolleys RM12,000/month. Digital: Total Coverage Network RM30,000/month; Baggage Network RM32,800/month; Digital Domination RM60,500/month; Digital Dream RM80,000. Rates exclude 8% SST; production and lighting charges apply."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Digital Total Coverage RM30,000/mo"
+          },
+          {
+            "title": "Baggage Network RM32,800/mo"
+          },
+          {
+            "title": "Digital Domination RM60,500/mo"
+          },
+          {
+            "title": "Static departures impact RM130,000/yr"
+          },
+          {
+            "title": "Arrivals Duo RM900,000/yr"
+          },
+          {
+            "title": "Satellite Void RM1.5M/yr"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Static lightboxes"
+          },
+          {
+            "title": "Wall stickers and murals"
+          },
+          {
+            "title": "Skybridge and satellite sites"
+          },
+          {
+            "title": "Digital LCD/LED networks"
+          },
+          {
+            "title": "Trolleys"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "klia-terminal-2",
+      "name": "KLIA Terminal 2",
+      "owner": "klia",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/klia-t2-airport-2024.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "klia-arrival-zones",
+          "title": "KLIA Arrival Zones",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 AEROSTATION NETWORK",
+              "unit": "month",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED (x2); 10s spot; max 4 + 1 advertisers; Monthly; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "contact-pier-duty-free-centre-node",
+          "title": "Contact Pier Duty-Free, Centre Node",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DUTY-FREE SPECTACULAR",
+              "unit": "month",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED (x1), 14 ft (H) x 50 ft (W); 10s spot; max 4 advertisers; Monthly; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "international-arrivals-pre-immigration",
+          "title": "International Arrivals Pre-Immigration",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL ARRIVALS BRANDING ZONE",
+              "unit": "month",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Portrait (x11) & landscape (x28), 75\" & 45\"; 10s spot; max 3 advertisers; Monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "contact-pier-international-baggage-reclaim-hall",
+          "title": "Contact Pier & International Baggage Reclaim Hall",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL ARRIVALS IMPACT NETWORK",
+              "unit": "month",
+              "price": 75000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED (x8); 10s spot; max 3 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "international-arrival-hall",
+          "title": "International Arrival Hall",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL ARRIVALS SPECTACULAR",
+              "unit": "month",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED (x4), 9.5 ft (H) x 27 ft (W) / 13 ft (H) x 27 ft (W); 10s spot; max 4 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "contact-pier",
+          "title": "Contact Pier",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL DEPARTURES BRANDING ZONE",
+              "unit": "month",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Portrait (x8) & landscape (x3), 75\" LCD & 20 ft (W) x 5 ft (H); 10s spot; max 3 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "departure-zone",
+          "title": "Departure Zone",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL DEPARTURES NETWORK",
+              "unit": "month",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Portrait (x26), 75\"; 10s spot; max 8 advertisers; Monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "international-baggage-reclaim-hall",
+          "title": "International Baggage Reclaim Hall",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 DIGITAL DREAM",
+              "unit": "month",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED, 4.2 m (H) x 96 m (W); 30s spot; max 4 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T2 DIGITAL DREAM",
+              "unit": "month",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Terminal T2; digital LED approx. 14 ft (H) x 91 ft (W); 30s spot; max 4 advertisers; page labels the charge 'ANNUAL/MONTHLY DISPLAY CHARGE' so period is ambiguous; 8% SST additional",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "boarding-gates",
+          "title": "Boarding Gates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 SPONSORSHIP OF DIGITAL SCREENS & CHARGING STATIONS NETWORK",
+              "unit": "annual",
+              "price": 950000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; 180 portrait screens / 90 charging poles (55\"); 15s spot; max 12 advertisers; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T1 SPONSORSHIP OF DIGITAL SCREENS & CHARGING STATIONS NETWORK - estimated production cost",
+              "unit": "one-time",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; estimated; additional production cost may apply subject to final creative; 8% SST additional",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "T1 DIGITAL SCREENS & CHARGING STATIONS NETWORK",
+              "unit": "month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; 180 portrait screens (55\"); 15s spot; max 12 advertisers; monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "satellite-arms",
+          "title": "Satellite Arms",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 SATELLITE DIGITAL IMPACT NETWORK",
+              "unit": "month",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LED (x3 double sided), 5.2 ft (H) x 9.2 ft (W); 10s spot; max 4 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "baggage-reclaim-airside",
+          "title": "Baggage Reclaim (Airside)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T1 BAGGAGE NETWORK",
+              "unit": "month",
+              "price": 41000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T1; Digital LCD landscape (x24), 75\"; 15s spot; max 12 advertisers; Monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T2 BAGGAGE NETWORK",
+              "unit": "month",
+              "price": 32800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T2; Digital LCD landscape (x20), 75\"; 15s spot; max 12 advertisers; Monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Baggage Carousel Flaps — annual display charge",
+              "unit": "per year",
+              "price": 400000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF TBA; Stickers (x1); dimensions TBA; Excludes 8% SST; minimum three (3) months term",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "KLIA T2 Baggage Carousel Flaps — production charge",
+              "unit": "one-time production",
+              "price": 35200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF TBA; Excludes 8% SST; minimum three (3) months term",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "international-departure-hall-landside",
+          "title": "International Departure Hall (Landside)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T2 DIGITAL DOMINATION",
+              "unit": "month",
+              "price": 60500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T2; LED digital, 45.5 x 15 ft (1 unit) + 5 x 4 ft (16 units); 15s spot; max 8 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "departures-arrivals-concourses-airside",
+          "title": "Departures & Arrivals Concourses (Airside)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T2 TOTAL COVERAGE NETWORK",
+              "unit": "month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Terminal T2; Digital LCD portrait (x67), 55\"; 10s spot; max 6 advertisers; Monthly per spot; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "international-arrivals-public-concourse",
+          "title": "International Arrivals Public Concourse",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T2 Arrivals Duo — annual display charge",
+              "unit": "per year",
+              "price": 900000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-04 / K2-APC-05; Lightbox (x2); dimensions 10 ft (H) x 42 ft (W) each; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T2 Arrivals Duo — lighting charge",
+              "unit": "one-time lighting",
+              "price": 32000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-04 / K2-APC-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "T2 Arrivals Duo — production charge",
+              "unit": "one-time production",
+              "price": 40800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-04 / K2-APC-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "international-domestic-arrivals-public-concourse",
+          "title": "International & Domestic Arrivals Public Concourse",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T2 Arrivals Icons — annual display charge",
+              "unit": "per year",
+              "price": 1000000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape lightbox x2 + vertical 4-sided x2; landscape 10 ft (H) x 42 ft (W) each, vertical 10 ft (H) x 4 ft (W) each; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T2 Arrivals Icons — lighting charge (landscape)",
+              "unit": "one-time lighting",
+              "price": 32000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape format; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "T2 Arrivals Icons — lighting charge (vertical)",
+              "unit": "one-time lighting",
+              "price": 14400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; vertical 4-sided format; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "T2 Arrivals Icons — production charge (landscape)",
+              "unit": "one-time production",
+              "price": 40800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape format; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "T2 Arrivals Icons — production charge (vertical)",
+              "unit": "one-time production",
+              "price": 11400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; vertical 4-sided format; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "skybridge-international-arrivals",
+          "title": "Skybridge International Arrivals",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Arrivals Impact 1 — annual display charge",
+              "unit": "per year",
+              "price": 500000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-07 / K2-SBA-08; Wall mural sticker (x2); dimensions 24 ft (H) x 46 ft (W) each; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Arrivals Impact 1 — production charge",
+              "unit": "one-time production",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-07 / K2-SBA-08; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 1 — annual display charge",
+              "unit": "per year",
+              "price": 500000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-01 / K2-SBA-02; Freestanding lightbox (x2); dimensions 6 ft (H) x 21 ft (W) each; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 1 — lighting charge",
+              "unit": "one-time lighting",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-01 / K2-SBA-02; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 1 — production charge",
+              "unit": "one-time production",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-01 / K2-SBA-02; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 2 — annual display charge",
+              "unit": "per year",
+              "price": 500000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-03 / K2-SBA-04; Freestanding lightbox (x2); dimensions 6 ft (H) x 21 ft (W) each; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 2 — lighting charge",
+              "unit": "one-time lighting",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-03 / K2-SBA-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "KLIA T2 Skybridge Domination 2 — production charge",
+              "unit": "one-time production",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SBA-03 / K2-SBA-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "international-arrivals-immigration",
+          "title": "International Arrivals Immigration",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Arrivals Impact Duo — annual display charge",
+              "unit": "per year",
+              "price": 400000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-02; Lightbox (x2); dimensions 5 ft (H) x 15 ft (W) & 5 ft (H) x 23.5 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Arrivals Impact Duo — lighting charge",
+              "unit": "one-time lighting",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-02; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Arrivals Impact Duo — production charge",
+              "unit": "one-time production",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-02; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "KLIA T2 International Arrivals Icon — annual display charge",
+              "unit": "per year",
+              "price": 450000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-01; Lightbox; dimensions 5 ft (H) x 50 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "KLIA T2 International Arrivals Icon — lighting charge",
+              "unit": "one-time lighting",
+              "price": 22000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-01; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "KLIA T2 International Arrivals Icon — production charge",
+              "unit": "one-time production",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-AIC-01; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "international-departures-skybridge-level-3",
+          "title": "International Departures Skybridge Level 3",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Departures Skybridge Impact Duo — annual display charge (per pair)",
+              "unit": "per pair per year",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "REF K2-SBD-03 & K2-SBD-06 / K2-SBD-04 & K2-SBD-07 / K2-SBD-05 & K2-SBD-08; lightbox (x4) each set; 4.5 ft (H) x 12 ft (W); excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Departures Skybridge Impact Duo — lighting charge (per pair)",
+              "unit": "per pair",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Departures Skybridge Impact Duo — production charge (per pair)",
+              "unit": "per pair",
+              "price": 21000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "domestic-arrivals-landside",
+          "title": "Domestic Arrivals (Landside)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 1 — annual display charge",
+              "unit": "per year",
+              "price": 315000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-04; Lightbox; dimensions 15 ft (H) x 25 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 1 — lighting charge",
+              "unit": "one-time lighting",
+              "price": 34000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 1 — production charge",
+              "unit": "one-time production",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 2 — annual display charge",
+              "unit": "per year",
+              "price": 275000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-05; Lightbox; dimensions 15 ft (H) x 25 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 2 — lighting charge",
+              "unit": "one-time lighting",
+              "price": 34000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Giant 2 — production charge",
+              "unit": "one-time production",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "domestic-arrivals",
+          "title": "Domestic Arrivals",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Domestic Arrivals Icon — annual display charge",
+              "unit": "per year",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-01; Premium vinyl; dimensions 30 ft (H) x 20 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Domestic Arrivals Icon — production charge",
+              "unit": "one-time production",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DA-01; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "gate-j-departures-entrance",
+          "title": "Gate J Departures Entrance",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Domestic Departures Icon — annual display charge",
+              "unit": "per year",
+              "price": 300000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-05; Lightbox; dimensions 12 ft (H) x 42.6 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Domestic Departures Icon — lighting charge",
+              "unit": "one-time lighting",
+              "price": 22000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Domestic Departures Icon — production charge",
+              "unit": "one-time production",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-05; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "domestic-departures",
+          "title": "Domestic Departures",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Domestic Departures Impact — annual display charge",
+              "unit": "per year",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-04; Lightbox; dimensions TBC; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Domestic Departures Impact — lighting charge",
+              "unit": "one-time lighting",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Domestic Departures Impact — production charge",
+              "unit": "one-time production",
+              "price": 8500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DD-04; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "international-pier-west",
+          "title": "International Pier (West)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "T2 Foreign Worker Impact — annual display charge",
+              "unit": "per year",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-IAQ-08; High impact board; dimensions 79.5\" (H) x 408\" (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "T2 Foreign Worker Impact — production charge",
+              "unit": "one-time production",
+              "price": 6240,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-IAQ-08; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "domestic-departures-arrivals-gate-j",
+          "title": "Domestic Departures & Arrivals Gate J",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Domestic Wall Domination — annual display charge",
+              "unit": "per year",
+              "price": 180000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF TBA; Wall sticker; dimensions TBA; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Domestic Wall Domination — production charge",
+              "unit": "one-time production",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF TBA; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "international-departures-level-3",
+          "title": "International Departures Level 3",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Impact Lift Wraps — annual display charge",
+              "unit": "per year",
+              "price": 230000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-01 / K2-SAT-06; Glass facade wrap (x2); dimensions TBC; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Impact Lift Wraps — production charge",
+              "unit": "one-time production",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-01 / K2-SAT-06; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 International Departures Duo 1 — annual display charge",
+              "unit": "per year",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-02 / K2-SAT-07; Freestanding lightbox (x2); dimensions TBC; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "KLIA T2 International Departures Duo 1 — lighting charge",
+              "unit": "one-time lighting",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-02 / K2-SAT-07; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "KLIA T2 International Departures Duo 1 — production charge",
+              "unit": "one-time production",
+              "price": 6300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-02 / K2-SAT-07; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "KLIA T2 Satellite Impact Duo — annual display charge",
+              "unit": "per year",
+              "price": 180000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-03 / K2-SAT-08; Stickers; dimensions 7 ft (H) x 10 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "KLIA T2 Satellite Impact Duo — production charge",
+              "unit": "one-time production",
+              "price": 17000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-03 / K2-SAT-08; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "public-concourse",
+          "title": "Public Concourse",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Public Concourse Departures Impact — annual display charge",
+              "unit": "per year",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DPC-02; Wall sticker; dimensions 11.83 ft (H) x 28.92 ft (W); Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Public Concourse Departures Impact — production charge",
+              "unit": "one-time production",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-DPC-02; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "satellite-building",
+          "title": "Satellite Building",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Satellite Void — annual display charge",
+              "unit": "per year",
+              "price": 1500000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-04 / K2-SAT-09; Facade wall sticker; dimensions 12 ft (H) x 295 ft (W) each; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Satellite Void — production charge",
+              "unit": "one-time production",
+              "price": 260000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "REF K2-SAT-04 / K2-SAT-09; Excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "landside-airside",
+          "title": "Landside & Airside",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-terminal-2"
+          ],
+          "items": [
+            {
+              "item": "KLIA T2 Trolleys — monthly display charge (150 units)",
+              "unit": "per month (150 units)",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Stickers; dimensions TBC; 7,500 trolleys available (6,000 landside, 1,500 airside); excludes 8% SST",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "KLIA T2 Trolleys — production charge (airside)",
+              "unit": "per unit",
+              "price": 150,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Airside sticker production; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "KLIA T2 Trolleys — production charge (landside)",
+              "unit": "per unit",
+              "price": 130,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Landside sticker production; excludes 8% SST",
+              "is_package": false,
+              "sort_order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

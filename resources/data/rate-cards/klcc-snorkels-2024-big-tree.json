@@ -1,0 +1,169 @@
+{
+  "slug": "klcc-snorkels-2024-big-tree",
+  "owner": "media-prima",
+  "title": "KLCC Snorkels 2024 — Iconic Landmark Lightboxes (Big Tree)",
+  "summary": "‘O’ + ‘D’ snorkels up to 535 sq ft/panel; full domination RM982k/6 mo, RM1.836M/12 mo.",
+  "description": "Big Tree deck (14 pages). Set of curving lightboxes at KLCC base. Surround: Petronas HQ, Maxis, Suria KLCC, Avenue K, Mandarin/Four Seasons/Grand Hyatt, Tropicana/Four Seasons residences. Packages: 4x O +4x D, 12-mo media RM1.5M + production/lighting/SST = RM1.836M; special RM860k media = RM1.121M; 6-mo RM982k. Availability from 01-Jan-25.",
+  "validity": "2024 deck, avail from 01-Jan-25",
+  "terms": null,
+  "hero": "assets/ratecards/img/klcc-snorkels-2024-big-tree.webp",
+  "medium": "Outdoor",
+  "source_pages": 14,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Big Tree deck (14 pages). Set of curving lightboxes at KLCC base. Surround: Petronas HQ, Maxis, Suria KLCC, Avenue K, Mandarin/Four Seasons/Grand Hyatt, Tropicana/Four Seasons residences. Packages: 4x O +4x D, 12-mo media RM1.5M + production/lighting/SST = RM1.836M; special RM860k media = RM1.121M; 6-mo RM982k. Availability from 01-Jan-25."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "12-mo RM1.5M media"
+          },
+          {
+            "title": "6-mo RM750k media"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "‘O’ snorkel 3 lightboxes"
+          },
+          {
+            "title": "‘D’ snorkel 2 lightboxes"
+          },
+          {
+            "title": "Domination"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-klcc-snorkels",
+      "name": "KLCC Snorkels",
+      "owner": "media-prima",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/klcc-snorkels-2024-big-tree.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "klcc-snorkel-domination-package-12-months",
+          "title": "KLCC Snorkel Domination Package — 12 months",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-klcc-snorkels"
+          ],
+          "items": [
+            {
+              "item": "Full Domination",
+              "unit": "package (12 months)",
+              "price": 1500000,
+              "price_incl_sst": 1836000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4 x 'O' shaped snorkels (7.5ft x 22.08ft) + 3 lightboxes and 4 'D' shaped snorkels (7.67ft x 24.42ft); media 1,500,000, production 120,000, lighting 80,000, 8% SST 136,000. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Special Rate",
+              "unit": "package (12 months)",
+              "price": 860000,
+              "price_incl_sst": 1121040,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Special rate for same inventory; media 860,000, production 100,000, lighting 78,000, 8% SST 83,040; availability 01-Jan-25. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "klcc-snorkel-domination-package-6-months",
+          "title": "KLCC Snorkel Domination Package — 6 months",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-klcc-snorkels"
+          ],
+          "items": [
+            {
+              "item": "Full Domination",
+              "unit": "package (6 months)",
+              "price": 750000,
+              "price_incl_sst": 982800,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media 750,000, production 120,000, lighting 40,000, 8% SST 72,800; 4 snorkels + lightboxes as per package. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Special Rate",
+              "unit": "package (6 months)",
+              "price": 450000,
+              "price_incl_sst": 637200,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media 450,000, production 100,000, lighting 40,000, 8% SST 47,200; availability 01-Jan-25. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "klcc-snorkel-domination-package-3-months",
+          "title": "KLCC Snorkel Domination Package — 3 months",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "media-prima-klcc-snorkels"
+          ],
+          "items": [
+            {
+              "item": "Full Domination",
+              "unit": "package (3 months)",
+              "price": 375000,
+              "price_incl_sst": 556200,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media 375,000, production 120,000, lighting 20,000, 8% SST 41,200. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Special Rate",
+              "unit": "package (3 months)",
+              "price": 240000,
+              "price_incl_sst": 388800,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media 240,000, production 100,000, lighting 20,000, 8% SST 28,800; availability 01-Jan-25. price_rm is media rental; price_incl_sst_rm is the printed TOTAL (includes production, lighting and 8% SST).",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

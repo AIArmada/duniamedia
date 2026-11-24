@@ -1,0 +1,289 @@
+{
+  "slug": "ra-media-relations-news-slot-2026-2027",
+  "owner": "ra-media-relations",
+  "title": "RA Media News Slot 2026/27 — Prime TV News Placements",
+  "summary": "Two-minute news-slot placements: TV3 Buletin Utama RM75k, TV3 1.30PM RM40k, AWANI 7.45PM RM50k, TV1 RM20k, TVS RM9k.",
+  "description": "RA Media Relations news-slot rate card for 2026/27, maximum two-minute placement per news programme. TV3 Buletin Utama RM75,000 (RM81,000 with 8% SST); TV3 Buletin 1.30PM RM40,000 (RM43,200); Astro AWANI AWANI 7.45PM RM50,000 (RM54,000); Astro AWANI Buletin AWANI RM30,000 (RM32,400); TV1 Berita Perdana RM20,000 (RM21,600); TV AlHijrah Berita AlHijrah RM8,000 (RM8,640); TVS TVS Utama 7.40 RM9,000 (RM9,720). Placement, scheduling and content are subject to broadcaster approval and confirmation.",
+  "validity": "2026/2027 rate card",
+  "terms": null,
+  "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 1,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "RA Media Relations news-slot rate card for 2026/27, maximum two-minute placement per news programme. TV3 Buletin Utama RM75,000 (RM81,000 with 8% SST); TV3 Buletin 1.30PM RM40,000 (RM43,200); Astro AWANI AWANI 7.45PM RM50,000 (RM54,000); Astro AWANI Buletin AWANI RM30,000 (RM32,400); TV1 Berita Perdana RM20,000 (RM21,600); TV AlHijrah Berita AlHijrah RM8,000 (RM8,640); TVS TVS Utama 7.40 RM9,000 (RM9,720). Placement, scheduling and content are subject to broadcaster approval and confirmation."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "TV3 Buletin Utama RM75k"
+          },
+          {
+            "title": "AWANI 7.45PM RM50k"
+          },
+          {
+            "title": "TV3 1.30PM RM40k"
+          },
+          {
+            "title": "TV1 RM20k"
+          },
+          {
+            "title": "TVS RM9k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "News slot placement (max 2 min)"
+          },
+          {
+            "title": "TV3"
+          },
+          {
+            "title": "Astro AWANI"
+          },
+          {
+            "title": "TV1"
+          },
+          {
+            "title": "TV AlHijrah"
+          },
+          {
+            "title": "TVS"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-tv3",
+      "name": "TV3",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "news-slot-media-placement-4",
+          "title": "News Slot Media Placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "TV3 — Buletin 1.30 PM news slot",
+              "unit": "2-minute news slot",
+              "price": 40000,
+              "price_incl_sst": 43200,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "TV3 — Buletin Utama news slot",
+              "unit": "2-minute news slot",
+              "price": 75000,
+              "price_incl_sst": 81000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-astro-awani",
+      "name": "Astro AWANI",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "news-slot-media-placement",
+          "title": "News Slot Media Placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-astro-awani"
+          ],
+          "items": [
+            {
+              "item": "Astro AWANI — 7.45 PM news slot",
+              "unit": "2-minute news slot",
+              "price": 50000,
+              "price_incl_sst": 54000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Astro AWANI — Buletin AWANI news slot",
+              "unit": "2-minute news slot",
+              "price": 30000,
+              "price_incl_sst": 32400,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rtm-tv1",
+      "name": "TV1",
+      "owner": "rtm",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "news-slot-media-placement-3",
+          "title": "News Slot Media Placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "rtm-tv1"
+          ],
+          "items": [
+            {
+              "item": "TV1 — Berita Perdana news slot",
+              "unit": "2-minute news slot",
+              "price": 20000,
+              "price_incl_sst": 21600,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "al-hijrah-tv-al-hijrah",
+      "name": "TV AlHijrah",
+      "owner": "al-hijrah",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "news-slot-media-placement-2",
+          "title": "News Slot Media Placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-al-hijrah"
+          ],
+          "items": [
+            {
+              "item": "TV AlHijrah — Berita AlHijrah news slot",
+              "unit": "2-minute news slot",
+              "price": 8000,
+              "price_incl_sst": 8640,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tvs-tvs",
+      "name": "TVS",
+      "owner": "tvs",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "news-slot-media-placement-5",
+          "title": "News Slot Media Placement",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "tvs-tvs"
+          ],
+          "items": [
+            {
+              "item": "TVS — Utama 7.40 news slot",
+              "unit": "2-minute news slot",
+              "price": 9000,
+              "price_incl_sst": 9720,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ra-media-relations-group",
+      "name": "RA Media Group",
+      "owner": "ra-media-relations",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    }
+  ],
+  "shared_sections": []
+}

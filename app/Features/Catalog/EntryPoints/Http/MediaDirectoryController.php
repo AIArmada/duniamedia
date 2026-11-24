@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Features\Catalog\EntryPoints\Http;
 
 use App\Features\Catalog\Support\MediaDirectory;
+use App\Features\Catalog\Support\RateCardPresenter;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -37,34 +38,110 @@ class MediaDirectoryController extends Controller
     public function owner(string $owner)
     {
         $ownerData = MediaDirectory::owner($owner);
-        abort_unless($ownerData, 404);
 
-        return view('pages.media-owner', [
+        if ($ownerData === null) {
+            abort(404);
+        }
+
+        $rateCards = MediaDirectory::rateCards($owner);
+        $view = view()->exists('pages.owners.'.$owner) ? 'pages.owners.'.$owner : 'pages.media-owner';
+
+        return view($view, [
             'owner' => $ownerData,
-            'rateCards' => MediaDirectory::rateCards($owner),
+            'channels' => $ownerData['channels'],
+            'rateCards' => $rateCards,
+            'ownerStory' => $ownerData['description'],
+            'ownerStats' => [
+                ['label' => 'Channels', 'value' => (string) count($ownerData['channels'])],
+                ['label' => 'Channel groups', 'value' => (string) count($ownerData['categories'])],
+                ['label' => 'Decks', 'value' => (string) $rateCards->count()],
+            ],
+            'heroImage' => ! empty($ownerData['logo']) ? 'assets/partners/'.$ownerData['logo'] : null,
             'pageTitle' => $ownerData['name'].' — Media Owner | Dunia Media',
+        ]);
+    }
+
+    public function showChannel(string $channel)
+    {
+        $channelData = MediaDirectory::channelData($channel);
+
+        if ($channelData === null) {
+            abort(404);
+        }
+
+        $property = MediaDirectory::propertyBySlug($channel);
+
+        if ($property === null) {
+            abort(404);
+        }
+
+        $sections = RateCardPresenter::forChannel($property->id);
+        $rateCards = MediaDirectory::rateCardsForProperty($property);
+        $siblings = MediaDirectory::siblingChannels($property);
+        $view = view()->exists('pages.channels.'.$channel) ? 'pages.channels.'.$channel : 'pages.media-channel';
+        $entryCount = collect($sections)->sum(fn (array $section): int => count($section['entries']));
+
+        return view($view, [
+            'owner' => $channelData['owner'],
+            'channel' => $channelData,
+            'description' => $channelData['description'] ?? "{$channelData['name']} inventory, formats and indicative rates.",
+            'sections' => $sections,
+            'rateCards' => $rateCards,
+            'siblings' => $siblings,
+            'heroImage' => $property->hero_path ?: null,
+            'channelStats' => [
+                ['label' => 'Rate sections', 'value' => (string) count($sections)],
+                ['label' => 'Rate lines', 'value' => (string) $entryCount],
+                ['label' => 'Decks', 'value' => (string) $rateCards->count()],
+            ],
+            'pageTitle' => $channelData['name'].' — '.$channelData['owner_name'].' | Dunia Media',
         ]);
     }
 
     public function channel(string $owner, string $channel)
     {
         $ownerData = MediaDirectory::owner($owner);
-        abort_unless($ownerData, 404);
+
+        if ($ownerData === null) {
+            abort(404);
+        }
 
         $channelData = MediaDirectory::channel($owner, $channel);
-        abort_unless($channelData, 404);
+
+        if ($channelData === null) {
+            abort(404);
+        }
 
         $siblings = collect($ownerData['channels'])
             ->where('slug', '!=', $channel)
             ->take(8)
             ->values();
 
-        return view('pages.media-channel', [
+        $property = MediaDirectory::property($owner, $channel);
+        $sections = $property === null ? [] : RateCardPresenter::forChannel($property->id);
+        $rateCards = MediaDirectory::rateCards($owner, $channel);
+        $nestedView = 'pages.channels.'.$owner.'.'.$channel;
+        $flatView = 'pages.channels.'.MediaDirectory::mediaKey($owner, $channel);
+        $view = match (true) {
+            view()->exists($nestedView) => $nestedView,
+            view()->exists($flatView) => $flatView,
+            default => 'pages.media-channel',
+        };
+        $entryCount = collect($sections)->sum(fn (array $section): int => count($section['entries']));
+
+        return view($view, [
             'owner' => $ownerData,
             'channel' => $channelData,
             'description' => MediaDirectory::channelDescription($channelData),
-            'rateCards' => MediaDirectory::rateCards($owner, $channel),
+            'sections' => $sections,
+            'rateCards' => $rateCards,
             'siblings' => $siblings,
+            'heroImage' => $property?->hero_path ?: (! empty($channelData['logo']) ? 'assets/partners/'.$channelData['logo'] : null),
+            'channelStats' => [
+                ['label' => 'Rate sections', 'value' => (string) count($sections)],
+                ['label' => 'Rate lines', 'value' => (string) $entryCount],
+                ['label' => 'Decks', 'value' => (string) $rateCards->count()],
+            ],
             'pageTitle' => $channelData['name'].' — '.$ownerData['name'].' | Dunia Media',
         ]);
     }

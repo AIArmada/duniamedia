@@ -1,0 +1,1399 @@
+{
+  "slug": "astro-upfront-2027",
+  "owner": "astro",
+  "title": "Astro Upfront 2027 — TV, Audio, Talent & On-Ground Packages",
+  "summary": "Upfront27: Best of TV RM25k–55k, news packages RM15k–38k, audio RM5k–47.5k, talent/creator RM5k–75k, festive RM88k–250k.",
+  "description": "Astro Upfront27 sales kit (66 pages) with early-bird bonuses: 100% for sign-up by 30 Oct 2026, 50% by 16 Nov 2026, 20% by 30 Nov 2026. TV: Awani Pagi and Niaga Awani spotlight interviews RM20,000; Buletin Awani special report RM15,000; AEC Prime Talk Market Spotlite RM25,000 plus RM3,000 production; Prime Edition News RM38,000; SME Biz@Sethigal RM5,300–8,300; Best of Malay/Chinese/Indian TV RM25,000–55,000; Best of CNY 2027 RM88,000; CNY Greetings RM120,000; Best of Raya 2027 RM98,000; Raya celebrity greetings RM250,000. Audio: Audio Impact 360 RM5,000–20,000 per brand; nationwide ERA/MYFM/HITZ RM40,000–47,500; regional RM2,800–43,000; CNY/Raya audio sponsorships RM160,000–188,000. Talent: RFE talent posts RM5,000–20,000, music talent RM10,000–30,000, music and MV production RM35,000–75,000; KULT creators RM10,000–50,000. On-ground booth RM10,000–15,000 and AIdvert production RM6,000. Prices exclude 8% SST; production and talent are charged separately.",
+  "validity": "Upfront27; early-bird deadlines Oct–Nov 2026, utilise by 31 Dec 2027",
+  "terms": null,
+  "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 66,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Astro Upfront27 sales kit (66 pages) with early-bird bonuses: 100% for sign-up by 30 Oct 2026, 50% by 16 Nov 2026, 20% by 30 Nov 2026. TV: Awani Pagi and Niaga Awani spotlight interviews RM20,000; Buletin Awani special report RM15,000; AEC Prime Talk Market Spotlite RM25,000 plus RM3,000 production; Prime Edition News RM38,000; SME Biz@Sethigal RM5,300–8,300; Best of Malay/Chinese/Indian TV RM25,000–55,000; Best of CNY 2027 RM88,000; CNY Greetings RM120,000; Best of Raya 2027 RM98,000; Raya celebrity greetings RM250,000. Audio: Audio Impact 360 RM5,000–20,000 per brand; nationwide ERA/MYFM/HITZ RM40,000–47,500; regional RM2,800–43,000; CNY/Raya audio sponsorships RM160,000–188,000. Talent: RFE talent posts RM5,000–20,000, music talent RM10,000–30,000, music and MV production RM35,000–75,000; KULT creators RM10,000–50,000. On-ground booth RM10,000–15,000 and AIdvert production RM6,000. Prices exclude 8% SST; production and talent are charged separately."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Audio Impact 360 from RM5k"
+          },
+          {
+            "title": "Buletin Awani special report RM15k"
+          },
+          {
+            "title": "Best of TV RM25k–55k"
+          },
+          {
+            "title": "Best of Raya RM98k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "TV packages"
+          },
+          {
+            "title": "News and talk-show integration"
+          },
+          {
+            "title": "Audio"
+          },
+          {
+            "title": "Talent and creators"
+          },
+          {
+            "title": "On-ground activation"
+          },
+          {
+            "title": "AIdvert production"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "astro-astro-awani",
+      "name": "Astro AWANI",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-advertising-2",
+          "title": "TV Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-astro-awani"
+          ],
+          "items": [
+            {
+              "item": "Spotlight Interview @ Awani Pagi",
+              "unit": "package",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 x 5-min TV interview (Mon-Sun 7:30am, 60 min) + 2-3 min digital highlights with TikTok/YouTube posts; est. media value RM172,000. Klang Valley shoot.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Business Insights Interview @ Niaga Awani",
+              "unit": "package",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 x 5-min TV interview (Mon-Fri 9:00am, 90 min) + 2-3 min digital highlights with TikTok/YouTube posts; est. media value RM172,000. Klang Valley shoot.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-astro-ria",
+      "name": "Astro Ria",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-advertising-5",
+          "title": "TV Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-astro-ria"
+          ],
+          "items": [
+            {
+              "item": "Best of Malay TV",
+              "unit": "package",
+              "price": 55000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "210 x 30s TVC over 2 weeks on Astro Ria, Prima, Citra, Oasis; est. media value RM1,272,500; complimentary 30s production up to RM9,000; Ramadan/Raya blackout 7 Feb-28 Mar 2027.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-astro-prima",
+      "name": "Astro Prima",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-advertising",
+          "title": "TV Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-astro-prima"
+          ],
+          "items": [
+            {
+              "item": "Borak SeeNI — 1-Hour Episode Sponsorship (Exclusive Package)",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Astro Prima, live. 3 x 10-min sponsor segments, 6 x 10s lower-third banners, digital FB/IG/TikTok posts; est. media value RM304,000. Talent cost extra.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Borak SeeNI — 1 x 12-min Segment Sponsorship",
+              "unit": "package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Astro Prima, live. 2 x 10s lower-third banners, digital FB/IG/TikTok posts; est. media value RM119,000. Talent cost extra.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-astro-oasis",
+      "name": "Astro Oasis",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-astro-vanavil",
+      "name": "Astro Vanavil",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-astro-tutor-tv",
+      "name": "Astro Tutor TV",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-era",
+      "name": "ERA",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "audio-advertising-3",
+          "title": "Audio Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-era"
+          ],
+          "items": [
+            {
+              "item": "Audio Impact 360 — ERA SABAH, ERA SARAWAK (per brand)",
+              "unit": "package per brand",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "talent-influencer-marketing-2",
+          "title": "Talent & Influencer Marketing",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-era"
+          ],
+          "items": [
+            {
+              "item": "RFE Music Talent Package (Social Media Post + Song Performance) — RM20,000 tier",
+              "unit": "package per talent",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: NADEERA ZAINI, WANI KAYRIE, SHAHRUL KAMAL, HUSSAIN. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-sinar",
+      "name": "Sinar",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-thr-gegar",
+      "name": "THR Gegar",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-zayan",
+      "name": "Zayan",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "audio-festival-packages-5",
+          "title": "Audio Festival Packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-zayan"
+          ],
+          "items": [
+            {
+              "item": "Astro Audio Gurindam Syawal — Booth Package, ZAYAN / MIX / LITE (per brand)",
+              "unit": "package per brand",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "26-28 Feb 2027, MyTown. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astro-lite-fm",
+      "name": "Lite FM",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-mix-fm",
+      "name": "Mix FM",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-hitz-fm",
+      "name": "Hitz FM",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-my-fm",
+      "name": "MY FM",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-melody-fm",
+      "name": "Melody FM",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-goxuan",
+      "name": "GoXuan",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-raaga",
+      "name": "Raaga",
+      "owner": "astro",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-gempak",
+      "name": "Gempak",
+      "owner": "astro",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-sooka",
+      "name": "sooka",
+      "owner": "astro",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "astro-group",
+      "name": "Astro Group Packages",
+      "owner": "astro",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-upfront-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "audio-festival-packages",
+          "title": "Audio Festival Packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "Astro Audio Goat Year CNY Festival 2027 [Booth] — voice-over production",
+              "unit": "VO",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Cost column entry '600 (VO)' for the booth package; the same VO cost is listed for the Gurindam Syawal booth package.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Astro Audio Goat Year CNY Festival 2027 — Sponsor Package (max 4 clients)",
+              "unit": "package",
+              "price": 188000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 40 recorded promos, 20 promo plus, 20 live liners, 2 client talksets, social 360, outside broadcast + 3 event live specials, 20x20 booth. Total media value RM1,054,088. Production RM15,000 extra.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Astro Audio Goat Year CNY Festival 2027 — production cost (Klang Valley)",
+              "unit": "production",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Applies to the Sponsor Package; Klang Valley rate.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Astro Audio Gurindam Syawal — Sponsor Package (max 4 clients)",
+              "unit": "package",
+              "price": 160000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "26-28 Feb 2027, MyTown. 40 recorded promos, 20 promo plus, 20 live liners, 2 talksets, social 360, outside broadcast + 3 event live specials, 20x20 booth. Total media value RM1,075,800. Production RM15,000 extra.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Astro Audio Gurindam Syawal — production cost (Klang Valley)",
+              "unit": "production",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Applies to the Sponsor Package; Klang Valley rate.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "audio-advertising",
+          "title": "Audio Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "Radio commercial — Central Regional",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM5,600-19,600 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Radio commercial — East Coast Regional",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM2,800-7,700 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Radio commercial — Northern Regional",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM3,500-11,900 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Radio commercial — Peninsular Malaysia",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM6,000-43,000 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Radio commercial — Sabah & Sarawak",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM2,800-3,150 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Radio commercial — Southern Regional",
+              "unit": "package",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Investment range RM3,500-11,200 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "terms-conditions-sme-upfront27",
+          "title": "Terms & Conditions (SME Upfront27)",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "Third-party voice talent (minimum)",
+              "unit": "per talent per 30s commercial",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Minimum charge stated in the SME Upfront27 terms; talent cost applies on top of quoted prices.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "digital-advertising",
+          "title": "Digital Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "SME Social Lite — Option 1 (Tier A x1 + Tier B x1)",
+              "unit": "package",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM23,000. One Facebook/Instagram post from a Tier A platform + one from a Tier B platform; combined guaranteed reach 150,000.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "SME Social Lite — Option 2 (Tier A x1 + Tier B x2)",
+              "unit": "package",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM34,000. One post from a Tier A platform + two posts from Tier B platforms; combined guaranteed reach 250,000.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "SME Social Lite — Option 3 (Tier A x2 + Tier B x2)",
+              "unit": "package",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM47,000. Two posts from Tier A platforms + two posts from Tier B platforms; combined guaranteed reach 350,000.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Social 360 — Tier 1 Social Post",
+              "unit": "package",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Photo post produced by Astro + Facebook/Instagram/TikTok post and story; guaranteed reach 250K on Tier 1 platforms; up to 2 revision rounds.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Social 360 — Tier 1 Social Video",
+              "unit": "package",
+              "price": 16000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes RM2,000 production. Branded video x1 + Facebook/Instagram/TikTok post and story; guaranteed reach 250K on Tier 1 platforms; up to 60s; talent fees not included.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Social 360 — Tier 2 Social Post",
+              "unit": "package",
+              "price": 13000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Photo post produced by Astro + posts/stories; guaranteed reach 215K on Tier 2 platforms.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Social 360 — Tier 3 Social Post",
+              "unit": "package",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Photo post produced by Astro + posts/stories; guaranteed reach 187.5K-250K depending on Tier 3 platform.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Social 360 — Tier 3 Social Video",
+              "unit": "package",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Includes RM2,000 production. Branded video x1 + posts/stories; guaranteed reach 187.5K-250K depending on Tier 3 platform.",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "Social 360 — video production add-on",
+              "unit": "production per video",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Charged in addition to the Social Video investment in every tier (Tier 1 RM16,000, Tier 2 RM13,000, Tier 3 RM8,000).",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "SME Video360+ — Video360+ package",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Minimum investment RM25,000 for 500,000 completed views; 35 Astro digital platforms + Astro YouTube channels; run-on-network.",
+              "is_package": true,
+              "sort_order": 9
+            },
+            {
+              "item": "NI — Single Article",
+              "unit": "package",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM38,800. Article write-up + Facebook post + FB/IG/TikTok story; guaranteed 4,000 reads; production RM1,000 extra.",
+              "is_package": true,
+              "sort_order": 10
+            },
+            {
+              "item": "NI — Single Article production",
+              "unit": "production",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production add-on for the Single Article package.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "NI — Single Podcast",
+              "unit": "package",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM164,800. Facebook/Instagram/TikTok post and story, 3 reels/YouTube Shorts, 1 video package; 50,000 guaranteed views per video; production RM3,000 extra.",
+              "is_package": true,
+              "sort_order": 12
+            },
+            {
+              "item": "NI — Single Podcast production",
+              "unit": "production",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production add-on for the Single Podcast package.",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "NI — Single Short Video",
+              "unit": "package",
+              "price": 19000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM124,200. Short video under 5 minutes + Facebook/Instagram/YouTube/TikTok video posts, stories, pinned posts, 2 reels/shorts; 50,000 guaranteed views; production RM6,000 extra.",
+              "is_package": true,
+              "sort_order": 14
+            },
+            {
+              "item": "NI — Single Short Video production",
+              "unit": "production",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production add-on for the Single Short Video package.",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "NI — Short Video [Buy 2 Free 1]",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Est. media value RM372,600. Three short videos (buy 2 free 1), 3 posts per platform, 6 stories, 3 pinned posts, 6 reels/shorts; 50,000 guaranteed views per video; production RM18,000 extra.",
+              "is_package": true,
+              "sort_order": 16
+            },
+            {
+              "item": "NI — Short Video [Buy 2 Free 1] production",
+              "unit": "production",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production add-on for the Buy 2 Free 1 short video package.",
+              "is_package": false,
+              "sort_order": 17
+            }
+          ]
+        },
+        {
+          "key": "tv-advertising-4",
+          "title": "TV Advertising",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "Market Spotlite @ AEC Prime Talk",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min advertorial capsule within Prime Talk (Mon-Sun 8pm); est. media value RM74,000; production RM3,000 extra. Klang Valley only.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Market Spotlite @ AEC Prime Talk — production",
+              "unit": "production",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "News team shoot within Klang Valley; required for Market Spotlite.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Prime Edition News Package (AEC Prime Talk + Evening Edition)",
+              "unit": "package",
+              "price": 38000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "56 x 15s TVC over 4 weeks (28 in Prime Talk 8-8:30pm, 28 in Evening Edition 10:30-11pm); est. media value RM480,480; complimentary 15s production capped at RM7,000.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "SME Biz@Sethigal — Option 1 (TV + digital)",
+              "unit": "package",
+              "price": 8300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min interview on Astro Seithigal (Astro Vinmeen) + Facebook/Instagram/TikTok posts on Astro Ulagam; est. media value RM97,000.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "SME Biz@Sethigal — Option 2 (TV only)",
+              "unit": "package",
+              "price": 5300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-min interview on Astro Seithigal (Astro Vinmeen) only; est. media value RM64,000.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Best of Chinese TV",
+              "unit": "package",
+              "price": 38000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "210 x 30s TVC on Astro AEC, Hua Hee Dai, TVB Jade, TVB Classic; est. media value RM1,350,000; complimentary production up to RM9,000; CNY blackout 1-20 Feb 2027.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Best of Indian TV",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "210 x 30s TVC on Astro Vellithirai, Vinmeen, Sun TV; est. media value RM1,264,000; complimentary production up to RM9,000.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Best of CNY 2027",
+              "unit": "package",
+              "price": 88000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "228 x 30s spots across 15 Chinese channels; est. media value RM1,217,500; valid to 28 Mar 2027.",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "CNY Greetings Ads 2027",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "228 x 30s spots across 15 Chinese channels; est. media value RM1,217,500; production cost varies with talent engagement fee; valid to 28 Mar 2027. Page 5 summary lists RM120,000.",
+              "is_package": true,
+              "sort_order": 8
+            },
+            {
+              "item": "Best of RARA 2027",
+              "unit": "package",
+              "price": 98000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "330 x 30s spots; digital Video360 600,000 impressions; est. media value RM2,276,000; valid to 28 Mar 2027.",
+              "is_package": true,
+              "sort_order": 9
+            },
+            {
+              "item": "Raya Festive Celebrity Greetings 2027",
+              "unit": "package",
+              "price": 250000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "500 x 30s spots; digital Video360 600,000 impressions; est. media value RM3,411,000; production cost varies with talent engagement fee; valid to 28 Mar 2027.",
+              "is_package": true,
+              "sort_order": 10
+            }
+          ]
+        },
+        {
+          "key": "talent-influencer-marketing",
+          "title": "Talent & Influencer Marketing",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "RFE Talent Package (Social Media Post) — RM12,000 tier",
+              "unit": "package per talent",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: HAIDAR HASANUDDIN, FAZZIQ MUQRIZ, WANI KAYRIE, SHAHRUL KAMAL, EVERTTS GOMES, ARABELLA ELLEN. 1 x IG sync TikTok + 1 x IG Story.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "RFE Talent Package (Social Media Post) — RM20,000 tier",
+              "unit": "package per talent",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: MIERUL AIMAN, BELLA DOWANNA, HAWA RIDZWANA, NAMIE. 1 x IG sync TikTok + 1 x IG Story.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "RFE Talent Package (Social Media Post) — RM5,000 tier",
+              "unit": "package per talent",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: ELISA CHEW, DHEPER, MARISA, NLYESA, NYLEA, ARIANA. 1 x IG sync TikTok + 1 x IG Story.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "RFE Talent Package (Social Media Post) — RM8,000 tier",
+              "unit": "package per talent",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: AIMAN AMEER, QISTINA RANIA, RAZIN QIDRAN, JAY ISKANDAR, AZRI SAFIX, FITRI FAROK, AHMAD ADLY, SHARMAINE, KEANU AZMAN. 1 x IG sync TikTok + 1 x IG Story.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "RFE Music Talent Package (Social Media Post + Song Performance) — RM10,000 tier",
+              "unit": "package per talent",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: SCHA NURIL, DINDA DANIA, ALIFF KIMIEY, DANIAL KIFLI, ADAM & NAZME, DANIAL ISMAIL, YAD Z, QILO, RANISHA. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "RFE Music Talent Package (Social Media Post + Song Performance) — RM25,000 tier",
+              "unit": "package per talent",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: HAEL HUSAINI. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "RFE Music Talent Package (Social Media Post + Song Performance) — RM30,000 tier",
+              "unit": "package per talent",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Talent: ALPHA GROUP. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "RFE Music Production",
+              "unit": "production",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Song production: lyrics, composition, recording, mixing and mastering. Talent fees not included.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "RFE Music Video Production",
+              "unit": "production",
+              "price": 75000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2-3 min full music video + 30s cutdown; pre-production, production and post-production. Talent fees not included.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "KULT Creators Entry Package",
+              "unit": "package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 KOLs (3 micro 5k-20k followers, 7 nano 1k-5k), 10 TikTok videos; 4-week campaign; est. audience 60K, reach 15K, engagement 1.5K.",
+              "is_package": true,
+              "sort_order": 9
+            },
+            {
+              "item": "KULT Creators Festive Package",
+              "unit": "package",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 KOLs (1 macro 100k-500k, 1 mid 20k-100k, 2 micro 5k-20k, 4 nano 1k-5k), 32 contents/videos; 4-week campaign; est. audience 92K, reach 265K, engagement 5K.",
+              "is_package": true,
+              "sort_order": 10
+            }
+          ]
+        },
+        {
+          "key": "on-ground-activation",
+          "title": "On-Ground Activation",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "On-Ground Activation @ Jiwa SME 2027 — Brand Activation (1 location)",
+              "unit": "package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Tentative Jun-Nov 2027, 6 locations nationwide. Logo on backdrop/buntings, booth (size TBC), social amplification (FB/IG/TikTok/X); est. media value RM59,000; production RM5,000 extra.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "On-Ground Activation @ Jiwa SME 2027 — production",
+              "unit": "production",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Production add-on for the brand activation package.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "production",
+          "title": "Production",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "astro-group"
+          ],
+          "items": [
+            {
+              "item": "AIDVERT Production Package (top-up)",
+              "unit": "package",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Top-up only with an Astro media package. 1 x 30s AI video + 5 still visuals (carousel).",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": [
+    {
+      "key": "audio-advertising-2",
+      "title": "Audio Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-era",
+        "astro-hitz-fm",
+        "astro-my-fm"
+      ],
+      "items": [
+        {
+          "item": "Radio commercial — Nationwide (ERA, MY FM, HITZ)",
+          "unit": "package",
+          "price": null,
+          "price_incl_sst": null,
+          "price_basis": "range",
+          "confidence": "medium",
+          "notes": "Investment range RM40,000-47,500 per the Upfront27 package table; no tier or duration breakdown supplied.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-advertising-4",
+      "title": "Audio Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-era",
+        "astro-hitz-fm",
+        "astro-my-fm",
+        "astro-sinar"
+      ],
+      "items": [
+        {
+          "item": "Audio Impact 360 — ERA, MY FM, HITZ, SINAR (per brand)",
+          "unit": "package per brand",
+          "price": 20000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments in 1 focused day, 50 commercials over 5 days, 1 FB post/story + 1 IG post/story or TikTok post; 200,000 guaranteed reach. Production cost extra.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-advertising-5",
+      "title": "Audio Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-melody-fm",
+        "astro-thr-gegar"
+      ],
+      "items": [
+        {
+          "item": "Audio Impact 360 — MIX, LITE, THR GEGAR, MELODY (per brand)",
+          "unit": "package per brand",
+          "price": 15000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "medium",
+          "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra. Station list is printed with a trailing comma in the source.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-advertising-6",
+      "title": "Audio Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-goxuan",
+        "astro-raaga",
+        "astro-zayan"
+      ],
+      "items": [
+        {
+          "item": "Audio Impact 360 — RAAGA, ZAYAN, GOXUAN (per brand)",
+          "unit": "package per brand",
+          "price": 10000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-festival-packages-2",
+      "title": "Audio Festival Packages",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-goxuan",
+        "astro-melody-fm"
+      ],
+      "items": [
+        {
+          "item": "Astro Audio Goat Year CNY Festival 2027 — Booth Package, MELODY / GOXUAN / MIX / LITE (per brand)",
+          "unit": "package per brand",
+          "price": 10000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-festival-packages-3",
+      "title": "Audio Festival Packages",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-hitz-fm",
+        "astro-my-fm"
+      ],
+      "items": [
+        {
+          "item": "Astro Audio Goat Year CNY Festival 2027 — Booth Package, MY FM / HITZ (per brand)",
+          "unit": "package per brand",
+          "price": 15000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "audio-festival-packages-4",
+      "title": "Audio Festival Packages",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-era",
+        "astro-hitz-fm",
+        "astro-sinar"
+      ],
+      "items": [
+        {
+          "item": "Astro Audio Gurindam Syawal — Booth Package, ERA / SINAR / HITZ (per brand)",
+          "unit": "package per brand",
+          "price": 15000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "26-28 Feb 2027, MyTown. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "digital-advertising-2",
+      "title": "Digital Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-goxuan",
+        "astro-melody-fm",
+        "astro-raaga",
+        "astro-zayan"
+      ],
+      "items": [
+        {
+          "item": "Social 360 — Tier 2 Social Video",
+          "unit": "package",
+          "price": 13000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "Includes RM2,000 production. Branded video x1 + posts/stories; guaranteed reach 215K on Tier 2 platforms (ZAYAN, LITE, MIX, RAAGA, GOXUAN, MELODY).",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    },
+    {
+      "key": "tv-advertising-3",
+      "title": "TV Advertising",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "astro-astro-awani",
+        "astro-era"
+      ],
+      "items": [
+        {
+          "item": "Special Report Coverage @ Buletin Awani",
+          "unit": "package",
+          "price": 15000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "1-min special report (Mon-Sun 12nn/1pm/2pm/5:30pm) + digital coverage video with TikTok/YouTube posts; est. media value RM52,000. Klang Valley only.",
+          "is_package": true,
+          "sort_order": 0
+        }
+      ]
+    }
+  ]
+}

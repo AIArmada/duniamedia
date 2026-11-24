@@ -32,7 +32,7 @@
                             <article class="proposal-media-row" wire:key="proposal-media-{{ $item->id }}">
                                 <div class="proposal-media-description">
                                     <img src="{{ \App\Features\Catalog\Support\MediaImage::url($item->attributes->get('image')) }}" alt="" loading="lazy" decoding="async">
-                                    <div><strong>{{ $item->name }}</strong><span>{{ $item->attributes->get('medium') }} · {{ $item->attributes->get('location') }}</span>@unless($row['available']) <span class="proposal-error">No longer available</span> @endunless</div>
+                                    <div><strong>{{ $item->name }}</strong><span>{{ $item->attributes->get('medium') }} · {{ $item->attributes->get('location') }} @if ($item->attributes->get('unit')) · {{ $item->attributes->get('unit') }} @endif</span>@unless($row['available']) <span class="proposal-error">No longer available</span> @endunless</div>
                                 </div>
                                 <div class="proposal-quantity">
                                     <button type="button" wire:click="updateQuantity('{{ $item->id }}', {{ max(1, (int) $item->quantity - 1) }})" @disabled((int) $item->quantity <= 1) aria-label="Decrease quantity of {{ $item->name }}">−</button>
@@ -54,6 +54,7 @@
                     @if ($plan)
                         <a class="text-link" href="{{ route('plans.show', $plan->instance) }}">Manage package savings in campaign plan →</a>
                     @endif
+                    <a class="text-link" href="{{ url('/rates') }}">Explore detailed rate-card placements →</a>
 
                     <div class="proposal-service-section">
                         <h2>Optional services</h2>

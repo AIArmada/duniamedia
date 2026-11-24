@@ -1,0 +1,277 @@
+{
+  "slug": "hot-fm-zoomerz-on-ground",
+  "owner": "media-prima",
+  "title": "Hot FM Zoomerz On-Ground — Radio + Sampling Team",
+  "summary": "Zoomerz roving team RM1,900/day or RM10,500/week; on-air crosses + digital value ~RM640k/month.",
+  "description": "Hot FM Zoomerz sponsorship: daily crosses Mon–Sat 4x/day, on-air promos 28x/week, crosses 24x/week, station car branding, 960 products sampling, uniform, optional microsite/social (FB/IG RM240k each). Base from 1 Aug 2022, min 1 month continuous, mainly Klang Valley; outstation production extra.",
+  "validity": "Base Aug 2022, min 1 month",
+  "terms": null,
+  "hero": "assets/ratecards/img/hot-fm-zoomerz-on-ground.webp",
+  "medium": "Radio",
+  "source_pages": 11,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Hot FM Zoomerz sponsorship: daily crosses Mon–Sat 4x/day, on-air promos 28x/week, crosses 24x/week, station car branding, 960 products sampling, uniform, optional microsite/social (FB/IG RM240k each). Base from 1 Aug 2022, min 1 month continuous, mainly Klang Valley; outstation production extra."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM1,900/day"
+          },
+          {
+            "title": "RM10,500/week"
+          },
+          {
+            "title": "Media value ~RM640k/mo"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "On-air crosses"
+          },
+          {
+            "title": "Recorded promos"
+          },
+          {
+            "title": "Station car wrap"
+          },
+          {
+            "title": "Sampling"
+          },
+          {
+            "title": "Microsite/social add-ons"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-hot-fm",
+      "name": "Hot FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/hot-fm-zoomerz-on-ground.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "hot-fm-zoomerz-sponsorship",
+          "title": "Hot FM Zoomerz Sponsorship",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "media-prima-hot-fm"
+          ],
+          "items": [
+            {
+              "item": "Outstation cross production — one day",
+              "unit": "per day",
+              "price": 1900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Applies if outstation crosses are requested (crosses mainly in Klang Valley)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Outstation cross production — one week",
+              "unit": "per week",
+              "price": 10500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Applies if outstation crosses are requested",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "zoomerz-sponsorship-media-value",
+          "title": "Zoomerz Sponsorship — Media Value",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "media-prima-hot-fm"
+          ],
+          "items": [
+            {
+              "item": "Cross",
+              "unit": "per cross",
+              "price": 560,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "24 crosses per week x 4 weeks = 96 crosses; media value RM53,760 per month",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Digital — Main Highlights",
+              "unit": "package (optional)",
+              "price": 32000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Digital promotion, optional; media value",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Digital — Microsite",
+              "unit": "package (optional)",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Digital promotion, optional; media value",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Facebook posts — 6 posts x 4 weeks",
+              "unit": "per month (24 posts)",
+              "price": 240000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value; boosting to target audience available",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Instagram posts — 6 posts x 4 weeks",
+              "unit": "per month (24 posts)",
+              "price": 240000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Media value; boosting to target audience available",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Promo recorded pointer",
+              "unit": "per spot",
+              "price": 560,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "28 spots per week x 4 weeks = 112 spots; media value RM62,720 per month",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "zoomerz-sponsorship-production-cost",
+          "title": "Zoomerz Sponsorship — Production Cost",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "media-prima-hot-fm"
+          ],
+          "items": [
+            {
+              "item": "Car branding (2 cars)",
+              "unit": "package (2 cars)",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Client to bear cost for station car branding (sticker)",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Main highlight & microsite creative",
+              "unit": "per creative",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per creative",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Merchandise",
+              "unit": "package",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Client to provide and bear cost of products sampling including delivery",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Petrol & toll",
+              "unit": "per week",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM300 x 4 weeks = RM1,200",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Wages (2 pax per cross)",
+              "unit": "per week",
+              "price": 1248,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM1,248 x 4 weeks = RM4,992",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "zoomerz-sponsorship-media-investment",
+          "title": "Zoomerz Sponsorship — Media Investment",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "media-prima-hot-fm"
+          ],
+          "items": [
+            {
+              "item": "Zoomerz sponsorship — 1 month (4 weeks)",
+              "unit": "package",
+              "price": 100000,
+              "price_incl_sst": 108000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Total media value RM640,480; +8% SST RM8,000; total payable excluding production cost RM108,000; production cost RM20,192 quoted separately",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}
