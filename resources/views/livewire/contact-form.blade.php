@@ -170,7 +170,9 @@
         const status = security.querySelector('[data-turnstile-status]');
         const retry = security.querySelector('[data-turnstile-retry]');
         let widgetId = null;
+        let timeoutId = null;
         let loading = false;
+        let attempt = 0;
 
         const updateToken = (token) => {
             if (security.isConnected) {
@@ -178,16 +180,27 @@
             }
         };
 
-        const pending = () => {
+        const stopTimer = () => window.clearTimeout(timeoutId);
+
+        const pending = (message) => {
+            stopTimer();
             updateToken('');
-            status.textContent = 'Completing security check…';
+            status.textContent = message;
             retry.hidden = true;
         };
 
-        const failed = () => {
+        const failed = (code) => {
+            stopTimer();
+            loading = false;
             updateToken('');
-            status.textContent = 'Security check unavailable. Please retry or contact us directly.';
+            status.textContent = 'Security check unavailable (' + code + '). Please retry or contact us directly.';
             retry.hidden = false;
+            console.warn('Contact Turnstile:', code);
+        };
+
+        const watchChallenge = () => {
+            pending('Completing security check…');
+            timeoutId = window.setTimeout(() => failed('challenge-timeout'), 45000);
         };
 
         const renderWidget = () => {
@@ -197,30 +210,36 @@
                 return;
             }
 
+            watchChallenge();
+
             try {
                 widgetId = window.turnstile.render(mount, {
                     sitekey: security.dataset.sitekey,
                     action: 'contact',
                     theme: 'light',
-                    size: mount.clientWidth < 300 ? 'compact' : 'flexible',
+                    size: mount.clientWidth < 300 ? 'compact' : 'normal',
+                    appearance: 'always',
+                    execution: 'render',
                     'response-field': false,
                     'refresh-expired': 'auto',
                     retry: 'never',
                     callback: (token) => {
+                        stopTimer();
                         updateToken(token);
                         status.textContent = 'Security check complete.';
                         retry.hidden = true;
                     },
-                    'expired-callback': pending,
-                    'timeout-callback': failed,
-                    'error-callback': () => {
-                        failed();
+                    'expired-callback': watchChallenge,
+                    'timeout-callback': () => failed('interaction-timeout'),
+                    'error-callback': (code) => {
+                        failed(code || 'widget-error');
                         return true;
                     },
-                    'unsupported-callback': failed,
+                    'unsupported-callback': () => failed('unsupported-browser'),
                 });
-            } catch {
-                failed();
+            } catch (error) {
+                console.warn('Contact Turnstile render failed:', error);
+                failed('render-error');
             }
         };
 
@@ -229,31 +248,44 @@
                 return;
             }
 
-            pending();
+            pending('Loading security check…');
 
-            if (window.turnstile) {
-                window.turnstile.ready(renderWidget);
+            if (typeof window.turnstile?.render === 'function') {
+                renderWidget();
                 return;
             }
 
             loading = true;
+            const currentAttempt = ++attempt;
+            const callbackName = 'duniaContactTurnstileReady' + currentAttempt;
             const script = document.createElement('script');
-            script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
-            script.async = true;
-            script.onload = () => {
-                if (window.turnstile) {
-                    window.turnstile.ready(renderWidget);
-                } else {
-                    loading = false;
-                    script.remove();
-                    failed();
+
+            const cleanup = () => {
+                delete window[callbackName];
+                stopTimer();
+            };
+
+            window[callbackName] = () => {
+                cleanup();
+
+                if (attempt === currentAttempt) {
+                    renderWidget();
                 }
             };
-            script.onerror = () => {
-                loading = false;
+
+            const loadFailed = (code) => {
+                cleanup();
                 script.remove();
-                failed();
+
+                if (attempt === currentAttempt) {
+                    failed(code);
+                }
             };
+
+            script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=' + callbackName;
+            script.async = true;
+            script.onerror = () => loadFailed('script-load-error');
+            timeoutId = window.setTimeout(() => loadFailed('script-load-timeout'), 15000);
             document.head.append(script);
         };
 
@@ -262,10 +294,15 @@
                 return;
             }
 
-            pending();
-
             if (widgetId !== null && window.turnstile) {
-                window.turnstile.reset(widgetId);
+                watchChallenge();
+
+                try {
+                    window.turnstile.reset(widgetId);
+                } catch (error) {
+                    console.warn('Contact Turnstile reset failed:', error);
+                    failed('reset-error');
+                }
             } else {
                 initialize();
             }

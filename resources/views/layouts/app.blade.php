@@ -44,6 +44,9 @@
 <link rel="preload" as="image" media="(max-width: 760px)" href="{{ asset('assets/img/v2/hero-city-mobile-bg-640.webp') }}" imagesrcset="{{ asset('assets/img/v2/hero-city-mobile-bg-480.webp') }} 480w, {{ asset('assets/img/v2/hero-city-mobile-bg-640.webp') }} 640w, {{ asset('assets/img/v2/hero-city-mobile-bg-960.webp') }} 960w" imagesizes="100vw" fetchpriority="high">
 <link rel="preload" as="image" media="(min-width: 761px)" href="{{ asset('assets/img/v2/hero-city-960.webp') }}" imagesrcset="{{ asset('assets/img/v2/hero-city-640.webp') }} 640w, {{ asset('assets/img/v2/hero-city-960.webp') }} 960w, {{ asset('assets/img/v2/hero-city-1536.webp') }} 1536w" imagesizes="46vw" fetchpriority="high">
 @endif
+@if (request()->routeIs('contact'))
+<link rel="preconnect" href="https://challenges.cloudflare.com">
+@endif
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
 </head>
