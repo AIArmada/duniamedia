@@ -33,6 +33,33 @@ class CampaignPlansTest extends TestCase
         $this->assertSame(2, CartModel::query()->count());
     }
 
+    public function test_campaign_workspace_shows_saved_totals_and_filters_plans(): void
+    {
+        $offering = $this->createMediaOffer(['price' => 100000], [
+            'price_from' => 1000,
+            'pricing_mode' => 'fixed',
+        ]);
+        $plans = app(PlanService::class);
+        $launch = $plans->create('Product launch', ['objective' => 'Awareness']);
+        $plans->addOffering($launch, $offering);
+        $plans->applyDiscount($launch, 'Package saving', '10%');
+        $plans->create('Ramadan campaign');
+
+        Livewire::test(CampaignPlans::class)
+            ->assertSee('RM 900.00')
+            ->assertSee('RM 100.00')
+            ->set('sort', 'name')
+            ->assertSeeInOrder(['Product launch', 'Ramadan campaign'])
+            ->set('search', 'awareness')
+            ->assertSee('Product launch')
+            ->assertDontSee('Ramadan campaign')
+            ->set('search', 'no-matching-campaign')
+            ->assertSee('No plans match your search.')
+            ->assertSee('RM 900.00')
+            ->set('search', '')
+            ->assertSee('Ramadan campaign');
+    }
+
     public function test_media_offerings_and_package_discounts_update_the_plan_total(): void
     {
         $offering = $this->createMediaOffer([
