@@ -20,7 +20,7 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - You must follow all existing code conventions used in this application. When creating or editing a file, check sibling files for the correct structure, approach, and naming.
 - Use descriptive names for variables and methods. For example, `isRegisteredForDiscounts`, not `discount()`.
 - Check for existing components to reuse before writing a new one.
-- Keep public media discovery and commercial journeys inside DuniaMedia: owner, channel, presenter, programme, campaign and rate-card content must be presented on the portal rather than sending visitors to third-party sites. Use internal routes or on-page anchors for navigation and enquiries. Retain external research URLs in internal data for provenance and show non-clickable source attribution where appropriate. Do not add outbound social, broadcaster or campaign-story links to public media discovery pages.
+- Make DuniaMedia a trustworthy research and commercial platform. Present useful owner, channel, presenter, programme, campaign and rate-card information directly on the portal. Link material claims to verified primary sources, official media websites and authentic social profiles where useful for independent verification; use descriptive external-link labels and open references in a new tab with `rel="noopener noreferrer"`. Keep campaign planning, rates, proposals and enquiries on internal routes. Store authorised original imagery locally where possible, retaining source provenance; never substitute invented photographs or imply an unverified commercial relationship.
 
 ## Verification Scripts
 

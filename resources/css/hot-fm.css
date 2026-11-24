@@ -102,7 +102,11 @@
 .hotfm-audience span{font-size:.89rem;font-weight:800}
 .hotfm-audience strong{font-size:clamp(2.1rem,4vw,3.8rem);line-height:1;color:var(--hotfm-accent);font-weight:850;letter-spacing:-.04em}
 .hotfm-audience p,.hotfm-editorial-note{font-size:.76rem;color:var(--color-text-muted);line-height:1.5;margin:0}
-.hotfm-audience .hotfm-attribution{font-size:inherit;font-weight:700;color:var(--color-text-muted)}
+.hotfm-audience .hotfm-attribution{font-size:inherit;font-weight:700;color:var(--hotfm-accent)}
+.hotfm-reference{color:var(--hotfm-accent);font-size:.78rem;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.hotfm-programme__source{display:inline-flex;align-items:center;min-height:44px}
+.hotfm-digital__item:hover,.hotfm-schedule>a:hover{color:var(--hotfm-accent);text-decoration:underline}
+.hotfm-schedule>a.hotfm-schedule__source{justify-content:flex-start;color:var(--hotfm-accent);font-weight:750;text-decoration:underline;text-underline-offset:3px}
 .hotfm-discovery{display:grid;grid-template-columns:minmax(0,2.5fr) minmax(220px,1fr);align-items:start;gap:1rem;margin:0 0 1.8rem}
 .hotfm-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:.7rem;flex-wrap:wrap;margin-bottom:.9rem}
 .hotfm-section-heading h2,.hotfm-commercial-intro h2{font:400 clamp(2rem,3vw,3.1rem)/1.08 var(--font-editorial);margin:.35rem 0;color:var(--color-charcoal)}
