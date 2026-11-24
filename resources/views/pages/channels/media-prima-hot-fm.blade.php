@@ -14,6 +14,8 @@
         $ownerSlug = 'media-prima';
         $radioSiblings = collect(\App\Features\Catalog\Support\MediaDirectory::owner($ownerSlug)['channels'] ?? [])
             ->where('category', 'Radio')->where('slug', '!=', 'hot-fm')->values();
+        $profile = json_decode(file_get_contents(resource_path('data/hot-fm-profile.json')), true, flags: JSON_THROW_ON_ERROR);
+        $programmes = $profile['programmes'];
         $formats = [
             ['icon' => 'radio', 'title' => 'Radio', 'body' => 'On-air promotions and live crosses.'],
             ['icon' => 'target', 'title' => 'On-ground', 'body' => 'Roving team activations and product sampling.'],
@@ -30,39 +32,88 @@
         </nav>
 
         <header class="hotfm-hero">
-            <div class="hotfm-hero__brand">
-                <img src="{{ \App\Features\Catalog\Support\MediaImage::url($logo) }}" alt="Hot FM" width="240" height="100" fetchpriority="high">
-            </div>
             <div class="hotfm-hero__copy">
-                <span class="hotfm-eyebrow">Hot FM · Media Prima</span>
+                <div class="hotfm-hero__brand"><img src="{{ \App\Features\Catalog\Support\MediaImage::url($logo) }}" alt="Hot FM" width="240" height="100" fetchpriority="high"><span>Media Prima Audio</span></div>
                 <h1>Get heard. <em>Get closer.</em></h1>
-                <p>Connect with Malay youth audiences through radio, on-ground activations and digital engagement.</p>
+                <p>Connect your brand with Malaysia’s Malay-language radio audiences through familiar voices, entertainment and real community experiences.</p>
                 <div class="hotfm-hero__actions">
-                    <a class="hotfm-primary" href="#hotfm-rates"><x-dm-icon name="radio" :size="19"/> Explore rates <span aria-hidden="true">→</span></a>
-                    <a class="hotfm-secondary" href="{{ route('advisor') }}"><x-dm-icon name="calendar" :size="19"/> Plan a campaign</a>
+                    <a class="hotfm-primary" href="{{ route('contact') }}">Discuss your campaign <span aria-hidden="true">→</span></a>
+                    <a class="hotfm-secondary" href="#hotfm-rates">Explore rates &amp; packages</a>
                 </div>
+                <a class="hotfm-detail-link" href="https://dengar.hotfm.audio/" target="_blank" rel="noopener noreferrer"><x-dm-icon name="play" :size="18"/> Listen to Hot FM live ↗</a>
             </div>
-            <svg class="hotfm-wave" viewBox="0 0 560 260" fill="none" aria-hidden="true" focusable="false">
-                <defs>
-                    <linearGradient id="hotfm-wave-gradient" x1="0" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#fbe0e8" stop-opacity=".15"/><stop offset=".35" stop-color="#ed4b88"/><stop offset=".66" stop-color="#dc003c"/><stop offset="1" stop-color="#ffc481"/>
-                    </linearGradient>
-                </defs>
-                <g stroke="#d80042" stroke-opacity=".16" stroke-width="7" stroke-linecap="round">
-                    @foreach ([25, 40, 68, 108, 156, 90, 48, 80, 125, 170, 208, 145, 85, 55, 112, 170, 226, 185, 120, 72, 95, 135, 82] as $index => $height)
-                        <path d="M{{ 24 + $index * 23 }} {{ 130 - $height / 2 }}v{{ $height }}"/>
-                    @endforeach
-                </g>
-                <path d="M0 180C70 190 90 65 150 92S235 212 304 121 386 30 440 110 513 156 560 70V153C510 226 465 207 410 150S348 103 300 173 214 230 160 165 70 215 0 205Z" fill="url(#hotfm-wave-gradient)" opacity=".6"/>
-                <path d="M0 195C80 205 91 110 157 126S230 235 308 143 392 80 443 142 512 190 560 109" stroke="url(#hotfm-wave-gradient)" stroke-width="26" stroke-linecap="round"/>
-                <path d="M0 217C80 215 103 157 160 170S239 235 310 181 390 119 441 177 510 211 560 152" stroke="url(#hotfm-wave-gradient)" stroke-width="11" stroke-opacity=".48" stroke-linecap="round"/>
-            </svg>
+            <a class="hotfm-hero__photo" href="{{ $programmes[0]['source'] }}" target="_blank" rel="noopener noreferrer" aria-label="Official Bekpes Hot programme">
+                <img src="{{ $programmes[0]['image'] }}" alt="Official Bekpes Hot programme artwork" width="1000" height="525" fetchpriority="high" referrerpolicy="no-referrer">
+                <div class="hotfm-hero__programme"><span>Weekday breakfast · 6am–10am</span><strong>Bekpes Hot</strong><span>{{ $programmes[0]['hosts'] }}</span><small>Official programme ↗</small></div>
+            </a>
         </header>
 
-        <section class="hotfm-formats" aria-label="Advertising capabilities">
-            @foreach ($formats as $format)
-                <article><div class="hotfm-format-icon"><x-dm-icon :name="$format['icon']" :size="29"/></div><div><h2>{{ $format['title'] }}</h2><p>{{ $format['body'] }}</p></div></article>
-            @endforeach
+        <section class="hotfm-reach" aria-label="Hot FM audience and capabilities">
+            <div class="hotfm-audience">
+                <x-dm-icon name="radio" :size="42"/>
+                <div><span>Weekly radio listenership</span><strong>{{ $profile['audience']['value'] }}</strong><p>{{ $profile['audience']['method'] }} <a href="{{ $profile['audience']['source'] }}" target="_blank" rel="noopener noreferrer">Source: Media Prima Audio ↗</a></p></div>
+            </div>
+            <div class="hotfm-formats">
+                @foreach ($formats as $format)
+                    <article><div class="hotfm-format-icon"><x-dm-icon :name="$format['icon']" :size="25"/></div><div><h2>{{ $format['title'] }}</h2><p>{{ $format['body'] }}</p></div></article>
+                @endforeach
+            </div>
+        </section>
+
+        <section class="hotfm-discovery" aria-labelledby="hotfm-programmes-title">
+            <div class="hotfm-programmes">
+                <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">On air</span><h2 id="hotfm-programmes-title">Meet the voices behind Hot FM</h2><p>Explore the shows, personalities and possible brand integrations.</p></div><a class="hotfm-detail-link" href="https://www.hotfm.audio/segmen/" target="_blank" rel="noopener noreferrer">All programmes ↗</a></div>
+                <div class="hotfm-programme-grid">
+                    @foreach ($programmes as $programme)
+                        <article class="hotfm-programme">
+                            <a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer" class="hotfm-programme__image"><img src="{{ $programme['image'] }}" alt="Official {{ $programme['title'] }} artwork" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>
+                            <div class="hotfm-programme__body">
+                                <span class="hotfm-programme__time">{{ $programme['time'] }}</span>
+                                <h3><a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer">{{ $programme['title'] }} ↗</a></h3>
+                                <strong>{{ $programme['hosts'] }}</strong>
+                                <p>{{ $programme['description'] }}</p>
+                                <div class="hotfm-programme__opportunity"><span>Campaign idea</span>{{ $programme['opportunity'] }}</div>
+                            </div>
+                        </article>
+                    @endforeach
+                </div>
+                <p class="hotfm-editorial-note">Programme artwork and listings: Hot FM. Host bookings, endorsements and specific integrations require broadcaster approval and a tailored quotation. Listings reviewed {{ $profile['reviewed_on'] }}.</p>
+            </div>
+
+            <aside class="hotfm-sidebar" aria-label="Programme schedule and digital platforms">
+                <section class="hotfm-schedule">
+                    <h2><x-dm-icon name="calendar" :size="23"/> Weekday programmes</h2>
+                    <p>Monday–Friday · Malaysia time</p>
+                    @foreach ($programmes as $programme)
+                        <a href="{{ $programme['source'] }}" target="_blank" rel="noopener noreferrer"><span>{{ $programme['time'] }}</span><strong>{{ $programme['title'] }} ↗</strong></a>
+                    @endforeach
+                    <a class="hotfm-schedule__more" href="https://www.hotfm.audio/segmen/" target="_blank" rel="noopener noreferrer">See complete official schedule ↗</a>
+                </section>
+                <section class="hotfm-digital">
+                    <h2><x-dm-icon name="digital" :size="23"/> Beyond the airwaves</h2>
+                    @foreach ($profile['digital'] as $platform)
+                        <a href="{{ $platform['url'] }}" target="_blank" rel="noopener noreferrer"><strong>{{ $platform['label'] }}</strong><span>{{ $platform['handle'] }} ↗</span></a>
+                    @endforeach
+                </section>
+            </aside>
+        </section>
+
+        <section class="hotfm-campaigns" aria-labelledby="hotfm-campaigns-title">
+            <div class="hotfm-section-heading"><div><span class="hotfm-eyebrow">Real campaigns</span><h2 id="hotfm-campaigns-title">From airwaves to real life.</h2><p>Examples published by Media Prima Audio, showing how Hot FM connects brands with listeners.</p></div><a class="hotfm-detail-link" href="https://www.mediaprima.audio/news-insights/" target="_blank" rel="noopener noreferrer">More campaigns ↗</a></div>
+            <div class="hotfm-campaign-grid">
+                @foreach ($profile['campaigns'] as $campaign)
+                    <article class="hotfm-campaign">
+                        <a class="hotfm-campaign__image" href="{{ $campaign['source'] }}" target="_blank" rel="noopener noreferrer"><img src="{{ $campaign['image'] }}" alt="{{ $campaign['title'] }} — Media Prima Audio campaign photograph" width="1000" height="525" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>
+                        <div class="hotfm-campaign__body"><span>{{ $campaign['date'] }}</span><h3>{{ $campaign['title'] }}</h3><strong>{{ $campaign['metric'] }}</strong><p>{{ $campaign['description'] }}</p><a class="hotfm-detail-link" href="{{ $campaign['source'] }}" target="_blank" rel="noopener noreferrer">Official campaign story ↗</a></div>
+                    </article>
+                @endforeach
+            </div>
+            <p class="hotfm-editorial-note">Campaigns and results are attributed to Hot FM / Media Prima Audio, not represented as RA Media projects or guaranteed future outcomes.</p>
+        </section>
+
+        <section class="hotfm-commercial-intro" aria-labelledby="hotfm-commercial-title">
+            <div><span class="hotfm-eyebrow">Advertise with Hot FM</span><h2 id="hotfm-commercial-title">Turn attention into a campaign.</h2><p>Explore on-air spots, programme sponsorship, presenter-led content and on-ground activation opportunities. Ask our team to confirm current availability and rates.</p><a class="hotfm-detail-link" href="{{ route('contact') }}">Enquire about a show or personality →</a></div>
+            <div class="hotfm-commercial-intro__action"><x-dm-icon name="layers" :size="35"/><strong>Rates &amp; packages</strong><span>Review the published Zoomerz rate card and add eligible placements to a campaign plan.</span><a href="#hotfm-rates" class="hotfm-primary">View Hot FM rates ↓</a></div>
         </section>
 
         <section id="hotfm-rates" class="hotfm-opportunities" aria-label="Hot FM rates and packages">
