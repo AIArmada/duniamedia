@@ -7106,6 +7106,32 @@ body:has(.contact-page) .footer-legal {
     text-decoration: underline;
 }
 
+.contact-turnstile {
+    min-width: 0;
+    margin-block: 1.25rem;
+}
+
+.contact-turnstile [data-turnstile-status],
+.contact-turnstile noscript {
+    margin-top: 0.45rem;
+    color: var(--contact-muted);
+    font-size: 0.85rem;
+}
+
+.contact-turnstile [data-turnstile-retry] {
+    min-height: 44px;
+    color: var(--contact-accent);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.contact-turnstile__error {
+    margin-block: 0.75rem;
+    color: var(--color-danger);
+    font-size: 0.9rem;
+}
+
 .contact-page [data-flux-button].contact-submit {
     min-height: 52px;
     padding-inline: 1.65rem;

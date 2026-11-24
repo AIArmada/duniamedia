@@ -60,7 +60,23 @@
                             </flux:field>
                         </div>
 
-                        <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right" class="contact-submit">Send enquiry</flux:button>
+                        @if ($turnstileSiteKey !== null)
+                            <div class="contact-turnstile">
+                                <div wire:ignore data-contact-turnstile data-sitekey="{{ $turnstileSiteKey }}">
+                                    <div data-turnstile-widget></div>
+                                    <p data-turnstile-status role="status" aria-live="polite">Loading security check…</p>
+                                    <button type="button" data-turnstile-retry hidden>Retry security check</button>
+                                </div>
+                                @error('turnstileToken')
+                                    <p class="contact-turnstile__error" role="alert">{{ $message }}</p>
+                                @enderror
+                                <noscript><p>Enable JavaScript to complete the security check, or contact us by phone or email.</p></noscript>
+                            </div>
+                            <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right" class="contact-submit">Send enquiry</flux:button>
+                        @else
+                            <p class="contact-turnstile__error" role="status">Online enquiries are temporarily unavailable. Please contact us directly by phone or email.</p>
+                            <flux:button type="submit" variant="primary" class="contact-submit" disabled>Send enquiry</flux:button>
+                        @endif
                     </form>
                 @endif
             </div>
@@ -144,3 +160,120 @@
         </div>
     </section>
 </div>
+
+@script
+<script>
+    const security = $wire.$el.querySelector('[data-contact-turnstile]');
+
+    if (security) {
+        const mount = security.querySelector('[data-turnstile-widget]');
+        const status = security.querySelector('[data-turnstile-status]');
+        const retry = security.querySelector('[data-turnstile-retry]');
+        let widgetId = null;
+        let loading = false;
+
+        const updateToken = (token) => {
+            if (security.isConnected) {
+                $wire.$set('turnstileToken', token, false);
+            }
+        };
+
+        const pending = () => {
+            updateToken('');
+            status.textContent = 'Completing security check…';
+            retry.hidden = true;
+        };
+
+        const failed = () => {
+            updateToken('');
+            status.textContent = 'Security check unavailable. Please retry or contact us directly.';
+            retry.hidden = false;
+        };
+
+        const renderWidget = () => {
+            loading = false;
+
+            if (!security.isConnected || widgetId !== null) {
+                return;
+            }
+
+            try {
+                widgetId = window.turnstile.render(mount, {
+                    sitekey: security.dataset.sitekey,
+                    action: 'contact',
+                    theme: 'light',
+                    size: mount.clientWidth < 300 ? 'compact' : 'flexible',
+                    'response-field': false,
+                    'refresh-expired': 'auto',
+                    retry: 'never',
+                    callback: (token) => {
+                        updateToken(token);
+                        status.textContent = 'Security check complete.';
+                        retry.hidden = true;
+                    },
+                    'expired-callback': pending,
+                    'timeout-callback': failed,
+                    'error-callback': () => {
+                        failed();
+                        return true;
+                    },
+                    'unsupported-callback': failed,
+                });
+            } catch {
+                failed();
+            }
+        };
+
+        const initialize = () => {
+            if (loading || !security.isConnected) {
+                return;
+            }
+
+            pending();
+
+            if (window.turnstile) {
+                window.turnstile.ready(renderWidget);
+                return;
+            }
+
+            loading = true;
+            const script = document.createElement('script');
+            script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+            script.async = true;
+            script.onload = () => {
+                if (window.turnstile) {
+                    window.turnstile.ready(renderWidget);
+                } else {
+                    loading = false;
+                    script.remove();
+                    failed();
+                }
+            };
+            script.onerror = () => {
+                loading = false;
+                script.remove();
+                failed();
+            };
+            document.head.append(script);
+        };
+
+        const resetWidget = () => {
+            if (!security.isConnected) {
+                return;
+            }
+
+            pending();
+
+            if (widgetId !== null && window.turnstile) {
+                window.turnstile.reset(widgetId);
+            } else {
+                initialize();
+            }
+        };
+
+        retry.addEventListener('click', resetWidget);
+        $wire.$el.addEventListener('contact-turnstile-reset', resetWidget);
+        initialize();
+    }
+</script>
+@endscript

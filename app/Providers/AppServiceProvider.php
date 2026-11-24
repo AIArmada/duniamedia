@@ -6,8 +6,10 @@ namespace App\Providers;
 
 use App\Host\Ai\LaravelAiMediaStrategist;
 use App\Host\Filesystem\WorkMediaStore;
+use App\Host\Security\CloudflareTurnstile;
 use App\Shared\Contracts\AdvisesMediaStrategy;
 use App\Shared\Contracts\StoresWorkMedia;
+use App\Shared\Contracts\VerifiesTurnstile;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -16,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(StoresWorkMedia::class, WorkMediaStore::class);
         $this->app->bind(AdvisesMediaStrategy::class, LaravelAiMediaStrategist::class);
+        $this->app->bind(VerifiesTurnstile::class, CloudflareTurnstile::class);
     }
 
     public function boot(): void

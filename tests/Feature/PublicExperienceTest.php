@@ -11,7 +11,10 @@ use App\Features\Sales\EntryPoints\Livewire\AssetOwnerForm;
 use App\Features\Sales\EntryPoints\Livewire\ContactForm;
 use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\Client\Request;
+use Illuminate\Support\Facades\Http;
 use Livewire\Livewire;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\Concerns\CreatesMediaOffers;
 use Tests\TestCase;
 
@@ -224,16 +227,140 @@ class PublicExperienceTest extends TestCase
 
     public function test_contact_form_saves_a_consented_enquiry(): void
     {
+        $this->configureContactTurnstile();
+        Http::preventStrayRequests();
+        Http::fake([
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::response([
+                'success' => true,
+                'action' => 'contact',
+                'hostname' => 'duniamedia.test',
+            ]),
+        ]);
+
         Livewire::test(ContactForm::class)
             ->set('name', 'Test Contact')
             ->set('email', 'contact@example.com')
             ->set('message', 'We would like to discuss a campaign for a new product launch.')
             ->set('consent', true)
+            ->set('turnstileToken', 'verified-contact-token')
             ->call('submit')
             ->assertHasNoErrors()
-            ->assertSet('submitted', true);
+            ->assertSet('submitted', true)
+            ->assertSet('turnstileToken', '');
 
+        Http::assertSent(fn (Request $request): bool => $request->url() === 'https://challenges.cloudflare.com/turnstile/v0/siteverify'
+            && $request['secret'] === 'test-secret'
+            && $request['response'] === 'verified-contact-token');
         $this->assertDatabaseHas('enquiries', ['source' => 'contact']);
+    }
+
+    public function test_contact_form_rejects_a_missing_turnstile_token(): void
+    {
+        $this->configureContactTurnstile();
+        Http::preventStrayRequests();
+        Http::fake(['https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::response()]);
+
+        Livewire::test(ContactForm::class)
+            ->set('name', 'Test Contact')
+            ->set('email', 'contact@example.com')
+            ->set('message', 'We would like to discuss a campaign.')
+            ->set('consent', true)
+            ->call('submit')
+            ->assertHasErrors(['turnstileToken' => 'required'])
+            ->assertSet('submitted', false);
+
+        Http::assertNothingSent();
+        $this->assertDatabaseCount('enquiries', 0);
+        $this->assertDatabaseMissing('parties', ['display_name' => 'Test Contact']);
+    }
+
+    #[DataProvider('rejectedTurnstileResponses')]
+    public function test_contact_form_rejects_unsuccessful_turnstile_verification(array $payload, int $status): void
+    {
+        $this->configureContactTurnstile();
+        Http::preventStrayRequests();
+        Http::fake([
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::response($payload, $status),
+        ]);
+
+        Livewire::test(ContactForm::class)
+            ->set('name', 'Test Contact')
+            ->set('email', 'contact@example.com')
+            ->set('message', 'We would like to discuss a campaign.')
+            ->set('consent', true)
+            ->set('turnstileToken', 'unverified-token')
+            ->call('submit')
+            ->assertHasErrors(['turnstileToken'])
+            ->assertDispatched('contact-turnstile-reset')
+            ->assertSet('submitted', false)
+            ->assertSet('turnstileToken', '');
+
+        Http::assertSentCount(1);
+        $this->assertDatabaseCount('enquiries', 0);
+        $this->assertDatabaseMissing('parties', ['display_name' => 'Test Contact']);
+    }
+
+    public static function rejectedTurnstileResponses(): array
+    {
+        return [
+            'invalid token' => [['success' => false, 'error-codes' => ['invalid-input-response']], 200],
+            'expired or replayed token' => [['success' => false, 'error-codes' => ['timeout-or-duplicate']], 200],
+            'wrong action' => [['success' => true, 'action' => 'other', 'hostname' => 'duniamedia.test'], 200],
+            'wrong hostname' => [['success' => true, 'action' => 'contact', 'hostname' => 'other.test'], 200],
+            'upstream outage' => [[], 503],
+        ];
+    }
+
+    public function test_contact_form_fails_closed_without_turnstile_credentials(): void
+    {
+        config(['turnstile.site_key' => null, 'turnstile.secret_key' => null]);
+        Http::preventStrayRequests();
+        Http::fake(['https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::response()]);
+
+        Livewire::test(ContactForm::class)
+            ->set('name', 'Test Contact')
+            ->set('email', 'contact@example.com')
+            ->set('message', 'We would like to discuss a campaign.')
+            ->set('consent', true)
+            ->set('turnstileToken', 'forged-token')
+            ->call('submit')
+            ->assertHasErrors(['turnstileToken'])
+            ->assertSet('submitted', false);
+
+        Http::assertNothingSent();
+        $this->assertDatabaseCount('enquiries', 0);
+    }
+
+    public function test_contact_form_fails_closed_when_turnstile_cannot_be_reached(): void
+    {
+        $this->configureContactTurnstile();
+        Http::preventStrayRequests();
+        Http::fake([
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify' => Http::failedConnection(),
+        ]);
+
+        Livewire::test(ContactForm::class)
+            ->set('name', 'Test Contact')
+            ->set('email', 'contact@example.com')
+            ->set('message', 'We would like to discuss a campaign.')
+            ->set('consent', true)
+            ->set('turnstileToken', 'unverified-token')
+            ->call('submit')
+            ->assertHasErrors(['turnstileToken'])
+            ->assertDispatched('contact-turnstile-reset')
+            ->assertSet('submitted', false);
+
+        $this->assertDatabaseCount('enquiries', 0);
+        $this->assertDatabaseMissing('parties', ['display_name' => 'Test Contact']);
+    }
+
+    private function configureContactTurnstile(): void
+    {
+        config([
+            'turnstile.site_key' => 'test-site-key',
+            'turnstile.secret_key' => 'test-secret',
+            'turnstile.hostname' => 'duniamedia.test',
+        ]);
     }
 
     public function test_creator_application_creates_a_pending_creator_profile(): void
