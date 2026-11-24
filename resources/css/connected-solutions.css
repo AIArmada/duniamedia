@@ -1,0 +1,503 @@
+.connected-solutions {
+    background: var(--color-cream);
+    color: var(--color-charcoal);
+}
+
+.connected-hero {
+    overflow: hidden;
+}
+
+.connected-hero__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: center;
+    min-height: 390px;
+    isolation: isolate;
+}
+
+.connected-hero__copy {
+    position: relative;
+    z-index: 1;
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.connected-hero h1 {
+    margin: .65rem 0 1rem;
+    color: var(--color-charcoal);
+    font: 400 clamp(3.2rem, 5.4vw, 5.9rem)/.98 var(--font-editorial);
+    letter-spacing: -.025em;
+}
+
+.connected-hero h1 em {
+    display: block;
+    color: var(--color-plum-800);
+}
+
+.connected-hero__copy p {
+    max-width: 30rem;
+    margin: 0 0 1.3rem;
+    color: var(--color-charcoal);
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    line-height: 1.55;
+}
+
+.connected-hero__image {
+    position: absolute;
+    inset: 0 calc(-1 * var(--page-gutter)) 0 39%;
+    z-index: -1;
+}
+
+.connected-hero__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.connected-hero__image::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--color-cream), rgba(251, 247, 242, .94) 12%, rgba(251, 247, 242, .38) 35%, transparent 60%);
+    content: '';
+}
+
+.connected-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    align-items: center;
+}
+
+.connected-actions .button,
+.connected-final .button {
+    min-height: 44px;
+    justify-content: center;
+    text-align: center;
+}
+
+.connected-section {
+    padding-top: clamp(1.9rem, 4vw, 3.25rem);
+    scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.connected-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: .75rem 2rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.connected-heading h2 {
+    margin: 0;
+    color: var(--color-charcoal);
+    font: 400 clamp(2.1rem, 3.65vw, 3.5rem)/1.05 var(--font-editorial);
+}
+
+.connected-heading h2::after {
+    display: block;
+    width: 44px;
+    height: 4px;
+    margin-top: .65rem;
+    border-radius: 4px;
+    background: var(--color-magenta-600);
+    content: '';
+}
+
+.connected-heading p {
+    max-width: 36rem;
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: .97rem;
+    line-height: 1.6;
+}
+
+.connected-objectives {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .85rem;
+}
+
+.connected-objective {
+    display: flex;
+    align-items: flex-start;
+    gap: .9rem;
+    padding: clamp(1rem, 2vw, 1.4rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-paper);
+    box-shadow: var(--shadow-card);
+}
+
+.connected-objective > svg {
+    flex: none;
+    color: var(--color-plum-800);
+}
+
+.connected-objective h3,
+.connected-example h3 {
+    margin: 0 0 .35rem;
+    color: var(--color-charcoal);
+    font: 400 clamp(1.4rem, 2vw, 1.8rem)/1.08 var(--font-editorial);
+}
+
+.connected-objective p,
+.connected-example p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: .88rem;
+    line-height: 1.5;
+}
+
+.connected-capabilities,
+.connected-examples {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--grid-gap);
+}
+
+.connected-capability {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 220px;
+    aspect-ratio: 16 / 10;
+    align-items: flex-end;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: var(--radius-md);
+    background: var(--color-plum-950);
+    color: #fff;
+    text-decoration: none;
+}
+
+.connected-capability > img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur-normal) var(--ease-standard);
+}
+
+.connected-capability::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, transparent 12%, rgba(25, 15, 20, .55) 48%, rgba(25, 15, 20, .96) 100%);
+    content: '';
+}
+
+.connected-capability__copy {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: .6rem;
+    padding: 1.2rem;
+}
+
+.connected-capability__copy > div {
+    min-width: 0;
+}
+
+.connected-capability h3 {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin: 0 0 .35rem;
+    color: #fff;
+    font: 400 clamp(1.8rem, 2.6vw, 2.3rem)/1.05 var(--font-editorial);
+}
+
+.connected-capability h3 svg {
+    flex: none;
+}
+
+.connected-capability p {
+    margin: 0;
+    color: #fff8f7;
+    font-size: .92rem;
+    line-height: 1.5;
+}
+
+.connected-capability__arrow {
+    display: grid;
+    flex: none;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--color-plum-900);
+    font-size: 1.25rem;
+}
+
+.connected-capability:hover > img {
+    transform: scale(1.035);
+}
+
+.connected-stages {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1.25rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.connected-stage {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: .45rem;
+    padding: 1rem .75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: #f8eee9;
+    text-align: center;
+}
+
+.connected-stage svg {
+    flex: none;
+    color: var(--color-plum-800);
+}
+
+.connected-stage h3 {
+    margin: 0;
+    color: var(--color-charcoal);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.connected-stage p {
+    margin: 0;
+    color: var(--color-charcoal);
+    font-size: .82rem;
+    line-height: 1.45;
+}
+
+.connected-stage:not(:last-child)::after {
+    position: absolute;
+    top: 50%;
+    right: -.65rem;
+    z-index: 1;
+    transform: translate(50%, -50%);
+    color: var(--color-plum-800);
+    font-weight: 800;
+    content: '→';
+}
+
+.connected-example {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-paper);
+}
+
+.connected-example img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.connected-example > div {
+    padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.connected-final {
+    padding-bottom: clamp(2.5rem, 5vw, 5rem);
+}
+
+.connected-final__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1.25rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border-radius: var(--radius-md);
+    background: var(--gradient-editorial);
+    color: #fff8f7;
+}
+
+.connected-final__panel h2 {
+    margin: 0;
+    color: #fff8f7;
+    font: 400 clamp(2rem, 3.4vw, 3rem)/1.08 var(--font-editorial);
+}
+
+.connected-final__panel p {
+    margin: 0;
+    color: #fff8f7;
+    line-height: 1.55;
+}
+
+.connected-solutions :is(a, button):focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .connected-capability > img {
+        transition: none;
+    }
+    .connected-capability:hover > img {
+        transform: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .connected-objectives,
+    .connected-capabilities {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .connected-stages {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .connected-stage:nth-child(3)::after {
+        content: none;
+    }
+
+    .connected-final__panel {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .connected-final__panel .button {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 760px) {
+    .connected-hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 0;
+    }
+
+    .connected-hero__copy {
+        padding-block: 2rem 1.1rem;
+    }
+
+    .connected-hero h1 {
+        font-size: clamp(2.55rem, 9.5vw, 4rem);
+        line-height: 1.03;
+    }
+
+    .connected-hero__image {
+        position: relative;
+        inset: auto;
+        z-index: 0;
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        border-radius: var(--radius-md);
+    }
+
+    .connected-hero__image::after {
+        background: none;
+    }
+
+    .connected-actions .button,
+    .connected-final .button {
+        width: 100%;
+    }
+
+    .connected-heading {
+        grid-template-columns: minmax(0, 1fr);
+        gap: .65rem;
+    }
+
+    .connected-objectives {
+        gap: .65rem;
+    }
+
+    .connected-objective {
+        flex-direction: column;
+        gap: .6rem;
+        padding: .9rem;
+    }
+
+    .connected-objective > svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .connected-objective h3 {
+        font-size: 1.45rem;
+    }
+
+    .connected-objective p {
+        font-size: .88rem;
+        overflow-wrap: anywhere;
+    }
+
+    .connected-capabilities,
+    .connected-examples {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .connected-capability {
+        min-height: 210px;
+        aspect-ratio: 16 / 10;
+    }
+
+    .connected-capability__copy {
+        padding: 1rem;
+    }
+
+    .connected-stages {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.1rem;
+    }
+
+    .connected-stage {
+        display: grid;
+        grid-template-columns: 36px minmax(0, 1fr);
+        align-items: center;
+        gap: .25rem .75rem;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .connected-stage svg {
+        grid-row: span 2;
+    }
+
+    .connected-stage p {
+        grid-column: 2;
+        font-size: .9rem;
+    }
+
+    .connected-stage:not(:last-child)::after,
+    .connected-stage:nth-child(3)::after {
+        top: auto;
+        right: 50%;
+        bottom: -.55rem;
+        transform: translate(50%, 50%);
+        content: '↓';
+    }
+
+    .connected-final__panel {
+        grid-template-columns: minmax(0, 1fr);
+        gap: .85rem;
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .connected-objectives {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .connected-objective {
+        flex-direction: row;
+    }
+}
