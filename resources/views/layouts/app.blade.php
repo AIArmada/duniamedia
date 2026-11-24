@@ -248,7 +248,7 @@
 
         <div class="footer-legal">
             <p>© {{ date('Y') }} Dunia Media · RA Media Relations Sdn Bhd (948761-W). All rights reserved.</p>
-            <p>Inventory, rates, client relationships and availability shown on this platform are subject to verification with media owners and partners. Editorial imagery is illustrative; campaign footage and client marks are drawn from the RA Media archive where shown.</p>
+            <p>Inventory, rates, client relationships and availability shown on this platform are subject to verification with media owners and partners. Campaign footage and client marks are drawn from the RA Media archive where shown.</p>
         </div>
     </div>
 </footer>

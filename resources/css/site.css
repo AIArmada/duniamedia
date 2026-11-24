@@ -5870,17 +5870,6 @@ body:has(.about-page) .footer-legal {
     color: var(--about-night);
 }
 
-.about-hero__caption,
-.about-future__caption {
-    position: absolute;
-    right: 0;
-    bottom: 0.85rem;
-    font-size: 0.67rem;
-    padding: 0.25rem 0.5rem;
-    background: rgba(20, 20, 20, 0.7);
-    color: #fffaf3;
-}
-
 .about-story {
     display: grid;
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.08fr) minmax(0, 0.52fr);
@@ -5896,7 +5885,7 @@ body:has(.about-page) .footer-legal {
 
 .about-album__print {
     position: relative;
-    padding: 0.65rem 0.65rem 0.4rem;
+    padding: 0.65rem;
     background: #fffdf7;
     box-shadow: 0 12px 28px rgba(50, 36, 23, 0.19);
 }
@@ -5906,16 +5895,6 @@ body:has(.about-page) .footer-legal {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-}
-
-.about-album__print span {
-    display: block;
-    margin-top: 0.45rem;
-    font-family: var(--font-editorial);
-    font-size: 0.95rem;
-    font-style: italic;
-    line-height: 1.1;
-    text-align: center;
 }
 
 .about-album__print--early {
@@ -5949,14 +5928,6 @@ body:has(.about-page) .footer-legal {
 .about-album__print--today img {
     aspect-ratio: 5 / 4;
     filter: saturate(0.78);
-}
-
-.about-album figcaption {
-    margin-top: 1.45rem;
-    color: var(--about-muted);
-    font-size: 0.68rem;
-    line-height: 1.4;
-    text-align: center;
 }
 
 .about-story__intro h2 {
@@ -6354,12 +6325,6 @@ body:has(.about-page) .footer-legal {
     overflow-wrap: anywhere;
 }
 
-.about-client-source {
-    margin-top: 0.8rem;
-    color: var(--about-muted);
-    font-size: 0.76rem;
-}
-
 .about-future__media img {
     object-position: center 45%;
     filter: saturate(0.48) sepia(0.13);
@@ -6558,16 +6523,6 @@ body:has(.about-page) .footer-legal {
     .about-page .about-hero h1 {
         font-size: clamp(2.8rem, 8vw, 4.9rem);
         line-height: 1.04;
-    }
-
-    .about-hero__caption,
-    .about-future__caption {
-        position: static;
-        justify-self: start;
-        margin-top: 1rem;
-        padding: 0;
-        background: transparent;
-        color: #d9d2c9;
     }
 
     .about-experience__header {
@@ -7010,16 +6965,6 @@ body:has(.contact-page) .footer-legal {
     color: var(--contact-night);
 }
 
-.contact-image-caption {
-    position: absolute;
-    right: 0;
-    bottom: 0.8rem;
-    padding: 0.2rem 0.5rem;
-    background: rgba(20, 19, 18, 0.75);
-    color: #fffaf3;
-    font-size: 0.7rem;
-}
-
 .contact-section {
     padding-block: clamp(3rem, 5.5vw, 5rem);
     scroll-margin-top: calc(var(--header-height) + 1rem);
@@ -7227,12 +7172,6 @@ body:has(.contact-page) .footer-legal {
     object-fit: cover;
 }
 
-.contact-direct__photo figcaption {
-    margin-top: 0.5rem;
-    color: var(--contact-muted);
-    font-size: 0.73rem;
-}
-
 .contact-pathways {
     padding-top: 0;
 }
@@ -7348,17 +7287,6 @@ body:has(.contact-page) .footer-legal {
     object-position: 65% center;
 }
 
-.contact-office__photo figcaption {
-    position: absolute;
-    bottom: 0.75rem;
-    left: 0.75rem;
-    max-width: calc(100% - 1.5rem);
-    padding: 0.35rem 0.6rem;
-    background: rgba(24, 23, 22, 0.8);
-    color: #fffaf3;
-    font-size: 0.72rem;
-}
-
 .contact-office__copy {
     max-width: 690px;
     min-width: 0;
@@ -7452,15 +7380,6 @@ body:has(.contact-page) .footer-legal {
     .contact-page .contact-hero h1 {
         font-size: clamp(2.8rem, 8vw, 4.7rem);
         line-height: 1.05;
-    }
-
-    .contact-image-caption {
-        position: static;
-        justify-self: start;
-        padding: 0;
-        margin-top: 1rem;
-        background: transparent;
-        color: #d9d2c9;
     }
 
     .contact-conversation,
