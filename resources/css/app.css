@@ -6,6 +6,7 @@
 @import './creator-network.css';
 @import './connected-solutions.css';
 @import './plans-workspace.css';
+@import './media-strategy-studio.css';
 @import './ratecard.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
