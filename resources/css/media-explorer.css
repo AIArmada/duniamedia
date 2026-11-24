@@ -409,6 +409,10 @@
         display: none;
     }
 
+    .explorer-hero__copy h1 em {
+        display: block;
+    }
+
     .explorer-hero__copy p {
         font-size: 1rem;
         margin-bottom: .4rem;
@@ -448,6 +452,10 @@
         min-height: 90px;
         font-size: .73rem;
         padding-inline: .2rem;
+    }
+
+    .explorer-category span {
+        overflow-wrap: anywhere;
     }
 
     .explorer-category svg {
