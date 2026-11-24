@@ -3,174 +3,152 @@
 @section('content')
     @php($aboutClientGroups = require resource_path('data/about-clients.php'))
 
-    <section class="about-hero">
+    <section class="about-hero" aria-labelledby="about-title">
         <div class="container about-hero__grid">
-            <div>
-                <span class="eyebrow">RA Media Relations · Kuala Lumpur</span>
-                <h1>From Rumah Acara<br>to a <span class="editorial">media house.</span></h1>
-                <p class="about-hero__lede">What began as a creative idea in 2008 grew into a media house bringing advertising, media planning and content production together — so good stories can find the right people, wherever they are.</p>
-                <div class="home-hero__actions" style="margin-top:1.5rem">
-                    <a href="#capabilities" class="button button--primary">Explore what we do <span aria-hidden="true">↓</span></a>
-                    <a href="{{ route('contact') }}" class="button button--secondary">Talk to our team</a>
-                </div>
-                <div class="about-hero__milestones">
-                    <div class="milestone">
-                        <span>The idea</span>
-                        <strong>2008</strong>
-                        <p>Creative work inspired by “Rumah Acara” — a house for events and stories.</p>
-                    </div>
-                    <div class="milestone">
-                        <span>Officially incorporated</span>
-                        <strong>15 June 2011</strong>
-                        <p>RA Media Relations Sdn Bhd, Taman Tun Dr Ismail.</p>
-                    </div>
+            <div class="about-hero__copy">
+                <span class="eyebrow">Our story · Made in Malaysia</span>
+                <h1 id="about-title">Every great story deserves to <em class="editorial">be heard.</em></h1>
+                <p class="about-hero__lede">Behind every business is someone who believed in an idea. Behind every campaign is something worth saying. We exist to help those stories reach the people who need to hear them.</p>
+                <p class="about-hero__identity">Dunia Media is a digital initiative by RA Media Relations — a Malaysian media and creative company with roots in 2008.</p>
+                <div class="home-hero__actions about-actions">
+                    <a href="#our-story" class="button button--primary">Discover our story <span aria-hidden="true">↓</span></a>
+                    <a href="{{ route('contact') }}" class="button button--secondary">Meet your media partner <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
             <figure class="about-hero__media">
                 <picture>
                     <source media="(max-width: 760px)" srcset="{{ asset('assets/img/ra-about-hero-mobile.webp') }}">
-                    <img src="{{ asset('assets/img/ra-about-hero.webp') }}" alt="RA Media production team at work" width="1672" height="941" fetchpriority="high" decoding="async">
+                    <img src="{{ asset('assets/img/ra-about-hero.webp') }}" alt="A film production crew working behind the camera" width="1672" height="941" fetchpriority="high" decoding="async">
                 </picture>
+                <figcaption><span>Behind the scenes</span><small>Illustrative production scene</small></figcaption>
             </figure>
         </div>
+        <div class="container about-proof" aria-label="Our heritage and experience">
+            <div><strong>2008</strong><span>Where our story began</span></div>
+            <div><strong>2011</strong><span>RA Media officially incorporated</span></div>
+            <div><strong>45</strong><span>Organisations in our company profile</span></div>
+            <a class="text-link" href="#experience">Discover our experience <span aria-hidden="true">↘</span></a>
+        </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="our-story" aria-labelledby="story-title">
         <div class="container about-story">
             <div class="about-story__intro">
-                <span class="eyebrow">Our story</span>
-                <h2 class="section-title">A creative beginning. A wider media world.</h2>
-                <p>RA began with video production, then stepped into advertising. Media planning, campaign advice and creative content followed — connecting strategy and making, rather than treating them as separate jobs.</p>
-                <p>Today, the company works with SMEs, corporate teams and government agencies, helping shape marketing and branding activity for local and international audiences.</p>
-                <p>The Dunia Media platform is the front-facing expression of that work: a clearer way to discover media, understand the options and start a proper conversation.</p>
+                <span class="eyebrow">How it all began</span>
+                <h2 class="section-title" id="story-title">Before there was Dunia Media, there was <em class="editorial">Rumah Acara.</em></h2>
+                <p class="about-story__opening">A simple idea in 2008: a home for creativity, events and stories.</p>
+                <p>We began with video production. Working behind the camera taught us something that still guides us today: a story is only as powerful as its ability to reach someone.</p>
+                <p>That idea led us beyond production into advertising, media planning and campaign consultancy. On 15 June 2011, RA Media Relations Sdn Bhd was incorporated in Taman Tun Dr Ismail, Kuala Lumpur.</p>
+                <p>Today, our work spans businesses, public institutions and corporate teams. The ambition remains the same: to help people communicate something that matters.</p>
             </div>
-            <div class="timeline" data-timeline aria-label="How the company grew">
-                <span class="timeline__line" data-timeline-line aria-hidden="true"></span>
-                <article>
-                    <time datetime="2008">2008</time>
-                    <h3>Make the story</h3>
-                    <p>The idea took shape as a creative agency focused on video production, with a name inspired by “Rumah Acara”.</p>
-                </article>
-                <article>
-                    <time datetime="2011-06-15">15 June 2011</time>
-                    <h3>Build the company</h3>
-                    <p>RA Media Relations was registered as a private limited company in Taman Tun Dr Ismail, Kuala Lumpur.</p>
-                </article>
-                <article>
-                    <time>Today</time>
-                    <h3>Connect the work</h3>
-                    <p>Planning, advertising and content now move across television, radio, print, outdoor, cinema and digital media.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="mission-strip">
-        <div class="container mission-strip__grid">
-            <div>
-                <span class="eyebrow eyebrow--pale">Our mission</span>
-                <h2>Make every opportunity a chance to do <em class="editorial">excellent work.</em></h2>
-            </div>
-            <div>
-                <span class="eyebrow eyebrow--pale">Our vision</span>
-                <p>Keep improving, serve clients better and grow together — as a true partner invested in the result, not just a creative resource for a single brief.</p>
+            <div class="about-story__journey">
+                <figure class="about-story__photo">
+                    <img src="{{ asset('assets/img/ra-about-event.webp') }}" alt="A camera crew capturing a live event" loading="lazy" decoding="async">
+                    <figcaption>Illustrative event production scene</figcaption>
+                </figure>
+                <div class="timeline" data-timeline aria-label="Our journey">
+                    <span class="timeline__line" data-timeline-line aria-hidden="true"></span>
+                    <article>
+                        <time datetime="2008">2008</time>
+                        <h3>It started with a story.</h3>
+                        <p>A creative agency with roots in video production and an idea inspired by Rumah Acara.</p>
+                    </article>
+                    <article>
+                        <time datetime="2011-06-15">15 June 2011</time>
+                        <h3>We built a home for bigger ideas.</h3>
+                        <p>RA Media Relations became an incorporated company in Kuala Lumpur.</p>
+                    </article>
+                    <article>
+                        <span class="timeline__present">Today</span>
+                        <h3>A whole world of media opens up.</h3>
+                        <p>Dunia Media brings discovery, planning, creative services and new opportunities together.</p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="capabilities">
+    <section class="about-belief" aria-labelledby="belief-title">
+        <div class="container about-belief__inner">
+            <span class="eyebrow eyebrow--pale">What we believe</span>
+            <h2 id="belief-title">Being seen is one thing.<br>Being <em class="editorial">remembered</em> is another.</h2>
+            <p>Attention is valuable, but it is what happens next that matters. A business discovered. A public message understood. A community inspired. We believe good media should make a difference beyond the moment it appears. Our commitment is to keep improving, do excellent work and grow alongside the people who trust us with their stories.</p>
+        </div>
+    </section>
+
+    <section class="section section--cream" id="capabilities" aria-labelledby="capabilities-title">
         <div class="container">
             <div class="section-heading">
                 <div>
-                    <span class="eyebrow">What we do</span>
-                    <h2 class="section-title">Plan well. Make it memorable.</h2>
-                    <p>RA Media Relations is an advertising media planner and creative content provider. The team can help at the planning table, behind the camera, in the edit, or wherever a campaign needs to meet its audience.</p>
+                    <span class="eyebrow">From idea to impact</span>
+                    <h2 class="section-title" id="capabilities-title">The right story.<br>The right place. <em class="editorial">The right people.</em></h2>
+                    <p>We bring media planning, creative production and technology together so you can spend less time working out where to start, and more time making your message count.</p>
                 </div>
             </div>
             <div class="capability-grid">
                 <article class="capability-card">
-                    <span class="capability-card__label">Strategy &amp; placement</span>
-                    <h3>Plan &amp; advise</h3>
-                    <p>Media planning and advertising consultancy for SMEs, corporate clients and government agencies — with support for local and international marketing and branding activity.</p>
-                    <ul>
-                        <li>Television, radio and digital</li>
-                        <li>Outdoor, indoor, cinema and press</li>
-                        <li>In-flight magazines and media planning</li>
-                    </ul>
+                    <img src="{{ asset('assets/img/v2/service-planning.webp') }}" alt="" loading="lazy" decoding="async">
+                    <div class="capability-card__body">
+                        <span class="capability-card__label">Find your audience</span>
+                        <h3>Make your message impossible to miss.</h3>
+                        <p>Discover the right mix of television, radio, outdoor, indoor, cinema, press, in-flight and digital media for your campaign — guided by your goals and audience.</p>
+                        <a class="text-link" href="{{ route('media.index') }}">Explore media <span aria-hidden="true">↗</span></a>
+                    </div>
                 </article>
                 <article class="capability-card">
-                    <span class="capability-card__label">Production &amp; content</span>
-                    <h3>Make the story</h3>
-                    <p>Build stories for the screen, the page and digital platforms — from the first idea through to the finished piece.</p>
-                    <ul>
-                        <li>TV commercials, corporate films and documentaries</li>
-                        <li>Animation, copywriting and design</li>
-                        <li>Underwater videography and photography</li>
-                    </ul>
+                    <img src="{{ asset('assets/img/v2/service-creative.webp') }}" alt="" loading="lazy" decoding="async">
+                    <div class="capability-card__body">
+                        <span class="capability-card__label">Give your idea a voice</span>
+                        <h3>Make something people will remember.</h3>
+                        <p>From commercials, corporate films and documentaries to photography (even underwater), animation, design, copywriting, voice-over and translation in Jawi, Arabic, English and Mandarin.</p>
+                        <a class="text-link" href="{{ route('work.index') }}">See our work <span aria-hidden="true">↗</span></a>
+                    </div>
                 </article>
                 <article class="capability-card">
-                    <span class="capability-card__label">Events &amp; technology</span>
-                    <h3>Bring it to life</h3>
-                    <p>Connect people and platforms with the practical support a campaign or event needs.</p>
-                    <ul>
-                        <li>Event organisation and video conferences</li>
-                        <li>Hosts, voice-over and translation in Jawi, Arabic, English and Mandarin</li>
-                        <li>System development and multimedia technology</li>
-                    </ul>
+                    <img src="{{ asset('assets/img/v2/service-ai.webp') }}" alt="" loading="lazy" decoding="async">
+                    <div class="capability-card__body">
+                        <span class="capability-card__label">Open new possibilities</span>
+                        <h3>Make tomorrow work for you today.</h3>
+                        <p>Connect events, hosts, video conferencing, creators, multimedia and software with emerging AI capabilities and training — putting technology to work for people and businesses.</p>
+                        <a class="text-link" href="{{ route('academy') }}">Explore training <span aria-hidden="true">↗</span></a>
+                    </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="fieldwork">
-        <div class="container">
-            <div class="fieldwork__grid">
-                <div class="fieldwork__media">
-                    <figure><img src="{{ asset('assets/img/ra-about-underwater.webp') }}" alt="Illustrative underwater videographer filming a tropical reef" loading="lazy" decoding="async"></figure>
-                    <figure><img src="{{ asset('assets/img/ra-about-event.webp') }}" alt="Illustrative event being filmed by a production crew" loading="lazy" decoding="async"></figure>
-                </div>
-                <div class="fieldwork__copy">
-                    <span class="eyebrow eyebrow--pale">Storytelling in every medium</span>
-                    <h2 class="section-title">Some stories happen on a stage. Others <em class="editorial">beneath the surface.</em></h2>
-                    <p>For RA Media, video and photography are ways to bring stories closer. A campaign may call for a documentary, animation, corporate film or TV commercial. Another may need event coverage, a host, voice-over, or a camera that can work underwater.</p>
-                    <p>The medium changes. The care behind the story stays the same.</p>
-                    <a href="{{ route('contact') }}" class="text-link">Tell us what you have in mind <span aria-hidden="true">↗</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--cream" id="experience">
+    <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="container">
             <div class="section-heading">
                 <div>
-                    <span class="eyebrow">Experience &amp; work</span>
-                    <h2 class="section-title">Trusted across different worlds.</h2>
-                    <p>From public institutions and national agencies to growing consumer brands, these are the organisations named in RA Media's company profile.</p>
+                    <span class="eyebrow">Experience that speaks for itself</span>
+                    <h2 class="section-title" id="experience-title">Different ambitions.<br>One shared <em class="editorial">trust.</em></h2>
+                    <p>From national institutions to ambitious Malaysian businesses, every organisation represents a different audience, challenge and story. These are the clients named in RA Media's company profile.</p>
                 </div>
                 <div class="section-heading__aside page-hero__stats">
                     <div class="page-hero__stat"><strong>20</strong><span>video production</span></div>
                     <div class="page-hero__stat"><strong>28</strong><span>advertising</span></div>
-                    <div class="page-hero__stat"><strong>45</strong><span>distinct names</span></div>
+                    <div class="page-hero__stat"><strong>45</strong><span>distinct organisations</span></div>
                 </div>
             </div>
-
             <div class="client-wall">
                 @foreach ($aboutClientGroups as $group)
                     <section class="client-group" aria-label="{{ $group['eyebrow'] }} clients">
                         <header class="client-group__head">
-                            <h3>{{ $group['title'] }}</h3>
-                            <p>{{ $group['intro'] }}</p>
-                            <span class="tag">{{ str_pad($group['count'], 2, '0', STR_PAD_LEFT) }} listed</span>
+                            <div>
+                                <span class="eyebrow">{{ $group['eyebrow'] }}</span>
+                                <h3>{{ $group['title'] }}</h3>
+                            </div>
+                            <span class="muted small">{{ $group['count'] }} organisations</span>
                         </header>
                         <div class="client-grid">
                             @foreach ($group['clients'] as $client)
                                 <article class="client-tile">
-                                    <div class="client-tile__mark">
+                                    <div @class(['client-tile__mark', $client['mark_style'] ?? ''])>
                                         @if (! empty($client['logo']))
-                                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy">
+                                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy" decoding="async">
                                         @else
-                                            <span>{{ $client['mark'] ?? $client['name'] }}</span>
+                                            <span>{{ str_replace('\\n', "\n", $client['mark'] ?? $client['name']) }}</span>
                                         @endif
                                     </div>
                                     <h4>{{ $client['name'] }}</h4>
@@ -180,24 +158,50 @@
                     </section>
                 @endforeach
             </div>
-
-            <div class="rule"></div>
-            <div class="work-note__inner" style="border:0;padding:0;background:none">
-                <p class="muted small">Campaign records, dates and platforms are drawn from RA Media's client archive. Contact details are withheld.</p>
-                <a class="text-link" href="{{ route('work.index') }}">Explore the campaign archive <span aria-hidden="true">→</span></a>
+            <div class="about-archive">
+                <p class="muted small">Client names are drawn from RA Media's company profile. Campaign records, dates and platforms can be explored in our work archive; client contact details are withheld.</p>
+                <a class="button button--secondary" href="{{ route('work.index') }}">Explore the campaign archive <span aria-hidden="true">↗</span></a>
             </div>
         </div>
     </section>
 
-    <section class="section" id="company-information">
+    <section class="section section--cream" aria-labelledby="future-title">
+        <div class="container about-future">
+            <figure class="about-future__media">
+                <img src="{{ asset('assets/img/v2/hero-city.webp') }}" alt="An urban street with pedestrians and large outdoor advertising screens" width="1536" height="1024" loading="lazy" decoding="async">
+                <figcaption>Illustrative view of the connected media landscape</figcaption>
+            </figure>
+            <div class="about-future__copy">
+                <span class="eyebrow">The next chapter · Dunia Media</span>
+                <h2 class="section-title" id="future-title">A world of media should be open to <em class="editorial">everyone.</em></h2>
+                <p>Media can be difficult to navigate. Too many options. Too much jargon. Too little clarity about where your money should go.</p>
+                <p>We built Dunia Media to make that world easier to explore. A place for brands to discover opportunities, for media owners to connect with advertisers, for creators to find collaborations, and for businesses to learn what technology can do for them.</p>
+                <p>Whether you're launching your first business or planning your next national campaign, your story deserves a place in the world.</p>
+                <a class="text-link" href="{{ route('advisor') }}">Find the right starting point <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-invitation" aria-labelledby="invitation-title">
+        <div class="container about-invitation__inner">
+            <span class="eyebrow eyebrow--pale">Your story starts here</span>
+            <h2 id="invitation-title">You've got something worth sharing.<br><em class="editorial">Let's get it out into the world.</em></h2>
+            <p>Bring us your ambition, your challenge, or just an idea. You don't need to have everything figured out before we talk.</p>
+            <div class="about-actions">
+                <a href="{{ route('contact') }}" class="button button--primary">Start a conversation <span aria-hidden="true">↗</span></a>
+                <a href="{{ route('work.index') }}" class="about-invitation__link">Get inspired by our work <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" id="company-information" aria-labelledby="company-title">
         <div class="container">
-            <div class="section-heading">
+            <div class="about-company-heading">
+                <img src="{{ asset('assets/img/ra-media-relations-official.png') }}" alt="RA Media Relations" loading="lazy" decoding="async">
                 <div>
-                    <span class="eyebrow">Company information</span>
-                    <h2 class="section-title">Let's make the next story matter.</h2>
-                </div>
-                <div class="section-heading__aside">
-                    <a href="{{ route('contact') }}" class="button button--primary">Start a conversation <span aria-hidden="true">↗</span></a>
+                    <span class="eyebrow">The company behind Dunia Media</span>
+                    <h2 class="section-title" id="company-title">Real people. A real company.</h2>
+                    <p class="muted">Based in Kuala Lumpur, Malaysia.</p>
                 </div>
             </div>
             <div class="contact-facts">
