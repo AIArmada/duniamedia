@@ -10,6 +10,7 @@
 @import './proposal-studio.css';
 @import './ratecard.css';
 @import './media-rate-exchange.css';
+@import './media-owners.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
