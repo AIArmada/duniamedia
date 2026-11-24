@@ -1,0 +1,437 @@
+{
+  "slug": "bfm-2026-business-radio",
+  "owner": "specialist-media",
+  "title": "BFM 89.9 2026 — Business Radio + Digital",
+  "summary": "Morning Run RM1,000/spot, Enterprise RM600, live reads RM1,300–RM3,000, ROS packs, Marketplace and events.",
+  "description": "BFM Rate Card 2026 (28 pages). Belts: Morning Run 6–10am RM1,000 spot / RM3,000 live read; Enterprise 10am–2pm RM600/2,000; Bigger Picture 2–5pm RM520/1,600; Evening Edition 5–9pm RM770/2,300; Night Shift RM400/1,300; Bila Larut Malam RM120. Spot loading, ROS 123 and 24/7 packs (e.g. ROS 1 weekdays 30 spots RM19,740 value), Marketplace, digital, video/editorial and events.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/bfm-2026-business-radio.webp",
+  "medium": "Radio",
+  "source_pages": 28,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "BFM Rate Card 2026 (28 pages). Belts: Morning Run 6–10am RM1,000 spot / RM3,000 live read; Enterprise 10am–2pm RM600/2,000; Bigger Picture 2–5pm RM520/1,600; Evening Edition 5–9pm RM770/2,300; Night Shift RM400/1,300; Bila Larut Malam RM120. Spot loading, ROS 123 and 24/7 packs (e.g. ROS 1 weekdays 30 spots RM19,740 value), Marketplace, digital, video/editorial and events."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Spot RM120–1000"
+          },
+          {
+            "title": "Live read RM1300–3000"
+          },
+          {
+            "title": "ROS packs from ~RM19k value"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "30s spot"
+          },
+          {
+            "title": "Live read"
+          },
+          {
+            "title": "ROS packs"
+          },
+          {
+            "title": "Marketplace"
+          },
+          {
+            "title": "Digital"
+          },
+          {
+            "title": "Events"
+          },
+          {
+            "title": "Podcast/streaming"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-bfm",
+      "name": "BFM",
+      "owner": "specialist-media",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/bfm-2026-business-radio.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "commercial-rate-per-30s-rotational-spot",
+          "title": "Commercial Rate (per 30s rotational spot)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "10.00am-2.00pm live read",
+              "unit": "live read",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "10.00am-2.00pm spot",
+              "unit": "30s spot",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per 30s rotational spot; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "12.00am-6.00am spot",
+              "unit": "30s spot",
+              "price": 120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Price appears as a stray 'RM 120' line above the spot row; daypart inferred; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "2.00pm-5.00pm live read",
+              "unit": "live read",
+              "price": 1600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "2.00pm-5.00pm spot",
+              "unit": "30s spot",
+              "price": 520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per 30s rotational spot; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "5.00pm-9.00pm live read",
+              "unit": "live read",
+              "price": 2300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "5.00pm-9.00pm spot",
+              "unit": "30s spot",
+              "price": 770,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per 30s rotational spot; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "6.00am-10.00am live read",
+              "unit": "live read",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "6.00am-10.00am spot",
+              "unit": "30s spot",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per 30s rotational spot; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "9.00pm-12.00am live read",
+              "unit": "live read",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "9.00pm-12.00am spot",
+              "unit": "30s spot",
+              "price": 400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Per 30s rotational spot; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 10
+            }
+          ]
+        },
+        {
+          "key": "ros-123-spot-packages",
+          "title": "ROS 123 Spot Packages",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "ROS 1 - Weekdays",
+              "unit": "package",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "30 spots over 5 consecutive days across all time belts; media value RM19,740; per week; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 2 - Full Week",
+              "unit": "package",
+              "price": 14350,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "35 spots over 7 consecutive days across all time belts; media value RM23,030; per week; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 3 - Weekend",
+              "unit": "package",
+              "price": 6400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "20 spots per week over 4 consecutive days across all time belts; media value RM13,160; per week; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "ros-24-7-spot-packages",
+          "title": "ROS 24/7 Spot Packages",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "ROS 24/7 - 1 Week",
+              "unit": "package",
+              "price": 19000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "60 spots (6 weekday + 4 weekend per time belt); media value RM34,100; savings 44%; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS 24/7 - 4 Weeks",
+              "unit": "package",
+              "price": 57000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "240 spots; media value RM136,400; savings 58%; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS 24/7 - 7 Weeks",
+              "unit": "package",
+              "price": 95000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "420 spots; media value RM238,700; savings 60%; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "the-marketplace-package",
+          "title": "The Marketplace Package",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "The Marketplace Package",
+              "unit": "package",
+              "price": 45950,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2-minute edumercial: 1 min 40 sec interview + 20 sec opening/closing; 70 x 30s spots over 14 days; 7 web & app banners for 2 weeks; includes one-time recording, 1 script, 1 VO talent, podcast write-up and image design; total media value RM90,960; savings 50%; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "web-packages",
+          "title": "Web Packages",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "BFM Website Gold Package",
+              "unit": "package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "7 placements; per 2 weeks; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "BFM Website Takeover Package",
+              "unit": "week",
+              "price": 38800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "17 placements; per week; 8% service tax additional",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "caijin-2026-special-package",
+          "title": "Caijin 2026 Special Package",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "Brand Spotlight (pre-roll commercial by Caijin hosts)",
+              "unit": "package",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "30s pre-roll mention; price shown on page 24; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Edumercial",
+              "unit": "package",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1-3 mins branded content in Q&A manner, repostable on client channels; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Open for Business+",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 mins founder and business stories dedicated to the client; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Studio Interview",
+              "unit": "package",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "30 mins high-impact exposure and corporate profiling; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "prestige-event-interview-package",
+          "title": "Prestige Event & Interview Package",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "specialist-media-bfm"
+          ],
+          "items": [
+            {
+              "item": "Prestige Event & Interview Package",
+              "unit": "package",
+              "price": 180000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Title sponsor: 5 Caijin episodes (in-studio/voxpop/custom), exclusive on-ground event shoutout, commercial airtime on BFM Radio, podcast uploads and 1-2 reels per episode; 8% service tax additional",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

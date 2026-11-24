@@ -1,0 +1,49 @@
+{
+  "slug": "putera-pre-post-2024-reference",
+  "owner": "specialist-media",
+  "title": "PuTERA Pre & Post Campaign Quote 2024 — Reference (TERAJU/Remedy)",
+  "summary": "Example 6-month quotation (TERAJU2404, 27 Jun 2024): news portals + social sets, not a live rate.",
+  "description": "Remedy Resources quotation QUOTE 3 for TERAJU PENERAJU BUMIPUTERA: Provision of pre/post marketing for Pelan Tindakan Ekonomi Bumiputera 2024, 6 months. Details: digital spotlight/social sets (FB/Twitter/IG/TikTok/websites/newsletters), Utusan social set RM6,000 etc. Kept as commercial reference; do not treat as current rate card.",
+  "validity": "27 Jun 2024 (TERAJU2404)",
+  "terms": null,
+  "hero": "assets/ratecards/img/putera-pre-post-2024-reference.webp",
+  "medium": "Digital",
+  "source_pages": 0,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Remedy Resources quotation QUOTE 3 for TERAJU PENERAJU BUMIPUTERA: Provision of pre/post marketing for Pelan Tindakan Ekonomi Bumiputera 2024, 6 months. Details: digital spotlight/social sets (FB/Twitter/IG/TikTok/websites/newsletters), Utusan social set RM6,000 etc. Kept as commercial reference; do not treat as current rate card."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Reference quotation"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-remedy-resources",
+      "name": "Remedy Resources",
+      "owner": "specialist-media",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/putera-pre-post-2024-reference.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    }
+  ],
+  "shared_sections": []
+}

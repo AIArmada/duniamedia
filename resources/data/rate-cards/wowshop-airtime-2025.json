@@ -1,0 +1,601 @@
+{
+  "slug": "wowshop-airtime-2025",
+  "owner": "wowshop",
+  "title": "Wowshop TV Home Shopping — Airtime + Commerce",
+  "summary": "7.2M TV households, 250k orders/day; sales-driven 23/48-min formats, airtime packs from ~RM10k.",
+  "description": "Airtime proposal deck (29 pages). 7.2M households 2024, 1.5B sales since 2016, 3.6M customers. Formats: awareness+sales reach, 3–4 min call-to-action blocks, studio/demo/full CG, packages RM10k–80k (e.g. RM48k, RM42k, RM16k, RM15k). Nielsen SCV viewership, geo 22% Selangor, 16% Johor etc.",
+  "validity": "2025 deck",
+  "terms": null,
+  "hero": "assets/ratecards/img/wowshop-airtime-2025.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 29,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Airtime proposal deck (29 pages). 7.2M households 2024, 1.5B sales since 2016, 3.6M customers. Formats: awareness+sales reach, 3–4 min call-to-action blocks, studio/demo/full CG, packages RM10k–80k (e.g. RM48k, RM42k, RM16k, RM15k). Nielsen SCV viewership, geo 22% Selangor, 16% Johor etc."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "From ~RM10k"
+          },
+          {
+            "title": "Packs RM15k–80k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "TV home shopping"
+          },
+          {
+            "title": "Studio demo"
+          },
+          {
+            "title": "Full CG"
+          },
+          {
+            "title": "Call-to-action blocks"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-wowshop",
+      "name": "WowShop",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/wowshop-airtime-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "package-structure-charges",
+          "title": "Package structure — charges",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "Courier charge, first 5kg",
+              "unit": "per delivery",
+              "price": 6.1,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Charged by weight and dimension, including exchange and return.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "combo-packages",
+          "title": "Combo packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "Platinum Malay package",
+              "unit": "package",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weekday long-duration slots (1 live + 1 rerun: 1:00 PM live RM48,000, 9:00 AM rerun RM42,000), 2 weekday 11:30 AM reruns (RM15,000 each), 4 weekend/weekday short-duration pre-record slots (RM16,000), website banner + microsite (RM10,000) and 1 SNS post (RM2,500). Excludes 12% operation fee and courier.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold Malay package",
+              "unit": "package",
+              "price": 55000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 weekday long-duration pre-record slot at 9:00 AM (RM42,000), 2 weekday 11:30 AM reruns (RM15,000 each), 2 weekend/weekday short-duration pre-record slots (RM6,000), website banner + microsite (RM10,000) and 1 SNS post (RM2,500). Excludes 12% operation fee and courier.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "TV9 Malay package",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weekday long-duration slots (1 live + 1 rerun: 9:30 AM live RM15,000, 1:00 PM RM15,000), 2 weekend/weekday short-duration pre-record slots (RM6,000) and 1 SNS post (RM2,500). Excludes 12% operation fee and courier.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Platinum Chinese package",
+              "unit": "package",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weekend long-duration slots (1 live + 1 rerun: 1:00 PM live RM44,000, 10:30 AM RM20,000), 1 weekday 3:00 PM rerun re-edited to 23 mins (RM15,000), 2 weekend/weekday short-duration pre-record slots (RM6,000), website banner + microsite (RM10,000) and 1 SNS post (RM2,500). Excludes 12% operation fee and courier.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Gold Chinese package",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weekday long-duration slots (1 live + 1 rerun: 11:30 AM live RM20,000, 10:30 AM RM20,000), 2 weekend/weekday short-duration pre-record slots (RM6,000), website banner + microsite (RM10,000) and 1 SNS post (RM2,500). Excludes 12% operation fee and courier.",
+              "is_package": true,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "platinum-malay-package-slot-rates",
+          "title": "Platinum Malay package — slot rates",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "SNS post (1 post)",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Website banner + microsite (1 each)",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 11:30 AM long-duration rerun (2 slots at this rate)",
+              "unit": "per slot",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed twice (two 23-minute reruns) at RM15,000 each.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekday 1:00 PM long-duration live slot",
+              "unit": "per slot",
+              "price": 48000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "One of 2 weekday slots (1 live + 1 rerun); exclusive 8% SST.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekday 9:00 AM long-duration rerun slot",
+              "unit": "per slot",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rerun paired with the 1:00 PM live slot.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Weekend/weekday short-duration pre-record block, 4 slots",
+              "unit": "per 4-slot block",
+              "price": 16000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Added-value slots.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "gold-malay-package-slot-rates",
+          "title": "Gold Malay package — slot rates",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "SNS post (1 post)",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Website banner + microsite (1 each)",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 11:30 AM long-duration rerun (2 slots at this rate)",
+              "unit": "per slot",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Listed twice at RM15,000 each.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekday 9:00 AM long-duration pre-record slot",
+              "unit": "per slot",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Pre-record; exclusive 8% SST.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekend/weekday short-duration pre-record block, 2 slots",
+              "unit": "per 2-slot block",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Added-value slots.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "tv9-malay-package-slot-rates",
+          "title": "TV9 Malay package — slot rates",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "SNS post (1 post)",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Weekday 1:00 PM long-duration slot",
+              "unit": "per slot",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 9:30 AM long-duration live slot",
+              "unit": "per slot",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekend/weekday short-duration pre-record block, 2 slots",
+              "unit": "per 2-slot block",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Added-value slots.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "platinum-chinese-package-slot-rates",
+          "title": "Platinum Chinese package — slot rates",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "SNS post (1 post)",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Website banner + microsite (1 each)",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 3:00 PM long-duration rerun, re-edited to 23 mins",
+              "unit": "per slot",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekend 10:30 AM long-duration slot",
+              "unit": "per slot",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekend 1:00 PM long-duration live slot",
+              "unit": "per slot",
+              "price": 44000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Weekend/weekday short-duration pre-record block, 2 slots",
+              "unit": "per 2-slot block",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Added-value slots.",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "gold-chinese-package-slot-rates",
+          "title": "Gold Chinese package — slot rates",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "SNS post (1 post)",
+              "unit": "per post",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Website banner + microsite (1 each)",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Added-value digital asset.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 10:30 AM long-duration slot",
+              "unit": "per slot",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekday 11:30 AM long-duration live slot",
+              "unit": "per slot",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekend/weekday short-duration pre-record block, 2 slots",
+              "unit": "per 2-slot block",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Added-value slots.",
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "investment-entitlement-package-inclusion-values",
+          "title": "Investment entitlement — package inclusion values",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-wowshop"
+          ],
+          "items": [
+            {
+              "item": "Design (CG)",
+              "unit": "per package",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "EDM blast x 1",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Set & basic props",
+              "unit": "per package",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Show host x 2",
+              "unit": "per package",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Social media post",
+              "unit": "per package",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Studio",
+              "unit": "per package",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Video insertion",
+              "unit": "per package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Website banner x 1",
+              "unit": "per package",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media value included in the package.",
+              "is_package": true,
+              "sort_order": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

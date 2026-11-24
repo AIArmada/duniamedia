@@ -1,0 +1,101 @@
+{
+  "slug": "astro-video360-digital-2026",
+  "owner": "astro",
+  "title": "Astro Video360+ & Digital Solutions 2026",
+  "summary": "One audience across CTV/live/VOD/YouTube, paid on completed views (CPCV RM0.05–0.08 vs YouTube ~RM0.10).",
+  "description": "The New Astro deck (21 pages). Video360+: plan one audience across live channels, FAST, VOD, in-stream web and YouTube, 30 personas (pick 3), 30s video, CPCV RM0.05–0.08, Kantar cross-screen + brand lift, plus KULT influence community products. Beta measured via Google Ad Manager.",
+  "validity": "2026 beta",
+  "terms": null,
+  "hero": "assets/ratecards/img/astro-video360-digital-2026.webp",
+  "medium": "Digital",
+  "source_pages": 21,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "The New Astro deck (21 pages). Video360+: plan one audience across live channels, FAST, VOD, in-stream web and YouTube, 30 personas (pick 3), 30s video, CPCV RM0.05–0.08, Kantar cross-screen + brand lift, plus KULT influence community products. Beta measured via Google Ad Manager."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "CPCV RM0.05–0.08"
+          },
+          {
+            "title": "YouTube ref ~RM0.10"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "CTV"
+          },
+          {
+            "title": "Live channels"
+          },
+          {
+            "title": "VOD"
+          },
+          {
+            "title": "In-stream"
+          },
+          {
+            "title": "YouTube"
+          },
+          {
+            "title": "KULT influence"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "astro-astro-video360",
+      "name": "Astro Video360",
+      "owner": "astro",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/astro-video360-digital-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "astro-video360",
+          "title": "Astro Video360+",
+          "intro": null,
+          "medium": "Digital",
+          "channels": [
+            "astro-astro-video360"
+          ],
+          "items": [
+            {
+              "item": "Astro Video360+ — cost per completed view (CPCV)",
+              "unit": "per completed view",
+              "price": 0.05,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "30 curated personas, select up to 3 per campaign, 30-second video; YouTube CPCV benchmark RM0.08; ~RM0.10 reference point per completed view depending on total budget",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

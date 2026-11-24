@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             CatalogueInfrastructureSeeder::class,
             CreatorSeeder::class,
             MediaCatalogueSeeder::class,
+            RateCardEntrySeeder::class,
+            RateCardContentSeeder::class,
             CapacityPoolSeeder::class,
             ContentSeeder::class,
             ClientWorkSeeder::class,

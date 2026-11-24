@@ -1,0 +1,348 @@
+{
+  "slug": "tvalhijrah-bincang-niaga-2024",
+  "owner": "al-hijrah",
+  "title": "TV AlHijrah Bincang Niaga 2024 — Islamic Business TV",
+  "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck; package rates extracted).",
+  "description": "TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, image-only deck; package tables extracted). An-Nisa: 1 slot RM9,680 to 52 slots RM377,520. Berita AlHijrah: RM8,000 for 1 slot to RM72,000 for 13. BA Niaga: RM5,000 for 1 slot to RM45,000 for 13. TVC and Syaaban/Ramadan packages RM25k–50k. Islamic business talk environment.",
+  "validity": "2024",
+  "terms": null,
+  "hero": "assets/ratecards/img/tvalhijrah-bincang-niaga-2024.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 5,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, image-only deck; package tables extracted). An-Nisa: 1 slot RM9,680 to 52 slots RM377,520. Berita AlHijrah: RM8,000 for 1 slot to RM72,000 for 13. BA Niaga: RM5,000 for 1 slot to RM45,000 for 13. TVC and Syaaban/Ramadan packages RM25k–50k. Islamic business talk environment."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "An-Nisa 52 slots RM377,520"
+          },
+          {
+            "title": "Berita 13 slots RM72,000"
+          },
+          {
+            "title": "BA Niaga 13 slots RM45,000"
+          },
+          {
+            "title": "TVC/Ramadan packages RM25k–50k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "TV talkshow sponsorship"
+          },
+          {
+            "title": "Promo packages"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "al-hijrah-tv-alhijrah",
+      "name": "TV AlHijrah",
+      "owner": "al-hijrah",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/tvalhijrah-bincang-niaga-2024.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "assalamualaikum-an-nisa-package",
+          "title": "Assalamualaikum An-Nisa package",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-alhijrah"
+          ],
+          "items": [
+            {
+              "item": "1 slot(s) - package cost",
+              "unit": "package",
+              "price": 9680,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM9,680; discount none; savings RM0; package cost RM9,680. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "4 slot(s) - package cost",
+              "unit": "package",
+              "price": 27588,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM29,040; discount 5%; savings RM1,452; package cost RM27,588. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "6 slot(s) - package cost",
+              "unit": "package",
+              "price": 52272,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM58,080; discount 10%; savings RM5,808; package cost RM52,272. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "12 slot(s) - package cost",
+              "unit": "package",
+              "price": 98736,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM116,160; discount 15%; savings RM17,424; package cost RM98,736. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "26 slot(s) - package cost",
+              "unit": "package",
+              "price": 201344,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM251,680; discount 20%; savings RM50,336; package cost RM201,344. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "52 slot(s) - package cost",
+              "unit": "package",
+              "price": 377520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM503,360; discount 25%; savings RM125,840; package cost RM377,520. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "berita-alhijrah-package",
+          "title": "Berita AlHijrah package",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-alhijrah"
+          ],
+          "items": [
+            {
+              "item": "1 slot(s) - package cost",
+              "unit": "package",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM8,000; discount none; savings RM0; package cost RM8,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "3 slot(s) - package cost",
+              "unit": "package",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM24,000; discount 10%; savings RM2,400; package cost RM21,600. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "6 slot(s) - package cost",
+              "unit": "package",
+              "price": 40800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM48,000; discount 15%; savings RM7,200; package cost RM40,800. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "9 slot(s) - package cost",
+              "unit": "package",
+              "price": 57600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM72,000; discount 20%; savings RM14,400; package cost RM57,600. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "13 slot(s) - package cost",
+              "unit": "package",
+              "price": 72000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM96,000; discount 25%; savings RM24,000; package cost RM72,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "ba-niaga-package",
+          "title": "BA Niaga package",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-alhijrah"
+          ],
+          "items": [
+            {
+              "item": "1 slot(s) - package cost",
+              "unit": "package",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM5,000; discount none; savings RM0; package cost RM5,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "3 slot(s) - package cost",
+              "unit": "package",
+              "price": 13500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM15,000; discount 10%; savings RM1,500; package cost RM13,500. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "6 slot(s) - package cost",
+              "unit": "package",
+              "price": 25500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM30,000; discount 15%; savings RM4,500; package cost RM25,500. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "9 slot(s) - package cost",
+              "unit": "package",
+              "price": 36000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM45,000; discount 20%; savings RM9,000; package cost RM36,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "13 slot(s) - package cost",
+              "unit": "package",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate card RM60,000; discount 25%; savings RM15,000; package cost RM45,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "spotbuy-tvc-packages-2024",
+          "title": "Spotbuy/TVC packages 2024",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-alhijrah"
+          ],
+          "items": [
+            {
+              "item": "Package 25K - TVC (ROS) 60 x 30 sec",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "60 slots x 30 sec TVC (ROS); 2023 rate card RM4,000; ROI RM240,000; effective RM9.60; total investment RM25,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Package 50K - TVC (ROS) 180 x 30 sec",
+              "unit": "package",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "180 slots x 30 sec TVC (ROS); 2023 rate card RM4,000; ROI RM720,000; effective RM14.40; total investment RM50,000. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "syaaban-ramadan-packages-2024",
+          "title": "Syaaban/Ramadan packages 2024",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-alhijrah"
+          ],
+          "items": [
+            {
+              "item": "Syaaban/Ramadan package 25K - TVC (ROS) 50 x 30 sec",
+              "unit": "package",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "50 slots x 30 sec TVC (ROS); 2023 rate card RM4,500; ROI RM225,000; effective RM9.00; total investment RM25,000. Syaaban-Ramadan 10 Feb-8 Apr 2024; max 2 packages per client. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Syaaban/Ramadan package 50K - TVC (ROS) 150 x 30 sec",
+              "unit": "package",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "150 slots x 30 sec TVC (ROS); 2023 rate card RM4,500; ROI RM675,000; effective RM13.50; total investment RM50,000. Syaaban-Ramadan 10 Feb-8 Apr 2024; max 2 packages per client. Page prints 'Not include 6% SST'.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

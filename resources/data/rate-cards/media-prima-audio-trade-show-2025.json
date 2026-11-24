@@ -1,0 +1,491 @@
+{
+  "slug": "media-prima-audio-trade-show-2025",
+  "owner": "media-prima",
+  "title": "Media Prima Audio Trade Show 2025 — Radio Packages",
+  "summary": "30-second radio packages from 1 to 26 weeks: Hot FM RM27k–RM468k, Fly/eight FM RM14k–RM182k, Molek RM6.5k–RM91k, Kool 101 RM9k–RM104k; Sabah/Sarawak RM11.5k–RM195k.",
+  "description": "Media Prima Audio trade-show 2025 booking form covering Hot FM, Kool 101, Molek FM, Fly FM, eight FM and Kool 101 Sabah/Sarawak. All packages use 30-second commercials with 70/280/910/1,820 spots over 1/4/13/26 weeks. Hot FM RM27,000–468,000; Kool 101 RM9,000–104,000; Molek FM RM6,500–91,000; Fly FM and eight FM RM14,000–182,000; Kool 101 Sabah RM12,500–195,000; Kool 101 Sarawak RM11,500–176,800. Four-week packages include commercial production and VO talent; 13- and 26-week packages add social videos, video production and AI jingle production (Sabah/Sarawak exclude AI jingle). Bookings valid until 31 Dec 2025 with utilisation by 30 Jun 2026. Production buyout RM1,550; jingle buyout RM10,000 per version. Malay-station blackout 16 Feb–29 Mar 2026; Sabah/Sarawak blackout 1 May–30 Jun 2026. Rates exclude 8% SST.",
+  "validity": "Book by 31 Dec 2025; utilise by 30 Jun 2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+  "medium": "Radio",
+  "source_pages": 1,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Media Prima Audio trade-show 2025 booking form covering Hot FM, Kool 101, Molek FM, Fly FM, eight FM and Kool 101 Sabah/Sarawak. All packages use 30-second commercials with 70/280/910/1,820 spots over 1/4/13/26 weeks. Hot FM RM27,000–468,000; Kool 101 RM9,000–104,000; Molek FM RM6,500–91,000; Fly FM and eight FM RM14,000–182,000; Kool 101 Sabah RM12,500–195,000; Kool 101 Sarawak RM11,500–176,800. Four-week packages include commercial production and VO talent; 13- and 26-week packages add social videos, video production and AI jingle production (Sabah/Sarawak exclude AI jingle). Bookings valid until 31 Dec 2025 with utilisation by 30 Jun 2026. Production buyout RM1,550; jingle buyout RM10,000 per version. Malay-station blackout 16 Feb–29 Mar 2026; Sabah/Sarawak blackout 1 May–30 Jun 2026. Rates exclude 8% SST."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Molek 1-week RM6,500"
+          },
+          {
+            "title": "Kool 101 1-week RM9,000"
+          },
+          {
+            "title": "Fly/eight FM 1-week RM14,000"
+          },
+          {
+            "title": "Hot FM 1-week RM27,000"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "30s radio commercial packages"
+          },
+          {
+            "title": "Commercial production"
+          },
+          {
+            "title": "VO talent"
+          },
+          {
+            "title": "Social video"
+          },
+          {
+            "title": "Video production"
+          },
+          {
+            "title": "AI jingle"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-hot-fm",
+      "name": "Hot FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-kool-fm",
+      "name": "Kool FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-molek-fm",
+      "name": "Molek FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-fly-fm",
+      "name": "Fly FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-eight-fm",
+      "name": "Eight FM",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-audio-group",
+      "name": "Media Prima Audio Group",
+      "owner": "media-prima",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "trade-show-2025-booking-form",
+          "title": "Trade Show 2025 Booking Form",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "media-prima-audio-group"
+          ],
+          "items": [
+            {
+              "item": "Commercial buyout fee",
+              "unit": "per commercial",
+              "price": 1550,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Studio rental, mixing & editing RM1,250 + scripting RM300; 8% SST additional",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Jingle buyout fee",
+              "unit": "per version",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per jingle version; 8% SST additional",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Sabah package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 12500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sabah; 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Sabah package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 117000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sabah; 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Sabah package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 195000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sabah; 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Sabah package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 44000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sabah; 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Sarawak package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 11500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sarawak; 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Sarawak package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 97500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sarawak; 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "Sarawak package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 176800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sarawak; 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 8
+            },
+            {
+              "item": "Sarawak package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 38000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Station: Sarawak; 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 9
+            },
+            {
+              "item": "Station not named in text (block 1) package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 27000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 1); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 10
+            },
+            {
+              "item": "Station not named in text (block 1) package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 260000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 1); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 11
+            },
+            {
+              "item": "Station not named in text (block 1) package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 468000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 1); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 12
+            },
+            {
+              "item": "Station not named in text (block 1) package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 1); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 13
+            },
+            {
+              "item": "Station not named in text (block 2) package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 2); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 14
+            },
+            {
+              "item": "Station not named in text (block 2) package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 2); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 15
+            },
+            {
+              "item": "Station not named in text (block 2) package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 104000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 2); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 16
+            },
+            {
+              "item": "Station not named in text (block 2) package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 28000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 2); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 17
+            },
+            {
+              "item": "Station not named in text (block 3) package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 6500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 3); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 18
+            },
+            {
+              "item": "Station not named in text (block 3) package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 58500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 3); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 19
+            },
+            {
+              "item": "Station not named in text (block 3) package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 91000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 3); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 20
+            },
+            {
+              "item": "Station not named in text (block 3) package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 24000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 3); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 21
+            },
+            {
+              "item": "Station not named in text (block 4) package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 4); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 22
+            },
+            {
+              "item": "Station not named in text (block 4) package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 104000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 4); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 23
+            },
+            {
+              "item": "Station not named in text (block 4) package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 182000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 4); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 24
+            },
+            {
+              "item": "Station not named in text (block 4) package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 4); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 25
+            },
+            {
+              "item": "Station not named in text (block 5) package - 1 week, 30s, 70 spots",
+              "unit": "package",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 5); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 26
+            },
+            {
+              "item": "Station not named in text (block 5) package - 13 weeks, 30s, 910 spots",
+              "unit": "package",
+              "price": 104000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 5); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 27
+            },
+            {
+              "item": "Station not named in text (block 5) package - 26 weeks, 30s, 1820 spots",
+              "unit": "package",
+              "price": 182000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 5); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 28
+            },
+            {
+              "item": "Station not named in text (block 5) package - 4 weeks, 30s, 280 spots",
+              "unit": "package",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Station not named in text (block 5); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "is_package": true,
+              "sort_order": 29
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

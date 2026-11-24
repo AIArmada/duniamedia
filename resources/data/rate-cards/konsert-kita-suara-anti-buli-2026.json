@@ -1,0 +1,92 @@
+{
+  "slug": "konsert-kita-suara-anti-buli-2026",
+  "owner": "specialist-media",
+  "title": "Konsert Kita Suara Anti Buli 2026 — Platinum Sponsorship",
+  "summary": "Platinum RM300k: UiTM Shah Alam Mar/Apr 2026, Bella Astillah, Nadeera, Alpha + theme song & contests.",
+  "description": "Official sponsorship deck (9 pages, organised by Nusavue). 2-hour musical movement vs bullying: empathy/resilience, e-voucher per ticket, Contest x Konsert, artist photoshoot, meet & greet. Line-up Alpha, Bella Astillah (TikTok Celebrity 2024), Nadeera (Big Stage S5). Mixed seated 1,600 or 3,000 mix, 3–5M impressions. Brand as champion + viral content + nationwide goodwill.",
+  "validity": "Mar/Apr 2026, UiTM Shah Alam",
+  "terms": null,
+  "hero": "assets/ratecards/img/konsert-kita-suara-anti-buli-2026.webp",
+  "medium": "Outdoor",
+  "source_pages": 9,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Official sponsorship deck (9 pages, organised by Nusavue). 2-hour musical movement vs bullying: empathy/resilience, e-voucher per ticket, Contest x Konsert, artist photoshoot, meet & greet. Line-up Alpha, Bella Astillah (TikTok Celebrity 2024), Nadeera (Big Stage S5). Mixed seated 1,600 or 3,000 mix, 3–5M impressions. Brand as champion + viral content + nationwide goodwill."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Platinum RM300k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Platinum sponsorship"
+          },
+          {
+            "title": "Theme song"
+          },
+          {
+            "title": "E-voucher"
+          },
+          {
+            "title": "Meet & greet"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-nusavue",
+      "name": "Nusavue",
+      "owner": "specialist-media",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/konsert-kita-suara-anti-buli-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "platinum-sponsorship",
+          "title": "Platinum sponsorship",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "specialist-media-nusavue"
+          ],
+          "items": [
+            {
+              "item": "Platinum sponsorship",
+              "unit": "sponsorship package",
+              "price": 300000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Title: Official BRAND Partner & \"Suara Anti Buli powered by ...\"; TikTok/IG Reels featuring brand booth, artists and brand message; brand category exclusivity; premium pop-up booth; 1,000 samples; limited-edition cup sleeve; QR sign-up; logo on stage LED, photowall, crew T-shirts, entrance arch, posters and digital promotions; press release mention, media interviews and news coverage on event activation.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

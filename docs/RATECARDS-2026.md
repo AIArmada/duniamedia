@@ -80,11 +80,26 @@ The eleven new entries keep the same guardrails: `pricing_mode=indicative`, `ava
 Excluded (restricted, ignored): iMedia Introduction Deck, Astro_Islamic Program, OMNIA_RR2027 MASTER DECK, Kempen Ramadan Syawal, The Edge FY2026, CIQ Premium Reach, CIQ Urban Coverage, Impact 2.0 x5 / 3.0 / New DOOH Intro (7 PPTX).
 
 ## Hosting & visuals (implemented)
-- All 27 rate-card documents + 2 workbooks live in `storage/app/private/ratecards/` and stream through
-  `GET /media/{slug}/rate-card/{index}` (`RateCardController`). No Google Drive, no external links.
-- PDFs are embedded in the detail page (iframe), images render inline, workbooks offer a hosted download.
-- 28 original editorial images were generated with the Codex imagegen skill and optimised to
-  `public/assets/ratecards/img/{slug}.webp` plus 480/960 variants (9.1 MB total).
+- All 43 source PDFs (41 current + 2 superseded KLIA 2024 decks), 3 workbooks, 1 promo image and
+  2 walkthrough videos live in `storage/app/private/ratecards/` and stream through
+  `GET /offers/{slug}/rate-card/{index}` (`RateCardController`). No Google Drive, no external links.
+- The catalogue attaches 48 documents across 40 offerings into the private media library; PDFs are
+  embedded in the detail page (iframe), images render inline, videos play inline, and workbooks
+  offer a hosted download.
+- `tests/Feature/RateCardCoverageTest.php` fails the build if a catalogue document is missing, a source
+  PDF is unattached, a source PDF has no extracted rate rows, or a PDF-backed offering loses its
+  summary/formats/rate tiers.
+- `RateCardEntrySeeder` loads the extracted ledger into `rate_card_entries` (2,023 rows across 38
+  offerings) and `rate_card_notes` (107 extraction gaps and 2 image/workbook-only sources), so the
+  detailed rates and caveats are queryable in the database without opening a PDF.
+- Every page of every current deck is rendered to `public/assets/ratecards/pages/{deck}/page-{n}.webp`
+  (757 pages, 56 MB) by `scripts/extract-rate-card-visuals.py`. `RateCardVisualSeeder` loads the
+  manifest into `rate_card_visuals` (819 rows across 39 offerings), and the offer page shows an
+  expandable "Inside the deck" gallery so the full presentation is browsable in HTML.
+- 40 editorial hero images now exist at `public/assets/ratecards/img/{slug}.webp` plus 480/960
+  variants. The original 28 were generated with the Codex imagegen skill; the remaining 12 were
+  generated in the same cinematic Malaysian editorial style with Codex imagegen and installed with
+  `scripts/install-rate-card-hero.py`.
 - The `/work` archive's Drive links were removed; `client-work.json` now carries no external source links.
 
 ## Link audit (both Drive folders)

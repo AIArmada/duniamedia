@@ -16,7 +16,7 @@ class WebsiteTest extends TestCase
         $this->get('/')->assertOk()->assertSee('Bigger');
         $this->get('/services')->assertOk();
         $this->get('/portfolio')->assertOk();
-        $this->get('/work')->assertOk()->assertSee('Campaigns that');
+        $this->get('/work')->assertOk()->assertSee('Work that speaks for');
     }
 
     public function test_unpublished_inventory_is_not_public(): void

@@ -1,0 +1,624 @@
+{
+  "slug": "billboard-sarawak-smg-2026",
+  "owner": "tvs",
+  "title": "Sarawak Digital Billboard Network 2026 — Kuching & Bintulu",
+  "summary": "Three LED double-screen sites from RM500/day or RM15k/month single screen; 2-site 10% and 3-site 15% bundles.",
+  "description": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026. A fourth Miri site at Jalan Padang (opposite Miri Clocktower) is scheduled for completion on 30 November 2026; rates to be confirmed.",
+  "validity": "2026; Miri site expected 30 Nov 2026; cross-city promotion 1 Jun–31 Jul 2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/billboard-sarawak-smg-2026.webp",
+  "medium": "Outdoor",
+  "source_pages": 19,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Sarawak Media Group (SMG) digital billboard rate card. Three double-screen LED sites: Taman Heritage, Kuching (20ft x 50ft, 1536x624px, 138,546 daily traffic); Jalan Tun Salahuddin, Kuching (40ft x 30ft, 864x1248px, 129,726 daily); Jalan Tun Taib, Bintulu (40ft x 30ft, 864x1248px, 110,297 daily). Each slot is 15 seconds, 12 slots per 3-minute loop, 18 operating hours daily. Single screen RM500/day, RM3,500/week, RM15,000/month; double screen RM1,000/day, RM7,000/week, RM30,000/month. Bundles: two sites 10% off (from RM900/day single screen), three sites 15% off (from RM1,275/day single screen). Rates exclude tax and a RM500 management charge per material. Cross-city introductory promotion runs 1 June–31 July 2026. A fourth Miri site at Jalan Padang (opposite Miri Clocktower) is scheduled for completion on 30 November 2026; rates to be confirmed."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM500/day single"
+          },
+          {
+            "title": "RM15k/month single"
+          },
+          {
+            "title": "RM30k/month double"
+          },
+          {
+            "title": "RM1,275/day three-site single"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Digital LED billboard"
+          },
+          {
+            "title": "Single screen"
+          },
+          {
+            "title": "Double screen"
+          },
+          {
+            "title": "Two-site bundle"
+          },
+          {
+            "title": "Three-site bundle"
+          },
+          {
+            "title": "Miri site (from Nov 2026)"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "tvs-sarawak-media-group-smg",
+      "name": "Sarawak Media Group (SMG)",
+      "owner": "tvs",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/billboard-sarawak-smg-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "taman-heritage-billboard-rates",
+          "title": "Taman Heritage Billboard Rates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "Taman Heritage billboard — double screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 720,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Taman Heritage billboard — double screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Taman Heritage billboard — double screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 5040,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Taman Heritage billboard — single screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Taman Heritage billboard — single screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Taman Heritage billboard — single screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 2520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "tun-salahuddin-billboard-rates",
+          "title": "Tun Salahuddin Billboard Rates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "Tun Salahuddin billboard — double screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 720,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Tun Salahuddin billboard — double screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Tun Salahuddin billboard — double screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 5040,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Tun Salahuddin billboard — single screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Tun Salahuddin billboard — single screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Tun Salahuddin billboard — single screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 2520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "tun-taib-billboard-rates",
+          "title": "Tun Taib Billboard Rates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "Tun Taib billboard — double screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 720,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Tun Taib billboard — double screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 21600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Tun Taib billboard — double screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 5040,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Tun Taib billboard — single screen, 15s slot — per day",
+              "unit": "per day",
+              "price": 360,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Tun Taib billboard — single screen, 15s slot — per month",
+              "unit": "per month",
+              "price": 10800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Tun Taib billboard — single screen, 15s slot — per week",
+              "unit": "per week",
+              "price": 2520,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "site-package-bundle-rates",
+          "title": "Site Package — Bundle Rates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "2-site bundle rates — double screen, 2 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 1800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "2-site bundle rates — double screen, 2 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 54000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "2-site bundle rates — double screen, 2 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 12600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "2-site bundle rates — single screen, 1 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 900,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "2-site bundle rates — single screen, 1 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 27000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "2-site bundle rates — single screen, 1 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 6300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "site-package-normal-rates-10-disc",
+          "title": "Site Package — Normal Rates (10% disc)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "2-site package (normal rates, 10% disc) — double screen, 2 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "2-site package (normal rates, 10% disc) — double screen, 2 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "2-site package (normal rates, 10% disc) — double screen, 2 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "2-site package (normal rates, 10% disc) — single screen, 1 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "2-site package (normal rates, 10% disc) — single screen, 1 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "2-site package (normal rates, 10% disc) — single screen, 1 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "site-package-bundle-rates-2",
+          "title": "Site Package — Bundle Rates",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "3-site bundle rates — double screen, 2 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 2550,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "3-site bundle rates — double screen, 2 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 76500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "3-site bundle rates — double screen, 2 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 17850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "3-site bundle rates — single screen, 1 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 1275,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "3-site bundle rates — single screen, 1 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 38250,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "3-site bundle rates — single screen, 1 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 8925,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "site-package-normal-rates-15-disc",
+          "title": "Site Package — Normal Rates (15% disc)",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "tvs-sarawak-media-group-smg"
+          ],
+          "items": [
+            {
+              "item": "3-site package (normal rates, 15% disc) — double screen, 2 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 3000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "3-site package (normal rates, 15% disc) — double screen, 2 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 90000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "3-site package (normal rates, 15% disc) — double screen, 2 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 21000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "3-site package (normal rates, 15% disc) — single screen, 1 (on a 3-min cycle) — per day",
+              "unit": "per day",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "3-site package (normal rates, 15% disc) — single screen, 1 (on a 3-min cycle) — per month",
+              "unit": "per month",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "3-site package (normal rates, 15% disc) — single screen, 1 (on a 3-min cycle) — per week",
+              "unit": "per week",
+              "price": 10500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "is_package": false,
+              "sort_order": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

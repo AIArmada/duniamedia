@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 ERL + KLIA 2026",
+  "updated": "2026-11-24 document paths + extracted tiers",
   "sources": [
     "RATECARD-2026DuniaMedia-RAMedia (folder archive, imported)",
     "RAMediaRateCard2026 (folder archive, imported; refreshed 12 Nov 2026)"
@@ -90,7 +90,15 @@
           }
         ],
         "sales_contact": "suriasales@smrg.my · WhatsApp 012-319 1053",
-        "media_owner": "Rimakmur (Suria)"
+        "media_owner": "Rimakmur (Suria)",
+        "price_tiers": [
+          "Spot RM90–1,760 (weekday/weekend)",
+          "Live read RM65–460",
+          "ROS RM150–550",
+          "Display RM1k–6k/week",
+          "Social RM1.5k–6k/post",
+          "Production RM20–1,050"
+        ]
       },
       "medium": "Radio",
       "media_owner": "Suria FM / Rimakmur"
@@ -364,8 +372,8 @@
       "channel": "TV AlHijrah",
       "location": "Nationwide",
       "audience": "Muslim family and SME / niaga audiences",
-      "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck, request details).",
-      "description": "Cover-identified as TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, scanned images, no extractable text). View original for package tables. Islamic business talk environment.",
+      "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck; package rates extracted).",
+      "description": "TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, image-only deck; package tables extracted). An-Nisa: 1 slot RM9,680 to 52 slots RM377,520. Berita AlHijrah: RM8,000 for 1 slot to RM72,000 for 13. BA Niaga: RM5,000 for 1 slot to RM45,000 for 13. TVC and Syaaban/Ramadan packages RM25k–50k. Islamic business talk environment.",
       "image": "assets/ratecards/img/tvalhijrah-bincang-niaga-2024.webp",
       "price_from": null,
       "pricing_mode": "on_request",
@@ -389,7 +397,13 @@
             "kind": "document"
           }
         ],
-        "media_owner": "TV AlHijrah"
+        "media_owner": "TV AlHijrah",
+        "price_tiers": [
+          "An-Nisa 52 slots RM377,520",
+          "Berita 13 slots RM72,000",
+          "BA Niaga 13 slots RM45,000",
+          "TVC/Ramadan packages RM25k–50k"
+        ]
       },
       "medium": "TV & Broadcast",
       "media_owner": "TV AlHijrah"
@@ -400,8 +414,8 @@
       "channel": "Bernama",
       "location": "Nationwide",
       "audience": "National news readers, government and corporate stakeholders",
-      "summary": "Official 2026 media kit (24-page scanned deck, request rate tables).",
-      "description": "Bernama Media Kit 2026 (24 pages, scanned images). National wire + portal + TV/radio extensions. View original for inventory and rates.",
+      "summary": "Official 2026 media kit (24-page scanned deck; rate tables extracted).",
+      "description": "Bernama Media Kit 2026 (24 pages, scanned images; rate tables extracted). National wire + portal + TV/radio extensions. Extracted rates cover press releases RM3k–24k, TV/radio spots RM220–5k, event coverage RM12k–50k, production RM3k–50k, and archives/images RM100–1,000.",
       "image": "assets/ratecards/img/bernama-media-kit-2026.webp",
       "price_from": null,
       "pricing_mode": "on_request",
@@ -426,7 +440,14 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Bernama"
+        "media_owner": "Bernama",
+        "price_tiers": [
+          "Press releases RM3k–24k",
+          "TV/radio spots RM220–5k",
+          "Coverage RM12k–50k",
+          "Production RM3k–50k",
+          "Archives/images RM100–1,000"
+        ]
       },
       "medium": "Digital",
       "media_owner": "Bernama"
@@ -807,8 +828,8 @@
       "channel": "Big Tree / KL Sentral",
       "location": "Klang Valley",
       "audience": "Kelana Jaya Line 200k/day + Monorail 50k/day interchange",
-      "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (request rates).",
-      "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Rates in scanned tables — view original.",
+      "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (rates extracted).",
+      "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Extracted tables: station domination RM1.2M–1.44M for 12 months, plus production line items RM800–28,800.",
       "image": "assets/ratecards/img/kl-sentral-station-sponsorship-2024.webp",
       "price_from": null,
       "pricing_mode": "on_request",
@@ -831,7 +852,11 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Big Tree"
+        "media_owner": "Big Tree",
+        "price_tiers": [
+          "Station domination RM1.2M–1.44M (12 months)",
+          "Production RM800–28,800 per item"
+        ]
       },
       "medium": "Outdoor",
       "media_owner": "Big Tree"
@@ -1095,7 +1120,7 @@
       "location": "Nationwide",
       "audience": "Family carnival crowds 330k/location, 1.2B social reach",
       "summary": "Longest-running outdoor carnival since 2003; Arabian booths 10x10 to 20x80 Platinum/Gold/Silver.",
-      "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
+      "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Sponsorship tiers extracted: Longhouse RM5k–8k, Ground RM30k, Premium RM50k, Silver RM90k, Gold RM300k, Platinum RM450k, Title RM800k. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
       "image": "assets/ratecards/img/karnival-jom-heboh-2026-venue.webp",
       "price_from": null,
       "pricing_mode": "on_request",
@@ -1121,7 +1146,13 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Media Prima (Jom Heboh)"
+        "media_owner": "Media Prima (Jom Heboh)",
+        "price_tiers": [
+          "Longhouse RM5k–8k",
+          "Ground RM30k / Premium RM50k",
+          "Silver RM90k / Gold RM300k",
+          "Platinum RM450k / Title RM800k"
+        ]
       },
       "medium": "Outdoor",
       "media_owner": "Media Prima"
@@ -1254,7 +1285,8 @@
         "media_owner": "RA Media Relations"
       },
       "medium": "TV & Broadcast",
-      "media_owner": "RA Media Relations"
+      "media_owner": "RA Media Relations",
+      "image": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp"
     },
     {
       "title": "RA Media Live TV Talkshow 2026/27 — TV3, TV9 & TV AlHijrah",
@@ -1297,7 +1329,8 @@
         "media_owner": "RA Media Relations"
       },
       "medium": "TV & Broadcast",
-      "media_owner": "RA Media Relations"
+      "media_owner": "RA Media Relations",
+      "image": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp"
     },
     {
       "title": "TV Sarawak (TVS) 2026 — Sponsorship & Spot Buy",
@@ -1358,7 +1391,8 @@
         "media_owner": "TV Sarawak (TVS)"
       },
       "medium": "TV & Broadcast",
-      "media_owner": "TV Sarawak (TVS)"
+      "media_owner": "TV Sarawak (TVS)",
+      "image": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp"
     },
     {
       "title": "Sarawak Digital Billboard Network 2026 — Kuching & Bintulu",
@@ -1403,7 +1437,8 @@
         "media_owner": "Sarawak Media Group Sdn Bhd (SMG)"
       },
       "medium": "Outdoor",
-      "media_owner": "Sarawak Media Group (SMG)"
+      "media_owner": "Sarawak Media Group (SMG)",
+      "image": "assets/ratecards/img/billboard-sarawak-smg-2026.webp"
     },
     {
       "title": "IKIMfm Ramadan 2027 — Sponsorship & Jingle Packages",
@@ -1449,7 +1484,8 @@
         "media_owner": "IKIMfm"
       },
       "medium": "Radio",
-      "media_owner": "IKIMfm"
+      "media_owner": "IKIMfm",
+      "image": "assets/ratecards/img/ikim-fm-ramadan-2027.webp"
     },
     {
       "title": "Media Prima Audio Trade Show 2025 — Radio Packages",
@@ -1494,7 +1530,8 @@
         "media_owner": "Media Prima Omnia / Media Prima Audio"
       },
       "medium": "Radio",
-      "media_owner": "Media Prima Audio"
+      "media_owner": "Media Prima Audio",
+      "image": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp"
     },
     {
       "title": "Astro Upfront 2027 — TV, Audio, Talent & On-Ground Packages",
@@ -1539,7 +1576,8 @@
         "media_owner": "Astro Media Solutions"
       },
       "medium": "TV & Broadcast",
-      "media_owner": "Astro"
+      "media_owner": "Astro",
+      "image": "assets/ratecards/img/astro-upfront-2027.webp"
     },
     {
       "title": "Sinar Harian 20th Anniversary 2026 — Exclusive Print, Program & Social Rates",
@@ -1589,7 +1627,8 @@
         "media_owner": "Sinar Karangkraf Sdn Bhd"
       },
       "medium": "Print",
-      "media_owner": "Sinar Harian / Sinar Karangkraf"
+      "media_owner": "Sinar Harian / Sinar Karangkraf",
+      "image": "assets/ratecards/img/sinar-harian-20th-anniversary-2026.webp"
     },
     {
       "title": "Malaysiakini Media Kit 2024 — Digital, Content & Campaign Packages",
@@ -1638,7 +1677,8 @@
         "media_owner": "FG Media (Malaysiakini)"
       },
       "medium": "Digital",
-      "media_owner": "Malaysiakini / FG Media"
+      "media_owner": "Malaysiakini / FG Media",
+      "image": "assets/ratecards/img/malaysiakini-media-kit-2024.webp"
     },
     {
       "title": "Malaysiakini & KiniTV Event Coverage 2026/27 — Article, Video & Bundle",
@@ -1680,7 +1720,8 @@
         "media_owner": "FG Media (Malaysiakini / KiniTV)"
       },
       "medium": "Digital",
-      "media_owner": "Malaysiakini / KiniTV"
+      "media_owner": "Malaysiakini / KiniTV",
+      "image": "assets/ratecards/img/malaysiakini-kinitv-event-coverage-2026-2027.webp"
     },
     {
       "title": "Sinar Karangkraf Media Kit 2025/26 — Sinar Harian, SinarPlus, Bestari & Daily",
@@ -1728,7 +1769,8 @@
         "media_owner": "Sinar Karangkraf Sdn Bhd"
       },
       "medium": "Print",
-      "media_owner": "Sinar Karangkraf"
+      "media_owner": "Sinar Karangkraf",
+      "image": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp"
     },
     {
       "title": "ERL Digital Screens 2026 — KLIA Ekspres Station & In-Train Network",
@@ -1774,7 +1816,8 @@
         "media_owner": "ERL / KLIA Ekspres"
       },
       "medium": "Outdoor",
-      "media_owner": "ERL / KLIA Ekspres"
+      "media_owner": "ERL / KLIA Ekspres",
+      "image": "assets/ratecards/img/erl-digital-screens-2026.webp"
     }
   ]
 }

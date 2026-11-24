@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20",
+  "generated_at": "2026-11-24",
   "offerings": [
     {
       "slug": "988-fm-2026-radio-digital",
@@ -59,7 +59,7 @@
         {
           "name": "2026 Rate Card",
           "file": "988-fm-2026-radio-digital.pdf",
-          "path": "private/catalogue/988-fm-2026-radio-digital.pdf",
+          "path": "private/ratecards/988-fm-2026-radio-digital.pdf",
           "kind": "document"
         }
       ]
@@ -115,12 +115,12 @@
       "media_owner_name": "Astro Media Solutions",
       "creator_slug": null,
       "placement_code": "astro-upfront-2027",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/astro-upfront-2027.webp",
       "documents": [
         {
           "name": "Upfront27 Sales Kit",
           "file": "astro-upfront-2027.pdf",
-          "path": "private/catalogue/astro-upfront-2027.pdf",
+          "path": "private/ratecards/astro-upfront-2027.pdf",
           "kind": "document"
         }
       ]
@@ -178,7 +178,7 @@
         {
           "name": "Astro Digital Solutions 2026.pdf",
           "file": "astro-video360-digital-2026.pdf",
-          "path": "private/catalogue/astro-video360-digital-2026.pdf",
+          "path": "private/ratecards/astro-video360-digital-2026.pdf",
           "kind": "document"
         }
       ]
@@ -187,8 +187,8 @@
       "slug": "bernama-media-kit-2026",
       "name": "Bernama Media Kit 2026 — National News Agency",
       "sku": "bernama-media-kit-2026",
-      "summary": "Official 2026 media kit (24-page scanned deck, request rate tables).",
-      "description": "Bernama Media Kit 2026 (24 pages, scanned images). National wire + portal + TV/radio extensions. View original for inventory and rates.",
+      "summary": "Official 2026 media kit (24-page scanned deck; rate tables extracted).",
+      "description": "Bernama Media Kit 2026 (24 pages, scanned images; rate tables extracted). National wire + portal + TV/radio extensions. Extracted rates cover press releases RM3k–24k, TV/radio spots RM220–5k, event coverage RM12k–50k, production RM3k–50k, and archives/images RM100–1,000.",
       "medium": "Digital",
       "unit_code": "post",
       "pricing_mode": "on_request",
@@ -218,7 +218,14 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Bernama"
+        "media_owner": "Bernama",
+        "price_tiers": [
+          "Press releases RM3k–24k",
+          "TV/radio spots RM220–5k",
+          "Coverage RM12k–50k",
+          "Production RM3k–50k",
+          "Archives/images RM100–1,000"
+        ]
       },
       "terms": null,
       "media_owner_slug": "bernama",
@@ -230,7 +237,7 @@
         {
           "name": "BERNAMA MEDIA KIT 2026.pdf",
           "file": "bernama-media-kit-2026.pdf",
-          "path": "private/catalogue/bernama-media-kit-2026.pdf",
+          "path": "private/ratecards/bernama-media-kit-2026.pdf",
           "kind": "document"
         }
       ]
@@ -291,7 +298,7 @@
         {
           "name": "BFM Rate Card 2026_compressed.pdf",
           "file": "bfm-2026-business-radio.pdf",
-          "path": "private/catalogue/bfm-2026-business-radio.pdf",
+          "path": "private/ratecards/bfm-2026-business-radio.pdf",
           "kind": "document"
         }
       ]
@@ -347,12 +354,12 @@
       "media_owner_name": "TVS (TV Sarawak)",
       "creator_slug": null,
       "placement_code": "billboard-sarawak-smg-2026",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/billboard-sarawak-smg-2026.webp",
       "documents": [
         {
           "name": "Billboard Rate Card - Sarawak",
           "file": "billboard-sarawak-smg-2026.pdf",
-          "path": "private/catalogue/billboard-sarawak-smg-2026.pdf",
+          "path": "private/ratecards/billboard-sarawak-smg-2026.pdf",
           "kind": "document"
         }
       ]
@@ -431,7 +438,7 @@
         {
           "name": "BUSWRAP2025 Bus Advertising Wrap",
           "file": "bus-wrap-klang-valley-2025.pdf",
-          "path": "private/catalogue/bus-wrap-klang-valley-2025.pdf",
+          "path": "private/ratecards/bus-wrap-klang-valley-2025.pdf",
           "kind": "document"
         }
       ]
@@ -485,7 +492,7 @@
         {
           "name": "Welcome Back Promo_KLCC Junction.pdf",
           "file": "cubig-klcc-junction-2026-promo.pdf",
-          "path": "private/catalogue/cubig-klcc-junction-2026-promo.pdf",
+          "path": "private/ratecards/cubig-klcc-junction-2026-promo.pdf",
           "kind": "document"
         }
       ]
@@ -698,18 +705,18 @@
       "media_owner_name": "KLIA",
       "creator_slug": null,
       "placement_code": "erl-digital-screens-2026",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/erl-digital-screens-2026.webp",
       "documents": [
         {
           "name": "ERL Station Coverage Network 2026",
           "file": "erl-station-coverage-2026.pdf",
-          "path": "private/catalogue/erl-station-coverage-2026.pdf",
+          "path": "private/ratecards/erl-station-coverage-2026.pdf",
           "kind": "document"
         },
         {
           "name": "ERL In-Train Network 2026",
           "file": "erl-in-train-network-2026.pdf",
-          "path": "private/catalogue/erl-in-train-network-2026.pdf",
+          "path": "private/ratecards/erl-in-train-network-2026.pdf",
           "kind": "document"
         }
       ]
@@ -766,7 +773,7 @@
         {
           "name": "FMT Media Rate Card 2026 V15.pdf",
           "file": "fmt-2026-digital-news.pdf",
-          "path": "private/catalogue/fmt-2026-digital-news.pdf",
+          "path": "private/ratecards/fmt-2026-digital-news.pdf",
           "kind": "document"
         }
       ]
@@ -825,7 +832,7 @@
         {
           "name": "RA Media_ Radio On Ground",
           "file": "hot-fm-zoomerz-on-ground.pdf",
-          "path": "private/catalogue/hot-fm-zoomerz-on-ground.pdf",
+          "path": "private/ratecards/hot-fm-zoomerz-on-ground.pdf",
           "kind": "document"
         }
       ]
@@ -882,12 +889,12 @@
       "media_owner_name": "IKIMfm",
       "creator_slug": null,
       "placement_code": "ikim-fm-ramadan-2027",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/ikim-fm-ramadan-2027.webp",
       "documents": [
         {
           "name": "Pakej Media Istimewa Ramadan IKIM 2027",
           "file": "ikim-fm-ramadan-2027.pdf",
-          "path": "private/catalogue/ikim-fm-ramadan-2027.pdf",
+          "path": "private/ratecards/ikim-fm-ramadan-2027.pdf",
           "kind": "document"
         }
       ]
@@ -944,7 +951,7 @@
         {
           "name": "PHOTO-2026-11-02-12-26-05.jpg",
           "file": "imedia-blitz-sale-2026.jpg",
-          "path": "private/catalogue/imedia-blitz-sale-2026.jpg",
+          "path": "private/ratecards/imedia-blitz-sale-2026.jpg",
           "kind": "image"
         }
       ]
@@ -954,7 +961,7 @@
       "name": "Karnival Jom Heboh 2026 — Venue & Carnival Rates (Media Prima)",
       "sku": "karnival-jom-heboh-2026-venue",
       "summary": "Longest-running outdoor carnival since 2003; Arabian booths 10x10 to 20x80 Platinum/Gold/Silver.",
-      "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
+      "description": "Venue & rates deck (8 pages, scanned). Highlights: RM15M media value, 150 brands/location, 40,000 sqm, 330k visitors/location. Sponsorship tiers extracted: Longhouse RM5k–8k, Ground RM30k, Premium RM50k, Silver RM90k, Gold RM300k, Platinum RM450k, Title RM800k. Content: Jom Heboh concert 2 nights, family games/karaoke/mascots, drama/movie stars, direct sales, Jom Lokal food + open stage. Locations: Sarawak Kota Samarahan 31 Jul–2 Aug 2026, Penang Batu Kawan 24–26 Apr, Miri 25–27 Sep, KL Stadium Merdeka 27–29 Nov, Johor Angsana 30 Oct–1 Nov. Facades Arabian 20x40/20x60/20x80.",
       "medium": "Outdoor",
       "unit_code": "sponsorship package",
       "pricing_mode": "on_request",
@@ -985,7 +992,13 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Media Prima (Jom Heboh)"
+        "media_owner": "Media Prima (Jom Heboh)",
+        "price_tiers": [
+          "Longhouse RM5k–8k",
+          "Ground RM30k / Premium RM50k",
+          "Silver RM90k / Gold RM300k",
+          "Platinum RM450k / Title RM800k"
+        ]
       },
       "terms": null,
       "media_owner_slug": "media-prima",
@@ -997,7 +1010,7 @@
         {
           "name": "Kjh venue & rates.pdf",
           "file": "karnival-jom-heboh-2026-venue.pdf",
-          "path": "private/catalogue/karnival-jom-heboh-2026-venue.pdf",
+          "path": "private/ratecards/karnival-jom-heboh-2026-venue.pdf",
           "kind": "document"
         }
       ]
@@ -1006,8 +1019,8 @@
       "slug": "kl-sentral-station-sponsorship-2024",
       "name": "KL Sentral Station Sponsorship 2024 — Transit Hub",
       "sku": "kl-sentral-station-sponsorship-2024",
-      "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (request rates).",
-      "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Rates in scanned tables — view original.",
+      "summary": "East & West wing station sponsorship with OOH effectiveness and ridership data (rates extracted).",
+      "description": "Big Tree deck (19 pages). OOH impact (93–98% confidence/recall), transit fast facts (37 LRT +11 monorail stations, hours, interchange). East/West wing domination, lines and station maps. Extracted tables: station domination RM1.2M–1.44M for 12 months, plus production line items RM800–28,800.",
       "medium": "Outdoor",
       "unit_code": "production",
       "pricing_mode": "on_request",
@@ -1035,7 +1048,11 @@
             "kind": "document"
           }
         ],
-        "media_owner": "Big Tree"
+        "media_owner": "Big Tree",
+        "price_tiers": [
+          "Station domination RM1.2M–1.44M (12 months)",
+          "Production RM800–28,800 per item"
+        ]
       },
       "terms": null,
       "media_owner_slug": "media-prima",
@@ -1047,7 +1064,7 @@
         {
           "name": "KL Sentral East & West Wing Station Sponsorship 2024.pdf",
           "file": "kl-sentral-station-sponsorship-2024.pdf",
-          "path": "private/catalogue/kl-sentral-station-sponsorship-2024.pdf",
+          "path": "private/ratecards/kl-sentral-station-sponsorship-2024.pdf",
           "kind": "document"
         }
       ]
@@ -1102,7 +1119,7 @@
         {
           "name": "KLCC Snorkels 2024.pdf",
           "file": "klcc-snorkels-2024-big-tree.pdf",
-          "path": "private/catalogue/klcc-snorkels-2024-big-tree.pdf",
+          "path": "private/ratecards/klcc-snorkels-2024-big-tree.pdf",
           "kind": "document"
         }
       ]
@@ -1180,19 +1197,19 @@
         {
           "name": "KLIA Terminal 1 Static 2026",
           "file": "klia-t1-static-2026.pdf",
-          "path": "private/catalogue/klia-t1-static-2026.pdf",
+          "path": "private/ratecards/klia-t1-static-2026.pdf",
           "kind": "document"
         },
         {
           "name": "KLIA T1 & T2 Digital 2026",
           "file": "klia-t1-t2-digital-2026.pdf",
-          "path": "private/catalogue/klia-t1-t2-digital-2026.pdf",
+          "path": "private/ratecards/klia-t1-t2-digital-2026.pdf",
           "kind": "document"
         },
         {
           "name": "K1 Digital Arrivals Network walkthrough",
           "file": "klia-t1-walkthrough.mp4",
-          "path": "private/catalogue/klia-t1-walkthrough.mp4",
+          "path": "private/ratecards/video/klia-t1-walkthrough.mp4",
           "kind": "video"
         }
       ]
@@ -1268,19 +1285,19 @@
         {
           "name": "KLIA Terminal 2 Static 2026",
           "file": "klia-t2-static-2026.pdf",
-          "path": "private/catalogue/klia-t2-static-2026.pdf",
+          "path": "private/ratecards/klia-t2-static-2026.pdf",
           "kind": "document"
         },
         {
           "name": "KLIA T1 & T2 Digital 2026",
           "file": "klia-t1-t2-digital-2026.pdf",
-          "path": "private/catalogue/klia-t1-t2-digital-2026.pdf",
+          "path": "private/ratecards/klia-t1-t2-digital-2026.pdf",
           "kind": "document"
         },
         {
           "name": "K2 Total Coverage Network walkthrough",
           "file": "klia-t2-walkthrough.mp4",
-          "path": "private/catalogue/klia-t2-walkthrough.mp4",
+          "path": "private/ratecards/video/klia-t2-walkthrough.mp4",
           "kind": "video"
         }
       ]
@@ -1335,7 +1352,7 @@
         {
           "name": "2026BRAND-PLATINUM SPONSORSHIP - KONSERT KITA SUARA ANTI BULI",
           "file": "konsert-kita-suara-anti-buli-2026.pdf",
-          "path": "private/catalogue/konsert-kita-suara-anti-buli-2026.pdf",
+          "path": "private/ratecards/konsert-kita-suara-anti-buli-2026.pdf",
           "kind": "document"
         }
       ]
@@ -1392,7 +1409,7 @@
         {
           "name": "TRAIN ADS SPACE -2026.pdf",
           "file": "ktm-train-kl-sentral-ads-2026.pdf",
-          "path": "private/catalogue/ktm-train-kl-sentral-ads-2026.pdf",
+          "path": "private/ratecards/ktm-train-kl-sentral-ads-2026.pdf",
           "kind": "document"
         }
       ]
@@ -1471,7 +1488,7 @@
         {
           "name": "LampPostScreenKL2026_eBuntingPackage-KLCityCentre.pdf",
           "file": "lamppost-digital-bunting-kl-2026.pdf",
-          "path": "private/catalogue/lamppost-digital-bunting-kl-2026.pdf",
+          "path": "private/ratecards/lamppost-digital-bunting-kl-2026.pdf",
           "kind": "document"
         }
       ]
@@ -1524,12 +1541,12 @@
       "media_owner_name": "Specialist media & events",
       "creator_slug": null,
       "placement_code": "malaysiakini-kinitv-event-coverage-2026-2027",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/malaysiakini-kinitv-event-coverage-2026-2027.webp",
       "documents": [
         {
           "name": "Event Coverage by Mkini & KiniTV 2026/2027",
           "file": "malaysiakini-kinitv-event-coverage-2026-2027.pdf",
-          "path": "private/catalogue/malaysiakini-kinitv-event-coverage-2026-2027.pdf",
+          "path": "private/ratecards/malaysiakini-kinitv-event-coverage-2026-2027.pdf",
           "kind": "document"
         }
       ]
@@ -1589,12 +1606,12 @@
       "media_owner_name": "Specialist media & events",
       "creator_slug": null,
       "placement_code": "malaysiakini-media-kit-2024",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/malaysiakini-media-kit-2024.webp",
       "documents": [
         {
           "name": "2024 Malaysiakini Media Kit",
           "file": "malaysiakini-media-kit-2024.pdf",
-          "path": "private/catalogue/malaysiakini-media-kit-2024.pdf",
+          "path": "private/ratecards/malaysiakini-media-kit-2024.pdf",
           "kind": "document"
         }
       ]
@@ -1650,12 +1667,12 @@
       "media_owner_name": "Media Prima Berhad",
       "creator_slug": null,
       "placement_code": "media-prima-audio-trade-show-2025",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/media-prima-audio-trade-show-2025.webp",
       "documents": [
         {
           "name": "Media Prima Audio Trade Show 2025 Booking Form",
           "file": "media-prima-audio-trade-show-2025.pdf",
-          "path": "private/catalogue/media-prima-audio-trade-show-2025.pdf",
+          "path": "private/ratecards/media-prima-audio-trade-show-2025.pdf",
           "kind": "document"
         }
       ]
@@ -1710,7 +1727,7 @@
         {
           "name": "MOBILETruckAdvertising + Life Events",
           "file": "mobile-truck-activation-life-events.pdf",
-          "path": "private/catalogue/mobile-truck-activation-life-events.pdf",
+          "path": "private/ratecards/mobile-truck-activation-life-events.pdf",
           "kind": "document"
         }
       ]
@@ -1823,7 +1840,7 @@
         {
           "name": "Omnia25 Content Terhangat Brochure",
           "file": "omnia-content-terhangat-2026.pdf",
-          "path": "private/catalogue/omnia-content-terhangat-2026.pdf",
+          "path": "private/ratecards/omnia-content-terhangat-2026.pdf",
           "kind": "document"
         }
       ]
@@ -1904,7 +1921,7 @@
         {
           "name": "Podcast Utama.pdf",
           "file": "podcast-utama-buletin-tv3.pdf",
-          "path": "private/catalogue/podcast-utama-buletin-tv3.pdf",
+          "path": "private/ratecards/podcast-utama-buletin-tv3.pdf",
           "kind": "document"
         }
       ]
@@ -1980,7 +1997,7 @@
         {
           "name": "update2706-Quote_PuTERA...xlsx",
           "file": "putera-pre-post-2024-reference.xlsx",
-          "path": "private/catalogue/putera-pre-post-2024-reference.xlsx",
+          "path": "private/ratecards/putera-pre-post-2024-reference.xlsx",
           "kind": "workbook"
         }
       ]
@@ -2034,12 +2051,12 @@
       "media_owner_name": "RA Media Relations Sdn Bhd",
       "creator_slug": null,
       "placement_code": "ra-media-relations-live-tv-talkshow-2026-2027",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
       "documents": [
         {
           "name": "RA Media Relations Live TV Talkshow Rate Card 2026/2027",
           "file": "ra-media-relations-live-tv-talkshow-2026-2027.pdf",
-          "path": "private/catalogue/ra-media-relations-live-tv-talkshow-2026-2027.pdf",
+          "path": "private/ratecards/ra-media-relations-live-tv-talkshow-2026-2027.pdf",
           "kind": "document"
         }
       ]
@@ -2096,12 +2113,12 @@
       "media_owner_name": "RA Media Relations Sdn Bhd",
       "creator_slug": null,
       "placement_code": "ra-media-relations-news-slot-2026-2027",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/ra-media-relations-news-slot-2026-2027.webp",
       "documents": [
         {
           "name": "RA Media Relations News Slot Rate Card 2026/2027",
           "file": "ra-media-relations-news-slot-2026-2027.pdf",
-          "path": "private/catalogue/ra-media-relations-news-slot-2026-2027.pdf",
+          "path": "private/ratecards/ra-media-relations-news-slot-2026-2027.pdf",
           "kind": "document"
         }
       ]
@@ -2165,13 +2182,13 @@
         {
           "name": "UpdateRA Media-Quotation_Website Media Solution_060126.pdf + .xlsx",
           "file": "ra-media-website-media-solutions-2026.pdf",
-          "path": "private/catalogue/ra-media-website-media-solutions-2026.pdf",
+          "path": "private/ratecards/ra-media-website-media-solutions-2026.pdf",
           "kind": "document"
         },
         {
           "name": "Supporting workbook.xlsx",
           "file": "ra-media-website-media-solutions-2026-2.xlsx",
-          "path": "private/catalogue/ra-media-website-media-solutions-2026-2.xlsx",
+          "path": "private/ratecards/ra-media-website-media-solutions-2026-2.xlsx",
           "kind": "workbook"
         }
       ]
@@ -2255,7 +2272,7 @@
         {
           "name": "RATE CARD TV & RADIO 2025.pdf",
           "file": "rtm-tv-radio-2025.pdf",
-          "path": "private/catalogue/rtm-tv-radio-2025.pdf",
+          "path": "private/ratecards/rtm-tv-radio-2025.pdf",
           "kind": "document"
         }
       ]
@@ -2316,12 +2333,12 @@
       "media_owner_name": "Karangkraf",
       "creator_slug": null,
       "placement_code": "sinar-harian-20th-anniversary-2026",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/sinar-harian-20th-anniversary-2026.webp",
       "documents": [
         {
           "name": "SH 20th Anniversary Exclusive Rates",
           "file": "sinar-harian-20th-anniversary-2026.pdf",
-          "path": "private/catalogue/sinar-harian-20th-anniversary-2026.pdf",
+          "path": "private/ratecards/sinar-harian-20th-anniversary-2026.pdf",
           "kind": "document"
         }
       ]
@@ -2380,12 +2397,12 @@
       "media_owner_name": "Karangkraf",
       "creator_slug": null,
       "placement_code": "sinar-karangkraf-ratecard-2025-2026",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/sinar-karangkraf-ratecard-2025-2026.webp",
       "documents": [
         {
           "name": "Sinar Karangkraf Ratecard 2025/2026",
           "file": "sinar-karangkraf-ratecard-2025-2026.pdf",
-          "path": "private/catalogue/sinar-karangkraf-ratecard-2025-2026.pdf",
+          "path": "private/ratecards/sinar-karangkraf-ratecard-2025-2026.pdf",
           "kind": "document"
         }
       ]
@@ -2429,7 +2446,15 @@
           }
         ],
         "sales_contact": "suriasales@smrg.my · WhatsApp 012-319 1053",
-        "media_owner": "Rimakmur (Suria)"
+        "media_owner": "Rimakmur (Suria)",
+        "price_tiers": [
+          "Spot RM90–1,760 (weekday/weekend)",
+          "Live read RM65–460",
+          "ROS RM150–550",
+          "Display RM1k–6k/week",
+          "Social RM1.5k–6k/post",
+          "Production RM20–1,050"
+        ]
       },
       "terms": null,
       "media_owner_slug": "star-media-group",
@@ -2441,7 +2466,7 @@
         {
           "name": "SURIA_2026 RATE CARD",
           "file": "suria-fm-2026-radio-digital.pdf",
-          "path": "private/catalogue/suria-fm-2026-radio-digital.pdf",
+          "path": "private/ratecards/suria-fm-2026-radio-digital.pdf",
           "kind": "document"
         }
       ]
@@ -2510,13 +2535,13 @@
         {
           "name": "Target Media 2026 Rate Card",
           "file": "target-media-elevator-2026.pdf",
-          "path": "private/catalogue/target-media-elevator-2026.pdf",
+          "path": "private/ratecards/target-media-elevator-2026.pdf",
           "kind": "document"
         },
         {
           "name": "Target Media Q2 2025 Pricing (archive)",
           "file": "target-media-elevator-q2-2025.xlsx",
-          "path": "private/catalogue/target-media-elevator-q2-2025.xlsx",
+          "path": "private/ratecards/target-media-elevator-q2-2025.xlsx",
           "kind": "workbook"
         }
       ]
@@ -2574,7 +2599,7 @@
         {
           "name": "2026 Super Deal TMR",
           "file": "tmr-super-deal-2026-business-content.pdf",
-          "path": "private/catalogue/tmr-super-deal-2026-business-content.pdf",
+          "path": "private/ratecards/tmr-super-deal-2026-business-content.pdf",
           "kind": "document"
         }
       ]
@@ -2583,8 +2608,8 @@
       "slug": "tvalhijrah-bincang-niaga-2024",
       "name": "TV AlHijrah Bincang Niaga 2024 — Islamic Business TV",
       "sku": "tvalhijrah-bincang-niaga-2024",
-      "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck, request details).",
-      "description": "Cover-identified as TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, scanned images, no extractable text). View original for package tables. Islamic business talk environment.",
+      "summary": "Bincang Niaga advertising & promotion packages 2024 (scanned deck; package rates extracted).",
+      "description": "TV AlHijrah Bincang Niaga Advertising & Promotion Packages 2024 (5 pages, image-only deck; package tables extracted). An-Nisa: 1 slot RM9,680 to 52 slots RM377,520. Berita AlHijrah: RM8,000 for 1 slot to RM72,000 for 13. BA Niaga: RM5,000 for 1 slot to RM45,000 for 13. TVC and Syaaban/Ramadan packages RM25k–50k. Islamic business talk environment.",
       "medium": "TV & Broadcast",
       "unit_code": "package",
       "pricing_mode": "on_request",
@@ -2613,7 +2638,13 @@
             "kind": "document"
           }
         ],
-        "media_owner": "TV AlHijrah"
+        "media_owner": "TV AlHijrah",
+        "price_tiers": [
+          "An-Nisa 52 slots RM377,520",
+          "Berita 13 slots RM72,000",
+          "BA Niaga 13 slots RM45,000",
+          "TVC/Ramadan packages RM25k–50k"
+        ]
       },
       "terms": null,
       "media_owner_slug": "al-hijrah",
@@ -2625,7 +2656,7 @@
         {
           "name": "BN 2024 PACKAGES",
           "file": "tvalhijrah-bincang-niaga-2024.pdf",
-          "path": "private/catalogue/tvalhijrah-bincang-niaga-2024.pdf",
+          "path": "private/ratecards/tvalhijrah-bincang-niaga-2024.pdf",
           "kind": "document"
         }
       ]
@@ -2697,18 +2728,18 @@
       "media_owner_name": "TVS (TV Sarawak)",
       "creator_slug": null,
       "placement_code": "tvs-sponsorship-spot-buy-2026",
-      "image_path": null,
+      "image_path": "assets/ratecards/img/tvs-sponsorship-spot-buy-2026.webp",
       "documents": [
         {
           "name": "TVS Full Rate Card 2026 (Sponsorship & Spot Buy)",
           "file": "tvs-sponsorship-spot-buy-2026.pdf",
-          "path": "private/catalogue/tvs-sponsorship-spot-buy-2026.pdf",
+          "path": "private/ratecards/tvs-sponsorship-spot-buy-2026.pdf",
           "kind": "document"
         },
         {
           "name": "TVS Profile October 2026",
           "file": "tvs-profile-2026.pdf",
-          "path": "private/catalogue/tvs-profile-2026.pdf",
+          "path": "private/ratecards/tvs-profile-2026.pdf",
           "kind": "document"
         }
       ]
@@ -2764,7 +2795,7 @@
         {
           "name": "WOWSHOP - AIRTIME PROPOSAL DECK NEW UPDATED_2025",
           "file": "wowshop-airtime-2025.pdf",
-          "path": "private/catalogue/wowshop-airtime-2025.pdf",
+          "path": "private/ratecards/wowshop-airtime-2025.pdf",
           "kind": "document"
         }
       ]

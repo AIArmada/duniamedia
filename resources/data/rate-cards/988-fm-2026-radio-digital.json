@@ -1,0 +1,1147 @@
+{
+  "slug": "988-fm-2026-radio-digital",
+  "owner": "star-media-group",
+  "title": "988 FM 2026 — Radio + Digital (Star RFM)",
+  "summary": "Spot buy RM100–RM1,890, ROS RM365–RM1,078, plus display, FB/IG, streaming and video production add-ons.",
+  "description": "2026 airtime + digital rate card (Star RFM Sdn Bhd, effective 1 Jan 2026). Mon–Fri spot buy by time zone (e.g. 6–10am RM1,890), weekend spots, ROS national/central/northern, premium loading (+50% to +250%), studio/scripting/VO fees, display banners (CPM RM40–120), social posts RM6k–30k, FB Live, streaming pre/mid/end-roll and podcast sponsorship.",
+  "validity": "Effective 1 Jan 2026; festive 13 Jan–17 Feb 2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/988-fm-2026-radio-digital.webp",
+  "medium": "Radio",
+  "source_pages": 4,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "2026 airtime + digital rate card (Star RFM Sdn Bhd, effective 1 Jan 2026). Mon–Fri spot buy by time zone (e.g. 6–10am RM1,890), weekend spots, ROS national/central/northern, premium loading (+50% to +250%), studio/scripting/VO fees, display banners (CPM RM40–120), social posts RM6k–30k, FB Live, streaming pre/mid/end-roll and podcast sponsorship."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Spot RM100–1890"
+          },
+          {
+            "title": "ROS RM365–1078"
+          },
+          {
+            "title": "Social RM6000–30000"
+          },
+          {
+            "title": "Studio RM1050/hr"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "30s spot buy"
+          },
+          {
+            "title": "ROS"
+          },
+          {
+            "title": "Display banners"
+          },
+          {
+            "title": "FB/IG posts"
+          },
+          {
+            "title": "FB Live"
+          },
+          {
+            "title": "Streaming audio"
+          },
+          {
+            "title": "Podcast sponsorship"
+          },
+          {
+            "title": "Video production"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "star-media-group-988-fm",
+      "name": "988 FM",
+      "owner": "star-media-group",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/988-fm-2026-radio-digital.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "run-of-station-ros-rate",
+          "title": "Run of Station (ROS) rate",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "ROS Central - Mon-Sun - casual",
+              "unit": "30s spot",
+              "price": 485,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Regional buy; 35 spots per week (30s & 60s only). Region/period column alignment inferred from the three-region header.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "ROS Central - Mon-Sun - festive",
+              "unit": "30s spot",
+              "price": 534,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; Regional buy; 35 spots per week (30s & 60s only). Column alignment inferred.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "ROS National - Mon-Fri - casual",
+              "unit": "30s spot",
+              "price": 980,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Minimum 25 spots over 5 consecutive days (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "ROS National - Mon-Fri - festive",
+              "unit": "30s spot",
+              "price": 1078,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 25 spots over 5 consecutive days (6am-12am). Column alignment inferred.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "ROS National - Mon-Sun - casual",
+              "unit": "30s spot",
+              "price": 845,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Minimum 35 spots over 7 consecutive days (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "ROS National - Mon-Sun - festive",
+              "unit": "30s spot",
+              "price": 930,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 35 spots over 7 consecutive days (6am-12am). Column alignment inferred.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "ROS National - Sat-Sun - casual",
+              "unit": "30s spot",
+              "price": 475,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Minimum 30 spots over 2 consecutive days for 3 weeks (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "ROS National - Sat-Sun - festive",
+              "unit": "30s spot",
+              "price": 523,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 30 spots over 2 consecutive days for 3 weeks (6am-12am). Column alignment inferred.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "ROS Northern - Mon-Sun - casual",
+              "unit": "30s spot",
+              "price": 365,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Regional buy; 35 spots per week (30s & 60s only). Region/period column alignment inferred from the three-region header.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "ROS Northern - Mon-Sun - festive",
+              "unit": "30s spot",
+              "price": 402,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; Regional buy; 35 spots per week (30s & 60s only). Column alignment inferred.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "spot-buy-weekday-mon-fri",
+          "title": "Spot buy — weekday (Mon-Fri)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Weekday 1.00am-6.00am spot - casual",
+              "unit": "30s spot",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Weekday 1.00am-6.00am spot - festive",
+              "unit": "30s spot",
+              "price": 110,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekday 1.00pm-4.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 790,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekday 1.00pm-4.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 869,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekday 10.00am-12.30pm spot - casual",
+              "unit": "30s spot",
+              "price": 780,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Weekday 10.00am-12.30pm spot - festive",
+              "unit": "30s spot",
+              "price": 858,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Weekday 12.30pm-1.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 420,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Weekday 12.30pm-1.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 462,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Weekday 4.00pm-8.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 1330,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Weekday 4.00pm-8.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 1463,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Weekday 6.00am-10.00am spot - casual",
+              "unit": "30s spot",
+              "price": 1890,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Weekday 6.00am-10.00am spot - festive",
+              "unit": "30s spot",
+              "price": 2079,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Weekday 8.00pm-1.00am spot - casual",
+              "unit": "30s spot",
+              "price": 500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Weekday 8.00pm-1.00am spot - festive",
+              "unit": "30s spot",
+              "price": 550,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 13
+            }
+          ]
+        },
+        {
+          "key": "spot-buy-weekend-sat-sun",
+          "title": "Spot buy — weekend (Sat & Sun)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Weekend 1.00am-6.00am spot - casual",
+              "unit": "30s spot",
+              "price": 115,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Weekend 1.00am-6.00am spot - festive",
+              "unit": "30s spot",
+              "price": 127,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Weekend 1.00pm-4.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 430,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Weekend 1.00pm-4.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 473,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Weekend 10.00am-1.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 480,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Weekend 10.00am-1.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 528,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Weekend 4.00pm-8.00pm spot - casual",
+              "unit": "30s spot",
+              "price": 400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Weekend 4.00pm-8.00pm spot - festive",
+              "unit": "30s spot",
+              "price": 440,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Weekend 6.00am-10.00am spot - casual",
+              "unit": "30s spot",
+              "price": 450,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Weekend 6.00am-10.00am spot - festive",
+              "unit": "30s spot",
+              "price": 495,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Weekend 8.00pm-1.00am spot - casual",
+              "unit": "30s spot",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Weekend 8.00pm-1.00am spot - festive",
+              "unit": "30s spot",
+              "price": 330,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "is_package": false,
+              "sort_order": 11
+            }
+          ]
+        },
+        {
+          "key": "production-cost",
+          "title": "Production cost",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Scripting fee",
+              "unit": "per script",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Studio fee",
+              "unit": "per hour",
+              "price": 1050,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Re-recording fee is 50% of studio & VO fee.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "VO fee, over 15s",
+              "unit": "per second",
+              "price": 20,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM600 for a 30s VO.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "VO fee, under 15s",
+              "unit": "flat rate",
+              "price": 300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "digital-rate-card-social-media-instagram",
+          "title": "Digital rate card — Social media (Instagram)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Additional boosting - 1,000 engagement",
+              "unit": "boosting package",
+              "price": 600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Source prints 600 twice (for engagement and possibly a second metric); one rate extracted.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Additional boosting - 10,000 reach / 10,000 views",
+              "unit": "boosting package",
+              "price": 100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Rate line reads '100 -10,000 Reach -10,000 Views'.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Live Video",
+              "unit": "post",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Multiple Visual Post (Album)",
+              "unit": "post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Single Visual Post",
+              "unit": "post",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Story Post",
+              "unit": "post",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Video Post - Instagram TV (No Production)",
+              "unit": "post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "digital-rate-card-display",
+          "title": "Digital rate card — Display",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "App Screen Overlay",
+              "unit": "CPM",
+              "price": 75,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "CPM rate; production fee RM1,000.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "App Screen Overlay - production fee",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee shown alongside the banner rate.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Hero Slider Banner (Homepage & App)",
+              "unit": "week",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee RM1,000; marked *packaged with station sponsorship.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Hero Slider Banner (Homepage & App) - production fee",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee shown alongside the banner rate.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Leaderboard Banner (ROS)",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "CPM rate; production fee RM1,000.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Leaderboard Banner (ROS) - production fee",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee shown alongside the banner rate.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Medium Rectangular Banner (ROS)",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "CPM rate; production fee RM1,000.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Medium Rectangular Banner (ROS) - production fee",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee shown alongside the banner rate.",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Website Screen Overlay",
+              "unit": "CPM",
+              "price": 120,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "CPM rate; production fee RM1,000; marked *packaged with station sponsorship.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Website Screen Overlay - production fee",
+              "unit": "per creative",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Production fee shown alongside the banner rate.",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "digital-rate-card-social-media-facebook",
+          "title": "Digital rate card — Social media (Facebook)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Branded Article Post (+1 FB Post link to website)",
+              "unit": "post",
+              "price": 13000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "FB & IG Story Post (Link Click)",
+              "unit": "post",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Facebook Event Page",
+              "unit": "post",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Infographic Visual Post",
+              "unit": "post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Live Video (Facebook & YouTube)",
+              "unit": "post",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Subject to video content direction.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Multiple Visual Post (Album - Max. 6)",
+              "unit": "post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Pinned Post",
+              "unit": "day",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Subject to availability.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Single Visual Post",
+              "unit": "post",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Video + Production Cost & upload to YouTube",
+              "unit": "post",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Subject to video content direction.",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Video Copyright Buyout Fee",
+              "unit": "buyout",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Video Post (No Production)",
+              "unit": "post",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 10
+            }
+          ]
+        },
+        {
+          "key": "digital-rate-card-social-media-facebook-live",
+          "title": "Digital rate card — Social media (Facebook Live)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Ads Running Bar (+client logo appearance)",
+              "unit": "week",
+              "price": 3500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "End-Roll (15s video)",
+              "unit": "week",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Live Read",
+              "unit": "week",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Mid-Roll (15s video)",
+              "unit": "week",
+              "price": 9000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Pre-Roll (15s video)",
+              "unit": "week",
+              "price": 7000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "website-promotional-pages",
+          "title": "Website promotional pages",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Contest Form",
+              "unit": "per form",
+              "price": 1000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Likely the production fee column; column assignment not visible in text.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Inside Page (Multi Tabs)",
+              "unit": "week",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Table has rate/week and production-fee columns; the text does not show which column each number sits in.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "others",
+          "title": "Others",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "EDM (e-Direct Email)",
+              "unit": "per pax",
+              "price": 2,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Rate printed as 'RM2/per pax'.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "online-streaming",
+          "title": "Online streaming",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "End-Roll (Podcast)",
+              "unit": "CPM",
+              "price": 40,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Mid-Roll",
+              "unit": "CPM",
+              "price": 45,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Podcast Sponsorship (Intro & Outro)",
+              "unit": "episode/month",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Per episode for 1 month.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Pre-Roll",
+              "unit": "CPM",
+              "price": 60,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": null,
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "video-production",
+          "title": "Video production",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "star-media-group-988-fm"
+          ],
+          "items": [
+            {
+              "item": "Idea, scripting & storyboard (max. 2 changes)",
+              "unit": "per project",
+              "price": 1500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Listed separately under video production.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Video production package - Central",
+              "unit": "production package",
+              "price": 10500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Video production package - North",
+              "unit": "production package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Video production package - South",
+              "unit": "production package",
+              "price": 7500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

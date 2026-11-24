@@ -1,0 +1,263 @@
+{
+  "slug": "ra-media-relations-live-tv-talkshow-2026-2027",
+  "owner": "ra-media-relations",
+  "title": "RA Media Live TV Talkshow 2026/27 — TV3, TV9 & TV AlHijrah",
+  "summary": "Live interview and VT integrations: MHI from RM18k, WHI from RM25k, NLKO RM8k, TV AlHijrah RM9k–10k.",
+  "description": "RA Media Relations live TV talkshow rate card for 2026/27. TV3 Media Prima: Malaysia Hari Ini (MHI, Mon–Fri 10am) live interview 6 min RM25,000 (RM27,000 with 8% SST), 3 min RM18,000 (RM19,440), VT 3 min RM18,000 (RM19,440). Wanita Hari Ini (WHI, Mon–Sat 12pm) live 6 min RM38,000 (RM41,040), 3 min RM25,000 (RM27,000), VT 3 min RM25,000 (RM27,000), host mention 30 sec RM5,000 (RM5,400). TV9 Nasi Lemak Kopi O (NLKO, Wed–Fri 10:30am) live 6 min RM8,000 (RM8,640). TV AlHijrah Assalamualaikum weekend (Fri–Sun) RM9,000 (RM9,720), weekdays (Mon–Thu) RM10,000 (RM10,800). VT placements require LPF submission; rates may be revised during Ramadan and Raya.",
+  "validity": "2026/2027; Ramadan and Raya rates may differ",
+  "terms": null,
+  "hero": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 1,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "RA Media Relations live TV talkshow rate card for 2026/27. TV3 Media Prima: Malaysia Hari Ini (MHI, Mon–Fri 10am) live interview 6 min RM25,000 (RM27,000 with 8% SST), 3 min RM18,000 (RM19,440), VT 3 min RM18,000 (RM19,440). Wanita Hari Ini (WHI, Mon–Sat 12pm) live 6 min RM38,000 (RM41,040), 3 min RM25,000 (RM27,000), VT 3 min RM25,000 (RM27,000), host mention 30 sec RM5,000 (RM5,400). TV9 Nasi Lemak Kopi O (NLKO, Wed–Fri 10:30am) live 6 min RM8,000 (RM8,640). TV AlHijrah Assalamualaikum weekend (Fri–Sun) RM9,000 (RM9,720), weekdays (Mon–Thu) RM10,000 (RM10,800). VT placements require LPF submission; rates may be revised during Ramadan and Raya."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "MHI 3-min RM18k / 6-min RM25k"
+          },
+          {
+            "title": "WHI 3-min RM25k / 6-min RM38k"
+          },
+          {
+            "title": "NLKO 6-min RM8k"
+          },
+          {
+            "title": "TV AlHijrah RM9k–10k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Live interview"
+          },
+          {
+            "title": "Video tape (VT)"
+          },
+          {
+            "title": "Host mention"
+          },
+          {
+            "title": "Programme integration"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-tv3",
+      "name": "TV3",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv3-media-prima",
+          "title": "TV3 — Media Prima",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "TV3 Malaysia Hari Ini (MHI) - live interview",
+              "unit": "6 minutes",
+              "price": 25000,
+              "price_incl_sst": 27000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "TV3 Malaysia Hari Ini (MHI) - live interview",
+              "unit": "3 minutes",
+              "price": 18000,
+              "price_incl_sst": 19440,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "TV3 Malaysia Hari Ini (MHI) - video tape (VT)",
+              "unit": "3 minutes",
+              "price": 18000,
+              "price_incl_sst": 19440,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "TV3 Wanita Hari Ini (WHI) - host mention",
+              "unit": "30 seconds",
+              "price": 5000,
+              "price_incl_sst": 5400,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "TV3 Wanita Hari Ini (WHI) - live interview",
+              "unit": "6 minutes",
+              "price": 38000,
+              "price_incl_sst": 41040,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "TV3 Wanita Hari Ini (WHI) - live interview",
+              "unit": "3 minutes",
+              "price": 25000,
+              "price_incl_sst": 27000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "TV3 Wanita Hari Ini (WHI) - video tape (VT)",
+              "unit": "3 minutes",
+              "price": 25000,
+              "price_incl_sst": 27000,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "media-prima-tv9",
+      "name": "TV9",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv9-media-prima",
+          "title": "TV9 — Media Prima",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv9"
+          ],
+          "items": [
+            {
+              "item": "TV9 Nasi Lemak Kopi O (NLKO) - live interview",
+              "unit": "6 minutes",
+              "price": 8000,
+              "price_incl_sst": 8640,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "al-hijrah-tv-al-hijrah",
+      "name": "TV AlHijrah",
+      "owner": "al-hijrah",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "tv-alhijrah",
+          "title": "TV AlHijrah",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "al-hijrah-tv-al-hijrah"
+          ],
+          "items": [
+            {
+              "item": "TV AlHijrah Assalamualaikum - weekdays (Mon-Thu)",
+              "unit": "slot",
+              "price": 10000,
+              "price_incl_sst": 10800,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "TV AlHijrah Assalamualaikum - weekend (Fri-Sun)",
+              "unit": "slot",
+              "price": 9000,
+              "price_incl_sst": 9720,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ra-media-relations-group",
+      "name": "RA Media Group",
+      "owner": "ra-media-relations",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ra-media-relations-live-tv-talkshow-2026-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    }
+  ],
+  "shared_sections": []
+}

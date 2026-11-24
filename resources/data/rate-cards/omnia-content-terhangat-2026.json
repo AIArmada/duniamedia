@@ -1,0 +1,2834 @@
+{
+  "slug": "omnia-content-terhangat-2026",
+  "owner": "media-prima",
+  "title": "Media Prima Omnia Content Terhangat 2026 — TV Campaign Planner",
+  "summary": "Bronze RM200k (3 mo) to Platinum RM800k (12 mo): TV3/8TV spots, Melodi/WHI, drama and news integration.",
+  "description": "Content Terhangat brochure (24 pages). Four tiers: 200/350/500/800k for 3/6/9/12 months + event bonus RM20–160k. Includes TV3 or 8TV 15s spots, social video posts, Muzik Muzik/Melodi/WHI integration, night/morning drama sponsorship (13 eps), Buletin/news coverage. Excludes 8% SST, tailored by industry (beauty, F&B etc.).",
+  "validity": "2026 planner",
+  "terms": null,
+  "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+  "medium": "TV & Broadcast",
+  "source_pages": 24,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Content Terhangat brochure (24 pages). Four tiers: 200/350/500/800k for 3/6/9/12 months + event bonus RM20–160k. Includes TV3 or 8TV 15s spots, social video posts, Muzik Muzik/Melodi/WHI integration, night/morning drama sponsorship (13 eps), Buletin/news coverage. Excludes 8% SST, tailored by industry (beauty, F&B etc.)."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM200k/3mo"
+          },
+          {
+            "title": "RM350k/6mo"
+          },
+          {
+            "title": "RM500k/9mo"
+          },
+          {
+            "title": "RM800k/12mo"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "TV3/8TV 15s spots"
+          },
+          {
+            "title": "Social video"
+          },
+          {
+            "title": "Melodi/WHI/Muzik integration"
+          },
+          {
+            "title": "Drama sponsorship"
+          },
+          {
+            "title": "News coverage"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-tv3",
+      "name": "TV3",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "content-terhangat-menu-inventory-entitlements-3",
+          "title": "Content Terhangat menu — inventory entitlements",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "TV3 Afternoon Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 260000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "TV3 Afternoon Movie Sponsorship",
+              "unit": "8-episode sponsorship",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "TV3 Buletin 1.30 News Coverage (Mon-Thur)",
+              "unit": "2-min news coverage",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "TV3 Buletin Pagi News Coverage",
+              "unit": "2-min news coverage",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "TV3 Buletin Utama News Coverage + Digital",
+              "unit": "2-min news coverage",
+              "price": 75000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "TV3 Cartoon Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 105000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "TV3 Cookery Sponsorship",
+              "unit": "4-episode sponsorship",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "TV3 Helo Doktor Interview",
+              "unit": "6-min interview",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "TV3 MHI Interview",
+              "unit": "6-min interview",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "TV3 Mbuzz Integration",
+              "unit": "2-min integration",
+              "price": 55000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "TV3 Melodi (Live + Rpt) Integration",
+              "unit": "6-min integration",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "TV3 Money Matters / Women Talk Interview",
+              "unit": "6-min interview",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "TV3 Morning Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 12
+            },
+            {
+              "item": "TV3 Muzik Integration",
+              "unit": "2-min integration",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "TV3 Night Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 350000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 14
+            },
+            {
+              "item": "TV3 Nightline News Coverage",
+              "unit": "2-min news coverage",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "TV3 Prime Movie Sponsorship",
+              "unit": "8-episode sponsorship",
+              "price": 160000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 16
+            },
+            {
+              "item": "TV3 ROS (Mon - Sun, 9am - 12am) - 25 spots",
+              "unit": "15s ROS spot",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 25; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "TV3 Social Post - TikTok, IG & FB (mirrored)",
+              "unit": "social post (30-60s)",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "TV3 WHI Interview",
+              "unit": "6-min interview",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 19
+            }
+          ]
+        },
+        {
+          "key": "tv3-talkshow",
+          "title": "TV3 talkshow",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "Malaysia Hari Ini (Mon-Fri, 10.00am-11.00am)",
+              "unit": "6-min talkshow",
+              "price": 125000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Wanita Hari Ini (Mon-Fri, 12.00pm-1.00pm)",
+              "unit": "6-min talkshow",
+              "price": 380000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "tv3-spot-packages",
+          "title": "TV3 spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "TV3 Bronze package",
+              "unit": "package",
+              "price": 278000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 25 spots/week; 150 total spots; RM1,738 per spot; 10 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "TV3 Gold package",
+              "unit": "package",
+              "price": 609000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 30 spots/week; 360 total spots; RM1,562 per spot; 30 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "TV3 Platinum package",
+              "unit": "package",
+              "price": 955000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 40 spots/week; 640 total spots; RM1,384 per spot; 50 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "TV3 Silver package",
+              "unit": "package",
+              "price": 410000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 25 spots/week; 225 total spots; RM1,673 per spot; 20 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "digital-news-coverage-2",
+          "title": "Digital news coverage",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv3"
+          ],
+          "items": [
+            {
+              "item": "TV3 Digital Lite - Buletin TV3 coverage",
+              "unit": "digital news package",
+              "price": 39000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "media-prima-tv9",
+      "name": "TV9",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "content-terhangat-menu-inventory-entitlements-4",
+          "title": "Content Terhangat menu — inventory entitlements",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv9"
+          ],
+          "items": [
+            {
+              "item": "TV9 Afternoon Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 50000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "TV9 Afternoon Movie Sponsorship",
+              "unit": "8-episode sponsorship",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "TV9 Berita TV9 News Coverage",
+              "unit": "2-min news coverage",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "TV9 Cartoon Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "TV9 NLKO Interview (Live + Rpt)",
+              "unit": "6-min interview",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 2; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "TV9 Night Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "TV9 Prime Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "TV9 Prime Movie Sponsorship",
+              "unit": "8-episode sponsorship",
+              "price": 80000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "TV9 ROS (Mon - Sun, 9am - 12am) - 25 spots",
+              "unit": "15s ROS spot",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 25; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "TV9 Social Post - TikTok, IG & FB (mirrored)",
+              "unit": "social post (30-60s)",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 9
+            }
+          ]
+        },
+        {
+          "key": "digital-news-coverage-3",
+          "title": "Digital news coverage",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-tv9"
+          ],
+          "items": [
+            {
+              "item": "TV9 Digital Lite - Buletin TV9 coverage",
+              "unit": "digital news package",
+              "price": 17000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 10,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "media-prima-8tv",
+      "name": "8TV",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "content-terhangat-menu-inventory-entitlements",
+          "title": "Content Terhangat menu — inventory entitlements",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-8tv"
+          ],
+          "items": [
+            {
+              "item": "8 e-News Integration",
+              "unit": "2-min integration",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "8TV Afternoon Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "8TV Living Delight Interview",
+              "unit": "6-min interview",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "8TV Midday Mandarin News Coverage",
+              "unit": "2-min news coverage",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "8TV Money Matters / Shall We Talk Interview",
+              "unit": "6-min interview",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "8TV Morning Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "8TV Morning Express News Coverage",
+              "unit": "2-min news coverage",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "8TV Night Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 130000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 7
+            },
+            {
+              "item": "8TV Prime Drama Sponsorship",
+              "unit": "13-episode sponsorship",
+              "price": 300000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": true,
+              "sort_order": 8
+            },
+            {
+              "item": "8TV Prime Mandarin News Coverage",
+              "unit": "2-min news coverage",
+              "price": 25000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "8TV ROS (Mon - Sun, 9am - 12am) - 30 spots",
+              "unit": "15s ROS spot",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 30; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "8TV ROS (Mon - Sun, 9am - 12am) - 7 spots",
+              "unit": "15s ROS spot",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 7; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "8TV Social Post - TikTok, IG & FB (mirrored)",
+              "unit": "social post (30-60s)",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "is_package": false,
+              "sort_order": 12
+            }
+          ]
+        },
+        {
+          "key": "8tv-spot-packages",
+          "title": "8TV spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-8tv"
+          ],
+          "items": [
+            {
+              "item": "8TV Bronze package",
+              "unit": "package",
+              "price": 115000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 30 spots/week; 180 total spots; RM605 per spot; 10 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "8TV Gold package",
+              "unit": "package",
+              "price": 230000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 35 spots/week; 420 total spots; RM511 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "8TV Platinum package",
+              "unit": "package",
+              "price": 340000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 45 spots/week; 720 total spots; RM442 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "8TV Silver package",
+              "unit": "package",
+              "price": 165000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 30 spots/week; 270 total spots; RM569 per spot; 20 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "8tv-talkshow",
+          "title": "8TV talkshow",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-8tv"
+          ],
+          "items": [
+            {
+              "item": "Living Delight (Mon-Fri, 5.30pm-6.30pm)",
+              "unit": "6-min talkshow",
+              "price": 90000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "digital-news-coverage",
+          "title": "Digital news coverage",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-8tv"
+          ],
+          "items": [
+            {
+              "item": "8TV Digital Lite - 8TV Mandarin News coverage",
+              "unit": "digital news package",
+              "price": 17000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 10,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "media-prima-ntv7",
+      "name": "ntv7",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    },
+    {
+      "slug": "media-prima-omnia-group",
+      "name": "Media Prima Omnia Group",
+      "owner": "media-prima",
+      "medium": "TV & Broadcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/omnia-content-terhangat-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "campaign-planner-packages",
+          "title": "Campaign Planner packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Campaign Planner 200 (Bronze)",
+              "unit": "package",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3-month campaign; RM20,000 event bonus media value; total ADvantage value RM220,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Campaign Planner 350 (Silver)",
+              "unit": "package",
+              "price": 350000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6-month campaign; RM42,000 event bonus media value; total ADvantage value RM392,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Campaign Planner 500 (Gold)",
+              "unit": "package",
+              "price": 500000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9-month campaign; RM70,000 event bonus media value; total ADvantage value RM570,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Campaign Planner 800 (Platinum)",
+              "unit": "package",
+              "price": 800000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12-month campaign; RM160,000 event bonus media value; total ADvantage value RM960,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "advantage-campaign-planner-menu-digital",
+          "title": "ADvantage Campaign Planner menu — Digital",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Chinese Network Spotlight Article (3 platforms)",
+              "unit": "article",
+              "price": 54500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "30,000 total reads; network named in item. p.20 shows RM52,500 for the equivalent 2026 package.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "English Network Spotlight Article (3 platforms)",
+              "unit": "article",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "FB & IG Posting - 2 posts mirrored (6,000 engagements)",
+              "unit": "post pair",
+              "price": 8100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "FB Posting - 1 post (5,000 engagements)",
+              "unit": "post",
+              "price": 6000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "IG Posting - 1 post (5,000 engagements)",
+              "unit": "post",
+              "price": 6500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Malay Network Spotlight Article (5 platforms)",
+              "unit": "article",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "News Network Spotlight Article (4 platforms)",
+              "unit": "article",
+              "price": 65000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Spotlight Article - 1 article (25,000 reads)",
+              "unit": "article",
+              "price": 31500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "is_package": false,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "advantage-campaign-planner-menu-outdoor-digital",
+          "title": "ADvantage Campaign Planner menu — Outdoor digital",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "CuBig @ Bangsar",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "CuBig @ Federal Highway",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "CuBig @ Jalan Damansara",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "CuBig @ Jalan Sultan Ismail",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "CuBig @ KL-Seremban",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "CuBig @ LDP",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "CuBig @ MRR II",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "CuBig @ Sunway",
+              "unit": "2-week site",
+              "price": 8850,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 weeks; 2,880 total spots.",
+              "is_package": false,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "relaxing-entertainment-channel-for-mass-malay-spot-packages",
+          "title": "Relaxing entertainment channel for mass Malay — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "26 weeks; 25 spots/week; 650 total spots; RM147 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Platinum package",
+              "unit": "package",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "52 weeks; 40 spots/week; 2080 total spots; RM94 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "edutainment-channel-for-all-malaysians-spot-packages",
+          "title": "Edutainment channel for all Malaysians — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "26 weeks; 25 spots/week; 650 total spots; RM147 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Platinum package",
+              "unit": "package",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "52 weeks; 40 spots/week; 2080 total spots; RM94 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "be-heard-on-malaysia-s-hottest-stations-spot-packages",
+          "title": "Be heard on Malaysia's hottest stations — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (30s spots)",
+              "unit": "package",
+              "price": 47000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "3 weeks; 35 spots/week; 105 total spots; RM420 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (30s spots)",
+              "unit": "package",
+              "price": 142000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "9 weeks; 49 spots/week; 441 total spots; RM307 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package (30s spots)",
+              "unit": "package",
+              "price": 189000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "12 weeks; 56 spots/week; 672 total spots; RM270 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver package (30s spots)",
+              "unit": "package",
+              "price": 94500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "6 weeks; 42 spots/week; 252 total spots; RM355 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "semasa-sosial-muzik-yang-familiar-spot-packages",
+          "title": "Semasa, sosial & muzik yang familiar — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (30s spots)",
+              "unit": "package",
+              "price": 14000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "3 weeks; 35 spots/week; 105 total spots; RM125 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (30s spots)",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "9 weeks; 49 spots/week; 441 total spots; RM91 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package (30s spots)",
+              "unit": "package",
+              "price": 56000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "12 weeks; 56 spots/week; 672 total spots; RM80 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver package (30s spots)",
+              "unit": "package",
+              "price": 28000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "6 weeks; 42 spots/week; 252 total spots; RM105 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "gu-pantai-timur-spot-packages",
+          "title": "Gu Pantai Timur — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (30s spots)",
+              "unit": "package",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 weeks; 35 spots/week; 105 total spots; RM89 per spot; 7 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (30s spots)",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 49 spots/week; 441 total spots; RM65 per spot; 21 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package (30s spots)",
+              "unit": "package",
+              "price": 40000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 56 spots/week; 672 total spots; RM57 per spot; 28 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver package (30s spots)",
+              "unit": "package",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 42 spots/week; 252 total spots; RM75 per spot; 14 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "malaysia-s-flyest-music-all-day-spot-packages",
+          "title": "Malaysia's flyest music all day — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (30s spots)",
+              "unit": "package",
+              "price": 21000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 weeks; 35 spots/week; 105 total spots; RM188 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (30s spots)",
+              "unit": "package",
+              "price": 63000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 49 spots/week; 441 total spots; RM136 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package (30s spots)",
+              "unit": "package",
+              "price": 84000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 56 spots/week; 672 total spots; RM120 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver package (30s spots)",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 42 spots/week; 252 total spots; RM158 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "our-voices-8-fm-spot-packages",
+          "title": "Our Voices / 8 FM — spot packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (30s spots)",
+              "unit": "package",
+              "price": 21000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 weeks; 35 spots/week; 105 total spots; RM188 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (30s spots)",
+              "unit": "package",
+              "price": 63000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 49 spots/week; 441 total spots; RM136 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package (30s spots)",
+              "unit": "package",
+              "price": 84000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 56 spots/week; 672 total spots; RM120 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver package (30s spots)",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 42 spots/week; 252 total spots; RM158 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "malay-digital-social-media",
+          "title": "Malay digital social media",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - Facebook",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Instagram",
+              "unit": "package",
+              "price": 32500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - Facebook",
+              "unit": "package",
+              "price": 57000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Instagram",
+              "unit": "package",
+              "price": 63600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Silver package - Facebook",
+              "unit": "package",
+              "price": 43200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Silver package - Instagram",
+              "unit": "package",
+              "price": 47200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "english-digital-social-media",
+          "title": "English digital social media",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - Facebook",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Instagram",
+              "unit": "package",
+              "price": 32500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - Facebook",
+              "unit": "package",
+              "price": 57000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Instagram",
+              "unit": "package",
+              "price": 63600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Silver package - Facebook",
+              "unit": "package",
+              "price": 43200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Silver package - Instagram",
+              "unit": "package",
+              "price": 47200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "chinese-digital-social-media",
+          "title": "Chinese digital social media",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - Facebook",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Instagram",
+              "unit": "package",
+              "price": 32500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - Facebook",
+              "unit": "package",
+              "price": 57000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Instagram",
+              "unit": "package",
+              "price": 63600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Silver package - Facebook",
+              "unit": "package",
+              "price": 43200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Silver package - Instagram",
+              "unit": "package",
+              "price": 47200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        },
+        {
+          "key": "malay-digital-display-banners",
+          "title": "Malay digital display banners",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - MREC",
+              "unit": "package",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Outstream Video",
+              "unit": "package",
+              "price": 62100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - MREC",
+              "unit": "package",
+              "price": 125400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Outstream Video",
+              "unit": "package",
+              "price": 132000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Platinum package - MREC",
+              "unit": "package",
+              "price": 195200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Platinum package - Outstream Video",
+              "unit": "package",
+              "price": 207200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Silver package - MREC",
+              "unit": "package",
+              "price": 81000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Silver package - Outstream Video",
+              "unit": "package",
+              "price": 83700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "english-digital-display-banners",
+          "title": "English digital display banners",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - MREC",
+              "unit": "package",
+              "price": 60000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Outstream Video",
+              "unit": "package",
+              "price": 62100,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - MREC",
+              "unit": "package",
+              "price": 125400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Outstream Video",
+              "unit": "package",
+              "price": 132000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Platinum package - MREC",
+              "unit": "package",
+              "price": 195200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Platinum package - Outstream Video",
+              "unit": "package",
+              "price": 207200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Silver package - MREC",
+              "unit": "package",
+              "price": 81000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Silver package - Outstream Video",
+              "unit": "package",
+              "price": 83700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "chinese-digital-display-banners",
+          "title": "Chinese digital display banners",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package - MREC",
+              "unit": "package",
+              "price": 41400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 150,000 impressions/week; 900,000 total impressions; 45,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Bronze package - Outstream Video",
+              "unit": "package",
+              "price": 43500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "6 weeks; 150,000 impressions/week; 900,000 total impressions; 45,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package - MREC",
+              "unit": "package",
+              "price": 85800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 200,000 impressions/week; 2,400,000 total impressions; 120,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Gold package - Outstream Video",
+              "unit": "package",
+              "price": 89400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 weeks; 200,000 impressions/week; 2,400,000 total impressions; 120,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Platinum package - MREC",
+              "unit": "package",
+              "price": 120800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 250,000 impressions/week; 4,000,000 total impressions; 200,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Platinum package - Outstream Video",
+              "unit": "package",
+              "price": 129600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "16 weeks; 250,000 impressions/week; 4,000,000 total impressions; 200,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Silver package - MREC",
+              "unit": "package",
+              "price": 54000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 150,000 impressions/week; 1,350,000 total impressions; 67,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 6
+            },
+            {
+              "item": "Silver package - Outstream Video",
+              "unit": "package",
+              "price": 56700,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "9 weeks; 150,000 impressions/week; 1,350,000 total impressions; 67,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 7
+            }
+          ]
+        },
+        {
+          "key": "malay-digital-social-media-fb-ig",
+          "title": "Malay digital social media FB + IG",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (FB + IG)",
+              "unit": "package",
+              "price": 40500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (FB + IG)",
+              "unit": "package",
+              "price": 78000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Silver package (FB + IG)",
+              "unit": "package",
+              "price": 58000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "english-digital-social-media-fb-ig",
+          "title": "English digital social media FB + IG",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (FB + IG)",
+              "unit": "package",
+              "price": 40500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (FB + IG)",
+              "unit": "package",
+              "price": 78000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Silver package (FB + IG)",
+              "unit": "package",
+              "price": 58000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "chinese-digital-social-media-fb-ig",
+          "title": "Chinese digital social media FB + IG",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package (FB + IG)",
+              "unit": "package",
+              "price": 40500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package (FB + IG)",
+              "unit": "package",
+              "price": 78000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Silver package (FB + IG)",
+              "unit": "package",
+              "price": 58000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "digital-spotlight-article",
+          "title": "Digital spotlight article",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze spotlight package",
+              "unit": "package",
+              "price": 31500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 article; 25,000 reads per article; 20,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold spotlight package",
+              "unit": "package",
+              "price": 70000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "4 articles; 25,000 reads per article; event bonus impressions not shown on page; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum spotlight package",
+              "unit": "package",
+              "price": 176000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8 articles; 25,000 reads per article; 120,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver spotlight package",
+              "unit": "package",
+              "price": 56500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "2 articles; 25,000 reads per article; 40,000 event bonus impressions; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "network-digital-spotlight",
+          "title": "Network digital spotlight",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Chinese Network Spotlight Article (3 platforms)",
+              "unit": "article",
+              "price": 52500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 article; 30,000 total reads; 40,000 event bonus impressions; excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "English Network Spotlight Article (3 platforms)",
+              "unit": "article",
+              "price": 63000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 article; 35,700 total reads; 45,000 event bonus impressions; excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Malay Network Spotlight Article (5 platforms)",
+              "unit": "article",
+              "price": 63000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 article; 35,700 total reads; 40,000 event bonus impressions; excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "News Network Spotlight Article (4 platforms)",
+              "unit": "article",
+              "price": 63000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 article; 35,700 total reads; 45,000 event bonus impressions; excludes 8% SST.",
+              "is_package": false,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "out-of-home-main-market",
+          "title": "Out-of-home — Main Market",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; Free Standing @ Main Market Centre; 10ft x 40ft; 5 units; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 108000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; Overhead Panel; Various; 5 units; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Silver package",
+              "unit": "package",
+              "price": 84000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; Mini Pole; 30ft X 20ft; 5 units; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "out-of-home-transit",
+          "title": "Out-of-home — Transit",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package",
+              "unit": "package",
+              "price": 45000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; Vertical Lightboxes @ Transit and Mall; 6ft x 4ft; 20 units; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 110000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; KLCC Convex Crossing (Vertical Lightboxes @ KLM Stations); 6ft x 4ft; 8 units; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Silver package",
+              "unit": "package",
+              "price": 84000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 months; In-train Panel - KJ; Various; 240 units; excludes 8% SST. 24 units x 10 Kelana Jaya Line trains.",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "out-of-home-digital",
+          "title": "Out-of-home — Digital",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package",
+              "unit": "package",
+              "price": 42000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 month(s); 180 spots/day; 16,200 total spots; 96 event bonus spots; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 155000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "1 month(s); 192 spots/day; 46,080 total spots; 192 event bonus spots; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Platinum package",
+              "unit": "package",
+              "price": 292000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3 month(s); 192 spots/day; 138,240 total spots; 288 event bonus spots; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Silver I package",
+              "unit": "package",
+              "price": 69000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 month(s); 192 spots/day; 23,040 total spots; 96 event bonus spots; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Silver II package",
+              "unit": "package",
+              "price": 69000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "1 month(s); 192 spots/day; 23,040 total spots; 96 event bonus spots; excludes 8% SST.",
+              "is_package": true,
+              "sort_order": 4
+            }
+          ]
+        },
+        {
+          "key": "ad-menu-print-display",
+          "title": "Ad menu — print display",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Advertorial (Full Page) - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 15000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Advertorial (Full Page) - Metro (Colour)",
+              "unit": "insertion",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 1
+            },
+            {
+              "item": "Advertorial (Full Page) - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 12000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 2
+            },
+            {
+              "item": "Creative Single Page - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 12800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 3
+            },
+            {
+              "item": "Creative Single Page - Metro (Colour)",
+              "unit": "insertion",
+              "price": 20000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 4
+            },
+            {
+              "item": "Creative Single Page - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 10400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 5
+            },
+            {
+              "item": "Full Page - Berita Harian (B&W)",
+              "unit": "insertion",
+              "price": 6400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 6
+            },
+            {
+              "item": "Full Page - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 9600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 7
+            },
+            {
+              "item": "Full Page - Metro (B&W)",
+              "unit": "insertion",
+              "price": 10000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 8
+            },
+            {
+              "item": "Full Page - Metro (Colour)",
+              "unit": "insertion",
+              "price": 16000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 9
+            },
+            {
+              "item": "Full Page - New Straits Times (B&W)",
+              "unit": "insertion",
+              "price": 5200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 10
+            },
+            {
+              "item": "Full Page - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 11
+            },
+            {
+              "item": "Full Wrap - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 200000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 12
+            },
+            {
+              "item": "Full Wrap - Metro (Colour)",
+              "unit": "insertion",
+              "price": 250000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 13
+            },
+            {
+              "item": "Full Wrap - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 14
+            },
+            {
+              "item": "Half Page - Berita Harian (B&W)",
+              "unit": "insertion",
+              "price": 3200,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 15
+            },
+            {
+              "item": "Half Page - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 4800,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 16
+            },
+            {
+              "item": "Half Page - Metro (B&W)",
+              "unit": "insertion",
+              "price": 5000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 17
+            },
+            {
+              "item": "Half Page - Metro (Colour)",
+              "unit": "insertion",
+              "price": 8000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 18
+            },
+            {
+              "item": "Half Page - New Straits Times (B&W)",
+              "unit": "insertion",
+              "price": 2600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 19
+            },
+            {
+              "item": "Half Page - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 20
+            },
+            {
+              "item": "Half Wrap - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 120000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 21
+            },
+            {
+              "item": "Half Wrap - Metro (Colour)",
+              "unit": "insertion",
+              "price": 150000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 22
+            },
+            {
+              "item": "Half Wrap - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 100000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 23
+            },
+            {
+              "item": "Quarter Page - Berita Harian (B&W)",
+              "unit": "insertion",
+              "price": 1600,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 24
+            },
+            {
+              "item": "Quarter Page - Berita Harian (Colour)",
+              "unit": "insertion",
+              "price": 2400,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 25
+            },
+            {
+              "item": "Quarter Page - Metro (B&W)",
+              "unit": "insertion",
+              "price": 2500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 26
+            },
+            {
+              "item": "Quarter Page - Metro (Colour)",
+              "unit": "insertion",
+              "price": 4000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 27
+            },
+            {
+              "item": "Quarter Page - New Straits Times (B&W)",
+              "unit": "insertion",
+              "price": 1300,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 28
+            },
+            {
+              "item": "Quarter Page - New Straits Times (Colour)",
+              "unit": "insertion",
+              "price": 2000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": false,
+              "sort_order": 29
+            }
+          ]
+        },
+        {
+          "key": "print-packages",
+          "title": "Print packages",
+          "intro": null,
+          "medium": "TV & Broadcast",
+          "channels": [
+            "media-prima-omnia-group"
+          ],
+          "items": [
+            {
+              "item": "Bronze package",
+              "unit": "package",
+              "price": 52500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM2,500 added value; RM55,000 total value; RM5,000 event bonus; RM60,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Diamond package",
+              "unit": "package",
+              "price": 367500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM17,500 added value; RM385,000 total value; RM100,000 event bonus; RM485,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Gold package",
+              "unit": "package",
+              "price": 157500,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM7,500 added value; RM165,000 total value; RM25,000 event bonus; RM190,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Platinum package",
+              "unit": "package",
+              "price": 210000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM10,000 added value; RM220,000 total value; RM50,000 event bonus; RM270,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Silver package",
+              "unit": "package",
+              "price": 105000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM5,000 added value; RM110,000 total value; RM12,500 event bonus; RM122,500 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Starter package",
+              "unit": "package",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "RM1,500 added value; RM31,500 total value; RM2,500 event bonus; RM34,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "is_package": true,
+              "sort_order": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": [
+    {
+      "key": "content-terhangat-menu-inventory-entitlements-2",
+      "title": "Content Terhangat menu — inventory entitlements",
+      "intro": null,
+      "medium": "TV & Broadcast",
+      "channels": [
+        "media-prima-tv3",
+        "media-prima-tv9"
+      ],
+      "items": [
+        {
+          "item": "TV3 + TV9 Tanyalah Ustaz Interview",
+          "unit": "6-min interview",
+          "price": 25000,
+          "price_incl_sst": null,
+          "price_basis": "printed",
+          "confidence": "high",
+          "notes": "TV3 + TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+          "is_package": false,
+          "sort_order": 0
+        }
+      ]
+    }
+  ]
+}

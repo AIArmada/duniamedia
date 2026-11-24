@@ -1,0 +1,103 @@
+{
+  "slug": "mobile-truck-activation-life-events",
+  "owner": "ra-media-relations",
+  "title": "3D Mobile Truck Activation + Life Events",
+  "summary": "Raptor truck + driver + 2 promoters: RM18k/2 hr or RM24k/5 hr with sampling/photo ops.",
+  "description": "Activation proposal (6 pages). 3D head-turning creative, flexible stops (malls, bazaars, campuses), coffee/sampling, brochure/photo ops. Excludes venue licence/parking. Same T&Cs as bus: SST, DBP approval, 4–6 week artwork, 100% prepayment to RA Media Relations.",
+  "validity": "Per activation",
+  "terms": null,
+  "hero": "assets/ratecards/img/mobile-truck-activation-life-events.webp",
+  "medium": "Outdoor",
+  "source_pages": 6,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Activation proposal (6 pages). 3D head-turning creative, flexible stops (malls, bazaars, campuses), coffee/sampling, brochure/photo ops. Excludes venue licence/parking. Same T&Cs as bus: SST, DBP approval, 4–6 week artwork, 100% prepayment to RA Media Relations."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM18k/2hr"
+          },
+          {
+            "title": "RM24k/5hr"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "3D truck"
+          },
+          {
+            "title": "Promoters"
+          },
+          {
+            "title": "Sampling"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "ra-media-relations-ra-media-raptor-truck",
+      "name": "RA Media (Raptor Truck)",
+      "owner": "ra-media-relations",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/mobile-truck-activation-life-events.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "package-option",
+          "title": "Package Option",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "ra-media-relations-ra-media-raptor-truck"
+          ],
+          "items": [
+            {
+              "item": "Option 1 - 5 Hour Activation",
+              "unit": "package",
+              "price": 24000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "3D Raptor truck with driver (5 hrs) + 2 promoters for activation; excludes licence fee for place and truck parking; price subject to prevailing statutory taxes",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Option 2 - 2 Hour Activation",
+              "unit": "package",
+              "price": 18000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "3D Raptor truck with driver (2 hrs) + 2 promoters for activation; excludes licence fee for place and truck parking; price subject to prevailing statutory taxes",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

@@ -51,8 +51,11 @@ class QuoteBuilder extends Component
                 $this->objective = (string) $plan->getMetadataValue('objective', '');
                 $this->message = (string) $plan->getMetadataValue('brief', '');
                 $this->selected = $plans->summary($plan)['items']
-                    ->map(fn ($item): ?string => $item->attributes->get('product_id'))
+                    ->map(fn ($item): ?string => $item->associatedModel instanceof Product
+                        ? $item->associatedModel->id
+                        : $item->attributes->get('product_id'))
                     ->filter()
+                    ->unique()
                     ->values()
                     ->all();
             }
@@ -78,9 +81,9 @@ class QuoteBuilder extends Component
 
     public function submit(): void
     {
-        $this->validate([
-            'selected' => 'required|array|min:1',
-            'selected.*' => 'string|distinct|exists:products,id',
+        $plan = $this->planInstance !== null ? app(PlanService::class)->find($this->planInstance) : null;
+
+        $rules = [
             'name' => 'required|string|max:120',
             'email' => 'required|email|max:255',
             'phone' => 'nullable|string|max:40',
@@ -89,30 +92,63 @@ class QuoteBuilder extends Component
             'message' => 'nullable|string|max:3000',
             'consent' => 'accepted',
             'website' => 'max:0',
-        ]);
+        ];
 
-        $presents = app(PresentsMedia::class);
-        $offerings = Product::query()->whereIn('id', $this->selected)->get(['id', 'name']);
-
-        if ($offerings->count() !== count($this->selected) || ! $offerings->every(fn (Product $offering): bool => $presents->contains($offering->id))) {
-            $this->addError('selected', 'Please select valid media.');
-
-            return;
+        if ($plan === null) {
+            $rules['selected'] = 'required|array|min:1';
+            $rules['selected.*'] = 'string|distinct|exists:products,id';
         }
 
-        $plan = $this->planInstance !== null ? app(PlanService::class)->find($this->planInstance) : null;
-
-        $pricing = app(PricesMedia::class);
+        $this->validate($rules);
 
         $sellerId = app(ResolvesParties::class)->idForSlug('ra-media-relations')
             ?? throw new \RuntimeException('The seller party is not configured.');
 
-        $lines = $offerings->map(fn (Product $offering): array => [
-            'product_id' => $offering->id,
-            'name' => $offering->name,
-            'unit_code' => $pricing->unitCode($offering->id),
-            'unit_price' => $pricing->unitPriceMinor($offering->id) / 100,
-        ])->all();
+        if ($plan !== null) {
+            $lines = app(PlanService::class)->summary($plan)['items']
+                ->map(function ($item): array {
+                    $productId = $item->associatedModel instanceof Product
+                        ? $item->associatedModel->id
+                        : (string) ($item->attributes->get('product_id') ?? $item->id);
+
+                    return [
+                        'product_id' => $productId,
+                        'name' => $item->name,
+                        'unit_code' => $item->attributes->get('unit') ?? $item->attributes->get('unit_code'),
+                        'unit_price' => $item->price / 100,
+                        'quantity' => max(1, (int) $item->quantity),
+                        'rate_entry_id' => $item->attributes->get('rate_entry_id'),
+                    ];
+                })
+                ->filter(fn (array $line): bool => Product::query()->whereKey($line['product_id'])->exists())
+                ->values()
+                ->all();
+
+            if ($lines === []) {
+                $this->addError('selected', 'Your plan has no valid media lines.');
+
+                return;
+            }
+        } else {
+            $presents = app(PresentsMedia::class);
+            $offerings = Product::query()->whereIn('id', $this->selected)->get(['id', 'name']);
+
+            if ($offerings->count() !== count($this->selected) || ! $offerings->every(fn (Product $offering): bool => $presents->contains($offering->id))) {
+                $this->addError('selected', 'Please select valid media.');
+
+                return;
+            }
+
+            $pricing = app(PricesMedia::class);
+
+            $lines = $offerings->map(fn (Product $offering): array => [
+                'product_id' => $offering->id,
+                'name' => $offering->name,
+                'unit_code' => $pricing->unitCode($offering->id),
+                'unit_price' => $pricing->unitPriceMinor($offering->id) / 100,
+                'quantity' => 1,
+            ])->all();
+        }
 
         $allowed = ['Creative production', 'Landing page & CRM', 'AI video production', 'Campaign analytics', 'Influencer activation'];
 

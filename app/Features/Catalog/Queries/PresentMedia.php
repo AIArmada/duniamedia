@@ -8,7 +8,9 @@ use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Api\MediaOfferView;
 use App\Features\Catalog\Api\PresentsMedia;
 use App\Features\Catalog\Models\MediaProfile;
+use App\Features\Catalog\Models\RateCardAsset;
 use App\Features\Catalog\Support\MediaOffer;
+use App\Features\Catalog\Support\RateCardPresenter;
 use App\Features\Identity\Api\PartySummary;
 use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Database\Eloquent\Builder;
@@ -181,6 +183,63 @@ final readonly class PresentMedia implements PresentsMedia
         return $this->baseQuery()->orderBy('name')->pluck('name', 'id')->all();
     }
 
+    public function rateSections(string $productId): array
+    {
+        return RateCardPresenter::forProduct($productId);
+    }
+
+    public function channels(string $productId): array
+    {
+        $profile = MediaProfile::query()->where('product_id', $productId)->first();
+
+        if ($profile === null) {
+            return [];
+        }
+
+        return $profile->channels()
+            ->orderBy('sort_order')
+            ->get()
+            ->map(fn ($channel): array => [
+                'slug' => $channel->slug,
+                'name' => $channel->name,
+                'medium' => $channel->medium,
+                'hero' => $channel->hero_path,
+            ])
+            ->all();
+    }
+
+    public function assets(string $productId): array
+    {
+        return RateCardAsset::query()
+            ->where('product_id', $productId)
+            ->orderBy('sort_order')
+            ->get()
+            ->map(fn (RateCardAsset $asset): array => [
+                'path' => $asset->path,
+                'alt' => $asset->alt,
+                'caption' => $asset->caption,
+                'kind' => $asset->kind,
+            ])
+            ->all();
+    }
+
+    public function contentBlocks(string $productId): array
+    {
+        $profile = MediaProfile::query()->where('product_id', $productId)->first();
+
+        if ($profile === null) {
+            return [];
+        }
+
+        return $profile->contentBlocks()
+            ->get()
+            ->map(fn ($block): array => [
+                'type' => $block->type,
+                'payload' => $block->payload ?? [],
+            ])
+            ->all();
+    }
+
     /**
      * @param  array<string, PartySummary>  $sellers
      */
@@ -188,6 +247,8 @@ final readonly class PresentMedia implements PresentsMedia
     {
         $media = new MediaOffer($product);
         $profile = $product->mediaProfile;
+        $specifications = is_array($profile?->specifications) ? $profile->specifications : [];
+        unset($specifications['documents'], $specifications['source_file']);
         $ownerId = $profile?->media_owner_party_id;
         $seller = $ownerId !== null
             ? ($sellers[$ownerId] ?? $this->parties->byIds($ownerId)[0] ?? null)
@@ -212,8 +273,7 @@ final readonly class PresentMedia implements PresentsMedia
             sellerName: $seller?->displayName,
             sellerId: $ownerId,
             imageUrl: $media->displayImage(),
-            specifications: is_array($profile?->specifications) ? $profile->specifications : [],
-            documents: $media->documents(),
+            specifications: $specifications,
             unitCode: $profile?->unit_code,
         );
     }

@@ -1,0 +1,75 @@
+{
+  "slug": "imedia-blitz-sale-2026",
+  "owner": "specialist-media",
+  "title": "iMedia Year-End Blitz Sale 2026 — Article / Social / Video Packs",
+  "summary": "Allowed promo sheet only: 5 articles RM60k, 5 social RM50k, 5 videos RM75k (50% sale).",
+  "description": "Year-End Sale 2026 promo sheet, hosted in this app. 5x Article Blitz RM60k (value RM295k, 60k reads, 600k reach with FB/IG/X sync); 5x Social Blitz RM50k (value RM220k, 750k reach, shoots included); 5x Video Blitz RM75k (value RM400k, 500k views, event coverage). Synced across BM/CHI/ENG publishers.",
+  "validity": "Blitz YES 2026 sale",
+  "terms": null,
+  "hero": "assets/ratecards/img/imedia-blitz-sale-2026.webp",
+  "medium": "Digital",
+  "source_pages": 0,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Year-End Sale 2026 promo sheet, hosted in this app. 5x Article Blitz RM60k (value RM295k, 60k reads, 600k reach with FB/IG/X sync); 5x Social Blitz RM50k (value RM220k, 750k reach, shoots included); 5x Video Blitz RM75k (value RM400k, 500k views, event coverage). Synced across BM/CHI/ENG publishers."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Articles 5x RM60k"
+          },
+          {
+            "title": "Social 5x RM50k"
+          },
+          {
+            "title": "Video 5x RM75k"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Articles"
+          },
+          {
+            "title": "Social postings"
+          },
+          {
+            "title": "Event videos"
+          },
+          {
+            "title": "Photoshoot"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "specialist-media-imedia",
+      "name": "iMedia",
+      "owner": "specialist-media",
+      "medium": "Digital",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/imedia-blitz-sale-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": []
+    }
+  ],
+  "shared_sections": []
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "podcast-utama-buletin-tv3",
+  "owner": "tv3",
+  "title": "Podcast Utama x Buletin TV3 — Video Podcast",
+  "summary": "Debut Dec 2024, 181k views, 13:11 avg; packages RM69k–RM147k with Buletin YouTube (2.1M subs).",
+  "description": "Podcast Utama deck (18 pages). 39 min avg daily podcast listening, 9.5M social fans, 323.6M video views, B40/M40/T40 split. Extension of Buletin TV3: relaxed in-depth conversations, previous eps 24–118k views. Packages + FAQs/timeline, 2.1M YouTube subs (+10.5%).",
+  "validity": "From Dec 2024",
+  "terms": null,
+  "hero": "assets/ratecards/img/podcast-utama-buletin-tv3.webp",
+  "medium": "Podcast",
+  "source_pages": 18,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "Podcast Utama deck (18 pages). 39 min avg daily podcast listening, 9.5M social fans, 323.6M video views, B40/M40/T40 split. Extension of Buletin TV3: relaxed in-depth conversations, previous eps 24–118k views. Packages + FAQs/timeline, 2.1M YouTube subs (+10.5%)."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "RM69,660–147,420"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Video podcast"
+          },
+          {
+            "title": "YouTube"
+          },
+          {
+            "title": "Social clips"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "media-prima-podcast-utama",
+      "name": "Podcast Utama",
+      "owner": "media-prima",
+      "medium": "Podcast",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/podcast-utama-buletin-tv3.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "package-a",
+          "title": "Package A",
+          "intro": null,
+          "medium": "Podcast",
+          "channels": [
+            "media-prima-podcast-utama"
+          ],
+          "items": [
+            {
+              "item": "Package A (TV + digital + print entitlements)",
+              "unit": "package",
+              "price": 69660,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Only the TOTAL line is legible; item-level entitlements and prices are garbled by the PDF font encoding / OCR.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "package-b",
+          "title": "Package B",
+          "intro": null,
+          "medium": "Podcast",
+          "channels": [
+            "media-prima-podcast-utama"
+          ],
+          "items": [
+            {
+              "item": "Package B (TV + digital + print entitlements)",
+              "unit": "package",
+              "price": 147420,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "low",
+              "notes": "Only the TOTAL line is legible; item-level entitlements and prices are garbled by the PDF font encoding / OCR.",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

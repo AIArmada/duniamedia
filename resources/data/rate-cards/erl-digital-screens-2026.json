@@ -1,0 +1,111 @@
+{
+  "slug": "erl-digital-screens-2026",
+  "owner": "klia",
+  "title": "ERL Digital Screens 2026 — KLIA Ekspres Station & In-Train Network",
+  "summary": "Station coverage network RM35k/mo per spot (32 totems); in-train network RM30k/mo per spot (190 screens across 16 trains).",
+  "description": "ERL KLIA Ekspres and KLIA Transit digital network (10 + 9 pages). Quick facts: 6 stations, 18 trains, 57km of track, 7.5M annual ridership, 5am–12am service every 15–30 minutes, 28–38 minutes end to end. Station Coverage Network: 32 x 65-inch digital totems at KL Sentral (18), Putrajaya/Cyberjaya (4), KLIA T1 (6) and KLIA T2 (4); 15-second spots; maximum 8 advertisers; RM35,000 per spot per month. In-Train Network: 190 x 26/27-inch digital screens across 16 trains; 15-second spots; maximum 8 advertisers; RM30,000 per spot per month. Rates exclude 8% SST.",
+  "validity": "2026",
+  "terms": null,
+  "hero": "assets/ratecards/img/erl-digital-screens-2026.webp",
+  "medium": "Outdoor",
+  "source_pages": 19,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "ERL KLIA Ekspres and KLIA Transit digital network (10 + 9 pages). Quick facts: 6 stations, 18 trains, 57km of track, 7.5M annual ridership, 5am–12am service every 15–30 minutes, 28–38 minutes end to end. Station Coverage Network: 32 x 65-inch digital totems at KL Sentral (18), Putrajaya/Cyberjaya (4), KLIA T1 (6) and KLIA T2 (4); 15-second spots; maximum 8 advertisers; RM35,000 per spot per month. In-Train Network: 190 x 26/27-inch digital screens across 16 trains; 15-second spots; maximum 8 advertisers; RM30,000 per spot per month. Rates exclude 8% SST."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Station coverage RM35,000/mo per spot"
+          },
+          {
+            "title": "In-train network RM30,000/mo per spot"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "65-inch station digital totems"
+          },
+          {
+            "title": "26/27-inch in-train screens"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "klia-erl",
+      "name": "ERL",
+      "owner": "klia",
+      "medium": "Outdoor",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/erl-digital-screens-2026.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "erl-in-train-network",
+          "title": "ERL in-train network",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-erl"
+          ],
+          "items": [
+            {
+              "item": "In-train digital screen network - monthly display charge",
+              "unit": "spot/month",
+              "price": 30000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "190 screens / 16 trains (26\" & 27\"); 15s per spot; maximum 8 advertisers; KLIA Ekspres & KLIA Transit trains; 8% SST applies (inclusive price not printed).",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "erl-ekspres-and-transit-stations",
+          "title": "ERL Ekspres and Transit Stations",
+          "intro": null,
+          "medium": "Outdoor",
+          "channels": [
+            "klia-erl"
+          ],
+          "items": [
+            {
+              "item": "ERL Station Coverage Network (32 digital totems)",
+              "unit": "month",
+              "price": 35000,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "65\" digital totem, 32 units: KL Sentral 18, Putrajaya/Cyberjaya 4, KLIA T1 6, KLIA T2 4; 15 sec per spot; max 8 advertisers; monthly display charge per spot; 8% SST payable by advertiser",
+              "is_package": false,
+              "sort_order": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

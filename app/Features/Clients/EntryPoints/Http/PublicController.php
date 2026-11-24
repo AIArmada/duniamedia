@@ -63,8 +63,14 @@ class PublicController extends Controller
 
         abort_if($media === null, 404);
 
-        return view('pages.media-detail', [
+        $view = view()->exists('pages.offers.'.$slug) ? 'pages.offers.'.$slug : 'pages.media-detail';
+
+        return view($view, [
             'media' => $media,
+            'sections' => $presents->rateSections($media->id),
+            'channels' => $presents->channels($media->id),
+            'assets' => $presents->assets($media->id),
+            'blocks' => $presents->contentBlocks($media->id),
             'similar' => collect($presents->similar($media->id, 3, $media->medium === null ? null : [$media->medium])),
             'pageTitle' => $media->name.' — Media Opportunity | Dunia Media',
             'metaDescription' => Str::limit(strip_tags((string) $media->summary), 155),

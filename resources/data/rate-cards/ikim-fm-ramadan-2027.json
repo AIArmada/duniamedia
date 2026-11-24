@@ -1,0 +1,473 @@
+{
+  "slug": "ikim-fm-ramadan-2027",
+  "owner": "ikimfm",
+  "title": "IKIMfm Ramadan 2027 — Sponsorship & Jingle Packages",
+  "summary": "Ramadan 2027: azan and waktu-solat sponsorships from RM2,199, jingle packs RM25k–RM33k, capsules from RM2,634, drama RM27.5k.",
+  "description": "IKIMfm Pakej Istimewa Ramadan 2027 (11 pages). Azan sponsorship: Subuh RM11,768.81, Zohor RM8,404.57, Asar RM11,768.81, Isyak RM5,100.62 (Maghrib booked). Waktu-solat announcements: Subuh RM2,199.42, Zohor and Asar RM5,910.94, Isyak RM7,304.78. Berbuka Puasa RM17,653.21 and Imsak RM8,404.57. Pre-Maghrib jingle RM18,439.19 for the first 10 advertisers. Jingle packs: Basic RM25,078 (90 ROS spots plus 60 bonus, 2 social posts, 1 jingle) and Advance RM33,437 (150 ROS spots plus 90 bonus, 3 social posts, 2 jingles). Capsules: Tafsir al-Quran RM2,633.85, Elak Pembaziran RM7,714.38, 40 Hadis RM4,847.02, Fadhilat Ramadan RM6,419.35. Programme sponsorships: Lembayung al-Quran RM22,974.84, Tazkirah Ramadan RM19,759.95, Tazkirah Maghrib RM13,013.20, Nur Ramadan RM8,954.07, Fadhilat Ramadan English RM25,135.87 and Malay RM36,037.74, Diari Ramadan RM10,054.35. Drama Ramadan RM27,540; Takbir Raya RM5,670; Takbir production and broadcast RM25,000–35,000.",
+  "validity": "Ramadan 2027",
+  "terms": null,
+  "hero": "assets/ratecards/img/ikim-fm-ramadan-2027.webp",
+  "medium": "Radio",
+  "source_pages": 11,
+  "stats": [],
+  "blocks": [
+    {
+      "type": "rich_text",
+      "payload": {
+        "title": "Overview",
+        "body": "IKIMfm Pakej Istimewa Ramadan 2027 (11 pages). Azan sponsorship: Subuh RM11,768.81, Zohor RM8,404.57, Asar RM11,768.81, Isyak RM5,100.62 (Maghrib booked). Waktu-solat announcements: Subuh RM2,199.42, Zohor and Asar RM5,910.94, Isyak RM7,304.78. Berbuka Puasa RM17,653.21 and Imsak RM8,404.57. Pre-Maghrib jingle RM18,439.19 for the first 10 advertisers. Jingle packs: Basic RM25,078 (90 ROS spots plus 60 bonus, 2 social posts, 1 jingle) and Advance RM33,437 (150 ROS spots plus 90 bonus, 3 social posts, 2 jingles). Capsules: Tafsir al-Quran RM2,633.85, Elak Pembaziran RM7,714.38, 40 Hadis RM4,847.02, Fadhilat Ramadan RM6,419.35. Programme sponsorships: Lembayung al-Quran RM22,974.84, Tazkirah Ramadan RM19,759.95, Tazkirah Maghrib RM13,013.20, Nur Ramadan RM8,954.07, Fadhilat Ramadan English RM25,135.87 and Malay RM36,037.74, Diari Ramadan RM10,054.35. Drama Ramadan RM27,540; Takbir Raya RM5,670; Takbir production and broadcast RM25,000–35,000."
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Rate tiers",
+        "items": [
+          {
+            "title": "Waktu solat from RM2,199.42"
+          },
+          {
+            "title": "Jingle Basic RM25,078"
+          },
+          {
+            "title": "Jingle Advance RM33,437"
+          },
+          {
+            "title": "Drama RM27,540"
+          }
+        ]
+      }
+    },
+    {
+      "type": "feature_list",
+      "payload": {
+        "title": "Typical formats",
+        "items": [
+          {
+            "title": "Azan sponsorship"
+          },
+          {
+            "title": "Waktu solat announcement"
+          },
+          {
+            "title": "Jingle package"
+          },
+          {
+            "title": "Ramadan capsule"
+          },
+          {
+            "title": "Programme sponsorship"
+          },
+          {
+            "title": "Drama"
+          },
+          {
+            "title": "Takbir Raya"
+          }
+        ]
+      }
+    }
+  ],
+  "channels": [
+    {
+      "slug": "ikimfm-ikimfm",
+      "name": "IKIMfm",
+      "owner": "ikimfm",
+      "medium": "Radio",
+      "description": null,
+      "audience": null,
+      "hero": "assets/ratecards/img/ikim-fm-ramadan-2027.webp",
+      "stats": [],
+      "blocks": [],
+      "assets": [],
+      "sections": [
+        {
+          "key": "azan-ikimfm-ramadan-2027",
+          "title": "Azan (IKIMfm, Ramadan 2027)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Azan Asar sponsorship",
+              "unit": "package (29 hari)",
+              "price": 11768.81,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Azan Isyak sponsorship",
+              "unit": "package (29 hari)",
+              "price": 5100.62,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Azan Subuh sponsorship",
+              "unit": "package (29 hari)",
+              "price": 11768.81,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Azan Zohor sponsorship",
+              "unit": "package (29 hari)",
+              "price": 8404.57,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "pengumuman-waktu-solat",
+          "title": "Pengumuman Waktu Solat",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Pengumuman waktu solat — Asar",
+              "unit": "package (29 hari)",
+              "price": 7304.78,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari; waktu 3:30 ptg – 4:00 ptg",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Pengumuman waktu solat — Subuh",
+              "unit": "package (29 hari)",
+              "price": 2199.42,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari; waktu 4:30 pg – 5:00 pg",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Pengumuman waktu solat — Zohor",
+              "unit": "package (29 hari)",
+              "price": 5910.94,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari; waktu 12:00 tgh hari – 12:30 tgh hari",
+              "is_package": true,
+              "sort_order": 2
+            }
+          ]
+        },
+        {
+          "key": "pengumuman-waktu-berbuka-puasa-imsak",
+          "title": "Pengumuman Waktu Berbuka Puasa & Imsak",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Pengumuman imsak",
+              "unit": "package (29 hari)",
+              "price": 8404.57,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "10:45 mlm & 4:00 pg sepanjang Ramadan; 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Pengumuman waktu berbuka puasa",
+              "unit": "package (29 hari)",
+              "price": 17653.21,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "5:00 ptg sepanjang Ramadan; 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "spot-iklan-jingle-sebelum-azan-maghrib",
+          "title": "Spot Iklan Jingle Sebelum Azan Maghrib",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Jingle 30 saat sebelum azan Maghrib (10 pelanggan terawal)",
+              "unit": "package (29 hari)",
+              "price": 18439.19,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Jingle 30 saat, 10 minit sebelum azan, 29 hari; terhad kepada 10 pelanggan",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "pakej-iklan-jingle-ramadan-2027",
+          "title": "Pakej Iklan Jingle Ramadan 2027",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Pakej Jingle Ramadan — ADVANCE (sebelum & sepanjang Ramadan)",
+              "unit": "package",
+              "price": 33437.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "4x Run of Station (ROS) 5x sehari x 6 hari x 4 = 150 spot (24 hari); percuma 3x ROS 90 spot (18 hari) + 3x hantaran media sosial + 2x produksi jingle",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Pakej Jingle Ramadan — BASIC (sepanjang Ramadan)",
+              "unit": "package",
+              "price": 25078.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "3x Run of Station (ROS) 5x sehari x 6 hari x 3 = 90 spot (18 hari); percuma 2x ROS 60 spot (12 hari) + 2x hantaran media sosial + 1x produksi jingle",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        },
+        {
+          "key": "kapsul-khas-ramadan-2027-2-minit",
+          "title": "Kapsul Khas Ramadan 2027 (2 minit)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Kapsul Khas Ramadan — 40 Hadis Alam Sekitar (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 4847.02,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 1:00 ptg - 4:00 ptg & 8:00 mlm - 11:00 mlm (sepanjang Ramadan); 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Elak Pembaziran Makanan (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 7714.38,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 10:00 pg - 1:00 ptg & 7:00 mlm - 8:00 mlm (sepanjang Ramadan); 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Fadhilat Ramadan (Bahasa Arab) (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 6419.35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 3:00 ptg setiap Sabtu & Ahad (sepanjang Ramadan); 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Tafsir al-Quran (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 2633.85,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 1:45 ptg - 1:50 ptg (setiap hari sepanjang Ramadan, kecuali Jumaat); 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 3
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Diari Ramadan (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 10054.35,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 6:20 pg & 8:20 pg; 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 4
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Fadhilat Ramadan Bahasa Melayu (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 36037.74,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 7:55 pg, 6:55 ptg & 1:00 pg; 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 5
+            },
+            {
+              "item": "Kapsul Khas Ramadan — Fadhilat Ramadan English (2 minit)",
+              "unit": "package (2 minit)",
+              "price": 25135.87,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 6:55 pg, 4:55 ptg & 2:00 ptg; 15 second opening & closing; tag on spot 30 saat (jingle) x 29 hari",
+              "is_package": true,
+              "sort_order": 6
+            }
+          ]
+        },
+        {
+          "key": "tazkirah-ramadan-10-15-minit",
+          "title": "Tazkirah Ramadan (10-15 minit)",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Lembayung al-Quran sponsorship",
+              "unit": "package",
+              "price": 22974.84,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 6:30 pg - 6:45 pg & 8:00 mlm - 8.15 mlm, Isnin - Jumaat",
+              "is_package": true,
+              "sort_order": 0
+            },
+            {
+              "item": "Nur Ramadan sponsorship",
+              "unit": "package",
+              "price": 8954.07,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 11:00 mlm, Sabtu & Ahad",
+              "is_package": true,
+              "sort_order": 1
+            },
+            {
+              "item": "Tazkirah Maghrib sponsorship",
+              "unit": "package",
+              "price": 13013.2,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 7:35 mlm, Isnin - Jumaat",
+              "is_package": true,
+              "sort_order": 2
+            },
+            {
+              "item": "Tazkirah Ramadan sponsorship",
+              "unit": "package",
+              "price": 19759.95,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "medium",
+              "notes": "Slot 1:25 tgh hari & 5.00 pg, sepanjang Ramadan kecuali Jumaat",
+              "is_package": true,
+              "sort_order": 3
+            }
+          ]
+        },
+        {
+          "key": "drama-khas-ramadan-ikimfm",
+          "title": "Drama Khas Ramadan IKIMfm",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Drama Khas Ramadan — 20 episod",
+              "unit": "package (20 episod)",
+              "price": 27540.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "Slot 4:10 ptg – 4:25 ptg (ulangan 11:00 mlm); intro & outro 15 saat; tag on spot sebelum & selepas rancangan; brand mention; pendedahan media sosial; penyertaan sebagai pelakon tambahan",
+              "is_package": true,
+              "sort_order": 0
+            }
+          ]
+        },
+        {
+          "key": "takbir-raya-aidilfitri",
+          "title": "Takbir Raya Aidilfitri",
+          "intro": null,
+          "medium": "Radio",
+          "channels": [
+            "ikimfm-ikimfm"
+          ],
+          "items": [
+            {
+              "item": "Produksi & siaran Takbir Raya",
+              "unit": "production",
+              "price": null,
+              "price_incl_sst": null,
+              "price_basis": "range",
+              "confidence": "medium",
+              "notes": "Range RM25,000–35,000; rakaman, suntingan, siaran di IKIMHUB",
+              "is_package": false,
+              "sort_order": 0
+            },
+            {
+              "item": "Takbir Raya Aidilfitri di IKIMfm — 12 kali",
+              "unit": "package (12 siaran)",
+              "price": 5670.0,
+              "price_incl_sst": null,
+              "price_basis": "printed",
+              "confidence": "high",
+              "notes": "8:00 mlm – 8:00 pg, 12 kali",
+              "is_package": true,
+              "sort_order": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_sections": []
+}

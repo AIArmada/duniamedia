@@ -1,0 +1,159 @@
+{
+  "rtm-tv-radio-2025": {
+    "channels": [
+      {"slug": "rtm-tv1", "name": "TV1", "owner": "rtm", "medium": "TV & Broadcast", "match": ["TV1", "TV 1"]},
+      {"slug": "rtm-tv2", "name": "TV2", "owner": "rtm", "medium": "TV & Broadcast", "match": ["TV2", "TV 2"]},
+      {"slug": "rtm-okey", "name": "OKEY", "owner": "rtm", "medium": "TV & Broadcast", "match": ["OKEY", "TV OKEY"]},
+      {"slug": "rtm-nasional-fm", "name": "Nasional FM", "owner": "rtm", "medium": "Radio", "match": ["Nasional FM"]},
+      {"slug": "rtm-klasik-fm", "name": "Klasik FM", "owner": "rtm", "medium": "Radio", "match": ["Klasik FM", "Klasik"]},
+      {"slug": "rtm-traxx-fm", "name": "TraXX FM", "owner": "rtm", "medium": "Radio", "match": ["TraXX", "Traxx"]},
+      {"slug": "rtm-ai-fm", "name": "Ai FM", "owner": "rtm", "medium": "Radio", "match": ["Ai FM", "AI FM"]},
+      {"slug": "rtm-minnal-fm", "name": "Minnal FM", "owner": "rtm", "medium": "Radio", "match": ["Minnal"]},
+      {"slug": "rtm-asyik-fm", "name": "Asyik FM", "owner": "rtm", "medium": "Radio", "match": ["Asyik"]},
+      {"slug": "rtm-klik", "name": "RTMKlik", "owner": "rtm", "medium": "Digital", "match": ["RTMKlik", "RTM Klik"]}
+    ],
+    "fallback": {"slug": "rtm-group", "name": "RTM Group Packages", "owner": "rtm", "medium": "TV & Broadcast"}
+  },
+  "ra-media-relations-news-slot-2026-2027": {
+    "channels": [
+      {"slug": "media-prima-tv3", "name": "TV3", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["TV3"]},
+      {"slug": "astro-astro-awani", "name": "Astro AWANI", "owner": "astro", "medium": "TV & Broadcast", "match": ["AWANI", "Astro Awani"]},
+      {"slug": "rtm-tv1", "name": "TV1", "owner": "rtm", "medium": "TV & Broadcast", "match": ["TV1"]},
+      {"slug": "al-hijrah-tv-al-hijrah", "name": "TV AlHijrah", "owner": "al-hijrah", "medium": "TV & Broadcast", "match": ["AL HIJRAH", "AlHijrah", "ALHIJRAH"]},
+      {"slug": "tvs-tvs", "name": "TVS", "owner": "tvs", "medium": "TV & Broadcast", "match": ["TVS"]}
+    ],
+    "fallback": {"slug": "ra-media-relations-group", "name": "RA Media Group", "owner": "ra-media-relations", "medium": "TV & Broadcast"}
+  },
+  "ra-media-relations-live-tv-talkshow-2026-2027": {
+    "channels": [
+      {"slug": "media-prima-tv3", "name": "TV3", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["TV3"]},
+      {"slug": "media-prima-tv9", "name": "TV9", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["TV9"]},
+      {"slug": "al-hijrah-tv-al-hijrah", "name": "TV AlHijrah", "owner": "al-hijrah", "medium": "TV & Broadcast", "match": ["AL HIJRAH", "AlHijrah", "ALHIJRAH"]}
+    ],
+    "fallback": {"slug": "ra-media-relations-group", "name": "RA Media Group", "owner": "ra-media-relations", "medium": "TV & Broadcast"}
+  },
+  "sinar-karangkraf-ratecard-2025-2026": {
+    "channels": [
+      {"slug": "karangkraf-sinar-harian", "name": "Sinar Harian", "owner": "karangkraf", "medium": "Print", "match": ["Sinar Harian"]},
+      {"slug": "karangkraf-sinarplus", "name": "SinarPlus", "owner": "karangkraf", "medium": "Print", "match": ["SinarPlus", "Sinar Plus"]},
+      {"slug": "karangkraf-sinar-bestari", "name": "Sinar Bestari", "owner": "karangkraf", "medium": "Print", "match": ["Sinar Bestari", "Bestari"]},
+      {"slug": "karangkraf-sinar-daily", "name": "Sinar Daily", "owner": "karangkraf", "medium": "Digital", "match": ["Sinar Daily", "SinarDaily"]},
+      {"slug": "karangkraf-ideaktif", "name": "IdeAktif", "owner": "karangkraf", "medium": "Print", "match": ["IdeAktif", "Ideaktif"]}
+    ],
+    "fallback": {"slug": "karangkraf-group", "name": "Sinar Karangkraf Group", "owner": "karangkraf", "medium": "Print"}
+  },
+  "media-prima-audio-trade-show-2025": {
+    "channels": [
+      {"slug": "media-prima-hot-fm", "name": "Hot FM", "owner": "media-prima", "medium": "Radio", "match": ["Hot FM", "HOT FM"]},
+      {"slug": "media-prima-kool-fm", "name": "Kool FM", "owner": "media-prima", "medium": "Radio", "match": ["Kool FM"]},
+      {"slug": "media-prima-molek-fm", "name": "Molek FM", "owner": "media-prima", "medium": "Radio", "match": ["Molek FM"]},
+      {"slug": "media-prima-fly-fm", "name": "Fly FM", "owner": "media-prima", "medium": "Radio", "match": ["Fly FM"]},
+      {"slug": "media-prima-eight-fm", "name": "Eight FM", "owner": "media-prima", "medium": "Radio", "match": ["Eight FM", "8FM"]}
+    ],
+    "fallback": {"slug": "media-prima-audio-group", "name": "Media Prima Audio Group", "owner": "media-prima", "medium": "Radio"}
+  },
+  "omnia-content-terhangat-2026": {
+    "channels": [
+      {"slug": "media-prima-tv3", "name": "TV3", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["TV3"]},
+      {"slug": "media-prima-tv9", "name": "TV9", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["TV9"]},
+      {"slug": "media-prima-8tv", "name": "8TV", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["8TV"]},
+      {"slug": "media-prima-ntv7", "name": "ntv7", "owner": "media-prima", "medium": "TV & Broadcast", "match": ["ntv7", "NTV7"]}
+    ],
+    "fallback": {"slug": "media-prima-omnia-group", "name": "Media Prima Omnia Group", "owner": "media-prima", "medium": "TV & Broadcast"}
+  },
+  "astro-upfront-2027": {
+    "channels": [
+      {"slug": "astro-astro-awani", "name": "Astro AWANI", "owner": "astro", "medium": "TV & Broadcast", "match": ["AWANI", "Astro Awani"]},
+      {"slug": "astro-astro-ria", "name": "Astro Ria", "owner": "astro", "medium": "TV & Broadcast", "match": ["Astro Ria"]},
+      {"slug": "astro-astro-prima", "name": "Astro Prima", "owner": "astro", "medium": "TV & Broadcast", "match": ["Astro Prima"]},
+      {"slug": "astro-astro-oasis", "name": "Astro Oasis", "owner": "astro", "medium": "TV & Broadcast", "match": ["Astro Oasis"]},
+      {"slug": "astro-astro-vanavil", "name": "Astro Vanavil", "owner": "astro", "medium": "TV & Broadcast", "match": ["Vanavil"]},
+      {"slug": "astro-astro-tutor-tv", "name": "Astro Tutor TV", "owner": "astro", "medium": "TV & Broadcast", "match": ["Tutor TV"]},
+      {"slug": "astro-era", "name": "ERA", "owner": "astro", "medium": "Radio", "match": ["ERA"]},
+      {"slug": "astro-sinar", "name": "Sinar", "owner": "astro", "medium": "Radio", "match": ["Sinar"]},
+      {"slug": "astro-thr-gegar", "name": "THR Gegar", "owner": "astro", "medium": "Radio", "match": ["Gegar"]},
+      {"slug": "astro-zayan", "name": "Zayan", "owner": "astro", "medium": "Radio", "match": ["Zayan"]},
+      {"slug": "astro-lite-fm", "name": "Lite FM", "owner": "astro", "medium": "Radio", "match": ["Lite FM"]},
+      {"slug": "astro-mix-fm", "name": "Mix FM", "owner": "astro", "medium": "Radio", "match": ["Mix FM"]},
+      {"slug": "astro-hitz-fm", "name": "Hitz FM", "owner": "astro", "medium": "Radio", "match": ["Hitz"]},
+      {"slug": "astro-my-fm", "name": "MY FM", "owner": "astro", "medium": "Radio", "match": ["MY FM"]},
+      {"slug": "astro-melody-fm", "name": "Melody FM", "owner": "astro", "medium": "Radio", "match": ["Melody"]},
+      {"slug": "astro-goxuan", "name": "GoXuan", "owner": "astro", "medium": "Radio", "match": ["GoXuan"]},
+      {"slug": "astro-raaga", "name": "Raaga", "owner": "astro", "medium": "Radio", "match": ["Raaga"]},
+      {"slug": "astro-gempak", "name": "Gempak", "owner": "astro", "medium": "Digital", "match": ["Gempak"]},
+      {"slug": "astro-sooka", "name": "sooka", "owner": "astro", "medium": "Digital", "match": ["sooka"]}
+    ],
+    "fallback": {"slug": "astro-group", "name": "Astro Group Packages", "owner": "astro", "medium": "TV & Broadcast"}
+  },
+  "bernama-media-kit-2026": {
+    "channels": [
+      {"slug": "bernama-tv", "name": "Bernama TV", "owner": "bernama", "medium": "TV & Broadcast", "match": ["Bernama TV", "BTV"]},
+      {"slug": "bernama-radio", "name": "Bernama Radio", "owner": "bernama", "medium": "Radio", "match": ["Bernama Radio", "Radio"]},
+      {"slug": "bernama-com", "name": "Bernama.com", "owner": "bernama", "medium": "Digital", "match": ["BERNAMA.com", "Bernama.com", "Website"]},
+      {"slug": "bernama-wire", "name": "Bernama Wire", "owner": "bernama", "medium": "Digital", "match": ["Wire"]}
+    ],
+    "fallback": {"slug": "bernama-group", "name": "Bernama Group", "owner": "bernama", "medium": "Digital"}
+  },
+  "tvs-sponsorship-spot-buy-2026": {
+    "channels": [
+      {"slug": "tvs-tvs", "name": "TVS", "owner": "tvs", "medium": "TV & Broadcast", "match": ["TVS"]},
+      {"slug": "tvs-miri-billboard", "name": "TVS Miri Billboard", "owner": "tvs", "medium": "Outdoor", "match": ["Miri", "Billboard"]}
+    ],
+    "fallback": {"slug": "tvs-group", "name": "TVS Group", "owner": "tvs", "medium": "TV & Broadcast"}
+  },
+  "klia-t1-airport-2024-premium": {
+    "channels": [
+      {"slug": "klia-terminal-1", "name": "KLIA Terminal 1", "owner": "klia", "medium": "Outdoor"}
+    ]
+  },
+  "klia-t2-airport-2024": {
+    "channels": [
+      {"slug": "klia-terminal-2", "name": "KLIA Terminal 2", "owner": "klia", "medium": "Outdoor"}
+    ]
+  },
+  "kl-sentral-station-sponsorship-2024": {
+    "channels": [
+      {"slug": "ktm-kl-sentral-station", "name": "KL Sentral Station", "owner": "ktm", "medium": "Outdoor"}
+    ]
+  },
+  "klcc-snorkels-2024-big-tree": {
+    "channels": [
+      {"slug": "media-prima-klcc-snorkels", "name": "KLCC Snorkels", "owner": "media-prima", "medium": "Outdoor"}
+    ]
+  },
+  "988-fm-2026-radio-digital": {
+    "channels": [
+      {"slug": "star-media-group-988-fm", "name": "988 FM", "owner": "star-media-group", "medium": "Radio"}
+    ]
+  },
+  "suria-fm-2026-radio-digital": {
+    "channels": [
+      {"slug": "star-media-group-suria-fm", "name": "Suria FM", "owner": "star-media-group", "medium": "Radio"}
+    ]
+  },
+  "hot-fm-zoomerz-on-ground": {
+    "channels": [
+      {"slug": "media-prima-hot-fm", "name": "Hot FM", "owner": "media-prima", "medium": "Radio"}
+    ]
+  },
+  "wowshop-airtime-2025": {
+    "channels": [
+      {"slug": "media-prima-wowshop", "name": "WowShop", "owner": "media-prima", "medium": "TV & Broadcast"}
+    ]
+  },
+  "podcast-utama-buletin-tv3": {
+    "channels": [
+      {"slug": "media-prima-podcast-utama", "name": "Podcast Utama", "owner": "media-prima", "medium": "Podcast"}
+    ]
+  },
+  "karnival-jom-heboh-2026-venue": {
+    "channels": [
+      {"slug": "media-prima-jom-heboh", "name": "Jom Heboh", "owner": "media-prima", "medium": "Outdoor"}
+    ]
+  },
+  "astro-video360-digital-2026": {
+    "channels": [
+      {"slug": "astro-astro-video360", "name": "Astro Video360", "owner": "astro", "medium": "Digital"}
+    ]
+  }
+}

@@ -11,10 +11,12 @@ use AIArmada\Cart\Models\CartModel;
 use AIArmada\Cart\Support\CartIdentifierResolver;
 use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Api\PresentsMedia;
+use App\Features\Catalog\Api\RateLineView;
 use App\Features\Sales\Persistence\WriteCampaignPlan;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
+use InvalidArgumentException;
 
 class CampaignPlans
 {
@@ -23,6 +25,9 @@ class CampaignPlans
         return app(CartIdentifierResolver::class)->resolve();
     }
 
+    /**
+     * @return Collection<int, CartModel>
+     */
     public function all(): Collection
     {
         return $this->query()->orderByDesc('updated_at')->get();
@@ -44,6 +49,29 @@ class CampaignPlans
 
         return $this->find($instance)
             ?? throw new \RuntimeException('The campaign plan could not be created.');
+    }
+
+    public function draft(): CartModel
+    {
+        $instance = (string) session('campaign-plan-draft', '');
+
+        if ($instance !== '' && ($plan = $this->find($instance)) !== null) {
+            return $plan;
+        }
+
+        $plan = $this->create('Campaign plan '.now()->format('d M Y'));
+        session(['campaign-plan-draft' => $plan->instance]);
+
+        return $plan;
+    }
+
+    public function addRateLine(CartModel $plan, RateLineView $line, int $quantity = 1): void
+    {
+        if (! $line->isPriced()) {
+            throw new InvalidArgumentException('Only priced rate lines can be added to a plan.');
+        }
+
+        Cart::getCartInstance($plan->instance)->addBuyable(new RateLineBuyable($line), $quantity);
     }
 
     public function addOffering(CartModel $plan, Product $product, int $quantity = 1): void
@@ -115,6 +143,9 @@ class CampaignPlans
         app(WriteCampaignPlan::class)->delete($plan);
     }
 
+    /**
+     * @return Builder<CartModel>
+     */
     private function query(): Builder
     {
         return CartModel::query()
