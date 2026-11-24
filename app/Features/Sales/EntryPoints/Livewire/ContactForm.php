@@ -62,7 +62,6 @@ class ContactForm extends Component
             return;
         }
 
-
         $party = $parties->createWithContact($data);
 
         $enquiries->record($party->value, [
