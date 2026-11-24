@@ -6,6 +6,7 @@ namespace App\Features\Catalog\EntryPoints\Http;
 
 use App\Features\Catalog\Support\MediaDirectory;
 use App\Features\Catalog\Support\RateCardPresenter;
+use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -49,6 +50,11 @@ class MediaDirectoryController extends Controller
 
                 return str_contains($haystack, mb_strtolower($query));
             }))
+            ->map(function (array $owner): array {
+                $owner['has_owner_filter'] = app(ResolvesParties::class)->idForSlug($owner['slug']) !== null;
+
+                return $owner;
+            })
             ->values();
 
         return view('pages.media-owners', [

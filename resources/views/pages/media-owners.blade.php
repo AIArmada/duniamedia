@@ -23,7 +23,7 @@
             </form>
             <nav class="owner-directory-categories" aria-label="Filter by media category">
                 @foreach ($categories as $key => $entry)
-                    <a href="{{ route('media.owners', array_filter(['q' => $query, 'category' => $key === 'all' ? null : $key])) }}" @if($category === $key) aria-current="true" @endif>
+                    <a href="{{ route('media.owners', array_filter(['q' => $query, 'category' => $key === 'all' ? null : $key], fn ($value) => $value !== null && $value !== '')) }}" @if($category === $key) aria-current="true" @endif>
                         <x-dm-icon :name="$entry['icon']" :size="20"/>{{ $entry['label'] }}
                     </a>
                 @endforeach
@@ -76,7 +76,7 @@
                         </div>
                         <div class="owner-network-card__actions">
                             <a href="{{ route('media.owner', $owner['slug']) }}">Explore network <span aria-hidden="true">→</span></a>
-                            @if (app(\App\Features\Identity\Api\ResolvesParties::class)->idForSlug($owner['slug']) !== null)
+                            @if ($owner['has_owner_filter'])
                                 <a href="{{ route('rates.index', ['owner' => $owner['slug']]) }}"><x-dm-icon name="layers" :size="17"/> Rate cards</a>
                             @else
                                 <a href="{{ route('media.owner', $owner['slug']) }}"><x-dm-icon name="layers" :size="17"/> Opportunities</a>

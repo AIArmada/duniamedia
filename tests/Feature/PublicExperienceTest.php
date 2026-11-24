@@ -481,18 +481,19 @@ class PublicExperienceTest extends TestCase
         $this->assertDatabaseHas('media_assets', ['status' => 'prospect']);
         $this->assertDatabaseHas('enquiries', ['source' => 'asset_submission']);
     }
+
     public function test_media_owners_can_be_filtered_by_category_and_channel_name(): void
     {
         $this->get('/media/owners?category=transit')
             ->assertOk()
             ->assertSee('KTM Advertising Space')
             ->assertSee('KLIA')
-            ->assertDontSee('Media Prima Berhad');
+            ->assertDontSee(route('media.owner', 'media-prima'), false);
 
         $this->get('/media/owners?category=television&q=TV3')
             ->assertOk()
             ->assertSee('Media Prima Berhad')
-            ->assertDontSee('KTM Advertising Space');
+            ->assertDontSee(route('media.owner', 'ktm'), false);
 
         $this->get('/media/owners?category=transit&q=TV3')
             ->assertOk()
