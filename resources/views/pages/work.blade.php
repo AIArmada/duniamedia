@@ -1,142 +1,140 @@
 @extends('layouts.app')
 
 @section('content')
-    @php($heroCover = collect($media)->firstWhere('key', 'jwp-psa-kl')['poster'] ?? null)
+    @php
+        $films = collect($media)->keyBy('key');
+        $heroFilm = $films->get('jwp-psa-kl');
+        $featuredFilm = $films->get('jwp-psa-putrajaya');
+        $gallery = $films->except(['jwp-psa-kl', 'jwp-psa-putrajaya'])->values();
+        $featuredClients = collect($clients)->filter(fn ($client) => ! empty($client['logo']))->sortBy(fn ($client) => array_search($client['slug'], ['kpj-kajang', 'suruhanjaya-tenaga', 'yayasan-maghfirah', 'yayasan-pelajaran-mara', 'perkeso', 'todak'], true) === false ? 99 : array_search($client['slug'], ['kpj-kajang', 'suruhanjaya-tenaga', 'yayasan-maghfirah', 'yayasan-pelajaran-mara', 'perkeso', 'todak'], true))->take(6);
+    @endphp
 
-    <section class="work-hero" aria-labelledby="work-title">
-        @if ($heroCover)
-            <div class="work-hero__media" aria-hidden="true">
-                <picture>
-                    @if ($heroCover === 'assets/work/covers/jwp-psa-kl.webp')
-                        <source media="(max-width: 760px)" srcset="{{ asset('assets/work/covers/jwp-psa-kl-mobile.webp') }}">
-                    @endif
-                    <img src="{{ asset($heroCover) }}" alt="" width="960" height="540" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
-        @endif
-        <div class="container work-hero__inner">
-            <div>
-                <span class="eyebrow eyebrow--pale">Selected work · {{ $stats['from'] }}—{{ $stats['to'] }}</span>
-                <h1 id="work-title">Campaigns that<br><em class="editorial">moved people.</em></h1>
-                <p class="work-hero__lede">A working archive of broadcast, outdoor, digital and production work for government institutions and Malaysian brands — drawn from RA Media's client records.</p>
-                <div class="work-hero__actions">
-                    <a href="#archive" class="button button--on-dark">Explore the archive <span aria-hidden="true">↓</span></a>
-                    <a href="{{ route('contact') }}" class="button button--outline-light">Start a campaign</a>
+    <div class="work-page">
+        <section class="work-opening" aria-labelledby="work-title">
+            <div class="container work-opening__inner">
+                <div class="work-opening__copy">
+                    <span class="work-kicker">Our work</span>
+                    <h1 id="work-title">Work that speaks for <em>itself.</em></h1>
+                    <p>Campaigns, content and media collaborations for Malaysian brands and public institutions — created to inform, engage and inspire.</p>
+                    <a class="work-text-link" href="#archive">Explore our campaigns <span aria-hidden="true">↓</span></a>
                 </div>
-                <p class="work-hero__note">Updated {{ $archiveUpdated }} · {{ $stats['clients'] }} organisations · {{ $stats['campaigns'] }} campaign records</p>
+                @if ($heroFilm)
+                    <x-work-film :item="$heroFilm" class="work-film--hero" :eager="true"/>
+                @endif
             </div>
-            <div class="work-stats" aria-label="Archive at a glance">
-                <div class="work-stat"><strong>{{ $stats['clients'] }}</strong><span>Organisations</span></div>
-                <div class="work-stat"><strong>{{ $stats['campaigns'] }}</strong><span>Campaign records</span></div>
-                <div class="work-stat"><strong>{{ $stats['channels'] }}</strong><span>Media channels</span></div>
-                <div class="work-stat"><strong>{{ $stats['years'] }}</strong><span>Years of work</span></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section--dark" id="work-media" aria-labelledby="work-media-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow eyebrow--pale">On screen &amp; on air</span>
-                    <h2 id="work-media-title" class="section-title">Recent work, as it aired.</h2>
-                    <p style="color:rgba(255,248,247,.66)">Full broadcast files from the project archive — television interviews, public service films, a Ramadan commercial and a TVC voiceover.</p>
-                </div>
-                <div class="section-heading__aside">
-                    <a class="text-link text-link--dark" href="#archive">Jump to the archive <span aria-hidden="true">↓</span></a>
-                </div>
-            </div>
-
-            <div class="work-media__grid">
-                @foreach (array_slice($media, 0, 6) as $item)
-                    <article id="work-media-{{ $item['key'] }}" class="work-media-card" wire:key="work-media-{{ $item['key'] }}">
-                        @if ($item['type'] === 'video')
-                            <div class="work-media-card__frame" data-video-cover>
-                                <video preload="metadata" playsinline poster="{{ asset($item['poster']) }}">
-                                    <source src="{{ route('work.media', $item['key']) }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <button type="button" class="work-media-card__play" data-video-play aria-label="Play {{ $item['title'] }}">
-                                    <span class="work-media-card__play-icon" aria-hidden="true"></span>
-                                    <span>Play film</span>
-                                </button>
-                                <span class="work-media-card__badge">Video · {{ $item['duration'] }}</span>
-                            </div>
-                        @else
-                            <div class="work-media-card__frame work-media-card__frame--audio">
-                                <img src="{{ asset($item['poster']) }}" alt="" loading="lazy" decoding="async">
-                                <div class="work-audio">
-                                    <span class="work-audio__label">Audio · {{ $item['duration'] }}</span>
-                                    <audio controls preload="metadata" src="{{ route('work.media', $item['key']) }}"></audio>
-                                </div>
-                            </div>
-                        @endif
-                        <div class="work-media-card__body">
-                            <span class="work-media-card__date">{{ $item['date'] }}</span>
-                            <h3>{{ $item['title'] }}</h3>
-                            <p>{{ $item['description'] }}</p>
-                        </div>
-                    </article>
+        <section class="work-proof" aria-label="Our work in numbers">
+            <div class="container work-proof__grid">
+                @foreach ([
+                    ['number' => $stats['campaigns'], 'label' => 'Campaign records', 'icon' => 'camera'],
+                    ['number' => $stats['clients'], 'label' => 'Organisations', 'icon' => 'building'],
+                    ['number' => $stats['mediums'], 'label' => 'Media categories', 'icon' => 'radio'],
+                    ['number' => count($media), 'label' => 'Video & audio projects', 'icon' => 'play'],
+                ] as $stat)
+                    <div class="work-proof__item">
+                        <x-dm-icon :name="$stat['icon']" :size="32"/>
+                        <strong>{{ $stat['number'] }}</strong>
+                        <span>{{ $stat['label'] }}</span>
+                    </div>
                 @endforeach
             </div>
+        </section>
 
-            <p class="tiny" style="margin-top:1.2rem;color:rgba(255,248,247,.5)">Video covers are frames from the supplied broadcasts; the audio cover is an illustrative still. Files are hosted privately and streamed on demand.</p>
-        </div>
-    </section>
+        <section class="work-section" id="work-media" aria-labelledby="work-media-title">
+            <div class="container">
+                <div class="work-feature">
+                    <div class="work-feature__copy">
+                        <span class="work-kicker">On screen &amp; on air</span>
+                        <h2 id="work-media-title">Stories brought to life.</h2>
+                        <p>From public service films to television interviews, commercials and voiceover work. Explore the productions and collaborations behind the campaigns.</p>
+                        <a class="work-text-link" href="#work-film-gallery">Explore the collection <span aria-hidden="true">↓</span></a>
+                    </div>
+                    @if ($featuredFilm)
+                        <x-work-film :item="$featuredFilm" class="work-film--feature"/>
+                    @endif
+                </div>
 
-    <section class="section section--cream" id="clients" aria-labelledby="work-clients-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">Client roster</span>
-                    <h2 id="work-clients-title" class="section-title">Institutions and brands we've worked with.</h2>
-                    <p>{{ $stats['government'] }} government and public organisations, {{ $stats['business'] }} business and brand clients. Select a client to see their campaign record.</p>
+                <div class="work-film-gallery" id="work-film-gallery">
+                    @foreach ($gallery as $item)
+                        <x-work-film :item="$item"/>
+                    @endforeach
                 </div>
             </div>
+        </section>
 
-            @foreach (['government' => 'Government & public institutions', 'business' => 'Business & brands'] as $sector => $label)
-                <section class="work-client-group" aria-label="{{ $label }}">
-                    <header class="work-client-group__header">
-                        <span>{{ $label }}</span>
-                        <span>{{ count($clientsBySector[$sector] ?? []) }} organisations</span>
-                    </header>
-                    <div class="work-client-grid">
-                        @foreach ($clientsBySector[$sector] ?? [] as $client)
-                            @php($campaignCount = $campaignCounts[$client['slug']] ?? 0)
-                            @if ($campaignCount > 0)
-                                <a class="work-client-card" href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View campaigns for {{ $client['name'] }}">
-                            @else
-                                <article class="work-client-card is-static">
-                            @endif
-                                <span class="work-client-card__mark @if (empty($client['logo'])) is-typeset @endif">
-                                    @if (! empty($client['logo']))
-                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy" decoding="async">
-                                    @else
-                                        <span>{{ $client['mark'] ?? $client['short_name'] }}</span>
-                                    @endif
-                                </span>
-                                <span class="work-client-card__meta">
-                                    <h3>{{ $client['name'] }}</h3>
-                                    <span>{{ $campaignCount > 0 ? $campaignCount.' '.($campaignCount === 1 ? 'campaign' : 'campaigns') : 'Client roster' }}</span>
-                                </span>
-                            @if ($campaignCount > 0)
+        @if (count($clients) > 0)
+            <section class="work-clients" id="clients" aria-labelledby="work-clients-title">
+                <div class="container">
+                    <div class="work-clients__strip">
+                        <div>
+                            <span class="work-kicker">Our clients</span>
+                            <h2 id="work-clients-title">In good company.</h2>
+                        </div>
+                        <div class="work-clients__logos">
+                            @foreach ($featuredClients as $client)
+                                <a href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View campaigns for {{ $client['name'] }}">
+                                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="{{ $client['name'] }}" loading="lazy" decoding="async">
                                 </a>
-                            @else
-                                </article>
-                            @endif
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
-                </section>
-            @endforeach
-        </div>
-    </section>
+                    <details class="work-client-disclosure">
+                        <summary>Explore all {{ $stats['clients'] }} organisations</summary>
+                        @foreach (['government' => 'Government & public institutions', 'business' => 'Business & brands'] as $sector => $label)
+                            <section class="work-client-group" aria-label="{{ $label }}">
+                                <header class="work-client-group__header">
+                                    <span>{{ $label }}</span>
+                                    <span>{{ count($clientsBySector[$sector] ?? []) }} organisations</span>
+                                </header>
+                                <div class="work-client-grid">
+                                    @foreach ($clientsBySector[$sector] ?? [] as $client)
+                                        @php($campaignCount = $campaignCounts[$client['slug']] ?? 0)
+                                        @if ($campaignCount > 0)
+                                            <a class="work-client-card" href="{{ route('work.index', ['client' => $client['slug']]) }}#archive" aria-label="View campaigns for {{ $client['name'] }}">
+                                        @else
+                                            <article class="work-client-card is-static">
+                                        @endif
+                                            <span class="work-client-card__mark @if (empty($client['logo'])) is-typeset @endif">
+                                                @if (! empty($client['logo']))
+                                                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy" decoding="async">
+                                                @else
+                                                    <span>{{ $client['mark'] ?? $client['short_name'] }}</span>
+                                                @endif
+                                            </span>
+                                            <span class="work-client-card__meta">
+                                                <h3>{{ $client['name'] }}</h3>
+                                                <span>{{ $campaignCount > 0 ? $campaignCount.' '.($campaignCount === 1 ? 'campaign' : 'campaigns') : 'Client roster' }}</span>
+                                            </span>
+                                        @if ($campaignCount > 0)
+                                            </a>
+                                        @else
+                                            </article>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            </section>
+                        @endforeach
+                    </details>
+                </div>
+            </section>
+        @endif
 
-    <livewire:work-explorer/>
+        <livewire:work-explorer/>
 
-    <section class="work-note">
-        <div class="container work-note__inner">
-            <p>{{ $sourceNote }}</p>
-            <a href="{{ route('about') }}#experience">About RA Media <span aria-hidden="true">→</span></a>
-        </div>
-    </section>
+        <section class="work-invitation" aria-labelledby="work-invitation-title">
+            <img class="work-invitation__image" src="{{ asset('assets/img/work-next-campaign.jpg') }}" srcset="{{ asset('assets/img/work-next-campaign-mobile.jpg') }} 760w, {{ asset('assets/img/work-next-campaign.jpg') }} 1648w" sizes="100vw" width="1648" height="928" alt="" loading="lazy" decoding="async">
+            <div class="container work-invitation__inner">
+                <div>
+                    <span class="work-kicker">Your next story</span>
+                    <h2 id="work-invitation-title">Let's make your next campaign <em>matter.</em></h2>
+                    <p>Bring your idea, ambition or challenge. We'll help you find the right way forward.</p>
+                    <div class="work-invitation__actions">
+                        <a class="work-cta" href="{{ route('advisor') }}">Plan a campaign <span aria-hidden="true">↗</span></a>
+                        <a class="work-text-link work-text-link--light" href="{{ route('contact') }}">Talk to our team <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 @endsection

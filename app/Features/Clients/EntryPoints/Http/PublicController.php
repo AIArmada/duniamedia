@@ -116,15 +116,13 @@ class PublicController extends Controller
             'stats' => [
                 'clients' => $clients->count(),
                 'campaigns' => $campaigns->count(),
-                'channels' => $campaigns->pluck('channel_label')->filter()->unique()->count(),
+                'mediums' => $campaigns->pluck('medium')->filter()->unique()->count(),
                 'from' => $years->min() ?? now()->year,
                 'to' => $years->max() ?? now()->year,
                 'years' => ($years->max() ?? now()->year) - ($years->min() ?? now()->year) + 1,
                 'government' => $clients->where('sector', 'government')->count(),
                 'business' => $clients->where('sector', 'business')->count(),
             ],
-            'archiveUpdated' => ClientWork::data()['updated'],
-            'sourceNote' => ClientWork::data()['source_note'],
         ]);
     }
 
