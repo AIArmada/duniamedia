@@ -25,7 +25,7 @@
             <div class="container about-hero__grid">
                 <div class="about-hero__copy">
                     <span class="about-kicker">Made in Malaysia. Connected to the world.</span>
-                    <h1 id="about-title">Every great story<br>deserves to be <em>heard.</em></h1>
+                    <h1 id="about-title">Every great story<br class="about-hero__break"> deserves to be <em>heard.</em></h1>
                     <p>We bring ideas to life, connect them with the right audiences and make them matter — across screens, spaces, platforms and communities.</p>
                     <a href="#our-story" class="about-story-link"><span class="about-story-link__circle" aria-hidden="true">↓</span> Discover our story</a>
                 </div>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <details class="about-client-disclosure">
-                    <summary>Explore the complete client roster <span>45 organisations</span></summary>
+                    <summary><span class="about-client-disclosure__label">Explore the complete client roster</span><span class="about-client-disclosure__count">45 organisations</span></summary>
                     <div class="client-wall">
                         @foreach ($aboutClientGroups as $group)
                             <section class="client-group" aria-label="{{ $group['eyebrow'] }} clients">
@@ -181,8 +181,10 @@
                     <h2 id="future-title">A world of media should be <em>open to everyone.</em></h2>
                     <p>We empower entrepreneurs, organisations, media owners and creators with the tools, talent and media opportunities to make a real difference — for their business, their audience and the communities they serve.</p>
                     <p>Whether you're launching your first business or planning your next national campaign, your story deserves a place in the world.</p>
-                    <a href="{{ route('contact') }}" class="about-button">Let's create together <span aria-hidden="true">↗</span></a>
-                    <a class="about-link about-link--light" href="{{ route('advisor') }}">Find your starting point <span aria-hidden="true">↗</span></a>
+                    <div class="about-future__actions">
+                        <a href="{{ route('contact') }}" class="about-button">Let's create together <span aria-hidden="true">↗</span></a>
+                        <a class="about-link about-link--light" href="{{ route('advisor') }}">Find your starting point <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
                 <span class="about-future__caption">Concept imagery</span>
             </div>

@@ -63,6 +63,33 @@ class PublicExperienceTest extends TestCase
         $this->get('/offers/test-billboard')->assertSee($media->name);
     }
 
+    public function test_about_page_keeps_the_responsive_story_and_client_roster_available(): void
+    {
+        $response = $this->get('/about');
+
+        $response->assertOk()
+            ->assertSee('name="viewport"', false)
+            ->assertSee('about-editorial-kl-mobile.jpg')
+            ->assertSee('760w')
+            ->assertSee('about-editorial-kl.jpg')
+            ->assertSee('1672w')
+            ->assertSee('class="about-hero__break"', false)
+            ->assertSee('class="about-future__actions"', false)
+            ->assertSee('class="about-client-disclosure"', false)
+            ->assertSee('45 organisations');
+
+        $groups = require resource_path('data/about-clients.php');
+
+        foreach ($groups as $group) {
+            foreach ($group['clients'] as $client) {
+                $response->assertSee($client['name']);
+            }
+        }
+
+        $this->assertFileExists(public_path('assets/img/about-editorial-kl-mobile.jpg'));
+        $this->assertFileExists(public_path('assets/img/about-editorial-kl.jpg'));
+    }
+
     public function test_global_search_finds_media_and_creators(): void
     {
         $this->createMediaOffer([
