@@ -72,7 +72,7 @@
         <div class="container about-belief__inner">
             <span class="eyebrow eyebrow--pale">What we believe</span>
             <h2 id="belief-title">Being seen is one thing.<br>Being <em class="editorial">remembered</em> is another.</h2>
-            <p>Attention is valuable, but it is what happens next that matters. A business discovered. A public message understood. A community inspired. We believe good media should make a difference beyond the moment it appears.</p>
+            <p>Attention is valuable, but it is what happens next that matters. A business discovered. A public message understood. A community inspired. We believe good media should make a difference beyond the moment it appears. Our commitment is to keep improving, do excellent work and grow alongside the people who trust us with their stories.</p>
         </div>
     </section>
 
@@ -100,7 +100,7 @@
                     <div class="capability-card__body">
                         <span class="capability-card__label">Give your idea a voice</span>
                         <h3>Make something people will remember.</h3>
-                        <p>From commercials, corporate films and documentaries to photography, animation, design, copywriting, voice-over and multilingual translation.</p>
+                        <p>From commercials, corporate films and documentaries to photography (even underwater), animation, design, copywriting, voice-over and translation in Jawi, Arabic, English and Mandarin.</p>
                         <a class="text-link" href="{{ route('work.index') }}">See our work <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
@@ -109,7 +109,7 @@
                     <div class="capability-card__body">
                         <span class="capability-card__label">Open new possibilities</span>
                         <h3>Make tomorrow work for you today.</h3>
-                        <p>Connect events, creators, multimedia and software with emerging AI capabilities and training — putting technology to work for people and businesses.</p>
+                        <p>Connect events, hosts, video conferencing, creators, multimedia and software with emerging AI capabilities and training — putting technology to work for people and businesses.</p>
                         <a class="text-link" href="{{ route('academy') }}">Explore training <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
@@ -148,7 +148,7 @@
                                         @if (! empty($client['logo']))
                                             <img src="{{ \App\Features\Catalog\Support\MediaImage::url($client['logo']) }}" alt="" loading="lazy" decoding="async">
                                         @else
-                                            <span>{{ $client['mark'] ?? $client['name'] }}</span>
+                                            <span>{{ str_replace('\\n', "\n", $client['mark'] ?? $client['name']) }}</span>
                                         @endif
                                     </div>
                                     <h4>{{ $client['name'] }}</h4>
