@@ -20,7 +20,7 @@
     <div class="about-page">
         <section class="about-hero" aria-labelledby="about-title">
             <figure class="about-hero__media">
-                <img src="{{ asset('assets/img/about-story-city.jpg') }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async">
+                <img src="{{ asset('assets/img/about-editorial-kl.jpg') }}" srcset="{{ asset('assets/img/about-editorial-kl-mobile.jpg') }} 760w, {{ asset('assets/img/about-editorial-kl.jpg') }} 1672w" sizes="100vw" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
             </figure>
             <div class="container about-hero__grid">
                 <div class="about-hero__copy">

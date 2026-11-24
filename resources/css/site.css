@@ -5011,7 +5011,7 @@ body:has(.about-page) .footer-legal {
 
 .about-hero__media img {
     object-position: center;
-    filter: saturate(0.78);
+    filter: saturate(0.9);
 }
 
 .about-hero__media::after,
@@ -5023,7 +5023,7 @@ body:has(.about-page) .footer-legal {
 }
 
 .about-hero__media::after {
-    background: linear-gradient(180deg, rgba(17, 22, 27, 0.68), transparent 24%), linear-gradient(90deg, transparent 22%, rgba(17, 20, 24, 0.15) 43%, rgba(17, 20, 24, 0.88) 72%, rgba(17, 20, 24, 0.94));
+    background: linear-gradient(180deg, rgba(17, 22, 27, 0.68), transparent 24%), linear-gradient(90deg, transparent 22%, rgba(17, 20, 24, 0.15) 43%, rgba(17, 20, 24, 0.69) 72%, rgba(17, 20, 24, 0.87));
 }
 
 .about-hero__grid {
