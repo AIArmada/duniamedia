@@ -21,30 +21,11 @@ class PublicController extends Controller
 {
     public function home()
     {
-        $campaigns = Campaign::query()
-            ->published()
-            ->where('is_featured', true)
-            ->with('service')
-            ->latest('starts_on')
-            ->take(4)
-            ->get();
-
-        $clients = $this->parties($campaigns->pluck('client_party_id')->filter()->unique()->all());
-
-        $featuredWork = $campaigns->map(fn (Campaign $campaign): array => [
-            'client' => $clients[$campaign->client_party_id]->slug ?? null,
-            'client_name' => $clients[$campaign->client_party_id]->displayName ?? null,
-            'client_logo' => $clients[$campaign->client_party_id]->logoUrl ?? '',
-            'title' => $campaign->name,
-            'service' => $campaign->service?->name,
-            'medium' => $campaign->medium,
-            'channel' => $campaign->channel_label,
-            'date' => $campaign->starts_on?->format('d M Y'),
-            'year' => (int) $campaign->starts_on?->format('Y'),
-            'description' => $campaign->summary,
-            'featured' => $campaign->is_featured,
-            'cover' => $campaign->getFirstMediaUrl('cover'),
-        ]);
+        $films = collect(ClientWork::media())->keyBy('key');
+        $featuredFilms = collect(['jwp-psa-kl', 'kpj-2025-10-02', 'yayasan-maghfirah-30s'])
+            ->map(fn (string $key) => $films->get($key))
+            ->filter()
+            ->values();
 
         $trustClients = $this->clientParties()
             ->filter(fn (array $client): bool => ! empty($client['logo']))
@@ -55,7 +36,7 @@ class PublicController extends Controller
             'ratePreview' => app(PresentsRateLines::class)->preview(),
             'pageTitle' => 'Dunia Media — Discover, Compare & Plan Media in Malaysia',
             'metaDescription' => 'Discover Malaysian media owners, channels, personalities and advertising opportunities. Compare indicative rates, plan campaigns and request proposals.',
-            'featuredWork' => $featuredWork,
+            'featuredFilms' => $featuredFilms,
             'trustClients' => $trustClients,
         ]);
     }
