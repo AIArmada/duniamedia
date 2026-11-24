@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Features\Advisor\EntryPoints\Livewire\MediaAdvisor;
 use App\Features\Catalog\EntryPoints\Livewire\MediaExplorer;
+use App\Features\Creators\EntryPoints\Livewire\CreatorExplorer;
 use App\Features\Creators\EntryPoints\Livewire\CreatorJoin;
 use App\Features\Creators\Models\CreatorProfile;
 use App\Features\Identity\Models\Party;
@@ -400,6 +401,49 @@ class PublicExperienceTest extends TestCase
             'turnstile.secret_key' => 'test-secret',
             'turnstile.hostname' => 'duniamedia.test',
         ]);
+    }
+
+    public function test_creator_directory_keeps_filters_available_when_no_creators_match(): void
+    {
+        $party = Party::factory()->create(['display_name' => 'Verified Travel Creator']);
+        CreatorProfile::factory()->create([
+            'creator_party_id' => $party->id,
+            'primary_niche' => 'Travel',
+            'social_platform' => 'TikTok',
+        ]);
+
+        Livewire::test(CreatorExplorer::class)
+            ->set('niche', 'Food')
+            ->assertSee('No creators match your search.')
+            ->assertSee('Clear filters')
+            ->assertDontSee('Verified Travel Creator')
+            ->call('clearFilters')
+            ->assertSet('niche', 'all')
+            ->assertSee('Verified Travel Creator')
+            ->set('search', 'TikTok')
+            ->assertSee('Verified Travel Creator')
+            ->set('search', 'Travel')
+            ->assertSee('Verified Travel Creator');
+    }
+
+    public function test_creator_directory_excludes_seeded_demo_and_unverified_profiles(): void
+    {
+        $demo = Party::factory()->create(['display_name' => 'Seeded Demo Creator']);
+        CreatorProfile::factory()->create([
+            'creator_party_id' => $demo->id,
+            'slug' => 'demo-creator-1',
+        ]);
+        $pending = Party::factory()->create(['display_name' => 'Pending Creator']);
+        CreatorProfile::factory()->create([
+            'creator_party_id' => $pending->id,
+            'verification_status' => 'pending',
+        ]);
+
+        $this->get('/creators')
+            ->assertOk()
+            ->assertSee('Our creator network is growing.')
+            ->assertDontSee('Seeded Demo Creator')
+            ->assertDontSee('Pending Creator');
     }
 
     public function test_creator_application_creates_a_pending_creator_profile(): void

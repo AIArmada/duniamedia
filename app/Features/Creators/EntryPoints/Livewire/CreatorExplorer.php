@@ -38,20 +38,21 @@ class CreatorExplorer extends Component
 
     public function render()
     {
-        $query = CreatorProfile::query()
+        $base = CreatorProfile::query()
             ->where('status', 'active')
             ->where('verification_status', 'verified')
+            ->whereNotIn('slug', ['demo-creator-1', 'demo-creator-2', 'demo-creator-3', 'demo-creator-4']);
+
+        $query = (clone $base)
             ->when($this->niche !== 'all', fn ($query) => $query->where('primary_niche', $this->niche))
             ->when($this->socialPlatform !== 'all', fn ($query) => $query->where('social_platform', $this->socialPlatform))
             ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
                 $sub->where('bio', 'like', '%'.$this->search.'%')
                     ->orWhere('slug', 'like', '%'.$this->search.'%')
+                    ->orWhere('primary_niche', 'like', '%'.$this->search.'%')
+                    ->orWhere('social_platform', 'like', '%'.$this->search.'%')
                     ->orWhereIn('creator_party_id', app(ResolvesParties::class)->searchIds('%'.$this->search.'%'));
             }));
-
-        $base = CreatorProfile::query()
-            ->where('status', 'active')
-            ->where('verification_status', 'verified');
 
         return view('livewire.creator-explorer', [
             'creators' => $query->orderByDesc('is_featured')->paginate(9),
