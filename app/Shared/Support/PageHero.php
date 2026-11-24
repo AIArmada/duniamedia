@@ -15,15 +15,15 @@ class PageHero
     /**
      * The single source of truth for the site-wide page hero treatment.
      *
-     * MEDIA   full-bleed cover, reversed header: Work, Solutions, Academy, About, Contact
-     * SPLIT   cream hero with a supporting image: Home, Services, Creators, Portfolio, Insights
+     * MEDIA   full-bleed cover, reversed header: Work, Academy, About, Contact
+     * SPLIT   cream hero with a supporting image: Home, Services, Solutions, Creators, Portfolio, Insights
      * UTILITY compact text-only hero: forms, search, directories, legal and detail pages
      */
     public static function mode(): string
     {
         return match (true) {
-            request()->routeIs('work.*', 'solutions', 'academy', 'about', 'contact') => self::MEDIA,
-            request()->routeIs('home', 'services', 'creators.index', 'portfolio', 'insights') => self::SPLIT,
+            request()->routeIs('work.*', 'academy', 'about', 'contact') => self::MEDIA,
+            request()->routeIs('home', 'services', 'solutions', 'creators.index', 'portfolio', 'insights') => self::SPLIT,
             default => self::UTILITY,
         };
     }

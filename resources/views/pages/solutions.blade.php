@@ -1,107 +1,125 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-page-hero
-        eyebrow="Creative × technology × intelligence"
-        title="Better reach is <span class='editorial'>only the beginning</span>."
-        lede="A placement can create attention. A connected campaign turns that attention into something the business can see: an enquiry, a visit, a sale, a stronger relationship."
-        :media="'assets/img/v2/solutions-production.webp'"
-        :media-mobile="'assets/img/v2/solutions-production-mobile.webp'"
-    >
-        <x-slot:actions>
-            <a class="button button--primary" href="{{ route('advisor') }}">Plan a connected campaign <span aria-hidden="true">↗</span></a>
-            <a class="button button--secondary" href="{{ route('services') }}">Explore capabilities</a>
-        </x-slot:actions>
-    </x-page-hero>
+    @php
+        $objectives = [
+            ['Build awareness', 'Get your brand noticed by the right audience.', 'megaphone'],
+            ['Generate leads', 'Attract and capture qualified prospects.', 'users'],
+            ['Launch a product', 'Create demand for your new offering.', 'spark'],
+            ['Grow sales', 'Turn customer interest into action.', 'chart'],
+        ];
+        $capabilities = [
+            ['Strategy', 'Insights, audience research and campaign planning.', 'target', 'service-planning', route('services').'#planning'],
+            ['Creative', 'Branding, design, video, audio and content production.', 'camera', 'service-creative', route('services').'#creative'],
+            ['Media', 'TV, radio, outdoor, print and digital placements.', 'layers', 'hero-media', route('media.index')],
+            ['Influence', 'Creators, talent and community engagement.', 'users', 'service-creators', route('creators.index')],
+            ['Technology', 'Websites, digital systems, AI and automation.', 'code', 'service-web', route('services').'#technology'],
+            ['Measurement', 'Campaign insights, performance tracking and optimisation.', 'chart', 'service-analytics', route('services').'#measurement'],
+        ];
+        $stages = [
+            ['Discover', 'Understand your brand, market and audience.', 'search'],
+            ['Strategise', 'Turn insights into a clear campaign plan.', 'document'],
+            ['Produce', 'Create content and assets for each channel.', 'camera'],
+            ['Distribute', 'Activate the right media and channels.', 'radio'],
+            ['Convert', 'Connect attention to leads and customer action.', 'target'],
+            ['Improve', 'Measure results and refine the next move.', 'chart'],
+        ];
+        $example = [
+            ['Build awareness', 'Introduce a new product through high-impact media placements.', 'medium-outdoor'],
+            ['Create engagement', 'Bring the product closer to its audience through creator content.', 'medium-creators'],
+            ['Drive action', 'Continue the journey with a focused landing page and clear next steps.', 'service-web'],
+        ];
+    @endphp
 
-    <section class="section">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">The connected system</span>
-                    <h2 class="section-title">Six stages. One shared objective.</h2>
-                    <p>Each stage has its own craft, but none of them works in isolation. The plan, the creative, the media, the response and the learning are designed together.</p>
+    <div class="connected-solutions">
+        <section class="connected-hero" aria-labelledby="connected-title">
+            <div class="container connected-hero__inner">
+                <div class="connected-hero__copy">
+                    <span class="eyebrow">Integrated campaign solutions</span>
+                    <h1 id="connected-title">More than media.<em>Everything connected.</em></h1>
+                    <p>From strategy and creative to media, technology and measurable results.</p>
+                    <div class="connected-actions">
+                        <a class="button button--primary" href="{{ route('advisor') }}">Plan your campaign <span aria-hidden="true">→</span></a>
+                        <a class="button button--secondary" href="#connected-capabilities">Explore our capabilities</a>
+                    </div>
                 </div>
+                <picture class="connected-hero__image">
+                    <source media="(max-width: 760px)" srcset="{{ asset('assets/img/v2/solutions-production-mobile-480.webp') }} 480w, {{ asset('assets/img/v2/solutions-production-mobile-640.webp') }} 640w, {{ asset('assets/img/v2/solutions-production-mobile-960.webp') }} 960w" sizes="100vw">
+                    <img src="{{ asset('assets/img/v2/solutions-production-960.webp') }}" srcset="{{ asset('assets/img/v2/solutions-production-640.webp') }} 640w, {{ asset('assets/img/v2/solutions-production-960.webp') }} 960w, {{ asset('assets/img/v2/solutions-production-1280.webp') }} 1280w" sizes="(max-width: 760px) 100vw, 62vw" alt="" fetchpriority="high" decoding="async">
+                </picture>
             </div>
+        </section>
 
-            <div class="solution-grid">
-                @foreach ([
-                    ['Discover', 'Understand the audience, the objective, the constraints and what the business actually needs to happen.', 'compass'],
-                    ['Strategise', 'Choose the media mix, the regional relevance, the content plan and the measurement approach.', 'target'],
-                    ['Produce', 'Create the visual, video, audio and copy assets — using AI-assisted workflows only where they genuinely help.', 'camera'],
-                    ['Distribute', 'Place the work across broadcast, out-of-home, editorial, digital, creators and custom media.', 'megaphone'],
-                    ['Convert', 'Carry the response into landing pages, lead capture, CRM and a follow-up process that someone owns.', 'code'],
-                    ['Improve', 'Read the evidence, test the next creative move and feed the learning back into the plan.', 'chart'],
-                ] as $i => $step)
-                    <article class="solution-card">
-                        <div class="solution-card__head">
-                            <span class="solution-card__number">0{{ $i + 1 }}</span>
-                            <span class="solution-card__icon"><x-dm-icon :name="$step[2]" :size="18"/></span>
-                        </div>
-                        <h3>{{ $step[0] }}</h3>
-                        <p>{{ $step[1] }}</p>
+        <section class="container connected-section" aria-labelledby="connected-objectives-title">
+            <div class="connected-heading">
+                <h2 id="connected-objectives-title">What do you want to achieve?</h2>
+                <p>Whether you’re building a brand, reaching new customers or driving sales, we’ll help you find the right mix of media, creative and technology.</p>
+            </div>
+            <div class="connected-objectives">
+                @foreach ($objectives as [$title, $description, $icon])
+                    <article class="connected-objective">
+                        <x-dm-icon :name="$icon" :size="34"/>
+                        <div><h3>{{ $title }}</h3><p>{{ $description }}</p></div>
                     </article>
                 @endforeach
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section--cream">
-        <div class="container">
-            <div class="feature-split">
-                <div class="feature-split__body">
-                    <span class="eyebrow">What it looks like in practice</span>
-                    <h2 class="section-title">The campaign is the tip. The system is the work.</h2>
-                    <p>A television interview, an outdoor site or a creator film is the visible part. Behind it sit the brief, the approvals, the artwork versions, the booking schedule, the landing page, the follow-up and the report.</p>
-                    <p>We keep those pieces in one conversation. That reduces the gap between the idea that was approved and the campaign that actually runs.</p>
-                    <ul class="feature-list">
-                        <li>One brief shared by creative, media and technology</li>
-                        <li>Assets planned for each medium from the start</li>
-                        <li>Response handled while the campaign is live</li>
-                        <li>Learning captured before the next round begins</li>
-                    </ul>
-                    <a class="button button--primary" href="{{ route('contact') }}">Talk through your next campaign <span aria-hidden="true">↗</span></a>
-                </div>
-                <figure class="feature-split__media">
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/persona-training.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/persona-training.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A team working through a campaign plan together" loading="lazy" decoding="async">
-                    <figcaption>Strategy, production and delivery in one room.</figcaption>
-                </figure>
+        <section class="container connected-section" id="connected-capabilities" aria-labelledby="connected-capabilities-title">
+            <div class="connected-heading">
+                <h2 id="connected-capabilities-title">Six connected capabilities</h2>
+                <p>Strategy, creativity, media, influence, technology and measurement working together towards a shared objective.</p>
             </div>
+            <div class="connected-capabilities">
+                @foreach ($capabilities as [$title, $description, $icon, $image, $url])
+                    <a class="connected-capability" href="{{ $url }}">
+                        <img src="{{ asset('assets/img/v2/'.$image.'-640.webp') }}" srcset="{{ asset('assets/img/v2/'.$image.'-480.webp') }} 480w, {{ asset('assets/img/v2/'.$image.'-640.webp') }} 640w, {{ asset('assets/img/v2/'.$image.'-960.webp') }} 960w" sizes="(max-width: 760px) 92vw, (max-width: 1024px) 46vw, 30vw" alt="" loading="lazy" decoding="async">
+                        <div class="connected-capability__copy">
+                            <div><h3><x-dm-icon :name="$icon" :size="26"/>{{ $title }}</h3><p>{{ $description }}</p></div>
+                            <span class="connected-capability__arrow" aria-hidden="true">→</span>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </section>
 
-            <div class="solution-visual">
-                <figure>
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-outdoor.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-outdoor.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A large roadside LED billboard above a Kuala Lumpur highway" loading="lazy" decoding="async">
-                    <figcaption>Place: a real outdoor moment in the city.</figcaption>
-                </figure>
-                <figure>
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/medium-creators.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/medium-creators.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A creator recording a product-led story at home" loading="lazy" decoding="async">
-                    <figcaption>Engage: creator content built for the audience.</figcaption>
-                </figure>
-                <figure>
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/service-web.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/service-web.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="A digital interface on a laptop screen" loading="lazy" decoding="async">
-                    <figcaption>Convert: the digital journey after the impression.</figcaption>
-                </figure>
-                <figure>
-                    <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/insight-measurement.webp') }}" srcset="{{ \App\Features\Catalog\Support\MediaImage::srcset('assets/img/v2/insight-measurement.webp', [480, 960, 1536]) }}" sizes="(max-width: 1024px) 92vw, 46vw" alt="Campaign measurement notes and charts" loading="lazy" decoding="async">
-                    <figcaption>Learn: reporting that answers a decision.</figcaption>
-                </figure>
+        <section class="container connected-section" aria-labelledby="connected-process-title">
+            <div class="connected-heading">
+                <h2 id="connected-process-title">One campaign. One connected system.</h2>
+                <p>A clear process from your first brief to the results that inform your next campaign.</p>
             </div>
-        </div>
-    </section>
+            <ol class="connected-stages">
+                @foreach ($stages as [$title, $description, $icon])
+                    <li class="connected-stage">
+                        <x-dm-icon :name="$icon" :size="30"/>
+                        <h3>{{ $title }}</h3>
+                        <p>{{ $description }}</p>
+                    </li>
+                @endforeach
+            </ol>
+        </section>
 
-    <section class="section section--dark">
-        <div class="container">
-            <div class="cta-panel__inner">
-                <div>
-                    <span class="eyebrow eyebrow--pale">Production, media and technology</span>
-                    <h2 class="section-title">Built around a shared objective.</h2>
-                    <p style="max-width:620px;margin-top:0.8rem;color:rgba(255,248,247,.66)">Bring us the outcome and the constraints. We will help decide which media, creative and systems deserve the investment.</p>
-                </div>
-                <div class="cta-panel__actions">
-                    <a class="button button--on-dark" href="{{ route('advisor') }}">Start planning <span aria-hidden="true">↗</span></a>
-                    <a class="button button--outline-light" href="{{ route('services') }}">See all services</a>
-                </div>
+        <section class="container connected-section" aria-labelledby="connected-example-title">
+            <div class="connected-heading">
+                <h2 id="connected-example-title">How it works</h2>
+                <p>A product launch example: from the first impression to engagement and customer response.</p>
             </div>
-        </div>
-    </section>
+            <div class="connected-examples">
+                @foreach ($example as [$title, $description, $image])
+                    <article class="connected-example">
+                        <img src="{{ asset('assets/img/v2/'.$image.'-640.webp') }}" srcset="{{ asset('assets/img/v2/'.$image.'-480.webp') }} 480w, {{ asset('assets/img/v2/'.$image.'-640.webp') }} 640w, {{ asset('assets/img/v2/'.$image.'-960.webp') }} 960w" sizes="(max-width: 760px) 92vw, 30vw" alt="" loading="lazy" decoding="async">
+                        <div><h3>{{ $title }}</h3><p>{{ $description }}</p></div>
+                    </article>
+                @endforeach
+            </div>
+        </section>
+
+        <section class="container connected-section connected-final" aria-labelledby="connected-final-title">
+            <div class="connected-final__panel">
+                <h2 id="connected-final-title">Let’s build your next campaign.</h2>
+                <p>Tell us your goals and we’ll put together the right media, creative and technology solution for you.</p>
+                <a class="button button--on-dark" href="{{ route('advisor') }}">Start planning <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </div>
 @endsection
