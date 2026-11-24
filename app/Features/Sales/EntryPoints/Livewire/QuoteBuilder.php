@@ -63,7 +63,11 @@ class QuoteBuilder extends Component
 
         if ($instance !== '') {
             $record = app(PlanService::class)->find($instance);
-            abort_unless($record, 404);
+
+            if ($record === null) {
+                abort(404);
+            }
+
             $this->planInstance = $instance;
             session(['campaign-plan-draft' => $instance]);
             $this->objective = (string) $record->getMetadataValue('objective', '');
@@ -273,7 +277,10 @@ class QuoteBuilder extends Component
         }
 
         $plan = app(PlanService::class)->find($this->planInstance);
-        abort_unless($plan, 404);
+
+        if ($plan === null) {
+            abort(404);
+        }
 
         return $plan;
     }

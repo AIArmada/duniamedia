@@ -4,7 +4,7 @@ Sources:
 - Folder A `RATECARD-2026DuniaMedia-RAMedia` (imported into this app)
 - Folder B `RAMediaRateCard2026` (imported into this app; refreshed 13 Nov 2026)
 
-The original import published 29 files as 28 media offerings. The 12–13 Nov 2026 refresh added 12 media offerings, bringing the catalogue to 40. Every document is hosted privately by the app (PDF/XLSX/JPG) and streamed through a local route. Owner-restricted files are excluded entirely — no media offering, no external link, no price.
+The original import published 29 files as 28 media offerings. The 12–13 Nov 2026 refresh added 12 media offerings, bringing the catalogue to 40. Every document is retained privately for internal reference; visitors never receive a PDF, deck viewer or download route. Owner-restricted files are excluded entirely — no media offering, no external link, no price.
 
 ## 13 Nov 2026 update — ERL and KLIA 2026
 
@@ -79,27 +79,36 @@ The eleven new entries keep the same guardrails: `pricing_mode=indicative`, `ava
 
 Excluded (restricted, ignored): iMedia Introduction Deck, Astro_Islamic Program, OMNIA_RR2027 MASTER DECK, Kempen Ramadan Syawal, The Edge FY2026, CIQ Premium Reach, CIQ Urban Coverage, Impact 2.0 x5 / 3.0 / New DOOH Intro (7 PPTX).
 
-## Hosting & visuals (implemented)
-- All 43 source PDFs (41 current + 2 superseded KLIA 2024 decks), 3 workbooks, 1 promo image and
-  2 walkthrough videos live in `storage/app/private/ratecards/` and stream through
-  `GET /offers/{slug}/rate-card/{index}` (`RateCardController`). No Google Drive, no external links.
-- The catalogue attaches 48 documents across 40 offerings into the private media library; PDFs are
-  embedded in the detail page (iframe), images render inline, videos play inline, and workbooks
-  offer a hosted download.
-- `tests/Feature/RateCardCoverageTest.php` fails the build if a catalogue document is missing, a source
-  PDF is unattached, a source PDF has no extracted rate rows, or a PDF-backed offering loses its
-  summary/formats/rate tiers.
-- `RateCardEntrySeeder` loads the extracted ledger into `rate_card_entries` (2,023 rows across 38
-  offerings) and `rate_card_notes` (107 extraction gaps and 2 image/workbook-only sources), so the
-  detailed rates and caveats are queryable in the database without opening a PDF.
-- Every page of every current deck is rendered to `public/assets/ratecards/pages/{deck}/page-{n}.webp`
-  (757 pages, 56 MB) by `scripts/extract-rate-card-visuals.py`. `RateCardVisualSeeder` loads the
-  manifest into `rate_card_visuals` (819 rows across 39 offerings), and the offer page shows an
-  expandable "Inside the deck" gallery so the full presentation is browsable in HTML.
-- 40 editorial hero images now exist at `public/assets/ratecards/img/{slug}.webp` plus 480/960
-  variants. The original 28 were generated with the Codex imagegen skill; the remaining 12 were
-  generated in the same cinematic Malaysian editorial style with Codex imagegen and installed with
-  `scripts/install-rate-card-hero.py`.
+## No-PDF HTML catalogue (implemented 24 Nov 2026)
+- The public PDF route and the embedded deck viewer were removed. `RateCardController` no longer
+  exists, and `PublicNoPdfTest` fails if any public page exposes a PDF link, a `rate-card/` document
+  route, a source-document label or an iframe.
+- All 43 source PDFs, workbooks, promo images and walkthrough videos remain private in
+  `storage/app/private/ratecards/` and the media library for internal reference only.
+- One canonical content file per deck lives in `resources/data/rate-cards/{slug}.json`. The files are
+  generated from the catalogue and extracted ledger by `scripts/build-rate-card-content.py` and
+  imported by `RateCardContentSeeder`. Current shape: 40 decks, 97 channels, 388 rate sections and
+  2,023 rate lines.
+- Multi-channel decks are split by channel: RTM TV/radio, Sinar Karangkraf titles, Media Prima Audio
+  stations, Omnia networks, Astro channels, RA Media news/talkshow broadcasters, Bernama platforms
+  and TVS inventory each have their own channel pages. Channel-specific sections and shared sections
+  are modelled with `rate_card_sections` and the section-channel pivot.
+- Visitors see DB-driven rate tables and packages rendered through shared Blade components inside
+  dedicated owner, channel and deck views. There are bespoke pages for 12 owners, 21 channels and
+  9 priority decks — for example `pages/owners/media-prima.blade.php`,
+  `pages/channels/media-prima-tv3.blade.php` and `pages/offers/rtm-tv-radio-2025.blade.php` — with
+  generic fallbacks for the rest. `scripts/generate-bespoke-ratecard-views.py` holds the curated
+  content map and regenerates those files.
+- `/rates` is a searchable rate finder across every line, with owner, channel, medium and price
+  filters. Priced lines can be added to a campaign plan; quantities and indicative totals recalculate
+  in the plan builder and carry through to quote lines.
+- The 757 page renders, the `rate_card_visuals` table and the "Inside the deck" gallery were removed.
+  Visuals are now curated photos/illustrations and 40 editorial hero images at
+  `public/assets/ratecards/img/{slug}.webp` plus 480/960 variants. The 12 previously missing heroes
+  were generated with Codex imagegen and installed with `scripts/install-rate-card-hero.py`.
+- `tests/Feature/RateCardContentSeederTest.php`, `RateFinderTest.php`, `RatePlanTest.php`,
+  `PublicNoPdfTest.php` and `RateCardCoverageTest.php` guard the content model, search, calculation
+  and zero-PDF public surface.
 - The `/work` archive's Drive links were removed; `client-work.json` now carries no external source links.
 
 ## Link audit (both Drive folders)

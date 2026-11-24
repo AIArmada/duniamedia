@@ -11,6 +11,13 @@
         'type' => 'rich_text',
         'payload' => ['body' => $channelStory],
     ]]);
+    $heroLede = $description;
+    $firstStory = $storyBlocks[0]['payload']['body'] ?? null;
+
+    if ($firstStory !== null && ($heroLede === '' || str_contains($heroLede, 'inventory, formats and indicative rates'))) {
+        $heroLede = $firstStory;
+    }
+
     $ownerRoute = \App\Features\Catalog\Support\MediaDirectory::owner($owner['slug'] ?? '');
 @endphp
 
@@ -35,7 +42,7 @@
                 </div>
                 <span class="eyebrow">{{ $channel['category'] ?? 'Channel' }}</span>
                 <h1>{{ $channel['name'] }}</h1>
-                <p class="directory-hero__lede">{{ $description }}</p>
+                <p class="directory-hero__lede">{{ $heroLede }}</p>
                 <x-stat-grid :stats="$channelStats ?? []"/>
             </div>
             <div class="directory-hero__actions">

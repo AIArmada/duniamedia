@@ -155,5 +155,10 @@
     "channels": [
       {"slug": "astro-astro-video360", "name": "Astro Video360", "owner": "astro", "medium": "Digital"}
     ]
+  },
+  "tvalhijrah-bincang-niaga-2024": {
+    "channels": [
+      {"slug": "al-hijrah-tv-al-hijrah", "name": "TV AlHijrah", "owner": "al-hijrah", "medium": "TV & Broadcast"}
+    ]
   }
 }

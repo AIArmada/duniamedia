@@ -55,7 +55,7 @@
   ],
   "channels": [
     {
-      "slug": "al-hijrah-tv-alhijrah",
+      "slug": "al-hijrah-tv-al-hijrah",
       "name": "TV AlHijrah",
       "owner": "al-hijrah",
       "medium": "TV & Broadcast",
@@ -72,7 +72,7 @@
           "intro": null,
           "medium": "TV & Broadcast",
           "channels": [
-            "al-hijrah-tv-alhijrah"
+            "al-hijrah-tv-al-hijrah"
           ],
           "items": [
             {
@@ -149,7 +149,7 @@
           "intro": null,
           "medium": "TV & Broadcast",
           "channels": [
-            "al-hijrah-tv-alhijrah"
+            "al-hijrah-tv-al-hijrah"
           ],
           "items": [
             {
@@ -215,7 +215,7 @@
           "intro": null,
           "medium": "TV & Broadcast",
           "channels": [
-            "al-hijrah-tv-alhijrah"
+            "al-hijrah-tv-al-hijrah"
           ],
           "items": [
             {
@@ -281,7 +281,7 @@
           "intro": null,
           "medium": "TV & Broadcast",
           "channels": [
-            "al-hijrah-tv-alhijrah"
+            "al-hijrah-tv-al-hijrah"
           ],
           "items": [
             {
@@ -314,7 +314,7 @@
           "intro": null,
           "medium": "TV & Broadcast",
           "channels": [
-            "al-hijrah-tv-alhijrah"
+            "al-hijrah-tv-al-hijrah"
           ],
           "items": [
             {

@@ -9,6 +9,7 @@
         'type' => 'rich_text',
         'payload' => ['body' => $ownerStory],
     ]]);
+    $ownerLede = $storyBlocks[0]['payload']['body'] ?? $owner['description'];
 @endphp
 
 <section class="directory-hero">
@@ -32,7 +33,7 @@
                 <div class="directory-hero__intro">
                     <span class="eyebrow">Media owner</span>
                     <h1>{{ $owner['name'] }}</h1>
-                    <p class="directory-hero__lede">{{ $owner['description'] }}</p>
+                    <p class="directory-hero__lede">{{ $ownerLede }}</p>
                     <x-stat-grid :stats="$ownerStats ?? []"/>
                 </div>
             </div>

@@ -213,6 +213,10 @@ class MediaDirectory
             };
         }
 
+        if ($ownerSlug === 'media-prima' && $channelSlug === 'big-tree') {
+            return 'media-prima-klcc-snorkels';
+        }
+
         return $ownerSlug.'-'.$channelSlug;
     }
 

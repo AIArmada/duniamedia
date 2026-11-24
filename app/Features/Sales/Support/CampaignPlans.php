@@ -91,7 +91,9 @@ class CampaignPlans
         $cart = Cart::getCartInstance($plan->instance);
         $item = $cart->getItems()->getItem($itemId);
 
-        abort_unless($item, 404);
+        if ($item === null) {
+            abort(404);
+        }
 
         $rateEntryId = $item->attributes->get('rate_entry_id');
 

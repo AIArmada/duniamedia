@@ -64,7 +64,7 @@
 
         <nav class="primary-nav" aria-label="Primary navigation">
             <details class="nav-group">
-                <summary class="nav-link {{ request()->routeIs('media.*') ? 'is-active' : '' }}">
+                <summary class="nav-link {{ request()->routeIs('media.*') || request()->routeIs('rates.*') ? 'is-active' : '' }}">
                     Media
                     <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
                 </summary>
