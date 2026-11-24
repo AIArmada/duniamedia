@@ -8,5 +8,5 @@ interface VerifiesTurnstile
 {
     public function siteKey(): ?string;
 
-    public function verify(string $token, string $action, string $hostname, ?string $ip): bool;
+    public function verify(string $token, string $action, ?string $ip): bool;
 }

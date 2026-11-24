@@ -55,7 +55,7 @@ class ContactForm extends Component
         unset($data['turnstileToken']);
         $this->reset('turnstileToken');
 
-        if (! $turnstile->verify($token, 'contact', request()->getHost(), request()->ip())) {
+        if (! $turnstile->verify($token, 'contact', request()->ip())) {
             $this->addError('turnstileToken', 'The security check could not be verified. Please try again.');
             $this->dispatch('contact-turnstile-reset');
 

@@ -14,20 +14,22 @@ final class CloudflareTurnstile implements VerifiesTurnstile
     {
         $siteKey = config('turnstile.site_key');
         $secretKey = config('turnstile.secret_key');
+        $hostname = config('turnstile.hostname');
 
         return is_string($siteKey) && trim($siteKey) !== ''
             && is_string($secretKey) && trim($secretKey) !== ''
+            && is_string($hostname) && trim($hostname) !== ''
             ? $siteKey
             : null;
     }
 
-    public function verify(string $token, string $action, string $hostname, ?string $ip): bool
+    public function verify(string $token, string $action, ?string $ip): bool
     {
         if ($this->siteKey() === null || $token === '' || strlen($token) > 2048) {
             return false;
         }
 
-        $expectedHostname = config('turnstile.hostname') ?: $hostname;
+        $expectedHostname = config('turnstile.hostname');
 
         try {
             $response = Http::asForm()
