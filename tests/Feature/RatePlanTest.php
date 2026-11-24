@@ -79,6 +79,20 @@ class RatePlanTest extends TestCase
         $reference = RateCardEntry::query()->whereHas('rateSection', fn ($query) => $query->where('key', RateCardSection::MEDIA_VALUE_KEY))->firstOrFail();
         $investment = RateCardEntry::query()->whereHas('rateSection', fn ($query) => $query->where('key', 'zoomerz-sponsorship-media-investment'))->firstOrFail();
 
+        $preview = app(\App\Features\Catalog\Api\PresentsRateLines::class)->preview();
+        $this->assertNotEmpty($preview);
+        $homepage = $this->get('/')->assertOk();
+        foreach ($preview as $line) {
+            $homepage->assertSee(route('plans.rate.add', $line->id), false);
+        }
+        $homepage->assertDontSee(route('plans.rate.add', $reference->id), false);
+
+        $this->get('/search?q='.urlencode($investment->item))
+            ->assertOk()
+            ->assertSee('Matching advertising rates.')
+            ->assertSee($investment->item)
+            ->assertSee(route('offers.show', 'hot-fm-zoomerz-on-ground'));
+
         foreach (['/media/owners/media-prima/hot-fm', '/media/channels/media-prima-hot-fm'] as $url) {
             $this->get($url)
                 ->assertOk()

@@ -4,7 +4,7 @@
     <x-page-hero
         eyebrow="Search"
         title="Find a medium, an owner, a creator or a <span class='editorial'>case study</span>."
-        lede="Search across media opportunities, media owners, creators, campaign history and editorial insights. Use the category pages when you want to browse rather than search."
+        lede="Search across media owners, channels, programmes, rate lines, creators, campaign history and editorial insights. Use the category pages when you want to browse rather than search."
     >
         <x-slot:actions>
             <a class="button button--secondary" href="{{ route('media.owners') }}">Media owners</a>
@@ -28,8 +28,26 @@
                 </div>
             @else
                 <p class="tiny muted" style="margin-bottom:1.4rem">
-                    {{ $media->count() + $creators->count() + $campaigns->count() + $articles->count() }} results for “{{ $query }}”.
+                    {{ $media->count() + $creators->count() + $campaigns->count() + $articles->count() + count($directoryResults) + count($rateResults) }} results for “{{ $query }}”.
                 </p>
+
+                @if ($directoryResults !== [])
+                    <div class="section-heading"><div><span class="eyebrow">Media directory</span><h2 class="section-title">Owners, channels &amp; programmes.</h2></div></div>
+                    <div class="market-search-results">
+                        @foreach ($directoryResults as $result)
+                            <article class="market-search-result"><span class="tag">{{ $result['type'] }}</span><h3><a href="{{ $result['url'] }}">{{ $result['title'] }}</a></h3><p>{{ $result['description'] }}</p><a href="{{ $result['url'] }}">Explore →</a></article>
+                        @endforeach
+                    </div>
+                @endif
+
+                @if ($rateResults !== [])
+                    <div class="section-heading"><div><span class="eyebrow">Rate lines</span><h2 class="section-title">Matching advertising rates.</h2></div><a class="text-link" href="{{ route('rates.index', ['q' => $query]) }}">Compare all matching rates →</a></div>
+                    <div class="market-search-results">
+                        @foreach ($rateResults as $rate)
+                            <article class="market-search-result"><span class="tag">{{ $rate->channelName ?? $rate->channelMedium }}</span><h3><a href="{{ route('offers.show', $rate->productSlug) }}">{{ $rate->item }}</a></h3><p>{{ $rate->isPriced() ? 'Indicative RM '.number_format($rate->price, 2) : 'On request' }} · {{ $rate->unit }}</p><a href="{{ route('offers.show', $rate->productSlug) }}">View rate card →</a></article>
+                        @endforeach
+                    </div>
+                @endif
 
                 @if ($media->isNotEmpty())
                     <div class="section-heading">
@@ -103,7 +121,7 @@
                     </div>
                 @endif
 
-                @if ($media->isEmpty() && $creators->isEmpty() && $campaigns->isEmpty() && $articles->isEmpty())
+                @if ($media->isEmpty() && $creators->isEmpty() && $campaigns->isEmpty() && $articles->isEmpty() && $directoryResults === [] && $rateResults === [])
                     <div class="empty-state" style="text-align:left">
                         <h3>No results for “{{ $query }}”.</h3>
                         <p>Try a medium, a media owner, a creator niche, a client or a campaign name. You can also browse the media explorer directly.</p>

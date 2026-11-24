@@ -7,44 +7,8 @@ let media;
 let refreshTimer;
 
 const hasMotionTargets = () => Boolean(
-    document.querySelector('[data-hero-art], [data-process], [data-timeline]'),
+    document.querySelector('[data-process], [data-timeline]'),
 );
-
-const initHeroParallax = () => {
-    const art = document.querySelector('[data-hero-art]');
-    const hero = art?.closest('.home-hero');
-
-    if (!art || !hero) {
-        return;
-    }
-
-    const main = art.querySelector('[data-hero-shot="main"]');
-    const top = art.querySelector('[data-hero-shot="top"]');
-    const bottom = art.querySelector('[data-hero-shot="bottom"]');
-    const ribbon = art.querySelector('[data-hero-ribbon]');
-
-    if (!main || !top || !bottom) {
-        return;
-    }
-
-    const timeline = gsap.timeline({
-        scrollTrigger: {
-            trigger: hero,
-            start: 'top top',
-            end: 'bottom top',
-            scrub: 0.8,
-        },
-    });
-
-    timeline
-        .to(main, { y: -16, ease: 'none' }, 0)
-        .to(top, { y: 12, ease: 'none' }, 0)
-        .to(bottom, { y: -8, ease: 'none' }, 0);
-
-    if (ribbon) {
-        timeline.to(ribbon, { y: 16, opacity: 0.35, ease: 'none' }, 0);
-    }
-};
 
 const initProcessThread = () => {
     const section = document.querySelector('[data-process]');
@@ -148,9 +112,6 @@ export const initScrollMotion = () => {
         initAboutTimeline();
     });
 
-    media.add('(min-width: 1025px) and (prefers-reduced-motion: no-preference)', () => {
-        initHeroParallax();
-    });
 
     refreshTimer = window.setTimeout(() => ScrollTrigger.refresh(), 120);
 
