@@ -35,6 +35,13 @@ interface PresentsMedia
     public function contains(string $productId): bool;
 
     /**
+     * Every active catalogue offer, featured first.
+     *
+     * @return list<MediaOfferView>
+     */
+    public function activeOffers(): array;
+
+    /**
      * Active catalogue offers keyed by product id.
      *
      * @return array<string, string>

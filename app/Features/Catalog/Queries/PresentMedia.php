@@ -7,7 +7,9 @@ namespace App\Features\Catalog\Queries;
 use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Api\MediaOfferView;
 use App\Features\Catalog\Api\PresentsMedia;
+use App\Features\Catalog\Models\MediaProfile;
 use App\Features\Catalog\Support\MediaOffer;
+use App\Features\Identity\Api\PartySummary;
 use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -132,6 +134,46 @@ final readonly class PresentMedia implements PresentsMedia
     }
 
     /**
+     * @return list<MediaOfferView>
+     */
+    public function activeOffers(): array
+    {
+        $products = $this->baseQuery()
+            ->orderByDesc('is_featured')
+            ->orderBy('name')
+            ->get();
+
+        $ownerIds = MediaProfile::query()
+            ->whereIn('product_id', $products->pluck('id')->all())
+            ->pluck('media_owner_party_id')
+            ->filter()
+            ->unique()
+            ->values();
+
+        $sellers = [];
+
+        foreach ($ownerIds as $ownerId) {
+            if (! is_string($ownerId)) {
+                continue;
+            }
+
+            foreach ($this->parties->byIds($ownerId) as $party) {
+                $sellers[$party->id] = $party;
+            }
+        }
+
+        $views = [];
+
+        foreach ($products as $product) {
+            if ($product instanceof Product) {
+                $views[] = $this->present($product, $sellers);
+            }
+        }
+
+        return $views;
+    }
+
+    /**
      * @return array<string, string>
      */
     public function optionList(): array
@@ -139,12 +181,17 @@ final readonly class PresentMedia implements PresentsMedia
         return $this->baseQuery()->orderBy('name')->pluck('name', 'id')->all();
     }
 
-    private function present(Product $product): MediaOfferView
+    /**
+     * @param  array<string, PartySummary>  $sellers
+     */
+    private function present(Product $product, array $sellers = []): MediaOfferView
     {
         $media = new MediaOffer($product);
         $profile = $product->mediaProfile;
         $ownerId = $profile?->media_owner_party_id;
-        $seller = $ownerId !== null ? $this->parties->byIds($ownerId)[0] ?? null : null;
+        $seller = $ownerId !== null
+            ? ($sellers[$ownerId] ?? $this->parties->byIds($ownerId)[0] ?? null)
+            : null;
 
         return new MediaOfferView(
             id: $product->id,
@@ -167,6 +214,7 @@ final readonly class PresentMedia implements PresentsMedia
             imageUrl: $media->displayImage(),
             specifications: is_array($profile?->specifications) ? $profile->specifications : [],
             documents: $media->documents(),
+            unitCode: $profile?->unit_code,
         );
     }
 }

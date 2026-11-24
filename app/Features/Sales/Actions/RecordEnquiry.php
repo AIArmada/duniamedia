@@ -10,7 +10,7 @@ use App\Features\Sales\Models\Enquiry;
 final readonly class RecordEnquiry implements RecordsEnquiries
 {
     /**
-     * @param  array{source: string, subject: string, brief?: string|null, consent_at?: string|null, metadata?: array<string, mixed>}  $details
+     * @param  array{source: string, subject: string, brief?: string|null, consent_at?: string|null, budget_amount?: float|null, currency_code?: string|null, metadata?: array<string, mixed>}  $details
      */
     public function record(string $partyId, array $details): string
     {
@@ -19,6 +19,8 @@ final readonly class RecordEnquiry implements RecordsEnquiries
             'source' => $details['source'],
             'subject' => $details['subject'],
             'brief' => $details['brief'] ?? null,
+            'budget_amount' => $details['budget_amount'] ?? null,
+            'currency_code' => $details['currency_code'] ?? null,
             'status' => 'new',
             'consent_at' => $details['consent_at'] ?? now(),
             'metadata' => $details['metadata'] ?? null,

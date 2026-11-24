@@ -31,6 +31,7 @@ final readonly class MediaOfferView
         public string $imageUrl,
         public array $specifications,
         public array $documents,
+        public ?string $unitCode = null,
     ) {}
 
     public function displayImage(): string

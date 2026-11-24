@@ -15,4 +15,11 @@ interface ListsCreators
      * @return list<array{id: string, name: string}>
      */
     public function options(): array;
+
+    /**
+     * Verified, active creators with featured creators first.
+     *
+     * @return list<CreatorSummary>
+     */
+    public function active(int $limit = 12): array;
 }

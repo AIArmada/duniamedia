@@ -28,7 +28,8 @@
       "App\\Features\\Sales\\Persistence\\WriteFlightPlacements"
     ],
     "table:carts": [
-      "App\\Features\\Sales\\Persistence\\WriteCampaignPlan"
+      "App\\Features\\Sales\\Persistence\\WriteCampaignPlan",
+      "App\\Features\\Sales\\Actions\\CreateCampaignPlanFromMix"
     ]
   },
   "extensions": {}

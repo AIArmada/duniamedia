@@ -44,6 +44,7 @@ class AdminPanelTest extends TestCase
             '/admin/media-properties',
             '/admin/creator-profiles',
             '/admin/enquiries',
+            '/admin/advisor-sessions',
             '/admin/campaigns',
             '/admin/quotes',
             '/admin/quote-lines',

@@ -2,12 +2,12 @@
 
 namespace Tests\Feature;
 
+use App\Features\Advisor\EntryPoints\Livewire\MediaAdvisor;
 use App\Features\Catalog\EntryPoints\Livewire\MediaExplorer;
 use App\Features\Creators\EntryPoints\Livewire\CreatorJoin;
 use App\Features\Creators\Models\CreatorProfile;
 use App\Features\Identity\Models\Party;
 use App\Features\Sales\EntryPoints\Livewire\AssetOwnerForm;
-use App\Features\Sales\EntryPoints\Livewire\CampaignPlanner;
 use App\Features\Sales\EntryPoints\Livewire\ContactForm;
 use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -172,18 +172,50 @@ class PublicExperienceTest extends TestCase
         $this->assertDatabaseCount('quote_lines', 1);
     }
 
-    public function test_advisor_returns_an_illustrative_direction_and_saves_a_brief(): void
+    public function test_advisor_generates_a_catalogue_grounded_strategy(): void
     {
-        Livewire::test(CampaignPlanner::class)
+        $this->createMediaOffer([
+            'name' => 'Advisor Radio Spot',
+            'slug' => 'advisor-radio-spot',
+        ], [
+            'medium' => 'Radio',
+            'location_label' => 'Klang Valley',
+            'price_from' => 12000,
+            'pricing_mode' => 'fixed',
+        ]);
+
+        Livewire::test(MediaAdvisor::class)
             ->set('objective', 'leads')
-            ->set('budget', '15000-50000')
-            ->set('location', 'Klang Valley')
-            ->call('plan')
-            ->assertSet('showResult', true)
-            ->set('name', 'Test Planner')
-            ->set('email', 'planner@example.com')
+            ->set('budgetAmount', '50000')
+            ->set('regions', ['Klang Valley'])
+            ->set('languages', ['Malay', 'English'])
+            ->call('generate')
+            ->assertHasNoErrors()
+            ->assertSet('generated', true)
+            ->assertSee('Advisor Radio Spot');
+
+        $this->assertDatabaseCount('advisor_sessions', 1);
+        $this->assertDatabaseCount('advisor_messages', 1);
+    }
+
+    public function test_advisor_submits_a_brief_for_senior_planner_review(): void
+    {
+        $this->createMediaOffer([
+            'name' => 'Advisor Billboard',
+            'slug' => 'advisor-billboard',
+        ], [
+            'medium' => 'Outdoor',
+            'location_label' => 'Klang Valley',
+        ]);
+
+        Livewire::test(MediaAdvisor::class)
+            ->set('objective', 'awareness')
+            ->set('budgetAmount', '80000')
+            ->call('generate')
+            ->set('requesterName', 'Test Planner')
+            ->set('requesterEmail', 'planner@example.com')
             ->set('consent', true)
-            ->call('save')
+            ->call('submit')
             ->assertHasNoErrors()
             ->assertSet('submitted', true);
 

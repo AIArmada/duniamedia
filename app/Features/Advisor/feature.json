@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "name": "Advisor",
+  "owns": {
+    "table:advisor_sessions": [
+      "App\\Features\\Advisor\\Persistence\\WriteAdvisorSessions"
+    ],
+    "table:advisor_messages": [
+      "App\\Features\\Advisor\\Persistence\\WriteAdvisorMessages"
+    ]
+  },
+  "extensions": {}
+}

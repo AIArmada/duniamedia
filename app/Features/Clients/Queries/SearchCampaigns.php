@@ -50,6 +50,40 @@ final readonly class SearchCampaigns implements ListsCampaigns
     }
 
     /**
+     * @return list<array{
+     *     id: string, title: string, description: ?string, medium: ?string,
+     *     channel: ?string, date: ?string, year: int, client_id: ?string
+     * }>
+     */
+    public function recent(int $limit = 12): array
+    {
+        $campaigns = Campaign::query()
+            ->published()
+            ->orderByDesc('starts_on')
+            ->limit($limit)
+            ->get();
+
+        $recent = [];
+
+        foreach ($campaigns as $campaign) {
+            $date = (string) $campaign->starts_on;
+
+            $recent[] = [
+                'id' => $campaign->id,
+                'title' => $campaign->name,
+                'description' => $campaign->summary,
+                'medium' => $campaign->medium,
+                'channel' => $campaign->channel_label,
+                'date' => $date,
+                'year' => (int) mb_substr($date, 0, 4),
+                'client_id' => $campaign->client_party_id,
+            ];
+        }
+
+        return $recent;
+    }
+
+    /**
      * @return array<string, string>
      */
     public function options(): array

@@ -20,6 +20,7 @@
 /data/
 
 /bootstrap/cache/*.php
+/bootstrap/cache/filament/
 /database/staging.sqlite
 /.phpunit.result.cache
 /.env.bak-dev

@@ -53,6 +53,32 @@ final readonly class SearchCreators implements ListsCreators
     }
 
     /**
+     * @return list<CreatorSummary>
+     */
+    public function active(int $limit = 12): array
+    {
+        return CreatorProfile::query()
+            ->where('status', 'active')
+            ->where('verification_status', 'verified')
+            ->orderByDesc('is_featured')
+            ->orderBy('slug')
+            ->limit($limit)
+            ->get()
+            ->map(fn (CreatorProfile $profile): CreatorSummary => new CreatorSummary(
+                id: $profile->id,
+                name: $profile->displayName(),
+                slug: $profile->slug,
+                niche: $profile->primary_niche,
+                socialPlatform: $profile->social_platform,
+                handle: $profile->handle,
+                bio: $profile->bio,
+                isFeatured: (bool) $profile->is_featured,
+                imageUrl: $profile->displayImage(),
+            ))
+            ->all();
+    }
+
+    /**
      * @return list<array{id: string, name: string}>
      */
     public function options(): array
