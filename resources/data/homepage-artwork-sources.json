@@ -1,0 +1,31 @@
+{
+  "hot-fm-activation.webp": {
+    "deck": "hot-fm-zoomerz-on-ground",
+    "embedded_image": "image-020.jpg"
+  },
+  "hot-fm-community.webp": {
+    "deck": "hot-fm-zoomerz-on-ground",
+    "embedded_image": "image-022.jpg"
+  },
+  "big-tree-klcc.webp": {
+    "deck": "klcc-snorkels-2024-big-tree",
+    "embedded_image": "image-011.jpg"
+  },
+  "big-tree-klcc-placement.webp": {
+    "deck": "klcc-snorkels-2024-big-tree",
+    "embedded_image": "image-099.jpg"
+  },
+  "tv3-newsroom.webp": {
+    "deck": "podcast-utama-buletin-tv3",
+    "embedded_image": "image-025.jpg",
+    "adjustment": "brightness only"
+  },
+  "tv3-podcast.webp": {
+    "deck": "podcast-utama-buletin-tv3",
+    "embedded_image": "image-154.jpg"
+  },
+  "sinar-editorial.webp": {
+    "deck": "sinar-karangkraf-ratecard-2025-2026",
+    "embedded_image": "image-000.ppm"
+  }
+}
