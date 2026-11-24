@@ -96,7 +96,7 @@ final readonly class ConvertAdvisorToPlan
             'launch_window' => $session->launch_window,
             'advisor_reference' => (string) $session->share_token,
             'advisor_scenario' => (string) ($session->selected_scenario_key ?? 'balanced'),
-            'advisor_services' => is_array($session->customized_services) ? $session->customized_services : [],
+            'services' => is_array($session->customized_services) ? $session->customized_services : [],
             'source' => 'media_advisor',
         ];
     }

@@ -17,8 +17,9 @@ final readonly class RequestQuote
 
     /**
      * @param  array{name: string, email?: string|null, phone?: string|null, company?: string|null}  $buyer
-     * @param  list<array{product_id: string, name: string, unit_code: ?string, unit_price: float}>  $lines
+     * @param  list<array{product_id: string, name: string, unit_code: ?string, unit_price: float, quantity: int}>  $lines
      * @param  list<string>  $addons
+     * @param  array<string, mixed>  $campaign
      */
     public function handle(
         array $buyer,
@@ -27,9 +28,9 @@ final readonly class RequestQuote
         ?string $brief,
         array $lines,
         array $addons = [],
-        ?string $objective = null,
+        array $campaign = [],
     ): string {
-        return DB::transaction(function () use ($buyer, $sellerPartyId, $subject, $brief, $lines, $addons): string {
+        return DB::transaction(function () use ($buyer, $sellerPartyId, $subject, $brief, $lines, $addons, $campaign): string {
             $buyerPartyId = $this->parties->createWithContact($buyer);
 
             $enquiry = Enquiry::query()->create([
@@ -39,7 +40,7 @@ final readonly class RequestQuote
                 'brief' => $brief,
                 'status' => 'new',
                 'consent_at' => now(),
-                'metadata' => ['addons' => $addons],
+                'metadata' => ['addons' => $addons, 'campaign' => $campaign],
             ]);
 
             $reference = 'DM-'.now()->format('ymd').'-'.strtoupper(Str::random(6));
@@ -56,7 +57,7 @@ final readonly class RequestQuote
                 'price_visibility' => 'private',
                 'notes' => 'Indicative only; subject to media-owner confirmation.',
                 'valid_until' => now()->addDays(14)->toDateString(),
-                'subtotal_amount' => $allPublic ? collect($lines)->sum('unit_price') : 0,
+                'subtotal_amount' => $allPublic ? collect($lines)->sum(fn (array $line): float => $line['unit_price'] * $line['quantity']) : 0,
             ]);
 
             foreach ($lines as $line) {
@@ -66,9 +67,9 @@ final readonly class RequestQuote
                     'kind' => 'media',
                     'description' => $line['name'],
                     'unit_code' => $line['unit_code'],
-                    'quantity' => 1,
+                    'quantity' => $line['quantity'],
                     'unit_price' => $line['unit_price'],
-                    'line_total' => $line['unit_price'],
+                    'line_total' => $line['unit_price'] * $line['quantity'],
                 ]);
             }
 

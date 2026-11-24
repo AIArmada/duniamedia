@@ -99,7 +99,8 @@ class CampaignPlansTest extends TestCase
         ]);
         $plans = app(PlanService::class);
         $plan = $plans->create('Quote conversion', ['objective' => 'Awareness']);
-        $plans->addOffering($plan, $offering);
+        $plans->addOffering($plan, $offering, 3);
+        $plans->applyDiscount($plan, 'Package saving', '10%');
 
         Livewire::test(QuoteBuilder::class, ['plan' => $plan->instance])
             ->set('name', 'Test Buyer')
@@ -108,7 +109,11 @@ class CampaignPlansTest extends TestCase
             ->call('submit')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHas('quotes', ['status' => 'requested']);
+        $this->assertDatabaseHas('quotes', ['status' => 'requested', 'subtotal_amount' => 3000]);
+        $this->assertDatabaseHas('quote_lines', ['product_id' => $offering->id, 'quantity' => 3, 'unit_price' => 1000, 'line_total' => 3000]);
+        $enquiry = \App\Features\Sales\Models\Enquiry::query()->firstOrFail();
+        $this->assertSame(30000, $enquiry->metadata['campaign']['discount_minor']);
+        $this->assertSame(270000, $enquiry->metadata['campaign']['total_minor']);
         $this->assertNotNull($plan->fresh()->checked_out_at);
         $this->assertCount(0, $plans->all());
     }
