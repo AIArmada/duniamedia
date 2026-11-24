@@ -11,6 +11,7 @@ use AIArmada\Cart\Models\CartModel;
 use AIArmada\Cart\Support\CartIdentifierResolver;
 use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Api\PresentsMedia;
+use App\Features\Catalog\Api\PresentsRateLines;
 use App\Features\Catalog\Api\RateLineView;
 use App\Features\Sales\Persistence\WriteCampaignPlan;
 use Illuminate\Database\Eloquent\Builder;
@@ -87,9 +88,23 @@ class CampaignPlans
 
     public function updateQuantity(CartModel $plan, string $itemId, int $quantity): void
     {
-        Cart::getCartInstance($plan->instance)->update($itemId, [
-            'quantity' => ['value' => max(1, $quantity)],
-        ]);
+        $cart = Cart::getCartInstance($plan->instance);
+        $item = $cart->getItems()->getItem($itemId);
+
+        abort_unless($item, 404);
+
+        $rateEntryId = $item->attributes->get('rate_entry_id');
+
+        if (is_string($rateEntryId) && $rateEntryId !== '') {
+            $line = app(PresentsRateLines::class)->find($rateEntryId);
+            abort_unless($line && $line->isPriced(), 404);
+            $buyable = new RateLineBuyable($line);
+        } else {
+            $buyable = Product::query()->findOrFail($item->attributes->get('product_id'));
+            abort_unless(app(PresentsMedia::class)->contains($buyable->id), 404);
+        }
+
+        $cart->updateBuyable($buyable, max(1, $quantity), $itemId);
     }
 
     public function removeItem(CartModel $plan, string $itemId): void

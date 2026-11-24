@@ -60,6 +60,12 @@ class RatePlanTest extends TestCase
             ->assertOk()
             ->assertSee($entry->item);
 
+        $this->get(route('quote.builder', ['plan' => $instance]))
+            ->assertOk()
+            ->assertSee('Proposal Studio')
+            ->assertSee($entry->item)
+            ->assertSee('RM '.number_format((float) $entry->price_rm * 3, 2));
+
         $this->get('/rates?q='.urlencode($entry->item))
             ->assertOk()
             ->assertSee($entry->item);

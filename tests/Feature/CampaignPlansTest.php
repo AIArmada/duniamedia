@@ -87,6 +87,20 @@ class CampaignPlansTest extends TestCase
         $this->assertSame(1, $summary['items']->count());
     }
 
+    public function test_proposal_media_uses_the_same_draft_when_reopened(): void
+    {
+        $offering = $this->createMediaOffer(['price' => 100000], ['pricing_mode' => 'fixed']);
+
+        $component = Livewire::test(QuoteBuilder::class)->call('add', $offering->id)->assertHasNoErrors();
+        $instance = $component->get('planInstance');
+
+        Livewire::test(QuoteBuilder::class)
+            ->assertSet('planInstance', $instance)
+            ->assertSee($offering->name);
+
+        $this->assertDatabaseCount('carts', 1);
+    }
+
     public function test_a_saved_plan_can_be_converted_into_a_quote_request(): void
     {
         Party::factory()->create(['slug' => 'ra-media-relations', 'display_name' => 'RA Media Relations Sdn Bhd']);
@@ -99,16 +113,29 @@ class CampaignPlansTest extends TestCase
         ]);
         $plans = app(PlanService::class);
         $plan = $plans->create('Quote conversion', ['objective' => 'Awareness']);
-        $plans->addOffering($plan, $offering);
+        $plans->addOffering($plan, $offering, 3);
+        $plans->applyDiscount($plan, 'Package saving', '10%');
+
+        $itemId = $plans->summary($plan)['items']->first()->id;
 
         Livewire::test(QuoteBuilder::class, ['plan' => $plan->instance])
+            ->assertSee('RM 2,700.00')
+            ->call('updateQuantity', $itemId, 4)
+            ->assertHasNoErrors()
+            ->assertSee('RM 3,600.00')
+            ->call('updateQuantity', $itemId, 3)
+            ->assertHasNoErrors()
             ->set('name', 'Test Buyer')
             ->set('email', 'buyer@example.com')
             ->set('consent', true)
             ->call('submit')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHas('quotes', ['status' => 'requested']);
+        $this->assertDatabaseHas('quotes', ['status' => 'requested', 'subtotal_amount' => 3000]);
+        $this->assertDatabaseHas('quote_lines', ['product_id' => $offering->id, 'quantity' => 3, 'unit_price' => 1000, 'line_total' => 3000]);
+        $enquiry = \App\Features\Sales\Models\Enquiry::query()->firstOrFail();
+        $this->assertSame(30000, $enquiry->metadata['campaign']['discount_minor']);
+        $this->assertSame(270000, $enquiry->metadata['campaign']['total_minor']);
         $this->assertNotNull($plan->fresh()->checked_out_at);
         $this->assertCount(0, $plans->all());
     }
