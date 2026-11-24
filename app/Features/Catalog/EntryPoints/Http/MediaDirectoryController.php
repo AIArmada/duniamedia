@@ -15,12 +15,36 @@ class MediaDirectoryController extends Controller
     {
         $query = trim((string) $request->query('q', ''));
 
+        $categories = [
+            'all' => ['label' => 'All media', 'icon' => 'layers'],
+            'television' => ['label' => 'Television', 'icon' => 'tv'],
+            'radio' => ['label' => 'Radio', 'icon' => 'radio'],
+            'publishing' => ['label' => 'Publishing', 'icon' => 'print'],
+            'outdoor' => ['label' => 'Outdoor', 'icon' => 'billboard'],
+            'digital' => ['label' => 'Digital', 'icon' => 'digital'],
+            'transit' => ['label' => 'Transit', 'icon' => 'pin'],
+            'specialist' => ['label' => 'Specialist', 'icon' => 'spark'],
+        ];
+        $category = (string) $request->query('category', 'all');
+        $category = array_key_exists($category, $categories) ? $category : 'all';
+
         $owners = collect(MediaDirectory::owners())
+            ->map(function (array $owner): array {
+                $owner['media_types'] = collect($owner['categories'])
+                    ->flatMap(fn (array $group): array => $this->mediaTypes($group['label']))
+                    ->unique()
+                    ->values()
+                    ->all();
+
+                return $owner;
+            })
+            ->when($category !== 'all', fn ($owners) => $owners->filter(fn (array $owner): bool => in_array($category, $owner['media_types'], true)))
             ->when($query !== '', fn ($owners) => $owners->filter(function (array $owner) use ($query): bool {
                 $haystack = mb_strtolower(implode(' ', [
                     $owner['name'],
                     $owner['description'] ?? '',
                     implode(' ', array_column($owner['channels'], 'name')),
+                    implode(' ', array_column($owner['categories'], 'label')),
                 ]));
 
                 return str_contains($haystack, mb_strtolower($query));
@@ -30,9 +54,31 @@ class MediaDirectoryController extends Controller
         return view('pages.media-owners', [
             'owners' => $owners,
             'query' => $query,
+            'categories' => $categories,
+            'category' => $category,
             'pageTitle' => 'Media Owners | Dunia Media',
             'metaDescription' => 'Browse the media owners and channel groups represented by Dunia Media, from national broadcasters to specialist publishers and out-of-home networks.',
         ]);
+    }
+
+    /** @return list<string> */
+    private function mediaTypes(string $label): array
+    {
+        return match ($label) {
+            'Television networks', 'Television', 'TV home shopping' => ['television'],
+            'Television and digital' => ['television', 'digital'],
+            'Radio', 'National radio', 'State radio' => ['radio'],
+            'Digital publishing' => ['digital', 'publishing'],
+            'Digital', 'Streaming', 'OTT streaming', 'Apps' => ['digital'],
+            'News and press', 'News and publishing', 'News', 'IdeAktif' => ['publishing'],
+            'News platforms' => ['publishing', 'television', 'radio', 'digital'],
+            'Out-of-home', 'Outdoor operators' => ['outdoor'],
+            'Airport terminals', 'Rail media' => ['transit', 'outdoor'],
+            'Business & independent publishing' => ['publishing', 'radio', 'digital', 'specialist'],
+            'Podcast & events' => ['digital', 'specialist'],
+            'Celebrities and KOLs', 'Cinema networks', 'Events & experiences' => ['specialist'],
+            default => ['specialist'],
+        };
     }
 
     public function owner(string $owner)
