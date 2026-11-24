@@ -194,3 +194,16 @@
 @media (max-width: 360px) {
     .network-search { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Thematic category photography, not individual creator profiles. */
+.network-niche{min-height:156px;background-size:cover;background-position:center;isolation:isolate}
+.network-niche::before{background:linear-gradient(90deg,#260d20e6,#260d2069),linear-gradient(0deg,#260d20c2,transparent);z-index:-1}
+.network-niche--food{background-image:url('/assets/img/creator-feature.webp')}
+.network-niche--lifestyle{background-image:url('/assets/img/v2/persona-creator.webp')}
+.network-niche--travel{background-image:url('/assets/img/v2/hero-city.webp')}
+.network-niche--technology{background-image:url('/assets/img/v2/service-web.webp')}
+.network-niche--family{background-image:url('/assets/img/demo-creator-home.webp')}
+.network-niche--fashion{background-image:url('/assets/img/v2/hero-creators.webp')}
+.network-niche--business{background-image:url('/assets/img/v2/service-planning.webp')}
+.network-niche--education{background-image:url('/assets/img/v2/academy-hero.webp')}
+@media(max-width:650px){.network-niche{min-height:145px}.network-niche strong,.network-niche span{text-shadow:0 1px 4px #0008}}

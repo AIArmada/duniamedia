@@ -63,6 +63,10 @@ class MediaCatalogueSeeder extends Seeder
         ];
 
         foreach ($data['offerings'] ?? [] as $entry) {
+            if (! app()->runningUnitTests() && str_starts_with($entry['slug'], 'demo-creator-')) {
+                continue;
+            }
+
             $product = Product::updateOrCreate(
                 ['slug' => $entry['slug']],
                 [

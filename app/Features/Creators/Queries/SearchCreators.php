@@ -21,6 +21,7 @@ final readonly class SearchCreators implements ListsCreators
         return CreatorProfile::query()
             ->where('status', 'active')
             ->where('verification_status', 'verified')
+            ->where('slug', 'not like', 'demo-creator-%')
             ->where(function ($sub) use ($like): void {
                 $sub->where('bio', 'like', $like)
                     ->orWhere('primary_niche', 'like', $like)
@@ -60,6 +61,7 @@ final readonly class SearchCreators implements ListsCreators
         return CreatorProfile::query()
             ->where('status', 'active')
             ->where('verification_status', 'verified')
+            ->where('slug', 'not like', 'demo-creator-%')
             ->orderByDesc('is_featured')
             ->orderBy('slug')
             ->limit($limit)
@@ -86,6 +88,7 @@ final readonly class SearchCreators implements ListsCreators
         return CreatorProfile::query()
             ->where('status', 'active')
             ->where('verification_status', 'verified')
+            ->where('slug', 'not like', 'demo-creator-%')
             ->orderBy('slug')
             ->get()
             ->map(fn (CreatorProfile $profile): array => ['id' => $profile->id, 'name' => $profile->displayName()])

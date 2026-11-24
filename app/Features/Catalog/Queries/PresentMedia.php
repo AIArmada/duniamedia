@@ -126,6 +126,7 @@ final readonly class PresentMedia implements PresentsMedia
     {
         return Product::query()
             ->where(self::ACTIVE_MEDIA)
+            ->where('slug', 'not like', 'demo-creator-%')
             ->whereHas('mediaProfile')
             ->with('mediaProfile');
     }
