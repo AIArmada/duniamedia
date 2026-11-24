@@ -3436,37 +3436,6 @@ a.pager__link:hover {
     text-decoration: none;
 }
 
-.rate-filters {
-    display: grid;
-    grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(140px, 1fr)) repeat(2, minmax(110px, 0.7fr)) minmax(150px, 1fr) auto;
-    gap: 0.8rem;
-    align-items: end;
-    padding: 1rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    background: var(--color-mist);
-}
-
-.rate-finder__summary {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.6rem;
-    margin: 1.2rem 0 0.8rem;
-    color: var(--color-plum-900);
-    font-size: 0.85rem;
-    font-weight: 800;
-}
-
-.rate-finder__list {
-    margin-top: 0.5rem;
-}
-
-.rate-finder__pagination {
-    margin-top: 1.4rem;
-}
-
 .deck-channel-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
