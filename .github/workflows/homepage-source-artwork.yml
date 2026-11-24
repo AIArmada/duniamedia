@@ -1,0 +1,50 @@
+name: Inspect source artwork for homepage
+on:
+  push:
+    branches: [fix/homepage-visual-fidelity]
+    paths: ['.github/workflows/homepage-source-artwork.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils python3-pil
+      - name: Produce contact sheets of original embedded deck artwork
+        run: |
+          mkdir -p storage/app/private/homepage-artwork-review
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess, tempfile
+          from PIL import Image, ImageDraw, ImageOps
+          decks = ['hot-fm-zoomerz-on-ground', 'omnia-content-terhangat-2026', 'klcc-snorkels-2024-big-tree', 'sinar-harian-20th-anniversary-2026', 'media-prima-audio-trade-show-2025']
+          for slug in decks:
+              with tempfile.TemporaryDirectory() as tmp:
+                  prefix = Path(tmp)/'image'
+                  subprocess.run(['pdfimages','-j',f'storage/app/private/ratecards/{slug}.pdf',str(prefix)],check=True)
+                  rows = []
+                  for f in sorted(Path(tmp).glob('image-*')):
+                      try:
+                          im=Image.open(f)
+                          if im.width>=360 and im.height>=210 and im.width/im.height>=1.0 and im.width/im.height<=3.5:
+                              rows.append((f,im.copy().convert('RGB')))
+                      except Exception: pass
+                  rows=rows[:80]
+                  for batch in range(0,len(rows),24):
+                      part=rows[batch:batch+24]
+                      canvas=Image.new('RGB',(960,((len(part)+3)//4)*164),'white')
+                      draw=ImageDraw.Draw(canvas)
+                      for i,(f,im) in enumerate(part):
+                          x=(i%4)*240;y=(i//4)*164
+                          canvas.paste(ImageOps.contain(im,(230,138)),(x+5,y+4))
+                          draw.text((x+5,y+142),f.name+' '+str(im.size),fill='black')
+                      canvas.save(f'storage/app/private/homepage-artwork-review/{slug}-{batch//24}.jpg',quality=82)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f storage/app/private/homepage-artwork-review/
+          git commit -m 'Temporary private review sheets of existing source artwork'
+          git push origin HEAD:fix/homepage-visual-fidelity
