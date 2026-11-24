@@ -1,4 +1,4 @@
-<div>
+<div class="media-explorer">
     @php
         $mediumIcons = [
             'TV & Broadcast' => 'tv',
@@ -12,51 +12,79 @@
         ];
     @endphp
 
-    <x-page-hero
-        eyebrow="Media opportunities"
-        title="Explore the <span class='editorial'>media</span> world."
-        lede="Filter by platform, medium, media owner, format and location. Every opportunity is tied to a media owner, a channel and a commercial rate card before it reaches a proposal."
-    >
-        <x-slot:actions>
-            <a class="button button--secondary" href="{{ route('media.owners') }}">Browse media owners</a>
-            <a class="button button--secondary" href="{{ route('advisor') }}">Use the media advisor</a>
-        </x-slot:actions>
-    </x-page-hero>
-
-    <section class="catalog" aria-label="Media catalogue">
-        <div class="container">
-            <div class="category-chips" role="group" aria-label="Filter by medium">
-                <button type="button" class="chip @if ($medium === 'all') is-active @endif" wire:click="$set('medium', 'all')" aria-pressed="{{ $medium === 'all' ? 'true' : 'false' }}"><x-dm-icon name="layers" :size="16"/>All media</button>
-                @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Digital', 'Print', 'Indoor', 'Creators', 'Podcast'] as $mediumOption)
-                    <button type="button" class="chip @if ($medium === $mediumOption) is-active @endif" wire:click="$set('medium', '{{ $mediumOption }}')" aria-pressed="{{ $medium === $mediumOption ? 'true' : 'false' }}"><x-dm-icon :name="$mediumIcons[$mediumOption] ?? 'spark'" :size="16"/>{{ $mediumOption }}</button>
-                @endforeach
+    <section class="explorer-hero" aria-labelledby="explorer-title">
+        <div class="container explorer-hero__inner">
+            <div class="explorer-hero__copy">
+                <span class="eyebrow">Media explorer</span>
+                <h1 id="explorer-title">Find the right media.<br><em>Make a bigger impact.</em></h1>
+                <p>Discover advertising opportunities across Malaysia. From TV and radio to outdoor, digital and creators, find the media that fits your brand, audience and goals.</p>
+                <a class="explorer-text-link" href="{{ route('media.owners') }}">Browse media owners <span aria-hidden="true">↗</span></a>
             </div>
+            <picture class="explorer-hero__image">
+                <source media="(max-width: 760px)" srcset="{{ asset('assets/img/v2/hero-media-mobile-480.webp') }} 480w, {{ asset('assets/img/v2/hero-media-mobile-640.webp') }} 640w, {{ asset('assets/img/v2/hero-media-mobile-960.webp') }} 960w" sizes="100vw">
+                <img src="{{ asset('assets/img/v2/hero-media-960.webp') }}" srcset="{{ asset('assets/img/v2/hero-media-640.webp') }} 640w, {{ asset('assets/img/v2/hero-media-960.webp') }} 960w, {{ asset('assets/img/v2/hero-media-1280.webp') }} 1280w" sizes="(max-width: 760px) 100vw, 62vw" alt="" fetchpriority="high" decoding="async">
+            </picture>
+        </div>
+    </section>
 
+    <div class="container explorer-discovery">
+        <div class="explorer-search" role="search" aria-label="Find media opportunities">
+            <div class="explorer-search__query">
+                <flux:input type="search" wire:model.live.debounce.350ms="search" aria-label="Search media" placeholder="Search media, channel or location" icon="magnifying-glass" />
+            </div>
+            <div class="explorer-search__select">
+                <flux:select wire:model.live="location" aria-label="Location">
+                    <option value="all">Any location</option>
+                    @foreach ($locations as $locationOption)
+                        <option value="{{ $locationOption }}">{{ $locationOption }}</option>
+                    @endforeach
+                </flux:select>
+            </div>
+            <div class="explorer-search__select">
+                <flux:select wire:model.live="budget" aria-label="Indicative budget">
+                    <option value="any">Any budget</option>
+                    <option value="5000">Up to RM5,000</option>
+                    <option value="10000">Up to RM10,000</option>
+                    <option value="50000">Up to RM50,000</option>
+                    <option value="100000">Up to RM100,000</option>
+                    <option value="300000">Up to RM300,000</option>
+                </flux:select>
+            </div>
+            <a class="button button--primary explorer-search__action" href="#media-results">Explore media <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="explorer-categories__heading">
+            <h2>Browse by media type</h2>
+            <button type="button" class="explorer-text-link" wire:click="$set('medium', 'all')" aria-pressed="{{ $medium === 'all' ? 'true' : 'false' }}">All media <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="explorer-categories" role="group" aria-label="Filter by medium">
+            @foreach ($mediumIcons as $mediumOption => $mediumIcon)
+                <button type="button" wire:key="medium-{{ $mediumIcon }}-{{ $mediumOption }}" class="explorer-category @if ($medium === $mediumOption) is-active @endif" wire:click="$set('medium', '{{ $mediumOption }}')" aria-pressed="{{ $medium === $mediumOption ? 'true' : 'false' }}">
+                    <x-dm-icon :name="$mediumIcon" :size="30"/>
+                    <span>{{ $mediumOption }}</span>
+                </button>
+            @endforeach
+        </div>
+    </div>
+
+    <section class="catalog explorer-catalog" id="media-results" aria-label="Media catalogue">
+        <div class="container">
             <div class="catalog__layout">
                 <div class="filter-backdrop" data-filter-backdrop></div>
 
                 <aside class="filter-rail" data-filter-rail id="media-filters" aria-label="Refine media results">
                     <div class="filter-rail__head">
-                        <h2>Refine</h2>
+                        <h2>Filters</h2>
                         <div style="display:flex;gap:.6rem;align-items:center">
-                            <a href="{{ route('media.index') }}" wire:navigate>Reset</a>
+                            <button class="explorer-text-link" type="button" wire:click="clearFilters">Reset</button>
                             <button type="button" class="filter-sheet__close" data-filter-close aria-label="Close filters">×</button>
                         </div>
                     </div>
-
-                    <flux:input type="search" wire:model.live.debounce.350ms="search" label="Search" placeholder="Search media…" icon="magnifying-glass" />
 
                     <flux:select wire:model.live="platform" label="Platform">
                         <option value="all">Traditional and digital</option>
                         <option value="traditional" @selected($platform === 'traditional')>Traditional media</option>
                         <option value="digital" @selected($platform === 'digital')>Digital and creators</option>
-                    </flux:select>
-
-                    <flux:select wire:model.live="medium" label="Medium">
-                        <option value="all">All mediums</option>
-                        @foreach (['TV & Broadcast', 'Radio', 'Outdoor', 'Indoor', 'Digital', 'Creators', 'Print', 'Podcast'] as $mediumOption)
-                            <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
-                        @endforeach
                     </flux:select>
 
                     <flux:select wire:model.live="format" label="Format">
@@ -80,13 +108,6 @@
                         @endforeach
                     </flux:select>
 
-                    <flux:select wire:model.live="location" label="Location">
-                        <option value="all">All locations</option>
-                        @foreach ($locations as $locationOption)
-                            <option value="{{ $locationOption }}" @selected($location === $locationOption)>{{ $locationOption }}</option>
-                        @endforeach
-                    </flux:select>
-
                     <flux:select wire:model.live="availability" label="Availability">
                         <option value="all">Any availability</option>
                         <option value="available" @selected($availability === 'available')>Available</option>
@@ -95,21 +116,6 @@
                         <option value="unavailable" @selected($availability === 'unavailable')>Unavailable</option>
                     </flux:select>
 
-                    <flux:select wire:model.live="budget" label="Indicative budget">
-                        <option value="any">Any / discuss with team</option>
-                        <option value="5000" @selected($budget === '5000')>Up to RM5,000</option>
-                        <option value="10000" @selected($budget === '10000')>Up to RM10,000</option>
-                        <option value="50000" @selected($budget === '50000')>Up to RM50,000</option>
-                        <option value="100000" @selected($budget === '100000')>Up to RM100,000</option>
-                        <option value="300000" @selected($budget === '300000')>Up to RM300,000</option>
-                    </flux:select>
-
-                    <div class="filter-help">
-                        <strong>Start with the audience, then narrow the inventory.</strong>
-                        <p>The advisor turns an objective, budget and timing into an illustrative direction before you shortlist a medium or owner.</p>
-                        <flux:button href="{{ route('advisor') }}" variant="primary" size="sm" icon:trailing="arrow-up-right">Open the advisor</flux:button>
-                    </div>
-
                     <div class="filter-sheet__apply">
                         <flux:button type="button" variant="primary" class="w-full" data-filter-close>
                             Show {{ $offerings->total() }} {{ $offerings->total() === 1 ? 'opportunity' : 'opportunities' }}
@@ -117,11 +123,12 @@
                     </div>
                 </aside>
 
-                <div>
+                <div class="explorer-results">
+                    <h2 class="explorer-results__title">Explore media opportunities</h2>
                     <div class="results-bar">
                         <p class="results-bar__count" aria-live="polite">
                             {{ $offerings->total() }} {{ $offerings->total() === 1 ? 'opportunity' : 'opportunities' }}
-                            <span>· subject to owner and availability verification</span>
+                            <span>· Rates and availability subject to confirmation</span>
                         </p>
                         <div class="results-bar__controls">
                             <flux:button type="button" variant="outline" size="sm" class="filter-open" data-filter-open aria-expanded="false" aria-controls="media-filters">
@@ -174,7 +181,7 @@
 
                     <div class="media-grid" wire:loading.class="is-loading" wire:target="search,platform,medium,format,owner,channel,location,availability,budget,sort">
                         @forelse ($offerings as $item)
-                            <x-media-card :item="$item" wire:key="media-{{ $item->id }}"/>
+                            <x-media-card :item="$item" :explorer="true" wire:key="media-{{ $item->id }}"/>
                         @empty
                             <div class="empty-state">
                                 <h3>No media matches those filters.</h3>
@@ -188,8 +195,21 @@
                     </div>
 
                     <div class="pagination-wrap">{{ $offerings->links('pagination.brand', ['livewire' => true]) }}</div>
-                    <p class="tiny muted" style="margin-top:1rem">Rates shown are indicative guides from available rate cards, before applicable taxes and discounts. No payment, reservation or media owner confirmation happens online.</p>
+                    <p class="explorer-disclaimer">Rates shown are indicative guides from available rate cards, before applicable taxes and discounts. No payment, reservation or media owner confirmation happens online.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container explorer-planning" aria-labelledby="explorer-planning-title">
+        <div class="explorer-planning__panel">
+            <picture>
+                <img src="{{ asset('assets/img/v2/service-planning-640.webp') }}" srcset="{{ asset('assets/img/v2/service-planning-480.webp') }} 480w, {{ asset('assets/img/v2/service-planning-640.webp') }} 640w, {{ asset('assets/img/v2/service-planning-960.webp') }} 960w" sizes="(max-width: 760px) 100vw, 30vw" alt="" loading="lazy" decoding="async">
+            </picture>
+            <div class="explorer-planning__copy">
+                <h2 id="explorer-planning-title">Not sure where to start?</h2>
+                <p>Tell us your goals, budget and audience. We’ll help you find the right media mix for your campaign.</p>
+                <a class="button button--on-dark" href="{{ route('advisor') }}">Plan your campaign <span aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>

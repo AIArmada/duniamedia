@@ -1,4 +1,4 @@
-@props(['item'])
+@props(['item', 'explorer' => false])
 @php
     $displayImage = $item->displayImage();
     $imageSrcset = \App\Features\Catalog\Support\MediaImage::srcset($displayImage, [360, 480, 720, 960]);
@@ -45,7 +45,11 @@
                 @endif
                 <small>{{ $hasFixedPrice ? 'Rate card guide · subject to confirmation' : 'Rates and availability on request' }}</small>
             </span>
-            <a href="{{ route('offers.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->name }} details">↗</a>
+            @if ($explorer)
+                <a href="{{ route('offers.show', $item->slug) }}" class="explorer-card-link" aria-label="View {{ $item->name }} details">View details <span aria-hidden="true">→</span></a>
+            @else
+                <a href="{{ route('offers.show', $item->slug) }}" class="media-card__arrow" aria-label="View {{ $item->name }} details">↗</a>
+            @endif
         </div>
     </div>
 </article>

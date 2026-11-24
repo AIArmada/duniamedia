@@ -2,6 +2,7 @@
 @import '../../vendor/livewire/flux/dist/flux.css';
 @import './tokens.css';
 @import './site.css';
+@import './media-explorer.css';
 @import './ratecard.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
