@@ -26,7 +26,7 @@ class MediaAdvisor extends Component
 
     public bool $generated = false;
 
-    public bool $briefOpen = true;
+    public string $workspaceTab = 'brief';
 
     public string $generationMode = 'catalogue_engine';
 
@@ -468,7 +468,7 @@ class MediaAdvisor extends Component
         $this->planInstance = $session->saved_plan_instance;
         $this->submitted = $session->submitted_at !== null;
         $this->generated = $session->recommendations !== null;
-        $this->briefOpen = ! $this->generated;
+        $this->workspaceTab = $this->generated ? 'strategy' : 'brief';
 
         $scenarios = $recommendations['scenarios'] ?? null;
         $this->scenarios = is_array($scenarios) ? $scenarios : [];
@@ -479,7 +479,7 @@ class MediaAdvisor extends Component
     {
         $this->fillFromSession($session);
         $this->generated = true;
-        $this->briefOpen = false;
+        $this->workspaceTab = 'strategy';
         $this->selectedScenario = (string) ($session->selected_scenario_key ?? 'balanced');
         $this->shortlist = $this->scenarioProductIds($this->selectedScenario);
         $this->selectedServices = [];

@@ -24,7 +24,7 @@ class MediaAdvisorTest extends TestCase
 
     public function test_the_workbench_route_and_unknown_permalink_behaviour(): void
     {
-        $this->get('/media-advisor')->assertOk()->assertSee('Media advisor');
+        $this->get('/media-advisor')->assertOk()->assertSee('Media Strategy Studio');
         $this->get('/media-advisor/ADV-NOT-FOUND')->assertNotFound();
     }
 
@@ -346,7 +346,7 @@ class MediaAdvisorTest extends TestCase
         $this->assertNotEmpty($leanIds, 'The lean scenario must recommend something to basket.');
 
         $component
-            ->assertSee('Your basket')
+            ->assertSee('Your shortlist')
             ->assertSee('Clear all');
 
         $removed = $leanIds[0];
@@ -366,7 +366,7 @@ class MediaAdvisorTest extends TestCase
             ->set('budgetAmount', '20000')
             ->call('generate')
             ->assertHasNoErrors()
-            ->assertSee('Your basket');
+            ->assertSee('Your shortlist');
 
         $this->assertNotEmpty(AdvisorSession::query()->firstOrFail()->customized_product_ids);
 
