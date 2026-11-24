@@ -47,8 +47,8 @@
 
         <section class="work-section" id="work-media" aria-labelledby="work-media-title">
             <div class="container">
-                <div class="work-feature">
-                    <div class="work-feature__copy">
+                <div class="work-film-feature">
+                    <div class="work-film-feature__copy">
                         <span class="work-kicker">On screen &amp; on air</span>
                         <h2 id="work-media-title">Stories brought to life.</h2>
                         <p>From public service films to television interviews, commercials and voiceover work. Explore the productions and collaborations behind the campaigns.</p>

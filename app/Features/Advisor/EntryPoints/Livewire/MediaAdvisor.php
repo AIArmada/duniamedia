@@ -108,6 +108,14 @@ class MediaAdvisor extends Component
 
     public function mount(?string $token = null): void
     {
+        if ($token === null) {
+            $objective = request()->query('objective');
+
+            if (is_string($objective) && in_array($objective, ['awareness', 'launch', 'leads', 'sales', 'authority', 'festive'], true)) {
+                $this->objective = $objective;
+            }
+        }
+
         $this->presets = AdvisorPresets::all();
         $this->catalogueOptions = app(PresentsMedia::class)->optionList();
         $this->recent = $this->recentConsultations();

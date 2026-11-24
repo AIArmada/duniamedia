@@ -40,7 +40,8 @@
                     <h2 id="enquiry-title">Let's make something happen.</h2>
                     <p class="contact-enquiry__intro">Tell us about your idea, goals, audience or timing. A rough idea is enough to get started. You don't need a finished brief.</p>
 
-                    <form wire:submit="submit" class="contact-enquiry__form">
+                    <form wire:submit="submit" class="contact-enquiry__form" aria-label="Send an enquiry">
+                        <div class="contact-required-note">Fields marked required are needed for us to respond.</div>
                         <div class="form-grid">
                             <flux:input wire:model="name" label="Your name" required autocomplete="name" placeholder="Your full name" />
                             <flux:input wire:model="email" type="email" label="Email" required autocomplete="email" inputmode="email" placeholder="you@example.com" />

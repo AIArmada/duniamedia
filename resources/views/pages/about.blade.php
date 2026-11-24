@@ -36,10 +36,12 @@
             <div class="container about-story">
                 <figure class="about-album">
                     <div class="about-album__print about-album__print--early">
-                        <img src="{{ asset('assets/img/ra-about-event.webp') }}" alt="Illustration of an early film production setup" loading="lazy" decoding="async">
+                        <img src="{{ asset('assets/work/covers/jwp-psa-kl.webp') }}" alt="Kuala Lumpur public service film from the RA Media archive, 2023" loading="lazy" decoding="async">
+                        <span class="about-album__date">Kuala Lumpur · 2023</span>
                     </div>
                     <div class="about-album__print about-album__print--today">
-                        <img src="{{ asset('assets/img/about-story-live.jpg') }}" alt="Illustration of a contemporary live broadcast crew" loading="lazy" decoding="async">
+                        <img src="{{ asset('assets/work/covers/st-nlko-2025-highlight.webp') }}" alt="Suruhanjaya Tenaga television interview from the RA Media archive, 2025" loading="lazy" decoding="async">
+                        <span class="about-album__date">Suruhanjaya Tenaga · 2025</span>
                     </div>
                 </figure>
                 <div class="about-story__intro">

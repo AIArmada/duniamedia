@@ -135,7 +135,7 @@
         <article class="plans-support__card">
             <img src="{{ asset('assets/img/v2/persona-brand-640.webp') }}" srcset="{{ asset('assets/img/v2/persona-brand-480.webp') }} 480w, {{ asset('assets/img/v2/persona-brand-640.webp') }} 640w" sizes="(max-width: 760px) 92vw, 25vw" alt="" loading="lazy" decoding="async">
             <div>
-                <h2>Get help from the media advisor</h2>
+                <h2>Open Media Strategy Studio</h2>
                 <p>Find a starting direction for your budget, audience and campaign objectives.</p>
                 <a class="button button--secondary" href="{{ route('advisor') }}">Use media advisor <span aria-hidden="true">→</span></a>
             </div>

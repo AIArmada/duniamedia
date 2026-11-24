@@ -67,6 +67,26 @@ class PublicExperienceTest extends TestCase
         $this->get('/offers/test-billboard')->assertSee($media->name);
     }
 
+    public function test_work_and_about_use_genuine_archive_film_stills(): void
+    {
+        $this->get(route('work.index'))
+            ->assertOk()
+            ->assertSee('work-film-feature')
+            ->assertSee('id="archive"', false);
+        $this->get(route('about'))
+            ->assertOk()
+            ->assertSee('assets/work/covers/jwp-psa-kl.webp')
+            ->assertSee('assets/work/covers/st-nlko-2025-highlight.webp');
+    }
+
+    public function test_solution_objectives_link_to_matching_strategy_briefs(): void
+    {
+        $this->get(route('solutions'))
+            ->assertOk()
+            ->assertSee(route('advisor', ['objective' => 'leads']))
+            ->assertSee(route('advisor', ['objective' => 'launch']));
+    }
+
     public function test_homepage_connects_media_discovery_to_campaign_workspaces(): void
     {
         $this->get('/')

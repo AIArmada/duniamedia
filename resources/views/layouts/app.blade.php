@@ -66,7 +66,7 @@
                 </summary>
                 <div class="nav-panel">
                     <a href="{{ route('media.index') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>Browse media opportunities</span> <span>Filter by platform, medium, owner, format and location</span></a>
-                    <a href="{{ route('rates.index') }}"><span class="nav-panel__label"><x-dm-icon name="chart" :size="17"/>Rate finder</span> <span>Search every extracted rate line by owner, channel and budget</span></a>
+                    <a href="{{ route('rates.index') }}"><span class="nav-panel__label"><x-dm-icon name="chart" :size="17"/>Media Rate Exchange</span> <span>Search every extracted rate line by owner, channel and budget</span></a>
                     <a href="{{ route('media.owners') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>Media owners</span> <span>Broadcasters, publishers, out-of-home and specialist channels</span></a>
                     <a href="{{ route('ecosystem') }}"><span class="nav-panel__label"><x-dm-icon name="layers" :size="17"/>How the ecosystem fits</span> <span>Owner, property, asset, surface, placement and inventory</span></a>
                     <a href="{{ route('assets.join') }}"><span class="nav-panel__label"><x-dm-icon name="building" :size="17"/>List your space</span> <span>For media owners, operators and property managers</span></a>
@@ -76,7 +76,7 @@
                     <a href="{{ route('media.index', ['medium' => 'Digital']) }}"><span class="nav-panel__label"><x-dm-icon name="digital" :size="17"/>Digital &amp; Publishing</span> <span>Display, video, editorial and social</span></a>
                     <a href="{{ route('media.index', ['medium' => 'Print']) }}"><span class="nav-panel__label"><x-dm-icon name="print" :size="17"/>Print &amp; Publishing</span> <span>Newspapers, magazines and advertorials</span></a>
                     <a href="{{ route('media.index', ['medium' => 'Creators']) }}"><span class="nav-panel__label"><x-dm-icon name="creators" :size="17"/>Creators &amp; Talent</span> <span>Niche voices, communities and collaborations</span></a>
-                    <a href="{{ route('advisor') }}"><span class="nav-panel__label"><x-dm-icon name="compass" :size="17"/>Media advisor</span> <span>Start with your objective, not the inventory</span></a>
+                    <a href="{{ route('advisor') }}"><span class="nav-panel__label"><x-dm-icon name="compass" :size="17"/>Media Strategy Studio</span> <span>Start with your objective, not the inventory</span></a>
                 </div>
             </details>
 
@@ -147,7 +147,7 @@
                 <a href="{{ route('media.index', ['medium' => 'Digital']) }}">Digital &amp; Publishing</a>
                 <a href="{{ route('media.index', ['medium' => 'Print']) }}">Print</a>
                 <a href="{{ route('media.index', ['medium' => 'Creators']) }}">Creators &amp; Talent</a>
-                <a href="{{ route('advisor') }}">Media advisor</a>
+                <a href="{{ route('advisor') }}">Media Strategy Studio</a>
             </div>
         </details>
         <details class="mobile-nav__group">
@@ -235,7 +235,7 @@
                 <strong>Solutions</strong>
                 <a href="{{ route('solutions') }}">Connected campaigns</a>
                 <a href="{{ route('services') }}">All services</a>
-                <a href="{{ route('advisor') }}">Media advisor</a>
+                <a href="{{ route('advisor') }}">Media Strategy Studio</a>
                 <a href="{{ route('academy') }}">AI &amp; training</a>
             </div>
             <div class="footer-col">
