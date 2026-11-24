@@ -66,6 +66,23 @@ class PublicExperienceTest extends TestCase
         $this->get('/offers/test-billboard')->assertSee($media->name);
     }
 
+    public function test_work_page_exposes_every_playable_archive_asset(): void
+    {
+        $response = $this->get('/work');
+
+        $response->assertOk()
+            ->assertSee('Work that speaks for')
+            ->assertSee('work-next-campaign-mobile.jpg');
+
+        foreach (\App\Features\Clients\Support\ClientWork::media() as $item) {
+            $response->assertSee('id="work-media-'.$item['key'].'"', false)
+                ->assertSee(route('work.media', $item['key']));
+        }
+
+        $this->assertFileExists(public_path('assets/img/work-next-campaign.jpg'));
+        $this->assertFileExists(public_path('assets/img/work-next-campaign-mobile.jpg'));
+    }
+
     public function test_about_page_keeps_the_responsive_story_and_client_roster_available(): void
     {
         $response = $this->get('/about');

@@ -1,13 +1,13 @@
 <section class="work-archive" id="archive" aria-labelledby="work-archive-title">
     <div class="container">
-        <div class="section-heading">
+        <div class="work-archive__heading">
             <div>
-                <span class="eyebrow">Campaign archive</span>
-                <h2 id="work-archive-title" class="section-title">Every campaign, one place.</h2>
-                <p>Search the record by client, campaign, channel or year. The archive is compiled from RA Media's internal client lists.</p>
+                <span class="work-kicker">Campaign archive</span>
+                <h2 id="work-archive-title" class="section-title">Explore our campaign records.</h2>
+                <p>Find work by client, campaign, medium or year.</p>
             </div>
-            <div class="section-heading__aside" aria-live="polite">
-                <span class="tag tag--blush">{{ $total }} {{ $total === 1 ? 'campaign' : 'campaigns' }} in view</span>
+            <div class="work-archive__count" aria-live="polite">
+                <span>{{ $total }} {{ $total === 1 ? 'campaign' : 'campaigns' }} in view</span>
             </div>
         </div>
 
@@ -26,37 +26,11 @@
                 </flux:select>
             </div>
             <div class="work-filter">
-                <span>Client type</span>
-                <flux:select wire:model.live="sector" aria-label="Client type">
-                    <option value="all">All client types</option>
-                    <option value="government">Government &amp; public</option>
-                    <option value="business">Business &amp; brands</option>
-                </flux:select>
-            </div>
-            <div class="work-filter">
                 <span>Medium</span>
                 <flux:select wire:model.live="medium" aria-label="Medium">
-                    <option value="all">All mediums</option>
+                    <option value="all">All media</option>
                     @foreach ($mediums as $mediumOption)
                         <option value="{{ $mediumOption }}" @selected($medium === $mediumOption)>{{ $mediumOption }}</option>
-                    @endforeach
-                </flux:select>
-            </div>
-            <div class="work-filter">
-                <span>Service</span>
-                <flux:select wire:model.live="service" aria-label="Service">
-                    <option value="all">All services</option>
-                    @foreach ($services as $serviceOption)
-                        <option value="{{ $serviceOption }}">{{ $serviceOption }}</option>
-                    @endforeach
-                </flux:select>
-            </div>
-            <div class="work-filter">
-                <span>Channel</span>
-                <flux:select wire:model.live="channel" aria-label="Channel">
-                    <option value="all">All channels</option>
-                    @foreach ($channels as $channelOption)
-                        <option value="{{ $channelOption }}">{{ $channelOption }}</option>
                     @endforeach
                 </flux:select>
             </div>
@@ -70,6 +44,37 @@
                 </flux:select>
             </div>
             <flux:button type="button" variant="filled" size="sm" icon="arrow-path" wire:click="clearFilters">Reset</flux:button>
+            <details class="work-filter-more" wire:ignore.self @if ($sector !== 'all' || $service !== 'all' || $channel !== 'all') open @endif>
+                <summary><x-dm-icon name="layers" :size="19"/> More filters</summary>
+                <div class="work-filter-more__fields">
+                    <div class="work-filter">
+                        <span>Client type</span>
+                        <flux:select wire:model.live="sector" aria-label="Client type">
+                            <option value="all">All client types</option>
+                            <option value="government">Government &amp; public</option>
+                            <option value="business">Business &amp; brands</option>
+                        </flux:select>
+                    </div>
+                    <div class="work-filter">
+                        <span>Service</span>
+                        <flux:select wire:model.live="service" aria-label="Service">
+                            <option value="all">All services</option>
+                            @foreach ($services as $serviceOption)
+                                <option value="{{ $serviceOption }}">{{ $serviceOption }}</option>
+                            @endforeach
+                        </flux:select>
+                    </div>
+                    <div class="work-filter">
+                        <span>Channel</span>
+                        <flux:select wire:model.live="channel" aria-label="Channel">
+                            <option value="all">All channels</option>
+                            @foreach ($channels as $channelOption)
+                                <option value="{{ $channelOption }}">{{ $channelOption }}</option>
+                            @endforeach
+                        </flux:select>
+                    </div>
+                </div>
+            </details>
         </div>
 
         @if ($activeClient)
@@ -87,7 +92,13 @@
 
         <div class="work-grid" wire:loading.class="is-loading">
             @forelse ($campaigns as $campaign)
-                <article class="work-card" wire:key="work-card-{{ $loop->index }}-{{ $campaign['client'] }}">
+                <article class="work-card" wire:key="work-card-{{ $campaign['id'] }}">
+                    @if (! empty($campaign['media']))
+                        <a class="work-card__cover" href="#work-media-{{ $campaign['media'][0]['key'] }}" aria-label="View {{ $campaign['media'][0]['title'] }}">
+                            <img src="{{ asset($campaign['media'][0]['poster']) }}" alt="" loading="lazy" decoding="async">
+                            <span><x-dm-icon name="play" :size="34"/></span>
+                        </a>
+                    @endif
                     <header class="work-card__head">
                         <div class="work-card__client">
                             <span class="work-card__logo @if (empty($campaign['client_logo'])) is-typeset @endif">
@@ -112,7 +123,11 @@
                             <div><dt>Date</dt><dd>{{ $campaign['date'] }}</dd></div>
                         </dl>
                         @if (! empty($campaign['media']))
-                            <a class="work-card__link" href="#work-media-{{ $campaign['media'][0] }}">Watch the film <span aria-hidden="true">↗</span></a>
+                            <div class="work-card__media-links">
+                                @foreach ($campaign['media'] as $item)
+                                    <a class="work-card__link" href="#work-media-{{ $item['key'] }}">{{ $item['type'] === 'audio' ? 'Listen' : 'Watch' }} · {{ $item['title'] }} <span aria-hidden="true">↗</span></a>
+                                @endforeach
+                            </div>
                         @endif
                     </div>
                 </article>

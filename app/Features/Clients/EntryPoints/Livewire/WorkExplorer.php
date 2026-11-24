@@ -7,7 +7,9 @@ namespace App\Features\Clients\EntryPoints\Livewire;
 use App\Features\Clients\Api\ListsClientParties;
 use App\Features\Clients\Models\Campaign;
 use App\Features\Clients\Models\Service;
+use App\Features\Clients\Support\ClientWork;
 use App\Features\Identity\Api\ResolvesParties;
+use Illuminate\Support\Collection;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 
@@ -54,6 +56,15 @@ class WorkExplorer extends Component
         $this->limit = 9;
     }
 
+    private function archiveMedia(?array $entry, Collection $media, string $title, ?string $client): array
+    {
+        if ($entry === null || $entry['title'] !== $title || $entry['client'] !== $client) {
+            return [];
+        }
+
+        return collect($entry['media'] ?? [])->map(fn (string $key) => $media->get($key))->filter()->values()->all();
+    }
+
     public function render()
     {
         $query = Campaign::query()
@@ -96,7 +107,11 @@ class WorkExplorer extends Component
         $directory = app(ResolvesParties::class);
         $clients = $directory->summariesByIds(...$records->pluck('client_party_id')->filter()->unique()->all());
 
+        $archiveMedia = collect(ClientWork::media())->keyBy('key');
+        $archiveCampaigns = collect(ClientWork::data()['campaigns'])->mapWithKeys(fn (array $entry, int $index): array => ['work-'.str_pad((string) ($index + 1), 3, '0', STR_PAD_LEFT) => $entry]);
+
         $campaigns = $records->map(fn (Campaign $campaign): array => [
+            'id' => $campaign->id,
             'client' => $clients[$campaign->client_party_id]->slug ?? null,
             'client_name' => $clients[$campaign->client_party_id]->displayName ?? 'Client',
             'client_short_name' => $clients[$campaign->client_party_id]->displayName ?? 'Client',
@@ -110,7 +125,7 @@ class WorkExplorer extends Component
             'date' => $campaign->starts_on?->format('d M Y'),
             'year' => (int) $campaign->starts_on?->format('Y'),
             'featured' => $campaign->is_featured,
-            'media' => [],
+            'media' => $this->archiveMedia($archiveCampaigns->get($campaign->campaign_code), $archiveMedia, $campaign->name, $clients[$campaign->client_party_id]->slug ?? null),
         ]);
 
         $activeClient = $this->client !== 'all' ? $directory->bySlug($this->client) : null;

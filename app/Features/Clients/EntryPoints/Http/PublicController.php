@@ -104,7 +104,6 @@ class PublicController extends Controller
         $campaignClients = $this->parties($campaigns->pluck('client_party_id')->filter()->unique()->all());
         $campaignCounts = $campaigns->groupBy(fn (Campaign $campaign): string => $campaignClients[$campaign->client_party_id]->slug ?? 'unknown')
             ->map(fn ($group): int => $group->count());
-        $years = $campaigns->pluck('starts_on')->filter()->map(fn ($date): int => (int) $date->format('Y'));
 
         return view('pages.work', [
             'pageTitle' => 'Our Work — Clients & Campaigns | Dunia Media',
@@ -116,15 +115,8 @@ class PublicController extends Controller
             'stats' => [
                 'clients' => $clients->count(),
                 'campaigns' => $campaigns->count(),
-                'channels' => $campaigns->pluck('channel_label')->filter()->unique()->count(),
-                'from' => $years->min() ?? now()->year,
-                'to' => $years->max() ?? now()->year,
-                'years' => ($years->max() ?? now()->year) - ($years->min() ?? now()->year) + 1,
-                'government' => $clients->where('sector', 'government')->count(),
-                'business' => $clients->where('sector', 'business')->count(),
+                'mediums' => $campaigns->pluck('medium')->filter()->unique()->count(),
             ],
-            'archiveUpdated' => ClientWork::data()['updated'],
-            'sourceNote' => ClientWork::data()['source_note'],
         ]);
     }
 
