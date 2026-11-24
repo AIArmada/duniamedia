@@ -15,12 +15,24 @@ jobs:
           sudo apt-get install -y -qq poppler-utils python3-pil
       - name: Produce contact sheets of original embedded deck artwork
         run: |
-          mkdir -p storage/app/private/homepage-artwork-review
+          mkdir -p storage/app/private/homepage-artwork-review public/assets/home
           python3 - <<'PY'
           from pathlib import Path
           import subprocess, tempfile
           from PIL import Image, ImageDraw, ImageOps
-          decks = ['hot-fm-zoomerz-on-ground', 'omnia-content-terhangat-2026', 'klcc-snorkels-2024-big-tree', 'sinar-harian-20th-anniversary-2026', 'media-prima-audio-trade-show-2025']
+          selected = [
+              ('hot-fm-zoomerz-on-ground','image-020.jpg','hot-fm-activation.webp'),
+              ('hot-fm-zoomerz-on-ground','image-022.jpg','hot-fm-community.webp'),
+              ('klcc-snorkels-2024-big-tree','image-011.jpg','big-tree-klcc.webp'),
+              ('klcc-snorkels-2024-big-tree','image-099.jpg','big-tree-klcc-placement.webp'),
+          ]
+          for slug, name, output in selected:
+              with tempfile.TemporaryDirectory() as tmp:
+                  subprocess.run(['pdfimages','-j',f'storage/app/private/ratecards/{slug}.pdf',str(Path(tmp)/'image')],check=True)
+                  im=Image.open(Path(tmp)/name).convert('RGB')
+                  im.thumbnail((1000,750))
+                  im.save(Path('public/assets/home')/output, 'WEBP', quality=90)
+          decks = ['podcast-utama-buletin-tv3', 'sinar-karangkraf-ratecard-2025-2026', 'ra-media-relations-live-tv-talkshow-2026-2027']
           for slug in decks:
               with tempfile.TemporaryDirectory() as tmp:
                   prefix = Path(tmp)/'image'
@@ -45,6 +57,6 @@ jobs:
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f storage/app/private/homepage-artwork-review/
-          git commit -m 'Temporary private review sheets of existing source artwork'
+          git add -f storage/app/private/homepage-artwork-review/ public/assets/home/
+          git commit -m 'Store selected source images and inspect more deck artwork'
           git push origin HEAD:fix/homepage-visual-fidelity
