@@ -82,6 +82,8 @@ class RateFinder extends Component
             return;
         }
 
+        $this->comparison = $this->publicRates()->whereIn('id', $this->comparison)->pluck('id')->sortBy(fn (string $rateId) => array_search($rateId, $this->comparison, true))->values()->all();
+
         if (count($this->comparison) >= 4) {
             $this->addError('comparison', 'Compare up to four placements at a time.');
 
@@ -144,9 +146,9 @@ class RateFinder extends Component
             ->when($this->location !== 'all', fn (Builder $query) => $query->whereHas('rateSection.product.mediaProfile', fn (Builder $profile) => $profile->where('location_label', $this->location)));
 
         $query = match ($this->sort) {
-            'price_desc' => $query->orderByRaw('price_rm is null, price_rm desc'),
+            'price_desc' => $query->orderByRaw('case when price_rm is null or price_rm <= 0 then 1 else 0 end, price_rm desc'),
             'item' => $query->orderBy('item'),
-            default => $query->orderByRaw('price_rm is null, price_rm asc'),
+            default => $query->orderByRaw('case when price_rm is null or price_rm <= 0 then 1 else 0 end, price_rm asc'),
         };
         $query->orderBy('id');
 

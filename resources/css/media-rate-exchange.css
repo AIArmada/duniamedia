@@ -33,9 +33,8 @@
 .exchange-mediums legend,.exchange-budget legend { margin-bottom:.45rem; }
 .exchange-mediums { display:grid; gap:.15rem; }
 .exchange-medium { display:flex; align-items:center; gap:.6rem; min-height:34px; padding:.25rem .4rem; color:var(--color-charcoal); font-size:.85rem; text-align:left; border-radius:7px; cursor:pointer; }
-.exchange-medium[aria-pressed=true] { background:#fae8ef; color:#79053c; font-weight:800; }
-.exchange-radio { flex:none; width:16px; height:16px; border:1px solid #a58d95; border-radius:50%; }
-.exchange-medium[aria-pressed=true] .exchange-radio { border:5px solid var(--exchange-accent); background:white; }
+.exchange-medium:has(input:checked) { background:#fae8ef; color:#79053c; font-weight:800; }
+.exchange-medium input { flex:none; width:17px; height:17px; accent-color:var(--exchange-accent); }
 .exchange-budget > div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.4rem; }
 .exchange-budget > div > * { min-width:0; }
 .exchange-results { min-width:0; display:grid; gap:.9rem; }
@@ -43,7 +42,8 @@
 .exchange-results__heading h2 { scroll-margin-top:calc(var(--header-height) + 1rem); }
 .exchange-results__controls { display:flex; align-items:center; gap:.5rem; }
 .exchange-results__controls [data-flux-control] { min-height:44px; }
-.exchange-close-filters,.exchange-filter-open,.exchange-filter-done { display:none; }
+.exchange-close-filters,.exchange-filter-open,.exchange-filter-done,.exchange-filter-backdrop { display:none; }
+.exchange-filter-backdrop[x-cloak] { display:none!important; }
 .exchange-list { display:grid; gap:.7rem; min-width:0; }
 .exchange-rate { display:grid; grid-template-columns:minmax(125px,.8fr) minmax(0,2.1fr) minmax(130px,1fr) minmax(125px,.85fr); gap:.9rem; align-items:center; min-width:0; padding:.7rem; border:1px solid var(--exchange-border); border-radius:12px; background:var(--exchange-paper); }
 .exchange-rate.is-compared { border-color:#c57898; background:#fff7fa; }
@@ -88,6 +88,7 @@
 .exchange-compare-table th:first-child { min-width:110px; background:#f8ede9; }
 .exchange-compare-table thead { background:#f9e5ed; color:#650037; }
 .exchange-compare-table td strong { color:var(--exchange-accent); }
+.exchange-compare-remove { display:block; min-height:44px; text-align:left; }
 .exchange-tray { position:sticky; bottom:.5rem; z-index:8; display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; padding:.8rem 1rem; margin-top:1rem; border-radius:12px; background:#65002e; color:white; box-shadow:0 5px 25px #39001b33; }
 .exchange-tray__title { display:flex; align-items:center; gap:.5rem; }
 .exchange-tray__title > div,.exchange-tray__total { display:grid; gap:.15rem; }
@@ -116,7 +117,8 @@
 }
 @media (max-width:900px) {
     .exchange-heading__main,.exchange-layout { grid-template-columns:minmax(0,1fr); }
-    .exchange-filters { display:none; position:static; max-height:none; overflow:visible; }
+    .exchange-filter-backdrop { display:block; position:fixed; inset:0; background:#21111acc; z-index:1000; }
+    .exchange-filters { display:none; position:fixed; inset:0 0 0 auto; width:min(100%,380px); max-height:100dvh; height:100dvh; overflow-y:auto; overscroll-behavior:contain; border-radius:14px 0 0 14px; padding:1rem 1rem max(1rem,env(safe-area-inset-bottom)); z-index:1001; }
     .exchange-filters.is-open { display:grid; }
     .exchange-close-filters,.exchange-filter-open,.exchange-filter-done { display:inline-flex; }
     .exchange-close-filters { align-items:center; justify-content:center; min-width:44px; min-height:44px; font-size:1.5rem; color:#650037; cursor:pointer; }
@@ -138,7 +140,11 @@
     .exchange-rate__actions { grid-column:1/-1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
     .exchange-detail-link { grid-column:1/-1; min-height:44px; }
     .exchange-comparison__heading { flex-direction:column; align-items:flex-start; }
-    .exchange-tray__items { display:none; }
+    .exchange-tray__items { display:flex; flex-basis:100%; }
+    .exchange-tray__items:has(> p) { display:none; }
+    .exchange-tray-item { max-width:170px; }
+    .exchange-tray__title { min-width:0; }
+    .exchange-tray__total { min-width:0; overflow-wrap:anywhere; }
     .exchange-tray__title svg { width:22px; }
     .exchange-tray__total strong { font-size:.95rem; }
     .exchange-tray__actions > * { font-size:.76rem; }

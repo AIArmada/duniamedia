@@ -1,4 +1,4 @@
-<div class="rate-exchange" x-data="{ filtersOpen: false }" x-on:keydown.escape.window="filtersOpen = false">
+<div class="rate-exchange" x-data="{ filtersOpen: false, mobile: window.matchMedia('(max-width: 900px)').matches }" x-on:resize.window="mobile = window.matchMedia('(max-width: 900px)').matches; if (!mobile) filtersOpen = false" x-on:keydown.escape.window="filtersOpen = false">
     <header class="exchange-heading">
         <div class="exchange-heading__brand"><x-dm-icon name="chart" :size="34"/><span>Media Rate Exchange</span></div>
         <div class="exchange-heading__main">
@@ -21,7 +21,8 @@
     <div class="exchange-disclosure"><x-dm-icon name="document" :size="18"/> Published rates are indicative, not confirmed quotations. SST, validity, availability and terms vary by placement.</div>
 
     <div class="exchange-layout">
-        <aside class="exchange-filters" :class="{ 'is-open': filtersOpen }" aria-label="Filter media rates" id="exchange-filters">
+        <div class="exchange-filter-backdrop" x-show="mobile && filtersOpen" x-cloak x-on:click="filtersOpen = false" aria-hidden="true"></div>
+        <aside class="exchange-filters" :class="{ 'is-open': filtersOpen }" :role="mobile && filtersOpen ? 'dialog' : null" :aria-modal="mobile && filtersOpen ? 'true' : null" x-trap.inert.noscroll="mobile && filtersOpen" aria-label="Filter media rates" id="exchange-filters">
             <div class="exchange-filters__heading">
                 <h2>Filter results</h2>
                 <button class="exchange-close-filters" type="button" x-on:click="filtersOpen = false" aria-label="Close filters">×</button>
@@ -42,7 +43,7 @@
             <fieldset class="exchange-mediums">
                 <legend>Media type</legend>
                 @foreach (collect(['all'])->merge($mediums) as $option)
-                    <button type="button" wire:key="medium-{{ $option }}" class="exchange-medium" wire:click="$set('medium', @js($option))" aria-pressed="{{ $medium === $option ? 'true' : 'false' }}"><span class="exchange-radio" aria-hidden="true"></span>{{ $option === 'all' ? 'All media' : $option }}</button>
+                    <label class="exchange-medium" wire:key="medium-{{ $option }}"><input type="radio" wire:model.live="medium" value="{{ $option }}">{{ $option === 'all' ? 'All media' : $option }}</label>
                 @endforeach
             </fieldset>
 
@@ -97,6 +98,8 @@
                             <thead><tr><th scope="col">Placement</th>@foreach ($compared as $rate)<th scope="col" wire:key="compare-head-{{ $rate->id }}">{{ $rate->item }}</th>@endforeach</tr></thead>
                             <tbody>
                                 <tr><th scope="row">Channel</th>@foreach ($compared as $rate)<td>{{ $rate->rateSection?->channels->pluck('name')->join(', ') ?: 'Not stated' }}</td>@endforeach</tr>
+                                <tr><th scope="row">Media owner</th>@foreach ($compared as $rate)<td>{{ $rate->rateSection->channels->pluck('owner_party_id')->map(fn ($id) => $ownerNames->get($id))->filter()->unique()->join(', ') ?: 'Not stated' }}</td>@endforeach</tr>
+                                <tr><th scope="row">Location</th>@foreach ($compared as $rate)<td>{{ $rate->rateSection->product->getRelationValue('mediaProfile')?->location_label ?: 'Not stated' }}</td>@endforeach</tr>
                                 <tr><th scope="row">Rate</th>@foreach ($compared as $rate)<td><strong>{{ (float) $rate->price_rm > 0 ? 'RM '.number_format((float) $rate->price_rm, 2) : 'On request' }}</strong></td>@endforeach</tr>
                                 <tr><th scope="row">Including SST</th>@foreach ($compared as $rate)<td>{{ $rate->price_incl_sst_rm !== null ? 'RM '.number_format((float) $rate->price_incl_sst_rm, 2) : 'Not stated' }}</td>@endforeach</tr>
                                 <tr><th scope="row">Unit</th>@foreach ($compared as $rate)<td>{{ $rate->unit ?: 'Not stated' }}</td>@endforeach</tr>
@@ -111,6 +114,7 @@
                                     @else
                                         <a class="exchange-secondary" href="{{ route('offers.show', $rate->rateSection->product->slug) }}">View details</a>
                                     @endif
+                                    <button type="button" class="exchange-detail-link exchange-compare-remove" wire:click="toggleComparison('{{ $rate->id }}')">Remove from comparison</button>
                                 </td>@endforeach</tr>
                             </tbody>
                         </table>
@@ -201,8 +205,8 @@
             <div class="exchange-tray__total"><span>Known rates (one each)</span><strong>RM {{ number_format($comparisonTotal / 100, 2) }}</strong>@if ($comparisonPricedCount < $compared->count())<small>Excludes unpriced entries</small>@endif</div>
         @endif
         <div class="exchange-tray__actions">
-            <button type="button" class="exchange-tray-compare" wire:click="$set('showComparison', true)" @disabled($compared->count() < 2) x-on:click="$nextTick(() => { document.getElementById('exchange-results-title')?.scrollIntoView({ block: 'start' }) })">Compare now</button>
-            <a href="{{ route('quote.builder') }}" class="exchange-tray-plan">View campaign plan →</a>
+            <button type="button" class="exchange-tray-compare" wire:click="$set('showComparison', true)" @disabled($compared->count() < 2) x-on:click="document.getElementById('exchange-results-title')?.scrollIntoView({ block: 'start' })">Compare now</button>
+            <a href="{{ route('plans.index') }}" class="exchange-tray-plan">Campaign plans →</a>
             @if ($comparison !== [])<button type="button" class="exchange-tray-clear" wire:click="clearComparison">Clear comparison</button>@endif
         </div>
         @error('comparison')<p class="exchange-tray-error" role="alert">{{ $message }}</p>@enderror

@@ -4,10 +4,10 @@ namespace Tests\Feature;
 
 use App\Features\Catalog\EntryPoints\Livewire\RateFinder;
 use App\Features\Catalog\Models\RateCardEntry;
-use Livewire\Livewire;
 use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RateCardContentSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Livewire\Livewire;
 use Tests\TestCase;
 
 class RateFinderTest extends TestCase
@@ -26,6 +26,7 @@ class RateFinderTest extends TestCase
             ->assertSee('Media Rate Exchange')
             ->assertSee('Add to plan');
     }
+
     public function test_rates_can_be_compared_across_searches_and_removed(): void
     {
         $this->seed(MediaCatalogueSeeder::class);
@@ -57,5 +58,32 @@ class RateFinderTest extends TestCase
             ->call('clearComparison')
             ->assertSet('comparison', [])
             ->assertSet('showComparison', false);
+    }
+    public function test_rate_filters_use_catalogue_units_packages_and_budget(): void
+    {
+        $this->seed(MediaCatalogueSeeder::class);
+        $this->seed(RateCardContentSeeder::class);
+
+        $entry = RateCardEntry::query()
+            ->whereHas('rateSection.product', fn ($query) => $query->where('status', 'active'))
+            ->whereNotNull('unit')
+            ->where('is_package', true)
+            ->where('price_rm', '>', 0)
+            ->firstOrFail();
+
+        Livewire::test(RateFinder::class)
+            ->set('search', $entry->item)
+            ->set('unit', $entry->unit)
+            ->set('package', 'package')
+            ->set('minPrice', (string) $entry->price_rm)
+            ->set('maxPrice', (string) $entry->price_rm)
+            ->assertSee($entry->item)
+            ->set('owner', 'nonexistent-media-owner')
+            ->assertSee('No rates match those filters.')
+            ->call('clearFilters')
+            ->assertSet('unit', 'all')
+            ->assertSet('package', 'all')
+            ->assertSet('minPrice', '')
+            ->assertSet('maxPrice', '');
     }
 }
