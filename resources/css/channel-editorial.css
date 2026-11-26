@@ -97,3 +97,41 @@
 .channel-editorial-featured article > strong { font:400 clamp(1.65rem,3vw,2.45rem)/1.08 var(--font-editorial); color:var(--channel-ink); overflow-wrap:anywhere; }
 .channel-editorial-featured article > p,.channel-editorial-featured article > small { color:var(--color-text-muted); font-size:.78rem; margin:.4rem 0 0; overflow-wrap:anywhere; }
 .channel-editorial-featured .text-link { display:inline-flex; align-items:center; min-height:44px; margin-top:auto; padding-top:.4rem; font-size:.8rem; }
+
+/* Channel-owned visual identities, curated content and attributed references. */
+.channel-editorial-tagline { color:color-mix(in srgb,var(--channel-accent) 70%,#39232a); }
+.channel-editorial-hero { border-top:4px solid var(--channel-accent); }
+.channel-editorial-hero__visual--artwork { background:#f1e7dc; }
+.channel-editorial-hero__visual--artwork img { object-fit:contain; padding:clamp(.5rem,1.1vw,1rem); }
+.channel-editorial-hero__visual--artwork::after,.channel-editorial-hero__visual--identity::after { display:none; }
+.channel-editorial-hero__visual--artwork figcaption,.channel-editorial-hero__visual--identity figcaption { color:#392e30; }
+.channel-editorial-hero__visual--artwork figcaption small,.channel-editorial-hero__visual--identity figcaption small { color:#59494b; }
+.channel-editorial-identity-art { min-height:310px;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2.2rem;text-align:center;background:radial-gradient(ellipse at 65% 50%,color-mix(in srgb,var(--channel-accent) 18%,#fff7f0),#f5ece5);color:var(--channel-ink); }
+.channel-editorial-identity-art img { position:static;width:auto;height:auto;max-width:70%;max-height:135px;object-fit:contain; }
+.channel-editorial-identity-art strong { font:400 clamp(1.5rem,3vw,3rem)/1.15 var(--font-editorial); }
+.channel-editorial-identity-art span { font-size:.85rem;font-weight:700; }
+.channel-editorial-format-grid[data-count="2"],.channel-editorial-evidence-grid[data-count="2"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.channel-editorial-format-grid[data-count="3"] { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.channel-editorial-format-grid[data-count="1"],.channel-editorial-evidence-grid[data-count="1"] { grid-template-columns:minmax(0,1fr); }
+.channel-editorial-concepts { margin-top:1.3rem; }
+.channel-editorial-concepts > h3 { margin:0 0 .4rem;color:var(--channel-ink);font:400 1.65rem/1.18 var(--font-editorial); }
+.channel-editorial-concepts > p,.channel-editorial-reference { font-size:.83rem;line-height:1.6;color:var(--color-text-muted); }
+.channel-editorial-concepts > p { margin:0 0 .8rem; }
+.channel-editorial-reference { margin:1rem 0 0; }
+.channel-editorial-reference a { color:var(--channel-ink);font-weight:750; }
+.channel-editorial-evidence { padding-top:clamp(2rem,4vw,3.6rem); }
+.channel-editorial-evidence-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem; }
+.channel-editorial-evidence-grid article { display:flex;flex-direction:column;min-width:0;gap:.55rem;padding:clamp(1rem,2vw,1.5rem);border:1px solid var(--channel-line);border-radius:12px;background:#fffaf7; }
+.channel-editorial-evidence-grid h3 { margin:0;color:var(--channel-ink);font:400 clamp(1.35rem,2vw,1.9rem)/1.16 var(--font-editorial);overflow-wrap:anywhere; }
+.channel-editorial-evidence-grid p { margin:0;line-height:1.65;font-size:.9rem; }
+.channel-editorial-evidence-grid .text-link { margin-top:auto;padding-top:.6rem;font-size:.83rem; }
+.channel-editorial-evidence__metric { font:400 clamp(2rem,3vw,3rem)/1 var(--font-editorial);color:var(--channel-ink); }
+@media(max-width:740px) {
+    .channel-editorial-hero__visual--artwork { aspect-ratio:1.9;min-height:190px; }
+    .channel-editorial-hero__visual--artwork img { height:calc(100% - 32px); }
+    .channel-editorial-hero__visual--artwork figcaption { inset:auto .75rem .5rem; }
+    .channel-editorial-evidence-grid,.channel-editorial-format-grid[data-count="3"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:520px) {
+    .channel-editorial-evidence-grid,.channel-editorial-evidence-grid[data-count="2"],.channel-editorial-format-grid[data-count="2"],.channel-editorial-format-grid[data-count="3"] { grid-template-columns:minmax(0,1fr); }
+}
