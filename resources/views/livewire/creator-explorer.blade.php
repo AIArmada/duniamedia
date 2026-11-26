@@ -110,8 +110,8 @@
                 @foreach ($creators as $creator)
                     <article class="creator-card" wire:key="creator-{{ $creator->id }}">
                         <a class="creator-card__image" href="{{ route('creators.show', $creator->slug) }}" aria-label="View {{ $creator->displayName() }} profile">
-                            @if ($creator->getFirstMediaUrl('image'))
-                                <img src="{{ $creator->displayImage() }}" alt="{{ $creator->displayName() }}" loading="lazy" decoding="async">
+                            @if ($photo = $creator->getFirstMedia('image'))
+                                <x-creator-portrait :photo="$photo" :alt="$creator->displayName()" sizes="(max-width: 720px) 100vw, 33vw"/>
                             @else
                                 <div class="network-profile-placeholder" aria-hidden="true"><x-dm-icon name="creators" :size="52"/></div>
                             @endif

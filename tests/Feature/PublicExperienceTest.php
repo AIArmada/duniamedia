@@ -555,6 +555,30 @@ class PublicExperienceTest extends TestCase
             'metrics_as_of' => null,
         ]);
         $this->get(route('creators.show', 'drqis'))->assertNotFound();
+
+        $profile = CreatorProfile::query()->where('slug', 'drqis')->firstOrFail();
+        $this->assertCount(1, $profile->getMedia('image'));
+        $this->assertCount(2, $profile->getMedia('gallery'));
+
+        app(\App\Features\Creators\Persistence\WriteCreatorProfiles::class)->update($profile, [
+            'status' => 'active',
+            'verification_status' => 'verified',
+            'verified_at' => now(),
+        ]);
+
+        $this->get(route('creators.show', 'drqis'))
+            ->assertOk()
+            ->assertSee('Dr Qistina')
+            ->assertSee('Oral health education')
+            ->assertSee('Dental care')
+            ->assertSee('assets/creators/drqis/portrait-480.webp')
+            ->assertSee('assets/creators/drqis/portrait-02-480.webp')
+            ->assertSee('assets/creators/drqis/portrait-03-480.webp')
+            ->assertSee('assets/creators/drqis/dental-still-life.webp')
+            ->assertSee('https://www.tiktok.com/@drqis')
+            ->assertDontSee('Metrics as of');
+
+        $this->get(route('creators.index'))->assertOk()->assertSee(route('creators.show', 'drqis'));
     }
 
     public function test_creator_directory_keeps_filters_available_when_no_creators_match(): void

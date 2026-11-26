@@ -295,12 +295,6 @@ parameters:
 			path: app/Features/Content/Queries/SearchArticles.php
 
 		-
-			message: '#^Method App\\Features\\Creators\\Models\\CreatorProfile\:\:primaryAccount\(\) should return App\\Features\\Creators\\Models\\CreatorAccount\|null but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: app/Features/Creators/Models/CreatorProfile.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1
