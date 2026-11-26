@@ -200,7 +200,7 @@
     ]
   },
   {
-    "slug": "bernama-tv",
+    "slug": "bernama-bernama-tv",
     "items": [
       {
         "type": "Published service reference",
@@ -211,7 +211,7 @@
     ]
   },
   {
-    "slug": "bernama-digital",
+    "slug": "bernama-bernama-digital",
     "items": [
       {
         "type": "Published service reference",

@@ -149,7 +149,13 @@ final class ChannelEditorial
             return self::$profiles[$owner] = [];
         }
 
-        $rows = json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR);
+        $content = file_get_contents($path);
+
+        if ($content === false) {
+            throw new \RuntimeException('Unable to read channel editorial data.');
+        }
+
+        $rows = json_decode($content, true, flags: JSON_THROW_ON_ERROR);
         $profiles = [];
 
         foreach ($rows as $profile) {
