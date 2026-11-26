@@ -135,3 +135,6 @@
 @media(max-width:520px) {
     .channel-editorial-evidence-grid,.channel-editorial-evidence-grid[data-count="2"],.channel-editorial-format-grid[data-count="2"],.channel-editorial-format-grid[data-count="3"] { grid-template-columns:minmax(0,1fr); }
 }
+
+/* Keep the individual vector design visible without clipping it into a photo crop. */
+@media(min-width:741px){.channel-editorial-hero__visual--artwork img{height:calc(100% - 45px);padding:1rem .6rem;}}

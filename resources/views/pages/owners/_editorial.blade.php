@@ -44,8 +44,8 @@
     $closing = $editorial['closing_image'] ?? null;
     $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/');
     $closingIllustrated = is_string($closing) && (str_starts_with($closing, 'assets/editorial/') || str_starts_with($closing, 'assets/img/'));
-    $heroSrcset = $image::srcset($hero, [480, 640, 960, 1280]);
-    $closingSrcset = $image::srcset($closing, [480, 640, 960]);
+    $heroSrcset = is_string($hero) && str_ends_with($hero, '.svg') ? null : $image::srcset($hero, [480, 640, 960, 1280]);
+    $closingSrcset = is_string($closing) && str_ends_with($closing, '.svg') ? null : $image::srcset($closing, [480, 640, 960]);
     $channelCount = $groups->sum(fn (array $group): int => $group['channels']->count());
     $groupCount = $groups->count();
     $previewChannels = collect($channels)->take(6);

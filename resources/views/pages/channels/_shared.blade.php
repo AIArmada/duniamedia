@@ -11,7 +11,7 @@
     $ownerRoute = \App\Features\Catalog\Support\MediaDirectory::owner($owner['slug'] ?? '');
     $accent = $editorial['accent'] ?? $ownerRoute['accent'] ?? '#500038';
     $accent = preg_match('/\A#[0-9a-fA-F]{6}\z/', $accent) ? $accent : '#500038';
-    $srcset = $image::srcset($editorial['image'], [480, 640, 960, 1280]);
+    $srcset = $editorial['visual_kind'] === 'artwork' ? null : $image::srcset($editorial['image'], [480, 640, 960, 1280]);
     $rateGroups = collect($sections)->groupBy(fn (array $section) => $section['product']['slug'] ?? 'other');
     $featuredRates = collect($sections)
         ->reject(fn (array $section): bool => $section['is_media_value'])
