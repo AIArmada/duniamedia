@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             CatalogueInfrastructureSeeder::class,
             CreatorSeeder::class,
+            DrqisCreatorSeeder::class,
             MediaCatalogueSeeder::class,
             RateCardEntrySeeder::class,
             RateCardContentSeeder::class,
