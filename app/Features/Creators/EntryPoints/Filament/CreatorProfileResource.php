@@ -52,6 +52,7 @@ class CreatorProfileResource extends Resource
             DateTimePicker::make('verified_at'),
             Toggle::make('is_featured'),
             SpatieMediaLibraryFileUpload::make('image')->collection('image')->image(),
+            SpatieMediaLibraryFileUpload::make('gallery')->collection('gallery')->image()->multiple()->maxFiles(6)->reorderable()->columnSpanFull(),
             Select::make('pricing_mode')->options(['on_request' => 'on_request', 'indicative' => 'indicative', 'fixed' => 'fixed', 'negotiated' => 'negotiated']),
             TextInput::make('rate_from')->numeric()->prefix('RM')->minValue(0),
         ]);
