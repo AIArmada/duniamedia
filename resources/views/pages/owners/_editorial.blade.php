@@ -1,5 +1,6 @@
 @php
     $image = \App\Features\Catalog\Support\MediaImage::class;
+    $brandTheme = \App\Features\Catalog\Support\MediaBrandTheme::owner($owner);
     $groups = collect($owner['categories'])->map(function (array $category) use ($channels): array {
         [$label, $icon] = match ($category['label']) {
             'Television networks', 'Television' => ['Television', 'tv'],
@@ -42,8 +43,8 @@
     $ownerLogo = ! empty($owner['logo']) && is_file(public_path('assets/partners/'.$owner['logo'])) ? 'assets/partners/'.$owner['logo'] : null;
     $hero = $editorial['hero'] ?? null;
     $closing = $editorial['closing_image'] ?? null;
-    $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/');
-    $closingIllustrated = is_string($closing) && (str_starts_with($closing, 'assets/editorial/') || str_starts_with($closing, 'assets/img/'));
+    $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/') && ! str_ends_with($hero, '.svg');
+    $closingIllustrated = is_string($closing) && (str_starts_with($closing, 'assets/editorial/') || str_starts_with($closing, 'assets/img/')) && ! str_ends_with($closing, '.svg');
     $heroSrcset = is_string($hero) && str_ends_with($hero, '.svg') ? null : $image::srcset($hero, [480, 640, 960, 1280]);
     $closingSrcset = is_string($closing) && str_ends_with($closing, '.svg') ? null : $image::srcset($closing, [480, 640, 960]);
     $channelCount = $groups->sum(fn (array $group): int => $group['channels']->count());
@@ -59,7 +60,7 @@
     $closingArtwork = is_string($closing) && str_ends_with($closing, '.svg');
 @endphp
 
-<div class="owner-editorial">
+<div class="owner-editorial" data-brand-layout="{{ $brandTheme['layout'] }}" data-brand-type="{{ $brandTheme['type'] }}" style="{{ $brandTheme['style'] }}">
     <section class="owner-editorial-hero" aria-labelledby="owner-editorial-title">
         <div class="container owner-editorial-hero__inner">
             <nav class="breadcrumb owner-editorial-breadcrumb" aria-label="Breadcrumb">
@@ -111,6 +112,7 @@
 
     <nav class="owner-editorial-nav" aria-label="Explore media categories">
         <div class="container owner-editorial-nav__inner">
+            @if (! empty($brandTheme['routes']))<a href="#owner-campaign-pathways"><x-dm-icon name="target" :size="21"/><span>Campaign pathways</span></a>@endif
             <a href="#rate-cards"><x-dm-icon name="document" :size="21"/><span>Opportunities</span></a>
             @if ($spotlights->isNotEmpty())<a href="#owner-spotlights"><x-dm-icon name="spark" :size="21"/><span>Channel highlights</span></a>@endif
             @foreach ($groups as $group)
@@ -118,6 +120,37 @@
             @endforeach
         </div>
     </nav>
+
+    @if (! empty($brandTheme['routes']))
+        <section class="container owner-brand-playbook" id="owner-campaign-pathways" aria-labelledby="owner-campaign-pathways-title">
+            <div class="owner-brand-playbook__panel">
+                <div class="owner-brand-playbook__intro">
+                    <span class="owner-editorial-kicker">Planning with {{ $editorial['network_name'] ?? $owner['name'] }}</span>
+                    <h2 id="owner-campaign-pathways-title">{{ $brandTheme['title'] }}</h2>
+                    <p>{{ $brandTheme['intro'] }}</p>
+                </div>
+                <div class="owner-brand-playbook__routes">
+                    @foreach ($brandTheme['routes'] as [$title, $body, $names])
+                        <article class="owner-brand-playbook__route">
+                            <span class="owner-brand-playbook__number" aria-hidden="true">{{ str_pad((string) $loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                            <div>
+                                <h3>{{ $title }}</h3>
+                                <p>{{ $body }}</p>
+                                <div class="owner-brand-playbook__links">
+                                    @foreach ($names as $name)
+                                        @if ($routeChannel = $channelProfiles->get($name))
+                                            <a href="{{ route('media.channel', [$owner['slug'], $routeChannel['slug']]) }}">{{ $routeChannel['name'] }} <span aria-hidden="true">↗</span></a>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </article>
+                    @endforeach
+                </div>
+                <p class="owner-brand-playbook__note">Suggested campaign directions, not confirmed inventory. All formats, rights and availability require confirmation.</p>
+            </div>
+        </section>
+    @endif
 
     <section class="container owner-editorial-opportunities" id="rate-cards" aria-labelledby="owner-opportunities-title">
         <div class="owner-editorial-heading">

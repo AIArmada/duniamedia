@@ -102,6 +102,7 @@ final class ChannelEditorial
             'ideas' => $profile['ideas'] ?? [],
             'reference' => $profile['reference'] ?? null,
             'accent' => $profile['accent'] ?? null,
+            'motif' => $profile['motif'] ?? null,
             'art_label' => $profile['art_label'] ?? ($channel['category'] ?? 'Media channel'),
             'icon' => $icon,
             'image' => $image,

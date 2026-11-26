@@ -23,7 +23,7 @@
             ['icon' => 'users', 'title' => 'Talent-led', 'body' => 'Personality-led station campaigns and conversations.'],
         ];
     @endphp
-    <div class="hotfm-page">
+    <div class="hotfm-page" data-brand-layout="audio" data-brand-type="sans" style="{{ \App\Features\Catalog\Support\MediaBrandTheme::palette('#a4004b', '#ed174c', 'audio', 'sans')['style'] }}">
         <nav class="hotfm-breadcrumb" aria-label="Breadcrumb">
             <a href="{{ route('home') }}">Home</a><span aria-hidden="true">/</span>
             <a href="{{ route('media.owners') }}">Media owners</a><span aria-hidden="true">/</span>

@@ -10,8 +10,7 @@
     $displayFormats = $formats !== [] ? $formats : $editorial['ideas'];
     $additionalBlocks = $storyBlocks->reject(fn ($block) => $block === $featureList || ($block === $firstStory && ($firstStory['payload']['body'] ?? null) === $intro))->values()->all();
     $ownerRoute = \App\Features\Catalog\Support\MediaDirectory::owner($owner['slug'] ?? '');
-    $accent = $editorial['accent'] ?? $ownerRoute['accent'] ?? '#500038';
-    $accent = preg_match('/\A#[0-9a-fA-F]{6}\z/', $accent) ? $accent : '#500038';
+    $brandTheme = \App\Features\Catalog\Support\MediaBrandTheme::channel($editorial, $ownerRoute ?? $owner);
     $srcset = $editorial['visual_kind'] === 'artwork' ? null : $image::srcset($editorial['image'], [480, 640, 960, 1280]);
     $rateGroups = collect($sections)->groupBy(fn (array $section) => $section['product']['slug'] ?? 'other');
     $featuredRates = collect($sections)
@@ -24,7 +23,7 @@
     $related = $siblings->sortByDesc(fn ($sibling) => ($sibling['category'] ?? null) === ($channel['category'] ?? null))->take(8);
 @endphp
 
-<div class="channel-editorial" style="--channel-accent:{{ $accent }}">
+<div class="channel-editorial" data-brand-layout="{{ $brandTheme['layout'] }}" data-brand-type="{{ $brandTheme['type'] }}" style="{{ $brandTheme['style'] }}">
     <div class="container">
         <nav class="breadcrumb channel-editorial-breadcrumb" aria-label="Breadcrumb">
             <a href="{{ route('home') }}">Home</a><span aria-hidden="true">/</span>
