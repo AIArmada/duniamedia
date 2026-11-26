@@ -44,6 +44,7 @@ class DrqisCreatorSeeder extends Seeder
             'verification_status' => 'pending',
             'status' => 'pending',
             'pricing_mode' => 'on_request',
+            'is_featured' => true,
         ]);
 
         $property = app(WriteMediaProperties::class)->upsert(
@@ -72,6 +73,12 @@ class DrqisCreatorSeeder extends Seeder
 
         if (! $profile->getFirstMedia('image')) {
             $this->mediaFile($profile, 'assets/creators/drqis/portrait.webp');
+        }
+
+        if ($profile->getMedia('gallery')->isEmpty()) {
+            foreach (['portrait-02.webp', 'portrait-03.webp'] as $filename) {
+                $this->mediaFile($profile, 'assets/creators/drqis/'.$filename, 'gallery');
+            }
         }
     }
 }
