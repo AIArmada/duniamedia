@@ -189,7 +189,8 @@
 }
 
 /* A small, legible provenance label for generated media-format illustrations. */
-.owner-editorial-image-credit { position:absolute; z-index:2; bottom:.65rem; right:.75rem; padding:.28rem .5rem; border-radius:4px; color:#fff; background:#241821c9; font-size:.65rem; line-height:1.3; pointer-events:none; }
+.owner-editorial-image-credit { position:absolute; z-index:2; bottom:.65rem; right:.75rem; max-width:calc(100% - 1.5rem); padding:.28rem .5rem; border-radius:4px; color:#fff; background:#241821c9; font-size:.65rem; line-height:1.3; pointer-events:none; }
+.owner-editorial-image-credit--link { pointer-events:auto; text-decoration:underline; text-underline-offset:.12em; }
 .owner-editorial-hero__visual img,.owner-editorial-closing__visual img { object-position:50% 50%; }
 @media(max-width:600px){.owner-editorial-image-credit{bottom:.5rem;right:.6rem}}
 

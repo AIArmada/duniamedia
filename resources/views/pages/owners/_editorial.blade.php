@@ -89,7 +89,13 @@
             <div class="owner-editorial-hero__visual {{ $hero ? '' : 'owner-editorial-hero__visual--network' }} {{ $heroArtwork ? 'owner-editorial-hero__visual--artwork' : '' }}">
                 @if ($hero)
                     <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $heroIllustrated ? 'Illustrative media environment' : ($editorial['hero_alt'] ?? ($heroArtwork ? $owner['name'].' editorial artwork' : '')) }}" fetchpriority="high" decoding="async">
-                    @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@elseif ($heroArtwork)<span class="owner-editorial-image-credit">Illustration</span>@endif
+                    @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@elseif ($heroArtwork)<span class="owner-editorial-image-credit">Illustration</span>@elseif (! empty($editorial['hero_credit']))
+                        @if (! empty($editorial['hero_source']))
+                            <a class="owner-editorial-image-credit owner-editorial-image-credit--link" href="{{ $editorial['hero_source'] }}" target="_blank" rel="noopener noreferrer">{{ $editorial['hero_credit'] }} ↗</a>
+                        @else
+                            <span class="owner-editorial-image-credit">{{ $editorial['hero_credit'] }}</span>
+                        @endif
+                    @endif
                 @else
                     <div class="owner-editorial-visual-network" aria-hidden="true">
                         <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="54"/>
