@@ -39,9 +39,7 @@ class CreatorExplorer extends Component
     public function render()
     {
         $base = CreatorProfile::query()
-            ->where('status', 'active')
-            ->where('verification_status', 'verified')
-            ->whereNotIn('slug', ['demo-creator-1', 'demo-creator-2', 'demo-creator-3', 'demo-creator-4']);
+            ->publiclyListed();
 
         $query = (clone $base)
             ->when($this->niche !== 'all', fn ($query) => $query->where('primary_niche', $this->niche))
@@ -49,13 +47,14 @@ class CreatorExplorer extends Component
             ->when($this->search !== '', fn ($query) => $query->where(function ($sub) {
                 $sub->where('bio', 'like', '%'.$this->search.'%')
                     ->orWhere('slug', 'like', '%'.$this->search.'%')
+                    ->orWhere('handle', 'like', '%'.$this->search.'%')
                     ->orWhere('primary_niche', 'like', '%'.$this->search.'%')
                     ->orWhere('social_platform', 'like', '%'.$this->search.'%')
                     ->orWhereIn('creator_party_id', app(ResolvesParties::class)->searchIds('%'.$this->search.'%'));
             }));
 
         return view('livewire.creator-explorer', [
-            'creators' => $query->orderByDesc('is_featured')->paginate(9),
+            'creators' => $query->with('media')->orderByDesc('is_featured')->orderBy('slug')->paginate(9),
             'niches' => (clone $base)->whereNotNull('primary_niche')->distinct()->orderBy('primary_niche')->pluck('primary_niche'),
             'socialPlatforms' => (clone $base)->whereNotNull('social_platform')->distinct()->orderBy('social_platform')->pluck('social_platform'),
         ])->layout('layouts.app', ['pageTitle' => 'Creator Network | Dunia Media', 'metaDescription' => 'A curated network connecting brands with creators and creators with brand collaborations, production support and practical growth.']);
