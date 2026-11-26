@@ -109,13 +109,13 @@
             <div class="network-profiles" wire:loading.class="is-loading" wire:target="search,niche,socialPlatform,clearFilters">
                 @foreach ($creators as $creator)
                     <article class="creator-card" wire:key="creator-{{ $creator->id }}">
-                        <div class="creator-card__image">
-                            @if ($creator->getFirstMediaUrl('image'))
-                                <img src="{{ $creator->displayImage() }}" alt="{{ $creator->displayName() }}" loading="lazy" decoding="async">
+                        <a class="creator-card__image" href="{{ route('creators.show', $creator->slug) }}" aria-label="View {{ $creator->displayName() }} profile">
+                            @if ($photo = $creator->getFirstMedia('image'))
+                                <x-creator-portrait :photo="$photo" :alt="$creator->displayName()" sizes="(max-width: 720px) 100vw, 33vw"/>
                             @else
                                 <div class="network-profile-placeholder" aria-hidden="true"><x-dm-icon name="creators" :size="52"/></div>
                             @endif
-                        </div>
+                        </a>
                         <div class="creator-card__body">
                             <div class="creator-card__meta">
                                 <span class="tag tag--verified"><x-dm-icon name="check" :size="13"/>Verified</span>
@@ -126,7 +126,7 @@
                                 <p class="network-profile-niche">{{ $creator->primary_niche }}</p>
                             @endif
                             <p>{{ $creator->bio }}</p>
-                            <a href="{{ route('contact') }}" class="network-profile-link">Discuss a collaboration <span aria-hidden="true">→</span></a>
+                            <a href="{{ route('creators.show', $creator->slug) }}" class="network-profile-link">View creator profile <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
                 @endforeach

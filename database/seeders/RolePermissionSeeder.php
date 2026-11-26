@@ -2,8 +2,7 @@
 
 namespace Database\Seeders;
 
-use AIArmada\Authz\Models\Permission;
-use AIArmada\Authz\Models\Role;
+use AIArmada\Authz\Features\Authorization\Api\RoleAdministrationApi;
 use Illuminate\Database\Seeder;
 
 class RolePermissionSeeder extends Seeder
@@ -20,16 +19,10 @@ class RolePermissionSeeder extends Seeder
             'campaigns.manage',
         ];
 
-        foreach ($permissions as $permission) {
-            Permission::findOrCreate($permission, 'web');
-        }
-
-        $superAdmin = Role::findOrCreate('super_admin', 'web');
-        $admin = Role::findOrCreate('admin', 'web');
-        $editor = Role::findOrCreate('editor', 'web');
-
-        $superAdmin->syncPermissions($permissions);
-        $admin->syncPermissions($permissions);
-        $editor->syncPermissions(['admin.access', 'media.manage', 'content.manage', 'campaigns.manage']);
+        $roles = app(RoleAdministrationApi::class);
+        $roles->ensurePermissions('web', $permissions);
+        $roles->ensureRole((string) config('authz.super_admin_role', 'super_admin'), 'web', null, $permissions, prune: true);
+        $roles->ensureRole('admin', 'web', null, $permissions, prune: true);
+        $roles->ensureRole('editor', 'web', null, ['admin.access', 'media.manage', 'content.manage', 'campaigns.manage'], prune: true);
     }
 }

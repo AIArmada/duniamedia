@@ -63,6 +63,7 @@ final readonly class PresentRateLines implements PresentsRateLines
             ->all();
     }
 
+    /** @return Builder<RateCardEntry> */
     private function publicRates(): Builder
     {
         return RateCardEntry::query()

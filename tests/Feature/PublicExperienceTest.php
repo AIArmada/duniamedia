@@ -485,6 +485,102 @@ class PublicExperienceTest extends TestCase
         ]);
     }
 
+    public function test_creator_profile_has_public_media_kit_and_creator_specific_enquiry(): void
+    {
+        $party = Party::factory()->create(['display_name' => 'Profile Creator']);
+        $profile = CreatorProfile::factory()->create([
+            'creator_party_id' => $party->id,
+            'slug' => 'profile-creator',
+            'social_platform' => 'TikTok',
+            'handle' => '@profile_creator',
+        ]);
+
+        $this->get(route('creators.index'))
+            ->assertOk()
+            ->assertSee(route('creators.show', $profile->slug));
+
+        $this->get(route('creators.show', $profile->slug))
+            ->assertOk()
+            ->assertSee('Profile Creator')
+            ->assertSee('@profile_creator')
+            ->assertSee('https://www.tiktok.com/@profile_creator')
+            ->assertSee('Enquire about current audience insights.')
+            ->assertSee('Content focus')
+            ->assertSee(route('contact', ['creator' => $profile->slug]).'#enquiry')
+            ->assertDontSee('Metrics as of');
+
+        $this->get(route('search', ['q' => '@profile_creator']))
+            ->assertOk()
+            ->assertSee(route('creators.show', $profile->slug));
+
+        $this->get(route('contact', ['creator' => $profile->slug]))
+            ->assertOk()
+            ->assertSee('I would like to discuss a collaboration with Profile Creator.');
+    }
+
+    public function test_creator_profile_rejects_unverified_paused_and_demo_profiles(): void
+    {
+        foreach ([
+            ['slug' => 'pending-profile', 'verification_status' => 'pending'],
+            ['slug' => 'paused-profile', 'status' => 'paused'],
+            ['slug' => 'demo-creator-999'],
+        ] as $attributes) {
+            $profile = CreatorProfile::factory()->create($attributes);
+
+            $this->get(route('creators.show', $profile->slug))->assertNotFound();
+        }
+
+        $this->get(route('creators.show', 'nonexistent-creator'))->assertNotFound();
+        $this->get(route('creators.join'))->assertOk();
+    }
+
+    public function test_drqis_seed_is_idempotent_and_preserves_unverified_status(): void
+    {
+        $this->seed(\Database\Seeders\DrqisCreatorSeeder::class);
+        $this->seed(\Database\Seeders\DrqisCreatorSeeder::class);
+
+        $this->assertDatabaseCount('creator_profiles', 1);
+        $this->assertDatabaseCount('creator_accounts', 1);
+        $this->assertDatabaseHas('creator_profiles', [
+            'slug' => 'drqis',
+            'handle' => '@drqis',
+            'status' => 'pending',
+            'verification_status' => 'pending',
+        ]);
+        $this->assertDatabaseHas('creator_accounts', [
+            'handle' => '@drqis',
+            'followers' => null,
+            'average_views' => null,
+            'engagement_rate' => null,
+            'metrics_as_of' => null,
+        ]);
+        $this->get(route('creators.show', 'drqis'))->assertNotFound();
+
+        $profile = CreatorProfile::query()->where('slug', 'drqis')->firstOrFail();
+        $this->assertCount(1, $profile->getMedia('image'));
+        $this->assertCount(2, $profile->getMedia('gallery'));
+
+        app(\App\Features\Creators\Persistence\WriteCreatorProfiles::class)->update($profile, [
+            'status' => 'active',
+            'verification_status' => 'verified',
+            'verified_at' => now(),
+        ]);
+
+        $this->get(route('creators.show', 'drqis'))
+            ->assertOk()
+            ->assertSee('Dr Qistina')
+            ->assertSee('Oral health education')
+            ->assertSee('Dental care')
+            ->assertSee('assets/creators/drqis/portrait-480.webp')
+            ->assertSee('assets/creators/drqis/portrait-02-480.webp')
+            ->assertSee('assets/creators/drqis/portrait-03-480.webp')
+            ->assertSee('assets/creators/drqis/dental-still-life.webp')
+            ->assertSee('https://www.tiktok.com/@drqis')
+            ->assertDontSee('Metrics as of');
+
+        $this->get(route('creators.index'))->assertOk()->assertSee(route('creators.show', 'drqis'));
+    }
+
     public function test_creator_directory_keeps_filters_available_when_no_creators_match(): void
     {
         $party = Party::factory()->create(['display_name' => 'Verified Travel Creator']);

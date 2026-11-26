@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Features\Sales\EntryPoints\Livewire;
 
+use App\Features\Creators\Api\ResolvesCreators;
 use App\Features\Identity\Api\ManagesParties;
 use App\Features\Sales\Api\RecordsEnquiries;
 use App\Shared\Contracts\VerifiesTurnstile;
@@ -30,6 +31,19 @@ class ContactForm extends Component
 
     #[Locked]
     public bool $submitted = false;
+
+    public function mount(ResolvesCreators $creators): void
+    {
+        $slug = request()->query('creator');
+
+        if (is_string($slug) && preg_match('/\A[a-z0-9-]{1,255}\z/', $slug) === 1) {
+            $creator = $creators->publicSummaryBySlug($slug);
+
+            if ($creator !== null) {
+                $this->message = 'I would like to discuss a collaboration with '.$creator->name.'.';
+            }
+        }
+    }
 
     public function submit(ManagesParties $parties, RecordsEnquiries $enquiries, VerifiesTurnstile $turnstile): void
     {

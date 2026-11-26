@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use AIArmada\Authz\Models\Role;
+use AIArmada\Authz\Features\Authorization\Api\RoleAdministrationApi;
+use AIArmada\CommerceSupport\Support\EloquentRecordReference;
 use App\Features\Identity\Models\User;
 use App\Features\Identity\Persistence\UpsertUser;
 use Illuminate\Database\Seeder;
@@ -35,7 +36,11 @@ class AdminUserSeeder extends Seeder
 
         $user = app(UpsertUser::class)->handle($attributes);
 
-        $user->assignRole(Role::findOrCreate(config('authz.super_admin_role'), 'web'));
+        $reference = EloquentRecordReference::fromModel($user) ?? throw new \RuntimeException('Admin user was not persisted.');
+
+        if (! app(RoleAdministrationApi::class)->assignExistingRole($reference, (string) config('authz.super_admin_role', 'super_admin'), 'web', null)) {
+            throw new \RuntimeException('Unable to assign the configured admin role.');
+        }
 
         $this->command?->info("Admin user ready: {$email}");
 

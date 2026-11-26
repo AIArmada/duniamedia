@@ -14,6 +14,16 @@ final readonly class FindCreator implements ResolvesCreators
     {
         $profile = CreatorProfile::query()->find($creatorProfileId);
 
+        return $this->toSummary($profile);
+    }
+
+    public function publicSummaryBySlug(string $slug): ?CreatorSummary
+    {
+        return $this->toSummary(CreatorProfile::query()->publiclyListed()->where('slug', $slug)->first());
+    }
+
+    private function toSummary(?CreatorProfile $profile): ?CreatorSummary
+    {
         return $profile === null ? null : new CreatorSummary(
             id: $profile->id,
             name: $profile->displayName(),

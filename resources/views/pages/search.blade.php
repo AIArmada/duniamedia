@@ -68,12 +68,18 @@
                     <div class="media-grid">
                         @foreach ($creators as $creator)
                             <article class="creator-card">
-                                <div class="creator-card__image"><img src="{{ \App\Features\Catalog\Support\MediaImage::url($creator->imageUrl) }}" alt="{{ $creator->name }}" loading="lazy"></div>
+                                <a class="creator-card__image" href="{{ route('creators.show', $creator->slug) }}" aria-label="View {{ $creator->name }} profile">
+                                    @if ($creator->imageUrl && $creator->imageUrl !== 'assets/img/creator-feature.webp')
+                                        <img src="{{ \App\Features\Catalog\Support\MediaImage::url($creator->imageUrl) }}" alt="{{ $creator->name }}" loading="lazy" decoding="async">
+                                    @else
+                                        <div class="network-profile-placeholder" aria-hidden="true"><x-dm-icon name="creators" :size="52"/></div>
+                                    @endif
+                                </a>
                                 <div class="creator-card__body">
                                     <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->socialPlatform }}</span></div>
                                     <h3>{{ $creator->name }}</h3>
                                     <p>{{ \Illuminate\Support\Str::limit($creator->bio, 140) }}</p>
-                                    <a href="{{ route('creators.index') }}" class="text-link">View the creator network →</a>
+                                    <a href="{{ route('creators.show', $creator->slug) }}" class="text-link">View creator profile →</a>
                                 </div>
                             </article>
                         @endforeach
