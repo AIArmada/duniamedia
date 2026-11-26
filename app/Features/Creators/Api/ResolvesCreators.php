@@ -7,4 +7,6 @@ namespace App\Features\Creators\Api;
 interface ResolvesCreators
 {
     public function summary(string $creatorProfileId): ?CreatorSummary;
+
+    public function publicSummaryBySlug(string $slug): ?CreatorSummary;
 }
