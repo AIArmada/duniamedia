@@ -19,18 +19,18 @@ final readonly class SearchCreators implements ListsCreators
         $like = '%'.$query.'%';
 
         return CreatorProfile::query()
-            ->where('status', 'active')
-            ->where('verification_status', 'verified')
-            ->where('slug', 'not like', 'demo-creator-%')
+            ->publiclyListed()
             ->where(function ($sub) use ($like): void {
                 $sub->where('bio', 'like', $like)
                     ->orWhere('primary_niche', 'like', $like)
                     ->orWhere('social_platform', 'like', $like)
+                    ->orWhere('handle', 'like', $like)
+                    ->orWhere('slug', 'like', $like)
                     ->orWhereIn('creator_party_id', $this->partyIdsMatching($like));
             })
             ->orderByDesc('is_featured')
             ->limit($limit)
-            ->get()
+            ->with('media')->get()
             ->map(fn (CreatorProfile $profile): CreatorSummary => new CreatorSummary(
                 id: $profile->id,
                 name: $profile->displayName(),
@@ -59,13 +59,11 @@ final readonly class SearchCreators implements ListsCreators
     public function active(int $limit = 12): array
     {
         return CreatorProfile::query()
-            ->where('status', 'active')
-            ->where('verification_status', 'verified')
-            ->where('slug', 'not like', 'demo-creator-%')
+            ->publiclyListed()
             ->orderByDesc('is_featured')
             ->orderBy('slug')
             ->limit($limit)
-            ->get()
+            ->with('media')->get()
             ->map(fn (CreatorProfile $profile): CreatorSummary => new CreatorSummary(
                 id: $profile->id,
                 name: $profile->displayName(),
@@ -86,9 +84,7 @@ final readonly class SearchCreators implements ListsCreators
     public function options(): array
     {
         return CreatorProfile::query()
-            ->where('status', 'active')
-            ->where('verification_status', 'verified')
-            ->where('slug', 'not like', 'demo-creator-%')
+            ->publiclyListed()
             ->orderBy('slug')
             ->get()
             ->map(fn (CreatorProfile $profile): array => ['id' => $profile->id, 'name' => $profile->displayName()])
