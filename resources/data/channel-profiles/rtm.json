@@ -1,0 +1,458 @@
+[
+  {
+    "name": "TV1",
+    "tagline": "National conversations on television.",
+    "intro": "RTM public television channel; use an informative brief and confirm current programme and commercial options.",
+    "ideas": [
+      {
+        "title": "Public-interest creative",
+        "body": "Discuss informative consumer or institutional messages appropriate to the schedule."
+      },
+      {
+        "title": "News context",
+        "body": "Confirm advertising separation and relevant dayparts."
+      }
+    ],
+    "motif": "newsdesk",
+    "accent": "#1f73a8",
+    "art_label": "Public television",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "TV2",
+    "tagline": "Different voices, one national screen.",
+    "intro": "RTM television channel; consider multilingual or multicultural campaign adaptation, subject to current programme information.",
+    "ideas": [
+      {
+        "title": "Language adaptation",
+        "body": "Prepare versions suited to the relevant audience and confirmed programmes."
+      },
+      {
+        "title": "Family programming",
+        "body": "Discuss accessible storytelling and scheduling with RTM."
+      }
+    ],
+    "motif": "broadcast",
+    "accent": "#b54263",
+    "art_label": "Multicultural television",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "OKEY",
+    "tagline": "Stories with local and regional relevance.",
+    "intro": "RTM television service; explore the broadcaster’s current local and regional content schedule before booking.",
+    "ideas": [
+      {
+        "title": "Regional storytelling",
+        "body": "Consider a narrative rooted in the relevant communities."
+      },
+      {
+        "title": "Local-language creative",
+        "body": "Confirm languages, regions and programme fit with the broadcaster."
+      }
+    ],
+    "motif": "coast",
+    "accent": "#25967e",
+    "art_label": "Regional television",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Nasional FM",
+    "tagline": "A Malay-language national conversation.",
+    "intro": "RTM’s flagship national radio brand combines music and information; its official portal lists current programming.",
+    "ideas": [
+      {
+        "title": "National message",
+        "body": "Develop a clear Bahasa Malaysia audio spot with broad relevance."
+      },
+      {
+        "title": "Information-led campaign",
+        "body": "Discuss a public-information or practical service topic appropriate to the station."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#2677aa",
+    "art_label": "National Malay audio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Klasik FM",
+    "tagline": "Familiar melodies and memories.",
+    "intro": "RTM national radio station with a classic music identity; confirm current programme slots.",
+    "ideas": [
+      {
+        "title": "Heritage story",
+        "body": "Use a thoughtful narrative rooted in familiar cultural memories."
+      },
+      {
+        "title": "Multigenerational message",
+        "body": "Discuss a family-oriented service and relevant listening hours."
+      }
+    ],
+    "motif": "vinyl",
+    "accent": "#a17537",
+    "art_label": "Classic music",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "TraXX FM",
+    "tagline": "English-language conversations on public radio.",
+    "intro": "RTM’s English-language national radio station; tailor the brief to English-speaking listeners.",
+    "ideas": [
+      {
+        "title": "Service explainer",
+        "body": "Write a conversational English script that explains a useful service."
+      },
+      {
+        "title": "Interview concept",
+        "body": "Discuss approved commercial conversation formats separately from news."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#405fae",
+    "art_label": "English public radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Ai FM",
+    "tagline": "Mandarin audio with a public-service context.",
+    "intro": "RTM national Chinese-language radio station; confirm available formats and current schedule.",
+    "ideas": [
+      {
+        "title": "Mandarin information",
+        "body": "Develop locally fluent copy for a practical public-facing message."
+      },
+      {
+        "title": "Cultural relevance",
+        "body": "Discuss relevant seasonal themes and local audience context."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#cd4a43",
+    "art_label": "Mandarin public radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Minnal FM",
+    "tagline": "Tamil information, music and culture.",
+    "intro": "RTM’s official station portal identifies Minnal as a Tamil-language service for the Indian community.",
+    "ideas": [
+      {
+        "title": "Tamil-language information",
+        "body": "Create original audio copy checked by local speakers."
+      },
+      {
+        "title": "Cultural occasion",
+        "body": "Discuss a culturally relevant community brief and broadcaster approval."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#e07b32",
+    "art_label": "Tamil public radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Asyik FM",
+    "tagline": "Respectful communication with distinct communities.",
+    "intro": "RTM’s station portal traces Asyik FM to an Orang Asli broadcast service; cultural and language sensitivity is essential.",
+    "ideas": [
+      {
+        "title": "Community consultation",
+        "body": "Discuss messaging with appropriate local expertise and station approval."
+      },
+      {
+        "title": "Language fit",
+        "body": "Confirm which languages and formats are appropriate rather than assuming national Malay reach."
+      }
+    ],
+    "motif": "forest",
+    "accent": "#317c53",
+    "art_label": "Community radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Sabah FM",
+    "tagline": "A Sabah-first campaign conversation.",
+    "intro": "Regional RTM station listed for Sabah; use local geography, culture and language guidance when planning.",
+    "ideas": [
+      {
+        "title": "Sabah rollout",
+        "body": "Discuss launches or services specifically available in Sabah."
+      },
+      {
+        "title": "Community context",
+        "body": "Review local wording and station-approved formats for the intended audience."
+      }
+    ],
+    "motif": "mountain",
+    "accent": "#417d89",
+    "art_label": "Sabah local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Sarawak FM",
+    "tagline": "Made relevant to Sarawak.",
+    "intro": "Regional RTM station serving the Sarawak context; confirm current programmes and regional reach.",
+    "ideas": [
+      {
+        "title": "Sarawak service story",
+        "body": "Plan a message around local access and practical customer needs."
+      },
+      {
+        "title": "Community occasion",
+        "body": "Discuss a locally reviewed seasonal concept with the station."
+      }
+    ],
+    "motif": "river",
+    "accent": "#bc872d",
+    "art_label": "Sarawak local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Perlis FM",
+    "tagline": "Local relevance at the northern border.",
+    "intro": "RTM’s Perlis state station; define the actual local service area rather than claiming measured reach.",
+    "ideas": [
+      {
+        "title": "Perlis retail",
+        "body": "Explore a geographically focused opening or promotion."
+      },
+      {
+        "title": "Local information",
+        "body": "Discuss a short local service notice with current station terms."
+      }
+    ],
+    "motif": "fields",
+    "accent": "#658c44",
+    "art_label": "Perlis local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Kedah FM",
+    "tagline": "A northern message close to home.",
+    "intro": "RTM’s Kedah state station; plan around local communities and confirm the current broadcast area.",
+    "ideas": [
+      {
+        "title": "Kedah rollout",
+        "body": "Explore a campaign around local outlets and service coverage."
+      },
+      {
+        "title": "Seasonal agriculture context",
+        "body": "Discuss a practical rural or household message if relevant to the brief."
+      }
+    ],
+    "motif": "fields",
+    "accent": "#4d925f",
+    "art_label": "Kedah local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Mutiara FM",
+    "tagline": "A Penang listening moment.",
+    "intro": "RTM state station associated with Penang; tailor creative to the specific local audience.",
+    "ideas": [
+      {
+        "title": "Island and mainland brief",
+        "body": "Discuss which outlets or locations matter to the campaign."
+      },
+      {
+        "title": "Local experience",
+        "body": "Explore a visitor or resident-oriented message with local review."
+      }
+    ],
+    "motif": "bridge",
+    "accent": "#289ba0",
+    "art_label": "Penang local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Perak FM",
+    "tagline": "Connect through the places that matter in Perak.",
+    "intro": "RTM state radio listing for Perak; confirm target districts and station formats.",
+    "ideas": [
+      {
+        "title": "District-led planning",
+        "body": "Match a message to the campaign’s actual service locations."
+      },
+      {
+        "title": "Local enterprise",
+        "body": "Discuss a small-business or tourism campaign relevant to the intended communities."
+      }
+    ],
+    "motif": "mountain",
+    "accent": "#a58a44",
+    "art_label": "Perak local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Kelantan FM",
+    "tagline": "Local language and local relevance.",
+    "intro": "RTM’s Kelantan state station; dialect-aware creative requires local review.",
+    "ideas": [
+      {
+        "title": "Dialect-reviewed copy",
+        "body": "Develop a script that feels natural to Kelantan listeners."
+      },
+      {
+        "title": "Regional retail",
+        "body": "Explore campaigns around actual store locations and seasonal availability."
+      }
+    ],
+    "motif": "market",
+    "accent": "#be4446",
+    "art_label": "Kelantan local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Terengganu FM",
+    "tagline": "A message grounded in the coastal community.",
+    "intro": "RTM’s Terengganu state station; use locally relevant campaign geography and language.",
+    "ideas": [
+      {
+        "title": "Coastal service context",
+        "body": "Discuss a relevant local consumer or community service."
+      },
+      {
+        "title": "Festive planning",
+        "body": "Confirm dates and local tone for a regional promotion."
+      }
+    ],
+    "motif": "coast",
+    "accent": "#347d9a",
+    "art_label": "Terengganu local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Melaka FM",
+    "tagline": "A local story in a heritage city and state.",
+    "intro": "RTM’s Melaka station; local visitor and resident needs may support different briefs.",
+    "ideas": [
+      {
+        "title": "Visitor-facing creative",
+        "body": "Explore a message around a confirmed local attraction or service."
+      },
+      {
+        "title": "Resident-focused rollout",
+        "body": "Discuss practical local promotion timing and geographic relevance."
+      }
+    ],
+    "motif": "heritage",
+    "accent": "#b56345",
+    "art_label": "Melaka local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Negeri FM",
+    "tagline": "Make the Negeri Sembilan brief local.",
+    "intro": "RTM’s Negeri Sembilan state station; confirm coverage and programming before selecting airtime.",
+    "ideas": [
+      {
+        "title": "State-focused rollout",
+        "body": "Plan around service locations in the state."
+      },
+      {
+        "title": "Culturally aware copy",
+        "body": "Discuss local language and heritage references with appropriate review."
+      }
+    ],
+    "motif": "heritage",
+    "accent": "#925b3c",
+    "art_label": "Negeri Sembilan radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Johor FM",
+    "tagline": "A Southern Malaysian listening context.",
+    "intro": "RTM’s Johor state station; explore local retail, services and commuting contexts without assuming cross-border reach.",
+    "ideas": [
+      {
+        "title": "Southern rollout",
+        "body": "Build a brief around confirmed Johor outlets and services."
+      },
+      {
+        "title": "Commuter messaging",
+        "body": "Discuss relevant broadcast windows with the station."
+      }
+    ],
+    "motif": "bridge",
+    "accent": "#386fba",
+    "art_label": "Johor local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Selangor FM",
+    "tagline": "A message for the communities of Selangor.",
+    "intro": "RTM state station listed for Selangor; verify local audience and inventory details.",
+    "ideas": [
+      {
+        "title": "Suburban service brief",
+        "body": "Match the creative to the actual service area and campaign objective."
+      },
+      {
+        "title": "Community event",
+        "body": "Discuss a locally relevant activity and current station approval."
+      }
+    ],
+    "motif": "city",
+    "accent": "#a23f5c",
+    "art_label": "Selangor local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "Pahang FM",
+    "tagline": "Local connections across Pahang.",
+    "intro": "RTM’s Pahang state station; geography and local access should be considered in the media brief.",
+    "ideas": [
+      {
+        "title": "District selection",
+        "body": "Define intended local areas and request station coverage data."
+      },
+      {
+        "title": "Travel and community",
+        "body": "Explore a practical visitor or resident story relevant to the campaign."
+      }
+    ],
+    "motif": "forest",
+    "accent": "#447d63",
+    "art_label": "Pahang local radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "KL FM",
+    "tagline": "A city-centred listening experience.",
+    "intro": "RTM’s Kuala Lumpur station; plan around urban routines and confirm available local formats.",
+    "ideas": [
+      {
+        "title": "City service message",
+        "body": "Create a concise audio spot for a service available in Kuala Lumpur."
+      },
+      {
+        "title": "Urban commute",
+        "body": "Discuss appropriate dayparts and location-specific offer details."
+      }
+    ],
+    "motif": "city",
+    "accent": "#5866b2",
+    "art_label": "Kuala Lumpur radio",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  },
+  {
+    "name": "RTMKlik",
+    "tagline": "Public broadcasting beyond the receiver.",
+    "intro": "RTM digital platform listed alongside its television and radio network; verify current ad inventory and policies.",
+    "ideas": [
+      {
+        "title": "Digital video brief",
+        "body": "Discuss available streaming or digital formats and technical requirements."
+      },
+      {
+        "title": "Cross-platform planning",
+        "body": "Explore a coordinated campaign only if the relevant digital and broadcast options are confirmed."
+      }
+    ],
+    "motif": "stream",
+    "accent": "#3285a7",
+    "art_label": "Public broadcasting online",
+    "reference": "https://radio.rtm.gov.my/en/senarai-radio"
+  }
+]
