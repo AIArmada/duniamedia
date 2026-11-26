@@ -190,24 +190,6 @@ parameters:
 			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
 			identifier: property.notFound
 			count: 1
-			path: app/Features/Clients/EntryPoints/Http/PublicController.php
-
-		-
-			message: '#^Cannot call method format\(\) on string\.$#'
-			identifier: method.nonObject
-			count: 2
-			path: app/Features/Clients/EntryPoints/Http/PublicController.php
-
-		-
-			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Features\\Clients\\Models\\Campaign\>\:\:map\(\) contains unresolvable type\.$#'
-			identifier: argument.unresolvableType
-			count: 1
-			path: app/Features/Clients/EntryPoints/Http/PublicController.php
-
-		-
-			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
-			identifier: property.notFound
-			count: 1
 			path: app/Features/Clients/EntryPoints/Livewire/WorkExplorer.php
 
 		-

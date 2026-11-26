@@ -36,6 +36,7 @@ class CreatorProfile extends BaseModel
             ->where('slug', 'not like', 'demo-creator-%');
     }
 
+    /** @return HasMany<CreatorAccount, $this> */
     public function accounts(): HasMany
     {
         return $this->hasMany(CreatorAccount::class);
