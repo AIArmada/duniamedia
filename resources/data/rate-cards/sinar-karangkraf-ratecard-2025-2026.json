@@ -117,6 +117,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate; rich media production RM3,000.",
+              "source_text": "RM3,000 Catfish 970 x 90 / 320 x 50 Per Day RM5,000.00 (Daily)",
+              "page": 19,
               "is_package": false,
               "sort_order": 0
             },
@@ -128,6 +130,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 300 x 600 Per Week RM6,000.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 1
             },
@@ -139,6 +143,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate; rich media production RM3,000.",
+              "source_text": "Rich Media *D&M RM3,000 Interstitial 800 x 600 / 640 x 600 Per Day RM12,000.00 (Daily)",
+              "page": 19,
               "is_package": false,
               "sort_order": 2
             },
@@ -150,6 +156,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM1,000.",
+              "source_text": "Standard *D&M RM1,000 Leaderboard 728 x 90 / 320 x 50 Per Week RM8,000.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 3
             },
@@ -161,6 +169,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed in the weekly-rate column but marked (Daily).",
+              "source_text": "Masthead 970 x 250 / 300 x 300 Per Week RM10,000.00 (Daily)",
+              "page": 19,
               "is_package": false,
               "sort_order": 4
             },
@@ -172,6 +182,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Medium Rectangle 300 x 250 Per Week RM8,000.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 5
             }
@@ -194,6 +206,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Catfish 970 x 90, 320 x 50 RM40.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 0
             },
@@ -205,6 +219,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM3,000 Curtain Ad 640 x 1280 CPM RM50.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 1
             },
@@ -216,6 +232,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Expandable Catfish 970 x 90 to 970 x 500 / 320 x 50 to 320 x 416 RM50.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 2
             },
@@ -227,6 +245,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 300 x 600 RM40.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 3
             },
@@ -238,6 +258,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Image Ad (No Video) RM60.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 4
             },
@@ -249,6 +271,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Image Ad (With Video) 624 x 125 (Responsive) RM70.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 5
             },
@@ -260,6 +284,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Rich Media D&M RM3,000 In View Video 640 x 360 CPM RM60.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 6
             },
@@ -271,6 +297,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM3,000 Interstitial 800 x 600 / 640 x 600 CPM RM60.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 7
             },
@@ -282,6 +310,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Standard *D&M RM1,000 Leaderboard 728 x 90 / 320 x 50 CPM RM30.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 8
             },
@@ -293,6 +323,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Masthead 970 x 250 / 300 x 300 RM50.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 9
             },
@@ -304,6 +336,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Medium Rectangle 300 x 250 RM30.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 10
             },
@@ -315,6 +349,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mobile Catfish 320 x 50 to 320 x 416 RM40.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 11
             },
@@ -326,6 +362,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile RM3,000 Mobile Spin Invitation (Disc) - 640 x 640 / Expand Ad (Cards) 640 x 853 CPM RM70.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 12
             },
@@ -337,6 +375,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Spin Plus Invitation (Disc) - 640 x 640 / Expand Ad (Background) 640 x 640 RM80.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 13
             },
@@ -348,6 +388,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Stream Video Pre Roll (15 Seconds) 640 x 480 (Desktop) CPM RM40.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 14
             },
@@ -359,6 +401,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Pre Roll (30 Seconds) 400 x 300 (Mobile) RM50.00",
+              "page": 19,
               "is_package": false,
               "sort_order": 15
             }
@@ -381,6 +425,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM1,000.",
+              "source_text": "Native RM1,000 Branded Advertorial - Per Post RM8,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -392,6 +438,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM8,000.",
+              "source_text": "Social Depends on Concept FWOD - Infographics Per Post From RM8,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 1
             },
@@ -403,6 +451,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM10,000.",
+              "source_text": "Social Depends on Concept FWOD - Motion Videos Per Post From RM10,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 2
             },
@@ -414,6 +464,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept Facebook Live - Per Post RM5,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             },
@@ -425,6 +477,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Facebook Pin to Top - Per Post RM1,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 4
             },
@@ -436,6 +490,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM1,000.",
+              "source_text": "Social RM1,000 Facebook Post - Per Post RM4,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 5
             },
@@ -447,6 +503,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Facebook Timeline Cover 820 x 312 Per Day RM1,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 6
             },
@@ -458,6 +516,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Carousel - Per Post RM2,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 7
             },
@@ -469,6 +529,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Post - Per Post RM2,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 8
             },
@@ -480,6 +542,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Stories - Per Post RM2,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 9
             },
@@ -491,6 +555,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept Live X Up to 10 Tweets Per Event Day RM8,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 10
             },
@@ -502,6 +568,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM10,000.",
+              "source_text": "Interactive Depends on Concept Microsite - From RM10,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 11
             },
@@ -513,6 +581,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM8,000.",
+              "source_text": "Engagement Depends on Concept Mini Game - From RM8,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 12
             },
@@ -524,6 +594,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM4,000.",
+              "source_text": "TikTok RM500 - Per Post From RM4,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 13
             },
@@ -535,6 +607,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Tik Tok Post - Per Post RM4,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 14
             },
@@ -546,6 +620,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept X - Per Post RM1,000.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 15
             }
@@ -582,6 +658,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Native RM1,000 Branded advertorial - Per Post 10,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 0
             },
@@ -593,6 +671,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Curtain Ad 640 x 1280 5,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 1
             },
@@ -604,6 +684,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Email Marketing 700 x 900 Per Email 0.35",
+              "page": 25,
               "is_package": false,
               "sort_order": 2
             },
@@ -615,6 +697,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Expandable Leaderboard 728 x 90 to 728 x 200 / 320 x 100 (Mobile is non expandable) 2,500",
+              "page": 25,
               "is_package": false,
               "sort_order": 3
             },
@@ -626,6 +710,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Expandable Medium Rectangle 300 x 250 to 600 x 250 / 300 x 250 (Mobile is non expandable) 2,500",
+              "page": 25,
               "is_package": false,
               "sort_order": 4
             },
@@ -637,6 +723,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depend on Concept Facebook Live - Per Post 5,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 5
             },
@@ -648,6 +736,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Social RM500 Facebook Post - Per Post 3,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 6
             },
@@ -659,6 +749,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Facebook Timeline Cover 820 x 312 Per Day 1,500",
+              "page": 25,
               "is_package": false,
               "sort_order": 7
             },
@@ -670,6 +762,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 300 x 600 3,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 8
             },
@@ -681,6 +775,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Header Banner 1024 x 90 / 320 x 100 3,500",
+              "page": 25,
               "is_package": false,
               "sort_order": 9
             },
@@ -692,6 +788,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Instagram Carousel - Per Post 2,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 10
             },
@@ -703,6 +801,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Instagram Post - Per Post 2,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 11
             },
@@ -714,6 +814,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Instagram Story - Per Post 2,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 12
             },
@@ -725,6 +827,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate.",
+              "source_text": "Rich Media RM3,000 Interstitial 800 x 600 / 640 x 600 100% 5,000 (Daily)",
+              "page": 25,
               "is_package": false,
               "sort_order": 13
             },
@@ -736,6 +840,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Standard *D&M RM1,000 Leaderboard 728 x 90 / 320 x 50 100% 2,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 14
             },
@@ -747,6 +853,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed in the weekly-rate column but marked (Daily).",
+              "source_text": "Masthead 970 x 250 / 300 x 300 3,000 (Daily)",
+              "page": 25,
               "is_package": false,
               "sort_order": 15
             },
@@ -758,6 +866,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Medium Rectangle 300 x 250 2,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 16
             },
@@ -769,6 +879,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM10,000.",
+              "source_text": "Depend on Concept Microsite - From RM 10,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 17
             },
@@ -780,6 +892,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM5,000.",
+              "source_text": "Depend on Concept Mini Game - From RM 5,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 18
             },
@@ -791,6 +905,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mobile Catfish 320 x 50 to 320 x 416 4,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 19
             },
@@ -802,6 +918,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 SMS Marketing - Per SMS 0.30",
+              "page": 25,
               "is_package": false,
               "sort_order": 20
             },
@@ -813,6 +931,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Super Leaderboard 970 x 90 / 320 x 50 3,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 21
             },
@@ -824,6 +944,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM4,000.",
+              "source_text": "Interactive RM500 Tik Tok Post - Per Post From 4,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 22
             }
@@ -860,6 +982,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "33% share of voice.",
+              "source_text": "Rich Media Catfish 970 x 90 / 320 x 50 12,000 33%",
+              "page": 31,
               "is_package": false,
               "sort_order": 0
             },
@@ -871,6 +995,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "33% share of voice.",
+              "source_text": "Expandable Catfish 970 x 90 to 970 x 500 / 320 x 50 to 320 x 416 14,000 33%",
+              "page": 31,
               "is_package": false,
               "sort_order": 1
             },
@@ -882,6 +1008,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 300 x 600 10,000",
+              "page": 31,
               "is_package": false,
               "sort_order": 2
             },
@@ -893,6 +1021,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate; 100% SOV.",
+              "source_text": "Interstitial 800 x 600 / 640 x 600 15,000 (Daily) 100%",
+              "page": 31,
               "is_package": false,
               "sort_order": 3
             },
@@ -904,6 +1034,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "33% share of voice. Production cost RM1,000.",
+              "source_text": "Standard RM1,000 Leaderboard 728 x 90 / 320 x 50 8,000",
+              "page": 31,
               "is_package": false,
               "sort_order": 4
             },
@@ -915,6 +1047,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed in the weekly-rate column but marked (Daily); 100% SOV.",
+              "source_text": "Masthead 970 x 250 / 300 x 300 8,000 (Daily) 100%",
+              "page": 31,
               "is_package": false,
               "sort_order": 5
             },
@@ -926,6 +1060,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "33% share of voice.",
+              "source_text": "Medium Rectangle 300 x 250 8,000",
+              "page": 31,
               "is_package": false,
               "sort_order": 6
             }
@@ -948,6 +1084,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Catfish 970 x 90 / 320 x 50 40",
+              "page": 31,
               "is_package": false,
               "sort_order": 0
             },
@@ -959,6 +1097,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mobile RM3,000 Curtain Ad 640 x 1280 CPM 50",
+              "page": 31,
               "is_package": false,
               "sort_order": 1
             },
@@ -970,6 +1110,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Expandable Catfish 970 x 90 to 970 x 500 / 320 x 50 to 320 x 416 50",
+              "page": 31,
               "is_package": false,
               "sort_order": 2
             },
@@ -981,6 +1123,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 300 x 600 40",
+              "page": 31,
               "is_package": false,
               "sort_order": 3
             },
@@ -992,6 +1136,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Image Ad (No Video) 60",
+              "page": 31,
               "is_package": false,
               "sort_order": 4
             },
@@ -1003,6 +1149,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Image Ad (With Video) 624 x 125 (Responsive) 70",
+              "page": 31,
               "is_package": false,
               "sort_order": 5
             },
@@ -1014,6 +1162,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Rich Media RM3,000 In View Video 640 x 360 CPM 60",
+              "page": 31,
               "is_package": false,
               "sort_order": 6
             },
@@ -1025,6 +1175,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Interstitial 800 x 600 / 640 x 600 60",
+              "page": 31,
               "is_package": false,
               "sort_order": 7
             },
@@ -1036,6 +1188,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Standard *D&M RM1,000 Leaderboard 728 x 90 / 320 x 50 CPM 30",
+              "page": 31,
               "is_package": false,
               "sort_order": 8
             },
@@ -1047,6 +1201,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Masthead 970 x 250 / 300 x 300 50",
+              "page": 31,
               "is_package": false,
               "sort_order": 9
             },
@@ -1058,6 +1214,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Medium Rectangle 300 x 250 30",
+              "page": 31,
               "is_package": false,
               "sort_order": 10
             },
@@ -1069,6 +1227,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mobile Catfish 320 x 50 to 320 x 416 40",
+              "page": 31,
               "is_package": false,
               "sort_order": 11
             },
@@ -1080,6 +1240,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Spin Invitation (Disc) - 640 x 640 / Expand Ad (Cards) 640 x 853 70",
+              "page": 31,
               "is_package": false,
               "sort_order": 12
             },
@@ -1091,6 +1253,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Spin Plus Invitation (Disc) - 640 x 640 / Expand Ad (Background) 640 x 640 80",
+              "page": 31,
               "is_package": false,
               "sort_order": 13
             },
@@ -1102,6 +1266,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Stream Video Pre Roll (15 Seconds) 640 x 480 (Desktop), 400 x 300 (Mobile) CPM 40",
+              "page": 31,
               "is_package": false,
               "sort_order": 14
             },
@@ -1113,6 +1279,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Pre Roll (30 Seconds) 50",
+              "page": 31,
               "is_package": false,
               "sort_order": 15
             }
@@ -1135,6 +1303,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM1,000.",
+              "source_text": "Native RM1,000 Branded advertorial Per Post 8,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 0
             },
@@ -1146,6 +1316,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept Facebook Live - Per Post 5,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 1
             },
@@ -1157,6 +1329,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Facebook Pin to Top - Per Post 1,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 2
             },
@@ -1168,6 +1342,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Social RM500 Facebook Post Per Post 4,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 3
             },
@@ -1179,6 +1355,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Facebook Timeline Cover 820 x 312 Per day 1,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 4
             },
@@ -1190,6 +1368,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Carousel - Per Post 2,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 5
             },
@@ -1201,6 +1381,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Post - Per Post 2,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 6
             },
@@ -1212,6 +1394,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Stories - Per Post 2,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 7
             },
@@ -1223,6 +1407,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept Live X up to 10 tweets Per Event Day 8,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 8
             },
@@ -1234,6 +1420,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM10,000.",
+              "source_text": "Interactive Engagement Depends on Concept Microsite - From RM 10,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 9
             },
@@ -1245,6 +1433,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM8,000.",
+              "source_text": "Depends on Concept Mini Game - From RM 8,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 10
             },
@@ -1256,6 +1446,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM4,000.",
+              "source_text": "Depends on Concept Tik Tok Post - Per Post From 4,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 11
             },
@@ -1267,6 +1459,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM1,000.",
+              "source_text": "Depends on Concept X - Per Post From 1,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 12
             }
@@ -1289,6 +1483,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "50% SOV.",
+              "source_text": "Interstitial 320 x 480, 768 x 1024 (Tablet interstitial) 50% SOV RM 6,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 0
             },
@@ -1300,6 +1496,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "100% SOV.",
+              "source_text": "Large Rectangle 336 x 280 100% SOV RM 8,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 1
             },
@@ -1311,6 +1509,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "100% SOV.",
+              "source_text": "Leaderboard 320 x 50 100% SOV RM 5,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 2
             },
@@ -1322,6 +1522,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "100% SOV.",
+              "source_text": "Medium Rectangle 300 x 250 100% SOV RM 5,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 3
             },
@@ -1333,6 +1535,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "100% SOV.",
+              "source_text": "Mobile App Ad Takeover 336 x 280, 320 x 50 100% SOV RM 5,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 4
             },
@@ -1344,6 +1548,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Welcome Ad / Splash Screen 320 x 480 Per Day RM12,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 5
             }
@@ -1393,6 +1599,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM20,400. Creative charge RM3,500.",
+              "source_text": "Advertorial – Full Page 10,460 20,400",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1404,6 +1612,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Advertorial – Full Page 10,460 20,400",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -1415,6 +1625,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM15,980.",
+              "source_text": "Advertorial – Half Page 5,980 15,980",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -1426,6 +1638,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Advertorial – Half Page 5,980 15,980",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             },
@@ -1437,6 +1651,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Advertorial creative charge.",
+              "source_text": "Creative Charges / Advertorial - 3,500",
+              "page": 12,
               "is_package": false,
               "sort_order": 4
             },
@@ -1448,6 +1664,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM42,480.",
+              "source_text": "COLOR SURCHARGE / NATIONAL Double Page 26,880 42,480",
+              "page": 12,
               "is_package": false,
               "sort_order": 5
             },
@@ -1459,6 +1677,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "COLOR SURCHARGE / NATIONAL Double Page 26,880 42,480",
+              "page": 12,
               "is_package": false,
               "sort_order": 6
             },
@@ -1470,6 +1690,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM16,960. Display rates exclude SST (p.37).",
+              "source_text": "Full Page 8,960 16,960",
+              "page": 12,
               "is_package": false,
               "sort_order": 7
             },
@@ -1481,6 +1703,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Position loadings: front page +100%, page 3 +50%, DPS +50%, consecutive pages +50%, facing pages +50%, front half +30%.",
+              "source_text": "Full Page 8,960 16,960",
+              "page": 12,
               "is_package": false,
               "sort_order": 8
             },
@@ -1492,6 +1716,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM12,480.",
+              "source_text": "Half Page 4,480 12,480",
+              "page": 12,
               "is_package": false,
               "sort_order": 9
             },
@@ -1503,6 +1729,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Half Page 4,480 12,480",
+              "page": 12,
               "is_package": false,
               "sort_order": 10
             },
@@ -1514,6 +1742,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column. Series shown once, B&W/colour split not stated.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 11
             },
@@ -1525,6 +1755,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 12
             },
@@ -1536,6 +1768,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 13
             },
@@ -1547,6 +1781,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 14
             },
@@ -1558,6 +1794,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 15
             },
@@ -1569,6 +1807,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per single column centimetre; 3cm per column.",
+              "source_text": "Per Col 35.00 33.00 32.00 31.00 30.00 27.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 16
             },
@@ -1580,6 +1820,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Colour rate RM10,240.",
+              "source_text": "Quarter Page 2,240 10,240",
+              "page": 12,
               "is_package": false,
               "sort_order": 17
             },
@@ -1591,6 +1833,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Quarter Page 2,240 10,240",
+              "page": 12,
               "is_package": false,
               "sort_order": 18
             }
@@ -1613,6 +1857,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions; rich media production cost RM3,000.",
+              "source_text": "*D&M RM3,000 Catfish 970 x 90 / 320 x 50 Per Week 14,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1624,6 +1870,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed against rich media formats on main page.",
+              "source_text": "Rich Media RM3,000 Interstitial 800 x 600 / 640 x 600 Per Day 20,000 (Daily) -",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -1635,6 +1883,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed against standard banner formats on main page.",
+              "source_text": "Standard RM1,000 Leaderboard 728 x 90, 320 x 50 Per Week 12,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -1646,6 +1896,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions.",
+              "source_text": "RM3,000 Expandable Catfish 970 x 90 to 970 x 500 / 320 x 50 to 320 x 416 Per Week 18,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             },
@@ -1657,6 +1909,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mobile non-expandable. Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Expandable Leaderboard 728 x 90 to 728 x 200 / 320 x 100 (Mobile is non expandable) Per Week 15,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 4
             },
@@ -1668,6 +1922,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mobile non-expandable. Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Expandable Medium Rect 300 x 250 to 600 x 250 / 300 x 250 (Mobile is non expandable) Per Week 15,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 5
             },
@@ -1679,6 +1935,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Half Page 300 x 600 Per Week 18,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 6
             },
@@ -1690,6 +1948,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Header Banner 1024 x 90 / 320 x 100 Per Week 16,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 7
             },
@@ -1701,6 +1961,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate; rich media production cost RM3,000.",
+              "source_text": "Rich Media RM3,000 Interstitial 800 x 600 / 640 x 600 Per Day 20,000 (Daily) -",
+              "page": 12,
               "is_package": false,
               "sort_order": 8
             },
@@ -1712,6 +1974,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions. Production cost RM1,000.",
+              "source_text": "Standard RM1,000 Leaderboard 728 x 90, 320 x 50 Per Week 12,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 9
             },
@@ -1723,6 +1987,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Daily rate.",
+              "source_text": "RM1,000 Masthead 970 x 250 / 300 x 300 Per Day 10,000 (Daily) -",
+              "page": 12,
               "is_package": false,
               "sort_order": 10
             },
@@ -1734,6 +2000,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Medium Rectangle 300 x 250 Per Week 12,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 11
             },
@@ -1745,6 +2013,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 300,000 impressions.",
+              "source_text": "RM1,000 Super Leaderboard 970 x 90 / 320 x 50 Per Week 15,000 300,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 12
             }
@@ -1767,6 +2037,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "After the first 20 words.",
+              "source_text": "Additional words: RM1.00 (per word)",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1778,6 +2050,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Logo/Picture: RM20.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             }
@@ -1800,6 +2074,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "1 Spot Process RM2,700.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1811,6 +2087,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "2 Spot Process RM4,000.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -1822,6 +2100,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Full Color RM8,000.00",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -1833,6 +2113,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Klang Valley area only.",
+              "source_text": "Event News Coverage - 15,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             }
@@ -1855,6 +2137,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Newsprint material only.",
+              "source_text": "Cover Wrap – 100,000*",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1866,6 +2150,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Flat premium-position rate; newsprint material only.",
+              "source_text": "Bottom Panel (Front Page) – 19,360",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -1877,6 +2163,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Flat premium-position rate; newsprint material only.",
+              "source_text": "Earspace (Front Page) – 21,250",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -1888,6 +2176,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Newsprint material only.",
+              "source_text": "Full Wrap – 200,000*",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             },
@@ -1899,6 +2189,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Newsprint material only.",
+              "source_text": "Half Wrap – 150,000*",
+              "page": 12,
               "is_package": false,
               "sort_order": 4
             }
@@ -1921,6 +2213,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production from RM1,000.",
+              "source_text": "From RM 1,000 Branded Advertorial - Per Post 14,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -1932,6 +2226,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM500.",
+              "source_text": "RM500 Email Marketing 700 x 900 Per Email 0.35",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -1943,6 +2239,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Depends on Concept Facebook Live - Per Post 8,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -1954,6 +2252,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM5,000.",
+              "source_text": "Depends on Concept Facebook Paid Partnership Per Post From 5,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -1965,6 +2265,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "- Facebook Pin to Top - Per Post 1,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -1976,6 +2278,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Facebook Post - Per Post 5,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -1987,6 +2291,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Facebook Timeline Cover 820 x 312 Per Day 1,500",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -1998,6 +2304,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Carousel - Per Post 2,250",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             },
@@ -2009,6 +2317,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM2,250.",
+              "source_text": "Instagram Paid Partnership - Per Post From 2,250",
+              "page": 13,
               "is_package": false,
               "sort_order": 8
             },
@@ -2020,6 +2330,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Instagram Post - Per Post 2,500",
+              "page": 13,
               "is_package": false,
               "sort_order": 9
             },
@@ -2031,6 +2343,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM500 Instagram Stories - Per Post 2,250",
+              "page": 13,
               "is_package": false,
               "sort_order": 10
             },
@@ -2042,6 +2356,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Per Event Day\nDepends on Concept Live X up to 10 tweets 10,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 11
             },
@@ -2053,6 +2369,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed as From RM10,000.",
+              "source_text": "Interactive From 10,000\nDepends on Concept Microsite -",
+              "page": 13,
               "is_package": false,
               "sort_order": 12
             },
@@ -2064,6 +2382,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed as From RM8,000.",
+              "source_text": "Enggagement From 8,000\nDepends on Concept Mini Game -",
+              "page": 13,
               "is_package": false,
               "sort_order": 13
             },
@@ -2075,6 +2395,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production cost RM500.",
+              "source_text": "RM500 SMS Marketing - Per SMS 0.30",
+              "page": 13,
               "is_package": false,
               "sort_order": 14
             },
@@ -2086,6 +2408,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "TikTok (Buletin) Per Post 6,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 15
             },
@@ -2097,6 +2421,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1000 TikTok Post Per Post 5,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 16
             },
@@ -2108,6 +2434,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "- Per Post\nDepends on Concept X 1,500",
+              "page": 13,
               "is_package": false,
               "sort_order": 17
             },
@@ -2119,6 +2447,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed as From RM3,000.",
+              "source_text": "From 3,000\nDepends on Concept Youtube Video Placement",
+              "page": 13,
               "is_package": false,
               "sort_order": 18
             }
@@ -2141,6 +2471,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Catfish 970 x 90 to 970 x 500 CPM 40",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -2152,6 +2484,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM3,000 Curtain Ad 640 x 1280 CPM 60",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -2163,6 +2497,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Expandable Catfish 320 x 50 to 320 x 416 CPM 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -2174,6 +2510,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Expandable Leaderboard 728 x 90 to 728 x 200 / 320 x 100 (Mobile is non expandable) CPM 40",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -2185,6 +2523,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Expandable Medium Rect 300 x 250 to 600 x 250 / 300 x 250 (Mobile is non expandable) CPM 40",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -2196,6 +2536,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": null,
+              "source_text": "Expanded - 640 x 1138 (5 cards)",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -2207,6 +2549,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Half Page 300 x 600 CPM 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -2218,6 +2562,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Header Banner 1024 x 90 / 320 x 100 CPM 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             },
@@ -2229,6 +2575,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Rich Media RM3,000 In Image Ad (No Video) 624 x 125 (Responsive) CPM 70",
+              "page": 13,
               "is_package": false,
               "sort_order": 8
             },
@@ -2240,6 +2588,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In Image Ad (With Video / Carousel) 624 x 125 (Responsive) CPM 80",
+              "page": 13,
               "is_package": false,
               "sort_order": 9
             },
@@ -2251,6 +2601,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "In View Video 640 x 360 CPM 60",
+              "page": 13,
               "is_package": false,
               "sort_order": 10
             },
@@ -2262,6 +2614,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Interstitial 800 x 600 / 640 x 600 CPM 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 11
             },
@@ -2273,6 +2627,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Leaderboard 728 x 90 / 320 x 50 CPM 35",
+              "page": 13,
               "is_package": false,
               "sort_order": 12
             },
@@ -2284,6 +2640,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Masthead 970 x 250 / 300 x 300 CPM 70",
+              "page": 13,
               "is_package": false,
               "sort_order": 13
             },
@@ -2295,6 +2653,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Medium Rectangle 300 x 250 CPM 35",
+              "page": 13,
               "is_package": false,
               "sort_order": 14
             },
@@ -2306,6 +2666,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "CPM 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 15
             },
@@ -2317,6 +2679,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Cube 560 x 560 (up to 4 images) 70",
+              "page": 13,
               "is_package": false,
               "sort_order": 16
             },
@@ -2328,6 +2692,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Revolver Invitation - 300 x 1806 CPM 80",
+              "page": 13,
               "is_package": false,
               "sort_order": 17
             },
@@ -2339,6 +2705,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile Spin Invitation (Disc) - 640 x 640 / Expand Ad (Max 3 cards) 640 x 853 CPM 80",
+              "page": 13,
               "is_package": false,
               "sort_order": 18
             },
@@ -2350,6 +2718,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "RM3,000 Mobile Spin Plus Invitation (Disc) - 640 x 640 / Expand Ad (Background) 640 x 640",
+              "page": 13,
               "is_package": false,
               "sort_order": 19
             },
@@ -2361,6 +2731,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "In-stream video.",
+              "source_text": "In Stream RM1,000 Pre Roll (15 Seconds) 640 x 480 (Desktop) 50",
+              "page": 13,
               "is_package": false,
               "sort_order": 20
             },
@@ -2372,6 +2744,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "In-stream video.",
+              "source_text": "Video Pre Roll (30 Seconds) 400 x 300 (Mobile) 80",
+              "page": 13,
               "is_package": false,
               "sort_order": 21
             },
@@ -2383,6 +2757,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Sticky Bottom Video 640 x 360 (16:9) CPM 70",
+              "page": 13,
               "is_package": false,
               "sort_order": 22
             },
@@ -2394,6 +2770,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM1,000 Super Leaderboard 970 x 90 / 320 x 50 CPM 45",
+              "page": 13,
               "is_package": false,
               "sort_order": 23
             }
@@ -2416,6 +2794,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM25,000; 1 hour 30 minutes.",
+              "source_text": "Berani Semuka From RM25,000 1 hour 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2427,6 +2807,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM10,000; 1 hour 30 minutes.",
+              "source_text": "Dialog Siswa From RM10,000 1 hour 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -2438,6 +2820,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM10,000; 40 minutes.",
+              "source_text": "Interviu From RM10,000 40 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -2449,6 +2833,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM25,000; 1 hour 30 minutes.",
+              "source_text": "Meja Bulat From RM25,000 1 hour 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -2460,6 +2846,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM10,000; 15 minutes.",
+              "source_text": "On The Way From RM10,000 15 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -2471,6 +2859,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM10,000; 30 minutes.",
+              "source_text": "Podcast From RM10,000 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -2482,6 +2872,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM45,000; 1 hour 30 minutes.",
+              "source_text": "Townhall From RM45,000 1 hour 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 6
             },
@@ -2493,6 +2885,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM35,000; 1 hour 30 minutes.",
+              "source_text": "Wacana From RM35,000 1 hour 30 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 7
             }
@@ -2515,6 +2909,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM5,000.",
+              "source_text": "Depends on Concept Crawler Per Post From 5,000 *Rate applicable for Klang Valley area only.",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2526,6 +2922,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM8,000.",
+              "source_text": "Depends on Concept Infographics Per Post From 8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -2537,6 +2935,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM5,000.",
+              "source_text": "Depends on Concept Lower Third Banner Per Post From 5,000 News Coverage From RM15,000 2-3 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -2548,6 +2948,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "From RM10,000.",
+              "source_text": "Depends on Concept Lower third Banner / Host Mention / Product Per Episode From 10,000 Vox Pop / Voice of People From RM15,000 2-3 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -2559,6 +2961,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM5,000.",
+              "source_text": "Depends on Concept Motion Graphic on Screen Per Post From 5,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -2570,6 +2974,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM10,000.",
+              "source_text": "Depends on Concept Motion Videos Per Post From 10,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -2581,6 +2987,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM3,000.",
+              "source_text": "Depends on Concept Product Placement Per Episode From 3,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 6
             }
@@ -2603,6 +3011,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM30,000; 2-3 minutes.",
+              "source_text": "Creative Content From RM30,000 2-3 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2614,6 +3024,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM15,000; 2-3 minutes; Klang Valley only.",
+              "source_text": "Depends on Concept Lower Third Banner Per Post From 5,000 News Coverage From RM15,000 2-3 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -2625,6 +3037,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM15,000; 2-3 minutes.",
+              "source_text": "Depends on Concept Lower third Banner / Host Mention / Product Per Episode From 10,000 Vox Pop / Voice of People From RM15,000 2-3 minutes",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             }
@@ -2647,6 +3061,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Interstitial 320 x 480, 768 x 1024 (Tablet interstitial) 50",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2658,6 +3074,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Large Rectangle 336 x 280 CPM 35",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -2669,6 +3087,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Mobile App RM1,000 Leaderboard 320 x 50 30",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -2680,6 +3100,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Medium Rectangle 300 x 250 30",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -2691,6 +3113,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mobile App Ad Takeover 336 x 280, 320 x 50 / 300 x 250 Per Day 20,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -2702,6 +3126,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Splash Screen 320 x 480 Per Day 18,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             }
@@ -2724,6 +3150,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "From RM2,000.",
+              "source_text": "Sponsored Content Logo Placement Per Day From 2,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2735,6 +3163,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM8,000.",
+              "source_text": "- Main Slider Per Day From 8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -2746,6 +3176,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM5,000.",
+              "source_text": "- Pilihan Editor Per Day From 5,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -2757,6 +3189,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "From RM3,000.",
+              "source_text": "Quiz -Undian Pembaca on website Per Post From 3,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -2768,6 +3202,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM2,000.",
+              "source_text": "Web Push Notification Per Post From 2,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             }
@@ -2790,6 +3226,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM50,000; approx. 50 pax.",
+              "source_text": "Niche Curated Events From RM 50,000* Approx. 50pax",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -2801,6 +3239,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "From RM240,000; approx. 300 pax.",
+              "source_text": "Seminar / Forum From RM 240,000* Approx. 300pax",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             }

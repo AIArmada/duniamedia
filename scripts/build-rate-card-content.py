@@ -124,6 +124,8 @@ def main():
                     'price_basis': row.get('price_basis'),
                     'confidence': row.get('confidence'),
                     'notes': row.get('notes') or None,
+                    'source_text': row.get('source_text') or None,
+                    'page': row.get('page'),
                     'is_package': 'package' in unit.lower() or 'sponsorship' in unit.lower(),
                     'sort_order': index,
                 })

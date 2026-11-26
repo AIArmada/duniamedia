@@ -98,6 +98,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "TV3 Buletin 1.30 PM RM40,000 RM43,200",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -109,6 +111,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "TV3 Buletin Utama RM75,000 RM81,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             }
@@ -145,6 +149,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "Astro AWANI 7.45 PM RM50,000 RM54,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -156,6 +162,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "Astro AWANI Buletin AWANI RM30,000 RM32,400",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             }
@@ -192,6 +200,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "TV1 Berita Perdana RM20,000 RM21,600",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             }
@@ -228,6 +238,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "TV AlHijrah Berita AlHijrah RM8,000 RM8,640",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             }
@@ -264,6 +276,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Maximum duration 2 minutes; media rate + 8% SST; placement subject to broadcaster approval",
+              "source_text": "TVS Utama 7.40 RM9,000 RM9,720",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             }

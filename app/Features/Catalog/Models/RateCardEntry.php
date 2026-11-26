@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string|null $notes
  * @property string|null $source_text
  * @property bool $is_package
+ * @property bool $is_plan_selectable
  * @property string|null $validity
  * @property string|null $terms
  * @property int $sort_order
@@ -44,6 +45,7 @@ class RateCardEntry extends BaseModel
             'price_incl_sst_rm' => 'decimal:2',
             'sort_order' => 'integer',
             'is_package' => 'boolean',
+            'is_plan_selectable' => 'boolean',
         ];
     }
 

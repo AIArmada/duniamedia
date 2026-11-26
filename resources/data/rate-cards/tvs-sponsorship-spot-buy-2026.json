@@ -122,6 +122,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Single rate listed; prime-time news. Fringe rate not stated.",
+              "source_text": "Special Report TVS Utama / Berita Iban / RM 9,000 (Prime Time News) Mandarin / Nightline",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             }
@@ -144,6 +146,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10s opening/closing ad; sponsorship option includes sponsor crediting. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Prime Time – RM2,400 / Fringe Time – RM 1,200",
+              "page": 6,
               "is_package": false,
               "sort_order": 0
             },
@@ -155,6 +159,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10s opening/closing ad; sponsorship option includes sponsor crediting. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM2,400 / Fringe Time – RM 1,200",
+              "page": 6,
               "is_package": false,
               "sort_order": 1
             }
@@ -177,6 +183,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min continuous on-screen presence. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "PRIME TIME – RM 12,000 FRINGE TIME – RM 9,000",
+              "page": 7,
               "is_package": false,
               "sort_order": 0
             },
@@ -188,6 +196,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min continuous on-screen presence. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "PRIME TIME – RM 12,000 FRINGE TIME – RM 9,000",
+              "page": 7,
               "is_package": false,
               "sort_order": 1
             }
@@ -210,6 +220,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min graphic panel. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "PRIME TIME – RM 10,800 FRINGE TIME – RM 7,200",
+              "page": 8,
               "is_package": false,
               "sort_order": 0
             },
@@ -221,6 +233,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min graphic panel. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "PRIME TIME – RM 10,800 FRINGE TIME – RM 7,200",
+              "page": 8,
               "is_package": false,
               "sort_order": 1
             }
@@ -243,6 +257,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2-min branded video outside programme. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Prime Time – RM14,400 Fringe Time – RM7,200",
+              "page": 9,
               "is_package": false,
               "sort_order": 0
             },
@@ -254,6 +270,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2-min branded video outside programme. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM14,400 Fringe Time – RM7,200",
+              "page": 9,
               "is_package": false,
               "sort_order": 1
             }
@@ -276,6 +294,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min animated on-screen logo. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Prime Time – RM7,200 Fringe Time – RM3,600",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -287,6 +307,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min animated on-screen logo. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM7,200 Fringe Time – RM3,600",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             }
@@ -309,6 +331,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10s branded end credit. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Prime Time – RM1,200 Fringe Time – RM600",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -320,6 +344,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10s branded end credit. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM1,200 Fringe Time – RM600",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             }
@@ -342,6 +368,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min graphic logo placement. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Prime Time – RM3,600 Fringe Time – RM1,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -353,6 +381,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min graphic logo placement. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM3,600 Fringe Time – RM1,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             }
@@ -375,6 +405,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per episode; includes programme title credit, logo animation, bumpers, host mentions, digital/social mentions. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "Fringe Time – RM9,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             },
@@ -386,6 +418,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per episode; includes programme title credit, logo animation, bumpers, host mentions, digital/social mentions. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "Prime Time – RM18,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 1
             }
@@ -408,6 +442,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVS Utama 740 / Berita Iban / Mandarin / Niteline Berita Wilayah & other news. Fringe time 12.01am-5.59pm; tax percentage not stated.",
+              "source_text": "(3 Min) Prime Time – RM9,000 (3 Min) Fringe Time – RM4,500",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -419,6 +455,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVS Utama 740 / Berita Iban / Mandarin / Niteline Berita Wilayah & other news. Prime time 6.00pm-12.00am; tax percentage not stated.",
+              "source_text": "(3 Min) Prime Time – RM9,000 (3 Min) Fringe Time – RM4,500",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             }
@@ -455,6 +493,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Stated on billboard pages 16-18 and bundle page 20, if applicable.",
+              "source_text": "3. The above rates exclude tax and management charges of RM500.00 per material, if applicable.",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             }
@@ -477,6 +517,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             },
@@ -488,6 +530,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 1
             },
@@ -499,6 +543,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 2
             },
@@ -510,6 +556,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 3
             },
@@ -521,6 +569,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 4
             },
@@ -532,6 +582,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 20 ft x 50 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 16,
               "is_package": false,
               "sort_order": 5
             },
@@ -543,6 +595,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 6
             },
@@ -554,6 +608,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 7
             },
@@ -565,6 +621,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 8
             },
@@ -576,6 +634,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 9
             },
@@ -587,6 +647,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 10
             },
@@ -598,6 +660,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 17,
               "is_package": false,
               "sort_order": 11
             },
@@ -609,6 +673,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 12
             },
@@ -620,6 +686,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 13
             },
@@ -631,6 +699,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 1,000/day RM 7,000/week RM 30,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 14
             },
@@ -642,6 +712,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 15
             },
@@ -653,6 +725,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 16
             },
@@ -664,6 +738,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-second ad per screen per slot; 12 slots; 3-minute cycle; 18 operating hours (6am-12am). Management charge RM500 per material. Screen 40 ft x 30 ft.",
+              "source_text": "Rates RM 500/day RM 3,500/week RM 15,000/month",
+              "page": 18,
               "is_package": false,
               "sort_order": 17
             }
@@ -686,6 +762,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,800 RM 12,600 RM 54,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -697,6 +775,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,800 RM 12,600 RM 54,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 1
             },
@@ -708,6 +788,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,800 RM 12,600 RM 54,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 2
             },
@@ -719,6 +801,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 900 RM 6,300 RM 27,000 Single Screen 2 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             },
@@ -730,6 +814,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 900 RM 6,300 RM 27,000 Single Screen 2 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 4
             },
@@ -741,6 +827,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 900 RM 6,300 RM 27,000 Single Screen 2 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 5
             },
@@ -752,6 +840,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "source_text": "1 (on a 3-min cycle) RM 2,550 RM 17,850 RM 76,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 6
             },
@@ -763,6 +853,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "source_text": "1 (on a 3-min cycle) RM 2,550 RM 17,850 RM 76,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 7
             },
@@ -774,6 +866,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle. Monthly rate printed as RM76,000.",
+              "source_text": "1 (on a 3-min cycle) RM 2,550 RM 17,850 RM 76,000 Double Screen",
+              "page": 20,
               "is_package": false,
               "sort_order": 8
             },
@@ -785,6 +879,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,275 RM 8,925 RM 38,250 Single Screen 3 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 9
             },
@@ -796,6 +892,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,275 RM 8,925 RM 38,250 Single Screen 3 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 10
             },
@@ -807,6 +905,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Consolidated promotional rate for Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Tun Taib); 1 slot on a 3-min cycle.",
+              "source_text": "1 (on a 3-min cycle) RM 1,275 RM 8,925 RM 38,250 Single Screen 3 Sites",
+              "page": 20,
               "is_package": false,
               "sort_order": 11
             }
@@ -843,6 +943,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM600; no fringe/prime split given. Rates exclude government taxes.",
+              "source_text": "10 secs From RM600",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -854,6 +956,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM1,800.",
+              "source_text": "30 secs From RM1,800",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -865,6 +969,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Listed as From RM3,600.",
+              "source_text": "60 secs From RM3,600",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             }
@@ -887,6 +993,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Animated Bug Per Day RM 3,600 RM 7,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -898,6 +1006,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Animated Bug Per Day RM 3,600 RM 7,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -909,6 +1019,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Bottom Panel / Lower Third RM 7,200 RM 10, 800",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -920,6 +1032,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Bottom Panel / Lower Third RM 7,200 RM 10, 800",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -931,6 +1045,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Breaker In / Breaker Out RM 1,200 RM 2,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -942,6 +1058,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Breaker In / Breaker Out RM 1,200 RM 2,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -953,6 +1071,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Clock Face Slide RM 1,200 RM 1,800",
+              "page": 14,
               "is_package": false,
               "sort_order": 6
             },
@@ -964,6 +1084,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Clock Face Slide RM 1,200 RM 1,800",
+              "page": 14,
               "is_package": false,
               "sort_order": 7
             },
@@ -975,6 +1097,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Crawler RM 2,700 RM 4,500",
+              "page": 14,
               "is_package": false,
               "sort_order": 8
             },
@@ -986,6 +1110,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Crawler RM 2,700 RM 4,500",
+              "page": 14,
               "is_package": false,
               "sort_order": 9
             },
@@ -997,6 +1123,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "End Credit RM 600 RM 1,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 10
             },
@@ -1008,6 +1136,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "End Credit RM 600 RM 1,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 11
             },
@@ -1019,6 +1149,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Graphic Logo Placement RM 1,800 RM 3,600",
+              "page": 14,
               "is_package": false,
               "sort_order": 12
             },
@@ -1030,6 +1162,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Graphic Logo Placement RM 1,800 RM 3,600",
+              "page": 14,
               "is_package": false,
               "sort_order": 13
             },
@@ -1041,6 +1175,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Host Mention (Live) RM 1,200 RM 2,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 14
             },
@@ -1052,6 +1188,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Host Mention (Live) RM 1,200 RM 2,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 15
             },
@@ -1063,6 +1201,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Host Mention (Pre Recorded) RM 600 RM 1,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 16
             },
@@ -1074,6 +1214,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Host Mention (Pre Recorded) RM 600 RM 1,200",
+              "page": 14,
               "is_package": false,
               "sort_order": 17
             },
@@ -1085,6 +1227,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Capsule Info-capsule 2 mins RM 7,200 RM14,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 18
             },
@@ -1096,6 +1240,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Capsule Info-capsule 2 mins RM 7,200 RM14,400",
+              "page": 14,
               "is_package": false,
               "sort_order": 19
             },
@@ -1107,6 +1253,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "L-Shape Ads RM 9,000 RM 12,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 20
             },
@@ -1118,6 +1266,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "L-Shape Ads RM 9,000 RM 12,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 21
             }
@@ -1140,6 +1290,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time only.",
+              "source_text": "Fringe Time News Berita Wilayah / Other RM4,500 (Non-Prime Time News)",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             }
@@ -1162,6 +1314,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "15 mins RM4,000 RM8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -1173,6 +1327,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "15 mins RM4,000 RM8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -1184,6 +1340,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "45 mins RM12,500 RM25,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -1195,6 +1353,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "45 mins RM12,500 RM25,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -1206,6 +1366,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes airtime, live production with up to 10 personnel, broadcast transmission and 14-day ROS promotional campaign; MCP equipment extra.",
+              "source_text": "Live Telecast 120 mins RM120,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -1217,6 +1379,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes airtime sponsorship, social media mentions and optional on-ground or live event association.",
+              "source_text": "Naming Right Per Episode RM9,000 RM18,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -1228,6 +1392,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes airtime sponsorship, social media mentions and optional on-ground or live event association.",
+              "source_text": "Naming Right Per Episode RM9,000 RM18,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 6
             },
@@ -1239,6 +1405,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Script in / Brand Integration 30 secs RM1,800 RM3,600",
+              "page": 14,
               "is_package": false,
               "sort_order": 7
             },
@@ -1250,6 +1418,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Script in / Brand Integration 30 secs RM1,800 RM3,600",
+              "page": 14,
               "is_package": false,
               "sort_order": 8
             },
@@ -1261,6 +1431,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Fringe time 12:01am-5:59pm.",
+              "source_text": "Sponsored content 5 mins RM3,000 RM9,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 9
             },
@@ -1272,6 +1444,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime time 6:00pm-12:00am.",
+              "source_text": "Sponsored content 5 mins RM3,000 RM9,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 10
             }
@@ -1294,6 +1468,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain from interleaved columns.",
+              "source_text": "90 mins program 6 RM10,800 RM21,600",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -1305,6 +1481,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain from interleaved columns.",
+              "source_text": "90 mins program 6 RM10,800 RM21,600",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -1316,6 +1494,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain from interleaved columns.",
+              "source_text": "RM12,600 RM25,200 120 mins program 7",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -1327,6 +1507,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain from interleaved columns.",
+              "source_text": "RM12,600 RM25,200 120 mins program 7",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             },
@@ -1338,6 +1520,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rate alignment inferred from column order.",
+              "source_text": "RM3,600 RM7,200 1",
+              "page": 15,
               "is_package": false,
               "sort_order": 4
             },
@@ -1349,6 +1533,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rate alignment inferred from column order.",
+              "source_text": "RM3,600 RM7,200 1",
+              "page": 15,
               "is_package": false,
               "sort_order": 5
             },
@@ -1360,6 +1546,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rate alignment inferred from column order.",
+              "source_text": "3 RM5,400 RM10,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 6
             },
@@ -1371,6 +1559,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rate alignment inferred from column order.",
+              "source_text": "3 RM5,400 RM10,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 7
             },
@@ -1382,6 +1572,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain: extracted text pairs these rates with the 60-minute label.",
+              "source_text": "60 mins program RM9,000 RM18,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 8
             },
@@ -1393,6 +1585,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Alignment uncertain: extracted text pairs these rates with the 60-minute label.",
+              "source_text": "60 mins program RM9,000 RM18,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 9
             }
@@ -1415,6 +1609,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Website / OTT Bottom Leaderboard RM 30",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -1426,6 +1622,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Website / OTT Middle Leaderboard RM 45",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -1437,6 +1635,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Website / OTT Pop-up banner RM 55",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -1448,6 +1648,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "OTT RM 90 (Pre / Mid / Post Roll)",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             },
@@ -1459,6 +1661,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Website / OTT Top Leaderboard RM 65",
+              "page": 15,
               "is_package": false,
               "sort_order": 4
             },
@@ -1470,6 +1674,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Website Side Panel 1 & 2 RM 40",
+              "page": 15,
               "is_package": false,
               "sort_order": 5
             }
@@ -1492,6 +1698,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "RM 2,000 Branded Article (Website) Per Article",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -1503,6 +1711,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "90 sec RM 1,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -1514,6 +1724,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "RM 1,500 Facebook / Instagram Post",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -1525,6 +1737,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "RM 1,000 Facebook / Instagram Story Per Story",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             },
@@ -1536,6 +1750,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "Per Post RM 2,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 4
             },
@@ -1547,6 +1763,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": null,
+              "source_text": "RM 3,000 TikTok Post",
+              "page": 15,
               "is_package": false,
               "sort_order": 5
             }
@@ -1569,6 +1787,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "1 category RM3,600 RM7,200 90 sec RM 1,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -1580,6 +1800,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "1 category RM3,600 RM7,200 90 sec RM 1,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -1591,6 +1813,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "2-3 categories RM5,400 RM10,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -1602,6 +1826,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "2-3 categories RM5,400 RM10,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             }
@@ -1624,6 +1850,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "First Spot in First Break RM4,500 RM6,300",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -1635,6 +1863,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "First Spot in First Break RM4,500 RM6,300",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -1646,6 +1876,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "Subsequent Spot in First Spot Buy RM1,800 RM3,600",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -1657,6 +1889,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Premium placement.",
+              "source_text": "Subsequent Spot in First Spot Buy RM1,800 RM3,600",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             }
@@ -1679,6 +1913,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "RM 600 RM 900",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -1690,6 +1926,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "RM 600 RM 900",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -1701,6 +1939,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -1712,6 +1952,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -1723,6 +1965,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -1734,6 +1978,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -1745,6 +1991,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -1756,6 +2004,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             },
@@ -1767,6 +2017,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 8
             },
@@ -1778,6 +2030,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Fringe time 12.01am-5.59pm; rates subject to applicable tax (percentage not stated on page); duration alignment inferred across the 10/15/20/25/30/35/40/45/50/60 column header.",
+              "source_text": "1,200 1,500 1,800 2,100 2,400 2,700 3,000 3,600",
+              "page": 3,
               "is_package": false,
               "sort_order": 9
             }
@@ -1800,6 +2054,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -1811,6 +2067,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -1822,6 +2080,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -1833,6 +2093,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -1844,6 +2106,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -1855,6 +2119,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -1866,6 +2132,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -1877,6 +2145,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             },
@@ -1888,6 +2158,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 8
             },
@@ -1899,6 +2171,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Prime time 6.00pm-12.00am; rates subject to applicable tax (percentage not stated on page); alignment inferred across the 10-column duration header.",
+              "source_text": "1,200 1,800 2,400 3,000 3,600 4,200 4,800 5,400 6,000 7,200",
+              "page": 3,
               "is_package": false,
               "sort_order": 9
             }
@@ -1921,6 +2195,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Duplicates the 30s fringe-time rate on p.3; spotbuy available in 15/30/60/90s, prorated.",
+              "source_text": "RM3,600 Fringe Time – RM 1,800",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             },
@@ -1932,6 +2208,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Duplicates the 30s prime-time rate on p.3; spotbuy available in 15/30/60/90s, prorated.",
+              "source_text": "RM3,600 Fringe Time – RM 1,800",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             }
@@ -1954,6 +2232,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Prime-time rate is quoted as 'from RM1,800' (floor price, see gaps); tax percentage not stated.",
+              "source_text": "Prime Time – From RM1,800 & Fringe Time – RM1,200",
+              "page": 11,
               "is_package": false,
               "sort_order": 0
             }
@@ -1976,6 +2256,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "YouTube countdown before programme airs; tax percentage not stated.",
+              "source_text": "8. DIGITAL COUNTDOWN YOUTUBE (90 Sec) RM1,800",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             }
@@ -1998,6 +2280,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Live host mention; tax percentage not stated.",
+              "source_text": "Fringe Time – RM600 Fringe Time – RM1,200",
+              "page": 18,
               "is_package": false,
               "sort_order": 0
             },
@@ -2009,6 +2293,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Live host mention; tax percentage not stated.",
+              "source_text": "Prime Time – RM1,200 Prime Time – RM2,400",
+              "page": 18,
               "is_package": false,
               "sort_order": 1
             },
@@ -2020,6 +2306,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Pre-recorded host mention; tax percentage not stated.",
+              "source_text": "Fringe Time – RM600 Fringe Time – RM1,200",
+              "page": 18,
               "is_package": false,
               "sort_order": 2
             },
@@ -2031,6 +2319,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Pre-recorded host mention; tax percentage not stated.",
+              "source_text": "Prime Time – RM1,200 Prime Time – RM2,400",
+              "page": 18,
               "is_package": false,
               "sort_order": 3
             }
@@ -2053,6 +2343,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Fringe Time – RM4,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 0
             },
@@ -2064,6 +2356,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Prime Time – RM8,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 1
             },
@@ -2075,6 +2369,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Fringe Time – RM12,500",
+              "page": 19,
               "is_package": false,
               "sort_order": 2
             },
@@ -2086,6 +2382,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Prime Time – RM25,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 3
             }
@@ -2108,6 +2406,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Fringe Time – RM2,700",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -2119,6 +2419,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Prime Time – RM4,500",
+              "page": 20,
               "is_package": false,
               "sort_order": 1
             },
@@ -2130,6 +2432,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Fringe Time – RM3,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 2
             },
@@ -2141,6 +2445,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Prime Time – RM9,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             }
@@ -2163,6 +2469,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "120 mins programme; 5 mins x 7 segments; tax percentage not stated.",
+              "source_text": "Fringe Time RM12,600",
+              "page": 21,
               "is_package": false,
               "sort_order": 0
             },
@@ -2174,6 +2482,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "120 mins programme; 5 mins x 7 segments; tax percentage not stated.",
+              "source_text": "Prime Time RM25,200",
+              "page": 21,
               "is_package": false,
               "sort_order": 1
             },
@@ -2185,6 +2495,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "30 mins programme; 5 mins x 1 segment; tax percentage not stated.",
+              "source_text": "Fringe Time RM3,600",
+              "page": 21,
               "is_package": false,
               "sort_order": 2
             },
@@ -2196,6 +2508,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "30 mins programme; 5 mins x 1 segment; tax percentage not stated.",
+              "source_text": "Prime Time RM7,200",
+              "page": 21,
               "is_package": false,
               "sort_order": 3
             },
@@ -2207,6 +2521,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "30 mins programme; 5 mins x 3 segments; tax percentage not stated.",
+              "source_text": "Fringe Time RM5,400",
+              "page": 21,
               "is_package": false,
               "sort_order": 4
             },
@@ -2218,6 +2534,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "30 mins programme; 5 mins x 3 segments; tax percentage not stated.",
+              "source_text": "Prime Time RM10,800",
+              "page": 21,
               "is_package": false,
               "sort_order": 5
             },
@@ -2229,6 +2547,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "60 mins programme; 5 mins x 5 segments; tax percentage not stated.",
+              "source_text": "Fringe Time RM9,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 6
             },
@@ -2240,6 +2560,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "60 mins programme; 5 mins x 5 segments; tax percentage not stated.",
+              "source_text": "Prime Time RM18,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 7
             },
@@ -2251,6 +2573,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "90 mins programme; 5 mins x 6 segments; tax percentage not stated.",
+              "source_text": "Fringe Time RM10,800",
+              "page": 21,
               "is_package": false,
               "sort_order": 8
             },
@@ -2262,6 +2586,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "90 mins programme; 5 mins x 6 segments; tax percentage not stated.",
+              "source_text": "Prime Time RM21,600",
+              "page": 21,
               "is_package": false,
               "sort_order": 9
             }
@@ -2284,6 +2610,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Fringe Time RM1,800",
+              "page": 23,
               "is_package": false,
               "sort_order": 0
             },
@@ -2295,6 +2623,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tax percentage not stated.",
+              "source_text": "Prime Time RM3,600",
+              "page": 23,
               "is_package": false,
               "sort_order": 1
             }

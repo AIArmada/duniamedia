@@ -2,7 +2,7 @@
   "slug": "hot-fm-zoomerz-on-ground",
   "owner": "media-prima",
   "title": "Hot FM Zoomerz On-Ground — Radio + Sampling Team",
-  "summary": "Four-week Zoomerz sponsorship listed at RM100,000 before SST and production. Outstation cross production RM1,900/day or RM10,500/week. Historical rate card.",
+  "summary": "Zoomerz roving team RM1,900/day or RM10,500/week; on-air crosses + digital value ~RM640k/month.",
   "description": "Hot FM Zoomerz sponsorship: daily crosses Mon–Sat 4x/day, on-air promos 28x/week, crosses 24x/week, station car branding, 960 products sampling, uniform, optional microsite/social (FB/IG RM240k each). Base from 1 Aug 2022, min 1 month continuous, mainly Klang Valley; outstation production extra.",
   "validity": "Base Aug 2022, min 1 month",
   "terms": null,
@@ -21,16 +21,16 @@
     {
       "type": "feature_list",
       "payload": {
-        "title": "Historical sponsorship and outstation charges",
+        "title": "Rate tiers",
         "items": [
           {
-            "title": "Outstation production — RM1,900/day"
+            "title": "RM1,900/day"
           },
           {
-            "title": "Outstation production — RM10,500/week"
+            "title": "RM10,500/week"
           },
           {
-            "title": "Listed four-week sponsorship — RM100,000 before SST and production"
+            "title": "Media value ~RM640k/mo"
           }
         ]
       }
@@ -89,6 +89,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Applies if outstation crosses are requested (crosses mainly in Klang Valley)",
+              "source_text": "1. The crosses will be done mainly in Klang Valley. If there is request for outstation, production cost will be incurred. RM1,900 for one day or",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -100,6 +102,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Applies if outstation crosses are requested",
+              "source_text": "RM10,500 for 1-whole week.",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             }
@@ -122,6 +126,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "24 crosses per week x 4 weeks = 96 crosses; media value RM53,760 per month",
+              "source_text": "24 spots x 4 weeks x RM560 =",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -133,6 +139,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Digital promotion, optional; media value",
+              "source_text": "Main Highlights RM 32,000",
+              "page": 4,
               "is_package": true,
               "sort_order": 1
             },
@@ -144,6 +152,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Digital promotion, optional; media value",
+              "source_text": "Microsite RM 12,000",
+              "page": 4,
               "is_package": true,
               "sort_order": 2
             },
@@ -155,6 +165,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value; boosting to target audience available",
+              "source_text": "RM 240,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 3
             },
@@ -166,6 +178,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value; boosting to target audience available",
+              "source_text": "RM 240,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 4
             },
@@ -177,6 +191,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "28 spots per week x 4 weeks = 112 spots; media value RM62,720 per month",
+              "source_text": "28 spots x 4 weeks x RM560 =",
+              "page": 4,
               "is_package": false,
               "sort_order": 5
             }
@@ -199,6 +215,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to bear cost for station car branding (sticker)",
+              "source_text": "Car Branding (2 cars) RM 8,000",
+              "page": 5,
               "is_package": true,
               "sort_order": 0
             },
@@ -210,6 +228,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per creative",
+              "source_text": "RM 4,000",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             },
@@ -221,6 +241,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide and bear cost of products sampling including delivery",
+              "source_text": "Merchandise RM 2,000",
+              "page": 5,
               "is_package": true,
               "sort_order": 2
             },
@@ -232,6 +254,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM300 x 4 weeks = RM1,200",
+              "source_text": "Petrol & Toll RM 300 x 4 weeks = RM 1,200",
+              "page": 5,
               "is_package": false,
               "sort_order": 3
             },
@@ -243,6 +267,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM1,248 x 4 weeks = RM4,992",
+              "source_text": "Wages (2 pax per cross) RM 1,248 x 4 weeks = RM 4,992",
+              "page": 5,
               "is_package": false,
               "sort_order": 4
             }
@@ -265,6 +291,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Total media value RM640,480; +8% SST RM8,000; total payable excluding production cost RM108,000; production cost RM20,192 quoted separately",
+              "source_text": "Total Media Investment RM 100,000.00",
+              "page": 10,
               "is_package": true,
               "sort_order": 0
             }

@@ -80,6 +80,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "3D Raptor truck with driver (5 hrs) + 2 promoters for activation; excludes licence fee for place and truck parking; price subject to prevailing statutory taxes",
+              "source_text": "Total: RM24,000",
+              "page": 4,
               "is_package": true,
               "sort_order": 0
             },
@@ -91,6 +93,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "3D Raptor truck with driver (2 hrs) + 2 promoters for activation; excludes licence fee for place and truck parking; price subject to prevailing statutory taxes",
+              "source_text": "Total: RM18,000",
+              "page": 4,
               "is_package": true,
               "sort_order": 1
             }

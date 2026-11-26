@@ -95,6 +95,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 x 5-min TV interview (Mon-Sun 7:30am, 60 min) + 2-3 min digital highlights with TikTok/YouTube posts; est. media value RM172,000. Klang Valley shoot.",
+              "source_text": "RM 172,000 RM 20,000",
+              "page": 36,
               "is_package": true,
               "sort_order": 0
             },
@@ -106,6 +108,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 x 5-min TV interview (Mon-Fri 9:00am, 90 min) + 2-3 min digital highlights with TikTok/YouTube posts; est. media value RM172,000. Klang Valley shoot.",
+              "source_text": "RM 172,000 RM 20,000",
+              "page": 37,
               "is_package": true,
               "sort_order": 1
             }
@@ -142,6 +146,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "210 x 30s TVC over 2 weeks on Astro Ria, Prima, Citra, Oasis; est. media value RM1,272,500; complimentary 30s production up to RM9,000; Ramadan/Raya blackout 7 Feb-28 Mar 2027.",
+              "source_text": "Media Investment : RM 55,000",
+              "page": 44,
               "is_package": true,
               "sort_order": 0
             }
@@ -178,6 +184,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Astro Prima, live. 3 x 10-min sponsor segments, 6 x 10s lower-third banners, digital FB/IG/TikTok posts; est. media value RM304,000. Talent cost extra.",
+              "source_text": "• Exclusive Package – RM30,000",
+              "page": 33,
               "is_package": true,
               "sort_order": 0
             },
@@ -189,6 +197,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Astro Prima, live. 2 x 10s lower-third banners, digital FB/IG/TikTok posts; est. media value RM119,000. Talent cost extra.",
+              "source_text": "• Exclusive Package – RM10,000",
+              "page": 34,
               "is_package": true,
               "sort_order": 1
             }
@@ -264,6 +274,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra.",
+              "source_text": "ERA SABAH, ERA SARAWAK RM 5,000 (each brand) + Production Cost",
+              "page": 9,
               "is_package": true,
               "sort_order": 0
             }
@@ -286,6 +298,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: NADEERA ZAINI, WANI KAYRIE, SHAHRUL KAMAL, HUSSAIN. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "source_text": "WANI KAYRIE 1 x IG Story RM 20,000",
+              "page": 55,
               "is_package": true,
               "sort_order": 0
             }
@@ -348,6 +362,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "26-28 Feb 2027, MyTown. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+              "source_text": "ZAYAN, MIX, LITE RM10,000 (each brand) + Production Cost",
+              "page": 20,
               "is_package": true,
               "sort_order": 0
             }
@@ -501,6 +517,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Cost column entry '600 (VO)' for the booth package; the same VO cost is listed for the Gurindam Syawal booth package.",
+              "source_text": "Astro Audio Goat Year CNY Festival 2027 [BOOTH] * 10,000 - 15,000 600 (VO)",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -512,6 +530,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 40 recorded promos, 20 promo plus, 20 live liners, 2 client talksets, social 360, outside broadcast + 3 event live specials, 20x20 booth. Total media value RM1,054,088. Production RM15,000 extra.",
+              "source_text": "Media Investment : RM 188,000 Location: Pavilion Bukit Jalil",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -523,6 +543,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Applies to the Sponsor Package; Klang Valley rate.",
+              "source_text": "Production Cost : RM15,000 (Klang Valley)",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -534,6 +556,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "26-28 Feb 2027, MyTown. 40 recorded promos, 20 promo plus, 20 live liners, 2 talksets, social 360, outside broadcast + 3 event live specials, 20x20 booth. Total media value RM1,075,800. Production RM15,000 extra.",
+              "source_text": "Media Investment : RM 160,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 3
             },
@@ -545,6 +569,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Applies to the Sponsor Package; Klang Valley rate.",
+              "source_text": "Production Cost : RM15,000 (Klang Valley)",
+              "page": 19,
               "is_package": false,
               "sort_order": 4
             }
@@ -567,6 +593,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM5,600-19,600 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "Central Regional 5,600 - 19,600",
+              "page": 4,
               "is_package": true,
               "sort_order": 0
             },
@@ -578,6 +606,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM2,800-7,700 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "East Coast Regional 2,800 - 7,700",
+              "page": 4,
               "is_package": true,
               "sort_order": 1
             },
@@ -589,6 +619,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM3,500-11,900 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "Northern Regional 3,500 - 11,900",
+              "page": 4,
               "is_package": true,
               "sort_order": 2
             },
@@ -600,6 +632,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM6,000-43,000 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "Pen. Malaysia 6,000 - 43,000",
+              "page": 4,
               "is_package": true,
               "sort_order": 3
             },
@@ -611,6 +645,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM2,800-3,150 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "Sabah & Sarawak 2,800 - 3,150",
+              "page": 4,
               "is_package": true,
               "sort_order": 4
             },
@@ -622,6 +658,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Investment range RM3,500-11,200 per the Upfront27 package table; no tier or duration breakdown supplied.",
+              "source_text": "Southern Regional 3,500 - 11,200",
+              "page": 4,
               "is_package": true,
               "sort_order": 5
             }
@@ -644,6 +682,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Minimum charge stated in the SME Upfront27 terms; talent cost applies on top of quoted prices.",
+              "source_text": "2. Prices quoted are subject to third-party voice talent cost(s) (min. RM 600 per talent, per 30-second commercial).",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             }
@@ -666,6 +706,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM23,000. One Facebook/Instagram post from a Tier A platform + one from a Tier B platform; combined guaranteed reach 150,000.",
+              "source_text": "RM 23,000 RM 5,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 0
             },
@@ -677,6 +719,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM34,000. One post from a Tier A platform + two posts from Tier B platforms; combined guaranteed reach 250,000.",
+              "source_text": "RM 34,000 RM 6,000",
+              "page": 23,
               "is_package": true,
               "sort_order": 1
             },
@@ -688,6 +732,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM47,000. Two posts from Tier A platforms + two posts from Tier B platforms; combined guaranteed reach 350,000.",
+              "source_text": "RM 47,000 RM 7,000",
+              "page": 24,
               "is_package": true,
               "sort_order": 2
             },
@@ -699,6 +745,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Photo post produced by Astro + Facebook/Instagram/TikTok post and story; guaranteed reach 250K on Tier 1 platforms; up to 2 revision rounds.",
+              "source_text": "Social Post2 RM15,000",
+              "page": 25,
               "is_package": true,
               "sort_order": 3
             },
@@ -710,6 +758,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes RM2,000 production. Branded video x1 + Facebook/Instagram/TikTok post and story; guaranteed reach 250K on Tier 1 platforms; up to 60s; talent fees not included.",
+              "source_text": "Social Video1 RM16,000 + RM2,000 Production",
+              "page": 25,
               "is_package": true,
               "sort_order": 4
             },
@@ -721,6 +771,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Photo post produced by Astro + posts/stories; guaranteed reach 215K on Tier 2 platforms.",
+              "source_text": "Social Post2 RM13,000",
+              "page": 25,
               "is_package": true,
               "sort_order": 5
             },
@@ -732,6 +784,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Photo post produced by Astro + posts/stories; guaranteed reach 187.5K-250K depending on Tier 3 platform.",
+              "source_text": "Social Post2 RM8,000",
+              "page": 25,
               "is_package": true,
               "sort_order": 6
             },
@@ -743,6 +797,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes RM2,000 production. Branded video x1 + posts/stories; guaranteed reach 187.5K-250K depending on Tier 3 platform.",
+              "source_text": "Social Video1 RM8,000 + RM2,000 Production",
+              "page": 25,
               "is_package": true,
               "sort_order": 7
             },
@@ -754,6 +810,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Charged in addition to the Social Video investment in every tier (Tier 1 RM16,000, Tier 2 RM13,000, Tier 3 RM8,000).",
+              "source_text": "Social Video1 RM16,000 + RM2,000 Production",
+              "page": 25,
               "is_package": false,
               "sort_order": 8
             },
@@ -765,6 +823,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Minimum investment RM25,000 for 500,000 completed views; 35 Astro digital platforms + Astro YouTube channels; run-on-network.",
+              "source_text": "Target: Select the relevant target from any of the 30 RM 25,000 500,000",
+              "page": 26,
               "is_package": true,
               "sort_order": 9
             },
@@ -776,6 +836,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM38,800. Article write-up + Facebook post + FB/IG/TikTok story; guaranteed 4,000 reads; production RM1,000 extra.",
+              "source_text": "RM 7,000",
+              "page": 27,
               "is_package": true,
               "sort_order": 10
             },
@@ -787,6 +849,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production add-on for the Single Article package.",
+              "source_text": "RM1,000",
+              "page": 27,
               "is_package": false,
               "sort_order": 11
             },
@@ -798,6 +862,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM164,800. Facebook/Instagram/TikTok post and story, 3 reels/YouTube Shorts, 1 video package; 50,000 guaranteed views per video; production RM3,000 extra.",
+              "source_text": "RM 8,000",
+              "page": 28,
               "is_package": true,
               "sort_order": 12
             },
@@ -809,6 +875,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production add-on for the Single Podcast package.",
+              "source_text": "RM3,000",
+              "page": 28,
               "is_package": false,
               "sort_order": 13
             },
@@ -820,6 +888,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM124,200. Short video under 5 minutes + Facebook/Instagram/YouTube/TikTok video posts, stories, pinned posts, 2 reels/shorts; 50,000 guaranteed views; production RM6,000 extra.",
+              "source_text": "RM 19,000",
+              "page": 29,
               "is_package": true,
               "sort_order": 14
             },
@@ -831,6 +901,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production add-on for the Single Short Video package.",
+              "source_text": "RM6,000",
+              "page": 29,
               "is_package": false,
               "sort_order": 15
             },
@@ -842,6 +914,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Est. media value RM372,600. Three short videos (buy 2 free 1), 3 posts per platform, 6 stories, 3 pinned posts, 6 reels/shorts; 50,000 guaranteed views per video; production RM18,000 extra.",
+              "source_text": "RM 42,000",
+              "page": 30,
               "is_package": true,
               "sort_order": 16
             },
@@ -853,6 +927,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production add-on for the Buy 2 Free 1 short video package.",
+              "source_text": "RM18,000",
+              "page": 30,
               "is_package": false,
               "sort_order": 17
             }
@@ -875,6 +951,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min advertorial capsule within Prime Talk (Mon-Sun 8pm); est. media value RM74,000; production RM3,000 extra. Klang Valley only.",
+              "source_text": "RM 25,000",
+              "page": 40,
               "is_package": true,
               "sort_order": 0
             },
@@ -886,6 +964,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "News team shoot within Klang Valley; required for Market Spotlite.",
+              "source_text": "RM 3,000",
+              "page": 40,
               "is_package": false,
               "sort_order": 1
             },
@@ -897,6 +977,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "56 x 15s TVC over 4 weeks (28 in Prime Talk 8-8:30pm, 28 in Evening Edition 10:30-11pm); est. media value RM480,480; complimentary 15s production capped at RM7,000.",
+              "source_text": "RM 480,480 RM 38,000",
+              "page": 41,
               "is_package": true,
               "sort_order": 2
             },
@@ -908,6 +990,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min interview on Astro Seithigal (Astro Vinmeen) + Facebook/Instagram/TikTok posts on Astro Ulagam; est. media value RM97,000.",
+              "source_text": "RM 97,000 RM 8,300",
+              "page": 42,
               "is_package": true,
               "sort_order": 3
             },
@@ -919,6 +1003,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-min interview on Astro Seithigal (Astro Vinmeen) only; est. media value RM64,000.",
+              "source_text": "TV Astro Seithigal RM 64,000 RM 5,300",
+              "page": 42,
               "is_package": true,
               "sort_order": 4
             },
@@ -930,6 +1016,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "210 x 30s TVC on Astro AEC, Hua Hee Dai, TVB Jade, TVB Classic; est. media value RM1,350,000; complimentary production up to RM9,000; CNY blackout 1-20 Feb 2027.",
+              "source_text": "TVB Jade 45 RM 1,350,000 RM 38,000",
+              "page": 45,
               "is_package": true,
               "sort_order": 5
             },
@@ -941,6 +1029,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "210 x 30s TVC on Astro Vellithirai, Vinmeen, Sun TV; est. media value RM1,264,000; complimentary production up to RM9,000.",
+              "source_text": "80 RM 1,264,000 RM 25,000",
+              "page": 46,
               "is_package": true,
               "sort_order": 6
             },
@@ -952,6 +1042,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "228 x 30s spots across 15 Chinese channels; est. media value RM1,217,500; valid to 28 Mar 2027.",
+              "source_text": "RM 1,217,500 RM 88,000",
+              "page": 48,
               "is_package": true,
               "sort_order": 7
             },
@@ -963,6 +1055,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "228 x 30s spots across 15 Chinese channels; est. media value RM1,217,500; production cost varies with talent engagement fee; valid to 28 Mar 2027. Page 5 summary lists RM120,000.",
+              "source_text": "RM 25,000",
+              "page": 49,
               "is_package": true,
               "sort_order": 8
             },
@@ -974,6 +1068,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "330 x 30s spots; digital Video360 600,000 impressions; est. media value RM2,276,000; valid to 28 Mar 2027.",
+              "source_text": "RM 2,276,000 RM 98,000",
+              "page": 50,
               "is_package": true,
               "sort_order": 9
             },
@@ -985,6 +1081,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "500 x 30s spots; digital Video360 600,000 impressions; est. media value RM3,411,000; production cost varies with talent engagement fee; valid to 28 Mar 2027.",
+              "source_text": "RM 250,000",
+              "page": 51,
               "is_package": true,
               "sort_order": 10
             }
@@ -1007,6 +1105,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: HAIDAR HASANUDDIN, FAZZIQ MUQRIZ, WANI KAYRIE, SHAHRUL KAMAL, EVERTTS GOMES, ARABELLA ELLEN. 1 x IG sync TikTok + 1 x IG Story.",
+              "source_text": "RM 12,000",
+              "page": 54,
               "is_package": true,
               "sort_order": 0
             },
@@ -1018,6 +1118,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: MIERUL AIMAN, BELLA DOWANNA, HAWA RIDZWANA, NAMIE. 1 x IG sync TikTok + 1 x IG Story.",
+              "source_text": "RM 20,000",
+              "page": 54,
               "is_package": true,
               "sort_order": 1
             },
@@ -1029,6 +1131,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: ELISA CHEW, DHEPER, MARISA, NLYESA, NYLEA, ARIANA. 1 x IG sync TikTok + 1 x IG Story.",
+              "source_text": "RM 5,000",
+              "page": 54,
               "is_package": true,
               "sort_order": 2
             },
@@ -1040,6 +1144,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: AIMAN AMEER, QISTINA RANIA, RAZIN QIDRAN, JAY ISKANDAR, AZRI SAFIX, FITRI FAROK, AHMAD ADLY, SHARMAINE, KEANU AZMAN. 1 x IG sync TikTok + 1 x IG Story.",
+              "source_text": "AZRI SAFIX RM 8,000",
+              "page": 54,
               "is_package": true,
               "sort_order": 3
             },
@@ -1051,6 +1157,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: SCHA NURIL, DINDA DANIA, ALIFF KIMIEY, DANIAL KIFLI, ADAM & NAZME, DANIAL ISMAIL, YAD Z, QILO, RANISHA. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "source_text": "ADAM & NAZME 1 x IG Story RM 10,000",
+              "page": 55,
               "is_package": true,
               "sort_order": 4
             },
@@ -1062,6 +1170,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: HAEL HUSAINI. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "source_text": "HAEL HUSAINI 1 x IG Story RM 25,000",
+              "page": 55,
               "is_package": true,
               "sort_order": 5
             },
@@ -1073,6 +1183,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Talent: ALPHA GROUP. 1 x IG sync TikTok, 1 x IG Story, 2 x song performance.",
+              "source_text": "ALPHA GROUP 1 x IG Story RM 30,000",
+              "page": 55,
               "is_package": true,
               "sort_order": 6
             },
@@ -1084,6 +1196,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Song production: lyrics, composition, recording, mixing and mastering. Talent fees not included.",
+              "source_text": "MUSIC PRODUCTION Composition RM 35,000",
+              "page": 56,
               "is_package": false,
               "sort_order": 7
             },
@@ -1095,6 +1209,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2-3 min full music video + 30s cutdown; pre-production, production and post-production. Talent fees not included.",
+              "source_text": "Production RM 75,000",
+              "page": 56,
               "is_package": false,
               "sort_order": 8
             },
@@ -1106,6 +1222,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 KOLs (3 micro 5k-20k followers, 7 nano 1k-5k), 10 TikTok videos; 4-week campaign; est. audience 60K, reach 15K, engagement 1.5K.",
+              "source_text": "RM10,000",
+              "page": 58,
               "is_package": true,
               "sort_order": 9
             },
@@ -1117,6 +1235,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 KOLs (1 macro 100k-500k, 1 mid 20k-100k, 2 micro 5k-20k, 4 nano 1k-5k), 32 contents/videos; 4-week campaign; est. audience 92K, reach 265K, engagement 5K.",
+              "source_text": "RM50,000",
+              "page": 59,
               "is_package": true,
               "sort_order": 10
             }
@@ -1139,6 +1259,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tentative Jun-Nov 2027, 6 locations nationwide. Logo on backdrop/buntings, booth (size TBC), social amplification (FB/IG/TikTok/X); est. media value RM59,000; production RM5,000 extra.",
+              "source_text": "RM 10,000",
+              "page": 61,
               "is_package": true,
               "sort_order": 0
             },
@@ -1150,6 +1272,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Production add-on for the brand activation package.",
+              "source_text": "RM 5,000",
+              "page": 61,
               "is_package": false,
               "sort_order": 1
             }
@@ -1172,6 +1296,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Top-up only with an Astro media package. 1 x 30s AI video + 5 still visuals (carousel).",
+              "source_text": "AIDVERT PRODUCTION RM 6,000",
+              "page": 64,
               "is_package": true,
               "sort_order": 0
             }
@@ -1200,6 +1326,8 @@
           "price_basis": "range",
           "confidence": "medium",
           "notes": "Investment range RM40,000-47,500 per the Upfront27 package table; no tier or duration breakdown supplied.",
+          "source_text": "Nationwide (ERA, MYFM, HITZ) 40,000 - 47,500",
+          "page": 4,
           "is_package": true,
           "sort_order": 0
         }
@@ -1225,6 +1353,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments in 1 focused day, 50 commercials over 5 days, 1 FB post/story + 1 IG post/story or TikTok post; 200,000 guaranteed reach. Production cost extra.",
+          "source_text": "ERA, MY FM, HITZ, SINAR RM 20,000 (each brand) + Production Cost",
+          "page": 9,
           "is_package": true,
           "sort_order": 0
         }
@@ -1248,6 +1378,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra. Station list is printed with a trailing comma in the source.",
+          "source_text": "MIX, LITE, THR GEGAR, MELODY, RM 15,000 (each brand) + Production Cost",
+          "page": 9,
           "is_package": true,
           "sort_order": 0
         }
@@ -1272,6 +1404,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "5 live liners, 10 sweepers, 4 contest solicits, 4 content segments, 50 commercials over 5 days, social posts; 200,000 guaranteed reach. Production cost extra.",
+          "source_text": "RAAGA, ZAYAN, GOXUAN RM 10,000 (each brand) + Production Cost",
+          "page": 9,
           "is_package": true,
           "sort_order": 0
         }
@@ -1295,6 +1429,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "source_text": "MELODY, GOXUAN, MIX, LITE RM10,000 (each brand) + Production Cost",
+          "page": 18,
           "is_package": true,
           "sort_order": 0
         }
@@ -1318,6 +1454,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "15-17 Jan 2027, Pavilion Bukit Jalil. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "source_text": "MY FM, HITZ RM15,000 (each brand) + Production Cost",
+          "page": 18,
           "is_package": true,
           "sort_order": 0
         }
@@ -1342,6 +1480,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "26-28 Feb 2027, MyTown. 3-day 8ft x 8ft booth, 50 x 30s commercials, 10 x 10s sweepers, 1 social post + 1 story; max 2 booths per client. Production cost extra.",
+          "source_text": "ERA, SINAR, HITZ RM15,000 (each brand) + Production Cost",
+          "page": 20,
           "is_package": true,
           "sort_order": 0
         }
@@ -1367,6 +1507,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "Includes RM2,000 production. Branded video x1 + posts/stories; guaranteed reach 215K on Tier 2 platforms (ZAYAN, LITE, MIX, RAAGA, GOXUAN, MELODY).",
+          "source_text": "Social RM13,000 + RM2,000 Production",
+          "page": 25,
           "is_package": true,
           "sort_order": 0
         }
@@ -1390,6 +1532,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "1-min special report (Mon-Sun 12nn/1pm/2pm/5:30pm) + digital coverage video with TikTok/YouTube posts; est. media value RM52,000. Klang Valley only.",
+          "source_text": "RM 52,000 RM 15,000",
+          "page": 39,
           "is_package": true,
           "sort_order": 0
         }

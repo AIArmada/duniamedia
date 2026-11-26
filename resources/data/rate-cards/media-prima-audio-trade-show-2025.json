@@ -160,6 +160,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Studio rental, mixing & editing RM1,250 + scripting RM300; 8% SST additional",
+              "source_text": "Commercial buyout fee RM 1,550 (studio rental, mixing & editing = RM 1,250; scripting = RM 300)",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -171,6 +173,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per jingle version; 8% SST additional",
+              "source_text": "Jingle buyout fee RM10,000 per version.",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -182,6 +186,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sabah; 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 12,500",
+              "page": 1,
               "is_package": true,
               "sort_order": 2
             },
@@ -193,6 +199,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sabah; 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 - 117,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 3
             },
@@ -204,6 +212,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sabah; 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 - 195,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 4
             },
@@ -215,6 +225,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sabah; 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 44,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 5
             },
@@ -226,6 +238,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sarawak; 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 11,500",
+              "page": 1,
               "is_package": true,
               "sort_order": 6
             },
@@ -237,6 +251,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sarawak; 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 - 97,500",
+              "page": 1,
               "is_package": true,
               "sort_order": 7
             },
@@ -248,6 +264,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sarawak; 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 - 176,800",
+              "page": 1,
               "is_package": true,
               "sort_order": 8
             },
@@ -259,6 +277,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Station: Sarawak; 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 38,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 9
             },
@@ -270,6 +290,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 1); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 27,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 10
             },
@@ -281,6 +303,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 1); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 260,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 11
             },
@@ -292,6 +316,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 1); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 1 468,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 12
             },
@@ -303,6 +329,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 1); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 100,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 13
             },
@@ -314,6 +342,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 2); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 9,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 14
             },
@@ -325,6 +355,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 2); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 65,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 15
             },
@@ -336,6 +368,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 2); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 1 104,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 16
             },
@@ -347,6 +381,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 2); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 28,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 17
             },
@@ -358,6 +394,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 3); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 6,500",
+              "page": 1,
               "is_package": true,
               "sort_order": 18
             },
@@ -369,6 +407,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 3); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 58,500",
+              "page": 1,
               "is_package": true,
               "sort_order": 19
             },
@@ -380,6 +420,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 3); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 1 91,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 20
             },
@@ -391,6 +433,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 3); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 24,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 21
             },
@@ -402,6 +446,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 4); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 14,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 22
             },
@@ -413,6 +459,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 4); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 104,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 23
             },
@@ -424,6 +472,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 4); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 1 182,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 24
             },
@@ -435,6 +485,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 4); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 40,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 25
             },
@@ -446,6 +498,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 5); 1 week x 30s; 70 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "1 week 30sec 70 - 14,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 26
             },
@@ -457,6 +511,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 5); 13 weeks x 30s; 910 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "13 weeks 30sec 910 1 3 1 104,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 27
             },
@@ -468,6 +524,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 5); 26 weeks x 30s; 1820 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "26 weeks 30sec 1820 2 6 2 1 182,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 28
             },
@@ -479,6 +537,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Station not named in text (block 5); 4 weeks x 30s; 280 spots; VO talent / commercial production / social video / AI jingle inclusions per booking form; 8% SST additional",
+              "source_text": "4 weeks 30sec 280 1 - 40,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 29
             }

@@ -86,6 +86,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Opening x1, closing x1, TVC 30s inside program x2, product placement, credit mention, closing credit; TV1 6 petang Sabtu; kos produksi tertakluk perbincangan",
+              "source_text": "RM25,200 TV1 / 10 MALAM / ISNIN",
+              "page": 9,
               "is_package": true,
               "sort_order": 0
             }
@@ -187,6 +189,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "source_text": "WAI FM (BIDAYUH) 40 4 12 4 20 800 4 28 1,120",
+              "page": 34,
               "is_package": false,
               "sort_order": 0
             },
@@ -198,6 +202,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 spots/day; 3 hari 18 spots RM720; 5 hari 30 spots RM1,200; 7 hari 42 spots RM1,680",
+              "source_text": "WAI FM (IBAN) 40 6 18 720 6 30 1,200 6 42 1,680",
+              "page": 34,
               "is_package": false,
               "sort_order": 1
             },
@@ -209,6 +215,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM240; 5 hari 10 spots RM400; 7 hari 14 spots RM560",
+              "source_text": "40 2 6 240 2 10 400 2 14 560",
+              "page": 34,
               "is_package": false,
               "sort_order": 2
             }
@@ -231,6 +239,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "source_text": "WAI FM (BIDAYUH) 60 4 12 720 4 20 1,200 4 28 1,680",
+              "page": 35,
               "is_package": false,
               "sort_order": 0
             },
@@ -242,6 +252,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 spots/day; 3 hari 18 spots RM1,080; 5 hari 30 spots RM1,800; 7 hari 42 spots RM2,520",
+              "source_text": "WAI FM (IBAN) 60 6 18 1,080 6 30 1,800 6 42 2,520",
+              "page": 35,
               "is_package": false,
               "sort_order": 1
             },
@@ -253,6 +265,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM360; 5 hari 10 spots RM600; 7 hari 14 spots RM840",
+              "source_text": "60 2 6 360 2 10 600 2 14 840",
+              "page": 35,
               "is_package": false,
               "sort_order": 2
             }
@@ -275,6 +289,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "source_text": "WAI FM (BIDAYUH) 20 4 12 240 4 20 400 4 28 560",
+              "page": 36,
               "is_package": false,
               "sort_order": 0
             },
@@ -286,6 +302,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 spots/day; 3 hari 18 spots RM360; 5 hari 30 spots RM600; 7 hari 42 spots RM840",
+              "source_text": "WAI FM (IBAN) 20 6 18 360 6 30 600 6 42 840",
+              "page": 36,
               "is_package": false,
               "sort_order": 1
             },
@@ -297,6 +315,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM120; 5 hari 10 spots RM200; 7 hari 14 spots RM280",
+              "source_text": "20 2 6 120 2 10 200 2 14 280",
+              "page": 36,
               "is_package": false,
               "sort_order": 2
             }
@@ -359,6 +379,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM25,000 – RM50,400; termasuk opening & closing, platform rtmklik streaming, poster, spotbuy, temubual radio",
+              "source_text": "RM25,000 – RM50,400",
+              "page": 49,
               "is_package": false,
               "sort_order": 0
             }
@@ -395,6 +417,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             },
@@ -406,6 +430,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -417,6 +443,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             },
@@ -428,6 +456,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 3
             },
@@ -439,6 +469,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 4
             },
@@ -450,6 +482,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 5
             },
@@ -461,6 +495,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 6
             },
@@ -472,6 +508,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 7
             },
@@ -483,6 +521,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "A 2,420 3,600 4,500 4,980 6,270 8,360 10,900 13,800 20,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 8
             },
@@ -494,6 +534,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 9
             },
@@ -505,6 +547,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 10
             },
@@ -516,6 +560,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 11
             },
@@ -527,6 +573,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 12
             },
@@ -538,6 +586,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 13
             },
@@ -549,6 +599,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 14
             },
@@ -560,6 +612,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 15
             },
@@ -571,6 +625,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 16
             },
@@ -582,6 +638,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "B 2,260 3,360 4,200 4,660 5,870 7,820 10,200 12,920 19,380",
+              "page": 2,
               "is_package": false,
               "sort_order": 17
             },
@@ -593,6 +651,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 18
             },
@@ -604,6 +664,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 19
             },
@@ -615,6 +677,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 20
             },
@@ -626,6 +690,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 21
             },
@@ -637,6 +703,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 22
             },
@@ -648,6 +716,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 23
             },
@@ -659,6 +729,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 24
             },
@@ -670,6 +742,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 25
             },
@@ -681,6 +755,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "C 2,120 3,160 3,950 4,390 5,520 7,360 9,600 12,160 18,240",
+              "page": 2,
               "is_package": false,
               "sort_order": 26
             },
@@ -692,6 +768,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 27
             },
@@ -703,6 +781,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 28
             },
@@ -714,6 +794,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 29
             },
@@ -725,6 +807,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 30
             },
@@ -736,6 +820,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 31
             },
@@ -747,6 +833,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 32
             },
@@ -758,6 +846,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 33
             },
@@ -769,6 +859,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 34
             },
@@ -780,6 +872,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "10s slide value RM2,290 breaks the descending pattern of the card; verify against source PDF",
+              "source_text": "D 1,990 2,290 3,430 3,050 4,500 6,000 8,900 11,500 17,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 35
             },
@@ -791,6 +885,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 36
             },
@@ -802,6 +898,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 37
             },
@@ -813,6 +911,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 38
             },
@@ -824,6 +924,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 39
             },
@@ -835,6 +937,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 40
             },
@@ -846,6 +950,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 41
             },
@@ -857,6 +963,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 42
             },
@@ -868,6 +976,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 43
             },
@@ -879,6 +989,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "E 1,850 2,150 3,220 2,850 4,200 5,600 8,300 10,800 16,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 44
             },
@@ -890,6 +1002,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 45
             },
@@ -901,6 +1015,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 46
             },
@@ -912,6 +1028,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 47
             },
@@ -923,6 +1041,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 48
             },
@@ -934,6 +1054,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 49
             },
@@ -945,6 +1067,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 50
             },
@@ -956,6 +1080,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 51
             },
@@ -967,6 +1093,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 52
             },
@@ -978,6 +1106,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "F 1,710 2,000 3,000 2,650 3,900 5,200 7,700 10,100 15,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 53
             },
@@ -989,6 +1119,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 54
             },
@@ -1000,6 +1132,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 55
             },
@@ -1011,6 +1145,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 56
             },
@@ -1022,6 +1158,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 57
             },
@@ -1033,6 +1171,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 58
             },
@@ -1044,6 +1184,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 59
             },
@@ -1055,6 +1197,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 60
             },
@@ -1066,6 +1210,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 61
             },
@@ -1077,6 +1223,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "G 1,590 1,890 2,830 2,450 3,600 4,800 7,100 9,400 14,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 62
             },
@@ -1088,6 +1236,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 63
             },
@@ -1099,6 +1249,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 64
             },
@@ -1110,6 +1262,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 65
             },
@@ -1121,6 +1275,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 66
             },
@@ -1132,6 +1288,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 67
             },
@@ -1143,6 +1301,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 68
             },
@@ -1154,6 +1314,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 69
             },
@@ -1165,6 +1327,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 70
             },
@@ -1176,6 +1340,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "H 1,490 1,790 2,680 2,300 3,400 4,500 6,600 8,700 13,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 71
             },
@@ -1187,6 +1353,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 72
             },
@@ -1198,6 +1366,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 73
             },
@@ -1209,6 +1379,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 74
             },
@@ -1220,6 +1392,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 75
             },
@@ -1231,6 +1405,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 76
             },
@@ -1242,6 +1418,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 77
             },
@@ -1253,6 +1431,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 78
             },
@@ -1264,6 +1444,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 79
             },
@@ -1275,6 +1457,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "J 1,330 1,630 2,440 2,100 3,100 4,100 6,100 8,100 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 80
             },
@@ -1286,6 +1470,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 81
             },
@@ -1297,6 +1483,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 82
             },
@@ -1308,6 +1496,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 83
             },
@@ -1319,6 +1509,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 84
             },
@@ -1330,6 +1522,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 85
             },
@@ -1341,6 +1535,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 86
             },
@@ -1352,6 +1548,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 87
             },
@@ -1363,6 +1561,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 88
             },
@@ -1374,6 +1574,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "K 1,130 1,500 2,250 1,950 2,900 3,800 5,600 7,400 11,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 89
             },
@@ -1385,6 +1587,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 90
             },
@@ -1396,6 +1600,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 91
             },
@@ -1407,6 +1613,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 92
             },
@@ -1418,6 +1626,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 93
             },
@@ -1429,6 +1639,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 94
             },
@@ -1440,6 +1652,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 95
             },
@@ -1451,6 +1665,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 96
             },
@@ -1462,6 +1678,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 97
             },
@@ -1473,6 +1691,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "L 950 1,360 2,040 1,700 2,600 3,400 5,100 6,800 10,200",
+              "page": 2,
               "is_package": false,
               "sort_order": 98
             },
@@ -1484,6 +1704,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 99
             },
@@ -1495,6 +1717,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 100
             },
@@ -1506,6 +1730,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 101
             },
@@ -1517,6 +1743,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 102
             },
@@ -1528,6 +1756,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 103
             },
@@ -1539,6 +1769,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 104
             },
@@ -1550,6 +1782,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 105
             },
@@ -1561,6 +1795,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 106
             },
@@ -1572,6 +1808,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "M 800 1,140 1,710 1,650 2,400 3,100 4,600 6,100 9,100",
+              "page": 2,
               "is_package": false,
               "sort_order": 107
             },
@@ -1583,6 +1821,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 108
             },
@@ -1594,6 +1834,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 109
             },
@@ -1605,6 +1847,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 110
             },
@@ -1616,6 +1860,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 111
             },
@@ -1627,6 +1873,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 112
             },
@@ -1638,6 +1886,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 113
             },
@@ -1649,6 +1899,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 114
             },
@@ -1660,6 +1912,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 115
             },
@@ -1671,6 +1925,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "N 680 970 1,450 1,400 2,100 2,800 4,100 5,400 8,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 116
             },
@@ -1682,6 +1938,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 117
             },
@@ -1693,6 +1951,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 118
             },
@@ -1704,6 +1964,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 119
             },
@@ -1715,6 +1977,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 120
             },
@@ -1726,6 +1990,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 121
             },
@@ -1737,6 +2003,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 122
             },
@@ -1748,6 +2016,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 123
             },
@@ -1759,6 +2029,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 124
             },
@@ -1770,6 +2042,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "P 570 820 1,230 1,300 1,700 2,500 3,600 4,700 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 125
             },
@@ -1781,6 +2055,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 126
             },
@@ -1792,6 +2068,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 127
             },
@@ -1803,6 +2081,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 128
             },
@@ -1814,6 +2094,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 129
             },
@@ -1825,6 +2107,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 130
             },
@@ -1836,6 +2120,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 131
             },
@@ -1847,6 +2133,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 132
             },
@@ -1858,6 +2146,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 133
             },
@@ -1869,6 +2159,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Q 450 640 960 1,000 1,500 2,000 3,000 4,000 6,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 134
             },
@@ -1880,6 +2172,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 135
             },
@@ -1891,6 +2185,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 136
             },
@@ -1902,6 +2198,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 137
             },
@@ -1913,6 +2211,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 138
             },
@@ -1924,6 +2224,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 139
             },
@@ -1935,6 +2237,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 140
             },
@@ -1946,6 +2250,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 141
             },
@@ -1957,6 +2263,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 142
             },
@@ -1968,6 +2276,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "R 360 520 780 900 1,300 1,700 2,400 3,100 4,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 143
             },
@@ -1979,6 +2289,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 144
             },
@@ -1990,6 +2302,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 145
             },
@@ -2001,6 +2315,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 146
             },
@@ -2012,6 +2328,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 147
             },
@@ -2023,6 +2341,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 148
             },
@@ -2034,6 +2354,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 149
             },
@@ -2045,6 +2367,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 150
             },
@@ -2056,6 +2380,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 151
             },
@@ -2067,6 +2393,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "S 270 380 570 600 900 1,200 1,800 2,400 3,600",
+              "page": 2,
               "is_package": false,
               "sort_order": 152
             },
@@ -2078,6 +2406,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 153
             },
@@ -2089,6 +2419,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 154
             },
@@ -2100,6 +2432,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 155
             },
@@ -2111,6 +2445,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 156
             },
@@ -2122,6 +2458,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 157
             },
@@ -2133,6 +2471,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 158
             },
@@ -2144,6 +2484,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 159
             },
@@ -2155,6 +2497,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 160
             },
@@ -2166,6 +2510,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "T 180 260 390 450 650 850 1,200 1,550 2,300",
+              "page": 2,
               "is_package": false,
               "sort_order": 161
             },
@@ -2177,6 +2523,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 162
             },
@@ -2188,6 +2536,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 163
             },
@@ -2199,6 +2549,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 164
             },
@@ -2210,6 +2562,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 165
             },
@@ -2221,6 +2575,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 166
             },
@@ -2232,6 +2588,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 167
             },
@@ -2243,6 +2601,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 168
             },
@@ -2254,6 +2614,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 169
             },
@@ -2265,6 +2627,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "U 125 180 270 350 500 650 900 1,150 1,700",
+              "page": 2,
               "is_package": false,
               "sort_order": 170
             }
@@ -2287,6 +2651,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Satu klien sahaja; crawler sepanjang slot; video clip high quality; skrip & produk perlu kelulusan Cawangan Perdagangan, KK & Kementerian Kesihatan; harga tidak termasuk 8% SST",
+              "source_text": "1 BELI 1 SLOT RM 10,500.00",
+              "page": 7,
               "is_package": false,
               "sort_order": 0
             }
@@ -2309,6 +2675,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Kos produksi ditanggung sepenuhnya oleh penaja; diskaun 50% untuk siaran ulangan & layak ROI; terpakai untuk semua saluran TV",
+              "source_text": "1 KAPSUL 1 HINGGA 5 MINIT RM3,500",
+              "page": 8,
               "is_package": false,
               "sort_order": 0
             },
@@ -2320,6 +2688,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Kos produksi ditanggung penaja; diskaun 50% siaran ulangan; terpakai semua saluran TV",
+              "source_text": "2 RM11,000",
+              "page": 8,
               "is_package": false,
               "sort_order": 1
             }
@@ -2342,6 +2712,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM50,000 – RM200,000; kos produksi ditanggung bersama klien dan RTM; tertakluk kepada kelulusan",
+              "source_text": "1 SIARAN LANGSUNG 60 MINIT HINGGA 120 MINIT RM 50,000 RM 200,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             }
@@ -2364,6 +2736,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM15,000 – RM25,000; menggunakan kru RTM; kos produksi tertakluk pada keperluan",
+              "source_text": "1 LINTAS LANGSUNG 2 HINGGA 5 MINIT RM15,000 – RM25,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             }
@@ -2386,6 +2760,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Tidak lebih daripada 30 patah perkataan",
+              "source_text": "1 RERAYAP (CRAWLER) 1 KALI RM350",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -2397,6 +2773,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "25 kali + 5 kali percuma; tidak lebih daripada 30 patah perkataan",
+              "source_text": "2 RERAYAP (CRAWLER) 25 KALI + 5 KALI RM12000",
+              "page": 15,
               "is_package": true,
               "sort_order": 1
             }
@@ -2419,6 +2797,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM40,000 - RM60,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "5 120 MINIT 0600-1800 RM40,000 - RM60,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             },
@@ -2430,6 +2810,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM60,000 - RM80,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "6 120 MINIT 1801-0000 RM60,000 - RM80,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 1
             },
@@ -2441,6 +2823,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM13,000 - RM18,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "1 30 MINIT 0600-1800 RM13,000 - RM18,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 2
             },
@@ -2452,6 +2836,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM18,000 - RM25,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "2 30 MINIT 1801-0000 RM18,000 - RM25,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 3
             },
@@ -2463,6 +2849,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM25,000 - RM35,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "3 60 MINIT 0600-1800 RM25,000 - RM35,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 4
             },
@@ -2474,6 +2862,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM35,000 – RM45,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "4 60 MINIT 1801-0000 RM35,000 – RM45,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 5
             }
@@ -2496,6 +2886,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM6,000 – RM8,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "1 30 MINIT 0600-1200 RM6,000 – RM8,000",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -2507,6 +2899,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM8,000 – RM10,000; ulang siar separuh harga; nilai tajaan tertakluk kepada rundingan",
+              "source_text": "2 30 MINIT 1201-1900 RM8,000 – RM10,000",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             }
@@ -2529,6 +2923,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM5,000 – RM20,000; harga tertakluk untuk 1 x siaran sahaja; menggunakan kos produksi RTM (in-house); nilai tajaan tertakluk rundingan",
+              "source_text": "1 15 MINIT – 60 MINIT 0600-0000 RM5,000 – RM20,000",
+              "page": 18,
               "is_package": false,
               "sort_order": 0
             }
@@ -2551,6 +2947,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM8,000 – RM40,000; harga tertakluk untuk 1 x siaran sahaja; tertakluk terma dan syarat perolehan program",
+              "source_text": "1 30 MINIT – 120 MINIT 0600-0000 RM8,000 – RM40,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 0
             }
@@ -2573,6 +2971,8 @@
               "price_basis": "range",
               "confidence": "medium",
               "notes": "Range RM7,200 – RM10,800; slot dan format tertakluk perbincangan; ROI bergantung pada jumlah pelaburan; terpakai semua saluran TV; harga tidak termasuk 8% SST; ulang siar 50% dan layak ROI",
+              "source_text": "1 RM 7,200 – RM 10,800",
+              "page": 20,
               "is_package": true,
               "sort_order": 0
             }
@@ -2595,6 +2995,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM5,400; 5 hari = 25 spots RM9,000; 7 hari = 35 spots RM12,600; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "NASIONAL FM 360 5 15 5,400 5 25 9,000 5 35 12,600",
+              "page": 31,
               "is_package": false,
               "sort_order": 0
             },
@@ -2606,6 +3008,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM4,500; 5 hari = 25 spots RM7,500; 7 hari = 35 spots RM10,500; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "300 5 15 4,500 5 25 7,500 5 35 10,500",
+              "page": 31,
               "is_package": false,
               "sort_order": 1
             },
@@ -2617,6 +3021,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM3,600; 5 hari = 25 spots RM6,000; 7 hari = 35 spots RM8,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "240 5 15 3,600 5 25 6,000 5 35 8,400",
+              "page": 31,
               "is_package": false,
               "sort_order": 2
             },
@@ -2628,6 +3034,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM2,250; 5 hari = 25 spots RM3,750; 7 hari = 35 spots RM5,250; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "150 5 15 2,250 5 25 3,750 5 35 5,250",
+              "page": 31,
               "is_package": false,
               "sort_order": 3
             },
@@ -2639,6 +3047,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,800; 5 hari = 25 spots RM3,000; 7 hari = 35 spots RM4,200; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "120 5 15 1,800 5 25 3,000 5 35 4,200",
+              "page": 31,
               "is_package": false,
               "sort_order": 4
             }
@@ -2661,6 +3071,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM3,600; 5 hari = 25 spots RM6,000; 7 hari = 35 spots RM8,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "240 5 15 3,600 5 25 6,000 5 35 8,400",
+              "page": 32,
               "is_package": false,
               "sort_order": 0
             },
@@ -2672,6 +3084,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM3,000; 5 hari = 25 spots RM5,000; 7 hari = 35 spots RM7,000; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "200 5 15 3,000 5 25 5,000 5 35 7,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 1
             },
@@ -2683,6 +3097,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM2,400; 5 hari = 25 spots RM4,000; 7 hari = 35 spots RM5,600; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "MINNAL FM 160 5 15 2,400 5 25 4,000 5 35 5,600",
+              "page": 32,
               "is_package": false,
               "sort_order": 2
             },
@@ -2694,6 +3110,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,500; 5 hari = 25 spots RM2,500; 7 hari = 35 spots RM3,500; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "PAHANG FM 100 5 15 1,500 5 25 2,500 5 35 3,500",
+              "page": 32,
               "is_package": false,
               "sort_order": 3
             },
@@ -2705,6 +3123,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,200; 5 hari = 25 spots RM2,000; 7 hari = 35 spots RM2,800; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "NEGERI FM 80 5 15 1,200 5 25 2,000 5 35 2,800",
+              "page": 32,
               "is_package": false,
               "sort_order": 4
             }
@@ -2727,6 +3147,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,800; 5 hari = 25 spots RM3,000; 7 hari = 35 spots RM4,200; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "120 5 15 1,800 5 25 3,000 5 35 4,200",
+              "page": 33,
               "is_package": false,
               "sort_order": 0
             },
@@ -2738,6 +3160,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,650; 5 hari = 25 spots RM2,750; 7 hari = 35 spots RM3,850; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "110 5 15 1,650 5 25 2,750 5 35 3,850",
+              "page": 33,
               "is_package": false,
               "sort_order": 1
             },
@@ -2749,6 +3173,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM1,200; 5 hari = 25 spots RM2,000; 7 hari = 35 spots RM2,800; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "MINNAL FM 80 5 15 1,200 5 25 2,000 5 35 2,800",
+              "page": 33,
               "is_package": false,
               "sort_order": 2
             },
@@ -2760,6 +3186,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM750; 5 hari = 25 spots RM1,250; 7 hari = 35 spots RM1,750; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "50 5 15 750 5 25 1,250 5 35 1,750",
+              "page": 33,
               "is_package": false,
               "sort_order": 3
             },
@@ -2771,6 +3199,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "5 spots/day; 3 hari = 15 spots RM600; 5 hari = 25 spots RM1,000; 7 hari = 35 spots RM1,400; pemetaan stesen ke band tidak dapat dipastikan daripada teks (lihat gaps)",
+              "source_text": "NEGERI FM 40 5 15 600 5 25 1,000 5 35 1,400",
+              "page": 33,
               "is_package": false,
               "sort_order": 4
             }
@@ -2793,6 +3223,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "source_text": "BINTULU FM 40 3 9 3 15 600 3 21 840",
+              "page": 34,
               "is_package": false,
               "sort_order": 0
             },
@@ -2804,6 +3236,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "source_text": "LIMBANG FM 40 3 9 360 3 15 600 3 21 840",
+              "page": 34,
               "is_package": false,
               "sort_order": 1
             },
@@ -2815,6 +3249,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "source_text": "MIRI FM 40 4 12 480 4 20 800 4 28 1,120",
+              "page": 34,
               "is_package": false,
               "sort_order": 2
             },
@@ -2826,6 +3262,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "source_text": "RED FM (CINA) 40 3 9 360 3 15 600 3 21 840",
+              "page": 34,
               "is_package": false,
               "sort_order": 3
             },
@@ -2837,6 +3275,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120",
+              "source_text": "RED FM (ENG) 40 4 12 480 4 20 800 4 28 1,120",
+              "page": 34,
               "is_package": false,
               "sort_order": 4
             },
@@ -2848,6 +3288,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM360; 5 hari 15 spots RM600; 7 hari 21 spots RM840",
+              "source_text": "SIBU FM 40 3 9 360 3 15 600 3 21 840",
+              "page": 34,
               "is_package": false,
               "sort_order": 5
             },
@@ -2859,6 +3301,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM240; 5 hari 10 spots RM400; 7 hari 14 spots RM560",
+              "source_text": "SRI AMAN FM 40 2 6 240 2 10 400 2 14 560",
+              "page": 34,
               "is_package": false,
               "sort_order": 6
             }
@@ -2881,6 +3325,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "source_text": "BINTULU FM 60 3 9 540 3 15 900 3 21 1,260",
+              "page": 35,
               "is_package": false,
               "sort_order": 0
             },
@@ -2892,6 +3338,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "source_text": "LIMBANG FM 60 3 9 540 3 15 900 3 21 1,260",
+              "page": 35,
               "is_package": false,
               "sort_order": 1
             },
@@ -2903,6 +3351,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "source_text": "MIRI FM 60 4 12 720 4 20 1,200 4 28 1,680",
+              "page": 35,
               "is_package": false,
               "sort_order": 2
             },
@@ -2914,6 +3364,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "source_text": "RED FM (CINA) 60 3 9 540 3 15 900 3 21 1,260",
+              "page": 35,
               "is_package": false,
               "sort_order": 3
             },
@@ -2925,6 +3377,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680",
+              "source_text": "RED FM (ENG) 60 4 12 720 4 20 1200 4 28 1,680",
+              "page": 35,
               "is_package": false,
               "sort_order": 4
             },
@@ -2936,6 +3390,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM540; 5 hari 15 spots RM900; 7 hari 21 spots RM1,260",
+              "source_text": "SIBU FM 60 3 9 540 3 15 900 3 21 1,260",
+              "page": 35,
               "is_package": false,
               "sort_order": 5
             },
@@ -2947,6 +3403,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM360; 5 hari 10 spots RM600; 7 hari 14 spots RM840",
+              "source_text": "SRI AMAN FM 60 2 6 360 2 10 600 2 14 840",
+              "page": 35,
               "is_package": false,
               "sort_order": 6
             }
@@ -2969,6 +3427,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "source_text": "BINTULU FM 20 3 9 180 3 15 300 3 21 420",
+              "page": 36,
               "is_package": false,
               "sort_order": 0
             },
@@ -2980,6 +3440,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "source_text": "LIMBANG FM 20 3 9 180 3 15 300 3 21 420",
+              "page": 36,
               "is_package": false,
               "sort_order": 1
             },
@@ -2991,6 +3453,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "source_text": "MIRI FM 20 4 12 240 4 20 400 4 28 560",
+              "page": 36,
               "is_package": false,
               "sort_order": 2
             },
@@ -3002,6 +3466,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "source_text": "RED FM (CINA) 20 3 9 180 3 15 300 3 21 420",
+              "page": 36,
               "is_package": false,
               "sort_order": 3
             },
@@ -3013,6 +3479,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560",
+              "source_text": "RED FM (ENG) 20 4 12 240 4 20 400 4 28 560",
+              "page": 36,
               "is_package": false,
               "sort_order": 4
             },
@@ -3024,6 +3492,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 spots/day; 3 hari 9 spots RM180; 5 hari 15 spots RM300; 7 hari 21 spots RM420",
+              "source_text": "SIBU FM 20 3 9 180 3 15 300 3 21 420",
+              "page": 36,
               "is_package": false,
               "sort_order": 5
             },
@@ -3035,6 +3505,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 spots/day; 3 hari 6 spots RM120; 5 hari 10 spots RM200; 7 hari 14 spots RM280",
+              "source_text": "SRI AMAN FM 20 2 6 120 2 10 200 2 14 280",
+              "page": 36,
               "is_package": false,
               "sort_order": 6
             }
@@ -3057,6 +3529,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "4 spots/day; 3 hari 12 spots RM720; 5 hari 20 spots RM1,200; 7 hari 28 spots RM1,680; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "TAWAU FM 60 4 12 720 4 20 1,200 4 28 1,680",
+              "page": 37,
               "is_package": false,
               "sort_order": 0
             },
@@ -3068,6 +3542,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "6 spots/day; 3 hari 18 spots RM1,080; 5 hari 30 spots RM1,800; 7 hari 42 spots RM2,520; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "60 6 18 1,080 6 30 1,800 6 42 2,520",
+              "page": 37,
               "is_package": false,
               "sort_order": 1
             }
@@ -3090,6 +3566,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "4 spots/day; 3 hari 12 spots RM480; 5 hari 20 spots RM800; 7 hari 28 spots RM1,120; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "TAWAU FM 40 4 12 480 4 20 800 4 28 1,120",
+              "page": 38,
               "is_package": false,
               "sort_order": 0
             },
@@ -3101,6 +3579,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "6 spots/day; 3 hari 18 spots RM720; 5 hari 30 spots RM1,200; 7 hari 42 spots RM1,680; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "40 6 18 720 6 30 1,200 6 42 1,680",
+              "page": 38,
               "is_package": false,
               "sort_order": 1
             }
@@ -3123,6 +3603,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "4 spots/day; 3 hari 12 spots RM240; 5 hari 20 spots RM400; 7 hari 28 spots RM560; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "TAWAU FM 20 4 12 240 4 20 400 4 28 560",
+              "page": 39,
               "is_package": false,
               "sort_order": 0
             },
@@ -3134,6 +3616,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "6 spots/day; 3 hari 18 spots RM360; 5 hari 30 spots RM600; 7 hari 42 spots RM840; stesen: Sandakan FM, Tawau FM, Keningau FM dan daypart Sabah V FM — pembahagian antara dua baris kadar tidak dapat dipastikan",
+              "source_text": "20 6 18 360 6 30 600 6 42 840",
+              "page": 39,
               "is_package": false,
               "sort_order": 1
             }
@@ -3156,6 +3640,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM300; 5 hari 20 spots RM500; 7 hari 28 spots RM700",
+              "source_text": "25 4 12 300 4 20 500 4 28 700",
+              "page": 40,
               "is_package": false,
               "sort_order": 0
             },
@@ -3167,6 +3653,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM600; 5 hari 20 spots RM1,000; 7 hari 28 spots RM1,400",
+              "source_text": "50 4 12 600 4 20 1,000 4 28 1,400",
+              "page": 40,
               "is_package": false,
               "sort_order": 1
             },
@@ -3178,6 +3666,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 spots/day; 3 hari 12 spots RM900; 5 hari 20 spots RM1,500; 7 hari 28 spots RM2,100",
+              "source_text": "75 4 12 900 4 20 1,500 4 28 2,100",
+              "page": 40,
               "is_package": false,
               "sort_order": 2
             }
@@ -3206,6 +3696,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "61 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "INFOGRAFIK + AUDIO 20 SEC 61 650",
+          "page": 10,
           "is_package": false,
           "sort_order": 0
         },
@@ -3217,6 +3709,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "33 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "20 SEC 33 1200 40,000",
+          "page": 10,
           "is_package": false,
           "sort_order": 1
         },
@@ -3228,6 +3722,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "22 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "VIDEO 30 SEC 22 1800",
+          "page": 10,
           "is_package": false,
           "sort_order": 2
         },
@@ -3239,6 +3735,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "17 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "40 SEC 17 2400",
+          "page": 10,
           "is_package": false,
           "sort_order": 3
         },
@@ -3250,6 +3748,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "11 spots; jumlah pelaburan RM40,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "60 SEC 11 3600",
+          "page": 10,
           "is_package": false,
           "sort_order": 4
         }
@@ -3274,6 +3774,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "71 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "INFOGRAFIK + AUDIO 20 SEC 71 850",
+          "page": 10,
           "is_package": false,
           "sort_order": 0
         },
@@ -3285,6 +3787,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "50 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "20 SEC 50 1200 60,000",
+          "page": 10,
           "is_package": false,
           "sort_order": 1
         },
@@ -3296,6 +3800,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "50 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "VIDEO 30 SEC 50 1200",
+          "page": 10,
           "is_package": false,
           "sort_order": 2
         },
@@ -3307,6 +3813,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "39 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "40 SEC 39 1550",
+          "page": 10,
           "is_package": false,
           "sort_order": 3
         },
@@ -3318,6 +3826,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "26 spots; jumlah pelaburan RM60,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "60 SEC 26 2300",
+          "page": 10,
           "is_package": false,
           "sort_order": 4
         }
@@ -3342,6 +3852,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "141 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "INFOGRAFIK + AUDIO 20 SEC 141 850",
+          "page": 11,
           "is_package": false,
           "sort_order": 0
         },
@@ -3353,6 +3865,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "141 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "20 SEC 141 850 120,000",
+          "page": 11,
           "is_package": false,
           "sort_order": 1
         },
@@ -3364,6 +3878,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "133 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "VIDEO 30 SEC 133 900",
+          "page": 11,
           "is_package": false,
           "sort_order": 2
         },
@@ -3375,6 +3891,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "104 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "40 SEC 104 1150",
+          "page": 11,
           "is_package": false,
           "sort_order": 3
         },
@@ -3386,6 +3904,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "71 spots; jumlah pelaburan RM120,000; terpakai TV1/TV2/TV Okey; 50% siaran waktu prima, 50% luar prima; tiada ROI",
+          "source_text": "60 SEC 71 1700",
+          "page": 11,
           "is_package": false,
           "sort_order": 4
         }
@@ -3409,6 +3929,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "3 x breaker in & out (7s), 1 x opening & closing (10s), 3 x TVC inside program (30s) + 3 x floaters TV & radio",
+          "source_text": "60 MINIT RM 35,000",
+          "page": 13,
           "is_package": false,
           "sort_order": 0
         }
@@ -3433,6 +3955,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "TV1 Berita Perdana/Berita Mandarin/Berita Tamil/Berita Inggeris; TV2; TV Okey; BES TV; tempoh pakej 30 hari; bahan 10 saat filmlets",
+          "source_text": "RM 70,000",
+          "page": 21,
           "is_package": true,
           "sort_order": 0
         }

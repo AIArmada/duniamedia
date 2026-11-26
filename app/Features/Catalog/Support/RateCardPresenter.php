@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Features\Catalog\Support;
 
 use App\Features\Catalog\Models\MediaProfile;
+use App\Features\Catalog\Models\MediaProperty;
 use App\Features\Catalog\Models\RateCardSection;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -29,6 +30,8 @@ final class RateCardPresenter
      */
     public static function forChannel(string $mediaPropertyId): array
     {
+        $property = MediaProperty::query()->find($mediaPropertyId);
+
         $sections = RateCardSection::query()
             ->whereHas('channels', fn ($query) => $query->where('media_properties.id', $mediaPropertyId)->where('media_properties.is_public', true))
             ->whereHas('product', fn ($query) => $query->where('status', 'active'))
@@ -36,7 +39,80 @@ final class RateCardPresenter
             ->orderBy('sort_order')
             ->get();
 
-        return self::present($sections);
+        $isGroupFallback = false;
+
+        if ($sections->isEmpty() && $property !== null) {
+            $sections = self::groupFallbackSections($property);
+            $isGroupFallback = $sections->isNotEmpty();
+        }
+
+        $presented = self::present($sections);
+
+        if ($isGroupFallback) {
+            foreach ($presented as &$section) {
+                $section['is_group_fallback'] = true;
+            }
+            unset($section);
+        }
+
+        return $presented;
+    }
+
+    /**
+     * @return Collection<int, RateCardSection>
+     */
+    private static function groupFallbackSections(MediaProperty $property): Collection
+    {
+        $profiles = $property->decks()->with('channels')->get();
+        $productIds = $profiles->pluck('product_id')->filter()->unique()->all();
+
+        if ($productIds === []) {
+            return new Collection;
+        }
+
+        $sections = RateCardSection::query()
+            ->whereIn('product_id', $productIds)
+            ->whereHas('channels', fn ($query) => $query->where('media_properties.slug', 'like', '%-group'))
+            ->whereHas('product', fn ($query) => $query->where('status', 'active'))
+            ->with(['channels', 'entries', 'product.mediaProfile'])
+            ->orderBy('sort_order')
+            ->get();
+
+        $keywords = match ($property->medium) {
+            'Radio', 'Podcast' => ['radio', 'audio', 'ros', 'jingle', 'live read', 'station'],
+            'TV & Broadcast' => ['tv', 'spot', 'zone', 'programme', 'sponsor', 'talkshow', 'news', 'filmlet', 'slide', 'capsule', 'crawler', 'clockface', 'on-ground', 'production'],
+            'Digital' => ['digital', 'social', 'website', 'display', 'edm', 'press', 'article', 'video', 'content', 'online', 'stream', 'podcast', 'news'],
+            'Print' => ['print', 'display', 'classified', 'cover', 'advertorial', 'colour', 'page', 'newspaper', 'magazine'],
+            'Outdoor' => ['outdoor', 'billboard', 'site', 'panel', 'station', 'airport', 'venue', 'activation', 'truck', 'bus', 'lamppost', 'screen'],
+            default => [],
+        };
+
+        $filtered = $sections->filter(function (RateCardSection $section) use ($keywords): bool {
+            $haystack = mb_strtolower($section->key.' '.$section->title.' '.($section->intro ?? ''));
+
+            foreach ($keywords as $keyword) {
+                if (str_contains($haystack, $keyword)) {
+                    return true;
+                }
+            }
+
+            return false;
+        });
+
+        if ($filtered->isNotEmpty()) {
+            return $filtered->values();
+        }
+
+        $deckMediums = $profiles
+            ->flatMap(fn (MediaProfile $profile) => $profile->channels->pluck('medium'))
+            ->filter()
+            ->unique();
+
+        if ($deckMediums->count() === 1 && $deckMediums->first() === $property->medium) {
+            return $sections;
+        }
+
+        return new Collection;
     }
 
     /**
@@ -52,12 +128,16 @@ final class RateCardPresenter
                 'id' => $entry->id,
                 'item' => $entry->item,
                 'unit' => $entry->unit,
-                'price' => $entry->price_rm === null ? null : (float) $entry->price_rm,
+                'price' => $entry->price_rm !== null
+                    ? (float) $entry->price_rm
+                    : ($entry->price_incl_sst_rm === null ? null : (float) $entry->price_incl_sst_rm),
                 'price_incl_sst' => $entry->price_incl_sst_rm === null ? null : (float) $entry->price_incl_sst_rm,
+                'price_is_inclusive' => $entry->price_rm === null && $entry->price_incl_sst_rm !== null,
                 'price_basis' => $entry->price_basis,
                 'notes' => $entry->notes,
                 'confidence' => $entry->confidence,
                 'is_package' => (bool) $entry->is_package,
+                'selectable' => (bool) $entry->is_plan_selectable,
                 'table_key' => $entry->table_key,
                 'row_label' => $entry->row_label,
                 'column_label' => $entry->column_label,

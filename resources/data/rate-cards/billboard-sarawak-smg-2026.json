@@ -95,6 +95,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -106,6 +108,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             },
@@ -117,6 +121,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 4,
               "is_package": false,
               "sort_order": 2
             },
@@ -128,6 +134,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 4,
               "is_package": false,
               "sort_order": 3
             },
@@ -139,6 +147,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 4,
               "is_package": false,
               "sort_order": 4
             },
@@ -150,6 +160,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 4,
               "is_package": false,
               "sort_order": 5
             }
@@ -172,6 +184,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 8,
               "is_package": false,
               "sort_order": 0
             },
@@ -183,6 +197,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 8,
               "is_package": false,
               "sort_order": 1
             },
@@ -194,6 +210,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 8,
               "is_package": false,
               "sort_order": 2
             },
@@ -205,6 +223,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 8,
               "is_package": false,
               "sort_order": 3
             },
@@ -216,6 +236,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 8,
               "is_package": false,
               "sort_order": 4
             },
@@ -227,6 +249,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 8,
               "is_package": false,
               "sort_order": 5
             }
@@ -249,6 +273,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -260,6 +286,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -271,6 +299,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 720 / 5,040 / 21,600 and also 'Rate RM1,000/day RM7,000/week RM30,000/month'",
+              "source_text": "1 (on a 3-min cycle) 720 5,040 21,600",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -282,6 +312,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             },
@@ -293,6 +325,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 12,
               "is_package": false,
               "sort_order": 4
             },
@@ -304,6 +338,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 slot on a 3-min cycle (12 slots total); rates exclude tax and RM500 management charge per material; page table shows 360 / 2,520 / 10,800 and also 'Rate RM500/day RM3,500/week RM15,000/month'",
+              "source_text": "1 (on a 3-min cycle) 360 2,520 10,800",
+              "page": 12,
               "is_package": false,
               "sort_order": 5
             }
@@ -326,6 +362,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,800.00 RM 12,600.00 RM 54,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -337,6 +375,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,800.00 RM 12,600.00 RM 54,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             },
@@ -348,6 +388,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,800.00 RM 12,600.00 RM 54,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -359,6 +401,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 900.00 RM 6,300.00 RM 27,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 3
             },
@@ -370,6 +414,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 900.00 RM 6,300.00 RM 27,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 4
             },
@@ -381,6 +427,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 900.00 RM 6,300.00 RM 27,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 5
             }
@@ -403,6 +451,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "2 Sites  RM 2,000.00 RM 14,000.00 RM 60,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -414,6 +464,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "2 Sites  RM 2,000.00 RM 14,000.00 RM 60,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             },
@@ -425,6 +477,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "2 Sites  RM 2,000.00 RM 14,000.00 RM 60,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -436,6 +490,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,000.00 RM 7,000.00 RM 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 3
             },
@@ -447,6 +503,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,000.00 RM 7,000.00 RM 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 4
             },
@@ -458,6 +516,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,000.00 RM 7,000.00 RM 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 5
             }
@@ -480,6 +540,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 2,550.00 RM 17,850.00 RM 76,500.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -491,6 +553,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 2,550.00 RM 17,850.00 RM 76,500.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             },
@@ -502,6 +566,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 2,550.00 RM 17,850.00 RM 76,500.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -513,6 +579,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,275.00 RM 8,925.00 RM 38,250.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 3
             },
@@ -524,6 +592,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,275.00 RM 8,925.00 RM 38,250.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 4
             },
@@ -535,6 +605,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,275.00 RM 8,925.00 RM 38,250.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 5
             }
@@ -557,6 +629,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "3 Sites RM 3,000.00 RM 21,000.00 RM 90,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -568,6 +642,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "3 Sites RM 3,000.00 RM 21,000.00 RM 90,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             },
@@ -579,6 +655,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "3 Sites RM 3,000.00 RM 21,000.00 RM 90,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -590,6 +668,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,500.00 RM 10,500.00 RM 45,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 3
             },
@@ -601,6 +681,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,500.00 RM 10,500.00 RM 45,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 4
             },
@@ -612,6 +694,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rates exclude tax and RM500 management/handling charge per material; sites in Kuching (Taman Heritage & Tun Salahuddin) and Bintulu (Jalan Pisang Emas)",
+              "source_text": "RM 1,500.00 RM 10,500.00 RM 45,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 5
             }

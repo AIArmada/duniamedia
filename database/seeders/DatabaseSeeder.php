@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             MediaCatalogueSeeder::class,
             RateCardEntrySeeder::class,
             RateCardContentSeeder::class,
+            RateCardGallerySeeder::class,
+            MediaPropertyVisibilitySeeder::class,
             CapacityPoolSeeder::class,
             ClientWorkSeeder::class,
         ]);

@@ -110,6 +110,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM20,000 (casual RM25,000).",
+              "source_text": "PROGRAM BERANI SEMUKA PROGRAM SPONSORSHIP 1x 25,000 20,000 5,000 (SINAR HARIAN HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 0
             },
@@ -121,6 +123,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM15,000 (casual RM25,000).",
+              "source_text": "PROGRAM BORAK BIBIR MERAH PROGRAM SPONSORSHIP 1x 25,000 15,000 10,000 (HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 1
             },
@@ -132,6 +136,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000 (casual RM10,000).",
+              "source_text": "PROGRAM DIALOG SISWA PROGRAM SPONSORSHIP 1x 10,000 8,000 2,000 (SINAR HARIAN HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 2
             },
@@ -143,6 +149,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000 (casual RM10,000).",
+              "source_text": "PROGRAM INTERVIU / SINAR LIVE PROGRAM SPONSORSHIP 1x 10,000 8,000 2,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 3
             },
@@ -154,6 +162,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM20,000 (casual RM25,000).",
+              "source_text": "PROGRAM MEJA BULAT PROGRAM SPONSORSHIP 1x 25,000 20,000 5,000 (SINAR HARIAN HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 4
             },
@@ -165,6 +175,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000 (casual RM10,000).",
+              "source_text": "PROGRAM PODCAST PROGRAM SPONSORSHIP 1x 10,000 8,000 2,000 (SINAR HARIAN HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 5
             },
@@ -176,6 +188,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM20,000 (casual RM25,000).",
+              "source_text": "PROGRAM SHE LEADS / THE GROWTH ROOM PROGRAM SPONSORSHIP 1X 25,000 20,000 5,000 (HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 6
             },
@@ -187,6 +201,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM18,000 (casual RM30,000).",
+              "source_text": "PROGRAM WACANA ENGLISH EDITION PROGRAM SPONSORSHIP 1x 30,000 18,000 12,000 (HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 7
             },
@@ -198,6 +214,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM24,000 (casual RM35,000).",
+              "source_text": "PROGRAM WACANA PROGRAM SPONSORSHIP 1x 35,000 24,000 11,000 (SINAR HARIAN HQ ONLY)",
+              "page": 1,
               "is_package": true,
               "sort_order": 8
             }
@@ -220,6 +238,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM40,000 (casual RM84,960). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT CENTRESPREAD ADVERTORIAL 2 Pages (DPS) / Colour 1x 84,960 40,000 44,960",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -231,6 +251,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM60,000 (casual RM100,000). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT COVER WRAP 1 Page Newsprint / Colour 1x 100,000 60,000 40,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -242,6 +264,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM15,000 (casual RM21,600). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FRONT PAGE BILLBOARD 10cm x 8 Col / Colour 1x 21,600 15,000 6,600",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -253,6 +277,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000 (casual RM19,360). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FRONT PAGE BOTTOM PANEL 6cm x 8 Col / Colour 1x 19,360 8,000 11,360",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -264,6 +290,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM10,000 (casual RM21,250). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FRONT PAGE EAR SPACE 12.5cm x 6 cm / Colour 1x 21,250 10,000 11,250",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             },
@@ -275,6 +303,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM12,000 (casual RM20,460). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FULL PAGE COLOUR ADVERTORIAL 32cm x 8 Col 1x 20,460 12,000 8,460",
+              "page": 1,
               "is_package": false,
               "sort_order": 5
             },
@@ -286,6 +316,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000 (casual RM16,960). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FULL PAGE COLOUR CORPORATE 32cm x 8 Col 1x 16,960 8,000 8,960",
+              "page": 1,
               "is_package": false,
               "sort_order": 6
             },
@@ -297,6 +329,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM9,000 (casual RM15,000). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FULL PAGE COLOUR EVENT COVERAGE / 32cm x 8 Col 1x 15,000 9,000 6,000 PR (KL / VALLEY)",
+              "page": 1,
               "is_package": false,
               "sort_order": 7
             },
@@ -308,6 +342,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM100,000 (casual RM200,000). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT FULL WRAP AROUND 4 Pages Newsprint / Colour 1x 200,000 100,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 8
             },
@@ -319,6 +355,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM6,000 (casual RM12,480). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT HALF PAGE COLOUR (H) 16cm x 8 Col 1x 12,480 6000 6,480 ADVERTISEMENT",
+              "page": 1,
               "is_package": false,
               "sort_order": 9
             },
@@ -330,6 +368,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM75,000 (casual RM150,000). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT HALF WRAP AROUND 2 Pages Newsprint / Colour 1x 150,000 75,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 10
             },
@@ -341,6 +381,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM4,000 (casual RM9,680). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT ISLANDS ADS 12cm x 4 Col 1x 9,680 4,000 5,680",
+              "page": 1,
               "is_package": false,
               "sort_order": 11
             },
@@ -352,6 +394,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM150,000 (casual RM212,160). Offer valid for signings 1 Sep-30 Nov 2026, utilisation to 31 Dec 2026.",
+              "source_text": "PRINT SPECIAL PULL-OUT IN SH / SD 8 Pages Newsprint / Colour 1x 212,160 150,000 62,160",
+              "page": 1,
               "is_package": false,
               "sort_order": 12
             }
@@ -374,6 +418,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM3,500 (casual RM6,000).",
+              "source_text": "SOCIAL MEDIA FACEBOOK POSTING / CAROUSEL 1x 6,000 3,500 2,500",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -385,6 +431,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM2,000 (casual RM3,000).",
+              "source_text": "SOCIAL MEDIA INSTAGRAM POSTING / CAROUSEL 1x 3,000 2,000 1,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -396,6 +444,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM3,500 (casual RM6,000).",
+              "source_text": "SOCIAL MEDIA TIKTOK CAROUSEL 1x 6,000 3,500 2,500",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -407,6 +457,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM9,000 (casual RM15,000).",
+              "source_text": "SOCIAL MEDIA VIDEO IN SINAR DAILY Politically Frank -1-2mins 1x 15,000 9,000 6,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -418,6 +470,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM9,000 (casual RM15,000).",
+              "source_text": "SOCIAL MEDIA VIDEO IN SINAR DAILY This Or That - 2-3mins 1x 15,000 9,000 6,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             }
@@ -440,6 +494,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000; savings RM12,000.",
+              "source_text": "COUNTDOWN TIMER DAILY 20,000.00 8,000.00 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             },
@@ -451,6 +507,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000; savings RM12,000. Estimated 150,000 impressions per day with no targeting.",
+              "source_text": "DIGITAL RICH MEDIA - ANNOUNCEMENT DAILY 20,000.00 8,000.00 12,000 INTERSTITIAL",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -462,6 +520,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000; savings RM12,000.",
+              "source_text": "RICH MEDIA - CUSTOM NUDGES SCRATCH CARD DAILY 20,000.00 8,000.00 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             },
@@ -473,6 +533,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000; savings RM12,000.",
+              "source_text": "DIGITAL SIDE DRAWER DAILY 20,000.00 8,000.00 12,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 3
             },
@@ -484,6 +546,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM5,000; savings RM4,000.",
+              "source_text": "DIGITAL SINAR DAILY WEBSITE 1x ARTICLE 9,000.00 5,000.00 4,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 4
             },
@@ -495,6 +559,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM8,000; savings RM7,000.",
+              "source_text": "DIGITAL SINAR HARIAN WEBSITE 1x ARTICLE 15,000.00 8,000.00 7,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 5
             }
@@ -517,6 +583,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM7,000; savings RM6,000.",
+              "source_text": "LARGE RECTANGLE ON (DESKTOP / MOBILE / MOBILE APP) 300K IMPRESSIONS 13,000.00 7,000.00 6,000 PER WEEK",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             },
@@ -528,6 +596,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM6,000; savings RM6,000.",
+              "source_text": "MREC (Desktop, Mobile & Mobile App) 300K IMPRESSIONS 12,000.00 6,000.00 6,000 PER WEEK",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -539,6 +609,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "SH 20th Anniversary offer rate RM5,000; savings RM5,000.",
+              "source_text": "DIGITAL MASTHEAD 100% SOV PER DAY 10,000.00 5,000.00 5,000",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             }
@@ -561,6 +633,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Inclusions: 1x full page colour corporate, 1x Sinar Harian digital article, 1x Facebook posting/carousel, 1x Instagram posting/carousel, 1x TikTok posting. Actual package rate RM40,960.",
+              "source_text": "ACTUAL PACKAGE RATE RM 40,960 SPECIAL PACKAGE INVESTMENT RM 20,000",
+              "page": 3,
               "is_package": true,
               "sort_order": 0
             },
@@ -572,6 +646,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Inclusions: 1x centrespread advertorial, 1x Sinar Harian digital article, 1x Facebook posting, 1x Instagram posting, 1x TikTok posting. Actual package rate RM114,960.",
+              "source_text": "SPECIAL PACKAGE INVESTMENT RM 40,000",
+              "page": 3,
               "is_package": true,
               "sort_order": 1
             },
@@ -583,6 +659,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Inclusions: Wacana / Wacana English, full page colour, Sinar Harian digital article, Facebook posting, Instagram posting, TikTok posting, 1 week MREC/masthead, 1x Wacana or 1x Interviu, 1 Interviu. Actual package rate RM134,460.",
+              "source_text": "EXCLUSIVE SINARVERSARY PACKAGE PRICE RM 60,000",
+              "page": 3,
               "is_package": true,
               "sort_order": 2
             },
@@ -594,6 +672,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Inclusions: half wrap, special 4-page pull-out, 7 days large rectangle banner, video, 4 digital articles, 4x FB/IG/TikTok, 1x Wacana or 1x Interviu, 1 Interviu. Limited to 20 brands. Actual package rate RM471,630.",
+              "source_text": "EXCLUSIVE SINARVERSARY PACKAGE PRICE RM 200,000",
+              "page": 3,
               "is_package": true,
               "sort_order": 3
             }

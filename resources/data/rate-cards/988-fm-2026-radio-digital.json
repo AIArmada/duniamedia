@@ -101,6 +101,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Regional buy; 35 spots per week (30s & 60s only). Region/period column alignment inferred from the three-region header.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -112,6 +114,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; Regional buy; 35 spots per week (30s & 60s only). Column alignment inferred.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -123,6 +127,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Minimum 25 spots over 5 consecutive days (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "source_text": "Mon - Fri 980 1,078 -",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -134,6 +140,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 25 spots over 5 consecutive days (6am-12am). Column alignment inferred.",
+              "source_text": "Mon - Fri 980 1,078 -",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -145,6 +153,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Minimum 35 spots over 7 consecutive days (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             },
@@ -156,6 +166,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 35 spots over 7 consecutive days (6am-12am). Column alignment inferred.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 5
             },
@@ -167,6 +179,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Minimum 30 spots over 2 consecutive days for 3 weeks (6am-12am). Region/period column alignment inferred from the three-region header.",
+              "source_text": "Sat - Sun 475 523 -",
+              "page": 1,
               "is_package": false,
               "sort_order": 6
             },
@@ -178,6 +192,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; Minimum 30 spots over 2 consecutive days for 3 weeks (6am-12am). Column alignment inferred.",
+              "source_text": "Sat - Sun 475 523 -",
+              "page": 1,
               "is_package": false,
               "sort_order": 7
             },
@@ -189,6 +205,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Regional buy; 35 spots per week (30s & 60s only). Region/period column alignment inferred from the three-region header.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 8
             },
@@ -200,6 +218,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; Regional buy; 35 spots per week (30s & 60s only). Column alignment inferred.",
+              "source_text": "Mon - Sun 845 930 485 534 365 402",
+              "page": 1,
               "is_package": false,
               "sort_order": 9
             }
@@ -222,6 +242,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "1.00am-6.00am 100 110 1.00am-6.00am 115 127",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -233,6 +255,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "1.00am-6.00am 100 110 1.00am-6.00am 115 127",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -244,6 +268,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "1.00pm-4.00pm 790 869 1.00pm-4.00pm 430 473",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -255,6 +281,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "1.00pm-4.00pm 790 869 1.00pm-4.00pm 430 473",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -266,6 +294,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "10.00am-12.30pm 780 858",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             },
@@ -277,6 +307,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "10.00am-12.30pm 780 858",
+              "page": 1,
               "is_package": false,
               "sort_order": 5
             },
@@ -288,6 +320,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "12.30pm-1.00pm 420 462",
+              "page": 1,
               "is_package": false,
               "sort_order": 6
             },
@@ -299,6 +333,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "12.30pm-1.00pm 420 462",
+              "page": 1,
               "is_package": false,
               "sort_order": 7
             },
@@ -310,6 +346,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "4.00pm-8.00pm 1,330 1,463 4.00pm-8.00pm 400 440",
+              "page": 1,
               "is_package": false,
               "sort_order": 8
             },
@@ -321,6 +359,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "4.00pm-8.00pm 1,330 1,463 4.00pm-8.00pm 400 440",
+              "page": 1,
               "is_package": false,
               "sort_order": 9
             },
@@ -332,6 +372,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "6.00am-10.00am 1,890 2,079 6.00am-10.00am 450 495",
+              "page": 1,
               "is_package": false,
               "sort_order": 10
             },
@@ -343,6 +385,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "6.00am-10.00am 1,890 2,079 6.00am-10.00am 450 495",
+              "page": 1,
               "is_package": false,
               "sort_order": 11
             },
@@ -354,6 +398,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekday casual) inferred from the two stacked six-column blocks; all rates are for a 30-second commercial.",
+              "source_text": "8.00pm-1.00am 500 550 8.00pm-1.00am 300 330",
+              "page": 1,
               "is_package": false,
               "sort_order": 12
             },
@@ -365,6 +411,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "8.00pm-1.00am 500 550 8.00pm-1.00am 300 330",
+              "page": 1,
               "is_package": false,
               "sort_order": 13
             }
@@ -387,6 +435,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "1.00am-6.00am 100 110 1.00am-6.00am 115 127",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -398,6 +448,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "1.00am-6.00am 100 110 1.00am-6.00am 115 127",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -409,6 +461,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "1.00pm-4.00pm 790 869 1.00pm-4.00pm 430 473",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -420,6 +474,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "1.00pm-4.00pm 790 869 1.00pm-4.00pm 430 473",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -431,6 +487,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "10.00am-1.00pm 480 528",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             },
@@ -442,6 +500,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "10.00am-1.00pm 480 528",
+              "page": 1,
               "is_package": false,
               "sort_order": 5
             },
@@ -453,6 +513,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "4.00pm-8.00pm 1,330 1,463 4.00pm-8.00pm 400 440",
+              "page": 1,
               "is_package": false,
               "sort_order": 6
             },
@@ -464,6 +526,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "4.00pm-8.00pm 1,330 1,463 4.00pm-8.00pm 400 440",
+              "page": 1,
               "is_package": false,
               "sort_order": 7
             },
@@ -475,6 +539,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "6.00am-10.00am 1,890 2,079 6.00am-10.00am 450 495",
+              "page": 1,
               "is_package": false,
               "sort_order": 8
             },
@@ -486,6 +552,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "6.00am-10.00am 1,890 2,079 6.00am-10.00am 450 495",
+              "page": 1,
               "is_package": false,
               "sort_order": 9
             },
@@ -497,6 +565,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Column position (weekend casual) inferred from the two stacked six-column blocks; 30-second commercial.",
+              "source_text": "8.00pm-1.00am 500 550 8.00pm-1.00am 300 330",
+              "page": 1,
               "is_package": false,
               "sort_order": 10
             },
@@ -508,6 +578,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Festive period 13 January 2026 - 17 February 2026; column position inferred; 30-second commercial.",
+              "source_text": "8.00pm-1.00am 500 550 8.00pm-1.00am 300 330",
+              "page": 1,
               "is_package": false,
               "sort_order": 11
             }
@@ -530,6 +602,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM300/script",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             },
@@ -541,6 +615,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Re-recording fee is 50% of studio & VO fee.",
+              "source_text": "RM1,050/hour",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -552,6 +628,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM600 for a 30s VO.",
+              "source_text": "RM20/s (RM600 for 30s)",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             },
@@ -563,6 +641,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "RM300 (flat rate)",
+              "page": 2,
               "is_package": false,
               "sort_order": 3
             }
@@ -585,6 +665,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Source prints 600 twice (for engagement and possibly a second metric); one rate extracted.",
+              "source_text": "600",
+              "page": 3,
               "is_package": true,
               "sort_order": 0
             },
@@ -596,6 +678,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Rate line reads '100 -10,000 Reach -10,000 Views'.",
+              "source_text": "Additional Boosting: 100",
+              "page": 3,
               "is_package": true,
               "sort_order": 1
             },
@@ -607,6 +691,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Live Video 9,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -618,6 +704,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Multiple Visual Post (Album) 8,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -629,6 +717,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Single Visual Post 6,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -640,6 +730,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Story Post 5,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -651,6 +743,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Video Post - Instagram TV (No Production) 10,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             }
@@ -673,6 +767,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "CPM rate; production fee RM1,000.",
+              "source_text": "App Screen Overlay 75",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -684,6 +780,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee shown alongside the banner rate.",
+              "source_text": "1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -695,6 +793,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee RM1,000; marked *packaged with station sponsorship.",
+              "source_text": "Hero Slider Banner (Homepage & App) 5，000/week 1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -706,6 +806,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee shown alongside the banner rate.",
+              "source_text": "1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -717,6 +819,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "CPM rate; production fee RM1,000.",
+              "source_text": "Leaderboard Banner (ROS) 40",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -728,6 +832,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee shown alongside the banner rate.",
+              "source_text": "1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -739,6 +845,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "CPM rate; production fee RM1,000.",
+              "source_text": "Medium Rectangular Banner (ROS) 40 1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -750,6 +858,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee shown alongside the banner rate.",
+              "source_text": "1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             },
@@ -761,6 +871,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "CPM rate; production fee RM1,000; marked *packaged with station sponsorship.",
+              "source_text": "Website Screen Overlay 120",
+              "page": 3,
               "is_package": false,
               "sort_order": 8
             },
@@ -772,6 +884,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Production fee shown alongside the banner rate.",
+              "source_text": "1，000",
+              "page": 3,
               "is_package": false,
               "sort_order": 9
             }
@@ -794,6 +908,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Branded Article Post (+1 FB Post link to website) 13,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -805,6 +921,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "FB & IG Story Post (Link Click) 6,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -816,6 +934,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Facebook Event Page 3,500",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -827,6 +947,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Infographic Visual Post 10,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -838,6 +960,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Subject to video content direction.",
+              "source_text": "Live Video (Facebook & YouTube) 20,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -849,6 +973,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Multiple Visual Post (Album - Max. 6) 10,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -860,6 +986,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Subject to availability.",
+              "source_text": "Pinned Post 2,000 /day",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -871,6 +999,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Single Visual Post 8,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             },
@@ -882,6 +1012,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Subject to video content direction.",
+              "source_text": "Video + Production Cost & upload to YouTube 30,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 8
             },
@@ -893,6 +1025,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Video Copyright Buyout Fee 4,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 9
             },
@@ -904,6 +1038,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Video Post (No Production) 10,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 10
             }
@@ -926,6 +1062,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Ads Running Bar (+Client logo apprearance) 3,500",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -937,6 +1075,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "End-Roll (15s video) 4,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             },
@@ -948,6 +1088,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Live Read 6,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 2
             },
@@ -959,6 +1101,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mid-Roll (15s video) 9,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 3
             },
@@ -970,6 +1114,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Pre-Roll (15s video) 7,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 4
             }
@@ -992,6 +1138,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Likely the production fee column; column assignment not visible in text.",
+              "source_text": "Contest Form 1,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -1003,6 +1151,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Table has rate/week and production-fee columns; the text does not show which column each number sits in.",
+              "source_text": "Inside Page (Multi Tabs) 4,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             }
@@ -1025,6 +1175,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Rate printed as 'RM2/per pax'.",
+              "source_text": "EDM RM2/per pax",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             }
@@ -1047,6 +1199,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "End-Roll (Podcast) 40",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -1058,6 +1212,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Mid-Roll 45",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             },
@@ -1069,6 +1225,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per episode for 1 month.",
+              "source_text": "Podcast Sponsorship (Intro & Outro)",
+              "page": 4,
               "is_package": false,
               "sort_order": 2
             },
@@ -1080,6 +1238,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": null,
+              "source_text": "Pre-Roll 60",
+              "page": 4,
               "is_package": false,
               "sort_order": 3
             }
@@ -1102,6 +1262,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Listed separately under video production.",
+              "source_text": "1,500",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -1113,6 +1275,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "source_text": "10，500 10，000",
+              "page": 4,
               "is_package": true,
               "sort_order": 1
             },
@@ -1124,6 +1288,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "source_text": "10，500 10，000",
+              "page": 4,
               "is_package": true,
               "sort_order": 2
             },
@@ -1135,6 +1301,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Includes 10 man-hours/day, 2 manpower, editing, software, equipment, transportation.",
+              "source_text": "7,500",
+              "page": 4,
               "is_package": true,
               "sort_order": 3
             }

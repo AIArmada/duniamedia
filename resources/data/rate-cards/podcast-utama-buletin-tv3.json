@@ -77,6 +77,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Only the TOTAL line is legible; item-level entitlements and prices are garbled by the PDF font encoding / OCR.",
+              "source_text": "TOTAL: RM69,660",
+              "page": 14,
               "is_package": true,
               "sort_order": 0
             }
@@ -99,6 +101,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Only the TOTAL line is legible; item-level entitlements and prices are garbled by the PDF font encoding / OCR.",
+              "source_text": "TOTAL: RM147,420",
+              "page": 15,
               "is_package": true,
               "sort_order": 0
             }

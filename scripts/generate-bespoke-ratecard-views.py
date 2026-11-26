@@ -1,134 +1,11 @@
 #!/usr/bin/env python3
-"""Generate the bespoke owner, channel and priority-deck Blade views."""
+"""Generate the bespoke channel and priority-deck Blade views."""
 
 import os
 import textwrap
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VIEWS = os.path.join(ROOT, 'resources/views/pages')
-
-OWNERS = {
-    'astro': {
-        'title': 'Pay-TV, streaming, radio and data',
-        'body': 'Astro Media Solutions reaches Malaysian homes through pay-TV, sooka, radio and digital brands. The group combines premium content, addressable audiences and first-party data, making it the natural home for launch campaigns, sustained reach and brand-safe entertainment.',
-        'features': [
-            ('Television', 'Astro Awani, Astro Ria, Astro Prima, Astro Oasis, Astro Vanavil and Astro Tutor TV.'),
-            ('Radio', 'ERA, Sinar, THR Gegar, Zayan, Lite FM, Mix FM, Hitz FM, MY FM, Melody FM, GoXuan and Raaga.'),
-            ('Digital and OTT', 'Awani, Gempak, sooka and the group’s digital publishing footprint.'),
-            ('Talent and on-ground', 'Creator-led formats, celebrity talent and activation teams.'),
-        ],
-    },
-    'rtm': {
-        'title': 'The national public broadcaster',
-        'body': 'Radio Televisyen Malaysia reaches the widest free-to-air audience in the country through TV1, TV2, OKEY, national radio, state radio and RTMKlik. It is the right partner for national service messages, government campaigns and mass-reach brand activity.',
-        'features': [
-            ('Television', 'TV1, TV2 and OKEY across news, entertainment, education and family programming.'),
-            ('National radio', 'Nasional FM, Klasik FM, TraXX FM, Ai FM, Minnal FM and Asyik FM.'),
-            ('State radio', 'Fourteen state stations connecting brands to local audiences.'),
-            ('Digital', 'RTMKlik and the broadcaster’s online news and video extensions.'),
-        ],
-    },
-    'karangkraf': {
-        'title': 'Malaysia’s Malay publishing group',
-        'body': 'Karangkraf connects brands with Malay readers and families through Sinar Harian, SinarPlus, Sinar Bestari, Sinar Daily and the IdeAktif magazine portfolio. Print, digital and social work together as one editorial system.',
-        'features': [
-            ('News', 'Sinar Harian, SinarPlus and Sinar Daily.'),
-            ('Education and family', 'Sinar Bestari and the IdeAktif titles.'),
-            ('Print formats', 'Display, advertorials, classifieds and special packages.'),
-            ('Digital', 'News portals, social publishing and branded content.'),
-        ],
-    },
-    'star-media-group': {
-        'title': 'Publishing and radio across Malaysia',
-        'body': 'Star Media Group brings together The Star, mStar, Suria FM and 988 FM. The group spans English and Malay publishing with Chinese and Malay radio, giving brands a rare mix of news credibility, entertainment and drive-time reach.',
-        'features': [
-            ('Publishing', 'The Star, mStar and the group’s digital news platforms.'),
-            ('Radio', 'Suria FM for Malay families and 988 FM for Chinese audiences.'),
-            ('Digital', 'News, lifestyle and social extensions across the group.'),
-            ('Integrated', 'Cross-platform packages across print, digital and audio.'),
-        ],
-    },
-    'bernama': {
-        'title': 'The national news agency',
-        'body': 'Bernama is Malaysia’s national news agency, with a wire service, Bernama.com, Bernama TV and Bernama Radio. It provides credible news environments for corporate announcements, government messages and brand storytelling.',
-        'features': [
-            ('Wire and portal', 'National news distribution and BERNAMA.com.'),
-            ('Television', 'Bernama TV news, programmes and interviews.'),
-            ('Radio', 'Bernama Radio news, talk and branded segments.'),
-            ('Production', 'Editorial, video, photography and archival services.'),
-        ],
-    },
-    'klia': {
-        'title': 'Airport media at Malaysia’s gateway',
-        'body': 'KLIA reaches international and domestic travellers across Terminal 1, Terminal 2 and the ERL rail network. Static lightboxes, digital screens, wraps, baggage carousels and transit formats put brands in front of a high-value travelling audience.',
-        'features': [
-            ('Terminal 1', 'Arrivals, departures, contact pier and satellite building inventory.'),
-            ('Terminal 2', 'International departures, arrivals and the total coverage network.'),
-            ('ERL', 'KLIA Ekspres station and in-train digital screens.'),
-            ('Formats', 'Static, digital, wraps, carousels and experiential.'),
-        ],
-    },
-    'ktm': {
-        'title': 'Rail and station media',
-        'body': 'KTM and KL Sentral connect brands with commuters across the Klang Valley and northern rail corridors. Station domination, train wraps, platform formats and the KL Sentral East and West wings deliver repeated exposure to a mobile urban audience.',
-        'features': [
-            ('KTM', 'Train and station advertising across the network.'),
-            ('KL Sentral', 'East and West Wing station sponsorship and production.'),
-            ('Formats', 'Wraps, panels, pillars, turnstiles and digital screens.'),
-            ('Audience', 'Daily commuters, transit users and city workers.'),
-        ],
-    },
-    'tvs': {
-        'title': 'Sarawak’s own television station',
-        'body': 'TVS is Sarawak’s free-to-air television station, combining local news, entertainment, culture and sport. It gives brands a credible route into East Malaysian audiences, with additional outdoor inventory in Miri.',
-        'features': [
-            ('Television', 'Local news, entertainment, culture and live coverage.'),
-            ('Sponsorship', 'Programme and spot-buy packages.'),
-            ('Outdoor', 'Miri billboard inventory.'),
-            ('Audience', 'Sarawak and East Malaysian viewers.'),
-        ],
-    },
-    'al-hijrah': {
-        'title': 'Islamic family media',
-        'body': 'TV AlHijrah serves Muslim families with talkshows, magazines, religious programming and digital extensions. It is a trusted environment for values-led brands, Ramadan campaigns and family-focused messages.',
-        'features': [
-            ('Television', 'TV AlHijrah talkshows, magazines and religious programmes.'),
-            ('Digital', 'AlHijrah Plus and social extensions.'),
-            ('Seasonal', 'Ramadan and Syawal packages.'),
-            ('Audience', 'Muslim families and SME audiences.'),
-        ],
-    },
-    'specialist-media': {
-        'title': 'Independent publishers and event partners',
-        'body': 'The specialist roster extends Dunia Media beyond the large groups: BFM for business radio, FMT and Malaysiakini for independent digital news, The Malaysian Reserve and The Edge for business publishing, iMedia for multi-language blitzes and Nusavue for concert-led sponsorship.',
-        'features': [
-            ('Business', 'BFM, The Malaysian Reserve and The Edge.'),
-            ('Independent digital', 'FMT and Malaysiakini.'),
-            ('Multi-language', 'iMedia’s BM, Chinese and English publisher network.'),
-            ('Events', 'Nusavue concert and entertainment partnerships.'),
-        ],
-    },
-    'outdoor-media': {
-        'title': 'Outdoor operator network',
-        'body': 'The outdoor roster brings together specialist operators including Seni Jaya, Novus Media, Harumi Jaya and EDSB Outdoor. Inventory spans large-format billboards, transit, street furniture and digital out-of-home across Malaysia.',
-        'features': [
-            ('Large format', 'Prime billboards and landmark sites.'),
-            ('Transit', 'Roadside, rail and commuter formats.'),
-            ('Digital OOH', 'LED screens and programmatic-ready inventory.'),
-            ('Operator access', 'One brief across multiple outdoor specialists.'),
-        ],
-    },
-    'cinema-ads': {
-        'title': 'Cinema advertising',
-        'body': 'Cinema reaches audiences in a premium, attentive environment. Through GSC and TGV, brands can use big-screen spots, lobby formats and film-linked partnerships for launches, festive campaigns and youth-led releases.',
-        'features': [
-            ('GSC', 'Big-screen and lobby inventory.'),
-            ('TGV', 'Cinema spots and in-cinema formats.'),
-            ('Audience', 'Urban, youth and family moviegoers.'),
-            ('Creative', 'Film-linked and launch-led packages.'),
-        ],
-    },
-}
 
 CHANNELS = {
     'media-prima-tv9': ('Mass-Malay entertainment and news', 'TV9 combines drama, entertainment, news and studio formats for Malay family audiences. It is a strong environment for household brands, FMCG and programme sponsorship.', ['Drama and entertainment', 'News and studio formats', 'Family audiences', 'Sponsorship packages']),
@@ -227,40 +104,6 @@ def write(path, content):
     print('wrote', os.path.relpath(path, ROOT))
 
 
-def owner_view(slug, data):
-    features = '\n'.join(
-        "                        ['title' => '" + title.replace("'", "’") + "', 'body' => '" + body.replace("'", "’") + "'],"
-        for title, body in data['features']
-    )
-    return f"""@extends('layouts.app')
-
-@section('content')
-    @php
-        $ownerStoryBlocks = [
-            [
-                'type' => 'rich_text',
-                'payload' => [
-                    'title' => '{data['title']}',
-                    'body' => '{data['body']}',
-                ],
-            ],
-            [
-                'type' => 'feature_list',
-                'payload' => [
-                    'title' => 'What the group offers',
-                    'items' => [
-{features}
-                    ],
-                ],
-            ],
-        ];
-    @endphp
-
-    @include('pages.owners._shared')
-@endsection
-"""
-
-
 def channel_view(key, data):
     title, body, features = data
     feature_lines = '\n'.join(
@@ -343,16 +186,13 @@ def deck_view(slug, data):
 
 
 def main():
-    for slug, data in OWNERS.items():
-        write(os.path.join(VIEWS, 'owners', f'{slug}.blade.php'), owner_view(slug, data))
-
     for key, data in CHANNELS.items():
         write(os.path.join(VIEWS, 'channels', f'{key}.blade.php'), channel_view(key, data))
 
     for slug, data in DECKS.items():
         write(os.path.join(VIEWS, 'offers', f'{slug}.blade.php'), deck_view(slug, data))
 
-    print(f'Generated {len(OWNERS)} owner, {len(CHANNELS)} channel and {len(DECKS)} deck views.')
+    print(f'Generated {len(CHANNELS)} channel and {len(DECKS)} deck views.')
 
 
 if __name__ == '__main__':

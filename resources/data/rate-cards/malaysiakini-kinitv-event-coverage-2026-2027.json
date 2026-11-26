@@ -86,6 +86,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Total value worth RM50,000.",
+              "source_text": "Bundle Package (Article + Video): RM30,000 (Total Value Worth RM50,000)",
+              "page": 6,
               "is_package": true,
               "sort_order": 0
             },
@@ -97,6 +99,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 article + 3 social posts; homepage announcement 1 day; target >2,000 reads. Value worth RM20,000.",
+              "source_text": "Package Cost (Article): RM12,000 Package Cost (Video): RM25,000 (Value Worth RM20,000) (Value Worth RM30,000)",
+              "page": 6,
               "is_package": true,
               "sort_order": 1
             },
@@ -108,6 +112,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 video + 5 social posts + 1 branded capsule insertion in KiniTV bulletin; target >30,000 views. Value worth RM30,000.",
+              "source_text": "Package Cost (Article): RM12,000 Package Cost (Video): RM25,000 (Value Worth RM20,000) (Value Worth RM30,000)",
+              "page": 6,
               "is_package": true,
               "sort_order": 2
             }

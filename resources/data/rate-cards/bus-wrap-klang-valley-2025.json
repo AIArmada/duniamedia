@@ -74,6 +74,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 buses, 3 months, 1 time production; total rental RM141,100; production RM4,200 per bus; add 8% SST",
+              "source_text": "1 Bus Wrap (single) Klang Valley 4,700 4,200.00 3 10 141,100 42,000.00",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -85,6 +87,8 @@
               "price_basis": "calculated",
               "confidence": "medium",
               "notes": "Calculated from printed rental + production totals; Total rental RM141,100 + production RM42,000 = RM183,100; add 8% SST RM14,640; total payable RM197,740 (as printed)",
+              "source_text": "TOTAL PAYABLE AMOUNT 197,740.00",
+              "page": 14,
               "is_package": true,
               "sort_order": 1
             },
@@ -96,6 +100,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 buses, 1 time production; total production RM42,000",
+              "source_text": "1 Bus Wrap (single) Klang Valley 4,700 4,200.00 3 10 141,100 42,000.00",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             }
@@ -118,6 +124,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15 buses, 6 months, 2 productions (sticker changes every 3 months); total rental RM360,000; production RM8,000 per bus; add 8% SST",
+              "source_text": "Bus Wrap (single) Klang Valley 4,000.00 8,000.00 6 15 360,000.00 120,000.00",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -129,6 +137,8 @@
               "price_basis": "calculated",
               "confidence": "medium",
               "notes": "Calculated from printed rental + production totals; Total rental RM360,000 + production RM120,000 = RM480,000; add 8% SST RM38,400; total payable RM518,400",
+              "source_text": "518,400.00",
+              "page": 15,
               "is_package": true,
               "sort_order": 1
             },
@@ -140,6 +150,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15 buses × RM8,000 = RM120,000 production; sticker changes every 3 months",
+              "source_text": "Bus Wrap (single) Klang Valley 4,000.00 8,000.00 6 15 360,000.00 120,000.00",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             }

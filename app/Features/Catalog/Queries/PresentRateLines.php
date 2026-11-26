@@ -106,12 +106,15 @@ final readonly class PresentRateLines implements PresentsRateLines
             productName: $product->name,
             item: $entry->item,
             unit: $entry->unit,
-            price: $entry->price_rm === null ? null : (float) $entry->price_rm,
+            price: $entry->price_rm !== null
+                ? (float) $entry->price_rm
+                : ($entry->price_incl_sst_rm === null ? null : (float) $entry->price_incl_sst_rm),
             channelName: $channel === null ? null : $channel->name,
             channelMedium: ($channel === null ? null : $channel->medium) ?? $entry->rateSection->medium,
             sectionTitle: $entry->rateSection->title,
             image: $image,
             location: ($product->getRelationValue('mediaProfile')?->location_label),
+            selectable: (bool) $entry->is_plan_selectable,
         );
     }
 }

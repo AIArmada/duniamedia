@@ -1,0 +1,148 @@
+{
+  "astro-upfront-2027": [
+    {
+      "key": "social-360-media-values",
+      "title": "Social 360 — estimated media values",
+      "intro": "Reference media values printed beside the Social 360 packages. They are estimates, not payable media investment.",
+      "medium": "Digital",
+      "channels": ["astro-group"],
+      "items": [
+        {"item": "Social 360 — Tier 1 Social Video media value", "unit": "per package", "price": 91000, "page": 25, "notes": "Est. Media Value for Tier 1 Social Video; payable investment RM16,000 + RM2,000 production.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 1 Social Post media value", "unit": "per package", "price": 71000, "page": 25, "notes": "Est. Media Value for Tier 1 Social Post; payable investment RM15,000.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 Social Video media value", "unit": "per package", "price": 78300, "page": 25, "notes": "Est. Media Value for Tier 2 Social Video; payable investment RM13,000 + RM2,000 production.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 Social Post media value", "unit": "per package", "price": 58300, "page": 25, "notes": "Est. Media Value for Tier 2 Social Post; payable investment RM13,000.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 studio Social Video media value", "unit": "per package", "price": 60300, "page": 25, "notes": "Est. Media Value printed for THINKER STUDIOS / BAMBAM STUDIO and ASTRO BEN DI QUAN.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 studio Social Post media value", "unit": "per package", "price": 40300, "page": 25, "notes": "Est. Media Value printed for THINKER STUDIOS / BAMBAM STUDIO and ASTRO BEN DI QUAN.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 magazine Short Video media value", "unit": "per package", "price": 60400, "page": 25, "notes": "Est. Media Value printed for the PA&MA / KELUARGA / BINTANG KECIL magazine group and RODA PANAS / UMPAN / BORAK SEENI.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 2 magazine Social Post media value", "unit": "per package", "price": 47400, "page": 25, "notes": "Est. Media Value printed for the PA&MA / KELUARGA / BINTANG KECIL magazine group and RODA PANAS / UMPAN / BORAK SEENI.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 sooka Social Video media value", "unit": "per package", "price": 78000, "page": 25, "notes": "Est. Media Value for Tier 3 sooka Social Video.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 sooka Social Post media value", "unit": "per package", "price": 57750, "page": 25, "notes": "Est. Media Value for Tier 3 sooka Social Post.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 XUAN Play Social Video media value", "unit": "per package", "price": 60000, "page": 25, "notes": "Est. Media Value for Tier 3 XUAN Play / Astro Hua Hee Dai Social Video.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 XUAN Play Social Post media value", "unit": "per package", "price": 39750, "page": 25, "notes": "Est. Media Value for Tier 3 XUAN Play / Astro Hua Hee Dai Social Post.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 Astro AEC Social Video media value", "unit": "per package", "price": 42000, "page": 25, "notes": "Est. Media Value for Tier 3 Astro AEC Social Video; printed value.", "is_plan_selectable": false},
+        {"item": "Social 360 — Tier 3 Astro AEC Social Post media value", "unit": "per package", "price": 21750, "page": 25, "notes": "Est. Media Value for Tier 3 Astro AEC Social Post.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "bfm-2026-business-radio": [
+    {
+      "key": "bfm-events",
+      "title": "BFM Events — bespoke event sponsorship",
+      "intro": "BFM Events prints a starting rate for bespoke event sponsorship across Health & Living, Enterprise Breakaway and Executive Insight.",
+      "medium": "Radio",
+      "channels": ["specialist-media-bfm"],
+      "items": [
+        {"item": "BFM bespoke event sponsorship — starting rate", "unit": "per event (from)", "price": 100000, "page": 20, "notes": "Printed as 'BFM's Bespoke Event Sponsorship begins at RM 100,000'. A from-price for a bespoke event; final scope is quoted.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "hot-fm-zoomerz-on-ground": [
+    {
+      "key": "zoomerz-media-value",
+      "title": "Zoomerz Sponsorship — media value summary",
+      "intro": "Printed totals for the on-air and optional digital media value included in the 1-month Zoomerz package.",
+      "medium": "Radio",
+      "channels": ["media-prima-hot-fm"],
+      "items": [
+        {"item": "TOTAL ON AIR MEDIA VALUE", "unit": "per month (package total)", "price": 116480, "page": 4, "notes": "Promo recorded pointers RM62,720 + crosses RM53,760 = RM116,480. Media-value total, not a payable rate.", "is_plan_selectable": false},
+        {"item": "TOTAL DIGITAL MEDIA VALUE", "unit": "per month (package total)", "price": 524000, "page": 4, "notes": "Main Highlights RM32,000 + microsite RM12,000 + Facebook RM240,000 + Instagram RM240,000 = RM524,000. The page also prints TOTAL OVERALL MEDIA VALUE RM640,480, already recorded in the package notes.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "omnia-content-terhangat-2026": [
+    {
+      "key": "advantage-planner-radio",
+      "title": "ADvantage Campaign Planner — radio",
+      "intro": "Radio commercial rates printed in the campaign planner. Station columns were unlabelled in the source table; assignments follow the printed column order.",
+      "medium": "Radio",
+      "channels": ["media-prima-omnia-group"],
+      "items": [
+        {"item": "Hot FM — Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 15800, "page": 13, "notes": "Radio Commercial table, Hot FM column, weekly 35-spot row.", "is_plan_selectable": true},
+        {"item": "Kool FM — Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 4500, "page": 13, "notes": "Radio Commercial table, Kool FM column, weekly 35-spot row.", "is_plan_selectable": true},
+        {"item": "Fly FM — Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 7000, "page": 13, "notes": "Radio Commercial table, Fly FM column, weekly 35-spot row; Eight FM prints the same value.", "is_plan_selectable": true},
+        {"item": "Eight FM — Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 7000, "page": 13, "notes": "Radio Commercial table, Eight FM column, weekly 35-spot row; Fly FM prints the same value.", "is_plan_selectable": true},
+        {"item": "Molek FM — Sunday–Saturday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 3000, "page": 13, "notes": "Radio Commercial table, Sunday–Saturday weekly row; Molek FM column. Station columns were unlabelled in the source table.", "is_plan_selectable": true},
+        {"item": "Hot FM — festive, Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 19000, "page": 13, "notes": "Radio Commercial festive placement row, Hot FM column.", "is_plan_selectable": true},
+        {"item": "Eight FM — festive, Monday–Sunday, 6am–12am, 35 x 30s", "unit": "week (35 x 30s spots)", "price": 8400, "page": 13, "notes": "Radio Commercial festive placement row, Eight FM column.", "is_plan_selectable": true}
+      ]
+    }
+  ],
+  "sinar-karangkraf-ratecard-2025-2026": [
+    {
+      "key": "publication-profile",
+      "title": "Publication profile",
+      "intro": "Printed publication facts for Sinar Harian.",
+      "medium": "Print",
+      "channels": ["karangkraf-sinar-harian"],
+      "items": [
+        {"item": "Sinar Harian cover price", "unit": "per copy", "price": 1.9, "page": 7, "notes": "Printed as 'COVER PRICE SINAR HARIAN / RM 1.90'. Newsstand copy price, not an advertising rate.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "988-fm-2026-radio-digital": [
+    {
+      "key": "premium-loading-examples",
+      "title": "Premium placement loading examples",
+      "intro": "Printed worked examples for premium placement loadings. They are illustrations on the RM1,890 30s spot, not separate products.",
+      "medium": "Radio",
+      "channels": ["star-media-group-988-fm"],
+      "items": [
+        {"item": "Premium placement example — +50% loading", "unit": "example (30s spot at RM1,890)", "price": 2835, "page": 2, "notes": "Printed as RM1,890 x 1.5 = RM2,835.", "is_plan_selectable": false},
+        {"item": "Premium placement example — +100% loading", "unit": "example (30s spot at RM1,890)", "price": 3780, "page": 2, "notes": "Printed as RM1,890 x 2 = RM3,780.", "is_plan_selectable": false},
+        {"item": "Premium placement example — +200%/+250% loading", "unit": "example (30s spot at RM1,890)", "price": 6615, "page": 2, "notes": "Printed as RM1,890 x 3.5 = RM6,615; the +200% arithmetic appears misprinted.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "suria-fm-2026-radio-digital": [
+    {
+      "key": "premium-loading-examples",
+      "title": "Premium placement loading examples",
+      "intro": "Printed worked examples for premium placement loadings. They are illustrations, not separate products.",
+      "medium": "Radio",
+      "channels": ["star-media-group-suria-fm"],
+      "items": [
+        {"item": "Premium placement example — +50% loading", "unit": "example (30s spot at RM820)", "price": 1230, "page": 2, "notes": "Printed as RM820 x 1.5 = RM1,230.", "is_plan_selectable": false},
+        {"item": "Premium placement example — +200% loading", "unit": "example (30s spot at RM560)", "price": 1680, "page": 2, "notes": "Printed as RM560 x 3 = RM1,680.", "is_plan_selectable": false},
+        {"item": "Premium placement example — +250% loading", "unit": "example (30s spot at RM460)", "price": 1610, "page": 2, "notes": "Printed as RM460 x 3.5 = RM1,610.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "wowshop-airtime-2025": [
+    {
+      "key": "investment-entitlement",
+      "title": "Investment entitlement — package inclusion values",
+      "intro": "Printed media values for the package inclusions. The total is a sum of media value, not a payable rate.",
+      "medium": "TV & Broadcast",
+      "channels": ["media-prima-wowshop"],
+      "items": [
+        {"item": "Investment entitlement — total media value", "unit": "per package", "price": 36500, "page": 26, "notes": "Show Host x2 RM5,000 + Studio RM2,000 + Set & Basic Props RM2,500 + Design (CG) RM1,500 + Video Insertion/Production RM10,000 + Social Media Post RM2,500 + EDM Blast RM10,000 + Website Banner RM3,000 = RM36,500.", "is_plan_selectable": false}
+      ]
+    }
+  ],
+  "imedia-blitz-sale-2026": [
+    {
+      "key": "year-end-sale-packages",
+      "title": "Year-End Sale packages",
+      "intro": "Promo-sheet packages: five articles, five social posts or five videos, synced across BM, Chinese and English publishers.",
+      "medium": "Digital",
+      "channels": ["specialist-media-imedia"],
+      "items": [
+        {"item": "5x Article Blitz", "unit": "package", "price": 60000, "page": 1, "notes": "Printed value RM295,000; 60,000 reads and 600,000 reach with FB/IG/X sync.", "is_plan_selectable": true},
+        {"item": "5x Social Blitz", "unit": "package", "price": 50000, "page": 1, "notes": "Printed value RM220,000; 750,000 reach; shoots included.", "is_plan_selectable": true},
+        {"item": "5x Video Blitz", "unit": "package", "price": 75000, "page": 1, "notes": "Printed value RM400,000; 500,000 views; event coverage.", "is_plan_selectable": true}
+      ]
+    }
+  ],
+  "putera-pre-post-2024-reference": [
+    {
+      "key": "reference-quotation",
+      "title": "Reference quotation",
+      "intro": "Example quotation retained as a commercial reference, not a live rate card.",
+      "medium": "Digital",
+      "channels": ["specialist-media-remedy-resources"],
+      "items": [
+        {"item": "Utusan social set — reference quotation", "unit": "reference", "price": 6000, "page": 1, "notes": "Example 6-month TERAJU quotation; do not treat as a current rate.", "is_plan_selectable": false}
+      ]
+    }
+  ]
+}

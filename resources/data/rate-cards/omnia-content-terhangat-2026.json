@@ -92,6 +92,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Afternoon Drama Sponsorship 13x eps 1 260,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 0
             },
@@ -103,6 +105,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Afternoon Movie Sponsorship 8x eps 1 80,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 1
             },
@@ -114,6 +118,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Buletin 1.30 News Coverage (Mon-Thur) 2mins 1 30,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             },
@@ -125,6 +131,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Buletin Pagi News Coverage 2mins 1 10,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 3
             },
@@ -136,6 +144,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Buletin Utama News Coverage + Digital 2mins + YT + FB 1 75,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 4
             },
@@ -147,6 +157,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Cartoon Sponsorship 13x eps 1 105,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 5
             },
@@ -158,6 +170,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Cookery Sponsorship 4x eps 1 40,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 6
             },
@@ -169,6 +183,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Helo Doktor Interview 6mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 7
             },
@@ -180,6 +196,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 MHI Interview 6mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 8
             },
@@ -191,6 +209,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Mbuzz Integration 2mins 1 55,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 9
             },
@@ -202,6 +222,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Melodi (Live + Rpt) Integration 6mins 1 80,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 10
             },
@@ -213,6 +235,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Money Matters / Women Talk Interview 6mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 11
             },
@@ -224,6 +248,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Morning Drama Sponsorship 13x eps 1 130,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 12
             },
@@ -235,6 +261,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Muzik Integration 2mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 13
             },
@@ -246,6 +274,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Night Drama Sponsorship 13x eps 1 350,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 14
             },
@@ -257,6 +287,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Nightline News Coverage 2mins 1 10,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 15
             },
@@ -268,6 +300,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Prime Movie Sponsorship 8x eps 1 160,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 16
             },
@@ -279,6 +313,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 25; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 ROS (Mon - Sun, 9am - 12am) 15sec 25 50,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 17
             },
@@ -290,6 +326,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 Social Post - TikTok, IG & FB (mirrored) 30sec - 60sec 1 20,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 18
             },
@@ -301,6 +339,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV3 WHI Interview 6mins 1 35,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 19
             }
@@ -323,6 +363,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "source_text": "Malaysia Hari Ini Monday-Friday 10.00am-11.00am 6 minutes 125,000 5 1 slot",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -334,6 +376,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "source_text": "Wanita Hari Ini Monday-Friday 12.00pm-1.00pm 6 minutes 380,000 10 1 slot",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             }
@@ -356,6 +400,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 25 spots/week; 150 total spots; RM1,738 per spot; 10 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Bronze 6 25 150 278,000 1,738 10 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 0
             },
@@ -367,6 +413,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 30 spots/week; 360 total spots; RM1,562 per spot; 30 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Gold 12 30 360 609,000 1,562 30 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 1
             },
@@ -378,6 +426,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 40 spots/week; 640 total spots; RM1,384 per spot; 50 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Platinum 16 40 640 955,000 1,384 50 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 2
             },
@@ -389,6 +439,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 25 spots/week; 225 total spots; RM1,673 per spot; 20 bonus spots (event week only); 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Silver 9 25 225 410,000 1,673 20 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 3
             }
@@ -411,6 +463,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "1 39,000 15,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             }
@@ -447,6 +501,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Afternoon Drama Sponsorship 13x eps 1 50,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 0
             },
@@ -458,6 +514,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Afternoon Movie Sponsorship 8x eps 1 40,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 1
             },
@@ -469,6 +527,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Berita TV9 News Coverage 2mins 1 15,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             },
@@ -480,6 +540,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Cartoon Sponsorship 13x eps 1 65,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 3
             },
@@ -491,6 +553,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 2; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 NLKO Interview (Live + Rpt) 6mins 2 15,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 4
             },
@@ -502,6 +566,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Night Drama Sponsorship 13x eps 1 100,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 5
             },
@@ -513,6 +579,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Prime Drama Sponsorship 13x eps 1 120,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 6
             },
@@ -524,6 +592,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Prime Movie Sponsorship 8x eps 1 80,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 7
             },
@@ -535,6 +605,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 25; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 ROS (Mon - Sun, 9am - 12am) 15sec 25 5,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 8
             },
@@ -546,6 +618,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "TV9 Social Post - TikTok, IG & FB (mirrored) 30sec - 60sec 1 15,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 9
             }
@@ -568,6 +642,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 10,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "1 17,000 10,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             }
@@ -604,6 +680,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8 e-News Integration 2mins 1 10,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -615,6 +693,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Afternoon Drama Sponsorship 13x eps 1 130,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 1
             },
@@ -626,6 +706,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Living Delight Interview 6mins 1 15,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             },
@@ -637,6 +719,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Midday Mandarin News Coverage 2mins 1 15,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 3
             },
@@ -648,6 +732,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Money Matters / Shall We Talk Interview 6mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 4
             },
@@ -659,6 +745,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Morning Drama Sponsorship 13x eps 1 65,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 5
             },
@@ -670,6 +758,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Morning Express News Coverage 2mins 1 5,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 6
             },
@@ -681,6 +771,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Night Drama Sponsorship 13x eps 1 130,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 7
             },
@@ -692,6 +784,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Prime Drama Sponsorship 13x eps 1 300,000",
+              "page": 10,
               "is_package": true,
               "sort_order": 8
             },
@@ -703,6 +797,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Prime Mandarin News Coverage 2mins 1 25,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 9
             },
@@ -714,6 +810,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 30; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV ROS (Mon - Sun, 9am - 12am) 15sec 30 20,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 10
             },
@@ -725,6 +823,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 7; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV ROS (Mon - Sun, 9am - 12am) 15sec 30 20,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 11
             },
@@ -736,6 +836,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8TV; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+              "source_text": "8TV Social Post - TikTok, IG & FB (mirrored) 30sec - 60sec 1 20,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 12
             }
@@ -758,6 +860,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 30 spots/week; 180 total spots; RM605 per spot; 10 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Bronze 6 30 180 115,000 605 10 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 0
             },
@@ -769,6 +873,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 35 spots/week; 420 total spots; RM511 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Gold 12 35 420 230,000 511 30 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 1
             },
@@ -780,6 +886,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 45 spots/week; 720 total spots; RM442 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Platinum 16 45 720 340,000 442 50 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 2
             },
@@ -791,6 +899,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 30 spots/week; 270 total spots; RM569 per spot; 20 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Silver 9 30 270 165,000 569 20 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 3
             }
@@ -813,6 +923,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 slots; 1 bonus slot (event week only); excludes 8% SST.",
+              "source_text": "Living Delight Monday-Friday 5.30pm-6.30pm 6 minutes 90,000 5 1 slot",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             }
@@ -835,6 +947,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 coverage; 2-min video coverage + YouTube and Facebook upload; 10,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "1 17,000 10,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             }
@@ -884,6 +998,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3-month campaign; RM20,000 event bonus media value; total ADvantage value RM220,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "source_text": "Campaign Planner 200 3 200,000 20,000 220,000",
+              "page": 2,
               "is_package": true,
               "sort_order": 0
             },
@@ -895,6 +1011,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6-month campaign; RM42,000 event bonus media value; total ADvantage value RM392,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "source_text": "Campaign Planner 350 6 350,000 42,000 392,000",
+              "page": 2,
               "is_package": true,
               "sort_order": 1
             },
@@ -906,6 +1024,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9-month campaign; RM70,000 event bonus media value; total ADvantage value RM570,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "source_text": "Campaign Planner 500 9 500,000 70,000 570,000",
+              "page": 2,
               "is_package": true,
               "sort_order": 2
             },
@@ -917,6 +1037,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12-month campaign; RM160,000 event bonus media value; total ADvantage value RM960,000; prices exclude 8% SST. Same four tiers are repeated per industry vertical and language on pp.3-9 with different entitlements.",
+              "source_text": "Campaign Planner 800 12 800,000 160,000 960,000",
+              "page": 2,
               "is_package": true,
               "sort_order": 3
             }
@@ -939,6 +1061,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "30,000 total reads; network named in item. p.20 shows RM52,500 for the equivalent 2026 package.",
+              "source_text": "Chinese Network Spotlight Article 3 platforms 30,000 reads - 54,500 -",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -950,6 +1074,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "source_text": "English Network Spotlight Article – 3 platforms 35,700 reads - 65,000 -",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -961,6 +1087,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "source_text": "FB & IG Posting – 2 posts (mirrored) 6,000 engagements 8,100",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -972,6 +1100,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "source_text": "FB Posting – 1 post 5,000 engagements 6,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -983,6 +1113,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "source_text": "IG Posting – 1 post 5,000 engagements 6,500",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -994,6 +1126,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "source_text": "Malay Network Spotlight Article 5 platforms 35,700 reads 65,000 -",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -1005,6 +1139,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "35,700 total reads; network named in item. p.20 shows RM63,000 for the equivalent 2026 package.",
+              "source_text": "News Network Spotlight Article – 4 platforms 35,700 reads - 65,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -1016,6 +1152,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Network column cannot be resolved from page text; single rate printed per row. Page sits in the 2024 packages section.",
+              "source_text": "Spotlight Article – 1 article 25,000 reads 31,500",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             }
@@ -1038,6 +1176,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ Bangsar 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -1049,6 +1189,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ Federal Highway 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -1060,6 +1202,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ Jalan Damansara 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -1071,6 +1215,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ Jalan Sultan Ismail 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -1082,6 +1228,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ KL-Seremban 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -1093,6 +1241,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ LDP 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -1104,6 +1254,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ MRR II 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -1115,6 +1267,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 weeks; 2,880 total spots.",
+              "source_text": "CuBig @ Sunway 2 weeks 2,880 8,850",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             }
@@ -1137,6 +1291,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "26 weeks; 25 spots/week; 650 total spots; RM147 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Gold 26 25 650 100,000 147 30 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 0
             },
@@ -1148,6 +1304,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "52 weeks; 40 spots/week; 2080 total spots; RM94 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Platinum 52 40 2,080 200,000 94 50 spots",
+              "page": 14,
               "is_package": true,
               "sort_order": 1
             }
@@ -1170,6 +1328,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "26 weeks; 25 spots/week; 650 total spots; RM147 per spot; 30 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Gold 26 25 650 100,000 147 30 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 0
             },
@@ -1181,6 +1341,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "52 weeks; 40 spots/week; 2080 total spots; RM94 per spot; 50 bonus spots; 15s spots; ROS Mon-Sun 9am-12am; excludes 8% SST.",
+              "source_text": "Platinum 52 40 2,080 200,000 94 50 spots",
+              "page": 15,
               "is_package": true,
               "sort_order": 1
             }
@@ -1203,6 +1365,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "3 weeks; 35 spots/week; 105 total spots; RM420 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Bronze 3 35 105 47,000 420 7 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 0
             },
@@ -1214,6 +1378,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "9 weeks; 49 spots/week; 441 total spots; RM307 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Gold 9 49 441 142,000 307 21 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 1
             },
@@ -1225,6 +1391,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "12 weeks; 56 spots/week; 672 total spots; RM270 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Platinum 12 56 672 189,000 270 28 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 2
             },
@@ -1236,6 +1404,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "6 weeks; 42 spots/week; 252 total spots; RM355 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Silver 6 42 252 94,500 355 14 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 3
             }
@@ -1258,6 +1428,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "3 weeks; 35 spots/week; 105 total spots; RM125 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Bronze 3 35 105 14,000 125 7 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 0
             },
@@ -1269,6 +1441,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "9 weeks; 49 spots/week; 441 total spots; RM91 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Gold 9 49 441 42,000 91 21 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 1
             },
@@ -1280,6 +1454,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "12 weeks; 56 spots/week; 672 total spots; RM80 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Platinum 12 56 672 56,000 80 28 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 2
             },
@@ -1291,6 +1467,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "6 weeks; 42 spots/week; 252 total spots; RM105 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST. Station name appears only as a logo in the source.",
+              "source_text": "Silver 6 42 252 28,000 105 14 spots",
+              "page": 16,
               "is_package": true,
               "sort_order": 3
             }
@@ -1313,6 +1491,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 weeks; 35 spots/week; 105 total spots; RM89 per spot; 7 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "source_text": "Bronze 3 35 105 10,000 89 7 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 0
             },
@@ -1324,6 +1504,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 49 spots/week; 441 total spots; RM65 per spot; 21 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "source_text": "Gold 9 49 441 30,000 65 21 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -1335,6 +1517,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 56 spots/week; 672 total spots; RM57 per spot; 28 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "source_text": "Platinum 12 56 672 40,000 57 28 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 2
             },
@@ -1346,6 +1530,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 42 spots/week; 252 total spots; RM75 per spot; 14 bonus spots; 30s spots; ROS Sun-Sat 6am-12am; excludes 8% SST.",
+              "source_text": "Silver 6 42 252 20,000 75 14 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 3
             }
@@ -1368,6 +1554,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 weeks; 35 spots/week; 105 total spots; RM188 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Bronze 3 35 105 21,000 188 7 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 0
             },
@@ -1379,6 +1567,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 49 spots/week; 441 total spots; RM136 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Gold 9 49 441 63,000 136 21 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -1390,6 +1580,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 56 spots/week; 672 total spots; RM120 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Platinum 12 56 672 84,000 120 28 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 2
             },
@@ -1401,6 +1593,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 42 spots/week; 252 total spots; RM158 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Silver 6 42 252 42,000 158 14 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 3
             }
@@ -1423,6 +1617,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 weeks; 35 spots/week; 105 total spots; RM188 per spot; 7 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Bronze 3 35 105 21,000 188 7 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 0
             },
@@ -1434,6 +1630,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 49 spots/week; 441 total spots; RM136 per spot; 21 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Gold 9 49 441 63,000 136 21 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -1445,6 +1643,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 56 spots/week; 672 total spots; RM120 per spot; 28 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Platinum 12 56 672 84,000 120 28 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 2
             },
@@ -1456,6 +1656,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 42 spots/week; 252 total spots; RM158 per spot; 14 bonus spots; 30s spots; ROS Mon-Sun 6am-12am; excludes 8% SST.",
+              "source_text": "Silver 6 42 252 42,000 158 14 spots",
+              "page": 17,
               "is_package": true,
               "sort_order": 3
             }
@@ -1478,6 +1680,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1489,6 +1693,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1500,6 +1706,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1511,6 +1719,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1522,6 +1732,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1533,6 +1745,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             }
@@ -1555,6 +1769,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1566,6 +1782,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1577,6 +1795,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1588,6 +1808,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1599,6 +1821,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1610,6 +1834,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             }
@@ -1632,6 +1858,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1643,6 +1871,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 weeks; 5,000 engagements per post; 25,000 total engagements; 15,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 5 5,000 25,000 30,000 32,500 15,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1654,6 +1884,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1665,6 +1897,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 5,000 engagements per post; 60,000 total engagements; 35,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Gold 12 5,000 60,000 57,000 63,600 35,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1676,6 +1910,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1687,6 +1923,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 weeks; 5,000 engagements per post; 40,000 total engagements; 25,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 8 5,000 40,000 43,200 47,200 25,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             }
@@ -1709,6 +1947,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Bronze 6 250,000 1,500,000 60,000 62,100 75,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1720,6 +1960,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Bronze 6 250,000 1,500,000 60,000 62,100 75,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1731,6 +1973,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Gold 12 350,000 4,200,000 125,400 132,000 210,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1742,6 +1986,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Gold 12 350,000 4,200,000 125,400 132,000 210,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1753,6 +1999,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Platinum 16 450,000 7,200,000 195,200 207,200 360,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1764,6 +2012,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Platinum 16 450,000 7,200,000 195,200 207,200 360,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             },
@@ -1775,6 +2025,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Silver 9 250,000 2,250,000 81,000 83,700 112,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 6
             },
@@ -1786,6 +2038,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Silver 9 250,000 2,250,000 81,000 83,700 112,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 7
             }
@@ -1808,6 +2062,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Bronze 6 250,000 1,500,000 60,000 62,100 75,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1819,6 +2075,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 250,000 impressions/week; 1,500,000 total impressions; 75,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Bronze 6 250,000 1,500,000 60,000 62,100 75,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1830,6 +2088,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Gold 12 350,000 4,200,000 125,400 132,000 210,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1841,6 +2101,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 350,000 impressions/week; 4,200,000 total impressions; 210,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Gold 12 350,000 4,200,000 125,400 132,000 210,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1852,6 +2114,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Platinum 16 450,000 7,200,000 195,200 207,200 360,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1863,6 +2127,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 450,000 impressions/week; 7,200,000 total impressions; 360,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Platinum 16 450,000 7,200,000 195,200 207,200 360,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             },
@@ -1874,6 +2140,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Silver 9 250,000 2,250,000 81,000 83,700 112,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 6
             },
@@ -1885,6 +2153,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 250,000 impressions/week; 2,250,000 total impressions; 112,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Silver 9 250,000 2,250,000 81,000 83,700 112,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 7
             }
@@ -1907,6 +2177,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 150,000 impressions/week; 900,000 total impressions; 45,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Bronze 6 150,000 900,000 41,400 43,500 45,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 0
             },
@@ -1918,6 +2190,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 weeks; 150,000 impressions/week; 900,000 total impressions; 45,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Bronze 6 150,000 900,000 41,400 43,500 45,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 1
             },
@@ -1929,6 +2203,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 200,000 impressions/week; 2,400,000 total impressions; 120,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Gold 12 200,000 2,400,000 85,800 89,400 120,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 2
             },
@@ -1940,6 +2216,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 weeks; 200,000 impressions/week; 2,400,000 total impressions; 120,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Gold 12 200,000 2,400,000 85,800 89,400 120,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 3
             },
@@ -1951,6 +2229,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 250,000 impressions/week; 4,000,000 total impressions; 200,000 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Platinum 16 250,000 4,000,000 120,800 129,600 200,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 4
             },
@@ -1962,6 +2242,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "16 weeks; 250,000 impressions/week; 4,000,000 total impressions; 200,000 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Platinum 16 250,000 4,000,000 120,800 129,600 200,000",
+              "page": 18,
               "is_package": true,
               "sort_order": 5
             },
@@ -1973,6 +2255,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 150,000 impressions/week; 1,350,000 total impressions; 67,500 event bonus impressions (event week only); MREC banner investment; excludes 8% SST.",
+              "source_text": "Silver 9 150,000 1,350,000 54,000 56,700 67,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 6
             },
@@ -1984,6 +2268,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9 weeks; 150,000 impressions/week; 1,350,000 total impressions; 67,500 event bonus impressions (event week only); outstream video investment; excludes 8% SST.",
+              "source_text": "Silver 9 150,000 1,350,000 54,000 56,700 67,500",
+              "page": 18,
               "is_package": true,
               "sort_order": 7
             }
@@ -2006,6 +2292,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "source_text": "Bronze 30,000 40,500 20,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             },
@@ -2017,6 +2305,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "source_text": "Gold 72,000 78,000 40,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 1
             },
@@ -2028,6 +2318,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "source_text": "Silver 48,000 58,000 30,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 2
             }
@@ -2050,6 +2342,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "source_text": "Bronze 30,000 40,500 20,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             },
@@ -2061,6 +2355,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "source_text": "Gold 72,000 78,000 40,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 1
             },
@@ -2072,6 +2368,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "source_text": "Silver 48,000 58,000 30,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 2
             }
@@ -2094,6 +2392,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 FB posts + 5 mirrored IG posts; 3,000 engagements per post; 30,000 total engagements; 20,000 event bonus impressions;",
+              "source_text": "Bronze 30,000 40,500 20,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             },
@@ -2105,6 +2405,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12 FB posts + 12 mirrored IG posts; 3,000 engagements per post; 72,000 total engagements; 40,000 event bonus impressions;",
+              "source_text": "Gold 72,000 78,000 40,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 1
             },
@@ -2116,6 +2418,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 FB posts + 8 mirrored IG posts; 3,000 engagements per post; 48,000 total engagements; 30,000 event bonus impressions;",
+              "source_text": "Silver 48,000 58,000 30,000",
+              "page": 19,
               "is_package": true,
               "sort_order": 2
             }
@@ -2138,6 +2442,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 article; 25,000 reads per article; 20,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Bronze 1 25,000 31,500 20,000",
+              "page": 20,
               "is_package": true,
               "sort_order": 0
             },
@@ -2149,6 +2455,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "4 articles; 25,000 reads per article; event bonus impressions not shown on page; excludes 8% SST.",
+              "source_text": "Gold 4 25,000 100,000 70,000",
+              "page": 20,
               "is_package": true,
               "sort_order": 1
             },
@@ -2160,6 +2468,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 articles; 25,000 reads per article; 120,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Platinum 8 25,000 200,000 176,000 120,000",
+              "page": 20,
               "is_package": true,
               "sort_order": 2
             },
@@ -2171,6 +2481,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 articles; 25,000 reads per article; 40,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Silver 2 25,000 50,000 56,500 40,000",
+              "page": 20,
               "is_package": true,
               "sort_order": 3
             }
@@ -2193,6 +2505,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 article; 30,000 total reads; 40,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Tantannews 10,000 30,000 52,500 40,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -2204,6 +2518,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 article; 35,700 total reads; 45,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "Mashable 7,140 35,700 63,000 45,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 1
             },
@@ -2215,6 +2531,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 article; 35,700 total reads; 40,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "SirapLimau 6,300 35,700 63,000 40,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 2
             },
@@ -2226,6 +2544,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 article; 35,700 total reads; 45,000 event bonus impressions; excludes 8% SST.",
+              "source_text": "35,700 63,000 45,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             }
@@ -2248,6 +2568,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; Free Standing @ Main Market Centre; 10ft x 40ft; 5 units; excludes 8% SST.",
+              "source_text": "Bronze 3 Free Standing @ Main Market Centre 10ft X 40ft 5 42,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 0
             },
@@ -2259,6 +2581,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; Overhead Panel; Various; 5 units; excludes 8% SST.",
+              "source_text": "Gold 3 Overhead Panel Various 5 108,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 1
             },
@@ -2270,6 +2594,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; Mini Pole; 30ft X 20ft; 5 units; excludes 8% SST.",
+              "source_text": "Silver 3 Mini Pole 30ft X 20ft 5 84,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 2
             }
@@ -2292,6 +2618,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; Vertical Lightboxes @ Transit and Mall; 6ft x 4ft; 20 units; excludes 8% SST.",
+              "source_text": "Bronze 3 Vertical Lightboxes @ Transit and Mall 6ft x 4ft 20 45,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 0
             },
@@ -2303,6 +2631,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; KLCC Convex Crossing (Vertical Lightboxes @ KLM Stations); 6ft x 4ft; 8 units; excludes 8% SST.",
+              "source_text": "Gold 3 8 110,000 (Vertical Lightboxes @ KLM Stations) 6ft x 4ft",
+              "page": 21,
               "is_package": true,
               "sort_order": 1
             },
@@ -2314,6 +2644,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 months; In-train Panel - KJ; Various; 240 units; excludes 8% SST. 24 units x 10 Kelana Jaya Line trains.",
+              "source_text": "Silver 3 In-train Panel – KJ Various 240 84,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 2
             }
@@ -2336,6 +2668,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 month(s); 180 spots/day; 16,200 total spots; 96 event bonus spots; excludes 8% SST.",
+              "source_text": "Bronze 1 Digital @ KLCC Parking 180 16,200 96 spots 42,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 0
             },
@@ -2347,6 +2681,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 month(s); 192 spots/day; 46,080 total spots; 192 event bonus spots; excludes 8% SST.",
+              "source_text": "Gold 1 46,080 192 spots 155,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 1
             },
@@ -2358,6 +2694,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3 month(s); 192 spots/day; 138,240 total spots; 288 event bonus spots; excludes 8% SST.",
+              "source_text": "Platinum 3 138,240 288 spots 292,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 2
             },
@@ -2369,6 +2707,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 month(s); 192 spots/day; 23,040 total spots; 96 event bonus spots; excludes 8% SST.",
+              "source_text": "Silver I CuBig @ Federal Highway 192 1 23,040 96 spots 69,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 3
             },
@@ -2380,6 +2720,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1 month(s); 192 spots/day; 23,040 total spots; 96 event bonus spots; excludes 8% SST.",
+              "source_text": "Silver II 1 23,040 96 spots 69,000",
+              "page": 21,
               "is_package": true,
               "sort_order": 4
             }
@@ -2402,6 +2744,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Advertorial (Full Page) - 12,000 - 15,000 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 0
             },
@@ -2413,6 +2757,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Advertorial (Full Page) - 12,000 - 15,000 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 1
             },
@@ -2424,6 +2770,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Advertorial (Full Page) - 12,000 - 15,000 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 2
             },
@@ -2435,6 +2783,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Creative Single Page - 10,400 - 12,800 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 3
             },
@@ -2446,6 +2796,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Creative Single Page - 10,400 - 12,800 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 4
             },
@@ -2457,6 +2809,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Creative Single Page - 10,400 - 12,800 - 20,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 5
             },
@@ -2468,6 +2822,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 6
             },
@@ -2479,6 +2835,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 7
             },
@@ -2490,6 +2848,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 8
             },
@@ -2501,6 +2861,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 9
             },
@@ -2512,6 +2874,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 10
             },
@@ -2523,6 +2887,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Page 5,200 8,000 6,400 9,600 10,000 16,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 11
             },
@@ -2534,6 +2900,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Wrap - 150,000 - 200,000 - 250,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 12
             },
@@ -2545,6 +2913,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Wrap - 150,000 - 200,000 - 250,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 13
             },
@@ -2556,6 +2926,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Full Wrap - 150,000 - 200,000 - 250,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 14
             },
@@ -2567,6 +2939,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 15
             },
@@ -2578,6 +2952,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 16
             },
@@ -2589,6 +2965,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 17
             },
@@ -2600,6 +2978,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 18
             },
@@ -2611,6 +2991,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 19
             },
@@ -2622,6 +3004,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Page 2,600 4,000 3,200 4,800 5,000 8,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 20
             },
@@ -2633,6 +3017,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Wrap - 100,000 - 120,000 - 150,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 21
             },
@@ -2644,6 +3030,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Wrap - 100,000 - 120,000 - 150,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 22
             },
@@ -2655,6 +3043,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Half Wrap - 100,000 - 120,000 - 150,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 23
             },
@@ -2666,6 +3056,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 24
             },
@@ -2677,6 +3069,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 25
             },
@@ -2688,6 +3082,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 26
             },
@@ -2699,6 +3095,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 27
             },
@@ -2710,6 +3108,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 28
             },
@@ -2721,6 +3121,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "ROP placement except Half Wraps and Full Wraps; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Quarter Page 1,300 2,000 1,600 2,400 2,500 4,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 29
             }
@@ -2743,6 +3145,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM2,500 added value; RM55,000 total value; RM5,000 event bonus; RM60,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Bronze 52,500 2,500 55,000 5,000 60,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 0
             },
@@ -2754,6 +3158,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM17,500 added value; RM385,000 total value; RM100,000 event bonus; RM485,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Diamond 367,500 17,500 385,000 100,000 485,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 1
             },
@@ -2765,6 +3171,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM7,500 added value; RM165,000 total value; RM25,000 event bonus; RM190,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Gold 157,500 7,500 165,000 25,000 190,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 2
             },
@@ -2776,6 +3184,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM10,000 added value; RM220,000 total value; RM50,000 event bonus; RM270,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Platinum 210,000 10,000 220,000 50,000 270,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 3
             },
@@ -2787,6 +3197,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM5,000 added value; RM110,000 total value; RM12,500 event bonus; RM122,500 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Silver 105,000 5,000 110,000 12,500 122,500",
+              "page": 22,
               "is_package": true,
               "sort_order": 4
             },
@@ -2798,6 +3210,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "RM1,500 added value; RM31,500 total value; RM2,500 event bonus; RM34,000 total ADvantage value; prices exclude 6% SST (page also carries a conflicting 'exclude 8% SST' line).",
+              "source_text": "Starter 30,000 1,500 31,500 2,500 34,000",
+              "page": 22,
               "is_package": true,
               "sort_order": 5
             }
@@ -2825,6 +3239,8 @@
           "price_basis": "printed",
           "confidence": "high",
           "notes": "TV3 + TV9; frequency / slot count 1; media investment excludes 8% SST per campaign T&C (p.11).",
+          "source_text": "TV3 + TV9 Tanyalah Ustaz Interview 6mins 1 25,000",
+          "page": 10,
           "is_package": false,
           "sort_order": 0
         }

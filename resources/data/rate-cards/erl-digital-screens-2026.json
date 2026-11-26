@@ -77,6 +77,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "190 screens / 16 trains (26\" & 27\"); 15s per spot; maximum 8 advertisers; KLIA Ekspres & KLIA Transit trains; 8% SST applies (inclusive price not printed).",
+              "source_text": "RM 30,000 PER SPOT",
+              "page": 6,
               "is_package": false,
               "sort_order": 0
             }
@@ -99,6 +101,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "65\" digital totem, 32 units: KL Sentral 18, Putrajaya/Cyberjaya 4, KLIA T1 6, KLIA T2 4; 15 sec per spot; max 8 advertisers; monthly display charge per spot; 8% SST payable by advertiser",
+              "source_text": "RM 35,000 PER SPOT",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             }

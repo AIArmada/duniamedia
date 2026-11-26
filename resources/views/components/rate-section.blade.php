@@ -25,6 +25,9 @@
             @if ($section['is_media_value'])
                 <p>Reference media value only — not a payable rate or purchasable placement.</p>
             @endif
+            @if (! empty($section['is_group_fallback']))
+                <p>Group package — confirm applicability to this channel with our team.</p>
+            @endif
             @if (! empty($section['intro']))
                 <p>{{ $section['intro'] }}</p>
             @endif
@@ -61,13 +64,15 @@
                                         @if (! empty($cell['unit']))
                                             <small>{{ $cell['unit'] }}</small>
                                         @endif
-                                        @if ($compact && $cell['price_incl_sst'] !== null)
+                                        @if (! empty($cell['price_is_inclusive']))
+                                            <small>Inclusive of SST</small>
+                                        @elseif ($compact && $cell['price_incl_sst'] !== null && $cell['price_incl_sst'] !== $cell['price'])
                                             <small>{{ $money($cell['price_incl_sst']) }} incl. SST</small>
                                         @endif
                                         @if ($compact && ! empty($cell['notes']))
                                             <details class="channel-rate-note"><summary>Rate notes</summary><small>{{ $cell['notes'] }}</small></details>
                                         @endif
-                                        @if (! $section['is_media_value'] && $cell['price'] > 0)
+                                        @if (! $section['is_media_value'] && $cell['price'] > 0 && ($cell['selectable'] ?? true))
                                             <form method="POST" action="{{ route('plans.rate.add', $cell['id']) }}" class="rate-matrix__add">
                                                 @csrf
                                                 <button type="submit" aria-label="Add {{ $cell['item'] }} to plan">+ Plan</button>
@@ -95,6 +100,9 @@
                             @if (! empty($entry['is_package']))
                                 <span class="rate-line__badge">Package</span>
                             @endif
+                            @if (! ($entry['selectable'] ?? true))
+                                <span class="rate-line__badge rate-line__badge--info">Component</span>
+                            @endif
                         </div>
                         <span class="rate-line__meta">
                             {{ $entry['unit'] ?: 'Per placement' }}
@@ -108,13 +116,15 @@
                     </div>
                     <div class="rate-line__price">
                         <strong>{{ $money($entry['price']) }}</strong>
-                        @if ($entry['price'] !== null && ! empty($entry['price_incl_sst']))
+                        @if (! empty($entry['price_is_inclusive']))
+                            <small>Inclusive of SST</small>
+                        @elseif ($entry['price'] !== null && ! empty($entry['price_incl_sst']) && $entry['price_incl_sst'] !== $entry['price'])
                             <small>{{ $money($entry['price_incl_sst']) }} incl. SST</small>
                         @endif
                         @if ($entry['price'] === null)
                             <small>Confirmed on request</small>
                         @endif
-                        @if (! $section['is_media_value'] && $entry['price'] !== null && $entry['price'] > 0)
+                        @if (! $section['is_media_value'] && $entry['price'] !== null && $entry['price'] > 0 && ($entry['selectable'] ?? true))
                             <form method="POST" action="{{ route('plans.rate.add', $entry['id']) }}" class="rate-line__action">
                                 @csrf
                                 <button type="submit" class="rate-add">Add to plan</button>

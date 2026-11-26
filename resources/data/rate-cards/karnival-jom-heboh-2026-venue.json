@@ -92,6 +92,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Booth ARABIAN 20ft x 60ft; price printed as '300K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "GOLD 450K ARABIAN 20ft x 60ft * with SILVER 300K",
+              "page": 8,
               "is_package": true,
               "sort_order": 0
             },
@@ -103,6 +105,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Booth ARABIAN 20ft x 40ft & 20ft x 20ft; price printed as '30K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "GROUND Package & Sarawak. ARABIAN 20ft x 40ft & 20ft x 20ft 30K",
+              "page": 8,
               "is_package": true,
               "sort_order": 1
             },
@@ -114,6 +118,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Booth ARABIAN 10ft x 10ft; price printed as '8K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "LONGHOUSE CORNER 8K ARABIAN 10ft x 10ft",
+              "page": 8,
               "is_package": true,
               "sort_order": 2
             },
@@ -125,6 +131,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Booth ARABIAN 10ft x 10ft; price printed as '5K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "LONGHOUSE INTERMEDIATE 5K ARABIAN 10ft x 10ft",
+              "page": 8,
               "is_package": true,
               "sort_order": 3
             },
@@ -136,6 +144,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Booth ARABIAN 20ft x 60ft; price printed as '450K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "PLATINUM 800K ARABIAN 20ft x 80ft GOLD 450K",
+              "page": 8,
               "is_package": true,
               "sort_order": 4
             },
@@ -147,6 +157,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Booth ARABIAN 20ft x 40ft & 20ft x 20ft; price printed as '50K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "90K PREMIUM & ARABIAN 20ft x 40ft & 20ft x 20ft 50K",
+              "page": 8,
               "is_package": true,
               "sort_order": 5
             },
@@ -158,6 +170,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Booth ARABIAN 20ft x 60ft; price printed as '90K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "SILVER 300K Media ARABIAN 20ft x 60ft benefits 90K",
+              "page": 8,
               "is_package": true,
               "sort_order": 6
             },
@@ -169,6 +183,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Booth ARABIAN 20ft x 80ft; price printed as '800K'. Tier-price pairing inferred from reading order (tier labels, prices and booth sizes are interleaved in the extracted text). 50% loading charge applies for Sabah and Sarawak.",
+              "source_text": "TITLE SPONSOR PLATINUM 800K ARABIAN 20ft x 80ft",
+              "page": 8,
               "is_package": true,
               "sort_order": 7
             }

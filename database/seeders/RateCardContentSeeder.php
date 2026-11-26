@@ -38,6 +38,10 @@ class RateCardContentSeeder extends Seeder
         $blocks = app(WriteRateCardBlocks::class);
 
         $counts = ['decks' => 0, 'channels' => 0, 'sections' => 0, 'entries' => 0, 'assets' => 0, 'skipped' => 0];
+        $supplementPath = resource_path('data/rate-card-supplements.json');
+        $supplements = is_file($supplementPath)
+            ? (json_decode((string) file_get_contents($supplementPath), true) ?: [])
+            : [];
 
         foreach ($files as $file) {
             $data = json_decode((string) file_get_contents($file), true);
@@ -45,6 +49,8 @@ class RateCardContentSeeder extends Seeder
             if (! is_array($data) || empty($data['slug'])) {
                 throw new RuntimeException("Invalid rate-card content file: {$file}");
             }
+
+            $data = $this->mergeSupplements($data, $supplements[$data['slug']] ?? []);
 
             $product = Product::query()->where('slug', $data['slug'])->first();
 
@@ -223,6 +229,51 @@ class RateCardContentSeeder extends Seeder
     }
 
     /**
+     * @param  array<string, mixed>  $data
+     * @param  list<array<string, mixed>>  $supplements
+     * @return array<string, mixed>
+     */
+    private function mergeSupplements(array $data, array $supplements): array
+    {
+        if ($supplements === []) {
+            return $data;
+        }
+
+        $map = [];
+
+        foreach ($data['shared_sections'] ?? [] as &$section) {
+            $map[$section['key']] = &$section;
+        }
+        unset($section);
+
+        foreach ($data['channels'] as &$channel) {
+            foreach ($channel['sections'] ?? [] as &$section) {
+                $map[$section['key']] = &$section;
+            }
+            unset($section);
+        }
+        unset($channel);
+
+        foreach ($supplements as $supplement) {
+            $key = (string) ($supplement['key'] ?? '');
+
+            if ($key === '') {
+                continue;
+            }
+
+            if (isset($map[$key])) {
+                $map[$key]['items'] = array_merge($map[$key]['items'] ?? [], $supplement['items'] ?? []);
+
+                continue;
+            }
+
+            $data['shared_sections'][] = $supplement;
+        }
+
+        return $data;
+    }
+
+    /**
      * @param  array<string, mixed>  $item
      * @param  array<string, mixed>  $data
      * @return array<string, mixed>
@@ -248,6 +299,7 @@ class RateCardContentSeeder extends Seeder
             'notes' => $item['notes'] ?? null,
             'source_text' => $item['source_text'] ?? null,
             'is_package' => (bool) ($item['is_package'] ?? false),
+            'is_plan_selectable' => (bool) ($item['is_plan_selectable'] ?? true),
             'validity' => $item['validity'] ?? ($data['validity'] ?? null),
             'terms' => $item['terms'] ?? null,
             'sort_order' => $item['sort_order'] ?? $index,

@@ -95,6 +95,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "source_text": "RM 3,000 RM 2,000 RM 1,600 RM 2,300 RM 1,300",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             },
@@ -106,6 +108,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per 30s rotational spot; 8% service tax additional",
+              "source_text": "RM 1,000 RM 600 RM 520 RM 770 RM 400",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             },
@@ -117,6 +121,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Price appears as a stray 'RM 120' line above the spot row; daypart inferred; 8% service tax additional",
+              "source_text": "RM 120",
+              "page": 5,
               "is_package": false,
               "sort_order": 2
             },
@@ -128,6 +134,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "source_text": "RM 3,000 RM 2,000 RM 1,600 RM 2,300 RM 1,300",
+              "page": 5,
               "is_package": false,
               "sort_order": 3
             },
@@ -139,6 +147,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per 30s rotational spot; 8% service tax additional",
+              "source_text": "RM 1,000 RM 600 RM 520 RM 770 RM 400",
+              "page": 5,
               "is_package": false,
               "sort_order": 4
             },
@@ -150,6 +160,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "source_text": "RM 3,000 RM 2,000 RM 1,600 RM 2,300 RM 1,300",
+              "page": 5,
               "is_package": false,
               "sort_order": 5
             },
@@ -161,6 +173,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per 30s rotational spot; 8% service tax additional",
+              "source_text": "RM 1,000 RM 600 RM 520 RM 770 RM 400",
+              "page": 5,
               "is_package": false,
               "sort_order": 6
             },
@@ -172,6 +186,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "source_text": "RM 3,000 RM 2,000 RM 1,600 RM 2,300 RM 1,300",
+              "page": 5,
               "is_package": false,
               "sort_order": 7
             },
@@ -183,6 +199,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Per 30s rotational spot; 8% service tax additional",
+              "source_text": "RM 1,000 RM 600 RM 520 RM 770 RM 400",
+              "page": 5,
               "is_package": false,
               "sort_order": 8
             },
@@ -194,6 +212,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Max 1 live read per hour per advertiser; max 2 live reads per time belt; 8% service tax additional",
+              "source_text": "RM 3,000 RM 2,000 RM 1,600 RM 2,300 RM 1,300",
+              "page": 5,
               "is_package": false,
               "sort_order": 9
             },
@@ -205,6 +225,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Per 30s rotational spot; 8% service tax additional",
+              "source_text": "RM 1,000 RM 600 RM 520 RM 770 RM 400",
+              "page": 5,
               "is_package": false,
               "sort_order": 10
             }
@@ -227,6 +249,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "30 spots over 5 consecutive days across all time belts; media value RM19,740; per week; 8% service tax additional",
+              "source_text": "RM 15,000 RM 14,350 RM 6,400",
+              "page": 7,
               "is_package": true,
               "sort_order": 0
             },
@@ -238,6 +262,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "35 spots over 7 consecutive days across all time belts; media value RM23,030; per week; 8% service tax additional",
+              "source_text": "RM 15,000 RM 14,350 RM 6,400",
+              "page": 7,
               "is_package": true,
               "sort_order": 1
             },
@@ -249,6 +275,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "20 spots per week over 4 consecutive days across all time belts; media value RM13,160; per week; 8% service tax additional",
+              "source_text": "RM 15,000 RM 14,350 RM 6,400",
+              "page": 7,
               "is_package": true,
               "sort_order": 2
             }
@@ -271,6 +299,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "60 spots (6 weekday + 4 weekend per time belt); media value RM34,100; savings 44%; 8% service tax additional",
+              "source_text": "1 Week 60 RM 34,100 RM 19,000",
+              "page": 8,
               "is_package": true,
               "sort_order": 0
             },
@@ -282,6 +312,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "240 spots; media value RM136,400; savings 58%; 8% service tax additional",
+              "source_text": "4 Weeks 240 RM 136,400 RM 57,000 58%",
+              "page": 8,
               "is_package": true,
               "sort_order": 1
             },
@@ -293,6 +325,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "420 spots; media value RM238,700; savings 60%; 8% service tax additional",
+              "source_text": "7 Weeks 420 RM 238,700 RM 95,000 60%",
+              "page": 8,
               "is_package": true,
               "sort_order": 2
             }
@@ -315,6 +349,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2-minute edumercial: 1 min 40 sec interview + 20 sec opening/closing; 70 x 30s spots over 14 days; 7 web & app banners for 2 weeks; includes one-time recording, 1 script, 1 VO talent, podcast write-up and image design; total media value RM90,960; savings 50%; 8% service tax additional",
+              "source_text": "RM 45,950",
+              "page": 9,
               "is_package": true,
               "sort_order": 0
             }
@@ -337,6 +373,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "7 placements; per 2 weeks; 8% service tax additional",
+              "source_text": "RM 10,000",
+              "page": 14,
               "is_package": true,
               "sort_order": 0
             },
@@ -348,6 +386,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "17 placements; per week; 8% service tax additional",
+              "source_text": "RM 38,800",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             }
@@ -370,6 +410,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "30s pre-roll mention; price shown on page 24; 8% service tax additional",
+              "source_text": "RM 5,000",
+              "page": 24,
               "is_package": true,
               "sort_order": 0
             },
@@ -381,6 +423,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-3 mins branded content in Q&A manner, repostable on client channels; 8% service tax additional",
+              "source_text": "RM 7,000",
+              "page": 24,
               "is_package": true,
               "sort_order": 1
             },
@@ -392,6 +436,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 mins founder and business stories dedicated to the client; 8% service tax additional",
+              "source_text": "RM 25,000",
+              "page": 24,
               "is_package": true,
               "sort_order": 2
             },
@@ -403,6 +449,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "30 mins high-impact exposure and corporate profiling; 8% service tax additional",
+              "source_text": "RM 20,000",
+              "page": 24,
               "is_package": true,
               "sort_order": 3
             }
@@ -425,6 +473,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Title sponsor: 5 Caijin episodes (in-studio/voxpop/custom), exclusive on-ground event shoutout, commercial airtime on BFM Radio, podcast uploads and 1-2 reels per episode; 8% service tax additional",
+              "source_text": "Media Investment: RM 180,000 + SST",
+              "page": 25,
               "is_package": true,
               "sort_order": 0
             }

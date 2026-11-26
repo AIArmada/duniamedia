@@ -98,6 +98,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED (x2); 10s spot; max 4 + 1 advertisers; Monthly; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 120,000",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             }
@@ -120,6 +122,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED (x1), 14 ft (H) x 50 ft (W); 10s spot; max 4 advertisers; Monthly; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 100,000",
+              "page": 6,
               "is_package": false,
               "sort_order": 0
             }
@@ -142,6 +146,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Portrait (x11) & landscape (x28), 75\" & 45\"; 10s spot; max 3 advertisers; Monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 100,000 PER SPOT",
+              "page": 8,
               "is_package": false,
               "sort_order": 0
             }
@@ -164,6 +170,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED (x8); 10s spot; max 3 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 75,000 PER SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             }
@@ -186,6 +194,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED (x4), 9.5 ft (H) x 27 ft (W) / 13 ft (H) x 27 ft (W); 10s spot; max 4 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 120,000 CHARGE",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             }
@@ -208,6 +218,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Portrait (x8) & landscape (x3), 75\" LCD & 20 ft (W) x 5 ft (H); 10s spot; max 3 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 150,000 CHARGE",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             }
@@ -230,6 +242,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Portrait (x26), 75\"; 10s spot; max 8 advertisers; Monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 60,000 CHARGE PER SPOT",
+              "page": 24,
               "is_package": false,
               "sort_order": 0
             }
@@ -252,6 +266,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED, 4.2 m (H) x 96 m (W); 30s spot; max 4 advertisers; Monthly; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 120,000",
+              "page": 29,
               "is_package": false,
               "sort_order": 0
             },
@@ -263,6 +279,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Terminal T2; digital LED approx. 14 ft (H) x 91 ft (W); 30s spot; max 4 advertisers; page labels the charge 'ANNUAL/MONTHLY DISPLAY CHARGE' so period is ambiguous; 8% SST additional",
+              "source_text": "ANNUAL/MONTHLY RM 80,000 DISPLAY CHARGE",
+              "page": 59,
               "is_package": false,
               "sort_order": 1
             }
@@ -285,6 +303,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; 180 portrait screens / 90 charging poles (55\"); 15s spot; max 12 advertisers; 8% SST additional",
+              "source_text": "SPONSORSHIP CHARGE PER RM 950,000 ANNUM",
+              "page": 32,
               "is_package": false,
               "sort_order": 0
             },
@@ -296,6 +316,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; estimated; additional production cost may apply subject to final creative; 8% SST additional",
+              "source_text": "EST. PRODUCTION COST RM 50,000",
+              "page": 32,
               "is_package": false,
               "sort_order": 1
             },
@@ -307,6 +329,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; 180 portrait screens (55\"); 15s spot; max 12 advertisers; monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 30,000 CHARGE PER SPOT",
+              "page": 33,
               "is_package": false,
               "sort_order": 2
             }
@@ -329,6 +353,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LED (x3 double sided), 5.2 ft (H) x 9.2 ft (W); 10s spot; max 4 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 60,000 CHARGE PER SPOT",
+              "page": 36,
               "is_package": false,
               "sort_order": 0
             }
@@ -351,6 +377,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T1; Digital LCD landscape (x24), 75\"; 15s spot; max 12 advertisers; Monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 41,000 CHARGE PER SPOT",
+              "page": 40,
               "is_package": false,
               "sort_order": 0
             },
@@ -362,6 +390,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T2; Digital LCD landscape (x20), 75\"; 15s spot; max 12 advertisers; Monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY CHARGE RM 32,800 PER SPOT",
+              "page": 46,
               "is_package": false,
               "sort_order": 1
             },
@@ -373,6 +403,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF TBA; Stickers (x1); dimensions TBA; Excludes 8% SST; minimum three (3) months term",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 400,000",
+              "page": 9,
               "is_package": false,
               "sort_order": 2
             },
@@ -384,6 +416,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF TBA; Excludes 8% SST; minimum three (3) months term",
+              "source_text": "PRODUCTION CHARGE RM 35,200",
+              "page": 9,
               "is_package": false,
               "sort_order": 3
             }
@@ -406,6 +440,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T2; LED digital, 45.5 x 15 ft (1 unit) + 5 x 4 ft (16 units); 15s spot; max 8 advertisers; Monthly per spot; industry exclusivity; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 60,500 CHARGE PER SPOT",
+              "page": 50,
               "is_package": false,
               "sort_order": 0
             }
@@ -428,6 +464,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Terminal T2; Digital LCD portrait (x67), 55\"; 10s spot; max 6 advertisers; Monthly per spot; 8% SST additional",
+              "source_text": "MONTHLY DISPLAY RM 30,000 CHARGE PER SPOT",
+              "page": 55,
               "is_package": false,
               "sort_order": 0
             }
@@ -450,6 +488,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-04 / K2-APC-05; Lightbox (x2); dimensions 10 ft (H) x 42 ft (W) each; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 900,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -461,6 +501,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-04 / K2-APC-05; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 32,000",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -472,6 +514,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-04 / K2-APC-05; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 40,800",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             }
@@ -494,6 +538,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape lightbox x2 + vertical 4-sided x2; landscape 10 ft (H) x 42 ft (W) each, vertical 10 ft (H) x 4 ft (W) each; excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 1,000,000",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             },
@@ -505,6 +551,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape format; excludes 8% SST",
+              "source_text": "Perfect format for long-term brand awareness campaigns LANDSCAPE: RM32,000",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             },
@@ -516,6 +564,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; vertical 4-sided format; excludes 8% SST",
+              "source_text": "VERTICAL: RM 14,400",
+              "page": 5,
               "is_package": false,
               "sort_order": 2
             },
@@ -527,6 +577,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; landscape format; excludes 8% SST",
+              "source_text": "360 degrees visibility LANDSCAPE: RM 40,800",
+              "page": 5,
               "is_package": false,
               "sort_order": 3
             },
@@ -538,6 +590,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-APC-02 / K2-APC-03 / K2-APC-04 & K2-APC-05; vertical 4-sided format; excludes 8% SST",
+              "source_text": "VERTICAL: RM 11,400",
+              "page": 5,
               "is_package": false,
               "sort_order": 4
             }
@@ -560,6 +614,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-07 / K2-SBA-08; Wall mural sticker (x2); dimensions 24 ft (H) x 46 ft (W) each; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 500,000",
+              "page": 7,
               "is_package": false,
               "sort_order": 0
             },
@@ -571,6 +627,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-07 / K2-SBA-08; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 60,000",
+              "page": 7,
               "is_package": false,
               "sort_order": 1
             },
@@ -582,6 +640,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-01 / K2-SBA-02; Freestanding lightbox (x2); dimensions 6 ft (H) x 21 ft (W) each; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 500,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 2
             },
@@ -593,6 +653,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-01 / K2-SBA-02; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 12,500",
+              "page": 26,
               "is_package": false,
               "sort_order": 3
             },
@@ -604,6 +666,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-01 / K2-SBA-02; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 7,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 4
             },
@@ -615,6 +679,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-03 / K2-SBA-04; Freestanding lightbox (x2); dimensions 6 ft (H) x 21 ft (W) each; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 500,000",
+              "page": 27,
               "is_package": false,
               "sort_order": 5
             },
@@ -626,6 +692,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-03 / K2-SBA-04; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 12,500",
+              "page": 27,
               "is_package": false,
               "sort_order": 6
             },
@@ -637,6 +705,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SBA-03 / K2-SBA-04; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 7,000",
+              "page": 27,
               "is_package": false,
               "sort_order": 7
             }
@@ -659,6 +729,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-02; Lightbox (x2); dimensions 5 ft (H) x 15 ft (W) & 5 ft (H) x 23.5 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 400,000",
+              "page": 8,
               "is_package": false,
               "sort_order": 0
             },
@@ -670,6 +742,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-02; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 12,000",
+              "page": 8,
               "is_package": false,
               "sort_order": 1
             },
@@ -681,6 +755,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-02; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 12,000",
+              "page": 8,
               "is_package": false,
               "sort_order": 2
             },
@@ -692,6 +768,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-01; Lightbox; dimensions 5 ft (H) x 50 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 450,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             },
@@ -703,6 +781,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-01; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 22,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 4
             },
@@ -714,6 +794,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-AIC-01; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 15,000",
+              "page": 20,
               "is_package": false,
               "sort_order": 5
             }
@@ -736,6 +818,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "REF K2-SBD-03 & K2-SBD-06 / K2-SBD-04 & K2-SBD-07 / K2-SBD-05 & K2-SBD-08; lightbox (x4) each set; 4.5 ft (H) x 12 ft (W); excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 200,000 PER PAIR",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -747,6 +831,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 12,000 PER PAIR",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             },
@@ -758,6 +844,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 21,000 PER PAIR",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             }
@@ -780,6 +868,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-04; Lightbox; dimensions 15 ft (H) x 25 ft (W); Excludes 8% SST",
+              "source_text": "RM 315,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -791,6 +881,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-04; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 34,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -802,6 +894,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-04; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 10,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -813,6 +907,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-05; Lightbox; dimensions 15 ft (H) x 25 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 275,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -824,6 +920,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-05; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 34,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -835,6 +933,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-05; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 10,000",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             }
@@ -857,6 +957,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-01; Premium vinyl; dimensions 30 ft (H) x 20 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 200,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -868,6 +970,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DA-01; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 9,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             }
@@ -890,6 +994,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-05; Lightbox; dimensions 12 ft (H) x 42.6 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 300,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -901,6 +1007,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-05; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 22,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -912,6 +1020,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-05; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 12,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             }
@@ -934,6 +1044,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-04; Lightbox; dimensions TBC; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 130,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 0
             },
@@ -945,6 +1057,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-04; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 18,000",
+              "page": 16,
               "is_package": false,
               "sort_order": 1
             },
@@ -956,6 +1070,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DD-04; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 8,500",
+              "page": 16,
               "is_package": false,
               "sort_order": 2
             }
@@ -978,6 +1094,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-IAQ-08; High impact board; dimensions 79.5\" (H) x 408\" (W); Excludes 8% SST",
+              "source_text": "RM 150,000",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -989,6 +1107,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-IAQ-08; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 6,240",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             }
@@ -1011,6 +1131,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF TBA; Wall sticker; dimensions TBA; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 180,000",
+              "page": 18,
               "is_package": false,
               "sort_order": 0
             },
@@ -1022,6 +1144,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF TBA; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 20,000",
+              "page": 18,
               "is_package": false,
               "sort_order": 1
             }
@@ -1044,6 +1168,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-01 / K2-SAT-06; Glass facade wrap (x2); dimensions TBC; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 230,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 0
             },
@@ -1055,6 +1181,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-01 / K2-SAT-06; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 45,000",
+              "page": 19,
               "is_package": false,
               "sort_order": 1
             },
@@ -1066,6 +1194,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-02 / K2-SAT-07; Freestanding lightbox (x2); dimensions TBC; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 200,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 2
             },
@@ -1077,6 +1207,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-02 / K2-SAT-07; Excludes 8% SST",
+              "source_text": "LIGHTING CHARGE RM 5,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 3
             },
@@ -1088,6 +1220,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-02 / K2-SAT-07; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 6,300",
+              "page": 21,
               "is_package": false,
               "sort_order": 4
             },
@@ -1099,6 +1233,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-03 / K2-SAT-08; Stickers; dimensions 7 ft (H) x 10 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 180,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 5
             },
@@ -1110,6 +1246,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-03 / K2-SAT-08; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 17,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 6
             }
@@ -1132,6 +1270,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DPC-02; Wall sticker; dimensions 11.83 ft (H) x 28.92 ft (W); Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 130,000",
+              "page": 23,
               "is_package": false,
               "sort_order": 0
             },
@@ -1143,6 +1283,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-DPC-02; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 12,500",
+              "page": 23,
               "is_package": false,
               "sort_order": 1
             }
@@ -1165,6 +1307,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-04 / K2-SAT-09; Facade wall sticker; dimensions 12 ft (H) x 295 ft (W) each; Excludes 8% SST",
+              "source_text": "ANNUAL DISPLAY CHARGE RM 1,500,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 0
             },
@@ -1176,6 +1320,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "REF K2-SAT-04 / K2-SAT-09; Excludes 8% SST",
+              "source_text": "PRODUCTION CHARGE RM 260,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 1
             }
@@ -1198,6 +1344,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Stickers; dimensions TBC; 7,500 trolleys available (6,000 landside, 1,500 airside); excludes 8% SST",
+              "source_text": "RM 12,000",
+              "page": 28,
               "is_package": false,
               "sort_order": 0
             },
@@ -1209,6 +1357,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Airside sticker production; excludes 8% SST",
+              "source_text": "RM 150",
+              "page": 28,
               "is_package": false,
               "sort_order": 1
             },
@@ -1220,6 +1370,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Landside sticker production; excludes 8% SST",
+              "source_text": "RM 130",
+              "page": 28,
               "is_package": false,
               "sort_order": 2
             }

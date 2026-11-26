@@ -86,6 +86,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "18 panels in 3 coaches per train set; 15 train sets.",
+              "source_text": "Rate: RM500.00 per panel",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -97,6 +99,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "24 panels in 3 coaches per train set; 15 train sets.",
+              "source_text": "Rate: RM120.00 per panel",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -108,6 +112,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Alternative per-train rate on the same item; period not stated.",
+              "source_text": "RM2500.00 per train",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -119,6 +125,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 panels in 3 coaches per train set; 15 train sets. Period not stated.",
+              "source_text": "Rate: RM1,000.00 per train",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -130,6 +138,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 set = 3 coaches; 15 train sets available.",
+              "source_text": "Rate: RM130,000.00",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             }
@@ -152,6 +162,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Gates A, B, C, D.",
+              "source_text": "Rate: RM300.00 per panel",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             },
@@ -163,6 +175,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6 units; gates A, B, C, D.",
+              "source_text": "Rate: RM5,000.00 per panel per month",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -174,6 +188,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Gates A, B, C, D.",
+              "source_text": "Rate: RM500.00 per panel",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             },
@@ -185,6 +201,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Gates C and platforms 3, 4, 5, 6.",
+              "source_text": "Rate: RM1,000.00 per panel per month",
+              "page": 2,
               "is_package": false,
               "sort_order": 3
             }
@@ -207,6 +225,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 sets, 3 units per set; gates A, B, C, D.",
+              "source_text": "Rate: RM200.00 per panel per month",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -218,6 +238,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 units; gate D.",
+              "source_text": "Rate: RM500.00 per panel per month",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -229,6 +251,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 units; gate D and platforms 3, 4, 5, 6.",
+              "source_text": "Rate: RM500.00 per panel per month",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -240,6 +264,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 units; gates A, B, C, D.",
+              "source_text": "Rate: RM200.00 per panel per month",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -251,6 +277,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "4 units; platforms 3, 4, 5, 6.",
+              "source_text": "Rate: RM300.00 per panel per month",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             }
@@ -273,6 +301,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Platforms 3, 4, 5, 6.",
+              "source_text": "Rate: RM100,000.00 – 12 Months",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -284,6 +314,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Platforms 3, 4, 5, 6.",
+              "source_text": "Rate: RM60,000.00 6 Months",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             }
@@ -306,6 +338,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops; Ipoh-Butterworth-Ipoh and Butterworth-Padang Besar-Butterworth; 1 client per train.",
+              "source_text": "1 Train 800.00 1 Months Awareness",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             },
@@ -317,6 +351,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops.",
+              "source_text": "1 Train 1,400.00 2 Months Campaign",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             },
@@ -328,6 +364,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops.",
+              "source_text": "1 Train 2,000.00 3 Months Skincare",
+              "page": 5,
               "is_package": false,
               "sort_order": 2
             },
@@ -339,6 +377,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops.",
+              "source_text": "1 2 Train 1,500.00 1 Months Awareness",
+              "page": 5,
               "is_package": false,
               "sort_order": 3
             },
@@ -350,6 +390,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops.",
+              "source_text": "2 Advertising 2 Train 2,200.00 3-5 loop 2 Months Campaign",
+              "page": 5,
               "is_package": false,
               "sort_order": 4
             },
@@ -361,6 +403,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "15-30 second audio, 3-5 loops.",
+              "source_text": "3 2 Train 3,000.00 3 Months Skincare",
+              "page": 5,
               "is_package": false,
               "sort_order": 5
             }

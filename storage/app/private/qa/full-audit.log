@@ -1,0 +1,89 @@
+done cubig-klcc-junction-2026-promo.pdf
+done erl-in-train-network-2026.pdf
+done 988-fm-2026-radio-digital.pdf
+done erl-station-coverage-2026.pdf
+done astro-video360-digital-2026.pdf
+done bernama-media-kit-2026.pdf
+done billboard-sarawak-smg-2026.pdf
+done bus-wrap-klang-valley-2025.pdf
+done karnival-jom-heboh-2026-venue.pdf
+done fmt-2026-digital-news.pdf
+done bfm-2026-business-radio.pdf
+done ikim-fm-ramadan-2027.pdf
+done hot-fm-zoomerz-on-ground.pdf
+done kl-sentral-station-sponsorship-2024.pdf
+done klcc-snorkels-2024-big-tree.pdf
+done ktm-train-kl-sentral-ads-2026.pdf
+done konsert-kita-suara-anti-buli-2026.pdf
+done lamppost-digital-bunting-kl-2026.pdf
+done malaysiakini-kinitv-event-coverage-2026-2027.pdf
+done media-prima-audio-trade-show-2025.pdf
+done mobile-truck-activation-life-events.pdf
+done klia-t2-static-2026.pdf
+done klia-t1-airport-2024-premium.pdf
+done ra-media-relations-live-tv-talkshow-2026-2027.pdf
+done ra-media-relations-news-slot-2026-2027.pdf
+done klia-t2-airport-2024.pdf
+done podcast-utama-buletin-tv3.pdf
+done astro-upfront-2027.pdf
+done klia-t1-t2-digital-2026.pdf
+done malaysiakini-media-kit-2024.pdf
+done klia-t1-static-2026.pdf
+done target-media-elevator-2026.pdf
+done sinar-harian-20th-anniversary-2026.pdf
+done tvalhijrah-bincang-niaga-2024.pdf
+done tmr-super-deal-2026-business-content.pdf
+done omnia-content-terhangat-2026.pdf
+done suria-fm-2026-radio-digital.pdf
+done ra-media-website-media-solutions-2026.pdf
+done tvs-profile-2026.pdf
+done tvs-sponsorship-spot-buy-2026.pdf
+done wowshop-airtime-2025.pdf
+done rtm-tv-radio-2025.pdf
+done sinar-karangkraf-ratecard-2025-2026.pdf
+
+Wrote /home/forge/workspaces/aiarmada/duniamedia/storage/app/private/qa/full-audit.json
+PDF                                                     pages tables images large full missing
+988-fm-2026-radio-digital.pdf                               4      3      0     0    0       0
+astro-upfront-2027.pdf                                     66     38    250    53   53       0
+astro-video360-digital-2026.pdf                            21      1     70    21   29       0
+bernama-media-kit-2026.pdf                                 24      0     24    24   24       0
+bfm-2026-business-radio.pdf                                28      2    131    68   74       0
+billboard-sarawak-smg-2026.pdf                             19      7     37    18   16       0
+bus-wrap-klang-valley-2025.pdf                             17      7     66     5    5       0
+cubig-klcc-junction-2026-promo.pdf                          2      0     43    17   17       0
+erl-in-train-network-2026.pdf                               9      2     53     8    8       0
+erl-station-coverage-2026.pdf                              10      2     71     6   10       0
+fmt-2026-digital-news.pdf                                   8      2     14     3    9       0
+hot-fm-zoomerz-on-ground.pdf                               11      3     42    23   28       0
+ikim-fm-ramadan-2027.pdf                                   11      1     10     3    3       0
+karnival-jom-heboh-2026-venue.pdf                           8      0    144    13   18       0
+kl-sentral-station-sponsorship-2024.pdf                    19      3    153    19   65       0
+klcc-snorkels-2024-big-tree.pdf                            14      3    173    35   44       0
+klia-t1-airport-2024-premium.pdf                           42      8    307    98   99      29
+klia-t1-static-2026.pdf                                    56     39    171    58   58       0
+klia-t1-t2-digital-2026.pdf                                62     15    142    65   62       0
+klia-t2-airport-2024.pdf                                   41      8    361    79   81      38
+klia-t2-static-2026.pdf                                    31     19     97    28   29       0
+konsert-kita-suara-anti-buli-2026.pdf                       9      0     34     7    6       0
+ktm-train-kl-sentral-ads-2026.pdf                           5      1     18     5   12       0
+lamppost-digital-bunting-kl-2026.pdf                        6      0     26    10    8       0
+malaysiakini-kinitv-event-coverage-2026-2027.pdf            8      0     28    19   24       0
+malaysiakini-media-kit-2024.pdf                            45      8    212    82  137       0
+media-prima-audio-trade-show-2025.pdf                       1      1      5     1    1       0
+mobile-truck-activation-life-events.pdf                     6      0     11     1    1       0
+omnia-content-terhangat-2026.pdf                           24     12    202     7    7       0
+podcast-utama-buletin-tv3.pdf                              18      0    315    15   13       0
+ra-media-relations-live-tv-talkshow-2026-2027.pdf           1      1      1     1    1       0
+ra-media-relations-news-slot-2026-2027.pdf                  1      1      1     1    1       0
+ra-media-website-media-solutions-2026.pdf                  28     20      2     0    0       0
+rtm-tv-radio-2025.pdf                                      50     35     43     3    3       0
+sinar-harian-20th-anniversary-2026.pdf                      3      3    172     0    2       0
+sinar-karangkraf-ratecard-2025-2026.pdf                    38     12   1288    50   96       0
+suria-fm-2026-radio-digital.pdf                             6      0     13     0    0       0
+target-media-elevator-2026.pdf                              1      1      1     0    0       0
+tmr-super-deal-2026-business-content.pdf                    8      0     69    14   14       0
+tvalhijrah-bincang-niaga-2024.pdf                           5      0      5     5    5       0
+tvs-profile-2026.pdf                                       21      4    105    60   40       0
+tvs-sponsorship-spot-buy-2026.pdf                          23      0    188    61   57       0
+wowshop-airtime-2025.pdf                                   29      1    237    24   23       0

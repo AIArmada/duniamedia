@@ -19,10 +19,11 @@ final readonly class RateLineView
         public ?string $sectionTitle,
         public string $image,
         public ?string $location,
+        public bool $selectable = true,
     ) {}
 
     public function isPriced(): bool
     {
-        return $this->price !== null && $this->price > 0;
+        return $this->selectable && $this->price !== null && $this->price > 0;
     }
 }

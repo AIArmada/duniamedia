@@ -10,7 +10,7 @@
 
 <x-page-hero
     eyebrow="Media opportunity · {{ $media->medium }}"
-    title="{{ e($media->name) }}"
+    title="{{ $media->name }}"
     :lede="$media->summary"
     :breadcrumb="[
         ['label' => 'Home', 'url' => route('home')],
@@ -70,6 +70,16 @@
                     @foreach ($sections as $section)
                         <x-rate-section :section="$section" :show-channel="true"/>
                     @endforeach
+                </div>
+            @else
+                <h3>Rates and packages</h3>
+                <div class="empty-state" style="text-align:left">
+                    <span class="eyebrow">Tailored quotation</span>
+                    <h3>{{ $media->name }} is quoted on request.</h3>
+                    <p style="margin-left:0">No fixed rate card is published for this offer. Share your brief and our team will confirm formats, availability and commercial terms.</p>
+                    <div class="empty-state__actions" style="justify-content:flex-start">
+                        <a class="button button--primary" href="{{ route('contact') }}">Request a tailored rate <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
             @endif
 

@@ -86,6 +86,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2 mins TV3 Buletin Utama 8pm prime time; upload on Buletin TV3 YouTube; Facebook share on Buletin TV3 Facebook. Excludes 8% SST (p.28).",
+              "source_text": "TV3 Buletin Utama News Coverage + Digital 75,000.00",
+              "page": 1,
               "is_package": true,
               "sort_order": 0
             },
@@ -97,6 +99,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Air on 1 slot(s). Excludes 8% SST (p.28).",
+              "source_text": "- Air on 1 slot 8,000.00",
+              "page": 2,
               "is_package": false,
               "sort_order": 1
             },
@@ -108,6 +112,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Air on 13 slot(s). Excludes 8% SST (p.28).",
+              "source_text": "- Air on 13 slots 96,000.00",
+              "page": 2,
               "is_package": false,
               "sort_order": 2
             },
@@ -119,6 +125,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Air on 3 slot(s). Excludes 8% SST (p.28).",
+              "source_text": "- Air on 3 slots 24,000.00",
+              "page": 2,
               "is_package": false,
               "sort_order": 3
             },
@@ -130,6 +138,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Air on 6 slot(s). Excludes 8% SST (p.28).",
+              "source_text": "- Air on 6 slots 48,000.00",
+              "page": 2,
               "is_package": false,
               "sort_order": 4
             },
@@ -141,6 +151,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Air on 9 slot(s). Excludes 8% SST (p.28).",
+              "source_text": "- Air on 9 slots 72,000.00",
+              "page": 2,
               "is_package": false,
               "sort_order": 5
             },
@@ -152,6 +164,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Air on Berita Perdana RTM 8pm prime time, Berita Tamil/Mandarin/Inggeris RTM; 10 secs filmlets x 30 days (Zon E); TVC 30sec x 30 in programme bugs. Excludes 8% SST (p.28).",
+              "source_text": "Berita RTM ( CLOCKFACE PACKAGE) 70,000.00",
+              "page": 2,
               "is_package": true,
               "sort_order": 6
             },
@@ -163,6 +177,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TX 9am, 10am, 12nn, 1pm, 2pm, 3pm, 4pm, 5:30pm; 1 min special report coverage within Klang Valley; 1 TikTok video, 1 IG video, 1 YouTube Shorts, 1 branded advertorial; guaranteed 1M reach. Excludes 8% SST (p.28).",
+              "source_text": "Buletin Awani - Mon –Sun 30,000.00",
+              "page": 2,
               "is_package": true,
               "sort_order": 7
             }
@@ -185,6 +201,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Fri 9.30am-10.30am. Excludes 8% SST (p.28).",
+              "source_text": "- Host mentions - 30 sec / Mon - Fri / 9.30am - 10.30 am 4,500.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -196,6 +214,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Fri 9.30am-10.30am. Excludes 8% SST (p.28).",
+              "source_text": "- live Interview - 6 mins / Mon - Fri / 9.30am - 10.30 am 25,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -207,6 +227,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Fri 9.30am-10.30am. Excludes 8% SST (p.28).",
+              "source_text": "- Recording video - 3 mins / Mon - Fri / 9.30am - 10.30 am 18,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -218,6 +240,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3 talkshow. Excludes 8% SST (p.28).",
+              "source_text": "Money Matters - 6 mins 25,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -229,6 +253,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "One 6-min interview. Excludes 8% SST (p.28).",
+              "source_text": "TV3 Helo Doktor Interview - 1x 6mins 25,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -240,6 +266,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Live (1) + repeat (1). Excludes 8% SST (p.28).",
+              "source_text": "TV9 Nasi Lemak Kopi O (NLKO Interview) - Live (1) + Repeat (1) 15,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -251,6 +279,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Fri 6.30am-7.00am. Excludes 8% SST (p.28).",
+              "source_text": "Tanyalah Ustaz TV3 + TV9 - 6mins / Mon - Fri / 6.30am - 7.00am 25,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -262,6 +292,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Live interview. Excludes 8% SST (p.28).",
+              "source_text": "Wanita Hari Ini - Live Interview 6 mins 35,000.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             }
@@ -284,6 +316,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 1 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 8,470.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             },
@@ -295,6 +329,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 12 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 12 101,640.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 1
             },
@@ -306,6 +342,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 26 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 26 220,220.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 2
             },
@@ -317,6 +355,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 4 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 4 33,880.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 3
             },
@@ -328,6 +368,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 51 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 51 440,440.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 4
             },
@@ -339,6 +381,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 6 package on weekdays (mon-thu). Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 50,820.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 5
             },
@@ -350,6 +394,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 1 package on weekdays (mon-thu), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 9,240.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 6
             },
@@ -361,6 +407,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 12 package on weekdays (mon-thu), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 12 110,880.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 7
             },
@@ -372,6 +420,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 3 package on weekdays (mon-thu), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 3 27,720.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 8
             },
@@ -383,6 +433,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 6 package on weekdays (mon-thu), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 55,440.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 9
             },
@@ -394,6 +446,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 1 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 9,680.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 10
             },
@@ -405,6 +459,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 4 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 4 29,040.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 11
             },
@@ -416,6 +472,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 6 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 58,080.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 12
             },
@@ -427,6 +485,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 1 package on weekend (fri-sun), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 10,560.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 13
             },
@@ -438,6 +498,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 12 package on weekend (fri-sun), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 12 126,720.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 14
             },
@@ -449,6 +511,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 3 package on weekend (fri-sun), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 3 31,680.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 15
             },
@@ -460,6 +524,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 6 package on weekend (fri-sun), syaaban-ramadhan. Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 63,360.00",
+              "page": 3,
               "is_package": false,
               "sort_order": 16
             },
@@ -471,6 +537,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 9,680.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 17
             },
@@ -482,6 +550,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 12 116,160.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 18
             },
@@ -493,6 +563,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 26 251,680.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 19
             },
@@ -504,6 +576,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 4 29,040.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 20
             },
@@ -515,6 +589,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 51 503,360.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 21
             },
@@ -526,6 +602,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "An Nisa' weekend slot package; rate identical to Assalamualaikum weekend tier. Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 58,080.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 22
             },
@@ -537,6 +615,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BA NIAGA slot package. Excludes 8% SST (p.28).",
+              "source_text": "Slot 1 5,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 23
             },
@@ -548,6 +628,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BA NIAGA slot package. Excludes 8% SST (p.28).",
+              "source_text": "Slot 13 60,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 24
             },
@@ -559,6 +641,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BA NIAGA slot package. Excludes 8% SST (p.28).",
+              "source_text": "Slot 3 15,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 25
             },
@@ -570,6 +654,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BA NIAGA slot package. Excludes 8% SST (p.28).",
+              "source_text": "Slot 6 30,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 26
             },
@@ -581,6 +667,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BA NIAGA slot package. Excludes 8% SST (p.28).",
+              "source_text": "Slot 9 45,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 27
             },
@@ -592,6 +680,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 12 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 12 116,160.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 28
             },
@@ -603,6 +693,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 26 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 26 251,680.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 29
             },
@@ -614,6 +706,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Slot 51 package on weekend (fri-sun). Excludes 8% SST (p.28).",
+              "source_text": "Slot 51 503,360.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 30
             }
@@ -636,6 +730,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3-month campaign; TV3 75 x 15s (25/wk), TV9 50 x 15s (25/wk), TV3 2 x 3 video posts; event bonus media value RM20,000. Excludes 8% SST (p.28).",
+              "source_text": "i. BRONZE 3-month campaign 200,000.00",
+              "page": 4,
               "is_package": true,
               "sort_order": 0
             },
@@ -647,6 +743,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9-month campaign; TV3 100 x 15s, TV9 75 x 15s, 2 x 3 video posts, Melodi 1 x 6 min, WHI 1 x 6 min, Morning Drama sponsorship 1 x 13 eps; event bonus media value RM70,000. Excludes 8% SST (p.28).",
+              "source_text": "iii. GOLD 9 -month campaign 500,000.00",
+              "page": 5,
               "is_package": true,
               "sort_order": 1
             },
@@ -658,6 +756,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "12-month campaign; TV3 125 x 15s, 2 x 3 video posts, Melodi 1 x 6 min, Night Drama 1 x 13 eps, Buletin 1.30 2 x 2 min, Nightline 2 x 2 min; event bonus media value RM160,000. Excludes 8% SST (p.28).",
+              "source_text": "800,000.00 iv. PLATINUM 12 -month campaign",
+              "page": 5,
               "is_package": true,
               "sort_order": 2
             },
@@ -669,6 +769,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6-month campaign; TV3 125 x 15s (25/wk), TV3 2 x 3 video posts, Muzik integration 1 x 2 min, WHI interview 1 x 6 min; event bonus media value RM42,000. Excludes 8% SST (p.28).",
+              "source_text": "ii. SILVER 6-month campaign 350,000.00",
+              "page": 5,
               "is_package": true,
               "sort_order": 3
             }
@@ -691,6 +793,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV capsule 1-5 minutes. Excludes 8% SST (p.28).",
+              "source_text": "i. Capsule 1 - 5 minutes 3,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -702,6 +806,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Short programme, max 8-10 minutes. Excludes 8% SST (p.28).",
+              "source_text": "ii. Short Program 8 - 10 minutes ( max) 11,000.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             }
@@ -724,6 +830,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "BIZ 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             },
@@ -735,6 +843,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "FRESH BREW 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 1
             },
@@ -746,6 +856,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "KAMI BAH NI 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 2
             },
@@ -757,6 +869,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "KUPPA KUPPI 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 3
             },
@@ -768,6 +882,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "PERSONA XY 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 4
             },
@@ -779,6 +895,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "RTM talkshow programme rate. Excludes 8% SST (p.28).",
+              "source_text": "Selamat Pagi Malaysia (SPM) 10,500.00",
+              "page": 4,
               "is_package": false,
               "sort_order": 5
             }
@@ -801,6 +919,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3-month campaign; TV3 75 x 15s (25/wk), TV9 50 x 15s (25/wk), TV3 2 x 3 video posts; event bonus media value RM20,000. Excludes 8% SST (p.28).",
+              "source_text": "i. BRONZE 3-month campaign 200,000.00",
+              "page": 5,
               "is_package": true,
               "sort_order": 0
             },
@@ -812,6 +932,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "9-month campaign; TV3 100 x 15s, TV9 75 x 15s, 5 x 3 video posts, Melodi 1 x 6 min; event bonus media value RM70,000. Excludes 8% SST (p.28).",
+              "source_text": "500,000.00 iii. GOLD 9 -month campaign",
+              "page": 6,
               "is_package": true,
               "sort_order": 1
             },
@@ -823,6 +945,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12-month campaign; TV3 200 x 15s, TV9 75 x 15s, 5 x 3 video posts, Mbuzz 1 x 2 min, Melodi 1 x 6 min, Buletin 1.30 + digital 2 x 2 min; event bonus media value RM160,000. Excludes 8% SST (p.28).",
+              "source_text": "iv. PLATINUM 12 -month campaign 800,000.00",
+              "page": 6,
               "is_package": true,
               "sort_order": 2
             },
@@ -834,6 +958,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6-month campaign; TV3 125 x 15s, TV9 25 x 15s, 2 x 3 video posts, Mbuzz integration 1 x 2 min; event bonus media value RM42,000. Excludes 8% SST (p.28).",
+              "source_text": "ii. SILVER 6-month campaign 350,000.00",
+              "page": 6,
               "is_package": true,
               "sort_order": 3
             }
@@ -856,6 +982,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3-month campaign; TV3 75 x 15s, TV9 50 x 15s, 2 x 3 video posts; event bonus media value RM20,000. Excludes 8% SST (p.28).",
+              "source_text": "i. BRONZE 3-month campaign 200,000.00",
+              "page": 6,
               "is_package": true,
               "sort_order": 0
             },
@@ -867,6 +995,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "9-month campaign; TV3 100 x 15s, 2 x 3 video posts, MHI 1 x 6 min, Money Matters/Women 3 x 6 min, Prime Movie sponsorship 1 x 8 eps; event bonus media value RM70,000. Excludes 8% SST (p.28).",
+              "source_text": "iii. GOLD 9 -month campaign 500,000.00",
+              "page": 7,
               "is_package": true,
               "sort_order": 1
             },
@@ -878,6 +1008,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12-month campaign; TV3 150 x 15s, TV9 25 x 15s, 4 x 3 video posts, Mbuzz 1 x 2 min, Money Matters 3 x 6 min, NLKO 2 x 6 min, Prime Movie 1 x 8 eps, Buletin 1.30 1 x 2 min, Buletin Pagi 1 x 2 min, Nightline 1 x 2 min, TV9 Berita 1 x 2 min; event bonus media value RM160,000. Excludes 8% SST (p.28).",
+              "source_text": "iv. PLATINUM 12 -month campaign 800,000.00",
+              "page": 7,
               "is_package": true,
               "sort_order": 2
             },
@@ -889,6 +1021,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6-month campaign; TV3 100 x 15s, 3 x 3 video posts, MHI 1 x 6 min, Money Matters/Women talk 2 x 6 min, TV9 NLKO 2 x 6 min; event bonus media value RM42,000. Excludes 8% SST (p.28).",
+              "source_text": "ii. SILVER 6-month campaign 350,000.00",
+              "page": 7,
               "is_package": true,
               "sort_order": 3
             }
@@ -911,6 +1045,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3-month campaign; TV3 100 x 15s (25/wk); event bonus media value RM20,000. Excludes 8% SST (p.28).",
+              "source_text": "i. BRONZE 3-month campaign 200,000.00",
+              "page": 8,
               "is_package": true,
               "sort_order": 0
             },
@@ -922,6 +1058,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "9-month campaign; TV3 100 x 15s, TV9 50 x 15s, 2 x 3 video posts, WHI 1 x 6 min, NLKO 2 x 6 min, Prime Movie 1 x 8 eps, TV9 Prime Drama 1 x 13 eps; event bonus media value RM70,000. Excludes 8% SST (p.28).",
+              "source_text": "500,000.00 iii. GOLD 9 -month campaign",
+              "page": 8,
               "is_package": true,
               "sort_order": 1
             },
@@ -933,6 +1071,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "12-month campaign; TV3 150 x 15s, TV9 25 x 15s, 3 x 3 video posts, Melodi 1 x 6 min, NLKO 4 x 6 min, Prime Movie 1 x 8 eps, TV9 Prime Movie 1 x 8 eps, TV9 Afternoon Drama 1 x 13 eps, Nightline 2 x 2 min, TV9 Berita 1 x 2 min; event bonus media value RM160,000. Excludes 8% SST (p.28).",
+              "source_text": "iv. PLATINUM 12 -month campaign 800,000.00",
+              "page": 8,
               "is_package": true,
               "sort_order": 2
             },
@@ -944,6 +1084,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "6-month campaign; TV3 100 x 15s, 3 x 3 video posts, MHI 1 x 6 min, WHI 1 x 6 min, TV9 NLKO 4 x 6 min; event bonus media value RM42,000. Excludes 8% SST (p.28).",
+              "source_text": "350,000.00 ii. SILVER 6-month campaign",
+              "page": 8,
               "is_package": true,
               "sort_order": 3
             }
@@ -966,6 +1108,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "0600 – 1000 10 secs 140.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 0
             },
@@ -977,6 +1121,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "15 secs 210.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 1
             },
@@ -988,6 +1134,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "20 secs 280.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 2
             },
@@ -999,6 +1147,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "3 min 1,260.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 3
             },
@@ -1010,6 +1160,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "30 secs 420.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 4
             },
@@ -1021,6 +1173,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "10 secs 120.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 5
             },
@@ -1032,6 +1186,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "15 secs 180.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 6
             },
@@ -1043,6 +1199,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "20 secs 240.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 7
             },
@@ -1054,6 +1212,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "1,080.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 8
             },
@@ -1065,6 +1225,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "30 secs 360.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 9
             },
@@ -1076,6 +1238,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "1301 – 1600 10 secs 120.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 10
             },
@@ -1087,6 +1251,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "15 secs 180.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 11
             },
@@ -1098,6 +1264,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "20 secs 240.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 12
             },
@@ -1109,6 +1277,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "3 min 1,080.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 13
             },
@@ -1120,6 +1290,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Same rate for Radio Klasik & Nasional FM. Excludes 8% SST (p.28).",
+              "source_text": "30 secs 360.00",
+              "page": 9,
               "is_package": false,
               "sort_order": 14
             }
@@ -1142,6 +1314,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Sun 6am-12am; 39 x 30-second spots. Excludes 8% SST (p.28).",
+              "source_text": "Eight FM Monday-Sunday, 6am- 39 x 30- 7,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 0
             },
@@ -1153,6 +1327,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Mon-Sun 6am-12am; 38 x 30-second spots (spot count inferred from adjacent line). Excludes 8% SST (p.28).",
+              "source_text": "Fly FM 12am second 7,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 1
             },
@@ -1164,6 +1340,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Sun 6am-12am; 35 x 30-second spots; Omnia station package. Excludes 8% SST (p.28).",
+              "source_text": "Hot FM Monday-Sunday, 6am- 35 x 30- 15,800.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 2
             },
@@ -1175,6 +1353,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Mon-Sun 6am-12am; 36 x 30-second spots. Excludes 8% SST (p.28).",
+              "source_text": "Kool 101 Monday-Sunday, 6am- 36 x 30- 4,500.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 3
             }
@@ -1197,6 +1377,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVC (ROS), 60 slots, 30 secs. Excludes 8% SST (p.28).",
+              "source_text": "Package 1 25,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 0
             },
@@ -1208,6 +1390,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVC (ROS), 180 slots, 30 secs. Excludes 8% SST (p.28).",
+              "source_text": "Package 2 50,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 1
             },
@@ -1219,6 +1403,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVC (ROS), 50 slots, 30 secs. Excludes 8% SST (p.28).",
+              "source_text": "Package Syaaban Ramadhan 25,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 2
             },
@@ -1230,6 +1416,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TVC (ROS), 150 slots, 30 secs. Excludes 8% SST (p.28).",
+              "source_text": "Package Syaaban Ramadhan 50,000.00",
+              "page": 9,
               "is_package": true,
               "sort_order": 3
             }
@@ -1252,6 +1440,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional (LIU) Mon-Sun, min 35 spots over 7 consecutive days; 6am-12mn; max 4 spots per 6am-10am/4pm-8pm/8pm-12mn, max 3 per other bands. Excludes 8% SST (p.28).",
+              "source_text": "- Per Slot : RM340, 30 secs",
+              "page": 11,
               "is_package": false,
               "sort_order": 0
             },
@@ -1263,6 +1453,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional (LIU) Mon-Sun, min 35 spots over 7 consecutive days; 6am-12mn. Excludes 8% SST (p.28).",
+              "source_text": "- Per Slot : RM310, 30 secs",
+              "page": 11,
               "is_package": false,
               "sort_order": 1
             },
@@ -1274,6 +1466,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional Mon-Sun, min 35 spots over 7 consecutive days; 6am-12mn. Excludes 8% SST (p.28).",
+              "source_text": "- Per Slot : RM120, 30 secs",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -1285,6 +1479,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional Mon-Sun, min 35 spots over 7 consecutive days; 6am-12mn. Excludes 8% SST (p.28).",
+              "source_text": "- Per Slot : RM140, 30 secs",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             }
@@ -1307,6 +1503,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Peninsular Malaysia commitment, min 250 spots; page also lists nationwide ERA at RM720. Excludes 8% SST (p.28).",
+              "source_text": "ERA - RM 470 per commercial spot",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             }
@@ -1329,6 +1527,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Min 250 spots; RAYA add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "ERA - RM 720 per commercial spot",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -1340,6 +1540,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "HITz - RM 470 per commercial spot",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -1351,6 +1553,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Min 250 spots; CNY add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "MY - RM 690 per commercial spot",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             }
@@ -1373,6 +1577,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "ERA - Central Min. 200 Spots RM260 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -1384,6 +1590,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 120 per",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -1395,6 +1603,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 140 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -1406,6 +1616,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 140 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -1417,6 +1629,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "MY - Central Min. 200 Spots RM350 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -1428,6 +1642,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 180 per",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -1439,6 +1655,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 220 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -1450,6 +1668,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 220 per spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             },
@@ -1461,6 +1681,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "HITZ - Central Min. 200 Spots RM250 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 8
             },
@@ -1472,6 +1694,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 120 per",
+              "page": 14,
               "is_package": false,
               "sort_order": 9
             },
@@ -1483,6 +1707,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 130 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 10
             },
@@ -1494,6 +1720,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 130 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 11
             },
@@ -1505,6 +1733,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "LITE - Central Min. 200 Spots RM100 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 12
             },
@@ -1516,6 +1746,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 13
             },
@@ -1527,6 +1759,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 14
             },
@@ -1538,6 +1772,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 15
             },
@@ -1549,6 +1785,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "MELODY - Central Min. 200 Spots RM100 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 16
             },
@@ -1560,6 +1798,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 17
             },
@@ -1571,6 +1811,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 18
             },
@@ -1582,6 +1824,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 60 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 19
             },
@@ -1593,6 +1837,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "MIX - Central Min. 200 Spots RM120 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 20
             },
@@ -1604,6 +1850,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 70 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 21
             },
@@ -1615,6 +1863,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 70 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 22
             },
@@ -1626,6 +1876,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 70 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 23
             },
@@ -1637,6 +1889,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Central region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "SINAR - Central Min. 200 Spots RM250 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 24
             },
@@ -1648,6 +1902,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "East Coast region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "East Coast Min 200 Spots RM 140 per",
+              "page": 14,
               "is_package": false,
               "sort_order": 25
             },
@@ -1659,6 +1915,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Northern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Northern Min 200 Spots RM 140 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 26
             },
@@ -1670,6 +1928,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Southern region, min 200 spots. Excludes 8% SST (p.28).",
+              "source_text": "Southern Min 200 Spots RM 140 per spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 27
             }
@@ -1692,6 +1952,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Sabah/Sarawak commitment, min 100 spots. Excludes 8% SST (p.28).",
+              "source_text": "ERA - RM 60 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -1703,6 +1965,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional broadcast commitment, min 100 spots. Excludes 8% SST (p.28).",
+              "source_text": "HITz - SABAH RM 50 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -1714,6 +1978,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional broadcast commitment, min 100 spots. Excludes 8% SST (p.28).",
+              "source_text": "SARAWAK RM 50 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -1725,6 +1991,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional broadcast commitment, min 100 spots. Excludes 8% SST (p.28).",
+              "source_text": "MY - SABAH RM 50 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -1736,6 +2004,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Regional broadcast commitment, min 100 spots. Excludes 8% SST (p.28).",
+              "source_text": "SARAWAK RM 50 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             }
@@ -1758,6 +2028,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots; RAYA add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "GEGAR - RM 120 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 0
             },
@@ -1769,6 +2041,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "GOXUAN - RM 80 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 1
             },
@@ -1780,6 +2054,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "LITE - RM 140 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 2
             },
@@ -1791,6 +2067,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots; CNY add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "MELODY - RM 180 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 3
             },
@@ -1802,6 +2080,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "MIX - RM 230 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 4
             },
@@ -1813,6 +2093,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots; Deepavali add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "RANGA - RM 150 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 5
             },
@@ -1824,6 +2106,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots; RAYA add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "SINAR - RM 440 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 6
             },
@@ -1835,6 +2119,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "ZAYAN - RM 120 per commercial spot",
+              "page": 13,
               "is_package": false,
               "sort_order": 7
             }
@@ -1857,6 +2143,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "ERA - RM 720 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -1868,6 +2156,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "SINAR- RM 440 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -1879,6 +2169,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package combo, nationwide min 250 spots; RAYA add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "SINAR & ERA- RM 1070 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -1890,6 +2182,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Chinese package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "MELODY- RM180 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -1901,6 +2195,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Chinese package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "MY - RM690 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -1912,6 +2208,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Chinese package combo, nationwide min 250 spots; CNY add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "MY & MELODY- RM 800 per commercial spot",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -1923,6 +2221,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "HITZ - RM470 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 6
             },
@@ -1934,6 +2234,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package combo, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "HITZ & MIX- RM 630 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 7
             },
@@ -1945,6 +2247,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package, nationwide min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "MIX- RM230 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 8
             }
@@ -1967,6 +2271,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Pre-roll & mid-roll audio / splash video; targeted ads; 360,000 guaranteed reach; only with Radio FlexiAd purchase. Excludes 8% SST (p.28).",
+              "source_text": "Audio Package - 10,000.00",
+              "page": 15,
               "is_package": true,
               "sort_order": 0
             },
@@ -1978,6 +2284,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Extended digital package; 1 week/month execution, 300,000 estimated reach, 2,000,000 impressions; only with Radio FlexiAd purchase. Excludes 8% SST (p.28).",
+              "source_text": "In Reach 365 Package - 10,000.00",
+              "page": 15,
               "is_package": true,
               "sort_order": 1
             },
@@ -1989,6 +2297,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1 week/month execution; estimated reach 300,000; 2,000,000 impressions; only with purchase of Radio FlexiAd packages. Excludes 8% SST (p.28).",
+              "source_text": "In Reach 365 Package - 10,000.00",
+              "page": 15,
               "is_package": true,
               "sort_order": 2
             },
@@ -2000,6 +2310,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3x branded advertorial, 3x Facebook post, 3x Instagram story; 1,500,000 guaranteed reach; only with Radio FlexiAd purchase. Excludes 8% SST (p.28).",
+              "source_text": "Reach Package - 30,000.00",
+              "page": 15,
               "is_package": true,
               "sort_order": 3
             },
@@ -2011,6 +2323,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign, 15 secs/loop, 1,428 loops per week; screens 16ft x 39ft to 20ft x 33ft at KL/Selangor/Penang locations; only with Radio FlexiAd purchase. Excludes 8% SST (p.28).",
+              "source_text": "8. FLEXIAD 2025 DIGITAL SCREEN PACKAGE 6,000.00",
+              "page": 16,
               "is_package": true,
               "sort_order": 4
             },
@@ -2022,6 +2336,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Pre-roll & mid-roll audio / splash video; 360,000 guaranteed reach. Excludes 8% SST (p.28).",
+              "source_text": "Audio Package - 8,000.00",
+              "page": 16,
               "is_package": true,
               "sort_order": 5
             },
@@ -2033,6 +2349,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Pre-roll & mid-roll audio / splash video; 360,000 guaranteed reach. Excludes 8% SST (p.28).",
+              "source_text": "Audio Package - 6,000.00",
+              "page": 16,
               "is_package": true,
               "sort_order": 6
             },
@@ -2044,6 +2362,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3x branded advertorial, 3x Facebook post, 3x Instagram story; 1,500,000 guaranteed reach. Excludes 8% SST (p.28).",
+              "source_text": "Reach Package - 30,000.00",
+              "page": 16,
               "is_package": true,
               "sort_order": 7
             }
@@ -2066,6 +2386,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package, Peninsular Malaysia min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "ERA - RM 630 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -2077,6 +2399,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package, Peninsular Malaysia min 250 spots. Excludes 8% SST (p.28).",
+              "source_text": "SINAR- RM 440 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -2088,6 +2412,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "BM package combo, Peninsular Malaysia min 250 spots; RAYA add-on max 50 spots with 10% loading. Excludes 8% SST (p.28).",
+              "source_text": "SINAR & ERA- RM 960 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             }
@@ -2110,6 +2436,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package, Peninsular Malaysia min 450 spots. Excludes 8% SST (p.28).",
+              "source_text": "LITE- RM140 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -2121,6 +2449,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package, Peninsular Malaysia min 450 spots. Excludes 8% SST (p.28).",
+              "source_text": "MIX- RM230 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -2132,6 +2462,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English package combo, Peninsular Malaysia min 450 spots. Excludes 8% SST (p.28).",
+              "source_text": "MIX & LITE- RM 330 per commercial spot",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             }
@@ -2154,6 +2486,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV9 2 slots 48 mins (1 live + 1 rerun); TV9 2 slots 4 mins pre-record; 1 SNS post. Excludes 8% SST (p.28).",
+              "source_text": "1. TV9 MALAY PACKAGE 25,000.00",
+              "page": 16,
               "is_package": true,
               "sort_order": 0
             },
@@ -2165,6 +2499,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3 1 slot 23 mins pre-record weekdays 9am; TV9 2 slots 23 mins pre-record weekdays 11.30am; TV9 2 slots 4 mins; website banner + microsite; 1 SNS post. Excludes 8% SST (p.28).",
+              "source_text": "2. PACKAGE GOLD MALAY 55,000.00",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -2176,6 +2512,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "TV3 2 slots 23 mins (1 live, 1 rerun) weekdays 9am/1pm; TV9 2 slots 23 mins rerun weekdays 11.30am; TV3 4 slots 4 mins; website banner + microsite; 1 SNS post; revenue sharing. Excludes 8% SST (p.28).",
+              "source_text": "3. PACKAGE PLATINUM MALAY 80,000.00",
+              "page": 17,
               "is_package": true,
               "sort_order": 2
             }
@@ -2198,6 +2536,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "Berita Harian ( 1 article) : Spotlight Story (News) Added Value: 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -2209,6 +2549,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "Harian Metro (1 article): Spotlight Story (News) Added Value: 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             },
@@ -2220,6 +2562,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "Kosmo : Article Posting 8,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 2
             },
@@ -2231,6 +2575,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "New Straits Times (1 article): Spotlight Story (News) Added 30,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 3
             },
@@ -2242,6 +2588,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "Utusan : Article Posting 6,000.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 4
             },
@@ -2253,6 +2601,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "-Free Malaysia Today 25,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 5
             },
@@ -2264,6 +2614,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "Mstar - Article Posting 30,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 6
             },
@@ -2275,6 +2627,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "OhBulan : Spotlight Story (Lifestyle) Added Value: FB Shoutout 30,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 7
             },
@@ -2286,6 +2640,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "-SAYS Seismik : Spotlight Story (Lifestyle) Added Value: FB 30,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 8
             },
@@ -2297,6 +2653,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "The Star - Article Posting 35,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 9
             },
@@ -2308,6 +2666,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Client to provide press release where shoutouts are included. Excludes 8% SST (p.28).",
+              "source_text": "-Vocket : Spotlight Story (Lifestyle) Added Value: FB Shoutout & 25,000.00",
+              "page": 18,
               "is_package": false,
               "sort_order": 10
             }
@@ -2330,6 +2690,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "DBP fee included unless stated otherwise; additional visuals RM30 per visual, 2 amendments only. Excludes 8% SST (p.28).",
+              "source_text": "Additional visuals are subject to DBP Fees of RM30 per visual",
+              "page": 18,
               "is_package": false,
               "sort_order": 0
             },
@@ -2341,6 +2703,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "First content/month FOC; subsequent content RM50 per location including upload and photo proof fees. Excludes 8% SST (p.28).",
+              "source_text": "Subsequent Content at RM50 per location which includes upload",
+              "page": 18,
               "is_package": false,
               "sort_order": 1
             }
@@ -2363,6 +2727,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 17 Select 17 locations 54,200.00",
+              "page": 19,
               "is_package": true,
               "sort_order": 0
             },
@@ -2374,6 +2740,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 18 Select 18 locations 55,350.00",
+              "page": 19,
               "is_package": true,
               "sort_order": 1
             },
@@ -2385,6 +2753,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 19 Select 19 locations 56,750.00",
+              "page": 19,
               "is_package": true,
               "sort_order": 2
             },
@@ -2396,6 +2766,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 20 Select 20 locations 58,000.00",
+              "page": 19,
               "is_package": true,
               "sort_order": 3
             },
@@ -2407,6 +2779,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 21 All Locations 60,000.00",
+              "page": 19,
               "is_package": true,
               "sort_order": 4
             },
@@ -2418,6 +2792,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 1 location A-synapse 1 6,000.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 5
             },
@@ -2429,6 +2805,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 10 Select 10 locations 36,000.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 6
             },
@@ -2440,6 +2818,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 11 locations 1 Month A-synapse 11 38,250.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 7
             },
@@ -2451,6 +2831,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 12 locations A-synapse 12 40,500.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 8
             },
@@ -2462,6 +2844,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 13 locations A-synapse 13 42,750.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 9
             },
@@ -2473,6 +2857,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 14 locations A-synapse 14 45,600.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 10
             },
@@ -2484,6 +2870,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 15 locations A-synapse 15 48,450.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 11
             },
@@ -2495,6 +2883,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 16 Select 16 locations 51,300.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 12
             },
@@ -2506,6 +2896,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 2 locations A-synapse 2 10,500.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 13
             },
@@ -2517,6 +2909,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "Select 3 locations A-synapse 3 14,750.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 14
             },
@@ -2528,6 +2922,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 4 Select 4 locations 18,000.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 15
             },
@@ -2539,6 +2935,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 5 Select 5 locations 21,750.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 16
             },
@@ -2550,6 +2948,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 6 Select 6 locations 24,750.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 17
             },
@@ -2561,6 +2961,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 7 Select 7 locations 28,500.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 18
             },
@@ -2572,6 +2974,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 8 Select 8 locations 31,500.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 19
             },
@@ -2583,6 +2987,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "1-month campaign on 70-inch screens in AEON Malls (82 screens/21 malls); 15s x 10/hour or 30s x 5/hour, 12 hours/day. Excludes 8% SST (p.28).",
+              "source_text": "A-synapse 9 Select 9 locations 33,750.00",
+              "page": 20,
               "is_package": true,
               "sort_order": 20
             }
@@ -2605,6 +3011,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Normal rate card; promo sells 2 months for RM60,000. Excludes 8% SST (p.28).",
+              "source_text": "* Normal Rate Card at RM 60,000 per month",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -2616,6 +3024,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Buy 1 month + FOC 1 month; 82 screens in 21 AEON malls; normal rate card RM60,000/month (RM120,000 for 2 months). Excludes 8% SST (p.28).",
+              "source_text": "- Monthly Rate : Special Promo Rate @ RM 60,000 (2 Months)",
+              "page": 20,
               "is_package": true,
               "sort_order": 1
             },
@@ -2627,6 +3037,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Normal rate card; promo sells 2 months for RM100,000. Excludes 8% SST (p.28).",
+              "source_text": "* Normal Rate Card at RM 100,000 per month",
+              "page": 21,
               "is_package": false,
               "sort_order": 2
             },
@@ -2638,6 +3050,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Buy 1 month + FOC 1 month; 82 screens in 21 AEON malls plus 8 big LED screens at centre court; normal rate card RM100,000/month (RM200,000 for 2 months). Excludes 8% SST (p.28).",
+              "source_text": "- Monthly Rate : Special Promo Rate @ RM 100,000 (2 Months)",
+              "page": 21,
               "is_package": true,
               "sort_order": 3
             }
@@ -2660,6 +3074,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LED x4; 9.5ft(H) x 27ft(W) / 13ft(H) x 27ft(W); 10s spot; max 4 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Annual / Monthly Display Charge : RM 1,000,000 / RM 120,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 0
             },
@@ -2671,6 +3087,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LED x4; 9.5ft(H) x 27ft(W) / 13ft(H) x 27ft(W); 10s spot; max 4 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Annual / Monthly Display Charge : RM 1,000,000 / RM 120,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 1
             },
@@ -2682,6 +3100,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Portrait x26 units; 75-inch; 10s spot; max 8 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge Per Spot : RM 60,000",
+              "page": 21,
               "is_package": false,
               "sort_order": 2
             },
@@ -2693,6 +3113,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Column wraps; dimensions TBA; production charge RM8,000 per pillar; lighting NIL. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge :RM 1,000,000.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 3
             },
@@ -2704,6 +3126,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 10ft(H) x 30ft(W) + billboards TBA; production RM15,000 (lightboxes) or RM60,000 (sticker); lighting RM50,000 (lightboxes). Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge :RM RM 900,000.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 4
             },
@@ -2715,6 +3139,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LCD landscape x24; 75-inch; 15s spot; max 12 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge Per Spot :RM 41,000",
+              "page": 22,
               "is_package": false,
               "sort_order": 5
             },
@@ -2726,6 +3152,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 1828mm(H) x 6401mm(W); production RM8,000; lighting RM12,000. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge :RM RM 400,000.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 6
             },
@@ -2737,6 +3165,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Ambient format; dimensions TBA; production charge RM7,000; lighting NIL. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge :RM 30,000.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 7
             },
@@ -2748,6 +3178,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox x2, 73in(H) x 252in(W) each; production RM48,000; lighting RM26,000. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge : RM 1,250,000.00",
+              "page": 23,
               "is_package": false,
               "sort_order": 8
             },
@@ -2759,6 +3191,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox x5 + wall stickers x2, 73in(H) x 252in(W) each; production RM25,000; lighting RM28,000. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge : RM 1,250,000.00",
+              "page": 23,
               "is_package": false,
               "sort_order": 9
             },
@@ -2770,6 +3204,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 6ft(H) x 21ft(W); production RM8,000; lighting RM12,000. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge :RM RM 250,000.00",
+              "page": 23,
               "is_package": false,
               "sort_order": 10
             },
@@ -2781,6 +3217,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox + wall sticker x1, 8.8ft(H) x 79ft(W); production RM32,000; lighting RM12,000. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge : RM 200,000.00",
+              "page": 23,
               "is_package": false,
               "sort_order": 11
             },
@@ -2792,6 +3230,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Stickers, dimensions TBA; production RM110 landside / RM110 airside. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge : RM 12,000.00",
+              "page": 23,
               "is_package": false,
               "sort_order": 12
             }
@@ -2814,6 +3254,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3D Raptor truck with driver (5 hrs) + 2 promoters. Excludes 8% SST (p.28).",
+              "source_text": "1. PACKAGE 1 - 5 Hour Activation 24,000.00",
+              "page": 21,
               "is_package": true,
               "sort_order": 0
             },
@@ -2825,6 +3267,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "3D Raptor truck with driver (2 hrs) + 2 promoters. Excludes 8% SST (p.28).",
+              "source_text": "2. PACKAGE 2 - 2 Hour Activation 18,000.00",
+              "page": 21,
               "is_package": true,
               "sort_order": 1
             }
@@ -2847,6 +3291,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LED 45.5 x 15ft & 5 x 4ft; 15s spot; max 8 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge Per Spot: RM60,500",
+              "page": 23,
               "is_package": false,
               "sort_order": 0
             },
@@ -2858,6 +3304,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox x4 each set, 4.5ft(H) x 12ft(W); production RM21,000; lighting RM12,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge : RM200,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 1
             },
@@ -2869,6 +3317,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LCD landscape x20; 75-inch; 15s spot; max 12 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge Per Spot: RM32,800",
+              "page": 24,
               "is_package": false,
               "sort_order": 2
             },
@@ -2880,6 +3330,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 6ft(H) x 8ft(W); production RM2,800; lighting RM5,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge : RM180,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 3
             },
@@ -2891,6 +3343,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Facade wall sticker 12ft(H) x 295ft(W) each; production RM260,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge : RM1,500,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 4
             },
@@ -2902,6 +3356,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital LCD portrait 55-inch; 10s spot; max 8 advertisers. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge Per Spot: RM30,000",
+              "page": 24,
               "is_package": false,
               "sort_order": 5
             },
@@ -2913,6 +3369,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox x2, 5ft(H) x 15ft(W) & 5ft(H) x 23.5ft(W); production RM12,000; lighting RM12,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM400,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 6
             },
@@ -2924,6 +3382,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 5ft(H) x 50ft(W); production RM150,000; lighting RM22,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM450,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 7
             },
@@ -2935,6 +3395,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Freestanding lightbox x2, 6ft(H) x 21ft(W) each; production RM7,000; lighting RM12,500. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM500,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 8
             },
@@ -2946,6 +3408,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 20ft(H) x 13ft(W); production RM25,000; lighting RM40,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM650,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 9
             },
@@ -2957,6 +3421,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "CNC relief artwork 4820mm(H) x 9750mm(W); production RM195,000; lighting RM18,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM450,000",
+              "page": 25,
               "is_package": false,
               "sort_order": 10
             },
@@ -2968,6 +3434,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 15ft(H) x 25ft(W); production RM10,000; lighting RM34,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM275,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 11
             },
@@ -2979,6 +3447,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox 12ft(H) x 42.6ft(W); production RM12,000; lighting RM22,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM300,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 12
             },
@@ -2990,6 +3460,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Lightbox, dimensions TBC; production RM8,500; lighting RM18,000. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM150,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 13
             },
@@ -3001,6 +3473,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Wall sticker 11.83ft(H) x 28.92ft(W); production RM12,500. Excludes 8% SST (p.28).",
+              "source_text": "Annual Display Charge :RM150,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 14
             },
@@ -3012,6 +3486,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Stickers, dimensions TBC; production RM80 landside / RM180 airside. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Display Charge (150 units) :RM12,000",
+              "page": 26,
               "is_package": false,
               "sort_order": 15
             }
@@ -3034,6 +3510,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 buses, 3 months, 1 production; monthly rental RM4,200/bus (RM42,000 total); production RM4,700 (RM141,000 total). Excludes 8% SST (p.28).",
+              "source_text": "- Package 1 : Quantity : 10 Buses 183000",
+              "page": 27,
               "is_package": true,
               "sort_order": 0
             },
@@ -3045,6 +3523,8 @@
               "price_basis": "calculated",
               "confidence": "medium",
               "notes": "15 buses, 6 months, 2 productions; monthly rental RM4,000/bus (RM360,000 total); production RM8,000 (RM120,000 total). Package total is the sum of printed line totals; not printed as a single figure. Excludes 8% SST (p.28).",
+              "source_text": "Monthly Rental (1 Bus) 4,000.00 360000",
+              "page": 27,
               "is_package": true,
               "sort_order": 1
             }

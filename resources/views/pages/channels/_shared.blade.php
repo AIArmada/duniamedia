@@ -105,6 +105,24 @@
                     </div>
                 </div>
             @endif
+            @if (! empty($visualAssets))
+                <div class="channel-editorial-gallery">
+                    <div class="channel-editorial-heading">
+                        <div><span class="channel-editorial-kicker">Visual story</span><h2>Inside {{ $channel['name'] }}</h2></div>
+                        <p>Authentic imagery extracted from the source deck, alongside the published rates.</p>
+                    </div>
+                    <div class="story-gallery">
+                        @foreach ($visualAssets as $asset)
+                            <figure>
+                                <img src="{{ \App\Features\Catalog\Support\MediaImage::url($asset['path']) }}" alt="{{ $asset['alt'] }}" loading="lazy" decoding="async">
+                                @if (! empty($asset['caption']))
+                                    <figcaption>{{ $asset['caption'] }}</figcaption>
+                                @endif
+                            </figure>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
             @if ($additionalBlocks !== [])
                 <div class="channel-editorial-additional"><x-content-blocks :blocks="$additionalBlocks"/></div>
             @endif

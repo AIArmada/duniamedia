@@ -38,6 +38,18 @@ final readonly class WriteMediaProperties
         return MediaProperty::query()->updateOrCreate($keys, $attributes);
     }
 
+    /**
+     * @param  list<string>  $slugs
+     */
+    public function publishOnly(array $slugs): void
+    {
+        MediaProperty::query()->update(['is_public' => false]);
+
+        if ($slugs !== []) {
+            MediaProperty::query()->whereIn('slug', $slugs)->update(['is_public' => true]);
+        }
+    }
+
     public function delete(Model $record): void
     {
         $record->delete();

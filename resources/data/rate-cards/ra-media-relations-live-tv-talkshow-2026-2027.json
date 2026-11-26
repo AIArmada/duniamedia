@@ -89,6 +89,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Live Interview 6 minutes RM25,000 RM27,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -100,6 +102,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Live Interview 3 minutes RM18,000 RM19,440",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             },
@@ -111,6 +115,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Video Tape (VT) 3 minutes RM18,000 RM19,440",
+              "page": 1,
               "is_package": false,
               "sort_order": 2
             },
@@ -122,6 +128,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Host Mention 30 seconds RM5,000 RM5,400",
+              "page": 1,
               "is_package": false,
               "sort_order": 3
             },
@@ -133,6 +141,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Live Interview 6 minutes RM38,000 RM41,040",
+              "page": 1,
               "is_package": false,
               "sort_order": 4
             },
@@ -144,6 +154,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Live Interview 3 minutes RM25,000 RM27,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 5
             },
@@ -155,6 +167,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Video Tape (VT) 3 minutes RM25,000 RM27,000",
+              "page": 1,
               "is_package": false,
               "sort_order": 6
             }
@@ -191,6 +205,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Live Interview 6 minutes RM8,000 RM8,640",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             }
@@ -227,6 +243,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Weekdays (Monday – Thursday) — RM10,000 RM10,800",
+              "page": 1,
               "is_package": false,
               "sort_order": 0
             },
@@ -238,6 +256,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media rate and 8% SST-inclusive rate as printed; VT placement requires LPF submission.",
+              "source_text": "Weekend (Friday – Sunday) — RM9,000 RM9,720",
+              "page": 1,
               "is_package": false,
               "sort_order": 1
             }

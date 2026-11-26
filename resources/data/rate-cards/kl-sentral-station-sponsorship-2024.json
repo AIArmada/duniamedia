@@ -77,6 +77,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes KL Sentral Spectacular Lightbox + KL Sentral Adtrack x 4 units; media rental 1,440,000; production 280,600; lighting 7,200; 8% SST 138,224; total 1,866,024.",
+              "source_text": "12 months 1,440,000 280,600 7,200 138,224 1,866,024",
+              "page": 8,
               "is_package": true,
               "sort_order": 0
             },
@@ -88,6 +90,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Row printed as TOTAL PROPOSAL; media 1,200,000; production 280,000; lighting 7,000; 8% SST 118,960; total 1,605,960. Scope versus station sponsorship row unclear.",
+              "source_text": "1,200,000 280,000 7,000 118,960 1,605,960",
+              "page": 8,
               "is_package": true,
               "sort_order": 1
             }
@@ -110,6 +114,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Various size; 16 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "1. Turnstile Wrap various 16 28,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -121,6 +127,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "178in(h) x 81in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "2. Pillar Graphics (half-wrap) 178” (h) x 81” (w) 2 5,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -132,6 +140,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "134in(h) x 259in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "3. Double sided glass panel graphic 134” (h) x 259” (w) 2 1,500",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -143,6 +153,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "203in(h) x 193.5in(w); 1 unit; cost cell shared with adjacent line in layout. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "Single sided glass panel graphic 203” (h) x 193.5” (w) 1 4. 8,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             },
@@ -154,6 +166,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "69in(h) x 46in(w); 12 units; cost-cell allocation inferred. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "Vertical Panels near stairs 69” (h) x 46” (w) 12 5. 28,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 4
             },
@@ -165,6 +179,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "69in(h) x 46in(w); 12 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "6. Vertical Panels near escalator 69” (h) x 46” (w) 12 28,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 5
             },
@@ -176,6 +192,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "98.5in(h) x 114.5in(w); 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "7. Wall at side of escalator (TP Bound) 98.5” (h) x 114.5” (w) 1 2,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 6
             },
@@ -187,6 +205,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "93.5in(h) x 114.5in(w); 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "8. Wall at side of escalator (KJ Bound) 93.5” (h) x 114.5” (w) 1 2,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 7
             },
@@ -198,6 +218,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Various size; 1 unit; one side only. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "9. Escalator Graphic facing concourse ( one side only) Various size 1 5,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 8
             },
@@ -209,6 +231,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "90.5in(h) x 112in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "10. Round pillar graphic at KJ Bound (Full Wrap) 90.5” (h) x 112” (w) 2 4,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 9
             },
@@ -220,6 +244,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "120in(h) x 216in(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "Double-sided banner on top of stairs/ escalator (TP Bound) 120” (h) x 216” (w) 2 11. 15,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 10
             },
@@ -231,6 +257,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "48in(h) x 120in(w); 6 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "Double sided track graphics 48” (h) x 120” (w) 6 12. 10,800",
+              "page": 15,
               "is_package": false,
               "sort_order": 11
             },
@@ -242,6 +270,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Estimated 1m(h) x 10m(w) per unit; 3 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "13. Perforated metal cladding on top of platform Estimated 1m(h) x 10m(w) per unit 3 6,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 12
             },
@@ -253,6 +283,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2ft(h) x 5ft(w); 2 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "14. Infoscreen (double sided) 2’(h) x 5’(w) 2 3,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 13
             },
@@ -264,6 +296,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5ft x 10ft; 4 units. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "15. KL Sentral Adtrack 5’x 10’ 4 10,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 14
             },
@@ -275,6 +309,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "6ft x 18ft; 1 unit. Production cost; excludes media rental, lighting and 8% SST.",
+              "source_text": "16. KL Sentral Spectacular Lightbox 6’x 18’ 1 9,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 15
             }

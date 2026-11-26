@@ -89,6 +89,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BTV programme, 1+ hour.",
+              "source_text": "OR BTV PROGRAMME 1+ hour 3,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             }
@@ -111,6 +113,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama TV airtime rate per spot.",
+              "source_text": "10 sec 750 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -122,6 +126,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama TV airtime rate per spot.",
+              "source_text": "15 sec 1,125 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             },
@@ -133,6 +139,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama TV airtime rate per spot.",
+              "source_text": "20 sec 1,500 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             },
@@ -144,6 +152,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama TV airtime rate per spot.",
+              "source_text": "30 sec 2,250 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 3
             },
@@ -155,6 +165,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama TV airtime rate per spot.",
+              "source_text": "60 sec 4,500 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 4
             }
@@ -191,6 +203,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "1-2 MINUTES VIDEO PRODUCTION RM 5,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 0
             },
@@ -202,6 +216,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "30 SECS PROMO ROS RM 220/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 1
             },
@@ -213,6 +229,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "30 SECS SPOT BUY INSIDE NEWS “UTAMA PUNCAK JAM INI” RM 350/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 2
             },
@@ -224,6 +242,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "30 MINUTE TALKSHOW (DRIVETIME) RM 4,200",
+              "page": 12,
               "is_package": false,
               "sort_order": 3
             },
@@ -235,6 +255,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "30 MINUTE TALKSHOW (NORMAL HOUR) RM 3,500",
+              "page": 12,
               "is_package": false,
               "sort_order": 4
             },
@@ -246,6 +268,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "AUDIO CLIP - NEWS /PROGRAMME RM 800",
+              "page": 12,
               "is_package": false,
               "sort_order": 5
             },
@@ -257,6 +281,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "CROSSOVER INSIDE PROGRAMME RM 3,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 6
             },
@@ -268,6 +294,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "IN - HOUSE PROGRAMME SPONSORSHIP RM 25,000",
+              "page": 12,
               "is_package": true,
               "sort_order": 7
             },
@@ -279,6 +307,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "INFO CAPSULE (MAX 2 MIN) RM 720/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 8
             },
@@ -290,6 +320,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "LIVE READ RM 350/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 9
             },
@@ -301,6 +333,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "NEWS CAST WITH AUDIO RM 5,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 10
             },
@@ -312,6 +346,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "NEWS CLIP/PROGRAMME CLIP RM 800",
+              "page": 12,
               "is_package": false,
               "sort_order": 11
             },
@@ -323,6 +359,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "NORMAL NEWS COVERAGE/CROSSOVER RM 3,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 12
             },
@@ -334,6 +372,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "OPENING & CLOSING RM 2,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 13
             },
@@ -345,6 +385,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "RADIO APP RM 3,000/100,000 IMPRESSION",
+              "page": 12,
               "is_package": false,
               "sort_order": 14
             },
@@ -356,6 +398,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SEGMEN “DIMENSI HARI” (11 AM - 4 PM) RM 250/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 15
             },
@@ -367,6 +411,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SEGMEN “REFLEKSI NUANSA’ (4 PM - 9 PM) RM 300/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 16
             },
@@ -378,6 +424,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SEGMEN “SPEKTRUM PAGI” (6 AM - 11 AM) RM 350/SPOT",
+              "page": 12,
               "is_package": false,
               "sort_order": 17
             },
@@ -389,6 +437,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SCRIPTING & EDITING MUSIC BED RM 1,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 18
             },
@@ -400,6 +450,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SOCIAL MEDIA (FB, TIKTOK, INSTAGRAM) RM 1,500",
+              "page": 12,
               "is_package": false,
               "sort_order": 19
             },
@@ -411,6 +463,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "SPECIAL REPORT (5 MIN - 8 MIN) RM 5,000/repeat 3x in same day",
+              "page": 12,
               "is_package": false,
               "sort_order": 20
             },
@@ -422,6 +476,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "STUDIO FEE, IN-HOUSE TALENT RM 1,500",
+              "page": 12,
               "is_package": false,
               "sort_order": 21
             },
@@ -433,6 +489,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "VIDEO COVERAGE (max 2 min) RM6,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 22
             },
@@ -444,6 +502,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Bernama Radio rate; production cost not included where stated on page.",
+              "source_text": "VIDEO PRODUCTION (3MIN - 7MIN) RM 5,000",
+              "page": 12,
               "is_package": false,
               "sort_order": 23
             }
@@ -480,6 +540,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Upload article on website BERNAMA.com, Bahasa Malaysia & English.",
+              "source_text": "Upload article on website BERNAMA.com (Bahasa Malaysia & English) 3,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             }
@@ -502,6 +564,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Sharing on Facebook & Twitter; publishing at BERNAMA.com.",
+              "source_text": "CORPORATION VIDEO PRODUCTION MAX OF 5 MIN SHARING AT FACEBOOK & TWITTER 50,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -513,6 +577,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Label partly OCR-garbled ('RESEARES ... sti').",
+              "source_text": "FACEBOOK / TWITTER / IG 3,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -524,6 +590,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Video max 3 minutes, publishing at BERNAMA.com.",
+              "source_text": "SPECIAL REPORT VIDEO MAX OF 3 MIN PUBLISHING AT BERNAMA.COM 18,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             }
@@ -546,6 +614,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "300 X 250 Mid page square A 3,900",
+              "page": 15,
               "is_package": false,
               "sort_order": 0
             },
@@ -557,6 +627,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "300 X 250 Mid page square B 3,900",
+              "page": 15,
               "is_package": false,
               "sort_order": 1
             },
@@ -568,6 +640,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "450 X 450 Front Page 2,100 / Per day",
+              "page": 15,
               "is_package": false,
               "sort_order": 2
             },
@@ -579,6 +653,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Rectangular banner 4,300",
+              "page": 15,
               "is_package": false,
               "sort_order": 3
             },
@@ -590,6 +666,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Below top story 6,500",
+              "page": 15,
               "is_package": false,
               "sort_order": 4
             },
@@ -601,6 +679,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Bottom rectangular 2,650",
+              "page": 15,
               "is_package": false,
               "sort_order": 5
             },
@@ -612,6 +692,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Leaderboard 3,500",
+              "page": 15,
               "is_package": false,
               "sort_order": 6
             },
@@ -623,6 +705,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Mast head 9,600",
+              "page": 15,
               "is_package": false,
               "sort_order": 7
             },
@@ -634,6 +718,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Mid page rectangular 5,500",
+              "page": 15,
               "is_package": false,
               "sort_order": 8
             },
@@ -645,6 +731,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Bottom page rectangular 4,200",
+              "page": 15,
               "is_package": false,
               "sort_order": 9
             },
@@ -656,6 +744,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Mast head 9,400",
+              "page": 15,
               "is_package": false,
               "sort_order": 10
             },
@@ -667,6 +757,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "970 X 90 Mid page rectangular 6,300",
+              "page": 15,
               "is_package": false,
               "sort_order": 11
             },
@@ -678,6 +770,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+              "source_text": "VIDEO PUBLISHING Ready Material Per Content Page 10,000",
+              "page": 15,
               "is_package": false,
               "sort_order": 12
             }
@@ -727,6 +821,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, with 1 photo.",
+              "source_text": "Analysis (Research / Research Process) + 1 Photo - English & Malay 24,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             },
@@ -738,6 +834,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, with max 3 photos.",
+              "source_text": "Exclusive Interview - one to one interview (with max 3 photos) English & Malay 16,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 1
             },
@@ -749,6 +847,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, video max 3 minutes.",
+              "source_text": "Exclusive Interview - with video max 3 minutes - English & Malay 20,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 2
             },
@@ -760,6 +860,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, with 3 photos.",
+              "source_text": "Features (with 3 photos) English & Malay 18,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 3
             },
@@ -771,6 +873,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, with 1 photo.",
+              "source_text": "News Release Process and Publish + 1 Photo - English & Malay 6,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 4
             },
@@ -782,6 +886,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "English & Malay, with 1 photo, more than 1,000 words.",
+              "source_text": "News Release Process and Publish + 1 Photo (more than 1,000 words) - English & Malay 10,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 5
             }
@@ -804,6 +910,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Event news coverage with max 3 photos, English & Malay.",
+              "source_text": "Event News Coverage (with max 3 photos) English & Malay 12,000.00",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             }
@@ -826,6 +934,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Edited archival material.",
+              "source_text": "Edited material 500 / per minute",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -837,6 +947,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Raw archival material.",
+              "source_text": "Raw material 1,000 / per minute",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             }
@@ -859,6 +971,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Dual language, max 4 minutes, per coverage; label partly OCR-garbled.",
+              "source_text": "(max 4 min) 45,000 /",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -870,6 +984,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "One version, max 4 minutes, per coverage; label partly OCR-garbled.",
+              "source_text": "Version 30,000 /",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             },
@@ -881,6 +997,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Live BM or ENG news crossover, per crossover.",
+              "source_text": "LIVE BM or ENG 50,000 /",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             },
@@ -892,6 +1010,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Dual language, 1 minute, per coverage.",
+              "source_text": "(1 min) 35,000 /",
+              "page": 10,
               "is_package": false,
               "sort_order": 3
             },
@@ -903,6 +1023,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "One version, 1 minute, per coverage; label partly reconstructed from OCR.",
+              "source_text": "One Version 20,000 /",
+              "page": 10,
               "is_package": false,
               "sort_order": 4
             }
@@ -925,6 +1047,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Interrupter, per spot.",
+              "source_text": "INTERRUPTER 20 sec 2,000 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -936,6 +1060,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Product placement per placement in the programme.",
+              "source_text": "PRODUCT per placement 5,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             },
@@ -947,6 +1073,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Sound slide, per spot.",
+              "source_text": "SOUND SLIDE 15 sec 1,300 / spot",
+              "page": 10,
               "is_package": false,
               "sort_order": 2
             }
@@ -969,6 +1097,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Social media recorded copy, 15 minutes.",
+              "source_text": "SOCIAL MEDIA FB, Twitter, ] 15 mins 1,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             },
@@ -980,6 +1110,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Social media recorded copy, 30 minutes.",
+              "source_text": "RECORDED COPY 7 30 mins 2,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 1
             }
@@ -1002,6 +1134,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Without crew.",
+              "source_text": "Without crew 5,000/perhour",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             }
@@ -1024,6 +1158,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Talkshow/programme rate, 30 minutes.",
+              "source_text": "30 Mins 20,000",
+              "page": 10,
               "is_package": false,
               "sort_order": 0
             }
@@ -1046,6 +1182,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "With social media sharing (FB & Twitter).",
+              "source_text": "ADVERTORIAL & ONLINE NEWS BRANDED CONTENT WITH SOCIAL MEDIA SHARING 10,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 0
             },
@@ -1057,6 +1195,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Event coverage within Klang Valley, max 3 minutes.",
+              "source_text": "DIGITAL VIDEO COVERAGE MAX OF 3 MIN SHARING AT FACEBOOK & TWITTER 8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 1
             },
@@ -1068,6 +1208,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Live Facebook event, 60 minutes.",
+              "source_text": "LIVE FACEBOOK 60 MINS EVENT 35,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 2
             },
@@ -1079,6 +1221,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Digital video production.",
+              "source_text": "MINI DOCUMENTARY MAX OF 3 MIN PRODUCTION OF DIGITAL VIDEO 20,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 3
             },
@@ -1090,6 +1234,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Press conference coverage, 30 minutes.",
+              "source_text": "30 MINS PRESS CONFERENCE 25,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 4
             },
@@ -1101,6 +1247,8 @@
               "price_basis": "printed",
               "confidence": "low",
               "notes": "Label OCR-garbled ('SACL MEDIA ROSTING').",
+              "source_text": "SACL MEDIA ROSTING ALL SOCIAL MEDIA PLATFORM 8,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 5
             },
@@ -1112,6 +1260,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Studio programme 30-60 minutes.",
+              "source_text": "30 - 60 MINS STUDIO PROGRAMME 40,000",
+              "page": 14,
               "is_package": false,
               "sort_order": 6
             }
@@ -1134,6 +1284,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Photo distribution per unit.",
+              "source_text": "Distribution Ad Hoc Photo Distribution RM 500.00 / per unit",
+              "page": 17,
               "is_package": false,
               "sort_order": 0
             },
@@ -1145,6 +1297,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Ad hoc press release or media invite distribution.",
+              "source_text": "Ad Hoc Press Release / Media Invite Distribution RM 1,300.00",
+              "page": 17,
               "is_package": false,
               "sort_order": 1
             }
@@ -1167,6 +1321,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 press releases, FOC 5 photos.",
+              "source_text": "Package 1 (10 Press Release) FOC 5 Photos RM 7,800.00",
+              "page": 17,
               "is_package": true,
               "sort_order": 0
             },
@@ -1178,6 +1334,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "30 press releases, FOC 10 photos.",
+              "source_text": "Package 2 (30 Press Release) FOC 10 Photos RM 22,230.00",
+              "page": 17,
               "is_package": true,
               "sort_order": 1
             },
@@ -1189,6 +1347,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "50 press releases, FOC 15 photos; source repeats the 'Package 2' label.",
+              "source_text": "Package 2 (50 Press Release) FOC 15 Photos RM 35,100.00",
+              "page": 17,
               "is_package": true,
               "sort_order": 2
             }
@@ -1211,6 +1371,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "BERNAMA News 700.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 0
             },
@@ -1222,6 +1384,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "Directory 100.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 1
             },
@@ -1233,6 +1397,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "Facts and Figures 100.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 2
             },
@@ -1244,6 +1410,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "Info Providers 400.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 3
             },
@@ -1255,6 +1423,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "Mandarin News 150.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 4
             },
@@ -1266,6 +1436,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "BLIS rate card item.",
+              "source_text": "Who’s Who 300.00",
+              "page": 20,
               "is_package": false,
               "sort_order": 5
             }
@@ -1288,6 +1460,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Image licence rate.",
+              "source_text": "Foreign Media Agencies/Broadcasting/TVC 500.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 0
             },
@@ -1299,6 +1473,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Image licence rate.",
+              "source_text": "GLC/Government/Semi 150.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 1
             },
@@ -1310,6 +1486,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Image licence rate.",
+              "source_text": "Medium 250.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 2
             },
@@ -1321,6 +1499,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Image licence rate.",
+              "source_text": "Original 450.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 3
             },
@@ -1332,6 +1512,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Image licence rate.",
+              "source_text": "Publication/Printing/ Advertising 150.00",
+              "page": 22,
               "is_package": false,
               "sort_order": 4
             }
@@ -1359,6 +1541,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "source_text": "970 X 90 Bottom page rectangular 2,500",
+          "page": 15,
           "is_package": false,
           "sort_order": 0
         },
@@ -1370,6 +1554,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "source_text": "970 X 90 Mast head 2,500",
+          "page": 15,
           "is_package": false,
           "sort_order": 1
         },
@@ -1381,6 +1567,8 @@
           "price_basis": "printed",
           "confidence": "medium",
           "notes": "Display size and position as printed; excludes 8% SST and agency fees.",
+          "source_text": "970 X 90 Mid page rectangular 2,625",
+          "page": 15,
           "is_package": false,
           "sort_order": 2
         }

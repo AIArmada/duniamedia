@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Features\Catalog\EntryPoints\Http;
 
+use App\Features\Catalog\Models\RateCardAsset;
 use App\Features\Catalog\Support\MediaDirectory;
 use App\Features\Catalog\Support\RateCardPresenter;
 use App\Features\Identity\Api\ResolvesParties;
@@ -126,6 +127,17 @@ class MediaDirectoryController extends Controller
 
         $sections = RateCardPresenter::forChannel($property->id);
         $rateCards = MediaDirectory::rateCardsForProperty($property);
+        $visualAssets = RateCardAsset::query()
+            ->whereIn('product_id', $rateCards->map(fn ($offer) => $offer->product->id)->all())
+            ->orderBy('sort_order')
+            ->limit(12)
+            ->get()
+            ->map(fn (RateCardAsset $asset): array => [
+                'path' => $asset->path,
+                'alt' => $asset->alt,
+                'caption' => $asset->caption,
+            ])
+            ->all();
         $siblings = MediaDirectory::siblingChannels($property);
         $view = view()->exists('pages.channels.'.$channel) ? 'pages.channels.'.$channel : 'pages.media-channel';
         $entryCount = collect($sections)->sum(fn (array $section): int => count($section['entries']));
@@ -136,6 +148,7 @@ class MediaDirectoryController extends Controller
             'description' => $channelData['description'] ?? "{$channelData['name']} inventory, formats and indicative rates.",
             'sections' => $sections,
             'rateCards' => $rateCards,
+            'visualAssets' => $visualAssets,
             'siblings' => $siblings,
             'heroImage' => $property->hero_path ?: null,
             'channelStats' => [
@@ -172,6 +185,17 @@ class MediaDirectoryController extends Controller
         $channelData['logo'] = $property?->displayLogo() ?: ($channelData['logo'] ?? null);
         $sections = $property === null ? [] : RateCardPresenter::forChannel($property->id);
         $rateCards = MediaDirectory::rateCards($owner, $channel);
+        $visualAssets = RateCardAsset::query()
+            ->whereIn('product_id', $rateCards->map(fn ($offer) => $offer->product->id)->all())
+            ->orderBy('sort_order')
+            ->limit(12)
+            ->get()
+            ->map(fn (RateCardAsset $asset): array => [
+                'path' => $asset->path,
+                'alt' => $asset->alt,
+                'caption' => $asset->caption,
+            ])
+            ->all();
         $nestedView = 'pages.channels.'.$owner.'.'.$channel;
         $flatView = 'pages.channels.'.MediaDirectory::mediaKey($owner, $channel);
         $view = match (true) {
@@ -187,6 +211,7 @@ class MediaDirectoryController extends Controller
             'description' => $property?->description ?: MediaDirectory::channelDescription($channelData),
             'sections' => $sections,
             'rateCards' => $rateCards,
+            'visualAssets' => $visualAssets,
             'siblings' => $siblings,
             'heroImage' => $property?->hero_path,
             'channelStats' => [

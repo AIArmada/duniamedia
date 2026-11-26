@@ -77,6 +77,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "1-month campaign at Cubig @ KLCC Junction; rate card value RM220,000; save up to 32%; confirmations by 15 July 2026; campaign must start 15 July-1 August 2026",
+              "source_text": "RM150,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 0
             }
@@ -99,6 +101,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "2-month campaign at Cubig @ KLCC Junction; rate card value RM680,000; save up to 56%; includes any four panels from the listed Cubig sites; first month must start 15 July-1 August 2026, second month completed by 31 December 2026",
+              "source_text": "RM300,000",
+              "page": 1,
               "is_package": true,
               "sort_order": 0
             }

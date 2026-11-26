@@ -86,6 +86,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Media value RM21,600; client-supplied copy max 1,000 words; no viewing/approval prior to publication; All package investments are inclusive of 8% SST",
+              "source_text": "RM5,400.00*",
+              "page": 4,
               "is_package": true,
               "sort_order": 0
             },
@@ -97,6 +99,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Corporate announcement published on TMR website plus Facebook article link; client-supplied copy max 1,000 words; All package investments are inclusive of 8% SST",
+              "source_text": "ONLINE PRESS RELEASE RM3,240",
+              "page": 4,
               "is_package": true,
               "sort_order": 1
             }
@@ -119,6 +123,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM35,467.20; full page full colour sponsored infographic, Facebook and Instagram posts (100,000 reach each) and 50 copies of The Malaysian Reserve; page also shows RM16,200.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM11,000",
+              "page": 5,
               "is_package": true,
               "sort_order": 0
             }
@@ -141,6 +147,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM25,380; TMR branded content, Facebook 100K reach, Instagram 100K reach, X 500 impressions; page also shows RM12,420.00*; All package investments are inclusive of 8% SST",
+              "source_text": "OPTION 1: DIGITAL RM11,000 RM13,160 RM8,640",
+              "page": 6,
               "is_package": true,
               "sort_order": 0
             },
@@ -152,6 +160,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM41,493.60; half page full colour interview advertorial plus online replica, Facebook/Instagram 100K reach, X 500 impressions and 50 newspaper copies; page also shows RM16,200.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM11,000 RM13,160",
+              "page": 6,
               "is_package": true,
               "sort_order": 1
             },
@@ -163,6 +173,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM50,047.20; full page full colour interview advertorial plus online replica, Facebook/Instagram 100K reach, X 500 impressions and 50 newspaper copies; page also shows RM19,440.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM11,000 RM13,160",
+              "page": 6,
               "is_package": true,
               "sort_order": 2
             }
@@ -185,6 +197,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM18,360; press coverage video max 1.5 min shared via Facebook, Instagram and TikTok, 10,000 total video views; page also shows RM6,480.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM5,400 RM14,580 RM16,200",
+              "page": 7,
               "is_package": true,
               "sort_order": 0
             },
@@ -196,6 +210,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM59,853.60; video plus half page full colour advertorial, online replica 3,000 reads, Facebook/Instagram 100K reach and X 500 impressions; page also shows RM23,760.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM5,400 RM14,580 RM16,200",
+              "page": 7,
               "is_package": true,
               "sort_order": 1
             },
@@ -207,6 +223,8 @@
               "price_basis": "printed",
               "confidence": "medium",
               "notes": "Media value RM68,407.20; video plus full page full colour advertorial, online replica 3,000 reads, Facebook/Instagram 100K reach and X 500 impressions; page also shows RM19,440.00*; All package investments are inclusive of 8% SST",
+              "source_text": "RM5,400 RM14,580 RM16,200",
+              "page": 7,
               "is_package": true,
               "sort_order": 2
             }

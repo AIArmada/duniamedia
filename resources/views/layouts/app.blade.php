@@ -18,28 +18,31 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:image" content="{{ asset('assets/brand/og-dunia-media.png') }}">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{!! json_encode([
-    '@context' => 'https://schema.org',
-    '@type' => 'Organization',
-    'name' => 'Dunia Media',
-    'url' => url('/'),
-    'logo' => asset('assets/brand/logo-horizontal.svg'),
-    'description' => 'Dunia Media connects media, creative, technology and creators as one connected campaign. A digital brand initiative by RA Media Relations Sdn Bhd.',
-    'parentOrganization' => [
-        '@type' => 'Organization',
-        'name' => 'RA Media Relations Sdn Bhd',
-        'identifier' => '948761-W',
-    ],
-    'address' => [
-        '@type' => 'PostalAddress',
-        'streetAddress' => '19B, Jalan Wan Kadir 2, Taman Tun Dr Ismail',
-        'addressLocality' => 'Kuala Lumpur',
-        'postalCode' => '60000',
-        'addressCountry' => 'MY',
-    ],
-], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-</script>
+@php
+    $ldContext = '@'.'context';
+    $ldType = '@'.'type';
+    $ldSchema = [
+        $ldContext => 'https://schema.org',
+        $ldType => 'Organization',
+        'name' => 'Dunia Media',
+        'url' => url('/'),
+        'logo' => asset('assets/brand/logo-horizontal.svg'),
+        'description' => 'Dunia Media connects media, creative, technology and creators as one connected campaign. A digital brand initiative by RA Media Relations Sdn Bhd.',
+        'parentOrganization' => [
+            $ldType => 'Organization',
+            'name' => 'RA Media Relations Sdn Bhd',
+            'identifier' => '948761-W',
+        ],
+        'address' => [
+            $ldType => 'PostalAddress',
+            'streetAddress' => '19B, Jalan Wan Kadir 2, Taman Tun Dr Ismail',
+            'addressLocality' => 'Kuala Lumpur',
+            'postalCode' => '60000',
+            'addressCountry' => 'MY',
+        ],
+    ];
+@endphp
+<script type="application/ld+json">{!! json_encode($ldSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 @if (request()->routeIs('contact'))
 <link rel="preconnect" href="https://challenges.cloudflare.com">
 @endif

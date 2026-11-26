@@ -74,6 +74,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 panels + 10 lamp posts (1 direction); from Jalan Tun Razak to KLCC; 350,000 daily traffic; 15s spot; 18 hours daily",
+              "source_text": "Exposures : 1 slot @ 108,000 monthly",
+              "page": 2,
               "is_package": false,
               "sort_order": 0
             }
@@ -96,6 +98,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "8 panels + 8 lamp posts (1 direction); in front of Publika, to/from Mont Kiara; 256,000 daily traffic; 15s spot",
+              "source_text": "Exposures : 1 slot @ 86,400 monthly",
+              "page": 3,
               "is_package": false,
               "sort_order": 0
             }
@@ -118,6 +122,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "10 panels + 5 lamp posts (2 directions); to/from Cheras to Kajang; 1,916,251 monthly traffic; 15s spot",
+              "source_text": "Exposures : 1 slot @ 117,600 monthly",
+              "page": 4,
               "is_package": false,
               "sort_order": 0
             }
@@ -140,6 +146,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "5 panels + 5 lamp posts (1 direction); to/from Cheras to Kajang; 150,000 daily traffic; 15s spot",
+              "source_text": "Exposures : 1 slot @ 58,800 monthly",
+              "page": 5,
               "is_package": false,
               "sort_order": 0
             }
@@ -162,6 +170,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "First content/month FOC; includes upload & photo proof fees",
+              "source_text": "Content at RM50 per location which includes upload & photo proof fees.",
+              "page": 6,
               "is_package": false,
               "sort_order": 0
             },
@@ -173,6 +183,8 @@
               "price_basis": "printed",
               "confidence": "high",
               "notes": "Includes 2 amendments only; DBP fee included unless stated otherwise",
+              "source_text": "Additional visuals are subject to DBP Fees of RM30 per visual with 2 times",
+              "page": 6,
               "is_package": false,
               "sort_order": 1
             }
