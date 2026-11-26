@@ -7,6 +7,7 @@
     $featureList = $storyBlocks->firstWhere('type', 'feature_list');
     $intro = $editorial['intro'] ?? $firstStory['payload']['body'] ?? $description;
     $formats = $featureList['payload']['items'] ?? [];
+    $displayFormats = $formats !== [] ? $formats : $editorial['ideas'];
     $additionalBlocks = $storyBlocks->reject(fn ($block) => $block === $featureList || ($block === $firstStory && ($firstStory['payload']['body'] ?? null) === $intro))->values()->all();
     $ownerRoute = \App\Features\Catalog\Support\MediaDirectory::owner($owner['slug'] ?? '');
     $accent = $editorial['accent'] ?? $ownerRoute['accent'] ?? '#500038';
@@ -80,7 +81,6 @@
                 <div><span class="channel-editorial-kicker">Campaign possibilities</span><h2 id="channel-formats-title">{{ $formats !== [] ? ($featureList['payload']['title'] ?? 'Explore campaign formats') : 'Shape your '.$channel['name'].' campaign' }}</h2></div>
                 <p>{{ $formats !== [] ? 'Explore the catalogue’s channel-specific formats. Confirm the latest availability and terms before booking.' : 'Tailored ideas to discuss with our team, not confirmed advertising inventory or guaranteed placements.' }}</p>
             </div>
-            @php($displayFormats = $formats !== [] ? $formats : $editorial['ideas'])
             @if ($displayFormats !== [])
             <div class="channel-editorial-format-grid" data-count="{{ count($displayFormats) }}">
                 @foreach ($displayFormats as $format)
