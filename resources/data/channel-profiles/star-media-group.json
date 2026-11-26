@@ -1,0 +1,78 @@
+[
+  {
+    "name": "The Star",
+    "tagline": "A story for readers who want context.",
+    "intro": "English-language newspaper and digital news brand within Star Media Group.",
+    "ideas": [
+      {
+        "title": "English-language explainer",
+        "body": "Discuss a clearly disclosed article suited to the publication's readership."
+      },
+      {
+        "title": "Print and digital plan",
+        "body": "Confirm the available formats and distribution on each platform."
+      }
+    ],
+    "motif": "newspaper",
+    "accent": "#c93042",
+    "art_label": "English news",
+    "reference": "https://www.starmediagroup.my/our-brands/"
+  },
+  {
+    "name": "mStar",
+    "tagline": "Follow the conversations that matter in Malay entertainment.",
+    "intro": "Malay-language digital publication within Star Media Group; explore its lifestyle and entertainment context.",
+    "ideas": [
+      {
+        "title": "Lifestyle feature",
+        "body": "Discuss a practical or culturally relevant branded article."
+      },
+      {
+        "title": "Entertainment social",
+        "body": "Consider short-form creative aligned to the publisher’s current formats."
+      }
+    ],
+    "motif": "spotlight",
+    "accent": "#ad3b6f",
+    "art_label": "Malay entertainment",
+    "reference": "https://www.starmediagroup.my/our-brands/"
+  },
+  {
+    "name": "Suria FM",
+    "tagline": "A familiar voice in the everyday routine.",
+    "intro": "Star Media Group describes Suria as a station for modern Malay audiences, blending entertainment and information.",
+    "ideas": [
+      {
+        "title": "Work and home",
+        "body": "Develop an audio concept relevant to working adults and family routines."
+      },
+      {
+        "title": "Radio plus digital",
+        "body": "Review the actual Suria catalogue deck for cross-platform opportunities."
+      }
+    ],
+    "motif": "headphones",
+    "accent": "#f08b23",
+    "art_label": "Malay music and lifestyle",
+    "reference": "https://www.starmediagroup.my/project/suriafm/"
+  },
+  {
+    "name": "98.8 FM",
+    "tagline": "Mandarin conversations with local relevance.",
+    "intro": "Star Media Group’s 988FM brand offers Chinese-language entertainment, news and information.",
+    "ideas": [
+      {
+        "title": "Mandarin-native brief",
+        "body": "Develop locally fluent audio creative rather than a translated general script."
+      },
+      {
+        "title": "Audio and digital",
+        "body": "Review the 988 catalogue deck and confirm the applicable package."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#df263e",
+    "art_label": "Chinese-language audio",
+    "reference": "https://www.starmediagroup.my/project/988fm/"
+  }
+]

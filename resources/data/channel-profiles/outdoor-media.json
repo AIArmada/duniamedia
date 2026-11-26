@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Seni Jaya",
+    "tagline": "Turn a location into a memorable message.",
+    "intro": "Outdoor operator listed in the Dunia Media catalogue; request its current site schedule before selecting placements.",
+    "ideas": [
+      {
+        "title": "Site selection",
+        "body": "Evaluate actual coordinates, visibility and viewing conditions."
+      },
+      {
+        "title": "Creative fit",
+        "body": "Discuss production specifications and lead times for each confirmed surface."
+      }
+    ],
+    "motif": "billboard",
+    "accent": "#c84845",
+    "art_label": "Outdoor site selection",
+    "reference": null
+  },
+  {
+    "name": "Novus Media",
+    "tagline": "Plan the screen around the journey.",
+    "intro": "Outdoor operator in the catalogue; confirm exact available locations, formats and dates.",
+    "ideas": [
+      {
+        "title": "Journey-based shortlist",
+        "body": "Compare the intended travel routes against verified inventory."
+      },
+      {
+        "title": "Digital creative",
+        "body": "If screens are offered, review duration, loop length and approved file format."
+      }
+    ],
+    "motif": "screen",
+    "accent": "#4d8a94",
+    "art_label": "Outdoor media planning",
+    "reference": null
+  },
+  {
+    "name": "Harumi Jaya",
+    "tagline": "Start with the real-world site.",
+    "intro": "Catalogue-listed outdoor operator; obtain site-specific details rather than assuming any advertised placement.",
+    "ideas": [
+      {
+        "title": "Placement audit",
+        "body": "Request recent site photographs and traffic context."
+      },
+      {
+        "title": "Production planning",
+        "body": "Confirm access, installation, maintenance and campaign period."
+      }
+    ],
+    "motif": "road",
+    "accent": "#b27742",
+    "art_label": "Site-specific outdoor",
+    "reference": null
+  },
+  {
+    "name": "EDSB Outdoor",
+    "tagline": "Make visibility measurable in context.",
+    "intro": "Outdoor operator listing; location, display type and commercial availability require confirmation.",
+    "ideas": [
+      {
+        "title": "Audience geography",
+        "body": "Select sites near verified customer destinations."
+      },
+      {
+        "title": "Campaign review",
+        "body": "Discuss proof-of-posting, reporting and site-specific terms."
+      }
+    ],
+    "motif": "city",
+    "accent": "#33846f",
+    "art_label": "Outdoor coverage",
+    "reference": null
+  }
+]

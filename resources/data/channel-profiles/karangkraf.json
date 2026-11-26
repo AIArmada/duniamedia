@@ -1,0 +1,325 @@
+[
+  {
+    "name": "Sinar Harian",
+    "tagline": "Make useful news-context storytelling count.",
+    "intro": "Malay-language news publication within Karangkraf, with catalogue rate-card references for Sinar Karangkraf and its anniversary.",
+    "ideas": [
+      {
+        "title": "Public-facing explainer",
+        "body": "Discuss a clearly labelled article that makes a useful issue understandable."
+      },
+      {
+        "title": "Anniversary opportunity",
+        "body": "Review the 20th anniversary reference and confirm current dates and terms."
+      }
+    ],
+    "motif": "newspaper",
+    "accent": "#d52b35",
+    "art_label": "Malay news",
+    "reference": null
+  },
+  {
+    "name": "SinarPlus",
+    "tagline": "Practical ideas for the way we live.",
+    "intro": "Lifestyle-oriented title in the Sinar network; confirm current editorial and commercial formats.",
+    "ideas": [
+      {
+        "title": "Everyday solution",
+        "body": "Develop a useful household, lifestyle or wellbeing story."
+      },
+      {
+        "title": "Short-form companion",
+        "body": "Discuss a social format that adds practical value to the main article."
+      }
+    ],
+    "motif": "home",
+    "accent": "#d96776",
+    "art_label": "Lifestyle journalism",
+    "reference": null
+  },
+  {
+    "name": "SinarDaily",
+    "tagline": "A Malaysian story in English.",
+    "intro": "English-language digital news title listed under the Sinar portfolio; confirm current inventory.",
+    "ideas": [
+      {
+        "title": "English explainer",
+        "body": "Discuss a clearly disclosed article around a national or consumer issue."
+      },
+      {
+        "title": "Digital distribution",
+        "body": "Confirm mobile placement options and reporting requirements."
+      }
+    ],
+    "motif": "newsdesk",
+    "accent": "#c23e45",
+    "art_label": "English digital news",
+    "reference": null
+  },
+  {
+    "name": "SinarBestari",
+    "tagline": "Give learning a practical context.",
+    "intro": "Education-oriented title in the Sinar network; audience and format details require current confirmation.",
+    "ideas": [
+      {
+        "title": "Learning resource",
+        "body": "Discuss a useful guide for students, parents or teachers."
+      },
+      {
+        "title": "Education initiative",
+        "body": "Explore an appropriately disclosed campaign with age-sensitive claims reviewed."
+      }
+    ],
+    "motif": "learning",
+    "accent": "#338b72",
+    "art_label": "Education",
+    "reference": null
+  },
+  {
+    "name": "IdeAktif",
+    "tagline": "Choose the right interest-led publication.",
+    "intro": "Catalogue portfolio of specialist lifestyle brands; select the relevant title rather than treating the network as one placement.",
+    "ideas": [
+      {
+        "title": "Portfolio matching",
+        "body": "Choose titles based on content interest and campaign objective."
+      },
+      {
+        "title": "Integrated content",
+        "body": "Discuss how each selected publication will adapt the creative and report outcomes."
+      }
+    ],
+    "motif": "network",
+    "accent": "#c28336",
+    "art_label": "Lifestyle portfolio",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Impiana",
+    "tagline": "Imagine a home that works better.",
+    "intro": "IdeAktif home and interiors title; use practical design and home-improvement ideas.",
+    "ideas": [
+      {
+        "title": "Room transformation",
+        "body": "Discuss a before-and-after concept with real product details."
+      },
+      {
+        "title": "Home buying guide",
+        "body": "Explore practical advice on materials, furniture or renovation choices."
+      }
+    ],
+    "motif": "home",
+    "accent": "#8b795a",
+    "art_label": "Interiors and homes",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Rasa",
+    "tagline": "Cook something worth sharing.",
+    "intro": "IdeAktif food and cooking brand; design around useful recipes rather than generic product placements.",
+    "ideas": [
+      {
+        "title": "Recipe partner",
+        "body": "Develop an original dish that genuinely uses the product."
+      },
+      {
+        "title": "Kitchen tutorial",
+        "body": "Discuss an instructional cooking video with clear ingredient and method details."
+      }
+    ],
+    "motif": "food",
+    "accent": "#c36334",
+    "art_label": "Cooking",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Remaja",
+    "tagline": "The choices that shape young lives.",
+    "intro": "IdeAktif youth title; use age-appropriate creative and confirm current commercial guidelines.",
+    "ideas": [
+      {
+        "title": "First milestones",
+        "body": "Discuss student life, skills or early-career content."
+      },
+      {
+        "title": "Responsible social brief",
+        "body": "Explore youth culture without misleading claims or unsuitable targeting."
+      }
+    ],
+    "motif": "youth",
+    "accent": "#b64eb7",
+    "art_label": "Youth and learning",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Nona",
+    "tagline": "Stories of personal style and achievement.",
+    "intro": "IdeAktif women’s lifestyle title; frame a brief around relevant aspirations and experiences.",
+    "ideas": [
+      {
+        "title": "Founder profile",
+        "body": "Discuss a clearly labelled story about entrepreneurship or career development."
+      },
+      {
+        "title": "Lifestyle feature",
+        "body": "Explore an elegant product narrative rooted in real usefulness."
+      }
+    ],
+    "motif": "style",
+    "accent": "#aa6486",
+    "art_label": "Women’s lifestyle",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Pa&Ma",
+    "tagline": "Thoughtful guidance for growing families.",
+    "intro": "IdeAktif parenting and family title; practical advice and age-appropriate information should shape the campaign.",
+    "ideas": [
+      {
+        "title": "Parenting resource",
+        "body": "Discuss an evidence-based guide to a real family need."
+      },
+      {
+        "title": "Everyday family use",
+        "body": "Explore a product demonstration appropriate to the child’s age and safety."
+      }
+    ],
+    "motif": "family",
+    "accent": "#5c9e9b",
+    "art_label": "Parenting",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Hijabista",
+    "tagline": "Style with cultural understanding.",
+    "intro": "IdeAktif modest fashion and hijab-oriented publication.",
+    "ideas": [
+      {
+        "title": "Modest style guide",
+        "body": "Discuss outfit coordination with actual product information."
+      },
+      {
+        "title": "Useful fashion care",
+        "body": "Explore practical fabric, styling or care content."
+      }
+    ],
+    "motif": "fashion",
+    "accent": "#96639a",
+    "art_label": "Modest fashion",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Maskulin",
+    "tagline": "Practical stories for men’s lifestyles.",
+    "intro": "IdeAktif men’s lifestyle title; discuss relevant interests and current media formats.",
+    "ideas": [
+      {
+        "title": "Everyday grooming",
+        "body": "Create a useful routine or product-use guide without exaggerated claims."
+      },
+      {
+        "title": "Active lifestyle",
+        "body": "Explore a fitness, gear or wellbeing concept with appropriate evidence."
+      }
+    ],
+    "motif": "sport",
+    "accent": "#456b7d",
+    "art_label": "Men’s lifestyle",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Mingguan Wanita",
+    "tagline": "Useful conversations for everyday women.",
+    "intro": "Women-oriented IdeAktif title; family, practical life and personal development can inform a campaign brief.",
+    "ideas": [
+      {
+        "title": "Household planning",
+        "body": "Discuss a clear, useful story around everyday decisions."
+      },
+      {
+        "title": "Personal development",
+        "body": "Explore skills, financial literacy or career guidance content."
+      }
+    ],
+    "motif": "home",
+    "accent": "#c76e86",
+    "art_label": "Everyday women’s stories",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Libur",
+    "tagline": "Find the next place worth exploring.",
+    "intro": "IdeAktif travel title; destination claims, access and offers should be checked before publication.",
+    "ideas": [
+      {
+        "title": "Travel itinerary",
+        "body": "Develop a practical guide to an actual destination or experience."
+      },
+      {
+        "title": "Travel essentials",
+        "body": "Discuss a clearly disclosed product feature useful on a trip."
+      }
+    ],
+    "motif": "travel",
+    "accent": "#308d95",
+    "art_label": "Travel",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Umpan",
+    "tagline": "Good stories from the water’s edge.",
+    "intro": "IdeAktif angling publication; speak to the fishing context with relevant gear and local conditions.",
+    "ideas": [
+      {
+        "title": "Gear in use",
+        "body": "Discuss a real demonstration of fishing equipment."
+      },
+      {
+        "title": "Responsible angling",
+        "body": "Explore location guidance, preparation and appropriate conservation practices."
+      }
+    ],
+    "motif": "fishing",
+    "accent": "#337f84",
+    "art_label": "Angling",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Pengantin",
+    "tagline": "Plan the details that make the day yours.",
+    "intro": "Wedding-oriented publication in the IdeAktif portfolio; confirm current brand identity and packages.",
+    "ideas": [
+      {
+        "title": "Wedding planning",
+        "body": "Explore a practical checklist for an actual wedding service."
+      },
+      {
+        "title": "Vendor feature",
+        "body": "Discuss clearly disclosed bridal, venue or photography content with real details."
+      }
+    ],
+    "motif": "wedding",
+    "accent": "#b88e9c",
+    "art_label": "Wedding planning",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  },
+  {
+    "name": "Media Hiburan",
+    "tagline": "The stories behind entertainment.",
+    "intro": "Entertainment title within the IdeAktif catalogue; confirm current publishing formats and talent arrangements.",
+    "ideas": [
+      {
+        "title": "Entertainment feature",
+        "body": "Discuss a clearly labelled story around an entertainment launch."
+      },
+      {
+        "title": "Behind-the-scenes concept",
+        "body": "Explore approved access and rights for any creator or production content."
+      }
+    ],
+    "motif": "camera",
+    "accent": "#aa3a70",
+    "art_label": "Entertainment publishing",
+    "reference": "https://www.ideaktiv.com/ideaktiv-brand-hub/"
+  }
+]

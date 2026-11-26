@@ -1,0 +1,40 @@
+[
+  {
+    "name": "KTM Train",
+    "tagline": "Travel with the commuter’s routine.",
+    "intro": "Rail advertising catalogue covers KTM services and train formats; exact routes and availability must be confirmed.",
+    "ideas": [
+      {
+        "title": "Train creative",
+        "body": "Discuss wrap or onboard format specifications and actual route coverage."
+      },
+      {
+        "title": "Repeat exposure",
+        "body": "Plan timing around commuter routines using verified service data."
+      }
+    ],
+    "motif": "rail",
+    "accent": "#c6493e",
+    "art_label": "Train advertising",
+    "reference": null
+  },
+  {
+    "name": "KL Sentral Station",
+    "tagline": "Make an interchange a campaign moment.",
+    "intro": "KL Sentral station sponsorship has a dedicated catalogue reference; confirm the available East and West Wing inventory.",
+    "ideas": [
+      {
+        "title": "Station takeover",
+        "body": "Review the published station sponsorship details and production requirements."
+      },
+      {
+        "title": "Transfer touchpoints",
+        "body": "Consider the verified paths where commuters move between services."
+      }
+    ],
+    "motif": "commute",
+    "accent": "#285982",
+    "art_label": "Station advertising",
+    "reference": null
+  }
+]

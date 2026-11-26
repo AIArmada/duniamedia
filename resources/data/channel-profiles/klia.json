@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Terminal 1",
+    "tagline": "Be part of the international journey.",
+    "intro": "KLIA Terminal 1 has catalogue advertising references for arrivals, departures and passenger touchpoints.",
+    "ideas": [
+      {
+        "title": "Passenger journey",
+        "body": "Select confirmed inventory around arrivals or departures based on the target traveller."
+      },
+      {
+        "title": "Premium format",
+        "body": "Review the T1 source deck and technical specifications for the selected site."
+      }
+    ],
+    "motif": "airport",
+    "accent": "#91712d",
+    "art_label": "Terminal 1",
+    "reference": null
+  },
+  {
+    "name": "Terminal 2",
+    "tagline": "Reach travellers through the next touchpoint.",
+    "intro": "KLIA Terminal 2 has a separate catalogue rate card covering passenger journeys and total-coverage formats.",
+    "ideas": [
+      {
+        "title": "Departure brief",
+        "body": "Compare confirmed passenger areas and suitable display formats."
+      },
+      {
+        "title": "Arrival context",
+        "body": "Develop concise, multilingual creative for the verified location."
+      }
+    ],
+    "motif": "airport",
+    "accent": "#526d91",
+    "art_label": "Terminal 2",
+    "reference": null
+  }
+]
