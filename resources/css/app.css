@@ -13,6 +13,7 @@
 @import './media-owners.css';
 @import './hot-fm.css';
 @import './home-marketplace.css';
+@import './services-editorial.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
