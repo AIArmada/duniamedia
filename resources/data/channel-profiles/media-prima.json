@@ -16,7 +16,7 @@
     "motif": "broadcast",
     "accent": "#ba2334",
     "art_label": "Evening television",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.mediaprimaomnia.my/tv3"
   },
   {
     "name": "TV9",
@@ -54,12 +54,12 @@
     "motif": "stage",
     "accent": "#dc5840",
     "art_label": "Mandarin entertainment",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.mediaprimaomnia.my/8tv"
   },
   {
     "name": "ntv7",
     "tagline": "A channel with a changing role.",
-    "intro": "Listed in the Media Prima television portfolio; current scheduling and commercial inventory should be checked before planning.",
+    "intro": "OMNiA identifies ntv7’s DIDIKTV KPM service as educational television produced in collaboration with the Ministry of Education, combining curriculum, co-curriculum and lifelong learning programmes. Confirm current commercial policy.",
     "ideas": [
       {
         "title": "Learning-led brief",
@@ -73,7 +73,7 @@
     "motif": "learning",
     "accent": "#8b43a5",
     "art_label": "Television learning",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.mediaprimaomnia.my/ntv7"
   },
   {
     "name": "Hot FM",
@@ -111,7 +111,7 @@
     "motif": "commute",
     "accent": "#31588c",
     "art_label": "Workday listening",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.koolfm.audio/segmen/"
   },
   {
     "name": "Molek FM",
@@ -154,7 +154,7 @@
   {
     "name": "Eight FM",
     "tagline": "A conversation in Mandarin.",
-    "intro": "Media Prima Audio’s Chinese-language station, suited to briefs requiring culturally adapted messaging.",
+    "intro": "Media Prima Audio’s Chinese-language brand, currently presented on its official website as Eight无限, with conversation, music and lifestyle programmes.",
     "ideas": [
       {
         "title": "Mandarin copywriting",
@@ -168,7 +168,7 @@
     "motif": "soundwave",
     "accent": "#c13b53",
     "art_label": "Mandarin audio",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.eight.audio/"
   },
   {
     "name": "REV Media",
@@ -491,7 +491,7 @@
     "motif": "commerce",
     "accent": "#dd7736",
     "art_label": "Shopping demonstration",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.mediaprimaomnia.my/wowshop"
   },
   {
     "name": "Tonton",
@@ -510,7 +510,7 @@
     "motif": "stream",
     "accent": "#af3f70",
     "art_label": "Streaming video",
-    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+    "reference": "https://www.tonton.com.my/pages/howitworks.html"
   },
   {
     "name": "Berita Harian",

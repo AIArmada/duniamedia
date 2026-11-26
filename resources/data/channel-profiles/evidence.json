@@ -229,6 +229,18 @@
         "title": "Kool 101",
         "body": "Media Prima’s corporate overview lists Kool 101 among its audio brands. The directory retains the original Kool FM catalogue label; confirm current branding and the current media kit before booking.",
         "url": "https://www.mediaprima.com.my/who-we-are.html"
+      },
+      {
+        "type": "Station programme",
+        "title": "Pagi On Point",
+        "body": "The station’s own programme page describes a morning format focused on community conversations and viewpoints.",
+        "url": "https://www.koolfm.audio/segmen/"
+      },
+      {
+        "type": "Weekend music",
+        "title": "Power Retro Kool FM",
+        "body": "The station lists a weekend music format featuring 1980s and 1990s favourites.",
+        "url": "https://www.koolfm.audio/segmen/"
       }
     ]
   },
@@ -251,6 +263,195 @@
         "title": "Orang Asli broadcasting",
         "body": "RTM’s radio directory traces the station’s beginnings to Radio 7, a dedicated Orang Asli service. Use current local guidance for any campaign.",
         "url": "https://radio.rtm.gov.my/en/senarai-radio"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-tv3",
+    "items": [
+      {
+        "type": "Flagship news",
+        "title": "Buletin Utama",
+        "body": "OMNiA’s TV3 brand page identifies the channel’s flagship news programme. Commercial activity must be kept separate from independent editorial coverage.",
+        "url": "https://www.mediaprimaomnia.my/tv3"
+      },
+      {
+        "type": "Published programming examples",
+        "title": "Local drama and entertainment",
+        "body": "OMNiA’s brand page names 7 Hari Mencintaiku 2 and Kampung People among its drama examples. These are historical content references, not a current schedule.",
+        "url": "https://www.mediaprimaomnia.my/tv3"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-tv9",
+    "items": [
+      {
+        "type": "Official live channel",
+        "title": "TV9 on Tonton",
+        "body": "The broadcaster provides a TV9 live channel through its Tonton service. Review the current viewing context before planning creative or requesting commercial options.",
+        "url": "https://browse.tonton.com.my/live/tv9"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-8tv",
+    "items": [
+      {
+        "type": "News programme",
+        "title": "8TV Mandarin News",
+        "body": "OMNiA identifies this as the channel’s flagship news programme.",
+        "url": "https://www.mediaprimaomnia.my/8tv"
+      },
+      {
+        "type": "Published programme examples",
+        "title": "Living Delight and Money Matters",
+        "body": "The official channel profile identifies these as talk-show examples, illustrating lifestyle and financial-information contexts. Verify the current schedule.",
+        "url": "https://www.mediaprimaomnia.my/8tv"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-ntv7",
+    "items": [
+      {
+        "type": "Educational television",
+        "title": "DIDIKTV KPM",
+        "body": "OMNiA identifies the service as an educational channel produced by ntv7 in collaboration with the Ministry of Education, launched on 17 February 2021.",
+        "url": "https://www.mediaprimaomnia.my/ntv7"
+      },
+      {
+        "type": "Education news",
+        "title": "Buletin Didik",
+        "body": "The channel profile identifies this news platform as a source of Ministry initiatives and updates. Commercial suitability requires broadcaster and relevant educational approval.",
+        "url": "https://www.mediaprimaomnia.my/ntv7"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-eight-fm",
+    "items": [
+      {
+        "type": "Published programme",
+        "title": "你好我好生意好",
+        "body": "Eight无限’s official programme page describes conversations with business owners about their experiences and practical lessons.",
+        "url": "https://www.eight.audio/%E8%8A%82%E7%9B%AE/"
+      },
+      {
+        "type": "Weekend programme",
+        "title": "Eight无限 20好听榜",
+        "body": "The station lists a music countdown programme featuring current music trends.",
+        "url": "https://www.eight.audio/%E8%8A%82%E7%9B%AE/"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-tonton",
+    "items": [
+      {
+        "type": "Official platform reference",
+        "title": "Live and catch-up viewing",
+        "body": "Tonton describes its platform as ad-supported streaming with television, films and live events. Specific advertising products and content rights require confirmation.",
+        "url": "https://www.tonton.com.my/pages/howitworks.html"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-wowshop",
+    "items": [
+      {
+        "type": "Official commercial profile",
+        "title": "Content commerce",
+        "body": "OMNiA’s WowShop profile positions it as a content-commerce business connecting shopping with media. Review the source airtime deck for the actual available formats.",
+        "url": "https://www.mediaprimaomnia.my/wowshop"
+      }
+    ]
+  },
+  {
+    "slug": "astro-sinar",
+    "items": [
+      {
+        "type": "Published station update",
+        "title": "Berdua Malam SINAR",
+        "body": "Astro’s 2026 station announcement describes an evening programme presented by Suraya and Putra, with conversational content and 1990s music as part of SINAR’s positioning. Confirm the current lineup.",
+        "url": "https://corporate.astro.com.my/mediaroom-releases/sinar-perkenalkan-gandingan-baharu-soraya-putra-dalam-berdua-malam-sinar"
+      }
+    ]
+  },
+  {
+    "slug": "astro-thr-gegar",
+    "items": [
+      {
+        "type": "Official channel guide",
+        "title": "East Coast audio identity",
+        "body": "Astro’s guide describes a mix of English, Hindi and East Coast dialect music and identifies listening through Astro and SYOK. Confirm actual campaign coverage.",
+        "url": "https://www.astro.com.my/content/channels/THR-GEGAR-22"
+      }
+    ]
+  },
+  {
+    "slug": "astro-zayan",
+    "items": [
+      {
+        "type": "Published programme directory",
+        "title": "Pagi ZAYAN, ZAYAN 10-3 and Petang ZAYAN",
+        "body": "The station’s programme directory identifies distinct morning, daytime and afternoon segments under its nasyid-focused positioning.",
+        "url": "https://zayan.my/segmen-zayan"
+      }
+    ]
+  },
+  {
+    "slug": "astro-hitz-fm",
+    "items": [
+      {
+        "type": "Station programme directory",
+        "title": "HITZ Morning Crew, HITZ Days, HITZ Drive and HITZ Tonight",
+        "body": "The station’s own shows page identifies four distinct daypart brands. Confirm current scheduling and commercial options.",
+        "url": "https://hitz.com.my/shows"
+      }
+    ]
+  },
+  {
+    "slug": "astro-goxuan",
+    "items": [
+      {
+        "type": "Official channel guide",
+        "title": "GOXUAN Playlist of the Day",
+        "body": "Astro’s guide identifies a selected-genre music format. The station’s official app describes music, trending topics and video content for younger Chinese-language audiences.",
+        "url": "https://www.astro.com.my/content/channels/GOXUAN-293"
+      }
+    ]
+  },
+  {
+    "slug": "astro-mix-fm",
+    "items": [
+      {
+        "type": "Official media-sales profile",
+        "title": "English-language audio advertising",
+        "body": "Astro Media Solutions provides a dedicated MIX advertising profile. Use its current commercial team to validate audiences, packages and available formats.",
+        "url": "https://astromedia.com.my/our_brands/audio-advertising/mix/"
+      }
+    ]
+  },
+  {
+    "slug": "astro-melody-fm",
+    "items": [
+      {
+        "type": "Official channel guide",
+        "title": "MELODY FM",
+        "body": "Astro’s channel guide is a direct reference for station scheduling. Confirm current programme options rather than relying on old media-kit claims.",
+        "url": "https://www.astro.com.my/content/channels/MELODY-FM-28"
+      }
+    ]
+  },
+  {
+    "slug": "astro-my-fm",
+    "items": [
+      {
+        "type": "Official station platform",
+        "title": "MY FM digital content",
+        "body": "The station’s own site provides its Chinese-language audio stream, articles and current guest information. Confirm station-specific integrations.",
+        "url": "https://my.com.my/home-my-fm"
       }
     ]
   }
