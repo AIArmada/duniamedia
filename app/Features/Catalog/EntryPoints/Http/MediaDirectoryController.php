@@ -110,6 +110,7 @@ class MediaDirectoryController extends Controller
             ],
             'heroImage' => ! empty($ownerData['logo']) ? 'assets/partners/'.$ownerData['logo'] : null,
             'pageTitle' => $ownerData['name'].' — Media Owner | Dunia Media',
+            'metaDescription' => $ownerData['description'],
         ]);
     }
 

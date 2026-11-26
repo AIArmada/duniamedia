@@ -65,7 +65,7 @@ class MediaDirectory
 
     /** Rate cards shown on an owner page. */
     private const OWNER_RATE_CARDS = [
-        'media-prima' => ['omnia-content-terhangat-2026', 'wowshop-airtime-2025', 'hot-fm-zoomerz-on-ground', 'podcast-utama-buletin-tv3', 'karnival-jom-heboh-2026-venue'],
+        'media-prima' => ['omnia-content-terhangat-2026', 'hot-fm-zoomerz-on-ground', 'klcc-snorkels-2024-big-tree', 'wowshop-airtime-2025', 'podcast-utama-buletin-tv3', 'karnival-jom-heboh-2026-venue'],
         'astro' => ['astro-video360-digital-2026'],
         'rtm' => ['rtm-tv-radio-2025'],
         'al-hijrah' => ['tvalhijrah-bincang-niaga-2024'],
@@ -296,7 +296,9 @@ class MediaDirectory
 
         foreach ($property->decks()->with('product.mediaProfile')->get() as $profile) {
             $product = $profile->product;
-            $products->put($product->id, $product);
+            if ($product->status->value === 'active') {
+                $products->put($product->id, $product);
+            }
         }
 
         return $products
@@ -330,12 +332,18 @@ class MediaDirectory
             ? collect(array_filter([self::property($ownerSlug, $channelSlug)]))
             : self::ownerProperties($ownerSlug);
 
+        $properties = new \Illuminate\Database\Eloquent\Collection($properties->all());
+        $properties->load(['decks.product.mediaProfile']);
+
         $products = collect();
 
         foreach ($properties as $property) {
-            foreach ($property->decks()->with('product.mediaProfile')->get() as $profile) {
+            foreach ($property->decks as $profile) {
                 $product = $profile->product;
-                $products->put($product->id, $product);
+
+                if ($product->status->value === 'active') {
+                    $products->put($product->id, $product);
+                }
             }
         }
 

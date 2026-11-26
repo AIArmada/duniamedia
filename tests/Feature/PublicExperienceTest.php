@@ -660,6 +660,61 @@ class PublicExperienceTest extends TestCase
         $this->assertDatabaseHas('enquiries', ['source' => 'asset_submission']);
     }
 
+    public function test_media_prima_owner_showcases_every_catalogue_channel_and_public_rate_card(): void
+    {
+        $this->createMediaOffer([
+            'slug' => 'omnia-content-terhangat-2026',
+            'name' => 'Media Prima television planner',
+        ], ['medium' => 'TV & Broadcast']);
+        $this->createMediaOffer([
+            'slug' => 'klcc-snorkels-2024-big-tree',
+            'name' => 'KLCC Snorkels',
+        ]);
+        $this->createMediaOffer([
+            'slug' => 'wowshop-airtime-2025',
+            'name' => 'Private commerce rate',
+            'status' => 'draft',
+        ]);
+
+        $owner = \App\Features\Catalog\Support\MediaDirectory::owner('media-prima');
+        $response = $this->get(route('media.owner', 'media-prima'))
+            ->assertOk()
+            ->assertSee('One group. Every screen.')
+            ->assertSee('Explore advertising opportunities')
+            ->assertSee('33 brands & channels')
+            ->assertSee('9 media categories')
+            ->assertSee('assets/home/tv3-newsroom.webp')
+            ->assertSee('assets/home/big-tree-klcc.webp')
+            ->assertSee(route('offers.show', 'omnia-content-terhangat-2026'))
+            ->assertSee(route('offers.show', 'klcc-snorkels-2024-big-tree'))
+            ->assertDontSee(route('offers.show', 'wowshop-airtime-2025'))
+            ->assertSee(route('media.index', ['owner' => 'media-prima']))
+            ->assertSee(route('rates.index', ['owner' => 'media-prima']))
+            ->assertSee('Build a cross-channel proposal');
+
+        foreach ($owner['channels'] as $channel) {
+            $response->assertSee(route('media.channel', ['media-prima', $channel['slug']]));
+        }
+
+        foreach ($owner['categories'] as $category) {
+            $id = 'network-'.\Illuminate\Support\Str::slug($category['label']);
+            $response->assertSee('href="#'.$id.'"', false)->assertSee('id="'.$id.'"', false);
+        }
+
+        $this->assertSame(count($owner['channels']), substr_count($response->getContent(), 'class="owner-editorial-brand"'));
+        $this->get(route('media.owner', 'astro'))->assertOk()->assertDontSee('class="owner-editorial"', false);
+    }
+
+    public function test_media_prima_owner_remains_useful_without_rate_cards(): void
+    {
+        $this->get(route('media.owner', 'media-prima'))
+            ->assertOk()
+            ->assertSee('Request a media brief')
+            ->assertSee('Explore the Media Prima network')
+            ->assertSee(route('media.channel', ['media-prima', 'jom-heboh']))
+            ->assertSee(route('media.channel', ['media-prima', 'podcast-utama']));
+    }
+
     public function test_media_owners_can_be_filtered_by_category_and_channel_name(): void
     {
         $this->get('/media/owners?category=transit')

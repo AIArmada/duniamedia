@@ -1,30 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    @php
-        $ownerStoryBlocks = [
-            [
-                'type' => 'rich_text',
-                'payload' => [
-                    'title' => 'One group, every screen',
-                    'body' => 'Media Prima Berhad is Malaysia’s largest integrated media group, bringing together free-to-air television, radio, digital publishing, out-of-home and commerce. A single plan can move from mass reach on TV3 to youth radio, urban Chinese audiences on 8TV, commerce on WowShop and on-ground activation through Jom Heboh.',
-                ],
+    @include('pages.owners._editorial', [
+        'editorial' => [
+            'network_name' => 'Media Prima',
+            'tagline' => 'One group. Every screen.',
+            'intro' => 'Connect with Malaysian audiences through television, radio, digital publishing, out-of-home, streaming, commerce and on-ground experiences — all in one media plan.',
+            'hero' => 'assets/home/tv3-newsroom.webp',
+            'hero_alt' => 'Buletin TV3 studio imagery from the Podcast Utama media deck',
+            'closing_image' => 'assets/home/big-tree-klcc.webp',
+            'closing_alt' => 'Big Tree lightbox displays around KLCC',
+            'featured' => [
+                'omnia-content-terhangat-2026' => ['title' => 'OMNiA Content Terhangat 2026', 'description' => 'TV spots, programme integration and sponsorship across TV3 and 8TV.', 'medium' => 'Television', 'icon' => 'tv'],
+                'hot-fm-zoomerz-on-ground' => ['title' => 'Hot FM Zoomerz', 'description' => 'Connect with listeners through on-ground radio activations.', 'medium' => 'Radio', 'icon' => 'radio'],
+                'klcc-snorkels-2024-big-tree' => ['title' => 'KLCC Snorkels', 'description' => 'Landmark lightbox formats at the base of the Twin Towers.', 'medium' => 'Outdoor', 'icon' => 'billboard'],
+                'wowshop-airtime-2025' => ['title' => 'WowShop Airtime', 'description' => 'TV home-shopping formats and live product demonstrations.', 'medium' => 'Commerce', 'icon' => 'briefcase'],
             ],
-            [
-                'type' => 'feature_list',
-                'payload' => [
-                    'title' => 'What the group can do',
-                    'items' => [
-                        ['title' => 'Television', 'body' => 'TV3, TV9, 8TV and ntv7 spanning mass Malay, urban Chinese and family audiences.'],
-                        ['title' => 'Radio', 'body' => 'Hot FM, Kool FM, Molek FM, Fly FM and Eight FM across Malay, Chinese and English listeners.'],
-                        ['title' => 'Digital publishing', 'body' => 'REV Media, SAYS, OHBULAN!, SirapLimau, Mashable SEA and lifestyle titles.'],
-                        ['title' => 'Out-of-home', 'body' => 'Big Tree landmark sites, transit and large-format inventory.'],
-                        ['title' => 'Commerce and events', 'body' => 'WowShop TV commerce and Jom Heboh nationwide activation.'],
-                    ],
-                ],
-            ],
-        ];
-    @endphp
-
-    @include('pages.owners._shared')
+        ],
+    ])
 @endsection
