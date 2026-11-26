@@ -423,7 +423,7 @@ return [
         'network_name' => 'specialist media',
         'tagline' => 'Focused audiences. Distinctive opportunities.',
         'intro' => 'Explore business radio with BFM, independent digital news with FMT and Malaysiakini, business publishing with The Malaysian Reserve and The Edge, multilingual iMedia and Nusavue event partnerships.',
-        'hero' => 'assets/editorial/digital.webp',
+        'hero' => 'assets/editorial/owners/specialist-media-hero.svg',
         'closing_image' => 'assets/editorial/owners/specialist-media-campaign.svg',
         'closing_title' => 'Find a more focused media mix',
         'closing_copy' => 'Combine business radio, independent publishing, multilingual digital media and event opportunities around your campaign goals.',

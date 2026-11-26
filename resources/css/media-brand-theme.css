@@ -175,3 +175,49 @@
     .owner-editorial[data-brand-layout] .owner-editorial-hero__visual:not(.owner-editorial-hero__visual--artwork):not(.owner-editorial-hero__visual--network)::after{background:linear-gradient(180deg,var(--brand-surface),transparent 24%)}
     .owner-editorial[data-brand-layout="screen"] .owner-editorial-hero__visual:not(.owner-editorial-hero__visual--artwork){border-radius:0}
 }
+
+/* Saturated editorial openings for high-energy and infrastructure brands.
+   Text stays on a solid, contrast-safe brand surface; imagery is never recoloured. */
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero{
+    background:var(--brand-deep);color:white;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero :is(h1,.owner-editorial-tagline,.owner-editorial-kicker,.owner-editorial-intro,.breadcrumb,.breadcrumb a){
+    color:#fff;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero__identity{
+    border-color:#ffffff38;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero__identity:has(img){
+    background:#fff;padding:clamp(.7rem,1.5vw,1.3rem);border-radius:12px;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero__visual:not(.owner-editorial-hero__visual--artwork):not(.owner-editorial-hero__visual--network)::after{
+    background:linear-gradient(90deg,var(--brand-deep),color-mix(in srgb,var(--brand-deep) 70%,transparent) 12%,transparent 42%);
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero .button--primary{
+    background:#fff;color:var(--brand-deep);border-color:white;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero .button--primary:hover{background:var(--brand-surface)}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero .button--secondary{
+    background:transparent;color:white;border-color:#ffffff78;
+}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero .button--secondary:hover{background:#ffffff18;border-color:white}
+.owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero a:focus-visible{outline-color:#fff}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy{
+    background:linear-gradient(145deg,var(--brand-deep),var(--brand-action));color:white;align-self:stretch;
+    display:flex;flex-direction:column;justify-content:center;
+}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy :is(h1,.channel-editorial-tagline,.channel-editorial-intro,.channel-editorial-identity > span,.channel-editorial-identity small){color:white}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-identity img{
+    background:white;border-radius:8px;padding:.5rem .7rem;
+}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy .button--primary{background:#fff;color:var(--brand-deep);border-color:white}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy .button--primary:hover{background:var(--brand-surface)}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy .button--secondary{background:transparent;color:white;border-color:#ffffff88}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy .button--secondary:hover{background:#ffffff18;border-color:white}
+.channel-editorial:is([data-brand-layout="audio"],[data-brand-layout="screen"],[data-brand-layout="journey"]) .channel-editorial-hero__copy a:focus-visible{outline-color:white}
+@media(min-width:901px){
+    .owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero__copy{padding-inline-start:clamp(1.15rem,2.6vw,2.6rem)}
+}
+@media(max-width:900px){
+    .owner-editorial:is([data-brand-layout="network"],[data-brand-layout="screen"],[data-brand-layout="journey"],[data-brand-layout="regional"]) .owner-editorial-hero__visual:not(.owner-editorial-hero__visual--artwork):not(.owner-editorial-hero__visual--network)::after{background:linear-gradient(180deg,var(--brand-deep),transparent 24%)}
+}
