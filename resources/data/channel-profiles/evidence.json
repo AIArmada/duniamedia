@@ -1,0 +1,257 @@
+[
+  {
+    "slug": "media-prima-fly-fm",
+    "items": [
+      {
+        "type": "Weekday programme",
+        "title": "Fly FM Wonda Breakfast",
+        "body": "The station’s programme listing names Ean, Adam and Rika for the breakfast show. The format centres on morning conversations.",
+        "url": "https://www.flyfm.audio/shows/"
+      },
+      {
+        "type": "Drive-time programme",
+        "title": "The Ryan Show",
+        "body": "The station describes Ryan’s show as a drive-home programme with a daily rap-up format.",
+        "url": "https://www.flyfm.audio/shows/"
+      },
+      {
+        "type": "Music programming",
+        "title": "The Fly Top 40",
+        "body": "The weekend programme listing includes a weekly music countdown. Confirm commercial integrations directly with the station.",
+        "url": "https://www.flyfm.audio/shows/"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-molek-fm",
+    "items": [
+      {
+        "type": "Morning programme",
+        "title": "Molek Pagi",
+        "body": "The official segment page lists Qila, Anna and Sham for its morning conversation format.",
+        "url": "https://www.molekfm.audio/segmen/"
+      },
+      {
+        "type": "Afternoon programme",
+        "title": "Molek Petang",
+        "body": "The official listing identifies Mat Dan for the afternoon programme.",
+        "url": "https://www.molekfm.audio/segmen/"
+      },
+      {
+        "type": "Music programme",
+        "title": "Molek Bollyrock",
+        "body": "The station lists a weekend programme featuring Bollywood and rock music.",
+        "url": "https://www.molekfm.audio/segmen/"
+      }
+    ]
+  },
+  {
+    "slug": "astro-era",
+    "items": [
+      {
+        "type": "Morning programme",
+        "title": "3 Pagi ERA",
+        "body": "Listed in the broadcaster’s current segment directory. Confirm the current lineup and booking options before proposing an integration.",
+        "url": "https://era.je/segmen-era-central"
+      },
+      {
+        "type": "Music programming",
+        "title": "Gempak Hit ERA and RIM Chart ERA",
+        "body": "Two programme names listed in ERA’s official directory illustrate the station’s hit-music focus.",
+        "url": "https://era.je/segmen-era-central"
+      },
+      {
+        "type": "Evening and specialist music",
+        "title": "Malam Chill ERA and Hallyu ERA",
+        "body": "The official programme directory identifies distinct evening and Korean-pop-related programme contexts.",
+        "url": "https://era.je/segmen-era-central"
+      }
+    ]
+  },
+  {
+    "slug": "astro-astro-ria",
+    "items": [
+      {
+        "type": "Programme guide",
+        "title": "Gempak Most Wanted Bytes 2026",
+        "body": "Astro’s channel guide includes this entertainment programme. Treat it as an example of the content context; the schedule can change.",
+        "url": "https://www.astro.com.my/content/channels/Astro-Ria-193"
+      }
+    ]
+  },
+  {
+    "slug": "astro-astro-prima",
+    "items": [
+      {
+        "type": "Programme guide",
+        "title": "Projek Bapak Bapak",
+        "body": "Astro’s Prima schedule includes the programme in its local entertainment lineup.",
+        "url": "https://www.astro.com.my/content/channels/Astro-Prima-316"
+      },
+      {
+        "type": "Programme guide",
+        "title": "Gelak Gempak",
+        "body": "The channel schedule describes this as a local comedy competition programme.",
+        "url": "https://www.astro.com.my/content/channels/Astro-Prima-316"
+      }
+    ]
+  },
+  {
+    "slug": "astro-astro-oasis",
+    "items": [
+      {
+        "type": "Programme guide",
+        "title": "MyQURANTIME and Cinta Ilmu",
+        "body": "The Astro content guide lists these titles for Astro Oasis, reflecting its learning and faith-oriented programming.",
+        "url": "https://biz.astro.com.my/channels"
+      }
+    ]
+  },
+  {
+    "slug": "astro-astro-vanavil",
+    "items": [
+      {
+        "type": "Programme guide",
+        "title": "Isai Gaananggal and Sravana Sandhya",
+        "body": "Examples appearing in the Astro content guide for Vanavil. Confirm current times and formats with the broadcaster.",
+        "url": "https://biz.astro.com.my/channels"
+      }
+    ]
+  },
+  {
+    "slug": "astro-astro-tutor-tv",
+    "items": [
+      {
+        "type": "Programme guide",
+        "title": "Kisah Omar & Hana",
+        "body": "Astro’s content guide lists this programme for Tutor TV; responsible advertising policies and the current lineup must be confirmed.",
+        "url": "https://biz.astro.com.my/channels"
+      }
+    ]
+  },
+  {
+    "slug": "star-media-group-suria-fm",
+    "items": [
+      {
+        "type": "Station programme",
+        "title": "Vibe Suria",
+        "body": "The station’s homepage describes Cik Piah’s segment covering family, health and women’s lifestyle topics. Check the current timetable.",
+        "url": "https://suria.my/"
+      },
+      {
+        "type": "Listener interaction",
+        "title": "Playlist Suria",
+        "body": "The station’s homepage describes a request-and-dedication music segment with Cik Piah.",
+        "url": "https://suria.my/"
+      }
+    ]
+  },
+  {
+    "slug": "star-media-group-988-fm",
+    "items": [
+      {
+        "type": "Dated audience measurement",
+        "title": "Weekly listenership",
+        "body": "Star Media Group reports this figure from GfK Radio Audience Measurement, Wave 2 2025. It is not a live audience count or guarantee of campaign reach.",
+        "url": "https://www.starmediagroup.my/project/988fm/",
+        "metric": "2.1 million"
+      },
+      {
+        "type": "Programme listing",
+        "title": "Family Day",
+        "body": "988’s on-air page describes a Sunday family programme covering parenting, food, health and home life. Check the current schedule.",
+        "url": "https://988.com.my/on-air/"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-says",
+    "items": [
+      {
+        "type": "Publisher-reported case study",
+        "title": "NIVEA Men Deodorant",
+        "body": "REV Media reports one million views on each of SAYS’s Instagram and Facebook for the SureshRaps video in the multi-brand campaign published on 2 September 2025. Historical publisher-reported outcome, not a Dunia Media campaign or expected result.",
+        "url": "https://revmedia.my/driving-relevance-for-nivea-men-deodorant-across-multiple-audiences/",
+        "metric": "1M views each"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-ohbulan",
+    "items": [
+      {
+        "type": "Publisher-reported case study",
+        "title": "NIVEA Men Deodorant",
+        "body": "REV Media identifies OhBulan as one of the participating platforms in a short-form video campaign with brand-specific treatments. No individual OhBulan result was disclosed in that case study.",
+        "url": "https://revmedia.my/driving-relevance-for-nivea-men-deodorant-across-multiple-audiences/"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-rev-media",
+    "items": [
+      {
+        "type": "Publisher-reported network case study",
+        "title": "NIVEA Men Deodorant",
+        "body": "REV Media’s September 2025 case study reports combined social reach across the participating platforms SAYS, Viral Cham and OhBulan. This is a network campaign result, not an individual channel audience figure.",
+        "url": "https://revmedia.my/driving-relevance-for-nivea-men-deodorant-across-multiple-audiences/",
+        "metric": "4.2M social reach"
+      }
+    ]
+  },
+  {
+    "slug": "bernama-tv",
+    "items": [
+      {
+        "type": "Published service reference",
+        "title": "Television publicity and interviews",
+        "body": "Bernama’s corporate services catalogue lists commercial television interview and publicity formats. Independent journalism remains separate from purchased placements.",
+        "url": "https://www.bernama.com/corporate/services.php"
+      }
+    ]
+  },
+  {
+    "slug": "bernama-digital",
+    "items": [
+      {
+        "type": "Published service reference",
+        "title": "Digital publicity services",
+        "body": "Bernama’s corporate services catalogue provides details of its digital publicity options; current quotes should come from the media team.",
+        "url": "https://www.bernama.com/corporate/services.php"
+      }
+    ]
+  },
+  {
+    "slug": "media-prima-kool-fm",
+    "items": [
+      {
+        "type": "Current network name",
+        "title": "Kool 101",
+        "body": "Media Prima’s corporate overview lists Kool 101 among its audio brands. The directory retains the original Kool FM catalogue label; confirm current branding and the current media kit before booking.",
+        "url": "https://www.mediaprima.com.my/who-we-are.html"
+      }
+    ]
+  },
+  {
+    "slug": "rtm-minnal-fm",
+    "items": [
+      {
+        "type": "Official station directory",
+        "title": "Tamil-language national radio",
+        "body": "RTM identifies Minnal as a Tamil-language service combining music, information and cultural programming.",
+        "url": "https://radio.rtm.gov.my/en/senarai-radio"
+      }
+    ]
+  },
+  {
+    "slug": "rtm-asyik-fm",
+    "items": [
+      {
+        "type": "Official station history",
+        "title": "Orang Asli broadcasting",
+        "body": "RTM’s radio directory traces the station’s beginnings to Radio 7, a dedicated Orang Asli service. Use current local guidance for any campaign.",
+        "url": "https://radio.rtm.gov.my/en/senarai-radio"
+      }
+    ]
+  }
+]
