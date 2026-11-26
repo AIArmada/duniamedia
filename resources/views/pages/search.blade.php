@@ -73,7 +73,7 @@
                                     <div class="creator-card__meta"><span class="tag tag--verified">Verified</span><span class="tag">{{ $creator->socialPlatform }}</span></div>
                                     <h3>{{ $creator->name }}</h3>
                                     <p>{{ \Illuminate\Support\Str::limit($creator->bio, 140) }}</p>
-                                    <a href="{{ route('creators.index') }}" class="text-link">View the creator network →</a>
+                                    <a href="{{ route('creators.show', $creator->slug) }}" class="text-link">View creator profile →</a>
                                 </div>
                             </article>
                         @endforeach
