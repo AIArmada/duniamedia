@@ -7,6 +7,7 @@ namespace App\Features\Creators\Models;
 use App\Features\Identity\Api\ResolvesParties;
 use App\Shared\Models\BaseModel;
 use Database\Factories\CreatorProfileFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class CreatorProfile extends BaseModel
@@ -25,6 +26,14 @@ class CreatorProfile extends BaseModel
     public function registerMediaCollections(): void
     {
         $this->addMediaCollection('image')->singleFile();
+        $this->addMediaCollection('gallery');
+    }
+
+    public function scopePubliclyListed(Builder $query): Builder
+    {
+        return $query->where('status', 'active')
+            ->where('verification_status', 'verified')
+            ->where('slug', 'not like', 'demo-creator-%');
     }
 
     public function accounts(): HasMany
