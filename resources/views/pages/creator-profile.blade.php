@@ -14,19 +14,19 @@
                     <h1 id="creator-title">{{ $name }}</h1>
                     @if ($handle !== '')<p class="creator-profile-handle">{{ '@'.$handle }}</p>@endif
                     @if ($label = $editorial['label'] ?? $creator->primary_niche)
-                        <div class="creator-profile-category"><x-dm-icon name="spark" :size="22"/>{{ $label }}</div>
+                        <div class="creator-profile-category"><x-dm-icon :name="$editorial['icon'] ?? 'spark'" :size="22"/>{{ $label }}</div>
                     @endif
                     @if ($creator->bio)<p class="creator-profile-bio">{{ $creator->bio }}</p>@endif
                     <div class="creator-profile-actions">
                         @if ($socialUrl)
-                            <a class="button button--primary" href="{{ $socialUrl }}" target="_blank" rel="noopener noreferrer"><x-dm-icon name="play" :size="20"/> View {{ $creator->social_platform }} <span aria-hidden="true">↗</span></a>
+                            <a class="button button--primary" href="{{ $socialUrl }}" target="_blank" rel="noopener noreferrer"><x-dm-icon :name="strtolower((string) $creator->social_platform) === 'tiktok' ? 'tiktok' : 'play'" :size="20"/> View {{ $creator->social_platform }} <span aria-hidden="true">↗</span></a>
                         @endif
                         <a class="button button--secondary" href="{{ $enquiryUrl }}">Discuss a collaboration <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
                 <div class="creator-profile-hero__portrait">
                     @if ($portrait)
-                        <img src="{{ $portrait }}" alt="Portrait of {{ $name }}" fetchpriority="high" decoding="async">
+                        <x-creator-portrait :photo="$portrait" :alt="'Portrait of '.$name" sizes="(max-width: 720px) 100vw, 52vw" priority/>
                     @else
                         <div class="creator-profile-placeholder" aria-hidden="true"><x-dm-icon name="creators" :size="80"/></div>
                     @endif
@@ -37,7 +37,7 @@
         <section class="container creator-profile-media" aria-label="Social profile and portraits">
             <div class="creator-profile-social">
                 <span class="creator-profile-kicker">Social profile</span>
-                @if ($creator->social_platform)<h2>{{ $creator->social_platform }}</h2>@else<h2>Creator network</h2>@endif
+                @if ($creator->social_platform)<h2>@if (strtolower($creator->social_platform) === 'tiktok')<x-dm-icon name="tiktok" :size="38"/>@endif {{ $creator->social_platform }}</h2>@else<h2>Creator network</h2>@endif
                 @if ($socialUrl)
                     <a class="creator-profile-social__handle" href="{{ $socialUrl }}" target="_blank" rel="noopener noreferrer">{{ '@'.$handle }} <span aria-hidden="true">↗</span></a>
                 @elseif ($handle !== '')
@@ -58,7 +58,7 @@
             </div>
             @foreach ($gallery as $photo)
                 <figure class="creator-profile-photo">
-                    <img src="{{ $photo->getUrl() }}" alt="Portrait of {{ $name }} — {{ $loop->iteration + 1 }}" loading="lazy" decoding="async">
+                    <x-creator-portrait :photo="$photo" :alt="'Portrait of '.$name.' — '.($loop->iteration + 1)" sizes="(max-width: 720px) 50vw, 33vw"/>
                 </figure>
             @endforeach
         </section>
@@ -92,9 +92,15 @@
                     <p>Interested in working with {{ $name }} for your campaign, content or education initiative? Tell us about your goals and we can discuss the next steps.</p>
                     <a class="button button--primary" href="{{ $enquiryUrl }}">Discuss a collaboration <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="creator-profile-collaboration__art" aria-hidden="true">
-                    <x-dm-icon name="users" :size="100"/>
-                </div>
+                @if (! empty($editorial['collaboration_art']))
+                    <div class="creator-profile-collaboration__photo" aria-hidden="true">
+                        <img src="{{ asset($editorial['collaboration_art']) }}" alt="" width="421" height="202" loading="lazy" decoding="async">
+                    </div>
+                @else
+                    <div class="creator-profile-collaboration__art" aria-hidden="true">
+                        <x-dm-icon name="users" :size="100"/>
+                    </div>
+                @endif
             </div>
             <a class="creator-profile-back" href="{{ route('creators.index') }}"><span aria-hidden="true">←</span> Explore all creators</a>
         </section>

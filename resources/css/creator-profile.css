@@ -155,3 +155,17 @@
     .creator-profile-actions .button { width: 100%; }
     .creator-profile-focus__topics { grid-template-columns: 1fr; }
 }
+
+/* Preserve the approved dental-care artwork and brand-specific social mark. */
+.creator-profile-social h2 { display: flex; align-items: center; gap: .55rem; }
+.creator-profile-social h2 .icon { flex-shrink: 0; }
+.creator-profile-collaboration__panel:has(.creator-profile-collaboration__photo) { position: relative; isolation: isolate; min-height: 245px; grid-template-columns: minmax(0,60fr) minmax(0,40fr); }
+.creator-profile-collaboration__panel:has(.creator-profile-collaboration__photo) > :first-child { position: relative; z-index: 1; }
+.creator-profile-collaboration__photo { position: absolute; inset: 0 0 0 53%; z-index: -1; }
+.creator-profile-collaboration__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.creator-profile-collaboration__photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,#f3e8df,transparent 38%); pointer-events: none; }
+@media (max-width: 720px) {
+    .creator-profile-collaboration__panel:has(.creator-profile-collaboration__photo) { grid-template-columns: 1fr; padding-bottom: 0; }
+    .creator-profile-collaboration__photo { position: relative; inset: auto; z-index: 0; margin: 0 calc(-1 * clamp(1.7rem,4vw,3.5rem)); aspect-ratio: 2.08; }
+    .creator-profile-collaboration__photo::after { background: linear-gradient(180deg,#f3e8df,transparent 30%); }
+}

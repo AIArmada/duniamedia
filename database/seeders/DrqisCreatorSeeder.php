@@ -72,12 +72,12 @@ class DrqisCreatorSeeder extends Seeder
         );
 
         if (! $profile->getFirstMedia('image')) {
-            $this->mediaFile($profile, 'assets/creators/drqis/portrait.webp');
+            $this->mediaFile($profile, 'assets/creators/drqis/portrait.webp', custom: ['responsive_asset' => 'assets/creators/drqis/portrait-480.webp']);
         }
 
         if ($profile->getMedia('gallery')->isEmpty()) {
             foreach (['portrait-02.webp', 'portrait-03.webp'] as $filename) {
-                $this->mediaFile($profile, 'assets/creators/drqis/'.$filename, 'gallery');
+                $this->mediaFile($profile, 'assets/creators/drqis/'.$filename, 'gallery', custom: ['responsive_asset' => 'assets/creators/drqis/'.str_replace('.webp', '-480.webp', $filename)]);
             }
         }
     }

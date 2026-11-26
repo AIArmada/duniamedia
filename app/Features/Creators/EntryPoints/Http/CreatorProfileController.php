@@ -53,7 +53,7 @@ final class CreatorProfileController
             'name' => $name,
             'handle' => $handle,
             'socialUrl' => $socialUrl,
-            'portrait' => $creator->getFirstMediaUrl('image'),
+            'portrait' => $creator->getFirstMedia('image'),
             'gallery' => $creator->getMedia('gallery')->take(6),
             'editorial' => $editorial,
             'metrics' => $metrics,
