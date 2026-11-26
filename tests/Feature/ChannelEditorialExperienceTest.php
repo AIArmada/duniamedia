@@ -8,6 +8,7 @@ use AIArmada\Products\Models\Product;
 use App\Features\Catalog\Models\MediaProperty;
 use App\Features\Catalog\Support\ChannelEditorial;
 use App\Features\Catalog\Support\MediaDirectory;
+use App\Features\Catalog\Support\MediaBrandTheme;
 use App\Features\Catalog\Support\RateCardPresenter;
 use Database\Seeders\MediaCatalogueSeeder;
 use Database\Seeders\RateCardContentSeeder;
@@ -52,6 +53,8 @@ class ChannelEditorialExperienceTest extends TestCase
                     ->assertSee($channel['name'])
                     ->assertSee($visual['image'])
                     ->assertSee($visual['tagline'])
+                    ->assertSee('data-brand-layout=', false)
+                    ->assertSee('--brand-action:', false)
                     ->assertSee($visual['intro'])
                     ->assertSee($visual['ideas'][0]['title'])
                     ->assertSee($visual['ideas'][0]['body'])
@@ -205,8 +208,8 @@ class ChannelEditorialExperienceTest extends TestCase
 
     public function test_generated_owner_artwork_has_clear_provenance(): void
     {
-        foreach (['cinema-ads' => 'cinema', 'ktm' => 'rail', 'outdoor-media' => 'outdoor', 'rtm' => 'radio'] as $slug => $image) {
-            $path = 'assets/editorial/'.$image.'.webp';
+        foreach (['astro', 'rtm', 'bernama', 'outdoor-media', 'cinema-ads', 'ktm'] as $slug) {
+            $path = 'assets/editorial/owners/'.$slug.'-hero.webp';
             $this->assertFileExists(public_path($path));
             $this->get(route('media.owner', $slug))
                 ->assertOk()->assertSee($path)->assertSee('Illustrative media environment');
@@ -216,4 +219,62 @@ class ChannelEditorialExperienceTest extends TestCase
             ->assertOk()->assertSee('assets/home/tv3-newsroom.webp')
             ->assertSee('assets/home/big-tree-klcc.webp');
     }
+    public function test_brand_themes_cover_every_owner_and_campaign_pathway(): void
+    {
+        $layouts = [];
+        $styles = [];
+        $titles = [];
+
+        foreach (MediaDirectory::owners() as $slug => $owner) {
+            $theme = MediaBrandTheme::owner($owner);
+            $this->assertNotContains($theme['style'], $styles);
+            $this->assertNotContains($theme['title'], $titles);
+            $styles[] = $theme['style'];
+            $titles[] = $theme['title'];
+            $layouts[] = $theme['layout'];
+            $this->assertNotEmpty($theme['routes']);
+
+            $response = $this->get(route('media.owner', $slug))->assertOk()
+                ->assertSee('data-brand-layout="'.$theme['layout'].'"', false)
+                ->assertSee('--brand-accent:'.$theme['accent'], false)
+                ->assertSee('id="owner-campaign-pathways"', false)
+                ->assertSee($theme['title'])
+                ->assertSee($theme['intro']);
+
+            foreach ($theme['routes'] as [$title, $body, $names]) {
+                $response->assertSee($title)->assertSee($body);
+                foreach ($names as $name) {
+                    $channel = collect($owner['channels'])->firstWhere('name', $name);
+                    $this->assertNotNull($channel, $slug.':'.$name);
+                    $response->assertSee(route('media.channel', [$slug, $channel['slug']]));
+                }
+            }
+        }
+
+        $this->assertGreaterThanOrEqual(6, count(array_unique($layouts)));
+    }
+
+    public function test_channel_palettes_are_individual_and_accessible(): void
+    {
+        foreach (MediaDirectory::owners() as $owner) {
+            foreach ($owner['channels'] as $channel) {
+                $profile = ChannelEditorial::for($channel, null);
+                $theme = MediaBrandTheme::channel($profile, $owner);
+                $this->assertSame($profile['accent'], $theme['accent']);
+                preg_match('/--brand-action-contrast:([0-9.]+)/', $theme['style'], $matches);
+                $this->assertGreaterThanOrEqual(4.5, (float) $matches[1]);
+            }
+        }
+
+        $bright = MediaBrandTheme::palette('#ffff00', '#ffffff', 'invalid', 'invalid');
+        $this->assertSame('network', $bright['layout']);
+        $this->assertSame('sans', $bright['type']);
+        preg_match('/--brand-action-contrast:([0-9.]+)/', $bright['style'], $matches);
+        $this->assertGreaterThanOrEqual(4.5, (float) $matches[1]);
+
+        $unsafe = MediaBrandTheme::palette('red;display:none', null, 'network', 'sans');
+        $this->assertSame('#500038', $unsafe['accent']);
+        $this->assertStringNotContainsString('display:none', $unsafe['style']);
+    }
+
 }
