@@ -1,4 +1,4 @@
-@props(['section', 'showChannel' => false])
+@props(['section', 'showChannel' => false, 'compact' => false, 'anchor' => null])
 
 @php
     $money = static function ($value): string {
@@ -10,9 +10,15 @@
 
         return 'RM '.number_format((float) $value, $decimals);
     };
+    $matrixIds = $compact ? collect($section['tables'])->flatMap(
+        fn (array $table) => collect($table['rows'])->flatMap(
+            fn (array $row) => collect($row['cells'])->only($table['columns'])->pluck('id')
+        )
+    )->all() : [];
+    $listEntries = collect($section['entries'])->reject(fn (array $entry): bool => in_array($entry['id'], $matrixIds, true))->values();
 @endphp
 
-<section class="rate-section" id="rate-{{ $section['key'] }}">
+<section class="rate-section" id="{{ $anchor ?? 'rate-'.$section['key'] }}">
     <header class="rate-section__head">
         <div>
             <h3>{{ $section['title'] }}</h3>
@@ -50,10 +56,16 @@
                             @foreach ($table['columns'] as $column)
                                 @php($cell = $row['cells'][$column] ?? null)
                                 <td>
-                                    @if ($cell && $cell['price'] !== null)
+                                    @if ($cell && ($cell['price'] !== null || $compact))
                                         <span class="rate-matrix__price">{{ $money($cell['price']) }}</span>
                                         @if (! empty($cell['unit']))
                                             <small>{{ $cell['unit'] }}</small>
+                                        @endif
+                                        @if ($compact && $cell['price_incl_sst'] !== null)
+                                            <small>{{ $money($cell['price_incl_sst']) }} incl. SST</small>
+                                        @endif
+                                        @if ($compact && ! empty($cell['notes']))
+                                            <details class="channel-rate-note"><summary>Rate notes</summary><small>{{ $cell['notes'] }}</small></details>
                                         @endif
                                         @if (! $section['is_media_value'] && $cell['price'] > 0)
                                             <form method="POST" action="{{ route('plans.rate.add', $cell['id']) }}" class="rate-matrix__add">
@@ -73,9 +85,9 @@
         </div>
     @endforeach
 
-    @if (! empty($section['entries']))
+    @if ($listEntries->isNotEmpty())
         <div class="rate-list">
-            @foreach ($section['entries'] as $entry)
+            @foreach ($listEntries as $entry)
                 <div class="rate-line">
                     <div class="rate-line__main">
                         <div class="rate-line__title">

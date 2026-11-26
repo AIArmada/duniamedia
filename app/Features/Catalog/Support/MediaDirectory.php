@@ -97,8 +97,10 @@ class MediaDirectory
         'bernama:bernama-radio' => ['bernama-media-kit-2026'],
         'star-media-group:suria-fm' => ['suria-fm-2026-radio-digital'],
         'star-media-group:98-8-fm' => ['988-fm-2026-radio-digital'],
+        'star-media-group:988-fm' => ['988-fm-2026-radio-digital'],
         'klia:terminal-1' => ['klia-t1-airport-2024-premium'],
         'klia:terminal-2' => ['klia-t2-airport-2024'],
+        'klia:erl' => ['erl-digital-screens-2026'],
         'ktm:ktm-train' => ['ktm-train-kl-sentral-ads-2026'],
         'ktm:kl-sentral-station' => ['kl-sentral-station-sponsorship-2024'],
         'specialist-media:bfm' => ['bfm-2026-business-radio'],
@@ -211,15 +213,19 @@ class MediaDirectory
             return match ($channelSlug) {
                 'bernama-tv' => 'bernama-tv',
                 'bernama-radio' => 'bernama-radio',
+                'bernama-digital' => 'bernama-com',
                 default => 'bernama-group',
             };
         }
 
-        if ($ownerSlug === 'media-prima' && $channelSlug === 'big-tree') {
-            return 'media-prima-klcc-snorkels';
-        }
-
-        return $ownerSlug.'-'.$channelSlug;
+        return match ($ownerSlug.':'.$channelSlug) {
+            'media-prima:big-tree' => 'media-prima-klcc-snorkels',
+            'star-media-group:98-8-fm', 'star-media-group:988-fm' => 'star-media-group-988-fm',
+            'rtm:rtmklik' => 'rtm-klik',
+            'karangkraf:sinarbestari' => 'karangkraf-sinar-bestari',
+            'karangkraf:sinardaily' => 'karangkraf-sinar-daily',
+            default => $ownerSlug.'-'.$channelSlug,
+        };
     }
 
     public static function property(string $ownerSlug, string $channelSlug): ?MediaProperty
@@ -252,25 +258,30 @@ class MediaDirectory
 
         $ownerSlug = $owner === null ? 'specialist-media' : $owner->slug;
         $ownerName = $owner === null ? 'Media owner' : $owner->displayName;
+        $catalogueOwner = self::owner($ownerSlug);
+        $catalogueChannel = collect($catalogueOwner['channels'] ?? [])->first(
+            fn (array $channel): bool => self::mediaKey($ownerSlug, $channel['slug']) === $slug,
+        );
 
         return [
             'slug' => $property->slug,
             'name' => $property->name,
-            'category' => $property->category ?? 'Channel',
+            'category' => $catalogueChannel['category'] ?? $property->category ?? 'Channel',
+            'medium' => $property->medium,
             'owner_slug' => $ownerSlug,
-            'owner_name' => $ownerName,
-            'description' => $property->description,
-            'logo' => $property->displayLogo() ?: null,
+            'owner_name' => $catalogueOwner['name'] ?? $ownerName,
+            'description' => $property->description ?: ($catalogueChannel ? self::channelDescription($catalogueChannel) : null),
+            'logo' => $property->displayLogo() ?: ($catalogueChannel['logo'] ?? null),
             'owner' => [
                 'slug' => $ownerSlug,
-                'name' => $ownerName,
-                'description' => null,
+                'name' => $catalogueOwner['name'] ?? $ownerName,
+                'description' => $catalogueOwner['description'] ?? null,
             ],
         ];
     }
 
     /**
-     * @return Collection<int, array{slug: string, name: string, logo: string|null}>
+     * @return Collection<int, array{slug: string, name: string, logo: string|null, category: string|null}>
      */
     public static function siblingChannels(MediaProperty $property, int $limit = 8): Collection
     {
@@ -282,6 +293,7 @@ class MediaDirectory
             ->where('owner_party_id', $property->owner_party_id)
             ->where('id', '!=', $property->id)
             ->where('is_public', true)
+            ->with('media')
             ->orderBy('sort_order')
             ->limit($limit)
             ->get()
@@ -289,6 +301,7 @@ class MediaDirectory
                 'slug' => $channel->slug,
                 'name' => $channel->name,
                 'logo' => $channel->displayLogo() ?: null,
+                'category' => $channel->category,
             ]);
     }
 
@@ -343,8 +356,9 @@ class MediaDirectory
 
         // Owner pages include directly owned inventory and explicitly associated catalogue decks.
         // Some group channels have a different selling party (e.g. WowShop or Big Tree).
+        $channel = $channelSlug === null ? null : self::channel($ownerSlug, $channelSlug);
         $slugs = $channelSlug !== null
-            ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
+            ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? (isset($channel['rate_card']) ? [$channel['rate_card']] : []))
             : (self::OWNER_RATE_CARDS[$ownerSlug] ?? []);
 
         if ($slugs === [] && $ownerId === null) {

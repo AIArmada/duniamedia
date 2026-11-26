@@ -163,10 +163,13 @@ class MediaDirectoryController extends Controller
 
         $siblings = collect($ownerData['channels'])
             ->where('slug', '!=', $channel)
+            ->sortByDesc(fn (array $sibling): bool => $sibling['category'] === $channelData['category'])
             ->take(8)
             ->values();
 
         $property = MediaDirectory::property($owner, $channel);
+        $channelData['medium'] = $property?->medium;
+        $channelData['logo'] = $property?->displayLogo() ?: ($channelData['logo'] ?? null);
         $sections = $property === null ? [] : RateCardPresenter::forChannel($property->id);
         $rateCards = MediaDirectory::rateCards($owner, $channel);
         $nestedView = 'pages.channels.'.$owner.'.'.$channel;
@@ -181,11 +184,11 @@ class MediaDirectoryController extends Controller
         return view($view, [
             'owner' => $ownerData,
             'channel' => $channelData,
-            'description' => MediaDirectory::channelDescription($channelData),
+            'description' => $property?->description ?: MediaDirectory::channelDescription($channelData),
             'sections' => $sections,
             'rateCards' => $rateCards,
             'siblings' => $siblings,
-            'heroImage' => $property?->hero_path ?: (! empty($channelData['logo']) ? 'assets/partners/'.$channelData['logo'] : null),
+            'heroImage' => $property?->hero_path,
             'channelStats' => [
                 ['label' => 'Rate sections', 'value' => (string) count($sections)],
                 ['label' => 'Rate lines', 'value' => (string) $entryCount],
