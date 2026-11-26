@@ -97,8 +97,10 @@ class MediaDirectory
         'bernama:bernama-radio' => ['bernama-media-kit-2026'],
         'star-media-group:suria-fm' => ['suria-fm-2026-radio-digital'],
         'star-media-group:98-8-fm' => ['988-fm-2026-radio-digital'],
+        'star-media-group:988-fm' => ['988-fm-2026-radio-digital'],
         'klia:terminal-1' => ['klia-t1-airport-2024-premium'],
         'klia:terminal-2' => ['klia-t2-airport-2024'],
+        'klia:erl' => ['erl-digital-screens-2026'],
         'ktm:ktm-train' => ['ktm-train-kl-sentral-ads-2026'],
         'ktm:kl-sentral-station' => ['kl-sentral-station-sponsorship-2024'],
         'specialist-media:bfm' => ['bfm-2026-business-radio'],
@@ -218,7 +220,7 @@ class MediaDirectory
 
         return match ($ownerSlug.':'.$channelSlug) {
             'media-prima:big-tree' => 'media-prima-klcc-snorkels',
-            'star-media-group:98-8-fm' => 'star-media-group-988-fm',
+            'star-media-group:98-8-fm', 'star-media-group:988-fm' => 'star-media-group-988-fm',
             'rtm:rtmklik' => 'rtm-klik',
             'karangkraf:sinarbestari' => 'karangkraf-sinar-bestari',
             'karangkraf:sinardaily' => 'karangkraf-sinar-daily',
@@ -256,19 +258,24 @@ class MediaDirectory
 
         $ownerSlug = $owner === null ? 'specialist-media' : $owner->slug;
         $ownerName = $owner === null ? 'Media owner' : $owner->displayName;
+        $catalogueOwner = self::owner($ownerSlug);
+        $catalogueChannel = collect($catalogueOwner['channels'] ?? [])->first(
+            fn (array $channel): bool => self::mediaKey($ownerSlug, $channel['slug']) === $slug,
+        );
 
         return [
             'slug' => $property->slug,
             'name' => $property->name,
-            'category' => $property->category ?? 'Channel',
+            'category' => $catalogueChannel['category'] ?? $property->category ?? 'Channel',
+            'medium' => $property->medium,
             'owner_slug' => $ownerSlug,
-            'owner_name' => $ownerName,
-            'description' => $property->description,
-            'logo' => $property->displayLogo() ?: null,
+            'owner_name' => $catalogueOwner['name'] ?? $ownerName,
+            'description' => $property->description ?: ($catalogueChannel ? self::channelDescription($catalogueChannel) : null),
+            'logo' => $property->displayLogo() ?: ($catalogueChannel['logo'] ?? null),
             'owner' => [
                 'slug' => $ownerSlug,
-                'name' => $ownerName,
-                'description' => null,
+                'name' => $catalogueOwner['name'] ?? $ownerName,
+                'description' => $catalogueOwner['description'] ?? null,
             ],
         ];
     }

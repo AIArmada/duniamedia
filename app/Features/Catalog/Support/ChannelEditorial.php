@@ -16,6 +16,7 @@ final class ChannelEditorial
         $slug = (string) $channel['slug'];
         $key = str_starts_with($slug, $owner.'-') ? $slug : MediaDirectory::mediaKey($owner, $slug);
         $category = strtolower((string) ($channel['category'] ?? ''));
+        $medium = strtolower((string) ($channel['medium'] ?? ''));
         $name = strtolower((string) $channel['name']);
 
         $kind = match (true) {
@@ -27,10 +28,10 @@ final class ChannelEditorial
             $owner === 'ktm' => 'rail',
             $owner === 'cinema-ads' => 'cinema',
             $owner === 'outdoor-media', str_contains($category, 'out-of-home'), str_contains($category, 'outdoor'), str_contains($key, 'klcc-snorkels') => 'outdoor',
-            str_contains($category, 'radio'), str_contains($name, ' fm'), str_contains($name, 'radio'), $key === 'specialist-media-bfm' => 'radio',
-            str_contains($category, 'television'), str_contains($name, ' tv'), str_starts_with($name, 'tv'), str_contains($key, 'astro-awani') => 'television',
-            str_contains($category, 'publishing'), str_contains($category, 'news'), str_contains($category, 'ideaktif') => 'publishing',
-            str_contains($category, 'event') => 'events',
+            str_contains($category, 'radio'), $medium === 'radio', str_contains($name, ' fm'), str_contains($name, 'radio'), $key === 'specialist-media-bfm' => 'radio',
+            str_contains($category, 'television'), str_contains($category, 'broadcast'), str_contains($medium, 'broadcast'), str_contains($name, ' tv'), str_starts_with($name, 'tv'), str_contains($key, 'astro-awani') => 'television',
+            str_contains($category, 'publishing'), str_contains($category, 'news'), str_contains($category, 'ideaktif'), $medium === 'print' => 'publishing',
+            str_contains($category, 'event'), $medium === 'events' => 'events',
             str_contains($category, 'commerce'), str_contains($category, 'shopping') => 'commerce',
             default => 'digital',
         };
@@ -52,6 +53,12 @@ final class ChannelEditorial
             'media-prima-tv3' => 'assets/home/tv3-newsroom.webp',
             'media-prima-podcast-utama' => 'assets/home/tv3-podcast.webp',
             'media-prima-hot-fm' => 'assets/home/hot-fm-activation.webp',
+            'star-media-group-suria-fm' => 'assets/ratecards/img/suria-fm-2026-radio-digital.webp',
+            'star-media-group-988-fm' => 'assets/ratecards/img/988-fm-2026-radio-digital.webp',
+            'specialist-media-bfm' => 'assets/ratecards/img/bfm-2026-business-radio.webp',
+            'specialist-media-fmt' => 'assets/ratecards/img/fmt-2026-digital-news.webp',
+            'specialist-media-the-malaysian-reserve' => 'assets/ratecards/img/tmr-super-deal-2026-business-content.webp',
+            'media-prima-jom-heboh' => 'assets/ratecards/img/karnival-jom-heboh-2026-venue.webp',
             'media-prima-klcc-snorkels' => 'assets/home/big-tree-klcc-placement.webp',
             'karangkraf-sinar-harian' => 'assets/home/sinar-editorial.webp',
             'klia-terminal-1' => 'assets/ratecards/video/klia-t1-walkthrough.jpg',

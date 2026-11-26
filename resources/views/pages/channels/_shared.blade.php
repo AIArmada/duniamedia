@@ -108,7 +108,7 @@
                             @foreach ($group as $section)
                                 <details class="channel-editorial-rate-detail" @if ($loop->first || $group->count() <= 2) open @endif>
                                     <summary><span>{{ $section['title'] }}</span><small>{{ $section['is_media_value'] ? 'Reference value only' : count($section['entries']).' rate lines' }}</small><x-dm-icon name="arrow" :size="17"/></summary>
-                                    <x-rate-section :section="$section" :show-channel="false"/>
+                                    <x-rate-section :section="$section" :show-channel="false" :compact="true" :anchor="'channel-rate-'.$section['id']"/>
                                 </details>
                             @endforeach
                         </section>
