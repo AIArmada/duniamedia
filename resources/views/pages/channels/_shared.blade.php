@@ -1,22 +1,17 @@
 @php
     $image = \App\Features\Catalog\Support\MediaImage::class;
     $editorial = \App\Features\Catalog\Support\ChannelEditorial::for($channel, $heroImage ?? null);
-    $logo = $channel['logo'] ?? null;
-    $logoUrl = $logo
-        ? (str_starts_with($logo, 'https://') || str_starts_with($logo, 'http://') || str_starts_with($logo, '/')
-            ? $logo
-            : (is_file(public_path('assets/partners/'.$logo)) ? $image::url('assets/partners/'.$logo) : null))
-        : null;
+    $logoUrl = \App\Features\Catalog\Support\ChannelEditorial::logoUrl($channel['logo'] ?? null);
     $storyBlocks = collect($channelStoryBlocks ?? []);
     $firstStory = $storyBlocks->firstWhere('type', 'rich_text');
     $featureList = $storyBlocks->firstWhere('type', 'feature_list');
-    $intro = $firstStory['payload']['body'] ?? $description;
+    $intro = $editorial['intro'] ?? $firstStory['payload']['body'] ?? $description;
     $formats = $featureList['payload']['items'] ?? [];
-    $additionalBlocks = $storyBlocks->reject(fn ($block) => $block === $firstStory || $block === $featureList)->values()->all();
+    $displayFormats = $formats !== [] ? $formats : $editorial['ideas'];
+    $additionalBlocks = $storyBlocks->reject(fn ($block) => $block === $featureList || ($block === $firstStory && ($firstStory['payload']['body'] ?? null) === $intro))->values()->all();
     $ownerRoute = \App\Features\Catalog\Support\MediaDirectory::owner($owner['slug'] ?? '');
-    $accent = $ownerRoute['accent'] ?? '#500038';
-    $accent = preg_match('/\A#[0-9a-fA-F]{6}\z/', $accent) ? $accent : '#500038';
-    $srcset = $image::srcset($editorial['image'], [480, 640, 960, 1280]);
+    $brandTheme = \App\Features\Catalog\Support\MediaBrandTheme::channel($editorial, $ownerRoute ?? $owner);
+    $srcset = $editorial['visual_kind'] === 'artwork' ? null : $image::srcset($editorial['image'], [480, 640, 960, 1280]);
     $rateGroups = collect($sections)->groupBy(fn (array $section) => $section['product']['slug'] ?? 'other');
     $featuredRates = collect($sections)
         ->reject(fn (array $section): bool => $section['is_media_value'])
@@ -28,7 +23,7 @@
     $related = $siblings->sortByDesc(fn ($sibling) => ($sibling['category'] ?? null) === ($channel['category'] ?? null))->take(8);
 @endphp
 
-<div class="channel-editorial" style="--channel-accent:{{ $accent }}">
+<div class="channel-editorial" data-brand-layout="{{ $brandTheme['layout'] }}" data-brand-type="{{ $brandTheme['type'] }}" style="{{ $brandTheme['style'] }}">
     <div class="container">
         <nav class="breadcrumb channel-editorial-breadcrumb" aria-label="Breadcrumb">
             <a href="{{ route('home') }}">Home</a><span aria-hidden="true">/</span>
@@ -55,17 +50,26 @@
                     <a class="button button--secondary" href="#channel-rates-title">Explore rates &amp; packages</a>
                 </div>
             </div>
-            <figure class="channel-editorial-hero__visual">
-                <img src="{{ $image::url($editorial['image']) }}" @if ($srcset) srcset="{{ $srcset }}" sizes="(max-width: 740px) 92vw, 49vw" @endif alt="{{ $editorial['illustrated'] ? 'Illustrative media environment' : $channel['name'].' catalogue artwork' }}" fetchpriority="high" decoding="async">
+            <figure class="channel-editorial-hero__visual channel-editorial-hero__visual--{{ $editorial['visual_kind'] }}">
+                @if ($editorial['image'])
+                    <img src="{{ $image::url($editorial['image']) }}" @if ($srcset) srcset="{{ $srcset }}" sizes="(max-width: 740px) 92vw, 49vw" @endif alt="{{ $editorial['illustrated'] ? $editorial['art_label'].' — conceptual illustration' : $channel['name'].' catalogue artwork' }}" fetchpriority="high" decoding="async">
+                @else
+                    <div class="channel-editorial-identity-art">
+                        @if ($logoUrl)<img src="{{ $logoUrl }}" alt="">@else<x-dm-icon :name="$editorial['icon']" :size="78"/>@endif
+                        <strong>{{ $channel['name'] }}</strong>
+                        <span>{{ $editorial['art_label'] }}</span>
+                    </div>
+                @endif
                 <figcaption>
-                    <span><x-dm-icon :name="$editorial['icon']" :size="20"/> {{ $channel['category'] ?? 'Media channel' }}</span>
-                    <small>{{ $editorial['illustrated'] ? 'Illustrative media environment' : 'Catalogue artwork' }}</small>
+                    <span><x-dm-icon :name="$editorial['icon']" :size="20"/> {{ $editorial['art_label'] }}</span>
+                    <small>{{ $editorial['illustrated'] ? 'Illustrative media environment' : ($editorial['visual_kind'] === 'source' ? 'Catalogue artwork' : 'Channel identity') }}</small>
                 </figcaption>
             </figure>
         </header>
 
         <nav class="channel-editorial-nav" aria-label="Channel sections">
             <a href="#channel-formats"><x-dm-icon name="layers" :size="19"/> Campaign formats</a>
+            @if ($editorial['evidence'] !== [])<a href="#channel-evidence"><x-dm-icon name="document" :size="19"/> Programme &amp; campaign references</a>@endif
             <a href="#channel-rates-title"><x-dm-icon name="document" :size="19"/> Rates &amp; packages</a>
             @if ($rateCards->isNotEmpty())<a href="#channel-decks"><x-dm-icon name="screen" :size="19"/> Media opportunities</a>@endif
             @if ($related->isNotEmpty())<a href="#channel-network"><x-dm-icon name="users" :size="19"/> Related channels</a>@endif
@@ -73,11 +77,12 @@
 
         <section id="channel-formats" class="channel-editorial-formats" aria-labelledby="channel-formats-title">
             <div class="channel-editorial-heading">
-                <div><span class="channel-editorial-kicker">Campaign possibilities</span><h2 id="channel-formats-title">{{ $formats !== [] ? ($featureList['payload']['title'] ?? 'Explore campaign formats') : 'Shape your campaign' }}</h2></div>
-                <p>{{ $formats !== [] ? 'Explore the catalogue’s channel-specific formats. Confirm the latest availability and terms before booking.' : 'Ideas to discuss with our team, not confirmed advertising inventory or guaranteed placements.' }}</p>
+                <div><span class="channel-editorial-kicker">Campaign possibilities</span><h2 id="channel-formats-title">{{ $formats !== [] ? ($featureList['payload']['title'] ?? 'Explore campaign formats') : 'Shape your '.$channel['name'].' campaign' }}</h2></div>
+                <p>{{ $formats !== [] ? 'Explore the catalogue’s channel-specific formats. Confirm the latest availability and terms before booking.' : 'Tailored ideas to discuss with our team, not confirmed advertising inventory or guaranteed placements.' }}</p>
             </div>
-            <div class="channel-editorial-format-grid">
-                @foreach ($formats !== [] ? $formats : array_map(fn ($title) => ['title' => $title], $editorial['ideas']) as $format)
+            @if ($displayFormats !== [])
+            <div class="channel-editorial-format-grid" data-count="{{ count($displayFormats) }}">
+                @foreach ($displayFormats as $format)
                     <article class="channel-editorial-format">
                         <span class="channel-editorial-format__icon"><x-dm-icon :name="[$editorial['icon'], 'target', 'layers', 'calendar'][$loop->index % 4]" :size="25"/></span>
                         <h3>{{ $format['title'] }}</h3>
@@ -85,10 +90,48 @@
                     </article>
                 @endforeach
             </div>
+            @endif
+            @if ($formats !== [] && $editorial['ideas'] !== [])
+                <div class="channel-editorial-concepts">
+                    <h3>Creative directions for {{ $channel['name'] }}</h3>
+                    <p>Suggestions to explore, subject to approval and current inventory.</p>
+                    <div class="channel-editorial-format-grid" data-count="{{ count($editorial['ideas']) }}">
+                        @foreach ($editorial['ideas'] as $idea)
+                            <article class="channel-editorial-format">
+                                <span class="channel-editorial-format__icon"><x-dm-icon name="target" :size="25"/></span>
+                                <h3>{{ $idea['title'] }}</h3><p>{{ $idea['body'] }}</p>
+                            </article>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
             @if ($additionalBlocks !== [])
                 <div class="channel-editorial-additional"><x-content-blocks :blocks="$additionalBlocks"/></div>
             @endif
+            @if ($editorial['reference'])
+                <p class="channel-editorial-reference">Explore the media network’s own published information: <a href="{{ $editorial['reference'] }}" target="_blank" rel="noopener noreferrer">Official network reference ↗</a>. Commercial availability requires confirmation.</p>
+            @endif
         </section>
+
+        @if ($editorial['evidence'] !== [])
+            <section id="channel-evidence" class="channel-editorial-evidence" aria-labelledby="channel-evidence-title">
+                <div class="channel-editorial-heading">
+                    <div><span class="channel-editorial-kicker">Published references</span><h2 id="channel-evidence-title">Get to know {{ $channel['name'] }}</h2></div>
+                    <p>Information from the named publisher or broadcaster. Programmes, presenters and historical results are not promises of availability or future performance.</p>
+                </div>
+                <div class="channel-editorial-evidence-grid" data-count="{{ count($editorial['evidence']) }}">
+                    @foreach ($editorial['evidence'] as $item)
+                        <article>
+                            <span class="channel-editorial-kicker">{{ $item['type'] }}</span>
+                            <h3>{{ $item['title'] }}</h3>
+                            @if (! empty($item['metric']))<strong class="channel-editorial-evidence__metric">{{ $item['metric'] }}</strong>@endif
+                            <p>{{ $item['body'] }}</p>
+                            <a class="text-link" href="{{ $item['url'] }}" target="_blank" rel="noopener noreferrer">View published reference ↗</a>
+                        </article>
+                    @endforeach
+                </div>
+            </section>
+        @endif
 
         <section class="channel-editorial-rates" aria-labelledby="channel-rates-title">
             <div class="channel-editorial-heading">
@@ -173,8 +216,7 @@
                 <div class="channel-editorial-network-grid">
                     @foreach ($related as $sibling)
                         @php
-                            $siblingLogo = $sibling['logo'] ?? null;
-                            $siblingUrl = $siblingLogo ? (str_starts_with($siblingLogo, 'http://') || str_starts_with($siblingLogo, 'https://') || str_starts_with($siblingLogo, '/') ? $siblingLogo : (is_file(public_path('assets/partners/'.$siblingLogo)) ? $image::url('assets/partners/'.$siblingLogo) : null)) : null;
+                            $siblingUrl = \App\Features\Catalog\Support\ChannelEditorial::logoUrl($sibling['logo'] ?? null);
                         @endphp
                         <a class="channel-editorial-brand" href="{{ isset($sibling['owner_slug']) ? route('media.channel', [$owner['slug'], $sibling['slug']]) : route('media.channel.show', $sibling['slug']) }}">
                             @if ($siblingUrl)<img src="{{ $siblingUrl }}" alt="" loading="lazy" decoding="async">@endif
@@ -187,7 +229,7 @@
 
         <section class="channel-editorial-cta" aria-labelledby="channel-cta-title">
             <span class="channel-editorial-cta__icon"><x-dm-icon name="chart" :size="35"/></span>
-            <div><span class="channel-editorial-kicker">Plan your next campaign</span><h2 id="channel-cta-title">Put {{ $channel['name'] }} in your media mix.</h2><p>Build a strategy around your audience, objectives and budget.</p></div>
+            <div><span class="channel-editorial-kicker">Plan your next campaign</span><h2 id="channel-cta-title">Put {{ $channel['name'] }} in your media mix.</h2><p>{{ $editorial['ideas'][0]['body'] ?? 'Build a strategy around your audience, objectives and budget.' }}</p></div>
             <div class="channel-editorial-actions"><a class="button button--on-dark" href="{{ route('advisor') }}">Media Strategy Studio ↗</a><a class="button button--outline-light" href="{{ route('quote.builder') }}">Start a proposal</a></div>
         </section>
     </div>

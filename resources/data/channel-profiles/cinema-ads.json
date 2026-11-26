@@ -1,0 +1,40 @@
+[
+  {
+    "name": "GSC",
+    "tagline": "Make the message worthy of the big screen.",
+    "intro": "Cinema network in the catalogue; screen, lobby and release-linked opportunities must be confirmed with the cinema team.",
+    "ideas": [
+      {
+        "title": "Pre-show storytelling",
+        "body": "Develop cinema-quality sound and visuals for an approved ad slot."
+      },
+      {
+        "title": "Lobby experience",
+        "body": "Discuss an activation at confirmed cinemas and dates."
+      }
+    ],
+    "motif": "cinema",
+    "accent": "#b6903b",
+    "art_label": "Cinema experience",
+    "reference": null
+  },
+  {
+    "name": "TGV",
+    "tagline": "Meet moviegoers in an entertainment moment.",
+    "intro": "Cinema network listed alongside GSC; request current cinema and audience options for the particular campaign.",
+    "ideas": [
+      {
+        "title": "Release-window brief",
+        "body": "Discuss suitable film schedules and available advertising periods."
+      },
+      {
+        "title": "Cinema-to-social",
+        "body": "Explore an approved ticketing, lobby or digital participation idea."
+      }
+    ],
+    "motif": "cinema",
+    "accent": "#de493d",
+    "art_label": "Moviegoing",
+    "reference": null
+  }
+]

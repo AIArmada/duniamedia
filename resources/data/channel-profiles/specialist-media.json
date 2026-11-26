@@ -1,0 +1,116 @@
+[
+  {
+    "name": "BFM",
+    "tagline": "Reach the business conversation.",
+    "intro": "Business radio station listed with its own catalogue media kit; useful for professional and decision-maker briefs.",
+    "ideas": [
+      {
+        "title": "Industry conversation",
+        "body": "Develop an informed audio concept around a specific business issue."
+      },
+      {
+        "title": "Professional service",
+        "body": "Review the BFM deck for suitable sponsorship or spot formats."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#d67d2f",
+    "art_label": "Business radio",
+    "reference": null
+  },
+  {
+    "name": "FMT",
+    "tagline": "Explain a story that deserves attention.",
+    "intro": "Independent digital news publisher listed with a dedicated media kit.",
+    "ideas": [
+      {
+        "title": "Issue explainer",
+        "body": "Discuss a clearly disclosed digital article that offers relevant context."
+      },
+      {
+        "title": "Video distribution",
+        "body": "Review current video and social options in the media kit."
+      }
+    ],
+    "motif": "newsdesk",
+    "accent": "#c64745",
+    "art_label": "Independent digital news",
+    "reference": null
+  },
+  {
+    "name": "The Malaysian Reserve",
+    "tagline": "Tell the business story with context.",
+    "intro": "Business publication with a catalogue commercial-content reference.",
+    "ideas": [
+      {
+        "title": "Corporate narrative",
+        "body": "Discuss an evidence-led sponsored feature about a business or industry."
+      },
+      {
+        "title": "Professional readership",
+        "body": "Review the relevant deck and placement options before selecting distribution."
+      }
+    ],
+    "motif": "newspaper",
+    "accent": "#405e86",
+    "art_label": "Business publishing",
+    "reference": null
+  },
+  {
+    "name": "The Edge",
+    "tagline": "Speak to the investment and business context.",
+    "intro": "Business and investment publishing group listed in the catalogue; current packages are not confirmed here.",
+    "ideas": [
+      {
+        "title": "Sector analysis",
+        "body": "Discuss a clearly disclosed industry feature with evidence and appropriate financial disclaimers."
+      },
+      {
+        "title": "Professional campaign",
+        "body": "Request the current media kit for the specific title and platform."
+      }
+    ],
+    "motif": "finance",
+    "accent": "#aa5237",
+    "art_label": "Investment and business",
+    "reference": null
+  },
+  {
+    "name": "iMedia",
+    "tagline": "Adapt the story for different language communities.",
+    "intro": "Multilingual digital publisher network with a catalogue media reference; confirm the exact publications in a proposed plan.",
+    "ideas": [
+      {
+        "title": "Language-native creative",
+        "body": "Develop separate language versions instead of literal translation."
+      },
+      {
+        "title": "Publisher selection",
+        "body": "Choose specific platforms and confirm distribution and performance reporting."
+      }
+    ],
+    "motif": "network",
+    "accent": "#5f6ca9",
+    "art_label": "Multilingual digital media",
+    "reference": null
+  },
+  {
+    "name": "Nusavue",
+    "tagline": "Build a brand experience around an event.",
+    "intro": "Event and entertainment partner listed with a concert-sponsorship reference.",
+    "ideas": [
+      {
+        "title": "Sponsorship concept",
+        "body": "Review the specific concert deck, rights and event dates."
+      },
+      {
+        "title": "On-site experience",
+        "body": "Discuss practical activation space, staffing and production requirements."
+      }
+    ],
+    "motif": "festival",
+    "accent": "#9a4d96",
+    "art_label": "Event partnerships",
+    "reference": null
+  }
+]

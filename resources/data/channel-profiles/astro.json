@@ -1,0 +1,553 @@
+[
+  {
+    "name": "Astro Awani",
+    "tagline": "Context for a fast-moving world.",
+    "intro": "News and current-affairs television with digital and social extensions; useful for a brief requiring informed audiences, not guaranteed editorial coverage.",
+    "ideas": [
+      {
+        "title": "Issues-based explainer",
+        "body": "Discuss a clearly labelled commercial format around a relevant industry or policy topic."
+      },
+      {
+        "title": "Corporate conversation",
+        "body": "Explore a spokesperson-led commercial interview subject to editorial and commercial approval."
+      }
+    ],
+    "motif": "newsdesk",
+    "accent": "#215a9a",
+    "art_label": "News and current affairs",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Astro Ria",
+    "tagline": "Stories that keep viewers coming back.",
+    "intro": "Malay entertainment programming spanning dramas, variety and celebrity-led formats.",
+    "ideas": [
+      {
+        "title": "Drama viewing",
+        "body": "Plan creative around relevant drama viewing moments and confirm actual slots."
+      },
+      {
+        "title": "Entertainment partnership",
+        "body": "Explore a programme-specific sponsorship with rights and format approved in advance."
+      }
+    ],
+    "motif": "drama",
+    "accent": "#ba286d",
+    "art_label": "Malay entertainment",
+    "reference": "https://biz.astro.com.my/channels"
+  },
+  {
+    "name": "Astro Prima",
+    "tagline": "Familiar stories, shared at home.",
+    "intro": "Malay entertainment channel with local films, comedy and drama in the Astro programme guide.",
+    "ideas": [
+      {
+        "title": "Family viewing",
+        "body": "Discuss household-oriented creative around suitable evening programming."
+      },
+      {
+        "title": "Local comedy",
+        "body": "Consider a light-hearted brand story with a production concept aligned to the channel."
+      }
+    ],
+    "motif": "home",
+    "accent": "#bd383a",
+    "art_label": "Local entertainment",
+    "reference": "https://biz.astro.com.my/channels"
+  },
+  {
+    "name": "Astro Oasis",
+    "tagline": "Meaning and reflection in everyday life.",
+    "intro": "Faith and knowledge programming, including Quranic and educational content in the Astro guide.",
+    "ideas": [
+      {
+        "title": "Values-led storytelling",
+        "body": "Create respectful messaging relevant to family, learning and community."
+      },
+      {
+        "title": "Seasonal planning",
+        "body": "Confirm the Ramadan or Syawal programme schedule and appropriate sponsor formats."
+      }
+    ],
+    "motif": "mosque",
+    "accent": "#28786a",
+    "art_label": "Faith and learning",
+    "reference": "https://biz.astro.com.my/channels"
+  },
+  {
+    "name": "Astro Vanavil",
+    "tagline": "Tamil stories with cultural resonance.",
+    "intro": "Tamil-language programming with music, drama and cultural formats in the Astro channel guide.",
+    "ideas": [
+      {
+        "title": "Tamil-language creative",
+        "body": "Develop culturally fluent scripts and voiceovers with local review."
+      },
+      {
+        "title": "Celebration brief",
+        "body": "Discuss Deepavali or other relevant cultural moments and current airtime."
+      }
+    ],
+    "motif": "stage",
+    "accent": "#d77a24",
+    "art_label": "Tamil entertainment",
+    "reference": "https://biz.astro.com.my/channels"
+  },
+  {
+    "name": "Astro Tutor TV",
+    "tagline": "Learning as part of the viewing day.",
+    "intro": "Education and children-oriented programmes appear in the Astro guide; verify present scheduling and commercial policy.",
+    "ideas": [
+      {
+        "title": "Educational concept",
+        "body": "Discuss age-appropriate learning content with the broadcaster."
+      },
+      {
+        "title": "Responsible placement",
+        "body": "Confirm children's advertising rules and avoid unsupported educational claims."
+      }
+    ],
+    "motif": "learning",
+    "accent": "#357ab2",
+    "art_label": "Learning on television",
+    "reference": "https://biz.astro.com.my/channels"
+  },
+  {
+    "name": "ERA",
+    "tagline": "The rhythm of today’s Malay hits.",
+    "intro": "Astro Audio’s Malay-language hit-music brand; develop a distinctly contemporary audio brief.",
+    "ideas": [
+      {
+        "title": "Music-led promotion",
+        "body": "Explore an energetic brand hook suited to popular Malay music listening."
+      },
+      {
+        "title": "Listener challenge",
+        "body": "Discuss a social or on-air competition with station approval."
+      }
+    ],
+    "motif": "headphones",
+    "accent": "#e8452d",
+    "art_label": "Contemporary Malay music",
+    "reference": "https://corporate.astro.com.my/mediaroom-releases/astro-radio-refreshes-11-brands-to-deliver-better-value-to-fans"
+  },
+  {
+    "name": "Sinar",
+    "tagline": "Music that brings memories back.",
+    "intro": "Astro Audio’s Malay-language music brand; nostalgic music provides a distinct creative lens.",
+    "ideas": [
+      {
+        "title": "Memory-led creative",
+        "body": "Build an audio narrative around familiar household moments."
+      },
+      {
+        "title": "Festive family message",
+        "body": "Discuss a multigenerational message and confirm available schedules."
+      }
+    ],
+    "motif": "vinyl",
+    "accent": "#db812d",
+    "art_label": "Malay favourites",
+    "reference": "https://stations-cms.astroaudio.com.my/segmen-sinar"
+  },
+  {
+    "name": "THR Gegar",
+    "tagline": "Speak to the East Coast, not just the nation.",
+    "intro": "Astro’s East Coast audio brand; local language and regional relevance should drive the brief.",
+    "ideas": [
+      {
+        "title": "Dialect-aware script",
+        "body": "Use regional language reviewed by native speakers."
+      },
+      {
+        "title": "Regional activation",
+        "body": "Explore merchant-led or community initiatives in the intended East Coast markets."
+      }
+    ],
+    "motif": "coast",
+    "accent": "#235eab",
+    "art_label": "East Coast audio",
+    "reference": "https://www.astro.com.my/content/channels/THR-GEGAR-22"
+  },
+  {
+    "name": "Zayan",
+    "tagline": "Sound with purpose.",
+    "intro": "Astro Audio brand associated with Muslim lifestyle and positive listening; confirm the current station content mix.",
+    "ideas": [
+      {
+        "title": "Purpose-led story",
+        "body": "Consider messages about learning, generosity or family wellbeing."
+      },
+      {
+        "title": "Sensitive placement",
+        "body": "Review claims, tone and religious context with the station."
+      }
+    ],
+    "motif": "mosque",
+    "accent": "#218f8d",
+    "art_label": "Positive audio",
+    "reference": "https://zayan.my/segmen-zayan"
+  },
+  {
+    "name": "Lite FM",
+    "tagline": "Ease into the listening day.",
+    "intro": "Astro Audio’s English-language music brand; use a calm and familiar creative tone.",
+    "ideas": [
+      {
+        "title": "Everyday premium",
+        "body": "Develop a relaxed script for travel, wellbeing or household services."
+      },
+      {
+        "title": "Workday listening",
+        "body": "Discuss relevant listening windows and audio duration."
+      }
+    ],
+    "motif": "vinyl",
+    "accent": "#729fbd",
+    "art_label": "Relaxed English music",
+    "reference": "https://corporate.astro.com.my/mediaroom-releases/astro-radio-refreshes-11-brands-to-deliver-better-value-to-fans"
+  },
+  {
+    "name": "Mix FM",
+    "tagline": "Music, conversation and the working day.",
+    "intro": "Astro Audio’s English-language radio brand; a conversational message is a useful starting point.",
+    "ideas": [
+      {
+        "title": "Conversational spot",
+        "body": "Create a friendly audio exchange explaining a service benefit."
+      },
+      {
+        "title": "Work-life topic",
+        "body": "Explore a relevant listener discussion or digital extension."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#a1469f",
+    "art_label": "English conversations",
+    "reference": "https://astromedia.com.my/our_brands/audio-advertising/mix/"
+  },
+  {
+    "name": "Hitz FM",
+    "tagline": "Make a memorable sound.",
+    "intro": "Astro Audio’s English-language hit-music brand.",
+    "ideas": [
+      {
+        "title": "Youth-oriented audio",
+        "body": "Develop a concise sonic hook for an entertainment or consumer launch."
+      },
+      {
+        "title": "Social-first idea",
+        "body": "Explore creator-led or digital participation without assuming talent availability."
+      }
+    ],
+    "motif": "headphones",
+    "accent": "#ee6d28",
+    "art_label": "English hits",
+    "reference": "https://hitz.com.my/shows"
+  },
+  {
+    "name": "MY FM",
+    "tagline": "A Mandarin-first listening experience.",
+    "intro": "Astro Audio’s Chinese-language radio brand.",
+    "ideas": [
+      {
+        "title": "Original Mandarin script",
+        "body": "Develop language-native copy for a consumer campaign."
+      },
+      {
+        "title": "Community moment",
+        "body": "Discuss a local festive or retail activation and verify station inventory."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#df3643",
+    "art_label": "Mandarin music",
+    "reference": "https://my.com.my/home-my-fm"
+  },
+  {
+    "name": "Melody FM",
+    "tagline": "Familiar music and meaningful messages.",
+    "intro": "Astro Audio Chinese-language brand; develop an audience-appropriate message after confirming the current profile.",
+    "ideas": [
+      {
+        "title": "Nostalgic storytelling",
+        "body": "Explore audio built around familiar memories and everyday routines."
+      },
+      {
+        "title": "Family-oriented brief",
+        "body": "Discuss consumer services and festive themes with station representatives."
+      }
+    ],
+    "motif": "vinyl",
+    "accent": "#bb497c",
+    "art_label": "Mandarin favourites",
+    "reference": "https://www.astro.com.my/content/channels/MELODY-FM-28"
+  },
+  {
+    "name": "GoXuan",
+    "tagline": "A younger digital conversation.",
+    "intro": "Astro Audio brand in its Chinese-language portfolio; confirm current digital and broadcast formats.",
+    "ideas": [
+      {
+        "title": "Vertical-first creative",
+        "body": "Discuss short-form, mobile-native entertainment content."
+      },
+      {
+        "title": "Interactive story",
+        "body": "Explore participatory social ideas with approved talent and moderation."
+      }
+    ],
+    "motif": "social",
+    "accent": "#ac69d9",
+    "art_label": "Digital audio culture",
+    "reference": "https://www.astro.com.my/content/channels/GOXUAN-293"
+  },
+  {
+    "name": "Raaga",
+    "tagline": "Tamil sound, local connections.",
+    "intro": "Astro Audio’s Tamil-language radio brand.",
+    "ideas": [
+      {
+        "title": "Tamil-first storytelling",
+        "body": "Write original copy for a local Tamil-speaking audience."
+      },
+      {
+        "title": "Festival engagement",
+        "body": "Explore culturally relevant retail and community themes with the station."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#dd6231",
+    "art_label": "Tamil audio",
+    "reference": "https://corporate.astro.com.my/mediaroom-releases/astro-radio-refreshes-11-brands-to-deliver-better-value-to-fans"
+  },
+  {
+    "name": "Awani",
+    "tagline": "News on the move.",
+    "intro": "Digital news presence associated with Astro Awani; this catalogue listing concerns digital discovery rather than the television channel alone.",
+    "ideas": [
+      {
+        "title": "Mobile explainer",
+        "body": "Discuss a clearly labelled digital story that explains a complex subject."
+      },
+      {
+        "title": "News-context display",
+        "body": "Review ad formats and brand-safety requirements with the publisher."
+      }
+    ],
+    "motif": "devices",
+    "accent": "#244d86",
+    "art_label": "Digital news",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Gempak",
+    "tagline": "Entertainment starts a conversation.",
+    "intro": "Astro-associated digital entertainment platform; explore current content formats and programme connections.",
+    "ideas": [
+      {
+        "title": "Entertainment launch",
+        "body": "Consider an audience-native teaser or short social video."
+      },
+      {
+        "title": "Talent context",
+        "body": "Discuss approved celebrity or show-linked content without assuming endorsements."
+      }
+    ],
+    "motif": "spotlight",
+    "accent": "#d32e7c",
+    "art_label": "Entertainment online",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "RojakDaily",
+    "tagline": "Discover the everyday unexpected.",
+    "intro": "Digital lifestyle and entertainment brand listed in the Astro catalogue; confirm its present commercial representation.",
+    "ideas": [
+      {
+        "title": "Culture discovery",
+        "body": "Explore a local lifestyle story with a useful takeaway."
+      },
+      {
+        "title": "Review brief",
+        "body": "Discuss clearly disclosed product content appropriate to current editorial fit."
+      }
+    ],
+    "motif": "collage",
+    "accent": "#e4a337",
+    "art_label": "Lifestyle discovery",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Stadium Astro",
+    "tagline": "The conversation around the game.",
+    "intro": "Sports content brand listed within Astro’s digital network; rights and event availability vary.",
+    "ideas": [
+      {
+        "title": "Matchday companion",
+        "body": "Discuss campaign timing around an approved sports calendar."
+      },
+      {
+        "title": "Fan engagement",
+        "body": "Explore a prediction or participation concept without implying official sponsorship rights."
+      }
+    ],
+    "motif": "sport",
+    "accent": "#22613d",
+    "art_label": "Sports culture",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Pa & Ma",
+    "tagline": "Little milestones, thoughtful choices.",
+    "intro": "Parenting title listed in Astro’s digital portfolio; confirm publisher representation for a campaign.",
+    "ideas": [
+      {
+        "title": "Parenting guidance",
+        "body": "Explore evidence-based, practical family content."
+      },
+      {
+        "title": "Product-use story",
+        "body": "Discuss a clearly labelled guide to age-appropriate family products."
+      }
+    ],
+    "motif": "family",
+    "accent": "#c7779d",
+    "art_label": "Parenting",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Remaja",
+    "tagline": "Ideas for the next generation.",
+    "intro": "Youth-oriented title listed in Astro’s digital network; verify current publisher arrangements and audience information.",
+    "ideas": [
+      {
+        "title": "Young-adult choices",
+        "body": "Discuss education, first-job or personal-care content."
+      },
+      {
+        "title": "Responsible social",
+        "body": "Develop a participatory concept appropriate to younger audiences."
+      }
+    ],
+    "motif": "youth",
+    "accent": "#be5ac5",
+    "art_label": "Youth lifestyles",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Rasa",
+    "tagline": "Make everyday meals memorable.",
+    "intro": "Food and cooking title listed in Astro’s digital network; confirm which team manages commercial content.",
+    "ideas": [
+      {
+        "title": "Ingredient story",
+        "body": "Develop a useful cooking demonstration rather than a product-only advert."
+      },
+      {
+        "title": "Meal planning",
+        "body": "Discuss a practical weekly recipe series and distribution."
+      }
+    ],
+    "motif": "food",
+    "accent": "#ce802c",
+    "art_label": "Food and cooking",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Wanita",
+    "tagline": "Useful stories for women’s everyday lives.",
+    "intro": "Women-oriented catalogue listing; confirm the exact publication identity and active inventory before proposing.",
+    "ideas": [
+      {
+        "title": "Practical feature",
+        "body": "Discuss relevant wellbeing, careers or everyday services."
+      },
+      {
+        "title": "Audience validation",
+        "body": "Request a current media kit and editorial policy."
+      }
+    ],
+    "motif": "style",
+    "accent": "#b25580",
+    "art_label": "Women’s lifestyles",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Keluarga",
+    "tagline": "Everyday decisions, shared as a family.",
+    "intro": "Family-oriented publication listed in Astro’s digital network.",
+    "ideas": [
+      {
+        "title": "Family planning",
+        "body": "Explore useful budgeting or household organisation content."
+      },
+      {
+        "title": "Shared experience",
+        "body": "Discuss a family-day activity or practical product feature."
+      }
+    ],
+    "motif": "family",
+    "accent": "#50a18a",
+    "art_label": "Family life",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Thinker Studios",
+    "tagline": "Ideas shaped for a screen-native audience.",
+    "intro": "Talent and production listing in Astro’s catalogue; verify current services and talent roster before commissioning.",
+    "ideas": [
+      {
+        "title": "Creative brief",
+        "body": "Discuss short-form storytelling with an audience and outcome defined."
+      },
+      {
+        "title": "Production scope",
+        "body": "Confirm deliverables, usage rights and talent availability."
+      }
+    ],
+    "motif": "camera",
+    "accent": "#7554a2",
+    "art_label": "Creative production",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "Rocketfuel",
+    "tagline": "Make the talent part of the idea.",
+    "intro": "Talent and entertainment listing in Astro’s catalogue; no individual endorsement is implied.",
+    "ideas": [
+      {
+        "title": "Talent fit",
+        "body": "Define audience and message before asking for approved talent options."
+      },
+      {
+        "title": "Rights and deliverables",
+        "body": "Confirm usage, production scope and exclusivity in writing."
+      }
+    ],
+    "motif": "spotlight",
+    "accent": "#c95546",
+    "art_label": "Talent-led production",
+    "reference": "https://corporate.astro.com.my/about-us"
+  },
+  {
+    "name": "sooka",
+    "tagline": "Streaming made for the viewing moment.",
+    "intro": "Astro-associated streaming brand; explore current ad products and content rights through the media team.",
+    "ideas": [
+      {
+        "title": "Streaming cut",
+        "body": "Create a video that communicates the product benefit quickly."
+      },
+      {
+        "title": "Content context",
+        "body": "Discuss sports or entertainment adjacency with rights and targeting confirmed."
+      }
+    ],
+    "motif": "stream",
+    "accent": "#815aca",
+    "art_label": "Streaming entertainment",
+    "reference": "https://corporate.astro.com.my/about-us"
+  }
+]

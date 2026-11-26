@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Bernama TV",
+    "tagline": "Explain the issue, not just the brand.",
+    "intro": "Television arm of Malaysia’s national news agency, with interviews and information-led programming.",
+    "ideas": [
+      {
+        "title": "Commercial interview",
+        "body": "Discuss an approved spokesperson-led format, clearly distinct from independent news."
+      },
+      {
+        "title": "Industry explanation",
+        "body": "Develop a factual explainer with verifiable claims and relevant audience context."
+      }
+    ],
+    "motif": "newsdesk",
+    "accent": "#294f9b",
+    "art_label": "National news television",
+    "reference": "https://www.bernama.com/corporate/services.php"
+  },
+  {
+    "name": "Bernama Radio",
+    "tagline": "Make an informed conversation accessible.",
+    "intro": "Radio arm of the national news agency with information, news and discussion formats.",
+    "ideas": [
+      {
+        "title": "Service information",
+        "body": "Develop a practical radio message that explains a service or initiative."
+      },
+      {
+        "title": "Approved discussion",
+        "body": "Discuss the commercial conversation format and editorial boundaries in advance."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#2d81b2",
+    "art_label": "News and talk radio",
+    "reference": "https://www.bernama.com/corporate/services.php"
+  },
+  {
+    "name": "Bernama Digital",
+    "tagline": "Useful information in a multimedia world.",
+    "intro": "The digital news and multimedia extension of Bernama’s wire, radio and television services.",
+    "ideas": [
+      {
+        "title": "Multimedia feature",
+        "body": "Discuss a clearly labelled digital article or approved video production."
+      },
+      {
+        "title": "Distribution brief",
+        "body": "Confirm publication, languages, formats and reporting with Bernama’s commercial team."
+      }
+    ],
+    "motif": "devices",
+    "accent": "#32659c",
+    "art_label": "Digital news services",
+    "reference": "https://www.bernama.com/corporate/services.php"
+  }
+]

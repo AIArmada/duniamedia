@@ -1,5 +1,6 @@
 @php
     $image = \App\Features\Catalog\Support\MediaImage::class;
+    $brandTheme = \App\Features\Catalog\Support\MediaBrandTheme::owner($owner);
     $groups = collect($owner['categories'])->map(function (array $category) use ($channels): array {
         [$label, $icon] = match ($category['label']) {
             'Television networks', 'Television' => ['Television', 'tv'],
@@ -42,16 +43,24 @@
     $ownerLogo = ! empty($owner['logo']) && is_file(public_path('assets/partners/'.$owner['logo'])) ? 'assets/partners/'.$owner['logo'] : null;
     $hero = $editorial['hero'] ?? null;
     $closing = $editorial['closing_image'] ?? null;
-    $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/');
-    $closingIllustrated = is_string($closing) && (str_starts_with($closing, 'assets/editorial/') || str_starts_with($closing, 'assets/img/'));
-    $heroSrcset = $image::srcset($hero, [480, 640, 960, 1280]);
-    $closingSrcset = $image::srcset($closing, [480, 640, 960]);
+    $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/') && ! str_ends_with($hero, '.svg');
+    $closingIllustrated = is_string($closing) && (str_starts_with($closing, 'assets/editorial/') || str_starts_with($closing, 'assets/img/')) && ! str_ends_with($closing, '.svg');
+    $heroSrcset = is_string($hero) && str_ends_with($hero, '.svg') ? null : $image::srcset($hero, [480, 640, 960, 1280]);
+    $closingSrcset = is_string($closing) && str_ends_with($closing, '.svg') ? null : $image::srcset($closing, [480, 640, 960]);
     $channelCount = $groups->sum(fn (array $group): int => $group['channels']->count());
     $groupCount = $groups->count();
     $previewChannels = collect($channels)->take(6);
+    $channelProfiles = collect($channels)->keyBy('name');
+    $spotlights = collect($editorial['featured_channels'] ?? [])
+        ->map(fn (string $name) => $channelProfiles->get($name))
+        ->filter()
+        ->map(fn (array $channel): array => ['channel' => $channel, 'profile' => \App\Features\Catalog\Support\ChannelEditorial::for($channel, null)])
+        ->values();
+    $heroArtwork = is_string($hero) && str_ends_with($hero, '.svg');
+    $closingArtwork = is_string($closing) && str_ends_with($closing, '.svg');
 @endphp
 
-<div class="owner-editorial">
+<div class="owner-editorial" data-brand-layout="{{ $brandTheme['layout'] }}" data-brand-type="{{ $brandTheme['type'] }}" style="{{ $brandTheme['style'] }}">
     <section class="owner-editorial-hero" aria-labelledby="owner-editorial-title">
         <div class="container owner-editorial-hero__inner">
             <nav class="breadcrumb owner-editorial-breadcrumb" aria-label="Breadcrumb">
@@ -77,9 +86,9 @@
                     <a class="button button--secondary" href="{{ route('contact') }}"><x-dm-icon name="mail" :size="18"/> Talk to a specialist</a>
                 </div>
             </div>
-            <div class="owner-editorial-hero__visual {{ $hero ? '' : 'owner-editorial-hero__visual--network' }}">
+            <div class="owner-editorial-hero__visual {{ $hero ? '' : 'owner-editorial-hero__visual--network' }} {{ $heroArtwork ? 'owner-editorial-hero__visual--artwork' : '' }}">
                 @if ($hero)
-                    <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $heroIllustrated ? 'Illustrative media environment' : ($editorial['hero_alt'] ?? '') }}" fetchpriority="high" decoding="async">
+                    <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $heroIllustrated ? 'Illustrative media environment' : ($editorial['hero_alt'] ?? ($heroArtwork ? $owner['name'].' editorial artwork' : '')) }}" fetchpriority="high" decoding="async">
                     @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
                 @else
                     <div class="owner-editorial-visual-network" aria-hidden="true">
@@ -103,12 +112,45 @@
 
     <nav class="owner-editorial-nav" aria-label="Explore media categories">
         <div class="container owner-editorial-nav__inner">
+            @if (! empty($brandTheme['routes']))<a href="#owner-campaign-pathways"><x-dm-icon name="target" :size="21"/><span>Campaign pathways</span></a>@endif
             <a href="#rate-cards"><x-dm-icon name="document" :size="21"/><span>Opportunities</span></a>
+            @if ($spotlights->isNotEmpty())<a href="#owner-spotlights"><x-dm-icon name="spark" :size="21"/><span>Channel highlights</span></a>@endif
             @foreach ($groups as $group)
                 <a href="#{{ $group['id'] }}"><x-dm-icon :name="$group['icon']" :size="21"/><span>{{ $group['label'] }}</span></a>
             @endforeach
         </div>
     </nav>
+
+    @if (! empty($brandTheme['routes']))
+        <section class="container owner-brand-playbook" id="owner-campaign-pathways" aria-labelledby="owner-campaign-pathways-title">
+            <div class="owner-brand-playbook__panel">
+                <div class="owner-brand-playbook__intro">
+                    <span class="owner-editorial-kicker">Planning with {{ $editorial['network_name'] ?? $owner['name'] }}</span>
+                    <h2 id="owner-campaign-pathways-title">{{ $brandTheme['title'] }}</h2>
+                    <p>{{ $brandTheme['intro'] }}</p>
+                </div>
+                <div class="owner-brand-playbook__routes">
+                    @foreach ($brandTheme['routes'] as [$title, $body, $names])
+                        <article class="owner-brand-playbook__route">
+                            <span class="owner-brand-playbook__number" aria-hidden="true">{{ str_pad((string) $loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                            <div>
+                                <h3>{{ $title }}</h3>
+                                <p>{{ $body }}</p>
+                                <div class="owner-brand-playbook__links">
+                                    @foreach ($names as $name)
+                                        @if ($routeChannel = $channelProfiles->get($name))
+                                            <a href="{{ route('media.channel', [$owner['slug'], $routeChannel['slug']]) }}">{{ $routeChannel['name'] }} <span aria-hidden="true">↗</span></a>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        </article>
+                    @endforeach
+                </div>
+                <p class="owner-brand-playbook__note">Suggested campaign directions, not confirmed inventory. All formats, rights and availability require confirmation.</p>
+            </div>
+        </section>
+    @endif
 
     <section class="container owner-editorial-opportunities" id="rate-cards" aria-labelledby="owner-opportunities-title">
         <div class="owner-editorial-heading">
@@ -151,6 +193,43 @@
             @endif
         </div>
     </section>
+
+    @if ($spotlights->isNotEmpty())
+        <section class="container owner-editorial-spotlights" id="owner-spotlights" aria-labelledby="owner-spotlights-title">
+            <div class="owner-editorial-heading">
+                <div><span class="owner-editorial-kicker">Channel highlights</span><h2 id="owner-spotlights-title">{{ $editorial['featured_channel_title'] }}</h2></div>
+                <p>{{ $editorial['featured_channel_intro'] }}</p>
+            </div>
+            <div class="owner-editorial-spotlight-grid" data-count="{{ $spotlights->count() }}">
+                @foreach ($spotlights as $spotlight)
+                    @php
+                        $featuredChannel = $spotlight['channel'];
+                        $profile = $spotlight['profile'];
+                        $spotlightLogo = \App\Features\Catalog\Support\ChannelEditorial::logoUrl($featuredChannel['logo'] ?? null);
+                        $spotlightUrl = route('media.channel', [$owner['slug'], $featuredChannel['slug']]);
+                    @endphp
+                    <article class="owner-editorial-spotlight">
+                        <a class="owner-editorial-spotlight__visual owner-editorial-spotlight__visual--{{ $profile['visual_kind'] }}" href="{{ $spotlightUrl }}" tabindex="-1" aria-hidden="true">
+                            @if ($profile['image'])
+                                <img src="{{ $image::url($profile['image']) }}" alt="" loading="lazy" decoding="async">
+                            @elseif ($spotlightLogo)
+                                <img src="{{ $spotlightLogo }}" alt="" loading="lazy" decoding="async">
+                            @else
+                                <x-dm-icon :name="$profile['icon']" :size="60"/>
+                            @endif
+                            @if ($profile['illustrated'])<span>Editorial illustration</span>@endif
+                        </a>
+                        <div class="owner-editorial-spotlight__body">
+                            <span class="owner-editorial-kicker">{{ $featuredChannel['category'] }}</span>
+                            <h3><a href="{{ $spotlightUrl }}">{{ $featuredChannel['name'] }}</a></h3>
+                            <p>{{ $profile['tagline'] }}</p>
+                            <a class="text-link" href="{{ $spotlightUrl }}" aria-label="Explore {{ $featuredChannel['name'] }}">Explore channel ↗</a>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
+        </section>
+    @endif
 
     <section class="container owner-editorial-network" aria-labelledby="owner-network-title">
         <div class="owner-editorial-heading">
@@ -199,9 +278,9 @@
 
     <section class="container owner-editorial-closing" aria-labelledby="owner-closing-title">
         <div class="owner-editorial-closing__panel {{ $closing ? '' : 'owner-editorial-closing__panel--graphic' }}">
-            <div class="owner-editorial-closing__visual {{ $closing ? '' : 'owner-editorial-closing__visual--graphic' }}">
+            <div class="owner-editorial-closing__visual {{ $closing ? '' : 'owner-editorial-closing__visual--graphic' }} {{ $closingArtwork ? 'owner-editorial-closing__visual--artwork' : '' }}">
                 @if ($closing)
-                    <img src="{{ $image::url($closing) }}" @if ($closingSrcset) srcset="{{ $closingSrcset }}" sizes="(max-width: 600px) 100vw, 44vw" @endif alt="{{ $closingIllustrated ? 'Illustrative media environment' : ($editorial['closing_alt'] ?? '') }}" loading="lazy" decoding="async">
+                    <img src="{{ $image::url($closing) }}" @if ($closingSrcset) srcset="{{ $closingSrcset }}" sizes="(max-width: 600px) 100vw, 44vw" @endif alt="{{ $closingIllustrated ? 'Illustrative media environment' : ($editorial['closing_alt'] ?? ($closingArtwork ? $owner['name'].' campaign artwork' : '')) }}" loading="lazy" decoding="async">
                     @if ($closingIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
                 @else
                     <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="84"/>

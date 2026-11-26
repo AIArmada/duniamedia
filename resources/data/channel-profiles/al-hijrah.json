@@ -1,0 +1,40 @@
+[
+  {
+    "name": "TV Al Hijrah",
+    "tagline": "Build a message around meaning.",
+    "intro": "Islamic family television with talkshows, magazines and religious programming; the catalogue includes a Bincang Niaga reference.",
+    "ideas": [
+      {
+        "title": "Values-led interview",
+        "body": "Discuss a clearly disclosed business or educational conversation."
+      },
+      {
+        "title": "Ramadan and family",
+        "body": "Plan respectful seasonal creative with content approval."
+      }
+    ],
+    "motif": "mosque",
+    "accent": "#633b96",
+    "art_label": "Faith and family television",
+    "reference": null
+  },
+  {
+    "name": "AlHijrah Plus",
+    "tagline": "Meaningful content beyond the television schedule.",
+    "intro": "Digital extension listed in AlHijrah’s catalogue; confirm current app and advertising products before planning.",
+    "ideas": [
+      {
+        "title": "Digital companion",
+        "body": "Consider a useful short educational video or mobile-native explainer."
+      },
+      {
+        "title": "Respectful design",
+        "body": "Discuss non-intrusive advertising options and content suitability."
+      }
+    ],
+    "motif": "stream",
+    "accent": "#4b9a91",
+    "art_label": "Faith content online",
+    "reference": null
+  }
+]

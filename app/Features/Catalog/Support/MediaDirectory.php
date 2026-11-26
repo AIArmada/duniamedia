@@ -222,6 +222,7 @@ class MediaDirectory
             'media-prima:big-tree' => 'media-prima-klcc-snorkels',
             'star-media-group:98-8-fm', 'star-media-group:988-fm' => 'star-media-group-988-fm',
             'rtm:rtmklik' => 'rtm-klik',
+            'ktm:ktm-train' => 'ktm-ktm',
             'karangkraf:sinarbestari' => 'karangkraf-sinar-bestari',
             'karangkraf:sinardaily' => 'karangkraf-sinar-daily',
             default => $ownerSlug.'-'.$channelSlug,

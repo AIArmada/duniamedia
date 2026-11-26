@@ -1,0 +1,629 @@
+[
+  {
+    "name": "TV3",
+    "tagline": "The moments Malaysia watches.",
+    "intro": "Malay-language free-to-air television spanning news, drama and entertainment.",
+    "ideas": [
+      {
+        "title": "Evening storytelling",
+        "body": "Plan a TVC around drama viewing and relevant dayparts."
+      },
+      {
+        "title": "News-adjacent visibility",
+        "body": "Discuss clearly labelled commercial formats near current-affairs programming."
+      }
+    ],
+    "motif": "broadcast",
+    "accent": "#ba2334",
+    "art_label": "Evening television",
+    "reference": "https://www.mediaprimaomnia.my/tv3"
+  },
+  {
+    "name": "TV9",
+    "tagline": "Everyday stories, close to home.",
+    "intro": "A free-to-air television brand in Media Prima’s catalogue; explore family and lifestyle programming with the current broadcaster schedule.",
+    "ideas": [
+      {
+        "title": "Household routine",
+        "body": "Build a product demonstration around practical family needs."
+      },
+      {
+        "title": "Festive household brief",
+        "body": "Discuss seasonal spots and relevant programme adjacency."
+      }
+    ],
+    "motif": "kitchen",
+    "accent": "#84a336",
+    "art_label": "Family life",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "8TV",
+    "tagline": "Entertainment in a different language.",
+    "intro": "Chinese-language television spanning entertainment and news, with opportunities for culturally adapted creative.",
+    "ideas": [
+      {
+        "title": "Mandarin-first creative",
+        "body": "Develop a language-specific TVC rather than translating a Malay script."
+      },
+      {
+        "title": "Festive variety",
+        "body": "Explore programme adjacency around Chinese New Year and other relevant viewing moments."
+      }
+    ],
+    "motif": "stage",
+    "accent": "#dc5840",
+    "art_label": "Mandarin entertainment",
+    "reference": "https://www.mediaprimaomnia.my/8tv"
+  },
+  {
+    "name": "ntv7",
+    "tagline": "A channel with a changing role.",
+    "intro": "OMNiA identifies ntv7’s DIDIKTV KPM service as educational television produced in collaboration with the Ministry of Education, combining curriculum, co-curriculum and lifelong learning programmes. Confirm current commercial policy.",
+    "ideas": [
+      {
+        "title": "Learning-led brief",
+        "body": "Ask whether suitable education or information programming is available."
+      },
+      {
+        "title": "Schedule validation",
+        "body": "Confirm the present broadcast role and available airtime before costing a campaign."
+      }
+    ],
+    "motif": "learning",
+    "accent": "#8b43a5",
+    "art_label": "Television learning",
+    "reference": "https://www.mediaprimaomnia.my/ntv7"
+  },
+  {
+    "name": "Hot FM",
+    "tagline": "Get heard. Get closer.",
+    "intro": "Malay-language radio with presenter-led entertainment, community activity and the Zoomerz rate-card reference.",
+    "ideas": [
+      {
+        "title": "Radio and roadshow",
+        "body": "Use the actual Zoomerz sponsorship details on the Hot FM page."
+      },
+      {
+        "title": "Presenter enquiry",
+        "body": "Review the station's programme information and obtain broadcaster approval."
+      }
+    ],
+    "motif": "microphone",
+    "accent": "#e52a30",
+    "art_label": "On-air and on-ground",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Kool FM",
+    "tagline": "Good company for the working day.",
+    "intro": "The catalogue retains the Kool FM name; Media Prima’s current corporate roster calls the audio brand Kool 101. Confirm the current station branding before booking.",
+    "ideas": [
+      {
+        "title": "Workday companionship",
+        "body": "Discuss informative messages around commuting and workday listening."
+      },
+      {
+        "title": "Useful conversation",
+        "body": "Explore practical financial, career or household themes with the station team."
+      }
+    ],
+    "motif": "commute",
+    "accent": "#31588c",
+    "art_label": "Workday listening",
+    "reference": "https://www.koolfm.audio/segmen/"
+  },
+  {
+    "name": "Molek FM",
+    "tagline": "East Coast stories, close to the heart.",
+    "intro": "Media Prima Audio station associated with East Coast culture and Malay-language listening.",
+    "ideas": [
+      {
+        "title": "Local expression",
+        "body": "Prepare a dialect-aware creative brief with local review."
+      },
+      {
+        "title": "Community retail",
+        "body": "Discuss regional merchant activations and festive promotions."
+      }
+    ],
+    "motif": "coast",
+    "accent": "#1596ab",
+    "art_label": "East Coast culture",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Fly FM",
+    "tagline": "Turn up the English-language conversation.",
+    "intro": "Media Prima’s English-language audio brand; plan around music and contemporary entertainment rather than a generic radio buy.",
+    "ideas": [
+      {
+        "title": "Music-led launch",
+        "body": "Consider a short, energetic audio hook for a consumer product."
+      },
+      {
+        "title": "Active lifestyles",
+        "body": "Explore a fitness or social challenge with station approval."
+      }
+    ],
+    "motif": "headphones",
+    "accent": "#c64095",
+    "art_label": "Contemporary hits",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Eight FM",
+    "tagline": "A conversation in Mandarin.",
+    "intro": "Media Prima Audio’s Chinese-language brand, currently presented on its official website as Eight无限, with conversation, music and lifestyle programmes.",
+    "ideas": [
+      {
+        "title": "Mandarin copywriting",
+        "body": "Create an original script suited to local Chinese-language listeners."
+      },
+      {
+        "title": "Festive retail",
+        "body": "Discuss relevant Chinese festive windows and online extensions."
+      }
+    ],
+    "motif": "soundwave",
+    "accent": "#c13b53",
+    "art_label": "Mandarin audio",
+    "reference": "https://www.eight.audio/"
+  },
+  {
+    "name": "REV Media",
+    "tagline": "A network of distinct digital voices.",
+    "intro": "Digital publishing network with multiple editorial brands spanning languages and interests.",
+    "ideas": [
+      {
+        "title": "Portfolio-led distribution",
+        "body": "Select publications by audience interest, not simply the largest reach."
+      },
+      {
+        "title": "Native creative",
+        "body": "Ask about brand-specific sponsored content and reporting."
+      }
+    ],
+    "motif": "network",
+    "accent": "#d36a32",
+    "art_label": "Digital network",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "OHBULAN!",
+    "tagline": "The stories people talk about.",
+    "intro": "Malay-language entertainment and lifestyle publishing in the REV Media portfolio.",
+    "ideas": [
+      {
+        "title": "Entertainment discovery",
+        "body": "Consider a social-first branded story that fits entertainment coverage."
+      },
+      {
+        "title": "Celebrity-adjacent idea",
+        "body": "Explore creator collaborations separately from independent editorial coverage."
+      }
+    ],
+    "motif": "spotlight",
+    "accent": "#c0467c",
+    "art_label": "Entertainment culture",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "SirapLimau",
+    "tagline": "Helpful ideas for everyday living.",
+    "intro": "Malay digital lifestyle title in REV Media’s portfolio; use practical household and family-oriented storytelling.",
+    "ideas": [
+      {
+        "title": "Household how-to",
+        "body": "Produce an actionable checklist or everyday problem-solving article."
+      },
+      {
+        "title": "Family routines",
+        "body": "Explore content around budgeting, organisation or family meals."
+      }
+    ],
+    "motif": "home",
+    "accent": "#78a63b",
+    "art_label": "Everyday life",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "SAYS",
+    "tagline": "Stories worth sharing.",
+    "intro": "Social-first news and lifestyle publication in the REV Media network.",
+    "ideas": [
+      {
+        "title": "Explainer with a hook",
+        "body": "Translate a complex product benefit into a concise, useful story."
+      },
+      {
+        "title": "Social video",
+        "body": "Develop a short narrative that earns attention without disguising sponsorship."
+      }
+    ],
+    "motif": "social",
+    "accent": "#e39a24",
+    "art_label": "Social storytelling",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "Mashable South East Asia",
+    "tagline": "Technology through a regional lens.",
+    "intro": "Catalogue-listed technology and culture publication; verify present commercial availability with the publisher.",
+    "ideas": [
+      {
+        "title": "Product discovery",
+        "body": "Pitch a hands-on gadget or software explainer."
+      },
+      {
+        "title": "Digital culture",
+        "body": "Discuss tech-enabled everyday experiences for a regional audience."
+      }
+    ],
+    "motif": "devices",
+    "accent": "#2d8ca7",
+    "art_label": "Technology culture",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "Rojak",
+    "tagline": "A locally flavoured digital brief.",
+    "intro": "The catalogue lists Rojak; confirm the exact publication identity, language and active inventory with REV Media.",
+    "ideas": [
+      {
+        "title": "Culture-led story",
+        "body": "Test a locally relevant lifestyle concept after editorial fit is confirmed."
+      },
+      {
+        "title": "Publisher verification",
+        "body": "Obtain the current brand URL and media kit before selecting formats."
+      }
+    ],
+    "motif": "collage",
+    "accent": "#d57035",
+    "art_label": "Local culture",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "Says Seismik",
+    "tagline": "Make useful stories travel in Bahasa Malaysia.",
+    "intro": "REV Media describes Seismik as a Malay-language sister site to SAYS covering news, lifestyle and food.",
+    "ideas": [
+      {
+        "title": "Malay explainer",
+        "body": "Adapt a useful consumer story into natural Bahasa Malaysia."
+      },
+      {
+        "title": "Food discovery",
+        "body": "Explore a dining or product-use video with transparent sponsorship."
+      }
+    ],
+    "motif": "social",
+    "accent": "#ee7d32",
+    "art_label": "Malay social stories",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "Juice",
+    "tagline": "Culture beyond the mainstream.",
+    "intro": "Catalogue-listed youth and culture publication; confirm current publishing and advertising status before buying.",
+    "ideas": [
+      {
+        "title": "Creative culture",
+        "body": "Discuss a music, design or street-culture concept if the brand is active."
+      },
+      {
+        "title": "Scene partnership",
+        "body": "Explore a contextual event story rather than assuming fixed placements."
+      }
+    ],
+    "motif": "vinyl",
+    "accent": "#654ba0",
+    "art_label": "Youth culture",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "XTRA",
+    "tagline": "Entertainment beyond the television screen.",
+    "intro": "Malay entertainment-oriented digital brand in the REV Media network.",
+    "ideas": [
+      {
+        "title": "Screen-to-social",
+        "body": "Explore a short-form entertainment story connected to a campaign launch."
+      },
+      {
+        "title": "Behind the scenes",
+        "body": "Discuss a branded production or lifestyle feature with the publisher."
+      }
+    ],
+    "motif": "camera",
+    "accent": "#d44153",
+    "art_label": "Entertainment digital",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "MyResipi",
+    "tagline": "Bring your product into the kitchen.",
+    "intro": "Food and recipe publication in the REV Media portfolio, suited to practical cooking narratives.",
+    "ideas": [
+      {
+        "title": "Recipe development",
+        "body": "Build a recipe around a clearly disclosed ingredient partner."
+      },
+      {
+        "title": "Cooking tutorial",
+        "body": "Explore a step-by-step vertical video and recipe article."
+      }
+    ],
+    "motif": "food",
+    "accent": "#bf752c",
+    "art_label": "Recipes",
+    "reference": "https://revmedia.my/our-brands/"
+  },
+  {
+    "name": "Big Tree",
+    "tagline": "Make the city your canvas.",
+    "intro": "Out-of-home operator with catalogue references for KLCC lightboxes and KL Sentral sponsorship.",
+    "ideas": [
+      {
+        "title": "Landmark visibility",
+        "body": "Review KLCC placement formats and site-specific creative requirements."
+      },
+      {
+        "title": "Transit campaign",
+        "body": "Evaluate commuter exposure at KL Sentral with the relevant deck."
+      }
+    ],
+    "motif": "billboard",
+    "accent": "#25835e",
+    "art_label": "Landmark outdoor",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "UPD",
+    "tagline": "Be visible in everyday movement.",
+    "intro": "Listed as an outdoor operator within the Media Prima catalogue; current sites and ownership must be confirmed.",
+    "ideas": [
+      {
+        "title": "Route-based planning",
+        "body": "Request verified coordinates and traffic context before selecting sites."
+      },
+      {
+        "title": "Site-ready creative",
+        "body": "Ask about exact dimensions, illumination and production lead time."
+      }
+    ],
+    "motif": "road",
+    "accent": "#4d6e92",
+    "art_label": "Outdoor routes",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Kurnia Outdoor",
+    "tagline": "Placement before promise.",
+    "intro": "Catalogue-listed outdoor operator; a site schedule and current commercial terms are needed for a specific campaign.",
+    "ideas": [
+      {
+        "title": "Geographic shortlist",
+        "body": "Compare sites close to target retail locations."
+      },
+      {
+        "title": "Production check",
+        "body": "Confirm mounting, installation and maintenance requirements."
+      }
+    ],
+    "motif": "billboard",
+    "accent": "#ae7941",
+    "art_label": "Site planning",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "BTSJ",
+    "tagline": "Build visibility around real locations.",
+    "intro": "Catalogue-listed out-of-home operator; do not assume any site is currently available.",
+    "ideas": [
+      {
+        "title": "Location brief",
+        "body": "Request a site list with photographs and campaign periods."
+      },
+      {
+        "title": "Format suitability",
+        "body": "Match artwork to the actual surface and viewing distance."
+      }
+    ],
+    "motif": "road",
+    "accent": "#286e80",
+    "art_label": "Street visibility",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "TRC",
+    "tagline": "Outdoor exposure with a defined route.",
+    "intro": "Catalogue-listed outdoor operator; obtain its current inventory and site information.",
+    "ideas": [
+      {
+        "title": "Journey mapping",
+        "body": "Identify roads and destinations relevant to the campaign."
+      },
+      {
+        "title": "Availability check",
+        "body": "Confirm dates, site permits and production requirements with the seller."
+      }
+    ],
+    "motif": "road",
+    "accent": "#805b39",
+    "art_label": "Route planning",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "GOTCHA",
+    "tagline": "Capture attention outside the screen.",
+    "intro": "Outdoor brand in the Media Prima catalogue; confirm current format and booking details.",
+    "ideas": [
+      {
+        "title": "Contextual outdoor idea",
+        "body": "Develop concise creative for a verified location and viewing angle."
+      },
+      {
+        "title": "Placement review",
+        "body": "Request current site photos, dimensions and availability."
+      }
+    ],
+    "motif": "screen",
+    "accent": "#b26937",
+    "art_label": "Outdoor attention",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "WowShop",
+    "tagline": "Show the product. Explain the benefit.",
+    "intro": "Home-shopping channel with catalogue airtime references and product-demonstration formats.",
+    "ideas": [
+      {
+        "title": "Demonstration brief",
+        "body": "Prepare a practical product-use sequence, claims and evidence."
+      },
+      {
+        "title": "Response planning",
+        "body": "Discuss offer mechanics, fulfilment and measurable calls to action."
+      }
+    ],
+    "motif": "commerce",
+    "accent": "#dd7736",
+    "art_label": "Shopping demonstration",
+    "reference": "https://www.mediaprimaomnia.my/wowshop"
+  },
+  {
+    "name": "Tonton",
+    "tagline": "Entertainment beyond scheduled television.",
+    "intro": "Media Prima streaming brand; confirm available digital video products and targeting options.",
+    "ideas": [
+      {
+        "title": "Video storytelling",
+        "body": "Prepare a short video cut with a strong opening for streaming viewing."
+      },
+      {
+        "title": "Viewing context",
+        "body": "Discuss device mix, ad format and reporting before buying."
+      }
+    ],
+    "motif": "stream",
+    "accent": "#af3f70",
+    "art_label": "Streaming video",
+    "reference": "https://www.tonton.com.my/pages/howitworks.html"
+  },
+  {
+    "name": "Berita Harian",
+    "tagline": "News in the language of everyday Malaysia.",
+    "intro": "Malay-language newspaper and digital news platform in Media Prima’s news portfolio.",
+    "ideas": [
+      {
+        "title": "Explainer for readers",
+        "body": "Explore clearly labelled sponsored articles on practical issues."
+      },
+      {
+        "title": "Cross-platform brief",
+        "body": "Discuss print and digital options while preserving editorial independence."
+      }
+    ],
+    "motif": "newspaper",
+    "accent": "#2765a0",
+    "art_label": "Malay news",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Harian Metro",
+    "tagline": "Everyday news and human stories.",
+    "intro": "Malay-language news title in the Media Prima portfolio.",
+    "ideas": [
+      {
+        "title": "Useful consumer story",
+        "body": "Consider an accessible service or community-oriented campaign."
+      },
+      {
+        "title": "Local relevance",
+        "body": "Discuss regional relevance and digital distribution with the publisher."
+      }
+    ],
+    "motif": "streetnews",
+    "accent": "#d84339",
+    "art_label": "Everyday news",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "NSTP",
+    "tagline": "A publishing portfolio, not a single placement.",
+    "intro": "New Straits Times Press is Media Prima’s publishing business; select the relevant news title and format for a campaign.",
+    "ideas": [
+      {
+        "title": "Corporate narrative",
+        "body": "Explore English- or Malay-language publisher options according to the brief."
+      },
+      {
+        "title": "Portfolio planning",
+        "body": "Confirm the exact title, format and commercial terms instead of buying an unspecified network."
+      }
+    ],
+    "motif": "newspaper",
+    "accent": "#335a86",
+    "art_label": "News portfolio",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Waktu Solat",
+    "tagline": "A purposeful moment in a daily routine.",
+    "intro": "Catalogue-listed prayer-time app; confirm its current publisher, audience and advertising policy before proposing inventory.",
+    "ideas": [
+      {
+        "title": "Respectful context",
+        "body": "Discuss non-intrusive formats that do not disrupt prayer information."
+      },
+      {
+        "title": "Policy check",
+        "body": "Confirm religious-content sensitivity and advertiser eligibility."
+      }
+    ],
+    "motif": "mosque",
+    "accent": "#4b987f",
+    "art_label": "Prayer-time utility",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Podcast Utama",
+    "tagline": "Give a conversation room to breathe.",
+    "intro": "Long-form Buletin TV3 video podcast with a specific catalogue media deck.",
+    "ideas": [
+      {
+        "title": "Long-form conversation",
+        "body": "Explore a clearly labelled sponsored discussion with broadcaster approval."
+      },
+      {
+        "title": "Clip strategy",
+        "body": "Consider short supporting clips drawn from an approved recording."
+      }
+    ],
+    "motif": "podcast",
+    "accent": "#263b6e",
+    "art_label": "News conversations",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  },
+  {
+    "name": "Jom Heboh",
+    "tagline": "Bring a brand into the crowd.",
+    "intro": "Media Prima’s family carnival format with event venue references in the catalogue.",
+    "ideas": [
+      {
+        "title": "On-ground experience",
+        "body": "Discuss a demonstration or sampling activation at the confirmed venue."
+      },
+      {
+        "title": "Family engagement",
+        "body": "Plan a participatory activity and staffing around actual event dates."
+      }
+    ],
+    "motif": "festival",
+    "accent": "#e0833e",
+    "art_label": "Family carnival",
+    "reference": "https://www.mediaprima.com.my/who-we-are.html"
+  }
+]
