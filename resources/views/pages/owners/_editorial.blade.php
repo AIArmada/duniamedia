@@ -42,6 +42,8 @@
     $ownerLogo = ! empty($owner['logo']) && is_file(public_path('assets/partners/'.$owner['logo'])) ? 'assets/partners/'.$owner['logo'] : null;
     $hero = $editorial['hero'] ?? null;
     $closing = $editorial['closing_image'] ?? null;
+    $heroIllustrated = is_string($hero) && str_starts_with($hero, 'assets/editorial/');
+    $closingIllustrated = is_string($closing) && str_starts_with($closing, 'assets/editorial/');
     $heroSrcset = $image::srcset($hero, [480, 640, 960, 1280]);
     $closingSrcset = $image::srcset($closing, [480, 640, 960]);
     $channelCount = $groups->sum(fn (array $group): int => $group['channels']->count());
@@ -77,7 +79,8 @@
             </div>
             <div class="owner-editorial-hero__visual {{ $hero ? '' : 'owner-editorial-hero__visual--network' }}">
                 @if ($hero)
-                    <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $editorial['hero_alt'] ?? '' }}" fetchpriority="high" decoding="async">
+                    <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $heroIllustrated ? 'Illustrative media environment' : ($editorial['hero_alt'] ?? '') }}" fetchpriority="high" decoding="async">
+                    @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
                 @else
                     <div class="owner-editorial-visual-network" aria-hidden="true">
                         <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="54"/>
@@ -198,7 +201,8 @@
         <div class="owner-editorial-closing__panel {{ $closing ? '' : 'owner-editorial-closing__panel--graphic' }}">
             <div class="owner-editorial-closing__visual {{ $closing ? '' : 'owner-editorial-closing__visual--graphic' }}">
                 @if ($closing)
-                    <img src="{{ $image::url($closing) }}" @if ($closingSrcset) srcset="{{ $closingSrcset }}" sizes="(max-width: 600px) 100vw, 44vw" @endif alt="{{ $editorial['closing_alt'] ?? '' }}" loading="lazy" decoding="async">
+                    <img src="{{ $image::url($closing) }}" @if ($closingSrcset) srcset="{{ $closingSrcset }}" sizes="(max-width: 600px) 100vw, 44vw" @endif alt="{{ $closingIllustrated ? 'Illustrative media environment' : ($editorial['closing_alt'] ?? '') }}" loading="lazy" decoding="async">
+                    @if ($closingIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
                 @else
                     <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="84"/>
                 @endif

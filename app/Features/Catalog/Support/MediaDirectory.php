@@ -211,15 +211,19 @@ class MediaDirectory
             return match ($channelSlug) {
                 'bernama-tv' => 'bernama-tv',
                 'bernama-radio' => 'bernama-radio',
+                'bernama-digital' => 'bernama-com',
                 default => 'bernama-group',
             };
         }
 
-        if ($ownerSlug === 'media-prima' && $channelSlug === 'big-tree') {
-            return 'media-prima-klcc-snorkels';
-        }
-
-        return $ownerSlug.'-'.$channelSlug;
+        return match ($ownerSlug.':'.$channelSlug) {
+            'media-prima:big-tree' => 'media-prima-klcc-snorkels',
+            'star-media-group:98-8-fm' => 'star-media-group-988-fm',
+            'rtm:rtmklik' => 'rtm-klik',
+            'karangkraf:sinarbestari' => 'karangkraf-sinar-bestari',
+            'karangkraf:sinardaily' => 'karangkraf-sinar-daily',
+            default => $ownerSlug.'-'.$channelSlug,
+        };
     }
 
     public static function property(string $ownerSlug, string $channelSlug): ?MediaProperty
@@ -343,8 +347,9 @@ class MediaDirectory
 
         // Owner pages include directly owned inventory and explicitly associated catalogue decks.
         // Some group channels have a different selling party (e.g. WowShop or Big Tree).
+        $channel = $channelSlug === null ? null : self::channel($ownerSlug, $channelSlug);
         $slugs = $channelSlug !== null
-            ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
+            ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? (isset($channel['rate_card']) ? [$channel['rate_card']] : []))
             : (self::OWNER_RATE_CARDS[$ownerSlug] ?? []);
 
         if ($slugs === [] && $ownerId === null) {

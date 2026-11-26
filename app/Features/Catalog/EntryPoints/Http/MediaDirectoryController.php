@@ -163,6 +163,7 @@ class MediaDirectoryController extends Controller
 
         $siblings = collect($ownerData['channels'])
             ->where('slug', '!=', $channel)
+            ->sortByDesc(fn (array $sibling): bool => $sibling['category'] === $channelData['category'])
             ->take(8)
             ->values();
 

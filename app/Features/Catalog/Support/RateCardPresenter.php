@@ -30,7 +30,8 @@ final class RateCardPresenter
     public static function forChannel(string $mediaPropertyId): array
     {
         $sections = RateCardSection::query()
-            ->whereHas('channels', fn ($query) => $query->where('media_properties.id', $mediaPropertyId))
+            ->whereHas('channels', fn ($query) => $query->where('media_properties.id', $mediaPropertyId)->where('media_properties.is_public', true))
+            ->whereHas('product', fn ($query) => $query->where('status', 'active'))
             ->with(['channels', 'entries', 'product.mediaProfile'])
             ->orderBy('sort_order')
             ->get();
