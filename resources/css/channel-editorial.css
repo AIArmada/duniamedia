@@ -90,3 +90,10 @@
 .channel-editorial .channel-rate-note { text-align:left; margin-top:.35rem; }
 .channel-editorial .channel-rate-note summary { min-height:32px; display:block; padding:.3rem 0; font-size:.75rem; color:var(--channel-ink); background:none; text-decoration:underline; }
 .channel-editorial .channel-rate-note small { display:block; white-space:normal; min-width:10rem; font-size:.75rem; }
+
+.channel-editorial-featured { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:.8rem; margin-bottom:1rem; }
+.channel-editorial-featured article { display:flex; flex-direction:column; min-width:0; background:#fffaf6; padding:1.15rem; border:1px solid var(--channel-line); border-top:3px solid var(--color-champagne-500); border-radius:10px; }
+.channel-editorial-featured h3 { font-size:1rem; font-weight:800; margin:0 0 .6rem; color:var(--channel-ink); overflow-wrap:anywhere; }
+.channel-editorial-featured article > strong { font:400 clamp(1.65rem,3vw,2.45rem)/1.08 var(--font-editorial); color:var(--channel-ink); overflow-wrap:anywhere; }
+.channel-editorial-featured article > p,.channel-editorial-featured article > small { color:var(--color-text-muted); font-size:.78rem; margin:.4rem 0 0; overflow-wrap:anywhere; }
+.channel-editorial-featured .text-link { display:inline-flex; align-items:center; min-height:44px; margin-top:auto; padding-top:.4rem; font-size:.8rem; }

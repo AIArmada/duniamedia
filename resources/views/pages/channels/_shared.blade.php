@@ -18,6 +18,12 @@
     $accent = preg_match('/\A#[0-9a-fA-F]{6}\z/', $accent) ? $accent : '#500038';
     $srcset = $image::srcset($editorial['image'], [480, 640, 960, 1280]);
     $rateGroups = collect($sections)->groupBy(fn (array $section) => $section['product']['slug'] ?? 'other');
+    $featuredRates = collect($sections)
+        ->reject(fn (array $section): bool => $section['is_media_value'])
+        ->map(function (array $section): ?array {
+            $entry = collect($section['entries'])->first(fn (array $entry): bool => $entry['is_package'] && $entry['price'] !== null && $entry['price'] > 0);
+            return $entry ? ['section' => $section, 'entry' => $entry] : null;
+        })->filter()->unique(fn (array $item) => $item['entry']['item'])->take(3)->values();
     $rateCount = collect($sections)->reject(fn (array $section) => $section['is_media_value'])->sum(fn (array $section): int => count($section['entries']));
     $related = $siblings->sortByDesc(fn ($sibling) => ($sibling['category'] ?? null) === ($channel['category'] ?? null))->take(8);
 @endphp
@@ -90,6 +96,25 @@
                 <p>Source rate-card references, not live quotations. Rates, taxes, dates and availability require current confirmation.</p>
             </div>
             @if ($sections !== [])
+                @if ($featuredRates->isNotEmpty())
+                    <div class="channel-editorial-featured" aria-label="Selected rate-card packages">
+                        @foreach ($featuredRates as $highlight)
+                            @php
+                                $entry = $highlight['entry'];
+                                $sourceSection = $highlight['section'];
+                                $formattedPrice = 'RM '.number_format((float) $entry['price'], fmod((float) $entry['price'], 1.0) === 0.0 ? 0 : 2);
+                            @endphp
+                            <article>
+                                <span class="channel-editorial-kicker">Listed package</span>
+                                <h3>{{ $entry['item'] }}</h3>
+                                <strong>{{ $formattedPrice }}</strong>
+                                @if (! empty($entry['unit']))<p>{{ $entry['unit'] }}</p>@endif
+                                @if (! empty($sourceSection['product']['validity']))<small>Source: {{ $sourceSection['product']['validity'] }}</small>@endif
+                                <a class="text-link" href="#channel-rate-detail-{{ $sourceSection['id'] }}">Review package details ↗</a>
+                            </article>
+                        @endforeach
+                    </div>
+                @endif
                 <div class="channel-editorial-rate-overview">
                     <div><x-dm-icon name="document" :size="32"/><span><strong>{{ $rateCount }}</strong> rate lines <small>Catalogue references, excluding media value</small></span></div>
                     <div><x-dm-icon name="layers" :size="32"/><span><strong>{{ count($sections) }}</strong> rate sections <small>Explore formats and packages</small></span></div>
@@ -106,7 +131,7 @@
                                 @if (! empty($product['slug']))<a class="text-link" href="{{ route('offers.show', $product['slug']) }}">Full rate card ↗</a>@endif
                             </div>
                             @foreach ($group as $section)
-                                <details class="channel-editorial-rate-detail" @if ($loop->first || $group->count() <= 2) open @endif>
+                                <details id="channel-rate-detail-{{ $section['id'] }}" class="channel-editorial-rate-detail" @if ($loop->first || $group->count() <= 2) open @endif>
                                     <summary><span>{{ $section['title'] }}</span><small>{{ $section['is_media_value'] ? 'Reference value only' : count($section['entries']).' rate lines' }}</small><x-dm-icon name="arrow" :size="17"/></summary>
                                     <x-rate-section :section="$section" :show-channel="false" :compact="true" :anchor="'channel-rate-'.$section['id']"/>
                                 </details>

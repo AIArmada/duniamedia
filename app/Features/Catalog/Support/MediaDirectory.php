@@ -281,7 +281,7 @@ class MediaDirectory
     }
 
     /**
-     * @return Collection<int, array{slug: string, name: string, logo: string|null}>
+     * @return Collection<int, array{slug: string, name: string, logo: string|null, category: string|null}>
      */
     public static function siblingChannels(MediaProperty $property, int $limit = 8): Collection
     {
@@ -293,6 +293,7 @@ class MediaDirectory
             ->where('owner_party_id', $property->owner_party_id)
             ->where('id', '!=', $property->id)
             ->where('is_public', true)
+            ->with('media')
             ->orderBy('sort_order')
             ->limit($limit)
             ->get()
@@ -300,6 +301,7 @@ class MediaDirectory
                 'slug' => $channel->slug,
                 'name' => $channel->name,
                 'logo' => $channel->displayLogo() ?: null,
+                'category' => $channel->category,
             ]);
     }
 

@@ -10,7 +10,11 @@
 
         return 'RM '.number_format((float) $value, $decimals);
     };
-    $matrixIds = $compact ? collect($section['tables'])->flatMap(fn (array $table) => collect($table['rows'])->flatMap(fn (array $row) => collect($row['cells'])->pluck('id')))->all() : [];
+    $matrixIds = $compact ? collect($section['tables'])->flatMap(
+        fn (array $table) => collect($table['rows'])->flatMap(
+            fn (array $row) => collect($row['cells'])->only($table['columns'])->pluck('id')
+        )
+    )->all() : [];
     $listEntries = collect($section['entries'])->reject(fn (array $entry): bool => in_array($entry['id'], $matrixIds, true))->values();
 @endphp
 
