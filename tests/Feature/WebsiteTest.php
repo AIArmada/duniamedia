@@ -13,7 +13,7 @@ class WebsiteTest extends TestCase
 
     public function test_public_pages_are_accessible(): void
     {
-        $this->get('/')->assertOk()->assertSee('Bigger');
+        $this->get('/')->assertOk()->assertSee('Plan Media in Malaysia');
         $this->get('/services')->assertOk();
         $this->get('/portfolio')->assertOk();
         $this->get('/work')->assertOk()->assertSee('Work that speaks for');

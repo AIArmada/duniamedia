@@ -31,4 +31,24 @@ class RateCardContentSeederTest extends TestCase
         $this->assertTrue($tv3->rateCardSections()->exists());
         $this->assertGreaterThanOrEqual(3, $tv3->decks()->count());
     }
+
+    public function test_it_skips_decks_whose_products_are_not_seeded_yet(): void
+    {
+        $this->seed(RateCardContentSeeder::class);
+
+        $this->assertSame(0, RateCardSection::query()->count());
+        $this->assertSame(0, RateCardEntry::query()->count());
+        $this->assertSame(0, MediaProperty::query()->where('property_type', 'channel')->count());
+    }
+
+    public function test_it_seeds_decks_after_the_catalogue_is_available(): void
+    {
+        $this->seed(RateCardContentSeeder::class);
+        $this->seed(MediaCatalogueSeeder::class);
+        $this->seed(RateCardContentSeeder::class);
+
+        $this->assertSame(388, RateCardSection::query()->count());
+        $this->assertSame(2023, RateCardEntry::query()->whereNotNull('section_id')->count());
+        $this->assertGreaterThan(0, MediaProperty::query()->where('property_type', 'channel')->count());
+    }
 }

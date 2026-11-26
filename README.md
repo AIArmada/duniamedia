@@ -38,7 +38,7 @@ App\Models\User::where('email', 'admin@example.com')->first()->assignRole('super
 Change `admin@example.com` to your own real account. Run `php artisan serve` and open `http://127.0.0.1:8000` or your local domain; `/admin` is the protected back office.
 
 ## Implemented modules
-- **Public frontend:** responsive homepage, services, connected solutions, project concepts, academy, insights, about, privacy, terms.
+- **Public frontend:** responsive homepage, services, connected solutions, project concepts, about, privacy, terms.
 - **Media Explorer (Livewire):** search, types, location, budget, sort, pagination, details. Listings published by admin only.
 - **Media Advisor (Livewire):** guided form and deterministic illustrative strategy directions. Saves qualified brief as lead. **No AI model call yet**.
 - **Quote Builder (Livewire):** media shortlist, campaign add-ons, contact form, generated internal reference, quote + items saved in transaction. Approved `sent` proposals can be shared with a temporary signed URL; rate display remains private unless admin explicitly sets visibility to `public` and every line has a price. Approved `sent` proposals can be shared with a temporary signed URL; rate display remains private unless admin explicitly sets visibility to `public` and every line has a price. Quote status starts `requested`, visibility `private`; no payment or media reservation.
@@ -46,7 +46,7 @@ Change `admin@example.com` to your own real account. Run `php artisan serve` and
 - **Creator Network (Livewire):** creator directory and application form; verification controlled by staff.
 - **Asset Owner Leads (Livewire):** collect potential new media spaces for manual review.
 - **Our Work archive (public):** `/work` turns RA Media's March 2026 client lists into a filterable campaign archive, a government/business client wall and an on-screen media gallery. Data lives in `resources/data/client-work.json`; the supplied broadcast files are streamed from `data/`.
-- **Filament 5:** CRUD for media, creators, services, projects, articles, training, leads, quotations, quote items and applications.
+- **Filament 5:** CRUD for media, creators, services, projects, leads, quotations, quote items and applications.
 
 ## Client work archive
 The `/work` page is generated from `resources/data/client-work.json`, a curated import of the client and campaign lists in `data/`. It consolidates duplicate transmission rows, keeps client contact details out of the public page and labels client-only entries as roster records. To update the archive, edit the JSON file (or regenerate it from the spreadsheets) and rebuild the page.
@@ -80,7 +80,7 @@ For local development without S3, set `WORK_MEDIA_DISK=local` and keep `data/` i
 If the media ever needs to live in Git, make the repository **private** and use Git LFS. LFS is suitable for versioning source assets, not for serving 130 MB videos to site visitors.
 
 ## Non-production demonstration data
-`php artisan migrate --seed` creates **illustrative data only**: sample media offerings, fictional `Demo Creator` records, concept portfolio and sample insights. These do **not** imply real RA Media clients, media owners, availability, verified audience figures, talent agreements or prices. Replace every demo entity before public launch.
+`php artisan migrate --seed` creates **illustrative data only**: sample media offerings, fictional `Demo Creator` records and concept portfolio. These do **not** imply real RA Media clients, media owners, availability, verified audience figures, talent agreements or prices. Replace every demo entity before public launch.
 
 ## Commercial controls & implementation boundaries
 - Supplier slot availability must be verified before publishing `available` status; demo data uses `on_request`.

@@ -152,7 +152,7 @@ class CampaignPlans
 
     public function markConverted(CartModel $plan): void
     {
-        app(WriteCampaignPlan::class)->markConverted($plan);
+        app(WriteCampaignPlan::class)->markConverted($plan->refresh());
     }
 
     public function delete(CartModel $plan): void

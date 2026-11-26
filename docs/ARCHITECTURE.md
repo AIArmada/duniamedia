@@ -19,7 +19,6 @@
 - Awareness → Home → Media Explorer or Advisor → Shortlist → Quote request → Sales review.
 - Creator applicant → form → pending `creator_profiles` record → manual verification → active profile.
 - Asset owner → form → prospect `media_properties` / `media_assets` record → ownership and rights review.
-- AI training lead → Academy → contact → enquiry.
 
 ## Vocabulary mapping
 

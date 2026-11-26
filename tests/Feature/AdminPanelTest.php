@@ -50,8 +50,6 @@ class AdminPanelTest extends TestCase
             '/admin/quote-lines',
             '/admin/services',
             '/admin/projects',
-            '/admin/articles',
-            '/admin/trainings',
         ] as $path) {
             $this->get($path)->assertOk();
         }

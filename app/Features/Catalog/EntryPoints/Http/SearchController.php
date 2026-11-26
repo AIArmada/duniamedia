@@ -8,16 +8,15 @@ use App\Features\Catalog\Api\PresentsMedia;
 use App\Features\Catalog\Api\PresentsRateLines;
 use App\Features\Catalog\Support\MediaDirectory;
 use App\Features\Clients\Api\ListsCampaigns;
-use App\Features\Content\Api\PublishesArticles;
 use App\Features\Creators\Api\ListsCreators;
 use App\Features\Identity\Api\ResolvesParties;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Str;
 
 class SearchController extends Controller
 {
     public function __construct(
-        private readonly PublishesArticles $articles,
         private readonly PresentsMedia $presents,
         private readonly ListsCreators $creators,
         private readonly ListsCampaigns $campaigns,
@@ -31,7 +30,6 @@ class SearchController extends Controller
         $media = collect();
         $creatorResults = collect();
         $campaignResults = collect();
-        $articles = collect();
         $directoryResults = [];
         $rateResults = [];
 
@@ -57,8 +55,6 @@ class SearchController extends Controller
                 'client_name' => $clients[$row['client_id']]->displayName ?? 'Client',
                 'client_slug' => $clients[$row['client_id']]->slug ?? null,
             ]);
-
-            $articles = collect($this->articles->search($query));
         }
 
         return view('pages.search', [
@@ -66,11 +62,10 @@ class SearchController extends Controller
             'media' => $media,
             'creators' => $creatorResults,
             'campaigns' => $campaignResults,
-            'articles' => $articles,
             'directoryResults' => $directoryResults,
             'rateResults' => $rateResults,
             'pageTitle' => $query !== '' ? 'Search: '.$query.' | Dunia Media' : 'Search | Dunia Media',
-            'metaDescription' => 'Search media opportunities, media owners, creators, campaigns and insights across Dunia Media.',
+            'metaDescription' => 'Search media opportunities, media owners, creators and campaigns across Dunia Media.',
         ]);
     }
 
@@ -97,7 +92,7 @@ class SearchController extends Controller
 
         foreach ($hot['programmes'] as $programme) {
             if ($contains($programme['title'].' '.$programme['hosts'])) {
-                $matches[] = ['title' => $programme['title'], 'type' => 'Programme', 'description' => $programme['hosts'].' · '.$programme['time'], 'url' => route('media.channel', ['media-prima', 'hot-fm']).'#hotfm-programme-'.\Illuminate\Support\Str::slug($programme['title'])];
+                $matches[] = ['title' => $programme['title'], 'type' => 'Programme', 'description' => $programme['hosts'].' · '.$programme['time'], 'url' => route('media.channel', ['media-prima', 'hot-fm']).'#hotfm-programme-'.Str::slug($programme['title'])];
             }
         }
 

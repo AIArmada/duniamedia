@@ -18,6 +18,5 @@ Homepage photography is chosen by job and crop, with a deliberately mixed palett
 | Creator promo | `creator-feature.webp` | Separate close portrait retained for a stylish, personal creator-network moment. |
 | Custom-media promo | `custom-media.webp` | Immersive coral-and-magenta architectural installation, used as the page's vivid campaign accent. |
 | Featured media cards | `offering-*.webp` | Six separate scenes show the specific placement in context, avoiding repeats of the channel strip. |
-| Insights cards | `editorial-*.webp` | Three distinct, quieter editorial photographs keep the lower page legible and avoid reusing channel art. |
 
 Wide cards use 16:9 WebP derivatives; promo tiles use square derivatives; the About feature uses a 4:3 image; hero art has independent 3:1 desktop and 4:5 mobile compositions. Existing well-matched channel images were kept rather than regenerated for the sake of consistency.

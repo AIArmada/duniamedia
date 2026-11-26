@@ -4,7 +4,7 @@
     <x-page-hero
         eyebrow="Search"
         title="Find a medium, an owner, a creator or a <span class='editorial'>case study</span>."
-        lede="Search across media owners, channels, programmes, rate lines, creators, campaign history and editorial insights. Use the category pages when you want to browse rather than search."
+        lede="Search across media owners, channels, programmes, rate lines, creators and campaign history. Use the category pages when you want to browse rather than search."
     >
         <x-slot:actions>
             <a class="button button--secondary" href="{{ route('media.owners') }}">Media owners</a>
@@ -15,7 +15,7 @@
     <section class="section">
         <div class="container">
             <form method="get" action="{{ route('search') }}" class="filter-horizontal" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-bottom:1.8rem">
-                <flux:input type="search" name="q" value="{{ $query }}" placeholder="Search media, owners, creators, campaigns, insights…" aria-label="Search Dunia Media" icon="magnifying-glass" autofocus />
+                <flux:input type="search" name="q" value="{{ $query }}" placeholder="Search media, owners, creators, campaigns…" aria-label="Search Dunia Media" icon="magnifying-glass" autofocus />
                 <flux:button type="submit" variant="primary" icon="magnifying-glass">Search</flux:button>
             </form>
 
@@ -28,7 +28,7 @@
                 </div>
             @else
                 <p class="tiny muted" style="margin-bottom:1.4rem">
-                    {{ $media->count() + $creators->count() + $campaigns->count() + $articles->count() + count($directoryResults) + count($rateResults) }} results for “{{ $query }}”.
+                    {{ $media->count() + $creators->count() + $campaigns->count() + count($directoryResults) + count($rateResults) }} results for “{{ $query }}”.
                 </p>
 
                 @if ($directoryResults !== [])
@@ -109,25 +109,7 @@
                     </div>
                 @endif
 
-                @if ($articles->isNotEmpty())
-                    <div class="section-heading" style="margin-top:2rem">
-                        <div><span class="eyebrow">Insights</span><h2 class="section-title">{{ $articles->count() }} {{ $articles->count() === 1 ? 'article' : 'articles' }}.</h2></div>
-                    </div>
-                    <div class="article-grid">
-                        @foreach ($articles as $article)
-                            <article class="article-card">
-                                <a href="{{ route('insights.show', $article->slug) }}" class="article-card__media"><img src="{{ \App\Features\Catalog\Support\MediaImage::url($article->imageUrl) }}" loading="lazy" alt="{{ $article->title }}"></a>
-                                <div class="article-card__body">
-                                    <span class="eyebrow eyebrow--plain">{{ strtoupper($article->category) }}</span>
-                                    <h3><a href="{{ route('insights.show', $article->slug) }}">{{ $article->title }}</a></h3>
-                                    <p>{{ $article->excerpt }}</p>
-                                </div>
-                            </article>
-                        @endforeach
-                    </div>
-                @endif
-
-                @if ($media->isEmpty() && $creators->isEmpty() && $campaigns->isEmpty() && $articles->isEmpty() && $directoryResults === [] && $rateResults === [])
+                @if ($media->isEmpty() && $creators->isEmpty() && $campaigns->isEmpty() && $directoryResults === [] && $rateResults === [])
                     <div class="empty-state" style="text-align:left">
                         <h3>No results for “{{ $query }}”.</h3>
                         <p>Try a medium, a media owner, a creator niche, a client or a campaign name. You can also browse the media explorer directly.</p>

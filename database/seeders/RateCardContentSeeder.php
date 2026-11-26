@@ -37,7 +37,7 @@ class RateCardContentSeeder extends Seeder
         $assets = app(WriteRateCardAssets::class);
         $blocks = app(WriteRateCardBlocks::class);
 
-        $counts = ['decks' => 0, 'channels' => 0, 'sections' => 0, 'entries' => 0, 'assets' => 0];
+        $counts = ['decks' => 0, 'channels' => 0, 'sections' => 0, 'entries' => 0, 'assets' => 0, 'skipped' => 0];
 
         foreach ($files as $file) {
             $data = json_decode((string) file_get_contents($file), true);
@@ -49,13 +49,19 @@ class RateCardContentSeeder extends Seeder
             $product = Product::query()->where('slug', $data['slug'])->first();
 
             if ($product === null) {
-                throw new RuntimeException("Rate-card content references unknown product: {$data['slug']}");
+                $counts['skipped']++;
+                $this->command?->warn("Skipped rate-card content for unknown product: {$data['slug']} (seed MediaCatalogueSeeder first)");
+
+                continue;
             }
 
             $profile = MediaProfile::query()->where('product_id', $product->id)->first();
 
             if ($profile === null) {
-                throw new RuntimeException("Rate-card content references a product without a media profile: {$data['slug']}");
+                $counts['skipped']++;
+                $this->command?->warn("Skipped rate-card content for product without a media profile: {$data['slug']}");
+
+                continue;
             }
 
             $channelIds = [];
@@ -210,6 +216,10 @@ class RateCardContentSeeder extends Seeder
             $counts['entries'],
             $counts['assets'],
         ));
+
+        if ($counts['skipped'] > 0) {
+            $this->command?->warn("Skipped {$counts['skipped']} rate-card content file(s) with no matching product or media profile.");
+        }
     }
 
     /**

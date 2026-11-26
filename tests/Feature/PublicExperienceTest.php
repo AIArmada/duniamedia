@@ -4,16 +4,22 @@ namespace Tests\Feature;
 
 use App\Features\Advisor\EntryPoints\Livewire\MediaAdvisor;
 use App\Features\Catalog\EntryPoints\Livewire\MediaExplorer;
+use App\Features\Catalog\Support\MediaDirectory;
+use App\Features\Clients\Support\ClientWork;
 use App\Features\Creators\EntryPoints\Livewire\CreatorExplorer;
 use App\Features\Creators\EntryPoints\Livewire\CreatorJoin;
 use App\Features\Creators\Models\CreatorProfile;
+use App\Features\Creators\Persistence\WriteCreatorProfiles;
 use App\Features\Identity\Models\Party;
 use App\Features\Sales\EntryPoints\Livewire\AssetOwnerForm;
 use App\Features\Sales\EntryPoints\Livewire\ContactForm;
 use App\Features\Sales\EntryPoints\Livewire\QuoteBuilder;
+use Database\Seeders\DrqisCreatorSeeder;
+use Database\Seeders\ServiceSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 use Livewire\Livewire;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\Concerns\CreatesMediaOffers;
@@ -53,8 +59,6 @@ class PublicExperienceTest extends TestCase
             '/solutions',
             '/portfolio',
             '/work',
-            '/academy',
-            '/insights',
             '/about',
             '/contact',
             '/list-your-space',
@@ -81,7 +85,7 @@ class PublicExperienceTest extends TestCase
 
     public function test_services_editorial_page_preserves_all_capabilities_and_real_work(): void
     {
-        $this->seed(\Database\Seeders\ServiceSeeder::class);
+        $this->seed(ServiceSeeder::class);
 
         $response = $this->get(route('services'))
             ->assertOk()
@@ -99,7 +103,7 @@ class PublicExperienceTest extends TestCase
             ->assertSee(route('advisor', ['objective' => 'launch']))
             ->assertSee(route('advisor', ['objective' => 'leads']))
             ->assertSee(route('assets.join'))
-            ->assertSee(route('academy'))
+            ->assertSee('Develop my team’s skills')
             ->assertSee('assets/work/covers/jwp-psa-kl.webp')
             ->assertSee('#work-media-kpj-2025-10-02', false);
 
@@ -157,7 +161,7 @@ class PublicExperienceTest extends TestCase
             ->assertSee('Work that speaks for')
             ->assertSee('work-next-campaign-mobile.jpg');
 
-        foreach (\App\Features\Clients\Support\ClientWork::media() as $item) {
+        foreach (ClientWork::media() as $item) {
             $response->assertSee('id="work-media-'.$item['key'].'"', false)
                 ->assertSee(route('work.media', $item['key']));
         }
@@ -354,6 +358,29 @@ class PublicExperienceTest extends TestCase
         $this->assertDatabaseHas('enquiries', ['source' => 'contact']);
     }
 
+    public function test_public_contact_details_are_hidden_from_automated_collection(): void
+    {
+        foreach ([route('contact'), route('about')] as $url) {
+            $this->get($url)
+                ->assertOk()
+                ->assertDontSee('ramediarelations@gmail.com')
+                ->assertDontSee('ifa@ramediaco.org')
+                ->assertDontSee('+60193894889')
+                ->assertDontSee('+60 19 389 4889')
+                ->assertDontSee('mailto:ramediarelations')
+                ->assertDontSee('tel:+60193894889')
+                ->assertSee('data-protected-contact', false);
+        }
+
+        preg_match('/data-contact-payload="([^"]+)"/', $this->get(route('contact'))->getContent(), $matches);
+
+        $this->assertNotEmpty($matches);
+        $payload = json_decode(strrev((string) base64_decode($matches[1], true)), true);
+        $this->assertIsArray($payload);
+        $this->assertSame('+60193894889', $payload['value']);
+        $this->assertSame('+60 19 389 4889', $payload['display']);
+    }
+
     public function test_contact_form_rejects_a_missing_turnstile_token(): void
     {
         $this->configureContactTurnstile();
@@ -536,8 +563,8 @@ class PublicExperienceTest extends TestCase
 
     public function test_drqis_seed_is_idempotent_and_preserves_unverified_status(): void
     {
-        $this->seed(\Database\Seeders\DrqisCreatorSeeder::class);
-        $this->seed(\Database\Seeders\DrqisCreatorSeeder::class);
+        $this->seed(DrqisCreatorSeeder::class);
+        $this->seed(DrqisCreatorSeeder::class);
 
         $this->assertDatabaseCount('creator_profiles', 1);
         $this->assertDatabaseCount('creator_accounts', 1);
@@ -560,7 +587,7 @@ class PublicExperienceTest extends TestCase
         $this->assertCount(1, $profile->getMedia('image'));
         $this->assertCount(2, $profile->getMedia('gallery'));
 
-        app(\App\Features\Creators\Persistence\WriteCreatorProfiles::class)->update($profile, [
+        app(WriteCreatorProfiles::class)->update($profile, [
             'status' => 'active',
             'verification_status' => 'verified',
             'verified_at' => now(),
@@ -677,7 +704,7 @@ class PublicExperienceTest extends TestCase
         ]);
 
         Party::factory()->create(['slug' => 'media-prima', 'display_name' => 'Media Prima Berhad']);
-        $owner = \App\Features\Catalog\Support\MediaDirectory::owner('media-prima');
+        $owner = MediaDirectory::owner('media-prima');
         $response = $this->get(route('media.owner', 'media-prima'))
             ->assertOk()
             ->assertSee('One group. Every screen.')
@@ -698,7 +725,7 @@ class PublicExperienceTest extends TestCase
         }
 
         foreach ($owner['categories'] as $category) {
-            $id = 'network-'.\Illuminate\Support\Str::slug($category['label']);
+            $id = 'network-'.Str::slug($category['label']);
             $response->assertSee('href="#'.$id.'"', false)->assertSee('id="'.$id.'"', false);
         }
 
@@ -718,7 +745,7 @@ class PublicExperienceTest extends TestCase
 
     public function test_every_media_owner_uses_the_shared_editorial_layout(): void
     {
-        $owners = \App\Features\Catalog\Support\MediaDirectory::owners();
+        $owners = MediaDirectory::owners();
         $editorial = require resource_path('data/media-owner-editorial.php');
         $this->assertEqualsCanonicalizing(array_keys($owners), array_keys($editorial));
 
@@ -741,7 +768,7 @@ class PublicExperienceTest extends TestCase
             }
 
             foreach ($owner['categories'] as $category) {
-                $id = 'network-'.\Illuminate\Support\Str::slug($category['label']);
+                $id = 'network-'.Str::slug($category['label']);
                 $response->assertSee('href="#'.$id.'"', false)->assertSee('id="'.$id.'"', false);
             }
 

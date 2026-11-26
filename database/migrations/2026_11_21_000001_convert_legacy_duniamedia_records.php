@@ -20,8 +20,6 @@ return new class extends Migration
         'App\\Models\\Campaign' => 'App\\Features\\Clients\\Models\\Campaign',
         'App\\Models\\Project' => 'App\\Features\\Clients\\Models\\Project',
         'App\\Models\\Service' => 'App\\Features\\Clients\\Models\\Service',
-        'App\\Models\\Article' => 'App\\Features\\Content\\Models\\Article',
-        'App\\Models\\Training' => 'App\\Features\\Content\\Models\\Training',
         'App\\Models\\CreatorProfile' => 'App\\Features\\Creators\\Models\\CreatorProfile',
         'App\\Models\\User' => 'App\\Features\\Identity\\Models\\User',
     ];

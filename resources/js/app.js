@@ -212,6 +212,43 @@ if ('MutationObserver' in window) {
 
 document.addEventListener('livewire:navigated', connectFormErrors);
 
+const revealProtectedContactDetails = () => {
+    document.querySelectorAll('[data-protected-contact]').forEach((link) => {
+        if (link.dataset.contactReady === 'true') {
+            return;
+        }
+
+        try {
+            const payload = JSON.parse(atob(link.dataset.contactPayload).split('').reverse().join(''));
+            const text = link.querySelector('[data-contact-text]');
+
+            if (text) {
+                text.textContent = payload.display;
+            }
+
+            link.setAttribute('href', (link.dataset.protectedContact === 'tel' ? 'tel:' : 'mailto:') + payload.value);
+            link.dataset.contactReady = 'true';
+        } catch (error) {
+            console.warn('Protected contact details could not be revealed:', error);
+        }
+    });
+};
+
+revealProtectedContactDetails();
+document.addEventListener('livewire:navigated', revealProtectedContactDetails);
+
+const watchProtectedContactMorphs = () => {
+    if (window.Livewire && typeof window.Livewire.hook === 'function') {
+        window.Livewire.hook('morphed', () => revealProtectedContactDetails());
+    }
+};
+
+if (window.Livewire) {
+    watchProtectedContactMorphs();
+} else {
+    document.addEventListener('livewire:init', watchProtectedContactMorphs);
+}
+
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
     const revealTargets = document.querySelectorAll('[data-reveal]');
 

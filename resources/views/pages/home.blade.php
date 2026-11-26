@@ -100,7 +100,7 @@
         </section>
 
         <section class="market-section" aria-labelledby="market-intelligence-title">
-            <header class="market-heading"><div><h2 id="market-intelligence-title">What actually sells attention.</h2><p>Discover the audiences, personalities, programmes and places behind the placements.</p></div><a href="{{ route('insights') }}">Media insights →</a></header>
+            <header class="market-heading"><div><h2 id="market-intelligence-title">What actually sells attention.</h2><p>Discover the audiences, personalities, programmes and places behind the placements.</p></div></header>
             <div class="market-intelligence">
                 <article class="market-intel market-intel--radio">
                     <div class="market-intel__visual"><img src="{{ $image::url('assets/home/hot-fm-community.webp') }}" alt="Hot FM Zoomerz community activation" width="378" height="212" loading="lazy" decoding="async"><span class="market-intel__tag">Radio</span></div>
@@ -192,12 +192,7 @@
             </div>
         </section>
 
-        <section class="market-academy" aria-labelledby="market-academy-title">
-            <div class="market-academy__art"><img src="{{ $image::url('assets/img/v2/academy-hero.webp') }}" srcset="{{ $image::srcset('assets/img/v2/academy-hero.webp', [480, 960, 1536]) }}" sizes="(max-width: 640px) 100vw, 45vw" alt="" width="1536" height="1024" loading="lazy" decoding="async"><strong>DuniaMedia<br>Academy</strong></div>
-            <div><span class="eyebrow">Learn by doing</span><h2 id="market-academy-title">DuniaMedia Academy</h2><p>Practical training for marketers, media professionals and business teams. Build confidence with AI, create stronger content and plan media more effectively.</p><div class="market-academy__tracks"><span><x-dm-icon name="spark" :size="21"/>AI for marketing</span><span><x-dm-icon name="layers" :size="21"/>Media planning</span><span><x-dm-icon name="camera" :size="21"/>Content &amp; creative</span><span><x-dm-icon name="chart" :size="21"/>Business growth</span></div><a class="market-primary" href="{{ route('academy') }}">Explore training →</a><a class="market-link" href="{{ route('services') }}">Creative &amp; technology services →</a></div>
-        </section>
-
-        <section class="market-onboard" aria-label="Join the media ecosystem">
+        <section class="market-onboard" aria-label="Join the media marketplace">
             <a href="{{ route('assets.join') }}"><x-dm-icon name="building" :size="30"/><div><strong>Media &amp; property owners</strong><p>Make your space discoverable to advertisers.</p></div><span>List your space →</span></a>
             <a href="{{ route('creators.join') }}"><x-dm-icon name="users" :size="30"/><div><strong>Creators &amp; talent</strong><p>Join our network and discover collaborations.</p></div><span>Join the network →</span></a>
         </section>

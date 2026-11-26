@@ -277,24 +277,6 @@ parameters:
 			path: app/Features/Clients/Queries/SearchCampaigns.php
 
 		-
-			message: '#^Parameter \#2 \$article of method App\\Features\\Content\\Actions\\SaveArticle\:\:handle\(\) expects App\\Features\\Content\\Models\\Article\|null, Illuminate\\Database\\Eloquent\\Model given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/Features/Content/EntryPoints/Filament/ArticleResource/Pages/EditRecord.php
-
-		-
-			message: '#^Parameter \#2 \$training of method App\\Features\\Content\\Actions\\SaveTraining\:\:handle\(\) expects App\\Features\\Content\\Models\\Training\|null, Illuminate\\Database\\Eloquent\\Model given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/Features/Content/EntryPoints/Filament/TrainingResource/Pages/EditRecord.php
-
-		-
-			message: '#^Cannot call method toIso8601String\(\) on string\.$#'
-			identifier: method.nonObject
-			count: 1
-			path: app/Features/Content/Queries/SearchArticles.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1

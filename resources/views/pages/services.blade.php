@@ -92,7 +92,7 @@
                 ],
                 'offers' => ['Leadership briefings and introductory talks', 'Hands-on workshops for teams', 'Custom programmes around real workflows', 'Follow-up resources and review'],
                 'deliverables' => ['Programme outline and outcomes', 'Facilitated session or series', 'Worked examples and templates', 'Follow-up reference material'],
-                'proof' => ['label' => 'Explore the academy', 'url' => route('academy')],
+                'proof' => ['label' => 'Discuss a training brief', 'url' => route('contact')],
             ],
             'campaign-analytics-automation' => [
                 'anchor' => 'measurement',
@@ -113,7 +113,7 @@
             ['users', 'Build brand awareness', route('advisor', ['objective' => 'awareness'])],
             ['target', 'Generate leads and sales', route('advisor', ['objective' => 'leads'])],
             ['building', 'Monetise my media space', route('assets.join')],
-            ['briefcase', 'Develop my team’s skills', route('academy')],
+            ['briefcase', 'Develop my team’s skills', route('contact')],
         ];
     @endphp
 

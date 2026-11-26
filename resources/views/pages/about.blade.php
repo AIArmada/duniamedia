@@ -211,7 +211,12 @@
                     <div class="contact-fact">
                         <span>Contact</span>
                         <h3>Ifawani Omar</h3>
-                        <p><a href="tel:+60193894889">+60 19 389 4889</a><br><a href="mailto:ramediarelations@gmail.com">ramediarelations@gmail.com</a><br><a href="mailto:ifa@ramediaco.org">ifa@ramediaco.org</a></p>
+                        <p>
+                            <x-protected-contact type="tel" value="+60193894889" display="+60 19 389 4889"><span data-contact-text>Call us</span></x-protected-contact><br>
+                            <x-protected-contact type="email" value="ramediarelations@gmail.com"><span data-contact-text>Email us</span></x-protected-contact><br>
+                            <x-protected-contact type="email" value="ifa@ramediaco.org"><span data-contact-text>Email us</span></x-protected-contact>
+                        </p>
+                        <noscript><p>Enable JavaScript to reveal phone and email details.</p></noscript>
                     </div>
                 </div>
             </div>

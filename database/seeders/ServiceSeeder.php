@@ -24,7 +24,7 @@ class ServiceSeeder extends Seeder
             ['Websites & Conversion Systems', 'Technology', 'Landing pages, websites, CRM, campaign tracking and workflow automation.', 'custom-media'],
             ['Creator & Influencer Campaigns', 'Creator Network', 'Niche creator matching, briefing, creative production and measurement.', 'creators'],
             ['Media Asset Monetisation', 'Custom Media', 'Turn appropriate premises and physical spaces into sellable advertising assets.', 'indoor'],
-            ['AI Seminars & Corporate Training', 'Academy', 'Practical AI, content, productivity and transformation workshops.', 'training'],
+            ['AI Seminars & Corporate Training', 'Training', 'Practical AI, content, productivity and transformation workshops.', 'training'],
             ['Campaign Analytics & Automation', 'Intelligence', 'Attribution, dashboards, lead handling and measurable marketing workflows.', 'digital'],
         ];
 

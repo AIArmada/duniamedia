@@ -70,7 +70,7 @@
                                 @error('turnstileToken')
                                     <p class="contact-turnstile__error" role="alert">{{ $message }}</p>
                                 @enderror
-                                <noscript><p>Enable JavaScript to complete the security check, or contact us by phone or email.</p></noscript>
+                                <noscript><p>Enable JavaScript to complete the security check.</p></noscript>
                             </div>
                             <flux:button type="submit" variant="primary" icon:trailing="arrow-up-right" class="contact-submit">Send enquiry</flux:button>
                         @else
@@ -87,15 +87,16 @@
                 <p>Sometimes it's easier to have a real conversation. We're just a call or email away.</p>
 
                 <div class="contact-direct__links">
-                    <a href="tel:+60193894889" class="contact-direct__link">
+                    <x-protected-contact type="tel" value="+60193894889" display="+60 19 389 4889" class="contact-direct__link">
                         <span class="contact-direct__icon"><x-dm-icon name="phone" :size="21"/></span>
-                        <span><small>Give us a call</small><strong>+60 19 389 4889</strong></span>
-                    </a>
-                    <a href="mailto:ramediarelations@gmail.com" class="contact-direct__link">
+                        <span><small>Give us a call</small><strong data-contact-text>Call us</strong></span>
+                    </x-protected-contact>
+                    <x-protected-contact type="email" value="ramediarelations@gmail.com" class="contact-direct__link">
                         <span class="contact-direct__icon"><x-dm-icon name="mail" :size="21"/></span>
-                        <span><small>Drop us an email</small><strong>ramediarelations@gmail.com</strong></span>
-                    </a>
+                        <span><small>Drop us an email</small><strong data-contact-text>Email us</strong></span>
+                    </x-protected-contact>
                 </div>
+                <noscript><p>Our phone number and email address are hidden from automated collection. Enable JavaScript to reveal them.</p></noscript>
 
                 <figure class="contact-direct__photo">
                     <img src="{{ \App\Features\Catalog\Support\MediaImage::url('assets/img/v2/contact-studio.webp') }}"

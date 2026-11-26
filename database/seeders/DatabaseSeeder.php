@@ -24,7 +24,6 @@ class DatabaseSeeder extends Seeder
             RateCardEntrySeeder::class,
             RateCardContentSeeder::class,
             CapacityPoolSeeder::class,
-            ContentSeeder::class,
             ClientWorkSeeder::class,
         ]);
     }
