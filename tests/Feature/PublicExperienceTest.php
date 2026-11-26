@@ -676,6 +676,7 @@ class PublicExperienceTest extends TestCase
             'status' => 'draft',
         ]);
 
+        Party::factory()->create(['slug' => 'media-prima', 'display_name' => 'Media Prima Berhad']);
         $owner = \App\Features\Catalog\Support\MediaDirectory::owner('media-prima');
         $response = $this->get(route('media.owner', 'media-prima'))
             ->assertOk()
@@ -702,7 +703,7 @@ class PublicExperienceTest extends TestCase
         }
 
         $this->assertSame(count($owner['channels']), substr_count($response->getContent(), 'class="owner-editorial-brand"'));
-        $this->get(route('media.owner', 'astro'))->assertOk()->assertDontSee('class="owner-editorial"', false);
+        $this->get(route('media.owner', 'astro'))->assertOk()->assertSee('class="owner-editorial"', false);
     }
 
     public function test_media_prima_owner_remains_useful_without_rate_cards(): void
@@ -713,6 +714,72 @@ class PublicExperienceTest extends TestCase
             ->assertSee('Explore the Media Prima network')
             ->assertSee(route('media.channel', ['media-prima', 'jom-heboh']))
             ->assertSee(route('media.channel', ['media-prima', 'podcast-utama']));
+    }
+
+    public function test_every_media_owner_uses_the_shared_editorial_layout(): void
+    {
+        $owners = \App\Features\Catalog\Support\MediaDirectory::owners();
+        $editorial = require resource_path('data/media-owner-editorial.php');
+        $this->assertEqualsCanonicalizing(array_keys($owners), array_keys($editorial));
+
+        foreach ($owners as $slug => $owner) {
+            $response = $this->get(route('media.owner', $slug))
+                ->assertOk()
+                ->assertSee('class="owner-editorial"', false)
+                ->assertSee($owner['name'])
+                ->assertSee($editorial[$slug]['tagline'])
+                ->assertSee($editorial[$slug]['closing_title'])
+                ->assertSee('Explore advertising opportunities')
+                ->assertSee(route('quote.builder'))
+                ->assertSee(route('contact'))
+                ->assertDontSee('class="directory-hero"', false);
+
+            $this->assertSame(count($owner['channels']), substr_count($response->getContent(), 'class="owner-editorial-brand"'));
+
+            foreach ($owner['channels'] as $channel) {
+                $response->assertSee(route('media.channel', [$slug, $channel['slug']]));
+            }
+
+            foreach ($owner['categories'] as $category) {
+                $id = 'network-'.\Illuminate\Support\Str::slug($category['label']);
+                $response->assertSee('href="#'.$id.'"', false)->assertSee('id="'.$id.'"', false);
+            }
+
+            foreach (['hero', 'closing_image'] as $key) {
+                if (! empty($editorial[$slug][$key])) {
+                    $this->assertFileExists(public_path($editorial[$slug][$key]));
+                    $response->assertSee($editorial[$slug][$key]);
+                }
+            }
+
+            foreach ($editorial[$slug]['capabilities'] ?? [] as $capability) {
+                $response->assertSee($capability['title'])->assertSee($capability['body']);
+            }
+
+            $response->assertDontSee(route('media.index', ['owner' => $slug]), false);
+        }
+
+        $this->get(route('media.owner', 'unknown-owner'))->assertNotFound();
+    }
+
+    public function test_owner_marketplace_includes_direct_and_curated_public_inventory_only(): void
+    {
+        $owner = Party::factory()->create(['slug' => 'astro', 'display_name' => 'Astro Media Solutions']);
+        $other = Party::factory()->create(['slug' => 'other-test-owner']);
+
+        $this->createMediaOffer(['slug' => 'astro-direct-deck', 'name' => 'Astro direct deck'], ['media_owner_party_id' => $owner->id]);
+        $this->createMediaOffer(['slug' => 'astro-video360-digital-2026', 'name' => 'Astro curated deck'], ['media_owner_party_id' => $other->id]);
+        $this->createMediaOffer(['slug' => 'astro-private-deck', 'name' => 'Astro private deck', 'status' => 'draft'], ['media_owner_party_id' => $owner->id]);
+        $this->createMediaOffer(['slug' => 'other-owner-deck', 'name' => 'Other owner deck'], ['media_owner_party_id' => $other->id]);
+
+        $this->get(route('media.owner', 'astro'))
+            ->assertOk()
+            ->assertSee(route('offers.show', 'astro-direct-deck'))
+            ->assertSee(route('offers.show', 'astro-video360-digital-2026'))
+            ->assertDontSee(route('offers.show', 'astro-private-deck'))
+            ->assertDontSee(route('offers.show', 'other-owner-deck'))
+            ->assertSee(route('media.index', ['owner' => 'astro']))
+            ->assertSee(route('rates.index', ['owner' => 'astro']));
     }
 
     public function test_media_owners_can_be_filtered_by_category_and_channel_name(): void

@@ -96,21 +96,17 @@ class MediaDirectoryController extends Controller
         }
 
         $rateCards = MediaDirectory::rateCards($owner);
-        $view = view()->exists('pages.owners.'.$owner) ? 'pages.owners.'.$owner : 'pages.media-owner';
+        $editorial = (require resource_path('data/media-owner-editorial.php'))[$owner] ?? [];
 
-        return view($view, [
+        return view('pages.media-owner', [
             'owner' => $ownerData,
             'channels' => $ownerData['channels'],
             'rateCards' => $rateCards,
-            'ownerStory' => $ownerData['description'],
-            'ownerStats' => [
-                ['label' => 'Channels', 'value' => (string) count($ownerData['channels'])],
-                ['label' => 'Channel groups', 'value' => (string) count($ownerData['categories'])],
-                ['label' => 'Decks', 'value' => (string) $rateCards->count()],
-            ],
+            'editorial' => $editorial,
+            'hasOwnerFilter' => app(ResolvesParties::class)->idForSlug($owner) !== null,
             'heroImage' => ! empty($ownerData['logo']) ? 'assets/partners/'.$ownerData['logo'] : null,
             'pageTitle' => $ownerData['name'].' — Media Owner | Dunia Media',
-            'metaDescription' => $ownerData['description'],
+            'metaDescription' => $editorial['intro'] ?? $ownerData['description'],
         ]);
     }
 
