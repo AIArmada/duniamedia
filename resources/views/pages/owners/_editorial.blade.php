@@ -89,7 +89,7 @@
             <div class="owner-editorial-hero__visual {{ $hero ? '' : 'owner-editorial-hero__visual--network' }} {{ $heroArtwork ? 'owner-editorial-hero__visual--artwork' : '' }}">
                 @if ($hero)
                     <img src="{{ $image::url($hero) }}" @if ($heroSrcset) srcset="{{ $heroSrcset }}" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 46vw" @endif alt="{{ $heroIllustrated ? 'Illustrative media environment' : ($editorial['hero_alt'] ?? ($heroArtwork ? $owner['name'].' editorial artwork' : '')) }}" fetchpriority="high" decoding="async">
-                    @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
+                    @if ($heroIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@elseif ($heroArtwork)<span class="owner-editorial-image-credit">Illustration</span>@endif
                 @else
                     <div class="owner-editorial-visual-network" aria-hidden="true">
                         <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="54"/>
@@ -281,7 +281,7 @@
             <div class="owner-editorial-closing__visual {{ $closing ? '' : 'owner-editorial-closing__visual--graphic' }} {{ $closingArtwork ? 'owner-editorial-closing__visual--artwork' : '' }}">
                 @if ($closing)
                     <img src="{{ $image::url($closing) }}" @if ($closingSrcset) srcset="{{ $closingSrcset }}" sizes="(max-width: 600px) 100vw, 44vw" @endif alt="{{ $closingIllustrated ? 'Illustrative media environment' : ($editorial['closing_alt'] ?? ($closingArtwork ? $owner['name'].' campaign artwork' : '')) }}" loading="lazy" decoding="async">
-                    @if ($closingIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@endif
+                    @if ($closingIllustrated)<span class="owner-editorial-image-credit">Illustrative media environment</span>@elseif ($closingArtwork)<span class="owner-editorial-image-credit">Illustration</span>@endif
                 @else
                     <x-dm-icon :name="$editorial['visual_icon'] ?? 'layers'" :size="84"/>
                 @endif

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use AIArmada\Addressing\Actions\SeedCountryGeographiesAction;
 use AIArmada\Addressing\Database\Seeders\AddressCountrySeeder;
+use AIArmada\Addressing\Features\Geography\Actions\SeedCountryGeographiesAction;
 use Illuminate\Database\Seeder;
 
 class AddressReferenceSeeder extends Seeder

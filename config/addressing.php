@@ -458,21 +458,6 @@ use AIArmada\Addressing\Geography\Zambia\ZambiaAddressFormatter;
 use AIArmada\Addressing\Geography\Zambia\ZambiaGeographyProvider;
 use AIArmada\Addressing\Geography\Zimbabwe\ZimbabweAddressFormatter;
 use AIArmada\Addressing\Geography\Zimbabwe\ZimbabweGeographyProvider;
-use AIArmada\Addressing\Models\Address;
-use AIArmada\Addressing\Models\Addressable;
-use AIArmada\Addressing\Models\AddressArea;
-use AIArmada\Addressing\Models\AddressAreaAssignment;
-use AIArmada\Addressing\Models\AddressAreaName;
-use AIArmada\Addressing\Models\AddressAreaPostalCode;
-use AIArmada\Addressing\Models\AddressAreaRelationship;
-use AIArmada\Addressing\Models\AddressAreaRole;
-use AIArmada\Addressing\Models\AddressAreaStateLink;
-use AIArmada\Addressing\Models\AddressCountry;
-use AIArmada\Addressing\Models\AddressSnapshot;
-use AIArmada\Addressing\Models\City;
-use AIArmada\Addressing\Models\PostalCode;
-use AIArmada\Addressing\Models\ResolutionGap;
-use AIArmada\Addressing\Models\State;
 use AIArmada\Addressing\Support\AddressingTableResolver;
 
 return [
@@ -482,24 +467,29 @@ return [
     ],
 
     'models' => [
-        'country' => AddressCountry::class,
-        'state' => State::class,
-        'city' => City::class,
-        'area' => AddressArea::class,
-        'address' => Address::class,
-        'snapshot' => AddressSnapshot::class,
-        'addressable' => Addressable::class,
-        'postal_code' => PostalCode::class,
-        'resolution_gap' => ResolutionGap::class,
-        'area_assignment' => AddressAreaAssignment::class,
-        'area_name' => AddressAreaName::class,
-        'area_role' => AddressAreaRole::class,
-        'area_state_link' => AddressAreaStateLink::class,
-        'area_postal_code' => AddressAreaPostalCode::class,
-        'area_relationship' => AddressAreaRelationship::class,
+        'country' => null,
+        'state' => null,
+        'city' => null,
+        'area' => null,
+        'address' => null, // Defaults to the AddressLifecycle feature model.
+        'snapshot' => null, // Defaults to the AddressLifecycle feature model.
+        'addressable' => null, // Defaults to the AddressLifecycle feature model.
+        'postal_code' => null, // Defaults to the PostalCodes feature model.
+        'resolution_gap' => null, // Uses the owning feature's model unless overridden.
+        'area_assignment' => null, // Defaults to the AddressLifecycle feature model.
+        'area_name' => null, // Defaults to the Geography feature model.
+        'area_role' => null, // Defaults to the Geography feature model.
+        'area_state_link' => null, // Defaults to the Geography feature model.
+        'area_postal_code' => null, // Defaults to the PostalCodes feature model.
+        'area_relationship' => null, // Defaults to the Geography feature model.
     ],
 
     'features' => [
+        'spatial' => [
+            'postgis' => env('ADDRESSING_SPATIAL_POSTGIS', false),
+            'geohash' => env('ADDRESSING_SPATIAL_GEOHASH', false),
+            'h3' => env('ADDRESSING_SPATIAL_H3', false),
+        ],
         'owner' => [
             'enabled' => env('ADDRESSING_OWNER_ENABLED', true),
             'include_global' => env('ADDRESSING_OWNER_INCLUDE_GLOBAL', false),
@@ -1011,5 +1001,13 @@ return [
         'cldr_path' => env('ADDRESSING_CLDR_PATH'),
         // Pinned cldr-core version; the diff refuses checkouts that disagree.
         'cldr_version' => env('ADDRESSING_CLDR_VERSION'),
+    ],
+
+    'google_places' => [
+        'enabled' => env('ADDRESSING_GOOGLE_PLACES_ENABLED'),
+        'api_key' => env('ADDRESSING_GOOGLE_MAPS_API_KEY'),
+        'server_api_key' => env('ADDRESSING_GOOGLE_PLACES_SERVER_API_KEY'),
+        'link_resolution_enabled' => env('ADDRESSING_GOOGLE_PLACE_LINK_RESOLUTION_ENABLED'),
+        'user_agent' => env('ADDRESSING_GOOGLE_PLACES_USER_AGENT'),
     ],
 ];

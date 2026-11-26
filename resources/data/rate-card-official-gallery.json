@@ -1,0 +1,385 @@
+{
+  "rtm-tv-radio-2025": [
+    {
+      "path": "assets/official/rtm/angkasapuri.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 242392,
+      "alt": "Angkasapuri, the headquarters of Radio Televisyen Malaysia",
+      "caption": "Radio Televisyen Malaysia headquarters in Kuala Lumpur",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Angkasapuri_April_30_2018.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: PulauKakatua19 / Wikimedia Commons, CC BY-SA 4.0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "bernama-media-kit-2026": [
+    {
+      "path": "assets/official/bernama/building.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 441642,
+      "alt": "The BERNAMA headquarters building in Kuala Lumpur",
+      "caption": "BERNAMA national news agency headquarters",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bernama.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "omnia-content-terhangat-2026": [
+    {
+      "path": "assets/official/mediaprima/sri-pentas-1.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 148246,
+      "alt": "Sri Pentas, the Media Prima headquarters in Bandar Utama",
+      "caption": "Media Prima / TV3 headquarters at Sri Pentas",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sri_Pentas,_Bandar_Utama_20260410_150038.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Wiki Farazi / Wikimedia Commons, CC0",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/mediaprima/sri-pentas-2.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 389810,
+      "alt": "The Sri Pentas media complex in Bandar Utama",
+      "caption": "Media Prima / TV3 headquarters at Sri Pentas",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sri_Pentas,_Bandar_Utama_20260410_150443.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Wiki Farazi / Wikimedia Commons, CC0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "astro-upfront-2027": [
+    {
+      "path": "assets/official/astro/oasis-channel.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 20550,
+      "alt": "Official Astro Oasis channel banner",
+      "caption": "Astro Oasis — official channel artwork",
+      "source_url": "https://content.astro.com.my/channels/Astro-Oasis-315",
+      "source_label": "Astro",
+      "credit": "Official Astro Oasis artwork",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/astro/oasis-programme-1.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 32042,
+      "alt": "Official Astro Oasis programme artwork",
+      "caption": "Astro Oasis — official programme artwork",
+      "source_url": "https://content.astro.com.my/channels/Astro-Oasis-315",
+      "source_label": "Astro",
+      "credit": "Official Astro Oasis programme artwork",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/astro/oasis-programme-2.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 295758,
+      "alt": "Official Astro Oasis programme artwork",
+      "caption": "Astro Oasis — official programme artwork",
+      "source_url": "https://content.astro.com.my/channels/Astro-Oasis-315",
+      "source_label": "Astro",
+      "credit": "Official Astro Oasis programme artwork",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "988-fm-2026-radio-digital": [
+    {
+      "path": "assets/official/988/campaign-banner.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 186984,
+      "alt": "Official 988 FM campaign artwork",
+      "caption": "988 FM — official campaign artwork",
+      "source_url": "https://988.com.my/",
+      "source_label": "988 FM",
+      "credit": "Official 988 FM artwork",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "suria-fm-2026-radio-digital": [
+    {
+      "path": "assets/official/suria/pagi-on-suria.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 147280,
+      "alt": "Official Pagi On Suria show banner",
+      "caption": "Pagi On Suria — official show artwork",
+      "source_url": "https://suria.my/segmen/pagi-on-suria/",
+      "source_label": "Suria FM",
+      "credit": "Official Suria FM artwork",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/suria/vibe-suria.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 190270,
+      "alt": "Official Vibe Suria show artwork",
+      "caption": "Vibe Suria — official show artwork",
+      "source_url": "https://suria.my/segmen/vibe-suria/",
+      "source_label": "Suria FM",
+      "credit": "Official Suria FM artwork",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/suria/panggung-suria.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 155758,
+      "alt": "Official Panggung Suria concert artwork",
+      "caption": "Panggung Suria — official event artwork",
+      "source_url": "https://suria.my/",
+      "source_label": "Suria FM",
+      "credit": "Official Suria FM artwork",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "tvalhijrah-bincang-niaga-2024": [
+    {
+      "path": "assets/official/tvalhijrah/building.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 202666,
+      "alt": "TV AlHijrah broadcasting centre in Kuala Lumpur",
+      "caption": "TV AlHijrah headquarters",
+      "source_url": "https://commons.wikimedia.org/wiki/File:TV_ALHIJRAH_building_in_KL_(May_2022).jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Chainwit. / Wikimedia Commons, CC BY-SA 4.0",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/tvalhijrah/programme-2026.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 211964,
+      "alt": "Official TV AlHijrah 2026 programme banner",
+      "caption": "TV AlHijrah — official programme artwork",
+      "source_url": "https://tvalhijrah.com/",
+      "source_label": "TV AlHijrah",
+      "credit": "Official TV AlHijrah artwork",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/tvalhijrah/quran-2026.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 145944,
+      "alt": "Official TV AlHijrah Quran programme promotion",
+      "caption": "TV AlHijrah — official programme artwork",
+      "source_url": "https://tvalhijrah.com/",
+      "source_label": "TV AlHijrah",
+      "credit": "Official TV AlHijrah artwork",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "target-media-elevator-q2-2025": [
+    {
+      "path": "assets/official/target/elevator-1.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 218584,
+      "alt": "Target Media elevator screen in a Kuala Lumpur office lobby",
+      "caption": "Target Media — official elevator media photograph",
+      "source_url": "https://targetmedia.my/",
+      "source_label": "Target Media",
+      "credit": "Official Target Media portfolio image",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/target/elevator-2.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 104862,
+      "alt": "Audience viewing a Target Media elevator screen",
+      "caption": "Target Media — official elevator media photograph",
+      "source_url": "https://targetmedia.my/",
+      "source_label": "Target Media",
+      "credit": "Official Target Media portfolio image",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/target/elevator-3.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 127166,
+      "alt": "Target Media digital screen in an office lift lobby",
+      "caption": "Target Media — official elevator media photograph",
+      "source_url": "https://targetmedia.my/",
+      "source_label": "Target Media",
+      "credit": "Official Target Media portfolio image",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "sinar-harian-20th-anniversary-2026": [
+    {
+      "path": "assets/official/sinar/news-1.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 135194,
+      "alt": "Sinar Harian official news photograph",
+      "caption": "Sinar Harian — official editorial photograph",
+      "source_url": "https://www.sinarharian.com.my/",
+      "source_label": "Sinar Harian",
+      "credit": "Official Sinar Harian image",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/sinar/news-2.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 86724,
+      "alt": "Sinar Harian official news photograph",
+      "caption": "Sinar Harian — official editorial photograph",
+      "source_url": "https://www.sinarharian.com.my/",
+      "source_label": "Sinar Harian",
+      "credit": "Official Sinar Harian image",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "sinar-karangkraf-ratecard-2025-2026": [
+    {
+      "path": "assets/official/sinar/news-3.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 33902,
+      "alt": "Sinar Harian official news photograph",
+      "caption": "Sinar Harian — official editorial photograph",
+      "source_url": "https://www.sinarharian.com.my/",
+      "source_label": "Sinar Harian",
+      "credit": "Official Sinar Harian image",
+      "kind": "official",
+      "is_illustrative": false
+    },
+    {
+      "path": "assets/official/sinar/news-4.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 135194,
+      "alt": "Sinar Harian official news photograph",
+      "caption": "Sinar Harian — official editorial photograph",
+      "source_url": "https://www.sinarharian.com.my/",
+      "source_label": "Sinar Harian",
+      "credit": "Official Sinar Harian image",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "malaysiakini-media-kit-2024": [
+    {
+      "path": "assets/official/malaysiakini/about.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 111004,
+      "alt": "Malaysiakini office and editorial team",
+      "caption": "Malaysiakini — official about image",
+      "source_url": "https://www.malaysiakini.com/en/about",
+      "source_label": "Malaysiakini",
+      "credit": "Official Malaysiakini image",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "malaysiakini-kinitv-event-coverage-2026-2027": [
+    {
+      "path": "assets/official/malaysiakini/about-2.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 111004,
+      "alt": "Malaysiakini office and editorial team",
+      "caption": "Malaysiakini — official about image",
+      "source_url": "https://www.malaysiakini.com/en/about",
+      "source_label": "Malaysiakini",
+      "credit": "Official Malaysiakini image",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "billboard-sarawak-smg-2026": [
+    {
+      "path": "assets/official/sarawak/kuching-waterfront.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 324264,
+      "alt": "Kuching waterfront, Sarawak",
+      "caption": "Kuching, Sarawak — location context for the Sarawak media market",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kuching_Waterfront_(17152369184).jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Wikimedia Commons contributor, CC BY-SA 2.0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "erl-digital-screens-2026": [
+    {
+      "path": "assets/official/transit/klia-ekspres.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 373466,
+      "alt": "KLIA Ekspres train in Malaysia",
+      "caption": "KLIA Ekspres — official transit environment",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KLIA_Ekspres-2015-01-12.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Bigbug21 / Wikimedia Commons, CC BY-SA 4.0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "ktm-train-kl-sentral-ads-2026": [
+    {
+      "path": "assets/official/transit/ktm-train.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 362704,
+      "alt": "KTM Komuter train in Kuala Lumpur",
+      "caption": "KTM Komuter — transit environment",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Class_83_KTM_Komuter_train,_Kuala_Lumpur.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Two hundred percent / Wikimedia Commons, CC BY-SA 2.5",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ],
+  "kl-sentral-station-sponsorship-2024": [
+    {
+      "path": "assets/official/transit/kl-sentral.webp",
+      "width": 1200,
+      "height": 900,
+      "bytes": 333396,
+      "alt": "Kuala Lumpur Sentral station concourse",
+      "caption": "KL Sentral — transit environment",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KL_Sentral,_Kuala_Lumpur_20221229_150139.jpg",
+      "source_label": "Wikimedia Commons",
+      "credit": "Photo: Wiki Farazi / Wikimedia Commons, CC0",
+      "kind": "official",
+      "is_illustrative": false
+    }
+  ]
+}

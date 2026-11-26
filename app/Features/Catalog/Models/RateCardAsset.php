@@ -18,6 +18,7 @@ class RateCardAsset extends BaseModel
             'width' => 'integer',
             'height' => 'integer',
             'sort_order' => 'integer',
+            'is_illustrative' => 'boolean',
         ];
     }
 

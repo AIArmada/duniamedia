@@ -2882,6 +2882,39 @@ a.pager__link:hover {
     font-size: 0.76rem;
 }
 
+.story-gallery figcaption small {
+    display: block;
+    margin-top: 0.2rem;
+    opacity: 0.8;
+}
+
+.story-gallery__source {
+    display: inline-block;
+    margin-top: 0.35rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.story-gallery__badge {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.1rem 0.35rem;
+    border-radius: 999px;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.gallery-note {
+    max-width: 62ch;
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+}
+
 .package-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

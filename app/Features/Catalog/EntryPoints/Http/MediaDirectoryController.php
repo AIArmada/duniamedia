@@ -129,6 +129,7 @@ class MediaDirectoryController extends Controller
         $rateCards = MediaDirectory::rateCardsForProperty($property);
         $visualAssets = RateCardAsset::query()
             ->whereIn('product_id', $rateCards->map(fn ($offer) => $offer->product->id)->all())
+            ->whereIn('kind', ['official', 'photo'])
             ->orderBy('sort_order')
             ->limit(12)
             ->get()
@@ -136,6 +137,10 @@ class MediaDirectoryController extends Controller
                 'path' => $asset->path,
                 'alt' => $asset->alt,
                 'caption' => $asset->caption,
+                'source_url' => $asset->source_url,
+                'source_label' => $asset->source_label,
+                'credit' => $asset->credit,
+                'is_illustrative' => $asset->is_illustrative,
             ])
             ->all();
         $siblings = MediaDirectory::siblingChannels($property);
@@ -187,6 +192,7 @@ class MediaDirectoryController extends Controller
         $rateCards = MediaDirectory::rateCards($owner, $channel);
         $visualAssets = RateCardAsset::query()
             ->whereIn('product_id', $rateCards->map(fn ($offer) => $offer->product->id)->all())
+            ->whereIn('kind', ['official', 'photo'])
             ->orderBy('sort_order')
             ->limit(12)
             ->get()
@@ -194,6 +200,10 @@ class MediaDirectoryController extends Controller
                 'path' => $asset->path,
                 'alt' => $asset->alt,
                 'caption' => $asset->caption,
+                'source_url' => $asset->source_url,
+                'source_label' => $asset->source_label,
+                'credit' => $asset->credit,
+                'is_illustrative' => $asset->is_illustrative,
             ])
             ->all();
         $nestedView = 'pages.channels.'.$owner.'.'.$channel;

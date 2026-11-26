@@ -19,13 +19,21 @@ class RateCardGallerySeeder extends Seeder
         }
 
         $manifest = json_decode((string) file_get_contents($path), true) ?: [];
+        $officialPath = resource_path('data/rate-card-official-gallery.json');
+        $official = is_file($officialPath)
+            ? (json_decode((string) file_get_contents($officialPath), true) ?: [])
+            : [];
         $generatedPath = resource_path('data/rate-card-generated-gallery.json');
         $generated = is_file($generatedPath)
             ? (json_decode((string) file_get_contents($generatedPath), true) ?: [])
             : [];
 
-        foreach ($generated as $slug => $assets) {
+        foreach ($official as $slug => $assets) {
             $manifest[$slug] = array_merge($assets, $manifest[$slug] ?? []);
+        }
+
+        foreach ($generated as $slug => $assets) {
+            $manifest[$slug] = array_merge($manifest[$slug] ?? [], $assets);
         }
 
         $products = Product::query()->get()->keyBy('slug');
@@ -54,6 +62,10 @@ class RateCardGallerySeeder extends Seeder
                     'kind' => $asset['kind'] ?? 'photo',
                     'alt' => $asset['alt'] ?? $slug,
                     'caption' => $asset['caption'] ?? null,
+                    'source_url' => $asset['source_url'] ?? null,
+                    'source_label' => $asset['source_label'] ?? null,
+                    'credit' => $asset['credit'] ?? null,
+                    'is_illustrative' => (bool) ($asset['is_illustrative'] ?? (($asset['kind'] ?? null) === 'generated')),
                     'width' => (int) ($asset['width'] ?? 0),
                     'height' => (int) ($asset['height'] ?? 0),
                     'bytes' => (int) ($asset['bytes'] ?? 0),
@@ -66,6 +78,6 @@ class RateCardGallerySeeder extends Seeder
             $total += $writer->replaceForProduct($product, $rows);
         }
 
-        $this->command?->info("Seeded {$total} source-deck gallery images.");
+        $this->command?->info("Seeded {$total} official and source-deck gallery images.");
     }
 }

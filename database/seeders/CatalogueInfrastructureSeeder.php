@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use AIArmada\Addressing\Models\Address;
-use AIArmada\Addressing\Models\AddressCountry;
+use AIArmada\Addressing\Features\AddressLifecycle\Models\Address;
+use AIArmada\Addressing\Features\Geography\Models\AddressCountry;
 use App\Features\Catalog\Models\MediaProperty;
 use App\Features\Catalog\Models\Placement;
 use App\Features\Catalog\Persistence\WriteAdFormats;

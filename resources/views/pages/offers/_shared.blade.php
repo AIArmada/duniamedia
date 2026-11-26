@@ -83,15 +83,41 @@
                 </div>
             @endif
 
-            @if (! empty($assets))
-                <h3>Visual story</h3>
+            @php
+                $officialAssets = collect($assets)->reject(fn ($asset): bool => (bool) ($asset['is_illustrative'] ?? false));
+                $illustrationAssets = collect($assets)->filter(fn ($asset): bool => (bool) ($asset['is_illustrative'] ?? false));
+            @endphp
+
+            @if ($officialAssets->isNotEmpty())
+                <h3>Official imagery</h3>
+                <p class="gallery-note">Official or source-licensed imagery. Credits and source links are shown with each image.</p>
                 <div class="story-gallery">
-                    @foreach ($assets as $asset)
+                    @foreach ($officialAssets as $asset)
                         <figure>
                             <img src="{{ \App\Features\Catalog\Support\MediaImage::url($asset['path']) }}" alt="{{ $asset['alt'] }}" loading="lazy" decoding="async">
-                            @if (! empty($asset['caption']))
-                                <figcaption>{{ $asset['caption'] }}</figcaption>
-                            @endif
+                            <figcaption>
+                                @if (! empty($asset['caption'])){{ $asset['caption'] }}@endif
+                                @if (! empty($asset['credit']))<small>{{ $asset['credit'] }}</small>@endif
+                                @if (! empty($asset['source_url']))
+                                    <a class="story-gallery__source" href="{{ $asset['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ $asset['source_label'] ?? 'Source' }} ↗</a>
+                                @endif
+                            </figcaption>
+                        </figure>
+                    @endforeach
+                </div>
+            @endif
+
+            @if ($illustrationAssets->isNotEmpty())
+                <h3>Illustrative concepts</h3>
+                <p class="gallery-note">Generated illustrations for campaign mood and format explanation — not actual coverage, venues or people.</p>
+                <div class="story-gallery">
+                    @foreach ($illustrationAssets as $asset)
+                        <figure>
+                            <img src="{{ \App\Features\Catalog\Support\MediaImage::url($asset['path']) }}" alt="{{ $asset['alt'] }}" loading="lazy" decoding="async">
+                            <figcaption>
+                                <span class="story-gallery__badge">Illustration</span>
+                                @if (! empty($asset['caption'])){{ $asset['caption'] }}@endif
+                            </figcaption>
                         </figure>
                     @endforeach
                 </div>

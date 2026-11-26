@@ -62,7 +62,7 @@
                 @endif
                 <figcaption>
                     <span><x-dm-icon :name="$editorial['icon']" :size="20"/> {{ $editorial['art_label'] }}</span>
-                    <small>{{ $editorial['illustrated'] ? 'Illustrative media environment' : ($editorial['visual_kind'] === 'source' ? 'Catalogue artwork' : 'Channel identity') }}</small>
+                    <small>{{ $editorial['illustrated'] ? 'Illustrative media environment' : ($editorial['visual_kind'] === 'source' ? 'Official / source image' : 'Channel identity') }}</small>
                 </figcaption>
             </figure>
         </header>
@@ -108,16 +108,20 @@
             @if (! empty($visualAssets))
                 <div class="channel-editorial-gallery">
                     <div class="channel-editorial-heading">
-                        <div><span class="channel-editorial-kicker">Visual story</span><h2>Inside {{ $channel['name'] }}</h2></div>
-                        <p>Authentic imagery extracted from the source deck, alongside the published rates.</p>
+                        <div><span class="channel-editorial-kicker">Official imagery</span><h2>Inside {{ $channel['name'] }}</h2></div>
+                        <p>Official or source-licensed images only. Generated illustrations are never shown as actual coverage.</p>
                     </div>
                     <div class="story-gallery">
                         @foreach ($visualAssets as $asset)
                             <figure>
                                 <img src="{{ \App\Features\Catalog\Support\MediaImage::url($asset['path']) }}" alt="{{ $asset['alt'] }}" loading="lazy" decoding="async">
-                                @if (! empty($asset['caption']))
-                                    <figcaption>{{ $asset['caption'] }}</figcaption>
-                                @endif
+                                <figcaption>
+                                    @if (! empty($asset['caption'])){{ $asset['caption'] }}@endif
+                                    @if (! empty($asset['credit']))<small>{{ $asset['credit'] }}</small>@endif
+                                    @if (! empty($asset['source_url']))
+                                        <a class="story-gallery__source" href="{{ $asset['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ $asset['source_label'] ?? 'Source' }} ↗</a>
+                                    @endif
+                                </figcaption>
                             </figure>
                         @endforeach
                     </div>

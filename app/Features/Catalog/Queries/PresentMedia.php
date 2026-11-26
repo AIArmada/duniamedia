@@ -220,6 +220,10 @@ final readonly class PresentMedia implements PresentsMedia
                 'alt' => $asset->alt,
                 'caption' => $asset->caption,
                 'kind' => $asset->kind,
+                'source_url' => $asset->source_url,
+                'source_label' => $asset->source_label,
+                'credit' => $asset->credit,
+                'is_illustrative' => $asset->is_illustrative,
             ])
             ->all();
     }

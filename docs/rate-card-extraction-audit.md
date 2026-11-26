@@ -8,7 +8,7 @@ Generated 2026-11-26 from the source PDFs in `storage/app/private/ratecards/` an
 - **247 table pages detected**
 - **1,238 price values detected on page text**
 - **0 unmatched price values** on current decks
-- **4,667 embedded images detected**; 363 meaningful photography assets were extracted into the public gallery (logos, icons, masks and tiny decorations excluded by design)
+- **4,667 embedded images detected**; 361 meaningful photography assets are published: 27 official/CC-licensed and 334 source-deck photographs (logos, icons, masks and tiny decorations excluded by design)
 - Bernama (24 pages) and TV AlHijrah (5 pages) are scanned/image-only decks. Their pages were rendered and checked visually against the seeded package tables; Bernama has 91 extracted lines and TV AlHijrah has 20.
 - The two superseded KLIA 2024 decks are archived reference only and are excluded from the 756-page current-deck total. They are listed separately at the end with their unmatched values.
 
@@ -1039,9 +1039,10 @@ These decks remain in the private reference archive but are not part of the curr
 
 ## Visual assets
 
-- 363 gallery images now live under `public/assets/ratecards/images/` and are seeded via `RateCardGallerySeeder` from `resources/data/rate-card-gallery.json` plus `resources/data/rate-card-generated-gallery.json`.
-- 29 generated editorial images were added for decks whose source PDFs contained no usable photography or whose only crops were text-heavy/abstract: RTM, Bernama, 988 FM, Suria FM, Hot FM, TV AlHijrah, Target Media, TMR, RA Media, TV3 and Astro Oasis.
-- Gallery images are cropped/embedded photography from the source decks or clearly labelled generated editorial imagery; no PDF page is served to visitors.
+- 361 gallery images live under `public/assets/ratecards/images/` and `public/assets/official/`, seeded via `RateCardGallerySeeder` from `resources/data/rate-card-gallery.json` plus `resources/data/rate-card-official-gallery.json`.
+- 27 official/CC-licensed brand images were added for RTM, Bernama, TV3, Astro Oasis, 988 FM, Suria FM, TV AlHijrah, Target Media, Sinar Harian, Malaysiakini, Sarawak, KLIA Ekspres, KTM and KL Sentral. Generated brand galleries were removed. Any generated concept art is now labelled **Illustration** and excluded from “Inside [brand]” galleries.
+- Gallery images are cropped/embedded source-deck photography or official/CC-licensed brand imagery with source links. Generated imagery is not presented as actual coverage; no PDF page is served to visitors.
+- Official brand images remain the property of their respective owners and are used here for editorial reference with visible source links. Wikimedia Commons images retain the licence and credit shown on each image.
 
 ## Reproduce
 
