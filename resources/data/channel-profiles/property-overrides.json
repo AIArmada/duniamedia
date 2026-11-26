@@ -1,0 +1,458 @@
+[
+  {
+    "slug": "astro-group",
+    "name": "Astro Group Packages",
+    "tagline": "Build the campaign across Astro, not around one placement.",
+    "intro": "The Astro Upfront 2027 deck brings together TV, audio, talent, digital, on-ground and production options. Group packages are distinct from a single channel buy.",
+    "ideas": [
+      {
+        "title": "Media mix",
+        "body": "Compare the relevant Upfront 2027 package sections and decide which channels serve the brief."
+      },
+      {
+        "title": "Terms review",
+        "body": "Confirm production, entitlements, validity and the current commercial conditions."
+      }
+    ],
+    "accent": "#a53b94",
+    "art_label": "TV · Audio · Digital",
+    "reference": null
+  },
+  {
+    "slug": "astro-astro-video360",
+    "name": "Astro Video360",
+    "tagline": "Plan a video journey across screens.",
+    "intro": "The Video360+ and Digital Solutions 2026 deck provides a distinct cross-screen video advertising reference.",
+    "ideas": [
+      {
+        "title": "Cross-screen brief",
+        "body": "Choose the target viewing context and review the available Video360+ formats."
+      },
+      {
+        "title": "Measurement plan",
+        "body": "Confirm reporting, targeting options, dates and the applicable commercial package."
+      }
+    ],
+    "accent": "#6d4bb5",
+    "art_label": "Connected video",
+    "reference": null
+  },
+  {
+    "slug": "bernama-com",
+    "name": "Bernama.com",
+    "tagline": "Make information useful online.",
+    "intro": "The Bernama media kit includes website advertising, coverage and production services for its digital portal.",
+    "ideas": [
+      {
+        "title": "Website placements",
+        "body": "Review the BERNAMA.com advertising formats in the source deck."
+      },
+      {
+        "title": "Production support",
+        "body": "Discuss approved content production and distribution requirements."
+      }
+    ],
+    "accent": "#305da1",
+    "art_label": "News portal",
+    "reference": null
+  },
+  {
+    "slug": "bernama-wire",
+    "name": "Bernama Wire",
+    "tagline": "Distribution begins with a clear story.",
+    "intro": "The national news agency’s wire service is a separate media property in the catalogue. Independent editorial coverage must not be represented as a guaranteed purchase.",
+    "ideas": [
+      {
+        "title": "Distribution scope",
+        "body": "Ask which commercial writing or distribution services are available for the particular brief."
+      },
+      {
+        "title": "Editorial distinction",
+        "body": "Confirm exactly what is sponsored content and what remains independent journalism."
+      }
+    ],
+    "accent": "#52708c",
+    "art_label": "News distribution",
+    "reference": null
+  },
+  {
+    "slug": "bernama-group",
+    "name": "Bernama Group",
+    "tagline": "A coordinated communications brief.",
+    "intro": "The 2026 Bernama kit includes strategic writing, coverage, archives, TV, radio and production services.",
+    "ideas": [
+      {
+        "title": "Content and distribution",
+        "body": "Select the relevant service and platform instead of assuming blanket group coverage."
+      },
+      {
+        "title": "Source comparison",
+        "body": "Review the specific rate-card sections and approved deliverables."
+      }
+    ],
+    "accent": "#34547e",
+    "art_label": "Multimedia services",
+    "reference": null
+  },
+  {
+    "slug": "tvs-sarawak-media-group-smg",
+    "name": "Sarawak Media Group (SMG)",
+    "tagline": "A digital outdoor route through Sarawak.",
+    "intro": "The Sarawak Digital Billboard Network 2026 deck identifies Kuching and Bintulu inventory, including Taman Heritage, Tun Salahuddin and Tun Taib sites.",
+    "ideas": [
+      {
+        "title": "Site shortlist",
+        "body": "Compare actual site formats and geographical relevance."
+      },
+      {
+        "title": "Package comparison",
+        "body": "Review the deck’s bundle and normal-rate options, confirming current availability."
+      }
+    ],
+    "accent": "#a85b3e",
+    "art_label": "Kuching and Bintulu",
+    "reference": null
+  },
+  {
+    "slug": "ra-media-relations-bus",
+    "name": "Bus",
+    "tagline": "A moving canvas for Klang Valley campaigns.",
+    "intro": "The bus-wrap reference is listed under RA Media Relations. Verify route coverage, production and posting dates before booking.",
+    "ideas": [
+      {
+        "title": "Route selection",
+        "body": "Confirm the actual routes and vehicle availability for the campaign."
+      },
+      {
+        "title": "Wrap production",
+        "body": "Review approved dimensions, materials and installation lead time."
+      }
+    ],
+    "accent": "#a64368",
+    "art_label": "Bus wraps",
+    "reference": null
+  },
+  {
+    "slug": "media-prima-media-prima-omnia-cubig",
+    "name": "Media Prima Omnia (Cubig)",
+    "tagline": "Large-format attention at KLCC Junction.",
+    "intro": "The Cubig KLCC Junction 2026 reference lists a welcome-back promotion and a commitment promotion for premium digital out-of-home.",
+    "ideas": [
+      {
+        "title": "Campaign commitment",
+        "body": "Compare listed promotional options and the actual commitment terms."
+      },
+      {
+        "title": "Screen-ready artwork",
+        "body": "Confirm the screen specification, duration and availability."
+      }
+    ],
+    "accent": "#c56436",
+    "art_label": "KLCC Junction DOOH",
+    "reference": null
+  },
+  {
+    "slug": "klia-erl",
+    "name": "ERL",
+    "tagline": "Reach travellers between the terminal and city.",
+    "intro": "The ERL digital-screens 2026 reference separates the in-train network from Ekspres and Transit stations.",
+    "ideas": [
+      {
+        "title": "In-train screens",
+        "body": "Review the available network formats and creative specifications."
+      },
+      {
+        "title": "Station screens",
+        "body": "Confirm the actual stations and placement dates before booking."
+      }
+    ],
+    "accent": "#315b92",
+    "art_label": "Airport rail screens",
+    "reference": null
+  },
+  {
+    "slug": "ikimfm-ikimfm",
+    "name": "IKIMfm",
+    "tagline": "Respectful audio for Ramadan and beyond.",
+    "intro": "The IKIMfm Ramadan 2027 rate card contains prayer-time announcements, jingles, special capsules, tazkirah and drama formats.",
+    "ideas": [
+      {
+        "title": "Ramadan sponsorship",
+        "body": "Review the specific seasonal packages and dates."
+      },
+      {
+        "title": "Content suitability",
+        "body": "Confirm religious-content and advertiser-eligibility requirements before commissioning creative."
+      }
+    ],
+    "accent": "#397b66",
+    "art_label": "Ramadan audio",
+    "reference": null
+  },
+  {
+    "slug": "media-prima-klcc-snorkels",
+    "name": "KLCC Snorkels",
+    "tagline": "A landmark lightbox, not a generic billboard.",
+    "intro": "The Big Tree KLCC Snorkels source deck identifies lightbox formats around KLCC and their related placement conditions.",
+    "ideas": [
+      {
+        "title": "Site format",
+        "body": "Confirm which lightbox faces and durations are available."
+      },
+      {
+        "title": "Artwork review",
+        "body": "Match the design to the actual source-deck placement dimensions."
+      }
+    ],
+    "accent": "#2b8364",
+    "art_label": "KLCC lightboxes",
+    "reference": null
+  },
+  {
+    "slug": "specialist-media-dbp",
+    "name": "DBP",
+    "tagline": "A street-level digital route in Kuala Lumpur.",
+    "intro": "The lamppost digital-bunting 2026 reference lists Jalan Tun Razak, Jalan Dutamas and Jalan Cheras sets.",
+    "ideas": [
+      {
+        "title": "Route selection",
+        "body": "Compare the actual listed road segments against your intended geography."
+      },
+      {
+        "title": "Production and fees",
+        "body": "Review the source deck's additional costs and creative requirements."
+      }
+    ],
+    "accent": "#866647",
+    "art_label": "Lamppost digital media",
+    "reference": null
+  },
+  {
+    "slug": "specialist-media-malaysiakini",
+    "name": "Malaysiakini",
+    "tagline": "News-context storytelling and event coverage.",
+    "intro": "The catalogue includes a Malaysiakini media kit and a separate Malaysiakini/KiniTV event-coverage reference.",
+    "ideas": [
+      {
+        "title": "Digital editorial-style content",
+        "body": "Discuss clearly disclosed commercial content separately from independent news."
+      },
+      {
+        "title": "Event coverage brief",
+        "body": "Review the actual KiniTV event-coverage reference and approved production scope."
+      }
+    ],
+    "accent": "#d36c34",
+    "art_label": "Independent news",
+    "reference": null
+  },
+  {
+    "slug": "media-prima-audio-group",
+    "name": "Media Prima Audio Group",
+    "tagline": "One audio brief, distinct station audiences.",
+    "intro": "The trade-show audio deck covers Hot FM, Kool FM, Molek FM, Fly FM and Eight FM. Select stations on their individual audience context.",
+    "ideas": [
+      {
+        "title": "Station mix",
+        "body": "Choose languages, regions and music contexts that match the campaign."
+      },
+      {
+        "title": "Trade-show reference",
+        "body": "Review actual group packages and the specific station inclusions."
+      }
+    ],
+    "accent": "#e06b3d",
+    "art_label": "Multi-station audio",
+    "reference": null
+  },
+  {
+    "slug": "ra-media-relations-ra-media-raptor-truck",
+    "name": "RA Media (Raptor Truck)",
+    "tagline": "Bring a campaign directly to the crowd.",
+    "intro": "The 3D Mobile Truck Activation and Life Events reference provides mobile experiential package options.",
+    "ideas": [
+      {
+        "title": "Mobile activation",
+        "body": "Define the route, event locations and the experience itself."
+      },
+      {
+        "title": "Production scope",
+        "body": "Confirm truck specifications, logistics, staffing and dates."
+      }
+    ],
+    "accent": "#a74766",
+    "art_label": "Mobile activation",
+    "reference": null
+  },
+  {
+    "slug": "media-prima-omnia-group",
+    "name": "Media Prima Omnia Group",
+    "tagline": "Combine television formats intelligently.",
+    "intro": "The Content Terhangat 2026 deck includes group and channel-specific TV advertising references.",
+    "ideas": [
+      {
+        "title": "Channel selection",
+        "body": "Match creative language and viewing context to TV3, TV9 or 8TV as appropriate."
+      },
+      {
+        "title": "Package review",
+        "body": "Confirm programme entitlements, validity and availability in the actual deck."
+      }
+    ],
+    "accent": "#bf4657",
+    "art_label": "Integrated television",
+    "reference": null
+  },
+  {
+    "slug": "specialist-media-remedy-resources",
+    "name": "Remedy Resources",
+    "tagline": "Understand the quoted campaign reference.",
+    "intro": "The PuTERA pre-and-post 2024 quotation is a historical reference, not a general active advertising product.",
+    "ideas": [
+      {
+        "title": "Reference review",
+        "body": "Use the actual quotation only to understand the listed scope."
+      },
+      {
+        "title": "New brief",
+        "body": "Request current deliverables, timing and commercial terms independently."
+      }
+    ],
+    "accent": "#3f7189",
+    "art_label": "Campaign reference",
+    "reference": null
+  },
+  {
+    "slug": "ra-media-relations-group",
+    "name": "RA Media Group",
+    "tagline": "Choose the right format for the message.",
+    "intro": "The RA Media catalogue includes live TV talkshow and news-slot references for multiple broadcasters, subject to approvals.",
+    "ideas": [
+      {
+        "title": "Talkshow brief",
+        "body": "Confirm channel, format, speaker, content and production scope."
+      },
+      {
+        "title": "News-slot enquiry",
+        "body": "Clarify sponsored placement conditions and preserve editorial separation."
+      }
+    ],
+    "accent": "#a74462",
+    "art_label": "Broadcast solutions",
+    "reference": null
+  },
+  {
+    "slug": "ra-media-relations-ra-media-relations",
+    "name": "RA Media Relations",
+    "tagline": "Connect strategy, creative and delivery.",
+    "intro": "The RA Media website media-solutions reference lists the agency’s own services separately from broadcaster inventory.",
+    "ideas": [
+      {
+        "title": "Service brief",
+        "body": "Define the objective, media formats and deliverables required."
+      },
+      {
+        "title": "Proposal review",
+        "body": "Discuss the actual production and distribution scope, costs and timeline."
+      }
+    ],
+    "accent": "#a74462",
+    "art_label": "Media solutions",
+    "reference": null
+  },
+  {
+    "slug": "rtm-group",
+    "name": "RTM Group Packages",
+    "tagline": "Plan national and regional public-broadcast formats.",
+    "intro": "The RTM TV and radio 2025 reference includes channel-specific and group-level options.",
+    "ideas": [
+      {
+        "title": "Broadcast selection",
+        "body": "Choose the relevant television or radio channels rather than assuming all stations are included."
+      },
+      {
+        "title": "Historical terms",
+        "body": "Review the source rate-card validity and confirm any current format and availability."
+      }
+    ],
+    "accent": "#27856f",
+    "art_label": "Public broadcast",
+    "reference": null
+  },
+  {
+    "slug": "karangkraf-group",
+    "name": "Sinar Karangkraf Group",
+    "tagline": "Choose the publication that fits the audience.",
+    "intro": "The Sinar Karangkraf 2025–2026 rate card spans its news and lifestyle portfolio.",
+    "ideas": [
+      {
+        "title": "Publication shortlist",
+        "body": "Select titles based on topic, language and editorial context."
+      },
+      {
+        "title": "Package review",
+        "body": "Compare the actual catalogue sections and confirm availability."
+      }
+    ],
+    "accent": "#9c4b64",
+    "art_label": "Publishing portfolio",
+    "reference": null
+  },
+  {
+    "slug": "specialist-media-target-media",
+    "name": "Target Media",
+    "tagline": "Make short indoor viewing moments count.",
+    "intro": "The Target Media elevator network deck includes package and operating-cost references.",
+    "ideas": [
+      {
+        "title": "Building selection",
+        "body": "Confirm the actual elevator locations, occupancy context and campaign dates."
+      },
+      {
+        "title": "Operational costs",
+        "body": "Review the package and separate operating-cost sections before planning."
+      }
+    ],
+    "accent": "#408899",
+    "art_label": "Elevator media",
+    "reference": null
+  },
+  {
+    "slug": "tvs-miri-billboard",
+    "name": "TVS Miri Billboard",
+    "tagline": "A Miri-specific outdoor placement.",
+    "intro": "The TVS sponsorship and spot-buy deck includes single-screen, double-screen and bundled digital billboard options for Miri.",
+    "ideas": [
+      {
+        "title": "Screen choice",
+        "body": "Compare the listed single and double screen formats."
+      },
+      {
+        "title": "Production and schedule",
+        "body": "Confirm site-specific specifications, dates and charges."
+      }
+    ],
+    "accent": "#ae5d37",
+    "art_label": "Miri digital outdoor",
+    "reference": null
+  },
+  {
+    "slug": "tvs-group",
+    "name": "TVS Group",
+    "tagline": "Combine Sarawak media formats around a clear goal.",
+    "intro": "The TVS 2026 deck includes TV commercial spot buys, programme entitlements, branded participation, website/OTT and social formats.",
+    "ideas": [
+      {
+        "title": "Cross-format mix",
+        "body": "Select television, digital or other listed options that support the brief."
+      },
+      {
+        "title": "Entitlements check",
+        "body": "Confirm programme participation, duration, rights and commercial conditions."
+      }
+    ],
+    "accent": "#b43a5b",
+    "art_label": "Sarawak media mix",
+    "reference": null
+  }
+]
