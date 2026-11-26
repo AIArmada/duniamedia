@@ -79,6 +79,37 @@ class PublicExperienceTest extends TestCase
             ->assertSee('assets/work/covers/st-nlko-2025-highlight.webp');
     }
 
+    public function test_services_editorial_page_preserves_all_capabilities_and_real_work(): void
+    {
+        $this->seed(\Database\Seeders\ServiceSeeder::class);
+
+        $response = $this->get(route('services'))
+            ->assertOk()
+            ->assertSee('Good ideas.')
+            ->assertSee('Real impact.')
+            ->assertSee('Media Planning & Buying')
+            ->assertSee('Branding & Creative Studio')
+            ->assertSee('AI Video & Image Production')
+            ->assertSee('Websites & Conversion Systems')
+            ->assertSee('Creator & Influencer Campaigns')
+            ->assertSee('Media Asset Monetisation')
+            ->assertSee('AI Seminars & Corporate Training')
+            ->assertSee('Campaign Analytics & Automation')
+            ->assertSee('Typical deliverables')
+            ->assertSee(route('advisor', ['objective' => 'launch']))
+            ->assertSee(route('advisor', ['objective' => 'leads']))
+            ->assertSee(route('assets.join'))
+            ->assertSee(route('academy'))
+            ->assertSee('assets/work/covers/jwp-psa-kl.webp')
+            ->assertSee('#work-media-kpj-2025-10-02', false);
+
+        foreach (['planning', 'creative', 'ai-production', 'technology', 'creators', 'placements', 'training', 'measurement'] as $anchor) {
+            $this->assertSame(1, substr_count($response->getContent(), 'id="'.$anchor.'"'));
+        }
+
+        $this->assertSame(8, substr_count($response->getContent(), '<details class="services-detail">'));
+    }
+
     public function test_solution_objectives_link_to_matching_strategy_briefs(): void
     {
         $this->get(route('solutions'))
