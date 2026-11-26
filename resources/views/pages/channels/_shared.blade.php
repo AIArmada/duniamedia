@@ -122,7 +122,9 @@
                 </div>
                 <div class="channel-editorial-rate-groups">
                     @foreach ($rateGroups as $group)
-                        @php($product = $group->first()['product'] ?? null)
+                        @php
+                            $product = $group->first()['product'] ?? null;
+                        @endphp
                         <section class="channel-editorial-rate-group" aria-labelledby="channel-rate-group-{{ $loop->index }}">
                             <div class="channel-editorial-rate-group__header">
                                 <div><h3 id="channel-rate-group-{{ $loop->index }}">{{ $product['name'] ?? 'Rate-card reference' }}</h3>
