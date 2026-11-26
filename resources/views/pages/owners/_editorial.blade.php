@@ -112,12 +112,12 @@
 
     <section class="container owner-editorial-network" aria-labelledby="owner-network-title">
         <div class="owner-editorial-heading">
-            <div><span class="owner-editorial-kicker">The network</span><h2 id="owner-network-title">Explore the Media Prima network</h2></div>
+            <div><span class="owner-editorial-kicker">The network</span><h2 id="owner-network-title">Explore the {{ $editorial['network_name'] ?? $owner['name'] }} network</h2></div>
             <p class="owner-editorial-count">{{ $groups->sum(fn (array $group): int => $group['channels']->count()) }} brands &amp; channels <span aria-hidden="true">·</span> {{ $groups->count() }} media categories</p>
         </div>
         <div class="owner-editorial-roster">
             @foreach ($groups as $group)
-                <section class="owner-editorial-group" id="{{ $group['id'] }}" aria-labelledby="{{ $group['id'] }}-title">
+                <section class="owner-editorial-group {{ $group['channels']->count() <= 3 ? 'owner-editorial-group--compact' : '' }}" data-count="{{ $group['channels']->count() }}" id="{{ $group['id'] }}" aria-labelledby="{{ $group['id'] }}-title">
                     <div class="owner-editorial-group__heading">
                         <x-dm-icon :name="$group['icon']" :size="27"/>
                         <div><h3 id="{{ $group['id'] }}-title">{{ $group['label'] }}</h3><span>{{ $group['channels']->count() }} {{ $group['channels']->count() === 1 ? 'entry' : 'entries' }}</span></div>

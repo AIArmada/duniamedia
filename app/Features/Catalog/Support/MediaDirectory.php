@@ -296,7 +296,9 @@ class MediaDirectory
 
         foreach ($property->decks()->with('product.mediaProfile')->get() as $profile) {
             $product = $profile->product;
-            $products->put($product->id, $product);
+            if ($product->status->value === 'active') {
+                $products->put($product->id, $product);
+            }
         }
 
         return $products
@@ -330,6 +332,7 @@ class MediaDirectory
             ? collect(array_filter([self::property($ownerSlug, $channelSlug)]))
             : self::ownerProperties($ownerSlug);
 
+        $properties = new \Illuminate\Database\Eloquent\Collection($properties->all());
         $properties->load(['decks.product.mediaProfile']);
 
         $products = collect();
@@ -338,7 +341,7 @@ class MediaDirectory
             foreach ($property->decks as $profile) {
                 $product = $profile->product;
 
-                if ($product->status?->value === 'active') {
+                if ($product->status->value === 'active') {
                     $products->put($product->id, $product);
                 }
             }

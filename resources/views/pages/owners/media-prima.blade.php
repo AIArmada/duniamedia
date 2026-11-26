@@ -3,6 +3,7 @@
 @section('content')
     @include('pages.owners._editorial', [
         'editorial' => [
+            'network_name' => 'Media Prima',
             'tagline' => 'One group. Every screen.',
             'intro' => 'Connect with Malaysian audiences through television, radio, digital publishing, out-of-home, streaming, commerce and on-ground experiences — all in one media plan.',
             'hero' => 'assets/home/tv3-newsroom.webp',
