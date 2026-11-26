@@ -203,7 +203,7 @@
 
 <footer class="site-footer">
     <div class="container">
-        @unless(request()->routeIs('home', 'media.index', 'media.owners', 'media.owner', 'creators.index', 'creators.show', 'solutions', 'plans.*', 'advisor', 'advisor.*', 'quote.*', 'rates.*'))
+        @unless(request()->routeIs('home', 'media.index', 'media.owners', 'media.owner', 'media.channel', 'media.channel.show', 'creators.index', 'creators.show', 'solutions', 'plans.*', 'advisor', 'advisor.*', 'quote.*', 'rates.*'))
         <div class="footer-lead">
             <div>
                 <span class="eyebrow eyebrow--pale">All media. Bigger possibilities.</span>
