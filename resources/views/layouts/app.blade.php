@@ -203,7 +203,7 @@
 
 <footer class="site-footer">
     <div class="container">
-        @unless(request()->routeIs('home', 'media.index', 'media.owners', 'creators.index', 'creators.show', 'solutions', 'plans.*', 'advisor', 'advisor.*', 'quote.*', 'rates.*'))
+        @unless(request()->routeIs('home', 'media.index', 'media.owners', 'creators.index', 'creators.show', 'solutions', 'plans.*', 'advisor', 'advisor.*', 'quote.*', 'rates.*') || (request()->routeIs('media.owner') && request()->route('owner') === 'media-prima'))
         <div class="footer-lead">
             <div>
                 <span class="eyebrow eyebrow--pale">All media. Bigger possibilities.</span>
