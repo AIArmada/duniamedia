@@ -65,15 +65,17 @@ class MediaDirectory
 
     /** Rate cards shown on an owner page. */
     private const OWNER_RATE_CARDS = [
-        'media-prima' => ['omnia-content-terhangat-2026', 'hot-fm-zoomerz-on-ground', 'klcc-snorkels-2024-big-tree', 'wowshop-airtime-2025', 'podcast-utama-buletin-tv3', 'karnival-jom-heboh-2026-venue'],
-        'astro' => ['astro-video360-digital-2026'],
+        'media-prima' => ['omnia-content-terhangat-2026', 'hot-fm-zoomerz-on-ground', 'klcc-snorkels-2024-big-tree', 'wowshop-airtime-2025', 'podcast-utama-buletin-tv3', 'karnival-jom-heboh-2026-venue', 'cubig-klcc-junction-2026-promo', 'media-prima-audio-trade-show-2025', 'kl-sentral-station-sponsorship-2024'],
+        'astro' => ['astro-upfront-2027', 'astro-video360-digital-2026'],
         'rtm' => ['rtm-tv-radio-2025'],
         'al-hijrah' => ['tvalhijrah-bincang-niaga-2024'],
         'bernama' => ['bernama-media-kit-2026'],
         'star-media-group' => ['suria-fm-2026-radio-digital', '988-fm-2026-radio-digital'],
-        'klia' => ['klia-t1-airport-2024-premium', 'klia-t2-airport-2024'],
+        'klia' => ['klia-t1-airport-2024-premium', 'klia-t2-airport-2024', 'erl-digital-screens-2026'],
+        'karangkraf' => ['sinar-harian-20th-anniversary-2026', 'sinar-karangkraf-ratecard-2025-2026'],
+        'tvs' => ['tvs-sponsorship-spot-buy-2026', 'billboard-sarawak-smg-2026'],
         'ktm' => ['ktm-train-kl-sentral-ads-2026', 'kl-sentral-station-sponsorship-2024'],
-        'specialist-media' => ['bfm-2026-business-radio', 'fmt-2026-digital-news', 'tmr-super-deal-2026-business-content', 'imedia-blitz-sale-2026', 'konsert-kita-suara-anti-buli-2026'],
+        'specialist-media' => ['bfm-2026-business-radio', 'fmt-2026-digital-news', 'tmr-super-deal-2026-business-content', 'imedia-blitz-sale-2026', 'konsert-kita-suara-anti-buli-2026', 'malaysiakini-kinitv-event-coverage-2026-2027', 'malaysiakini-media-kit-2024', 'lamppost-digital-bunting-kl-2026', 'target-media-elevator-q2-2025', 'putera-pre-post-2024-reference'],
     ];
 
     /** Rate cards shown on a specific channel page. */
@@ -328,50 +330,24 @@ class MediaDirectory
 
     public static function rateCards(string $ownerSlug, ?string $channelSlug = null): Collection
     {
-        $properties = $channelSlug !== null
-            ? collect(array_filter([self::property($ownerSlug, $channelSlug)]))
-            : self::ownerProperties($ownerSlug);
+        $ownerId = $channelSlug === null ? app(ResolvesParties::class)->idForSlug($ownerSlug) : null;
 
-        $properties = new \Illuminate\Database\Eloquent\Collection($properties->all());
-        $properties->load(['decks.product.mediaProfile']);
+        // Channel-linked decks remain authoritative on a specific channel.
+        if ($channelSlug !== null && ($property = self::property($ownerSlug, $channelSlug)) !== null) {
+            $products = self::rateCardsForProperty($property);
 
-        $products = collect();
-
-        foreach ($properties as $property) {
-            foreach ($property->decks as $profile) {
-                $product = $profile->product;
-
-                if ($product->status->value === 'active') {
-                    $products->put($product->id, $product);
-                }
+            if ($products->isNotEmpty()) {
+                return $products;
             }
         }
 
-        if ($channelSlug === null) {
-            $ownerId = app(ResolvesParties::class)->idForSlug($ownerSlug);
-
-            if ($ownerId !== null) {
-                $products = $products->filter(function (Product $product) use ($ownerId): bool {
-                    $profile = $product->getRelationValue('mediaProfile');
-
-                    return $profile instanceof MediaProfile && $profile->media_owner_party_id === $ownerId;
-                });
-            }
-        }
-
-        if ($products->isNotEmpty()) {
-            return $products
-                ->values()
-                ->sortBy('name')
-                ->map(fn (Product $product) => new MediaOffer($product))
-                ->values();
-        }
-
+        // Owner pages include directly owned inventory and explicitly associated catalogue decks.
+        // Some group channels have a different selling party (e.g. WowShop or Big Tree).
         $slugs = $channelSlug !== null
             ? (self::CHANNEL_RATE_CARDS[$ownerSlug.':'.$channelSlug] ?? self::OWNER_RATE_CARDS[$ownerSlug] ?? [])
             : (self::OWNER_RATE_CARDS[$ownerSlug] ?? []);
 
-        if ($slugs === []) {
+        if ($slugs === [] && $ownerId === null) {
             return collect();
         }
 
@@ -379,13 +355,17 @@ class MediaDirectory
             ->where('status', 'active')
             ->whereHas('mediaProfile')
             ->with('mediaProfile.placement')
-            ->whereIn('slug', $slugs)
-            ->get()
-            ->keyBy('slug');
+            ->where(function ($query) use ($slugs, $ownerId): void {
+                $query->whereIn('slug', $slugs);
 
-        return collect($slugs)
-            ->map(fn (string $slug) => $offerings->get($slug))
-            ->filter()
+                if ($ownerId !== null) {
+                    $query->orWhereIn('id', MediaProfile::query()->where('media_owner_party_id', $ownerId)->select('product_id'));
+                }
+            })
+            ->orderBy('name')
+            ->get();
+
+        return $offerings
             ->map(fn (Product $product) => new MediaOffer($product))
             ->values();
     }
