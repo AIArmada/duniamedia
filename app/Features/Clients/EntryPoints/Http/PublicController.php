@@ -64,7 +64,14 @@ class PublicController extends Controller
 
     public function services()
     {
+        $films = collect(ClientWork::media())->keyBy('key');
+        $featuredFilms = collect(['jwp-psa-kl', 'kpj-2025-10-02', 'yayasan-maghfirah-30s'])
+            ->map(fn (string $key) => $films->get($key))
+            ->filter()
+            ->values();
+
         return view('pages.services', [
+            'featuredFilms' => $featuredFilms,
             'services' => Service::published()->orderBy('sort_order')->get(),
             'pageTitle' => 'Services — Media, Creative & Technology | Dunia Media',
             'metaDescription' => 'Media planning and buying, creative production, digital systems, creators, AI and training — connected around a shared campaign objective.',
