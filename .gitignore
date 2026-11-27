@@ -40,3 +40,6 @@
 # Decision-document answers (local only)
 /docs/answers.db
 /dunia-media-decisions.zip
+
+# Temporary media-library conversions
+/storage/media-library/temp/
