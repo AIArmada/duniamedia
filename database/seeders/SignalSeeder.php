@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use AIArmada\Signals\Models\TrackedProperty;
+use AIArmada\Signals\Features\Ingestion\Models\TrackedProperty;
 use Illuminate\Database\Seeder;
 
 class SignalSeeder extends Seeder
